@@ -41,7 +41,10 @@ class Policies(unittest.TestCase):
         self.assertEqual(self.records, original)
         for old, new in zip(original, enriched):
             for field, value in old.items():
-                self.assertEqual(new[field], value, field)
+                if field == "description_history":
+                    self.assertTrue(all(event in new[field] for event in value))
+                else:
+                    self.assertEqual(new[field], value, field)
             context = new['archival_context']
             self.assertEqual(context['source_metadata_retrieved'], old['provenance']['retrieved'])
             self.assertEqual(context['source_snapshot'], old['provenance']['source_snapshot'])

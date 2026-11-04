@@ -188,7 +188,7 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Digital Archive Library",
-          "item": "https://archive.museumofone.art/index.html"
+          "item": "https://archive.museumofone.art/"
         },
         {
           "@type": "ListItem",
@@ -346,6 +346,8 @@
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
       "alternateName": [],
+      "description": "This article examines El Anatsui's Man's Cloth Series (c. 1999–) as a sustained practice of material redemption, tracing the ethical and aesthetic logic by which discarded liquor bottle caps, residues of the Atlantic trade economy, are transformed into monumental textile-like assemblages. Drawing on Post-Interpretive Criticism, the essay argues that Anatsui's work enacts what PIC terms the ethics of reparation: the restoration of moral and material dignity to objects declared worthless by colonial and capitalist systems. The analysis attends to the formal conditions of this transformation, collective studio labour, the retention of legible brand markings, the open-ended installation protocols Anatsui extends to curators and preparators, and reads these not as curatorial gestures but as structural enactments of repair. The piece further situates Man's Cloth within Anatsui's broader bottle-cap practice and his Ewe-Kente inheritance, arguing that the series produces what might be called a new aesthetic theology: one in which beauty is diagnostic rather than decorative, and continuity of historical record is treated as a moral obligation of form. The essay concludes by considering Anatsui's institutional presence, from the British Museum's Sainsbury African Galleries to Tate Modern's Turbine Hall, and the capacity of these works to resist capture even within spaces of preservation and prestige. Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen. This name is used for all official publications, essays, and theoretical works indexed through DOI-linked repositories including Zenodo, OSF, PhilPapers, and SSRN. This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and Art as Truth: A Treatise (Q136329071), Aesthetic Recursion Theory (Q136339843), The Journal of Post-Interpretive Criticism (Q136530009), Canon of Witnesses (Q136565881),Interpretive Load Index (ILI) (Q137709526), Viewer Displacement Ratio (VDR) (Q137709583) , Ethical Proximity Score (EPS) (Q137709600) , Institutional Alignment Indicator (IAI) (Q137709608), Post-Hermeneutic Phenomenology (Q137711946)",
+      "headline": "El Anatsui's Man's Cloth Series: Redemption of Waste as Modern Eucharist",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "exampleOfWork": {
         "@id": "https://doi.org/10.5281/zenodo.20593002"

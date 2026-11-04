@@ -103,7 +103,7 @@ def main():
         relative = path.relative_to(DIST)
         require(bool(page.canonical), f"Missing canonical URL: {relative}")
         require(len(page.canonicals) == 1, f"Expected exactly one canonical URL: {relative}")
-        require(page.canonical == origin + '/' + relative.as_posix(), f"Canonical URL does not match the stable page path: {relative}")
+        require(page.canonical == origin + ('/' if relative.as_posix() == 'index.html' else '/' + relative.as_posix()), f"Canonical URL does not match the stable page path: {relative}")
         require(not page.iframes, f"Archive must operate without iframe dependencies: {relative}")
         duplicates = [k for k, v in Counter(page.ids).items() if v > 1]
         require(not duplicates, f"Duplicate fragment IDs in {relative}: {duplicates}")

@@ -273,7 +273,7 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Digital Archive Library",
-          "item": "https://archive.museumofone.art/index.html"
+          "item": "https://archive.museumofone.art/"
         },
         {
           "@type": "ListItem",
@@ -417,6 +417,8 @@
       "publisher": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
+      "description": "The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism By Dorian Vale This essay presents one of the central epistemological pillars of Post-Interpretive Criticism (PIC): the concept of the viewer as evidence. Dorian Vale challenges the traditional hierarchy where the critic’s interpretation takes precedence over the encounter itself, proposing instead that the afterlife of the artwork—the residue it leaves in the viewer—is its most truthful legacy. Rather than dissect the work, Vale observes what lingers after it is gone: silence, tremor, unease, reverence. These affective traces are not emotional accidents, but ethical data. The viewer’s internal shift becomes testimony, and the absence of interpretation becomes its own kind of presence. Rooted in restraint and moral proximity, this essay reframes the act of viewing as sacred evidence collection. The artwork does not exist to be understood; it exists to be endured. And in that endurance, the viewer becomes witness, custodian, and echo. Vale, Dorian. The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism. Museum of One, 2025. DOI: 10.5281/zenodo.17076535 Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen. This name is used for all official publications, essays, and theoretical works indexed through DOI-linked repositories including Zenodo, OSF, PhilPapers, and SSRN. This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and Art as Truth: A Treatise (Q136329071), Aesthetic Recursion Theory (Q136339843) Post-Interpretive Criticism, Dorian Vale, viewer as evidence, art afterlife, ethical criticism, art encounter, aesthetic presence, trauma-informed art viewing, philosophy of art, witnessing in art, moral proximity, affective criticism",
+      "headline": "The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "exampleOfWork": {
         "@id": "https://doi.org/10.5281/zenodo.17076534"

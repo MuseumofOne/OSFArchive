@@ -174,7 +174,7 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Digital Archive Library",
-          "item": "https://archive.museumofone.art/index.html"
+          "item": "https://archive.museumofone.art/"
         },
         {
           "@type": "ListItem",
@@ -321,6 +321,8 @@
       "publisher": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
+      "description": "Moral Proximity: Ethics as Method in Post-Interpretive Criticism By Dorian Vale In this defining essay, Dorian Vale articulates moral proximity as the central method of Post-Interpretive Criticism (PIC). Departing from frameworks that prioritize interpretation, context, or theoretical discourse, this piece reframes criticism itself as an ethical position, not an intellectual act. Moral proximity is the discipline of standing near a work—especially works born of trauma, exile, or silence—without consuming it. It demands neither resolution nor analysis, but a custodial presence rooted in humility, restraint, and witness. The critic is not a translator but a steward of what cannot be said without distortion. Drawing upon Vale’s broader doctrines—including the Viewer as Evidence, Absential Aesthetics, and Hauntmark Theory—this essay positions moral nearness as the irreducible truth in art writing. It becomes the difference between exploitation and reverence, between performance and presence. Vale, Dorian. Moral Proximity: Ethics as Method in Post-Interpretive Criticism. Museum of One, 2025. DOI: 10.5281/zenodo.17076247 Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen. This name is used for all official publications, essays, and theoretical works indexed through DOI-linked repositories including Zenodo, OSF, PhilPapers, and SSRN. This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and Art as Truth: A Treatise (Q136329071), Aesthetic Recursion Theory (Q136339843) Post-Interpretive Criticism, Dorian Vale, moral proximity, ethics in art criticism, witnessing art, aesthetic ethics, viewer presence, non-extractive criticism, trauma-informed aesthetics, silent art, ethical presence, affective encounter, restraint in criticism",
+      "headline": "Moral Proximity: Ethics as Method in Post-Interpretive Criticism",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "exampleOfWork": {
         "@id": "https://doi.org/10.5281/zenodo.17076246"

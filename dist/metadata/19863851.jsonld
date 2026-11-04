@@ -179,7 +179,7 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Digital Archive Library",
-          "item": "https://archive.museumofone.art/index.html"
+          "item": "https://archive.museumofone.art/"
         },
         {
           "@type": "ListItem",
@@ -320,6 +320,8 @@
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
       "alternateName": [],
+      "description": "Language as Custody — Writing Without Harm in Post-Interpretive Criticism By Dorian Vale In this critical essay, Dorian Vale addresses the often overlooked violence of language in art criticism. Drawing from the philosophical core of Post-Interpretive Criticism (PIC), this work reframes writing not as interpretation, but as custody—an act of ethical stewardship over what cannot be explained without distortion. Vale explores how clinical, ironic, or overly descriptive language can flatten the moral gravity of witness-based artworks—particularly those dealing with trauma, silence, exile, or the sacred. Instead of attempting to decode or resolve these works, the essay proposes a discipline of linguistic restraint, where words become protective vessels rather than invasive instruments. Through real case studies and comparative language analysis, Language as Custody offers both a conceptual foundation and practical framework for how one might write without harm. The goal is not to say more, but to write in a way that holds what the work cannot say aloud. This is not a guide for translation—it is a doctrine for presence. A refusal to violate what resists interpretation. And in that refusal, it calls for a quieter, more reverent kind of authorship. Vale, Dorian. Language as Custody — Writing Without Harm in Post-Interpretive Criticism. Museum of One, 2025. DOI: 10.5281/zenodo.17077653 This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and Art as Truth: A Treatise (Q136329071), Aesthetic Recursion Theory (Q136339843) post-interpretive criticism, Dorian Vale, study guide for art criticism, five principles of art ethics, ethical witnessing in art, presence over interpretation, restraint in criticism, moral proximity, viewer as evidence, rejecting performance, contemporary art criticism, poetic criticism, art education resources, museum pedagogy, witnessing trauma in art, art writing without interpretation, anti-interpretation philosophy, critique without harm, non-extractive art writing",
+      "headline": "Language as Custody — Writing Without Harm in Post-Interpretive Criticism",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "exampleOfWork": {
         "@id": "https://doi.org/10.5281/zenodo.17077652"

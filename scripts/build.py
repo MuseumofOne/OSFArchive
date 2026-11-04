@@ -44,7 +44,7 @@ RECORDS=attach_catalogue_history(attach_vocabulary(attach_contents(attach_entiti
 for record in RECORDS:record['description_policy_url']=ORIGIN+'/policies.html'
 E=lambda x:escape(str(x or ''),quote=True)
 J=lambda x:json.dumps(x,ensure_ascii=False).replace('<','\\u003c')
-TODAY='2026-11-04'
+TODAY='2026-11-05'
 PROGRAMMES=json.loads((DATA/'programmes.json').read_text()) if (DATA/'programmes.json').exists() else []
 PIRR=load_pirr()
 RECORDS,PROGRAMMES=attach_pirr(RECORDS,PROGRAMMES,PIRR)
@@ -62,7 +62,7 @@ for r in RECORDS:
  if r['collection'] not in GROUPS:GROUPS[r['collection']]=(f"{len(GROUPS)+1:02d}",r['collection'],'Explore records in this collection.')
 SEARCH_ICON='<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>'
 
-def url(path): return ORIGIN+'/'+path.lstrip('/')
+def url(path): return ORIGIN+'/' if path in ('', 'index.html') else ORIGIN+'/'+path.lstrip('/')
 def href(path,base):return base+path
 
 def header(base,active=''):
@@ -70,8 +70,8 @@ def header(base,active=''):
 def footer(base):
  return f'''<div class="shell"><footer class="footer"><div class="footer-main"><div><h2>Museum of One</h2><p>An archival reading room for published work in aesthetics, art criticism, and the ethics of witnessing.</p></div><div class="footer-links"><div><a href="{base}catalogue.html">Browse the catalogue</a><a href="{base}collections.html">Explore collections</a><a href="{base}programmes.html">Research programmes</a><a href="{base}subjects.html">Subject index</a><a href="{base}about.html">About & metadata policy</a></div><div><a href="https://www.museumofone.art/">Museum of One ↗</a><a href="{base}sources.html">Sources & authority records</a><a href="{base}metadata-quality.html">Catalogue quality</a><a href="{base}metadata/catalogue.json" download>Download catalogue JSON ↓</a></div></div></div><div class="footer-bottom"><span>© Museum of One · Individual works retain their own rights.</span><span>Selected catalogue · Source review {TODAY} · Persistent catalogue records</span></div></footer></div>'''
 def layout(title,desc,content,path='index.html',base='',active='',schema=None):
- graph=schema or {'@context':'https://schema.org','@type':'CollectionPage','name':title,'description':desc,'url':url(path),'isPartOf':{'@type':'WebSite','name':'Museum of One Digital Archive Library','url':ORIGIN}}
- return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{E(title)} | Museum of One Digital Archive Library</title><meta name="description" content="{E(desc[:170])}"><link rel="canonical" href="{E(url(path))}"><meta property="og:type" content="website"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc[:200])}"><meta property="og:url" content="{E(url(path))}"><meta name="theme-color" content="#f3f0e8"><link rel="icon" href="{base}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{base}assets/style.css"><script type="application/ld+json">{J(graph)}</script><script defer src="{base}assets/app.js"></script></head><body>{header(base,active)}<main id="main" class="shell">{content}</main>{footer(base)}</body></html>'''
+ graph=schema or {'@context':'https://schema.org','@type':'CollectionPage','name':title,'description':desc,'url':url(path),'isPartOf':{'@type':'WebSite','@id':ORIGIN+'/#website','name':'Museum of One Digital Archive Library','url':ORIGIN+'/'}}
+ return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{E(title)} | Museum of One Digital Archive Library</title><meta name="description" content="{E(desc[:170])}"><link rel="canonical" href="{E(url(path))}"><meta property="og:site_name" content="Museum of One Digital Archive Library"><meta property="og:locale" content="en_GB"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc[:200])}"><meta property="og:url" content="{E(url(path))}"><meta name="theme-color" content="#f3f0e8"><link rel="icon" href="{base}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{base}assets/style.css"><script type="application/ld+json">{J(graph)}</script><script defer src="{base}assets/app.js"></script></head><body>{header(base,active)}<main id="main" class="shell">{content}</main>{footer(base)}</body></html>'''
 def write(path,content):
  if path.endswith('.html') and path != '404.html':
   content=enhance_page(path,content,RECORDS,PROGRAMMES)
@@ -128,7 +128,7 @@ write('collections.html',layout('Collections','Explore books, theoretical writin
 
 for r in RECORDS:
  rid=r['id'];base='../'; itemurl=url(f'items/{rid}.html'); doiurl='https://doi.org/'+r['doi']
- model=build_citation_model(r,catalogue_url=itemurl,pdf_url=url(f'assets/documents/{rid}.pdf'))
+ model=build_citation_model(r,catalogue_url=itemurl,pdf_url=url(f'items/{rid}.pdf') if r.get('reading_copy') else None)
  citation=visible_citation(model)
  institutional=r.get('institutional_url','https://www.museumofone.art/publications/')
  schema=build_graph(r,itemurl,ORIGIN)
@@ -154,7 +154,7 @@ for r in RECORDS:
  if r.get('orcid'):meta+=field('Creator identifier',f'<a href="https://orcid.org/{E(r["orcid"].replace("https://orcid.org/",""))}">ORCID {E(r["orcid"].replace("https://orcid.org/",""))} ↗</a>')
  meta+=field('Record status',E(r.get('record_status')))
  meta+=field('Source review',TODAY,'Static source snapshot; no live repository synchronization.')
- body=f'<section class="item-section" id="bibliographic-record"><h2>Bibliographic record</h2><dl class="metadata">{meta}</dl></section>'
+ body=repository_description_html(r)+f'<section class="item-section" id="bibliographic-record"><h2>Bibliographic record</h2><dl class="metadata">{meta}</dl></section>'
  body+='<section class="item-section" id="research-context"><h2>Research context</h2>'
  if programmes_for(r):
   body+='<p>Programme relationships follow the badges and research context on the corresponding Museum of One page.</p>'+programme_badges(r,base)
@@ -165,7 +165,6 @@ for r in RECORDS:
  body+='<section class="item-section"><h2>Subjects & discovery</h2><span class="source-label">Editorial subjects · Local discovery vocabulary</span>'+''.join(f'<a class="pill" href="../catalogue.html?subject={urllib.parse.quote(s)}">{E(s)}</a>' for s in r['subjects'])
  if r.get('keywords'):body+='<h3>Repository keywords</h3><p>'+E(' · '.join(r['keywords']))+'</p>'
  body+='</section>'
- body+=repository_description_html(r)
  body+=f'<section class="item-section" id="source-evidence"><h2>Source corroboration</h2><p>{E(r.get("corroboration") or "The deposited record is linked to the corresponding Museum of One work page. The catalogue retains edition-specific repository identifiers and institutional publication context separately.")}</p><ul class="source-list"><li><a href="{E(r["zenodo_url"])}">Zenodo edition record ↗</a><small>Deposited metadata, files, version and rights.</small></li><li><a href="{E(institutional)}">Museum of One work record ↗</a><small>Institutional title, authorship and publication context.</small></li></ul>'
  auth_data=json.loads((DATA/'authorities.json').read_text()) if (DATA/'authorities.json').exists() else {}
  matches=[w for w in auth_data.get('works',[]) if w['match_title'].lower() in (r['title']+' '+r.get('short_title','')).lower()]
@@ -215,6 +214,11 @@ for r in RECORDS:
  content+=f'<div class="item-layout"><div>{body}</div><aside>{aside}</aside></div>'
  # Scholarly citation tags complement schema.org metadata.
  html=layout(r['title'],r['summary'],content,f'items/{rid}.html',base,schema=schema)
+ if r.get('reading_copy'):
+  shutil.copy2(OUT/'assets/documents'/f'{rid}.pdf',OUT/'items'/f'{rid}.pdf')
+ if r.get('cover'):
+  image=url(r['cover'])
+  html=html.replace('</head>',f'<meta property="og:image" content="{E(image)}"><meta property="og:image:alt" content="{E(r.get("cover_alt") or "Publication cover of "+r["title"])}"><meta name="twitter:image" content="{E(image)}"></head>')
  tags=''.join(f'<meta name="{E(name)}" content="{E(value)}">' for name,value in scholar_meta(model))
  html=html.replace('</head>',tags+'</head>');write(f'items/{rid}.html',html)
  write(f'metadata/{rid}.json',json.dumps({**r,'field_assertions':build_assertions(r)},ensure_ascii=False,indent=2));write(f'metadata/{rid}.jsonld',json.dumps(schema,ensure_ascii=False,indent=2))

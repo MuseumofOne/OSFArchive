@@ -136,7 +136,7 @@
       }
     },
     {
-      "@type": "MediaObject",
+      "@type": "DataDownload",
       "@id": "https://archive.museumofone.art/items/20100136.html#file-1",
       "contentUrl": "https://zenodo.org/api/records/20100136/files/Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/content",
       "name": "Diagnostics Without Possession - An Operational Manual for Post-Interpretive Criticism.pdf",
@@ -174,7 +174,7 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Digital Archive Library",
-          "item": "https://archive.museumofone.art/index.html"
+          "item": "https://archive.museumofone.art/"
         },
         {
           "@type": "ListItem",
@@ -326,6 +326,7 @@
       "publisher": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
+      "description": "This manual operationalises the ten diagnostic indices of Post-Interpretive Criticism (PIC) for consistent application across coders, supporting inter-rater reliability work, comparative corpus studies, and self-audit by individual critics. It is an operational reference rather than a theoretical exposition; the foundational arguments are set out in the published v.2 specifications and are not rehearsed here except where required for procedural clarity. The framework is structured in two layers. Layer A — Ethical / Postural Indices (RD, ILI, VDR, EPS, IAI) — diagnoses how much force a critical text applies and where it lands. Layer B — Phenomenological Fidelity Indices (EFI, PPAS, RERR, QSARI, DCI) — diagnoses which phenomenological operations the text honours or violates, grounded in Husserl's epoché and Dufrenne's three-phase model of aesthetic experience (presence, representation, reflection / feeling) together with his three-layer architecture of work, aesthetic object, and residue. Part I establishes general coding principles, including coding units, the Direction of Force matrices (MAC/EBS, RM/CA), exclusion rules, the zero-denominator convention, genre awareness, and the PIC Constraint, which forbids single-index posture diagnoses. Parts II and III specify each index — definition, coding unit, calculation, criteria, disambiguation rules, and behavioural bands — and define Layer A postures (Forensic, Colonising, Poetic, Institutionalist) and Layer B postures (Witness-Aligned, Extractive, Institutionally Overdetermined, Unstable). Part IV addresses composite profiles and reporting protocols; Part V addresses methodological considerations including reliability targets (Cohen's κ ≥ 0.80; ICC ≥ 0.85), context sensitivity, and cultural specificity. Three appendices cover operational terminology, reliability calculation, and a standard coding workflow. This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and Art as Truth: A Treatise (Q136329071), Aesthetic Recursion Theory (Q136339843), The Journal of Post-Interpretive Criticism (Q136530009), Canon of Witnesses (Q136565881),Interpretive Load Index (ILI) (Q137709526), Viewer Displacement Ratio (VDR) (Q137709583) , Ethical Proximity Score (EPS) (Q137709600) , Institutional Alignment Indicator (IAI) (Q137709608), Post-Hermeneutic Phenomenology (Q137711946) Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen.",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "exampleOfWork": {
         "@id": "https://doi.org/10.5281/zenodo.20099594"
@@ -339,6 +340,11 @@
         },
         {
           "@id": "https://osf.io/zhnre/files/jn7p6#file"
+        }
+      ],
+      "distribution": [
+        {
+          "@id": "https://archive.museumofone.art/items/20100136.html#file-1"
         }
       ]
     },

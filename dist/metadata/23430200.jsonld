@@ -191,7 +191,7 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Digital Archive Library",
-          "item": "https://archive.museumofone.art/index.html"
+          "item": "https://archive.museumofone.art/"
         },
         {
           "@type": "ListItem",
@@ -309,6 +309,7 @@
       "publisher": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
+      "description": "This study distinguishes two changes in the Rijksmuseum’s presentation of Simon Maris’s portrait now titled Isabella: the withdrawal of a racialized catalogue title in 2015, and the fulfilment in 2020 of an announced intention to adopt a name when one became known. The second change does not, by itself, demonstrate revision of the rule governing the first. The records examined at Europeana and Wikimedia Commons reveal different afterlives of the later decision. Europeana retains the descriptive title and an account in which identification remains unfinished. Commons preserves the older wording in the name of its image file while identifying the work as Isabella in the accompanying description. Drawing on my correspondence with Alexander V. Markov, the study follows what these descriptions do, rather than treating their survival as evidence of continuing authority. It finds uneven presentation of the later naming decision, not a demonstrated restoration of the rejected title. Its contribution to Post-Interpretive Criticism is a documentary distinction among correction, completion and circulation. Independently authored by Dorian Vale and published by Museum of One as Research Working Paper No. 2, version 1.0. Developed through scholarly correspondence with Alexander Viktorovich Markov and his subsequent critical response to the documentary study. Selected passages and summaries are reproduced with his permission. Markov is not a coauthor, and the study is not a record of formal peer review or agreement with every proposal. The full private correspondence is not published. © 2026 Dorian Vale · Museum of One. CC BY-NC-ND 4.0 applies to the author's original contribution. Rights in third-party material and the original correspondence remain with their respective holders. Permission for selected correspondence material does not extend to reproduction of the full exchange. Research programme: https://www.museumofone.art/research-critical-language/ PIRR programme reference: moo-program-2b3ad664cbd92f69b862db8c",
       "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
       "exampleOfWork": {
         "@id": "https://doi.org/10.5281/zenodo.23430199"

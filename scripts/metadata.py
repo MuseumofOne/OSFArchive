@@ -6,6 +6,7 @@ Qualified Dublin Core XML is an application export, not an OAI-PMH response.
 from __future__ import annotations
 
 from relationship_metadata import extend_graph, relationship_assertions
+from descriptions import repository_description_text
 from identities import (work_uri, responsibility_uri, institutional_target,
                         institutional_scope, edition_isbn)
 import mimetypes
@@ -227,6 +228,13 @@ def build_graph(r: dict, itemurl: str, origin: str) -> dict:
         edition["bookEdition"] = edition_statement
     if r.get("source_abstract"):
         edition["abstract"] = r["source_abstract"]
+    source_description = repository_description_text(r)
+    if source_description:
+        edition["description"] = source_description[:5000]
+    if edition["@type"] == "ScholarlyArticle":
+        edition["headline"] = edition["name"]
+    if r.get("cover"):
+        edition["image"] = origin + "/" + r["cover"].lstrip("/")
     license_ = r.get("license") or {}
     if isinstance(license_, dict) and license_.get("url"):
         edition["license"] = license_["url"]
@@ -265,7 +273,7 @@ def build_graph(r: dict, itemurl: str, origin: str) -> dict:
         if not isinstance(file, dict) or not file.get("url"):
             continue
         fid = itemurl + "#file-" + str(i + 1)
-        media = {"@type": "MediaObject", "@id": fid, "contentUrl": file["url"],
+        media = {"@type": "DataDownload" if edition["@type"] == "Dataset" else "MediaObject", "@id": fid, "contentUrl": file["url"],
                  "name": file.get("name") or "Repository file", "encodesCreativeWork": {"@id": edition_id}}
         mime = file.get("mimetype") or file.get("mime_type") or mimetypes.guess_type(file.get("name", ""))[0]
         if mime:
@@ -281,6 +289,8 @@ def build_graph(r: dict, itemurl: str, origin: str) -> dict:
         graph.append(media)
     if files:
         edition["encoding"] = files
+        if edition["@type"] == "Dataset":
+            edition["distribution"] = list(files)
     serial = r.get("serial")
     if serial:
         serial_id = serial["url"]
@@ -312,7 +322,7 @@ def build_graph(r: dict, itemurl: str, origin: str) -> dict:
         graph.append({"@type":entity_type,"@id":entity_id,"name":role["name"]})
         graph.append({"@type":"Role","@id":role_id,"roleName":role.get("source_role") or "Contributor (role not supplied)","contributor":{"@id":entity_id}})
         edition.setdefault("contributor",[]).append({"@id":role_id})
-    graph.append({"@type":"BreadcrumbList","@id":itemurl+"#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Digital Archive Library","item":origin+"/index.html"},{"@type":"ListItem","position":2,"name":"Catalogue","item":origin+"/catalogue.html"},{"@type":"ListItem","position":3,"name":r.get("accession") or r.get("title"),"item":itemurl}]})
+    graph.append({"@type":"BreadcrumbList","@id":itemurl+"#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Digital Archive Library","item":origin+"/"},{"@type":"ListItem","position":2,"name":"Catalogue","item":origin+"/catalogue.html"},{"@type":"ListItem","position":3,"name":r.get("accession") or r.get("title"),"item":itemurl}]})
     graph[1]["breadcrumb"]={"@id":itemurl+"#breadcrumb"}
     reading=r.get("reading_copy")
     if reading:

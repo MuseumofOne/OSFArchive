@@ -4,6 +4,18 @@
     "reference": "MOO-CAT-001",
     "description_history": [
       {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/19864099"
+        ]
+      },
+      {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",
         "date_kind": "Catalogue description event; not a publication or acquisition date",
@@ -168,6 +180,18 @@
     "id": "19864115",
     "reference": "MOO-CAT-002",
     "description_history": [
+      {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/19864115"
+        ]
+      },
       {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",
@@ -334,6 +358,18 @@
     "reference": "MOO-CAT-003",
     "description_history": [
       {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/23395654"
+        ]
+      },
+      {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",
         "date_kind": "Catalogue description event; not a publication or acquisition date",
@@ -498,6 +534,18 @@
     "id": "20383926",
     "reference": "MOO-CAT-004",
     "description_history": [
+      {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/20383926"
+        ]
+      },
       {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",
@@ -664,6 +712,18 @@
     "reference": "MOO-CAT-005",
     "description_history": [
       {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/23430200"
+        ]
+      },
+      {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",
         "date_kind": "Catalogue description event; not a publication or acquisition date",
@@ -828,6 +888,18 @@
     "id": "23428974",
     "reference": "MOO-CAT-006",
     "description_history": [
+      {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/23428974"
+        ]
+      },
       {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",
@@ -994,6 +1066,18 @@
     "reference": "MOO-CAT-007",
     "description_history": [
       {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/21715085"
+        ]
+      },
+      {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",
         "date_kind": "Catalogue description event; not a publication or acquisition date",
@@ -1158,6 +1242,18 @@
     "id": "21241866",
     "reference": "MOO-CAT-008",
     "description_history": [
+      {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/21241866"
+        ]
+      },
       {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",
@@ -1324,6 +1420,18 @@
     "reference": "MOO-CAT-009",
     "description_history": [
       {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/20593003"
+        ]
+      },
+      {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",
         "date_kind": "Catalogue description event; not a publication or acquisition date",
@@ -1488,6 +1596,18 @@
     "id": "19963428",
     "reference": "MOO-CAT-010",
     "description_history": [
+      {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/19963428"
+        ]
+      },
       {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",
@@ -1654,6 +1774,18 @@
     "reference": "MOO-CAT-011",
     "description_history": [
       {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/20100136"
+        ]
+      },
+      {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",
         "date_kind": "Catalogue description event; not a publication or acquisition date",
@@ -1818,6 +1950,18 @@
     "id": "20100139",
     "reference": "MOO-CAT-012",
     "description_history": [
+      {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/20100139"
+        ]
+      },
       {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",
@@ -1984,6 +2128,18 @@
     "reference": "MOO-CAT-013",
     "description_history": [
       {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/21786998"
+        ]
+      },
+      {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",
         "date_kind": "Catalogue description event; not a publication or acquisition date",
@@ -2148,6 +2304,18 @@
     "id": "19863790",
     "reference": "MOO-CAT-014",
     "description_history": [
+      {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/19863790"
+        ]
+      },
       {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",
@@ -2314,6 +2482,18 @@
     "reference": "MOO-CAT-015",
     "description_history": [
       {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/19863836"
+        ]
+      },
+      {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",
         "date_kind": "Catalogue description event; not a publication or acquisition date",
@@ -2478,6 +2658,18 @@
     "id": "19863851",
     "reference": "MOO-CAT-016",
     "description_history": [
+      {
+        "event_id": "search-description-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Crawler-facing source description and citation access revised",
+        "responsible_service": "Museum of One",
+        "method": "Source-based metadata implementation and automated validation",
+        "date_kind": "Catalogue description event; not a publication or repository modification date",
+        "note": "Original repository description exposed visibly and in structured data; deposited title, dates, roles and rights retained. Byte-identical sibling PDF access URL supports citation discovery. Dataset distributions describe actual PDF files.",
+        "sources": [
+          "https://zenodo.org/records/19863851"
+        ]
+      },
       {
         "responsible_service": "Museum of One",
         "method": "Source-based automated description assistance",

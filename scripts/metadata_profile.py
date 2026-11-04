@@ -227,7 +227,7 @@ def validate_export_agreement(records, output_dir, origin=DEFAULT_ORIGIN):
     out = Path(output_dir)
     for record in records:
         rid = str(record['id'])
-        pdf = origin.rstrip('/') + '/assets/documents/' + rid + '.pdf' if record.get('reading_copy') else None
+        pdf = origin.rstrip('/') + '/items/' + rid + '.pdf' if record.get('reading_copy') else None
         model = build_citation_model(record, catalogue_url=origin.rstrip('/') + '/items/' + rid + '.html', pdf_url=pdf)
         expected = {'.csl.json': json.dumps(csl_json(model), sort_keys=True, ensure_ascii=False), '.bib': bibtex(model).strip(), '.ris': ris(model).strip()}
         for suffix, value in expected.items():

@@ -200,7 +200,7 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Digital Archive Library",
-          "item": "https://archive.museumofone.art/index.html"
+          "item": "https://archive.museumofone.art/"
         },
         {
           "@type": "ListItem",
@@ -313,6 +313,7 @@
       "publisher": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
+      "description": "This working paper develops a claim-specific criterion of historical answerability through engagement with Reiko Tomii’s scholarship on operation in postwar Japanese art. It asks when evidence concerning exhibition, documentation, and artistic organization requires an art-historical account to reconsider the boundary of the work it claims to explain. The principal case is Shiraga Kazuo’s Challenging Mud. Tomii’s accounts of material preparation and anticipated display are read beside Namiko Kunimoto’s analysis of action, object, agency, and selfhood. Further investigations address press presentation and photographic selection, Hi Red Center and GUN, conditions of authorization, and the differentiation of events and photographic records in museum cataloguing. The comparison does not presume a disagreement between Tomii and Kunimoto or equate evidence of preparation with complete predetermination. The method distinguishes attribution, justification, and historical accuracy. Before evaluating a challenge, it fixes a proposition’s referent, meaning, scope, certainty, and evidential basis. Retention, limitation, revision, and suspension identify possible consequences of evidence without becoming compulsory stages or an aesthetic scoring system. The analysis separates a supported preparation-display relation from stronger claims about intention and distinguishes documentation’s original public operation from the reach of its later historical testimony. The contribution is a disciplined account of inferential reach within the historical problems Tomii’s research makes visible. It also refines the application of restraint in Post-Interpretive Criticism: the amount of explanation cannot be prescribed before its evidential function is examined. This is a source-critical study of published arguments, not an independently inspected archival reconstruction or an empirical study of museum audiences. The criterion remains open to further cases and scholarly revision. Research Working Paper No. 1. Version 1.0. 10 pages. Independent working paper by Dorian Vale, developed following discussion and feedback from Reiko Tomii. Tomii is not a coauthor. Her feedback is not represented as endorsement or formal peer review. Private correspondence and meeting records are not reproduced. Research programme and detailed study overview: https://www.museumofone.art/reiko-tomii/",
       "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
       "exampleOfWork": {
         "@id": "https://doi.org/10.5281/zenodo.23428973"

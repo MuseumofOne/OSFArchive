@@ -31,6 +31,11 @@ class _SourceText(HTMLParser):
             self.parts.append(data)
 
 
+def repository_description_text(record):
+    source = record.get("source_description_html") or ""
+    return re.sub(r"\s+", " ", "".join(_SourceText(source).parts)).strip()
+
+
 def repository_description_html(record):
     source = record.get('source_description_html')
     if not source:
@@ -43,4 +48,4 @@ def repository_description_html(record):
             '<span class="source-label">Description supplied to Zenodo · Source transcription</span>'
             '<p>This description belongs to the saved repository metadata and may discuss other editions or dates. '
             'The bibliographic record above identifies the selected deposited edition. Formatting is converted to readable text.</p>'
-            '<details><summary>Read the complete repository description</summary>' + paragraphs + '</details></section>')
+            '<div class="repository-description-text">' + paragraphs + '</div></section>')

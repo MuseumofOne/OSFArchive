@@ -1,3 +1,5 @@
+**Current release: 1.12.2, 5 November 2026.** See [current release and validation](../DEPLOYMENT-STATUS.md). Earlier 1.12.1 preparation notes follow as history.
+
 # Shared native archive explorer — 1.12.1
 
 Prepared locally on 5 November 2026. The live theme remains 1.12.0 until a separately authorized publication. The current Ghost header, hero, introduction, section navigation and records/access note are retained. The shared explorer replaces the former separate search/collection/shelf sections beneath the introduction.

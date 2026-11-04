@@ -130,7 +130,7 @@
       }
     },
     {
-      "@type": "MediaObject",
+      "@type": "DataDownload",
       "@id": "https://archive.museumofone.art/items/20100139.html#file-1",
       "contentUrl": "https://zenodo.org/api/records/20100139/files/A%20Quantitative%20Analysis%20of%20Critical%20Posture%20in%20Art%20Writing,%201981%E2%80%932025%20(v.2).pdf/content",
       "name": "A Quantitative Analysis of Critical Posture in Art Writing, 1981–2025 (v.2).pdf",
@@ -153,7 +153,7 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Digital Archive Library",
-          "item": "https://archive.museumofone.art/index.html"
+          "item": "https://archive.museumofone.art/"
         },
         {
           "@type": "ListItem",
@@ -303,6 +303,7 @@
       "publisher": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
+      "description": "Title: A Quantitative Analysis of Critical Posture in Art Ariting, 1980-2025 (Dataset - 20 Critical Texts 1980–2025) Author:Dorian Vale Affiliation: Museum of One This dataset presents a quantitative diagnostic analysis of critical posture in contemporary art writing across a forty-five-year span (1980–2025). Using the Post-Interpretive Criticism (PIC) diagnostic framework, twenty influential texts drawn from journals, newspapers, magazines, institutional press releases, and exhibition discourse were coded sentence-by-sentence to examine how critical language positions itself in relation to artworks, viewers, and institutional authority. Five indices were applied: Rhetorical Density (RD), Interpretive Load Index (ILI), Viewer Displacement Ratio (VDR), Ethical Proximity Score (EPS), and Institutional Alignment Indicator (IAI). Rather than evaluating interpretive correctness or aesthetic value, the framework isolates how critical claims are produced—measuring the balance between descriptive encounter and explanatory force, the degree of viewer displacement, the presence or absence of linguistic restraint, and the extent of institutional mediation. The dataset demonstrates that high rhetorical intensity does not necessarily correlate with high interpretive extraction, and that ostensibly “plain” theoretical language frequently produces maximal displacement. Across historical periods, the results reveal recurring postures—verdict-driven criticism, theory-dominated explanation, affective populism, and market-aligned promotion—each identifiable through distinct metric profiles. The findings provide quantitative support for a central claim of Post-Interpretive Criticism: that the ethical stakes of art writing reside not in what criticism concludes, but in how closely it remains to the conditions of encounter. This dataset is offered as a reflective and exploratory diagnostic resource, not a prescriptive model, contributing a formal complement to phenomenological and post-hermeneutic approaches in contemporary aesthetics. This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and _Art as Truth: A Treatise_ (Q136329071), _Aesthetic Recursion Theory_ (Q136339843), The Journal of Post-Interpretive Criticism (Q136530009), Canon of Witnesses (Q136565881),Interpretive Load Index (ILI) (Q137709526), Viewer Displacement Ratio (VDR) (Q137709583) , Ethical Proximity Score (EPS) (Q137709600) , Institutional Alignment Indicator (IAI) (Q137709608), Post-Hermeneutic Phenomenology (Q137711946) ISSN 2819-7232 Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen. This name is used for all official publications, essays, and theoretical works indexed through DOI-linked repositories including Zenodo, OSF, PhilPapers, and SSRN. ORCID: 0009-0004-7737-5094",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "exampleOfWork": {
         "@id": "https://doi.org/10.5281/zenodo.18205642"
@@ -316,6 +317,11 @@
         },
         {
           "@id": "https://osf.io/zhnre/files/683cn#file"
+        }
+      ],
+      "distribution": [
+        {
+          "@id": "https://archive.museumofone.art/items/20100139.html#file-1"
         }
       ]
     },

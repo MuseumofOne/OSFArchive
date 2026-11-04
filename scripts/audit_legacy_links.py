@@ -149,7 +149,7 @@ def sitemap_inventory(sitemap_url, timeout):
         except ET.ParseError as exc:
             failures.append({'url':url, 'error':'Invalid sitemap XML: '+str(exc)})
             continue
-        urls = [el.text for el in root.iter() if el.tag.rsplit('}',1)[-1]=='loc' and el.text]
+        urls = [el.text for parent in root for el in parent if el.tag.rsplit('}',1)[-1]=='loc' and el.text]
         if root.tag.rsplit('}',1)[-1]=='sitemapindex':
             pending.extend(urls)
         else:

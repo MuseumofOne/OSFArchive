@@ -213,7 +213,7 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Digital Archive Library",
-          "item": "https://archive.museumofone.art/index.html"
+          "item": "https://archive.museumofone.art/"
         },
         {
           "@type": "ListItem",
@@ -301,6 +301,8 @@
         "Post-Interpretive Criticism: Volume II - Essays from the Field"
       ],
       "bookEdition": "First edition, 2025; selected repository release April 2026 (Museum of One publication record)",
+      "description": "Post-Interpretive Criticism: Volume II — Essays from the Field continues the formal articulation of a new movement in contemporary art thought: one rooted not in interpretation, but in presence. As the second major volume by Dorian Vale, this collection gathers eight pivotal essays that apply and expand the doctrines of Post-Interpretive Criticism (PIC)—a philosophical and aesthetic framework grounded in restraint, moral proximity, and the ethics of witnessing. Divided into two sections, the book offers: Part I — Canonical Essays: Deep explorations of works by Doris Salcedo, Zarina Hashmi, Kimsooja, and Ana Mendieta, each demonstrating how post-interpretive principles reveal new modes of custodial engagement with trauma, exile, stillness, and erasure. Part II — Pedagogical Essays: Practical tools and educational resources designed to teach and transmit PIC as a method. These essays guide readers through practices of restraint, witnessing, and language discipline, equipping students, curators, and viewers alike to approach art with greater reverence and ethical literacy. Together, these writings mark the maturation of a critical movement that refuses sensationalism, values silence, and honors the unspoken. This volume cements Dorian Vale’s position not only as the founder of Post-Interpretive Criticism, but as a leading voice in rethinking what it means to encounter art—not to explain it, but to stand beside it. Vale, Dorian. Post-Interpretive Criticism: Volume II — Essays from the Field. Museum of One, 2025. DOI: 10.5281/zenodo.17078846 First published by Museum of One in 2025. Stable work DOI: 10.5281/zenodo.17078846",
+      "image": "https://archive.museumofone.art/assets/essays-from-field.webp",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "exampleOfWork": {
         "@id": "https://doi.org/10.5281/zenodo.17078846"

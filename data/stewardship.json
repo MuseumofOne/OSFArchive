@@ -16,8 +16,8 @@
     },
     {
       "path": "data/catalogue.json",
-      "bytes": 294935,
-      "sha256": "4a7d78429f12154c7725ac0cd2d8aa37775ba28087af7e1b3be9c956a0f463b1",
+      "bytes": 307559,
+      "sha256": "5ff4c534b238d8c61712efdfa7b3a4b3fbbf2aa0511feb89e89114e425b24234",
       "role": "editorial_dataset"
     },
     {
@@ -196,8 +196,8 @@
     },
     {
       "path": "data/source/ghost-discovery.json",
-      "bytes": 1467262,
-      "sha256": "c5923b4f5576291edd5165e6f58b5f1e3c247283ebde63f71cc1a316fdbf73d0",
+      "bytes": 1467256,
+      "sha256": "5a3f1951424d6d91ebaa3d4626bf02f54e8c06455bf7c06a60cabeaeed3a5c71",
       "role": "repository_source_snapshot"
     },
     {
@@ -604,6 +604,63 @@
       "added": [],
       "changed": [],
       "inventory_sha256": "2594d98d709e8d209cf5cddc63d61b8be0fbe813f635e9149269a331b146f057"
+    },
+    {
+      "at": "2026-11-04T23:17:23Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 50,
+      "inventory_sha256": "e91712a3ebbca0e10fa0674df28665a0360d6891cc6c4fa1486eb15a8f1f87f5"
+    },
+    {
+      "at": "2026-11-04T23:17:23Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 50,
+      "checked_files": 50,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "e91712a3ebbca0e10fa0674df28665a0360d6891cc6c4fa1486eb15a8f1f87f5"
+    },
+    {
+      "at": "2026-11-04T23:23:43Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 50,
+      "inventory_sha256": "7d754b5f828c64c8f0a0d1975ba699484941bf210c1b379c5dedba59c5aeb9ee"
+    },
+    {
+      "at": "2026-11-04T23:23:43Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 50,
+      "checked_files": 50,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "7d754b5f828c64c8f0a0d1975ba699484941bf210c1b379c5dedba59c5aeb9ee"
+    },
+    {
+      "at": "2026-11-04T23:25:35Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 50,
+      "inventory_sha256": "7d754b5f828c64c8f0a0d1975ba699484941bf210c1b379c5dedba59c5aeb9ee"
+    },
+    {
+      "at": "2026-11-04T23:25:35Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 50,
+      "checked_files": 50,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "7d754b5f828c64c8f0a0d1975ba699484941bf210c1b379c5dedba59c5aeb9ee"
     }
   ],
   "scope": "Repository source snapshots, editorial JSON datasets, and original PDF access copies.",
@@ -616,10 +673,10 @@
     "upstream_sources": "Original deposits remain at Zenodo; website source is held by the site platform.",
     "offsite_backup_status": "Private Google Drive package uploaded, downloaded again, checksum matched and all restored content verified."
   },
-  "inventory_sha256": "2594d98d709e8d209cf5cddc63d61b8be0fbe813f635e9149269a331b146f057",
-  "baseline_created_at": "2026-11-04T22:54:33Z",
+  "inventory_sha256": "7d754b5f828c64c8f0a0d1975ba699484941bf210c1b379c5dedba59c5aeb9ee",
+  "baseline_created_at": "2026-11-04T23:25:35Z",
   "last_check": {
-    "at": "2026-11-04T22:56:31Z",
+    "at": "2026-11-04T23:25:35Z",
     "event": "fixity_check",
     "status": "passed",
     "algorithm": "SHA-256",
@@ -628,7 +685,7 @@
     "missing": [],
     "added": [],
     "changed": [],
-    "inventory_sha256": "2594d98d709e8d209cf5cddc63d61b8be0fbe813f635e9149269a331b146f057"
+    "inventory_sha256": "7d754b5f828c64c8f0a0d1975ba699484941bf210c1b379c5dedba59c5aeb9ee"
   },
   "backup": {
     "at": "2026-11-04T22:54:35Z",
