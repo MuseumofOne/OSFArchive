@@ -76,7 +76,7 @@
   if(!form||!results||!status||!container.dataset.indexSnapshot)return;
   const doc=container.ownerDocument,input=form.elements.namedItem('q'),kind=form.elements.namedItem('kind'),fulltext=form.elements.namedItem('fulltext');if(!input)return;
   container.dataset.researchDiscoveryMounted='true';let payload,passages,passagesPromise,passageFailure=false,shown=30;
-  const params=new URLSearchParams(doc.location.search);if(params.has('q'))input.value=params.get('q');if(kind&&params.has('kind'))kind.value=params.get('kind');if(fulltext)fulltext.checked=params.get('fulltext')==='1';
+  const params=new URLSearchParams(doc.location.search);if(params.has('q'))input.value=params.get('q');if(kind&&params.has('kind'))kind.value=params.get('kind');if(fulltext&&params.has('fulltext'))fulltext.checked=params.get('fulltext')==='1';
   const el=(tag,cls,text)=>{const node=doc.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node;};
   const destination=value=>resultURL(value,{origin:container.dataset.archiveOrigin||'https://archive.museumofone.art',pageURL:doc.location.href,localResults:container.dataset.localResults==='true'});
   const passageType=()=>!kind?.value||['publication','chapter','passage'].includes(kind.value);
