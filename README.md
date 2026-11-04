@@ -72,3 +72,5 @@ The repository was made public and Pages enabled on 4 November 2026 under explic
 ## Current validation and exports
 
 The build applies the local metadata application profile before publication and validates the generated outputs again. Item CSL-JSON, BibTeX, RIS, visible citations, applicable Scholar tags, qualified Dublin Core and JSON-LD derive from shared models. Typed relationship assertions, the relation register, combined graph, profile and machine-readable quality report are generated under `dist/metadata/`; the visible quality report is `metadata-quality.html`. Passing local gates establish the stated consistency and source checks, not external standards certification or guaranteed indexing.
+
+Current local update: [shared native explorer 1.12.1](docs/RELEASE-1.12.1.md). The matching Desktop candidate is prepared; public deployment remains 1.12.0.

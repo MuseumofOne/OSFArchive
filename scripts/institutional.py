@@ -57,7 +57,8 @@ def responsibility_section(r):
 def institutional_page(path,html,records,programmes):
  base='../' if '/' in path else ''
  html=html.replace('</head>',f'<link rel="stylesheet" href="{base}assets/institutional.css"><script defer src="{base}assets/institutional.js"></script></head>')
- html=re.sub(r'(<main id="main" class="shell">)(.*?)(</main>)',lambda m:m[1]+'<div class="archive-workspace">'+collection_tree(path,records,programmes)+'<div class="archive-workbench">'+m[2]+'</div></div>'+m[3],html,count=1,flags=re.S)
+ if path != 'index.html':
+  html=re.sub(r'(<main id="main" class="shell">)(.*?)(</main>)',lambda m:m[1]+'<div class="archive-workspace">'+collection_tree(path,records,programmes)+'<div class="archive-workbench">'+m[2]+'</div></div>'+m[3],html,count=1,flags=re.S)
  if path=='programmes.html':
   for programme in programmes:
    if programme.get('pirr_registry_url'):

@@ -7,6 +7,8 @@ from html import escape
 from pathlib import PurePosixPath
 from urllib.parse import quote, urlparse
 import re
+import os
+from explorer import render_explorer
 
 
 def e(value):
@@ -54,17 +56,6 @@ def _item_register(record, base):
     return banner, context
 
 
-def _overview(records, programmes):
-    groups = list(dict.fromkeys(r.get('collection') for r in records if r.get('collection')))
-    chapters = sum(len(r.get('contents', [])) for r in records)
-    entities = len({item['id'] for r in records for item in r.get('entity_links', [])})
-    opening = f'''<section class="registry-overview" aria-labelledby="registry-heading"><div class="registry-overview-title"><span class="register-label">Research catalogue / Museum of One</span><h1 id="registry-heading">The archive,<br><em>in context.</em></h1><p>Read the publications. Follow ideas, artworks and people through a connected record of independent inquiry.</p><form class="archive-entry-search" action="research-discovery.html" method="get" role="search"><label class="sr-only" for="archive-entry-query">Discover across the archive</label><input id="archive-entry-query" name="q" type="search" placeholder="A title, person, artwork or idea…"><button type="submit">Discover ↗</button></form></div><dl class="registry-totals"><div><dt>Publications</dt><dd>{len(records):02d}</dd></div><div><dt>Chapters &amp; essays</dt><dd>{chapters:02d}</dd></div><div><dt>Contextual entities</dt><dd>{entities:02d}</dd></div><div><dt>Research pathways</dt><dd>{len(programmes):02d}</dd></div></dl></section><section class="registry-index" aria-labelledby="registry-index-heading"><div class="registry-index-head"><h2 id="registry-index-heading">The collection register</h2><a href="catalogue.html">Browse publication records ↗</a></div>'''
-    for index, group in enumerate(groups):
-        matching = [r for r in records if r.get('collection') == group]
-        opening += f'<a class="registry-index-row" href="catalogue.html?collection={quote(group)}"><span class="register-sequence">{index+1:02d}</span><span><strong>{e(group)}</strong><small>Editorial arrangement / Item-level description</small></span><span class="register-range">{e(matching[0]["accession"])}<br>{len(matching):02d} described items</span><span aria-hidden="true">↗</span></a>'
-    return opening + '</section>'
-
-
 def archival_page(path, html, records, programmes):
     """Apply the registry presentation after experience.enhance_page."""
     base = '../' if '/' in path else ''
@@ -88,7 +79,8 @@ def archival_page(path, html, records, programmes):
     html = re.sub(r'<article class="catalogue-card"([^>]*)><a class="book-card" href="([^"]+)">', jacket, html)
 
     if path == 'index.html':
-        html = html.replace('<div class="archive-masthead">', _overview(records, programmes) + '<div class="archive-masthead">', 1)
+        html = html.replace('</head>', '<link rel="stylesheet" href="assets/archive-explorer.css"><script defer src="assets/research-discovery.js"></script><script defer src="assets/archive-explorer.js"></script></head>')
+        html = html.replace('<div class="archive-masthead">', render_explorer(records, programmes, os.environ.get('SITE_ORIGIN', 'https://archive.museumofone.art'), standalone=True) + '<div class="archive-masthead">', 1)
         html = html.replace('<h1>The record.<br><em>In context.</em></h1>', '<h2 class="archive-reading-title">Open a document.<br><em>Stay with its record.</em></h2>')
         html = html.replace('Digital Archive Library</span><span class="archive-masthead-aside">Museum of One / Catalogue edition 02', 'Digital reading room</span><span class="archive-masthead-aside">Publication files / Selected editions')
         html = html.replace('01 / The collected shelf', 'Item register / Selected publications').replace('<h2>Selected editions</h2>', '<h2>Selected item records</h2>')

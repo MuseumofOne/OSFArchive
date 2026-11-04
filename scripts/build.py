@@ -274,6 +274,9 @@ PASSAGES_V2=build_fulltext_index(RECORDS,ROOT,ORIGIN)
 write('metadata/research-discovery.v2.json',encode_index(DISCOVERY_V2))
 write('metadata/research-passages.v2.json',encode_index(PASSAGES_V2))
 paths+=build_discovery_page(write,layout,DISCOVERY_V2,ORIGIN)
+# Ghost consumes this partial from the exact same renderer as the homepage.
+from explorer import render_explorer
+write('integration/archive-explorer.hbs',render_explorer(RECORDS,PROGRAMMES,ORIGIN))
 write('metadata/metadata-profile.json',json.dumps(PROFILE,ensure_ascii=False,indent=2))
 write('metadata/relations.json',json.dumps(relation_register(ORIGIN),ensure_ascii=False,indent=2))
 write('metadata/relationships.json',json.dumps({'profile_version':PROFILE['version'],'assertions':[a for r in RECORDS for a in r['relationship_assertions']]+typed_entity_relationship_assertions(ENTITIES,ORIGIN)},ensure_ascii=False,indent=2))

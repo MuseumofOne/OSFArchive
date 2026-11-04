@@ -1,5 +1,7 @@
 # Current deployment — 4 November 2026
 
+**Local update:** shared explorer 1.12.1 is prepared in the current Desktop folder and T7 source. It is not published; the live deployment described below remains 1.12.0. See [shared explorer](docs/SHARED-EXPLORER.md).
+
 The archive and its native Ghost entrance are live. This publication was explicitly authorized after the earlier preparation hold.
 
 - Archive: https://archive.museumofone.art/

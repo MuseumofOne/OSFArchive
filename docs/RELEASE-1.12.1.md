@@ -1,0 +1,13 @@
+# Shared native explorer — 5 November 2026
+
+Implemented locally in the T7 archive and current Desktop theme, version 1.12.1. The live Ghost theme remains 1.12.0. No publication, installation, DNS change, CMS edit or Git push was performed for this update.
+
+The current Ghost header, hero, introductory text, section navigation and source/access note are preserved. The archive explorer beneath them uses the archive's paper palette, typography, collection tree, original publication covers and item register. Catalogue filters, sorting, shelf/list views, typed and passage discovery, saved records, CSV export, comparisons and an expanded reading space work in the page. Permanent archive destinations remain available throughout.
+
+The standalone archive and Ghost consume the same renderer, scoped CSS and controller. Eleven synchronized files are bound by checksums in the theme's docs/SHARED-EXPLORER-SYNC.json. Explicit navigation carries a saved list to the archive; it merges with existing selections. Back/reload preserve explorer state. Storage remains browser-local; this adds no account or continuous synchronization.
+
+Validation passed: 85 Python tests, 29 JavaScript tests including 40 retrieval benchmarks; static checks of 145 HTML files and 11,865 local links; theme deterministic build, integrity checks and its complete unit gate; GScan with zero errors and the inherited single versioned-reader warning. CUA checked actual templates rendered with fixture helpers and the standalone archive: 1440-pixel desktop and 390-pixel phone layouts, no horizontal overflow, collection/combined filters, exact DOI results, seven publication-passage matches, saved-list continuity, comparisons, Back/reload and keyboard return from expanded view. Four original cover images loaded successfully. Preview images and the machine-readable validation receipt are retained in the private release evidence and current Desktop audit folder.
+
+All 49 files in the preservation baseline remain unchanged. The default Ghost shell, author template and existing book-reader implementation match 1.12.0 byte-for-byte. Source dates and identifier qualifications remain visible; comparison tables explicitly scope source ISBN values rather than asserting format or edition allocation.
+
+The full pre-existing automated browser release gate was not executed, and 1.12.1 has not been installed in production. The packaged ZIP is a prepared review candidate; the ordinary production gate remains unchanged. The visual fixture has incomplete Ghost Portal settings, producing an unrelated Portal initialization error; no explorer error was observed. See [implementation and maintenance](SHARED-EXPLORER.md).

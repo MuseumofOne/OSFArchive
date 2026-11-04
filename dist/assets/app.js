@@ -9,9 +9,17 @@ const recordURL=r=>base+'items/'+encodeURIComponent(r.id)+'.html';
 const storageKey='museum-of-one-reading-list-v1';
 let saved=[],storageAvailable=true,selected=new Set(),discoveryPromise;
 try{saved=core.parseSaved(localStorage.getItem(storageKey));}catch{storageAvailable=false;}
+// Explicit explorer handoff merges this public reading list across origins.
+const incomingShelf=new URL(location.href),rawShelf=incomingShelf.searchParams.get('moo_shelf');
+if(rawShelf&&rawShelf.length<=2000&&/^\d+(?:,\d+)*$/.test(rawShelf)){
+ saved=[...new Set([...saved,...rawShelf.split(',')])].slice(0,200);
+ try{localStorage.setItem(storageKey,JSON.stringify(saved));}catch{storageAvailable=false;}
+ incomingShelf.searchParams.delete('moo_shelf');history.replaceState(null,'',incomingShelf.pathname+incomingShelf.search+incomingShelf.hash);
+}
+window.addEventListener('moo-reading-list-change',event=>{saved=core.parseSaved(JSON.stringify(event.detail));syncSaveButtons();if(document.querySelector('#reading-dialog')?.open)renderReading();});
 let toastTimer;
 function toast(message){const el=$('#archive-toast');if(!el)return;el.textContent=message;el.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('visible'),3000);}
-function persist(){try{localStorage.setItem(storageKey,JSON.stringify(saved));}catch{storageAvailable=false;}syncSaveButtons();}
+function persist(){try{localStorage.setItem(storageKey,JSON.stringify(saved));}catch{storageAvailable=false;}syncSaveButtons();if(window.CustomEvent&&window.dispatchEvent)window.dispatchEvent(new window.CustomEvent('moo-reading-list-change',{detail:saved.slice()}));}
 function syncSaveButtons(){
  $$('[data-reading-count]').forEach(el=>el.textContent=saved.length);
  $$('[data-save]').forEach(button=>{const active=saved.includes(button.dataset.save);button.setAttribute('aria-pressed',String(active));button.classList.toggle('is-saved',active);button.innerHTML=active?'✓ Saved':'＋ Save'+(button.closest('.item-head')?' to reading list':'');});
