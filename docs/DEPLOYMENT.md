@@ -1,5 +1,7 @@
 # Deployment, installation and rollback
 
+**Current publication:** the archive and native Ghost 1.12.0 entrance were published on 4 November 2026 after explicit authorization. See [current deployment status](../DEPLOYMENT-STATUS.md) for live addresses, HTTPS evidence, tests and the exact CMS scope. The staging authorization notes below record the earlier preparation phase; they are not a current deployment hold.
+
 ## Staging status and authorization
 
 The implementation is staged on `integration/ghost-archive-consolidation`; production deployment, DNS changes and overwriting live services are not authorized by the current task. The commands below are a runbook for a later authorized release, not actions already performed.
