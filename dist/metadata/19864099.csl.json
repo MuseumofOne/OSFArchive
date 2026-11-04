@@ -1,0 +1,23 @@
+{
+  "id": "19864099",
+  "type": "book",
+  "title": "Post-Interpretive Criticism: Volume I - The Foundational Essays",
+  "author": [
+    {
+      "family": "Vale",
+      "given": "Dorian"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2026,
+        4
+      ]
+    ]
+  },
+  "DOI": "10.5281/zenodo.19864099",
+  "URL": "https://doi.org/10.5281/zenodo.19864099",
+  "publisher": "Museum of One",
+  "version": "Repository release v5 (source description)"
+}

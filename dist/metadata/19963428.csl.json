@@ -1,0 +1,24 @@
+{
+  "id": "19963428",
+  "type": "article-journal",
+  "title": "The Curator's Shadow: The Unspoken Authorship Behind Neutrality.",
+  "author": [
+    {
+      "family": "Vale",
+      "given": "Dorian"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2025,
+        5,
+        1
+      ]
+    ]
+  },
+  "DOI": "10.5281/zenodo.19963428",
+  "URL": "https://doi.org/10.5281/zenodo.19963428",
+  "publisher": "Museum of One",
+  "container-title": "Journal of Post-Interpretive Criticism"
+}

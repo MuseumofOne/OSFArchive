@@ -1,0 +1,75 @@
+{
+  "scope": "Explicit later local description events; record_ids are fixed to actual affected records.",
+  "events": [
+    {
+      "event_id": "metadata-profile-3.0-2026-11-04",
+      "date": "2026-11-04",
+      "record_ids": [
+        "19864099",
+        "19864115",
+        "23395654",
+        "20383926",
+        "23430200",
+        "23428974",
+        "21715085",
+        "21241866",
+        "20593003",
+        "19963428",
+        "20100136",
+        "20100139",
+        "21786998",
+        "19863790",
+        "19863836",
+        "19863851"
+      ],
+      "action": "Unify graph identities and qualify exported relationships and citations",
+      "note": "Local graph projection now uses one contextual identity per entity, distinguishes work-level institutional matches from selected-edition links, retains title-level ISBN uncertainty, and derives citations from the source title. Typed relation assertions and a versioned validation profile are introduced. No publication date, original source snapshot or PDF changed.",
+      "fields": [
+        "metadata_profile",
+        "relationship_assertions",
+        "identity",
+        "institutional_match_scope",
+        "citation_projection"
+      ],
+      "responsible_service": "Museum of One Digital Archive Library",
+      "method": "Source-based metadata implementation and regression validation",
+      "date_kind": "Catalogue description event; not a publication, source review or acquisition date",
+      "sources": [
+        "metadata/metadata-profile.json"
+      ]
+    },
+    {
+      "event_id": "orcid-public-profile-review-2026-11-04",
+      "date": "2026-11-04",
+      "record_ids": [
+        "19864099",
+        "19864115",
+        "23395654",
+        "20383926",
+        "23430200",
+        "23428974",
+        "21715085",
+        "21241866",
+        "20593003",
+        "19963428",
+        "20100136",
+        "20100139",
+        "21786998",
+        "19863790",
+        "19863836",
+        "19863851"
+      ],
+      "action": "Record inspected public ORCID profile evidence",
+      "note": "The official ORCID public person API returned the credited name Dorian Vale and the Museum of One website. This confirms a matching public profile, not independently verified biographical or affiliation claims. Original creator arrays and source snapshots are unchanged.",
+      "fields": [
+        "orcid_authority"
+      ],
+      "responsible_service": "Museum of One Digital Archive Library",
+      "method": "Read-only official public API inspection",
+      "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
+      "sources": [
+        "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+      ]
+    }
+  ]
+}

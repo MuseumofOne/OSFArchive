@@ -9,7 +9,7 @@ import xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from enrich import enrich_record, date_precision, isbn_details
-from metadata import build_assertions, build_graph, build_dc
+from metadata import CAT, DCT, build_assertions, build_graph, build_dc
 
 
 class MetadataBoundaries(unittest.TestCase):
@@ -100,6 +100,41 @@ class MetadataBoundaries(unittest.TestCase):
         result=self.enrich(self.records[0])
         self.assertTrue(result['identifier_validation']['orcid']['checksum_valid'])
         self.assertIn('not a live registry verification',result['identifier_validation']['orcid']['note'])
+
+    def test_review_repository_and_local_lifecycle_dates_remain_separate(self):
+        record=self.enrich(self.by_id['19864099'])
+        record['date']='2026-04'  # Edition date precision must remain unchanged.
+        record['source_review']='2026-11-04'
+        for key in ('record_created','record_modified'):
+            record.pop(key,None)
+        nodes=self.graph(record)
+        catalogue=next(node for node in nodes.values() if node['@id'].endswith('#catalogue-record'))
+        page=next(node for node in nodes.values() if node['@id'].endswith('#webpage'))
+        source=nodes[record['zenodo_url']]
+        edition=nodes['https://doi.org/'+record['doi']]
+        self.assertNotIn('dateCreated',catalogue)
+        self.assertNotIn('dateModified',catalogue)
+        self.assertEqual(page['lastReviewed'],'2026-11-04')
+        self.assertEqual(source['dateCreated'],record['source_created'])
+        self.assertEqual(source['dateModified'],record['source_modified'])
+        self.assertEqual(edition['datePublished'],'2026-04')
+        self.assertNotIn('dateCreated',edition)
+        self.assertNotIn('dateModified',edition)
+        record['record_created']='2026-11-02'
+        record['record_modified']='2026-11-03'
+        nodes=self.graph(record)
+        catalogue=next(node for node in nodes.values() if node['@id'].endswith('#catalogue-record'))
+        self.assertEqual(catalogue['dateCreated'],'2026-11-02')
+        self.assertEqual(catalogue['dateModified'],'2026-11-03')
+        xml=ET.fromstring(build_dc(record))
+        self.assertEqual(xml.findtext('{'+DCT+'}issued'),'2026-04')
+        self.assertIsNone(xml.find('{'+DCT+'}created'))
+        self.assertIsNone(xml.find('{'+DCT+'}modified'))
+        for term,field in [('repositoryRecordCreated','source_created'),('repositoryRecordModified','source_modified'),('recordCreated','record_created'),('recordModified','record_modified'),('sourceReviewDate','source_review')]:
+            self.assertEqual(xml.findtext('{'+CAT+'}'+term),record[field])
+        assertions={item['field']:item for item in build_assertions(record)}
+        self.assertEqual(assertions['record_created']['status'],'local_catalogue_lifecycle')
+        self.assertEqual(assertions['source_review']['status'],'catalogue_source_review')
 
 
 if __name__=='__main__':

@@ -451,8 +451,8 @@
   "authority_links": [],
   "metadata_profile": {
     "name": "Museum of One source-qualified catalogue profile",
-    "version": "2",
-    "note": "Local application profile using schema.org and qualified Dublin Core; not an archival standards certification.",
+    "version": "3.0.0",
+    "url": "https://archive.museumofone.art/metadata/metadata-profile.json",
     "source_snapshot_preserved": true
   },
   "reading_copy": {
@@ -650,6 +650,20 @@
       "reviewed": "2026-11-04"
     },
     {
+      "field": "record_modified",
+      "value": "2026-11-04",
+      "status": "derived_from_description_history",
+      "note": "Latest documented local description event; not a publication, repository or source-review date.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_review",
+      "value": "2026-11-04",
+      "status": "catalogue_source_review",
+      "note": "Review of descriptive sources; not the creation or modification date of the work or repository record.",
+      "reviewed": "2026-11-04"
+    },
+    {
       "field": "author",
       "value": "Dorian Vale",
       "status": "institutional_context",
@@ -671,6 +685,27 @@
       "status": "source_linked_identifier",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "note": "Creator identifier supplied by the linked sources; no affiliation or endorsement is inferred.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "orcid_authority",
+      "value": {
+        "scheme": "ORCID",
+        "value": "0009-0004-7737-5094",
+        "url": "https://orcid.org/0009-0004-7737-5094",
+        "status": "public_orcid_profile_inspected",
+        "evidence_urls": [
+          "https://www.museumofone.art/archives-scholarly-infrastructure/",
+          "https://eprints.rclis.org/47182/",
+          "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+        ],
+        "access_note": "Public ORCID v3 person API returned HTTP 200 on 4 November 2026. Credit name Dorian Vale and the Museum of One website URL match the local author record. Profile names and links are user-supplied; affiliation, biography and endorsement are not independently verified.",
+        "reviewed": "2026-11-04",
+        "evidence_receipt": "data/source/authority-review-2026-11-04.json"
+      },
+      "status": "public_orcid_profile_inspected",
+      "source_url": "https://orcid.org/0009-0004-7737-5094",
+      "note": "Public ORCID v3 person API returned HTTP 200 on 4 November 2026. Credit name Dorian Vale and the Museum of One website URL match the local author record. Profile names and links are user-supplied; affiliation, biography and endorsement are not independently verified.",
       "reviewed": "2026-11-04"
     },
     {
@@ -862,11 +897,35 @@
         "entity_type": "Person",
         "relation": "author",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "variants": [
+          "Vale, Dorian"
+        ],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:c738640c4b8a76eef0063558a2c418eda9ea7de721b3586f2294df3c471a2643",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#authored-by",
+        "object": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The matching institutional publication record credits Dorian Vale as author."
+      }
     },
     {
       "field": "entity_link:museum-of-one:publisher",
@@ -876,11 +935,36 @@
         "entity_type": "Organization",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "variants": [
+          "MuseumofOne",
+          "MUSEUM OF ONE"
+        ],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:cf97e96b4a5b895a36aa641a8f00a239a30775d1ee98f2c306bc0af4bfb28caa",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#published-by",
+        "object": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      }
     },
     {
       "field": "entity_link:doris-salcedo:artist discussed",
@@ -890,11 +974,33 @@
         "entity_type": "Person",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay discusses Atrabiliarios as a case of the continuing effect of an encounter."
+        "note": "The essay discusses Atrabiliarios as a case of the continuing effect of an encounter.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:474b860c7c23dcbec43a08fe2573b5bd61b3c95d573a92887e650398e5f912c0",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+        "object": "https://archive.museumofone.art/entities/doris-salcedo.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay discusses Atrabiliarios as a case of the continuing effect of an encounter."
+      }
     },
     {
       "field": "entity_link:zarina-hashmi:artist discussed",
@@ -904,11 +1010,33 @@
         "entity_type": "Person",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay discusses Home Is a Foreign Place."
+        "note": "The essay discusses Home Is a Foreign Place.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:8fddd62abf3006b54df8b026ac77a03d4614dc71cfe315ae0f83d82554d5924a",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+        "object": "https://archive.museumofone.art/entities/zarina-hashmi.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay discusses Home Is a Foreign Place."
+      }
     },
     {
       "field": "entity_link:teresa-margolles:artist discussed",
@@ -918,11 +1046,33 @@
         "entity_type": "Person",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay discusses En el aire."
+        "note": "The essay discusses En el aire.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:3f687e931821937c4e35c3edd6aa7a6e3384448ae7bdde54a0b05681916c47eb",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+        "object": "https://archive.museumofone.art/entities/teresa-margolles.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay discusses En el aire."
+      }
     },
     {
       "field": "entity_link:marina-abramovic:artist discussed",
@@ -932,11 +1082,33 @@
         "entity_type": "Person",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay discusses the performance The Artist Is Present."
+        "note": "The essay discusses the performance The Artist Is Present.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:dad7b40064ef229c0dab838dd489af972beef5e77024e4b22c23a6f53b0cf856",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+        "object": "https://archive.museumofone.art/entities/marina-abramovic.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay discusses the performance The Artist Is Present."
+      }
     },
     {
       "field": "entity_link:christian-boltanski:artist discussed",
@@ -946,11 +1118,33 @@
         "entity_type": "Person",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay discusses Reserve of Dead Swiss."
+        "note": "The essay discusses Reserve of Dead Swiss.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:21096e4a5526fbc242d7cf36c7c480986820c6aaed09bcf7dcfd1fee009cbbec",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+        "object": "https://archive.museumofone.art/entities/christian-boltanski.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay discusses Reserve of Dead Swiss."
+      }
     },
     {
       "field": "entity_link:araya-rasdjarmrearnsook:artist discussed",
@@ -960,11 +1154,33 @@
         "entity_type": "Person",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay discusses The Class."
+        "note": "The essay discusses The Class.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:9872f180ff05c53228dd77157b18844d56100ba59ebcc0d70c4c157473d72d16",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+        "object": "https://archive.museumofone.art/entities/araya-rasdjarmrearnsook.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay discusses The Class."
+      }
     },
     {
       "field": "entity_link:ana-mendieta:artist discussed",
@@ -974,11 +1190,33 @@
         "entity_type": "Person",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay discusses the Silueta Series."
+        "note": "The essay discusses the Silueta Series.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:ea850f4d9bca161190a2baa563085416daa312611637783fac1a3d96f0350d16",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+        "object": "https://archive.museumofone.art/entities/ana-mendieta.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay discusses the Silueta Series."
+      }
     },
     {
       "field": "entity_link:atrabiliarios:artwork discussed",
@@ -988,11 +1226,33 @@
         "entity_type": "Artwork",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay explicitly attributes the installation to Doris Salcedo."
+        "note": "The essay explicitly attributes the installation to Doris Salcedo.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:b28d13a40a140b31bc2d8290a52dfc52aa8a9950cd91ebfda810afc4546d3a08",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+        "object": "https://archive.museumofone.art/entities/atrabiliarios.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay explicitly attributes the installation to Doris Salcedo."
+      }
     },
     {
       "field": "entity_link:home-is-a-foreign-place:artwork discussed",
@@ -1002,11 +1262,33 @@
         "entity_type": "Artwork",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay explicitly attributes the woodcut portfolio to Zarina Hashmi."
+        "note": "The essay explicitly attributes the woodcut portfolio to Zarina Hashmi.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:02652b31bb5d5a88507e7b0d29e35fe00c25d5ede293c24dd4fcee72460c6474",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+        "object": "https://archive.museumofone.art/entities/home-is-a-foreign-place.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay explicitly attributes the woodcut portfolio to Zarina Hashmi."
+      }
     },
     {
       "field": "entity_link:en-el-aire:artwork discussed",
@@ -1016,11 +1298,33 @@
         "entity_type": "Artwork",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay explicitly attributes the installation to Teresa Margolles."
+        "note": "The essay explicitly attributes the installation to Teresa Margolles.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:3bd893581ecbb8be077f8c048b1cc44a55121944620dd4f6a7a0046d1e8ad4d4",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+        "object": "https://archive.museumofone.art/entities/en-el-aire.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay explicitly attributes the installation to Teresa Margolles."
+      }
     },
     {
       "field": "entity_link:the-artist-is-present:artwork discussed",
@@ -1030,11 +1334,33 @@
         "entity_type": "Artwork",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay explicitly attributes the performance to Marina Abramović."
+        "note": "The essay explicitly attributes the performance to Marina Abramović.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:a819aff6aca64c3466985b818d16118bfdbee06aa5c5c758d127c782f28e0703",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+        "object": "https://archive.museumofone.art/entities/the-artist-is-present.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay explicitly attributes the performance to Marina Abramović."
+      }
     },
     {
       "field": "entity_link:reserve-of-dead-swiss:artwork discussed",
@@ -1044,11 +1370,33 @@
         "entity_type": "Artwork",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay explicitly attributes the work to Christian Boltanski."
+        "note": "The essay explicitly attributes the work to Christian Boltanski.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:f91e2df2f27a7426017d385a90b87341daec09a8d9401fb65e764fd1da9edbb9",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+        "object": "https://archive.museumofone.art/entities/reserve-of-dead-swiss.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay explicitly attributes the work to Christian Boltanski."
+      }
     },
     {
       "field": "entity_link:the-class:artwork discussed",
@@ -1058,11 +1406,33 @@
         "entity_type": "Artwork",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay explicitly attributes the work to Araya Rasdjarmrearnsook."
+        "note": "The essay explicitly attributes the work to Araya Rasdjarmrearnsook.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:8e0687e38978fcc4ed59835c61d1c27d085fc04684e62bef0acbf0a7604089e0",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+        "object": "https://archive.museumofone.art/entities/the-class.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay explicitly attributes the work to Araya Rasdjarmrearnsook."
+      }
     },
     {
       "field": "entity_link:silueta-series:artwork discussed",
@@ -1072,11 +1442,33 @@
         "entity_type": "Artwork",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay explicitly attributes this series to Ana Mendieta. This is a series-level contextual record."
+        "note": "The essay explicitly attributes this series to Ana Mendieta. This is a series-level contextual record.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:5ae1c30c88830d4eaf1c37329db828968c29f2e59c25d903963a623f61f99c31",
+        "subject": "https://archive.museumofone.art/items/19863836.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+        "object": "https://archive.museumofone.art/entities/silueta-series.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay explicitly attributes this series to Ana Mendieta. This is a series-level contextual record."
+      }
     },
     {
       "field": "controlled_subjects",
@@ -1201,8 +1593,7 @@
       ],
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Local preferred terms with definitions and synonyms. External alignment is scoped in the vocabulary register.",
-      "reviewed": "2026-11-04"
+      "note": "Local preferred terms with definitions and synonyms. External alignment is scoped in the vocabulary register."
     },
     {
       "field": "genre_terms",
@@ -1247,8 +1638,7 @@
       ],
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Local resource-genre classification. Digital file format is recorded separately.",
-      "reviewed": "2026-11-04"
+      "note": "Local resource-genre classification. Digital file format is recorded separately."
     },
     {
       "field": "archival_context",
@@ -1257,7 +1647,7 @@
         "catalogue_snapshot_date": "2026-11-04",
         "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
         "record_category": "Published library and repository material",
-        "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+        "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a previous catalogue accession.",
         "source_repository": {
           "name": "Zenodo",
           "record_url": "https://zenodo.org/records/19863836"
@@ -1305,8 +1695,7 @@
       },
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Provenance records what is documented and leaves unknown custody and original order explicit.",
-      "reviewed": "2026-11-04"
+      "note": "Provenance records what is documented and leaves unknown custody and original order explicit."
     },
     {
       "field": "description_history",
@@ -1367,12 +1756,45 @@
           "sources": [
             "policies.html"
           ]
+        },
+        {
+          "event_id": "metadata-profile-3.0-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Unify graph identities and qualify exported relationships and citations",
+          "note": "Local graph projection now uses one contextual identity per entity, distinguishes work-level institutional matches from selected-edition links, retains title-level ISBN uncertainty, and derives citations from the source title. Typed relation assertions and a versioned validation profile are introduced. No publication date, original source snapshot or PDF changed.",
+          "fields": [
+            "metadata_profile",
+            "relationship_assertions",
+            "identity",
+            "institutional_match_scope",
+            "citation_projection"
+          ],
+          "responsible_service": "Museum of One Digital Archive Library",
+          "method": "Source-based metadata implementation and regression validation",
+          "date_kind": "Catalogue description event; not a publication, source review or acquisition date",
+          "sources": [
+            "metadata/metadata-profile.json"
+          ]
+        },
+        {
+          "event_id": "orcid-public-profile-review-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Record inspected public ORCID profile evidence",
+          "note": "The official ORCID public person API returned the credited name Dorian Vale and the Museum of One website. This confirms a matching public profile, not independently verified biographical or affiliation claims. Original creator arrays and source snapshots are unchanged.",
+          "fields": [
+            "orcid_authority"
+          ],
+          "responsible_service": "Museum of One Digital Archive Library",
+          "method": "Read-only official public API inspection",
+          "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
+          "sources": [
+            "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+          ]
         }
       ],
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Catalogue description events; these are not work publication dates or acquisition dates.",
-      "reviewed": "2026-11-04"
+      "note": "Catalogue description events; these are not work publication dates or acquisition dates."
     },
     {
       "field": "pirr_references",
@@ -1398,6 +1820,355 @@
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
       "status": "institutional_context_relationship",
       "note": "PIRR project IDs and programme references identify research records, not publication versions or independent chapter deposits."
+    },
+    {
+      "field": "relationship_assertions",
+      "value": [
+        {
+          "id": "urn:museum-of-one:assertion:c738640c4b8a76eef0063558a2c418eda9ea7de721b3586f2294df3c471a2643",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#authored-by",
+          "object": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The matching institutional publication record credits Dorian Vale as author."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:cf97e96b4a5b895a36aa641a8f00a239a30775d1ee98f2c306bc0af4bfb28caa",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#published-by",
+          "object": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:474b860c7c23dcbec43a08fe2573b5bd61b3c95d573a92887e650398e5f912c0",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+          "object": "https://archive.museumofone.art/entities/doris-salcedo.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay discusses Atrabiliarios as a case of the continuing effect of an encounter."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:8fddd62abf3006b54df8b026ac77a03d4614dc71cfe315ae0f83d82554d5924a",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+          "object": "https://archive.museumofone.art/entities/zarina-hashmi.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay discusses Home Is a Foreign Place."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:3f687e931821937c4e35c3edd6aa7a6e3384448ae7bdde54a0b05681916c47eb",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+          "object": "https://archive.museumofone.art/entities/teresa-margolles.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay discusses En el aire."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:dad7b40064ef229c0dab838dd489af972beef5e77024e4b22c23a6f53b0cf856",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+          "object": "https://archive.museumofone.art/entities/marina-abramovic.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay discusses the performance The Artist Is Present."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:21096e4a5526fbc242d7cf36c7c480986820c6aaed09bcf7dcfd1fee009cbbec",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+          "object": "https://archive.museumofone.art/entities/christian-boltanski.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay discusses Reserve of Dead Swiss."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:9872f180ff05c53228dd77157b18844d56100ba59ebcc0d70c4c157473d72d16",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+          "object": "https://archive.museumofone.art/entities/araya-rasdjarmrearnsook.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay discusses The Class."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:ea850f4d9bca161190a2baa563085416daa312611637783fac1a3d96f0350d16",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+          "object": "https://archive.museumofone.art/entities/ana-mendieta.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay discusses the Silueta Series."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:b28d13a40a140b31bc2d8290a52dfc52aa8a9950cd91ebfda810afc4546d3a08",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+          "object": "https://archive.museumofone.art/entities/atrabiliarios.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay explicitly attributes the installation to Doris Salcedo."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:02652b31bb5d5a88507e7b0d29e35fe00c25d5ede293c24dd4fcee72460c6474",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+          "object": "https://archive.museumofone.art/entities/home-is-a-foreign-place.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay explicitly attributes the woodcut portfolio to Zarina Hashmi."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:3bd893581ecbb8be077f8c048b1cc44a55121944620dd4f6a7a0046d1e8ad4d4",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+          "object": "https://archive.museumofone.art/entities/en-el-aire.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay explicitly attributes the installation to Teresa Margolles."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:a819aff6aca64c3466985b818d16118bfdbee06aa5c5c758d127c782f28e0703",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+          "object": "https://archive.museumofone.art/entities/the-artist-is-present.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay explicitly attributes the performance to Marina Abramović."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:f91e2df2f27a7426017d385a90b87341daec09a8d9401fb65e764fd1da9edbb9",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+          "object": "https://archive.museumofone.art/entities/reserve-of-dead-swiss.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay explicitly attributes the work to Christian Boltanski."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:8e0687e38978fcc4ed59835c61d1c27d085fc04684e62bef0acbf0a7604089e0",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+          "object": "https://archive.museumofone.art/entities/the-class.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay explicitly attributes the work to Araya Rasdjarmrearnsook."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:5ae1c30c88830d4eaf1c37329db828968c29f2e59c25d903963a623f61f99c31",
+          "subject": "https://archive.museumofone.art/items/19863836.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+          "object": "https://archive.museumofone.art/entities/silueta-series.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay explicitly attributes this series to Ana Mendieta. This is a series-level contextual record."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:baa1b40ea57b447b4aced4a214c9d5d9635e59823cff77f11854eb8cbfe22105",
+          "subject": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#describes",
+          "object": "https://archive.museumofone.art/items/19863836.html#work",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "source_location": {
+            "kind": "metadata_field",
+            "field": "linked_zenodo_dois",
+            "values": [
+              "10.5281/zenodo.17076535"
+            ]
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "Exact-edition matching requires the selected DOI in the reviewed page metadata; other matches retain their wider scope."
+        }
+      ],
+      "status": "typed_evidence_projection",
+      "note": "Stable, typed assertions retain source scope and explicit unknown review metadata."
     },
     {
       "field": "reading_copy",
@@ -1442,7 +2213,11 @@
       "entity_type": "Person",
       "relation": "author",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The matching institutional publication record credits Dorian Vale as author."
+      "note": "The matching institutional publication record credits Dorian Vale as author.",
+      "variants": [
+        "Vale, Dorian"
+      ],
+      "evidence_scope": "work"
     },
     {
       "id": "museum-of-one",
@@ -1450,7 +2225,12 @@
       "entity_type": "Organization",
       "relation": "publisher",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+      "variants": [
+        "MuseumofOne",
+        "MUSEUM OF ONE"
+      ],
+      "evidence_scope": "work"
     },
     {
       "id": "doris-salcedo",
@@ -1458,7 +2238,9 @@
       "entity_type": "Person",
       "relation": "artist discussed",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The essay discusses Atrabiliarios as a case of the continuing effect of an encounter."
+      "note": "The essay discusses Atrabiliarios as a case of the continuing effect of an encounter.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "zarina-hashmi",
@@ -1466,7 +2248,9 @@
       "entity_type": "Person",
       "relation": "artist discussed",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The essay discusses Home Is a Foreign Place."
+      "note": "The essay discusses Home Is a Foreign Place.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "teresa-margolles",
@@ -1474,7 +2258,9 @@
       "entity_type": "Person",
       "relation": "artist discussed",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The essay discusses En el aire."
+      "note": "The essay discusses En el aire.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "marina-abramovic",
@@ -1482,7 +2268,9 @@
       "entity_type": "Person",
       "relation": "artist discussed",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The essay discusses the performance The Artist Is Present."
+      "note": "The essay discusses the performance The Artist Is Present.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "christian-boltanski",
@@ -1490,7 +2278,9 @@
       "entity_type": "Person",
       "relation": "artist discussed",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The essay discusses Reserve of Dead Swiss."
+      "note": "The essay discusses Reserve of Dead Swiss.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "araya-rasdjarmrearnsook",
@@ -1498,7 +2288,9 @@
       "entity_type": "Person",
       "relation": "artist discussed",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The essay discusses The Class."
+      "note": "The essay discusses The Class.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "ana-mendieta",
@@ -1506,7 +2298,9 @@
       "entity_type": "Person",
       "relation": "artist discussed",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The essay discusses the Silueta Series."
+      "note": "The essay discusses the Silueta Series.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "atrabiliarios",
@@ -1514,7 +2308,9 @@
       "entity_type": "Artwork",
       "relation": "artwork discussed",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The essay explicitly attributes the installation to Doris Salcedo."
+      "note": "The essay explicitly attributes the installation to Doris Salcedo.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "home-is-a-foreign-place",
@@ -1522,7 +2318,9 @@
       "entity_type": "Artwork",
       "relation": "artwork discussed",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The essay explicitly attributes the woodcut portfolio to Zarina Hashmi."
+      "note": "The essay explicitly attributes the woodcut portfolio to Zarina Hashmi.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "en-el-aire",
@@ -1530,7 +2328,9 @@
       "entity_type": "Artwork",
       "relation": "artwork discussed",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The essay explicitly attributes the installation to Teresa Margolles."
+      "note": "The essay explicitly attributes the installation to Teresa Margolles.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "the-artist-is-present",
@@ -1538,7 +2338,9 @@
       "entity_type": "Artwork",
       "relation": "artwork discussed",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The essay explicitly attributes the performance to Marina Abramović."
+      "note": "The essay explicitly attributes the performance to Marina Abramović.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "reserve-of-dead-swiss",
@@ -1546,7 +2348,9 @@
       "entity_type": "Artwork",
       "relation": "artwork discussed",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The essay explicitly attributes the work to Christian Boltanski."
+      "note": "The essay explicitly attributes the work to Christian Boltanski.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "the-class",
@@ -1554,7 +2358,9 @@
       "entity_type": "Artwork",
       "relation": "artwork discussed",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The essay explicitly attributes the work to Araya Rasdjarmrearnsook."
+      "note": "The essay explicitly attributes the work to Araya Rasdjarmrearnsook.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "silueta-series",
@@ -1562,7 +2368,9 @@
       "entity_type": "Artwork",
       "relation": "artwork discussed",
       "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-      "note": "The essay explicitly attributes this series to Ana Mendieta. This is a series-level contextual record."
+      "note": "The essay explicitly attributes this series to Ana Mendieta. This is a series-level contextual record.",
+      "variants": [],
+      "evidence_scope": "work"
     }
   ],
   "contents": [],
@@ -1782,14 +2590,61 @@
       "sources": [
         "policies.html"
       ]
+    },
+    {
+      "event_id": "metadata-profile-3.0-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Unify graph identities and qualify exported relationships and citations",
+      "note": "Local graph projection now uses one contextual identity per entity, distinguishes work-level institutional matches from selected-edition links, retains title-level ISBN uncertainty, and derives citations from the source title. Typed relation assertions and a versioned validation profile are introduced. No publication date, original source snapshot or PDF changed.",
+      "fields": [
+        "metadata_profile",
+        "relationship_assertions",
+        "identity",
+        "institutional_match_scope",
+        "citation_projection"
+      ],
+      "responsible_service": "Museum of One Digital Archive Library",
+      "method": "Source-based metadata implementation and regression validation",
+      "date_kind": "Catalogue description event; not a publication, source review or acquisition date",
+      "sources": [
+        "metadata/metadata-profile.json"
+      ]
+    },
+    {
+      "event_id": "orcid-public-profile-review-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Record inspected public ORCID profile evidence",
+      "note": "The official ORCID public person API returned the credited name Dorian Vale and the Museum of One website. This confirms a matching public profile, not independently verified biographical or affiliation claims. Original creator arrays and source snapshots are unchanged.",
+      "fields": [
+        "orcid_authority"
+      ],
+      "responsible_service": "Museum of One Digital Archive Library",
+      "method": "Read-only official public API inspection",
+      "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
+      "sources": [
+        "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+      ]
     }
   ],
+  "record_modified": "2026-11-04",
+  "record_modified_provenance": {
+    "status": "derived_from_description_history",
+    "event_ids": [
+      "public-source-description-2026-11-04",
+      "qualified-description-2026-11-04",
+      "access-copy-verification-2026-11-04",
+      "description-policy-1.0-2026-11-04",
+      "metadata-profile-3.0-2026-11-04",
+      "orcid-public-profile-review-2026-11-04"
+    ],
+    "note": "Latest documented local description event; not a publication, repository or source-review date."
+  },
   "archival_context": {
     "description_profile": "moo-description-policy-1.0",
     "catalogue_snapshot_date": "2026-11-04",
     "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
     "record_category": "Published library and repository material",
-    "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+    "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a previous catalogue accession.",
     "source_repository": {
       "name": "Zenodo",
       "record_url": "https://zenodo.org/records/19863836"
@@ -1860,5 +2715,371 @@
     "edition_doi": "10.5281/zenodo.19863836",
     "zenodo_record_id": "19863836",
     "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication."
+  },
+  "metadata_origin": "https://archive.museumofone.art",
+  "identity": {
+    "work": "https://archive.museumofone.art/items/19863836.html#work",
+    "edition": "https://doi.org/10.5281/zenodo.19863836",
+    "version_family": "https://doi.org/10.5281/zenodo.17076534",
+    "catalogue_record": "https://archive.museumofone.art/items/19863836.html#catalogue-record"
+  },
+  "institutional_match_scope": "work",
+  "relationship_assertions": [
+    {
+      "id": "urn:museum-of-one:assertion:c738640c4b8a76eef0063558a2c418eda9ea7de721b3586f2294df3c471a2643",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#authored-by",
+      "object": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:cf97e96b4a5b895a36aa641a8f00a239a30775d1ee98f2c306bc0af4bfb28caa",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#published-by",
+      "object": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:474b860c7c23dcbec43a08fe2573b5bd61b3c95d573a92887e650398e5f912c0",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+      "object": "https://archive.museumofone.art/entities/doris-salcedo.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay discusses Atrabiliarios as a case of the continuing effect of an encounter."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:8fddd62abf3006b54df8b026ac77a03d4614dc71cfe315ae0f83d82554d5924a",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+      "object": "https://archive.museumofone.art/entities/zarina-hashmi.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay discusses Home Is a Foreign Place."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:3f687e931821937c4e35c3edd6aa7a6e3384448ae7bdde54a0b05681916c47eb",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+      "object": "https://archive.museumofone.art/entities/teresa-margolles.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay discusses En el aire."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:dad7b40064ef229c0dab838dd489af972beef5e77024e4b22c23a6f53b0cf856",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+      "object": "https://archive.museumofone.art/entities/marina-abramovic.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay discusses the performance The Artist Is Present."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:21096e4a5526fbc242d7cf36c7c480986820c6aaed09bcf7dcfd1fee009cbbec",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+      "object": "https://archive.museumofone.art/entities/christian-boltanski.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay discusses Reserve of Dead Swiss."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:9872f180ff05c53228dd77157b18844d56100ba59ebcc0d70c4c157473d72d16",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+      "object": "https://archive.museumofone.art/entities/araya-rasdjarmrearnsook.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay discusses The Class."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:ea850f4d9bca161190a2baa563085416daa312611637783fac1a3d96f0350d16",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+      "object": "https://archive.museumofone.art/entities/ana-mendieta.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay discusses the Silueta Series."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:b28d13a40a140b31bc2d8290a52dfc52aa8a9950cd91ebfda810afc4546d3a08",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+      "object": "https://archive.museumofone.art/entities/atrabiliarios.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay explicitly attributes the installation to Doris Salcedo."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:02652b31bb5d5a88507e7b0d29e35fe00c25d5ede293c24dd4fcee72460c6474",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+      "object": "https://archive.museumofone.art/entities/home-is-a-foreign-place.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay explicitly attributes the woodcut portfolio to Zarina Hashmi."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:3bd893581ecbb8be077f8c048b1cc44a55121944620dd4f6a7a0046d1e8ad4d4",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+      "object": "https://archive.museumofone.art/entities/en-el-aire.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay explicitly attributes the installation to Teresa Margolles."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:a819aff6aca64c3466985b818d16118bfdbee06aa5c5c758d127c782f28e0703",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+      "object": "https://archive.museumofone.art/entities/the-artist-is-present.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay explicitly attributes the performance to Marina Abramović."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:f91e2df2f27a7426017d385a90b87341daec09a8d9401fb65e764fd1da9edbb9",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+      "object": "https://archive.museumofone.art/entities/reserve-of-dead-swiss.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay explicitly attributes the work to Christian Boltanski."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:8e0687e38978fcc4ed59835c61d1c27d085fc04684e62bef0acbf0a7604089e0",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+      "object": "https://archive.museumofone.art/entities/the-class.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay explicitly attributes the work to Araya Rasdjarmrearnsook."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:5ae1c30c88830d4eaf1c37329db828968c29f2e59c25d903963a623f61f99c31",
+      "subject": "https://archive.museumofone.art/items/19863836.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+      "object": "https://archive.museumofone.art/entities/silueta-series.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay explicitly attributes this series to Ana Mendieta. This is a series-level contextual record."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:baa1b40ea57b447b4aced4a214c9d5d9635e59823cff77f11854eb8cbfe22105",
+      "subject": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#describes",
+      "object": "https://archive.museumofone.art/items/19863836.html#work",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "source_location": {
+        "kind": "metadata_field",
+        "field": "linked_zenodo_dois",
+        "values": [
+          "10.5281/zenodo.17076535"
+        ]
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "Exact-edition matching requires the selected DOI in the reviewed page metadata; other matches retain their wider scope."
+    }
+  ],
+  "orcid_authority": {
+    "scheme": "ORCID",
+    "value": "0009-0004-7737-5094",
+    "url": "https://orcid.org/0009-0004-7737-5094",
+    "status": "public_orcid_profile_inspected",
+    "evidence_urls": [
+      "https://www.museumofone.art/archives-scholarly-infrastructure/",
+      "https://eprints.rclis.org/47182/",
+      "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+    ],
+    "access_note": "Public ORCID v3 person API returned HTTP 200 on 4 November 2026. Credit name Dorian Vale and the Museum of One website URL match the local author record. Profile names and links are user-supplied; affiliation, biography and endorsement are not independently verified.",
+    "reviewed": "2026-11-04",
+    "evidence_receipt": "data/source/authority-review-2026-11-04.json"
   }
 }

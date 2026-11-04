@@ -474,8 +474,8 @@
   "authority_links": [],
   "metadata_profile": {
     "name": "Museum of One source-qualified catalogue profile",
-    "version": "2",
-    "note": "Local application profile using schema.org and qualified Dublin Core; not an archival standards certification.",
+    "version": "3.0.0",
+    "url": "https://archive.museumofone.art/metadata/metadata-profile.json",
     "source_snapshot_preserved": true
   },
   "reading_copy": {
@@ -683,6 +683,20 @@
       "reviewed": "2026-11-04"
     },
     {
+      "field": "record_modified",
+      "value": "2026-11-04",
+      "status": "derived_from_description_history",
+      "note": "Latest documented local description event; not a publication, repository or source-review date.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_review",
+      "value": "2026-11-04",
+      "status": "catalogue_source_review",
+      "note": "Review of descriptive sources; not the creation or modification date of the work or repository record.",
+      "reviewed": "2026-11-04"
+    },
+    {
       "field": "author",
       "value": "Dorian Vale",
       "status": "institutional_context",
@@ -704,6 +718,27 @@
       "status": "source_linked_identifier",
       "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
       "note": "Creator identifier supplied by the linked sources; no affiliation or endorsement is inferred.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "orcid_authority",
+      "value": {
+        "scheme": "ORCID",
+        "value": "0009-0004-7737-5094",
+        "url": "https://orcid.org/0009-0004-7737-5094",
+        "status": "public_orcid_profile_inspected",
+        "evidence_urls": [
+          "https://www.museumofone.art/archives-scholarly-infrastructure/",
+          "https://eprints.rclis.org/47182/",
+          "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+        ],
+        "access_note": "Public ORCID v3 person API returned HTTP 200 on 4 November 2026. Credit name Dorian Vale and the Museum of One website URL match the local author record. Profile names and links are user-supplied; affiliation, biography and endorsement are not independently verified.",
+        "reviewed": "2026-11-04",
+        "evidence_receipt": "data/source/authority-review-2026-11-04.json"
+      },
+      "status": "public_orcid_profile_inspected",
+      "source_url": "https://orcid.org/0009-0004-7737-5094",
+      "note": "Public ORCID v3 person API returned HTTP 200 on 4 November 2026. Credit name Dorian Vale and the Museum of One website URL match the local author record. Profile names and links are user-supplied; affiliation, biography and endorsement are not independently verified.",
       "reviewed": "2026-11-04"
     },
     {
@@ -878,11 +913,35 @@
         "entity_type": "Person",
         "relation": "author",
         "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "variants": [
+          "Vale, Dorian"
+        ],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:8197bdc0d1706a8341a1777519c687488dc0e7820bd099802a106bbec1a4356b",
+        "subject": "https://archive.museumofone.art/items/21715085.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#authored-by",
+        "object": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The matching institutional publication record credits Dorian Vale as author."
+      }
     },
     {
       "field": "entity_link:museum-of-one:publisher",
@@ -892,11 +951,36 @@
         "entity_type": "Organization",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "variants": [
+          "MuseumofOne",
+          "MUSEUM OF ONE"
+        ],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:dcf065760a48ea6455e4dbe3367a61e0da8667b30fde87b0245df91b1ecac4d0",
+        "subject": "https://archive.museumofone.art/items/21715085.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#published-by",
+        "object": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      }
     },
     {
       "field": "entity_link:eva-hesse:artist discussed",
@@ -906,11 +990,33 @@
         "entity_type": "Person",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-        "note": "The essay explicitly names Expanded Expansion and its materials."
+        "note": "The essay explicitly names Expanded Expansion and its materials.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:eb00f75eccb675f312f70aae7148ef83836137de9a6ecf9ce19dbd713388d1ba",
+        "subject": "https://archive.museumofone.art/items/21715085.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+        "object": "https://archive.museumofone.art/entities/eva-hesse.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay explicitly names Expanded Expansion and its materials."
+      }
     },
     {
       "field": "entity_link:felix-gonzalez-torres:artist discussed",
@@ -920,11 +1026,33 @@
         "entity_type": "Person",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-        "note": "The essay discusses “Untitled” (Portrait of Ross in L.A.)."
+        "note": "The essay discusses “Untitled” (Portrait of Ross in L.A.).",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:bfd6f3019bb61fbe19437f74214e8a96dccb09e5a8da9899416caf1f78b47d23",
+        "subject": "https://archive.museumofone.art/items/21715085.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+        "object": "https://archive.museumofone.art/entities/felix-gonzalez-torres.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay discusses “Untitled” (Portrait of Ross in L.A.)."
+      }
     },
     {
       "field": "entity_link:expanded-expansion:artwork discussed",
@@ -934,11 +1062,33 @@
         "entity_type": "Artwork",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-        "note": "The essay explicitly attributes the work to Eva Hesse."
+        "note": "The essay explicitly attributes the work to Eva Hesse.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:907d06f553e3de9f5770c7b9d5934a73a6181eb1440f2997d0f10f65d634160a",
+        "subject": "https://archive.museumofone.art/items/21715085.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+        "object": "https://archive.museumofone.art/entities/expanded-expansion.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay explicitly attributes the work to Eva Hesse."
+      }
     },
     {
       "field": "entity_link:untitled-portrait-of-ross-in-la:artwork discussed",
@@ -948,11 +1098,33 @@
         "entity_type": "Artwork",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-        "note": "The essay explicitly attributes the work to Felix Gonzalez-Torres."
+        "note": "The essay explicitly attributes the work to Felix Gonzalez-Torres.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:96ad76d3ed73356e8b74c4134f397d8d89e7da9b94532070a108ffc5a5304d24",
+        "subject": "https://archive.museumofone.art/items/21715085.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+        "object": "https://archive.museumofone.art/entities/untitled-portrait-of-ross-in-la.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay explicitly attributes the work to Felix Gonzalez-Torres."
+      }
     },
     {
       "field": "controlled_subjects",
@@ -1063,8 +1235,7 @@
       ],
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Local preferred terms with definitions and synonyms. External alignment is scoped in the vocabulary register.",
-      "reviewed": "2026-11-04"
+      "note": "Local preferred terms with definitions and synonyms. External alignment is scoped in the vocabulary register."
     },
     {
       "field": "genre_terms",
@@ -1109,8 +1280,7 @@
       ],
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Local resource-genre classification. Digital file format is recorded separately.",
-      "reviewed": "2026-11-04"
+      "note": "Local resource-genre classification. Digital file format is recorded separately."
     },
     {
       "field": "archival_context",
@@ -1119,7 +1289,7 @@
         "catalogue_snapshot_date": "2026-11-04",
         "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
         "record_category": "Published library and repository material",
-        "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+        "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a previous catalogue accession.",
         "source_repository": {
           "name": "Zenodo",
           "record_url": "https://zenodo.org/records/21715085"
@@ -1167,8 +1337,7 @@
       },
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Provenance records what is documented and leaves unknown custody and original order explicit.",
-      "reviewed": "2026-11-04"
+      "note": "Provenance records what is documented and leaves unknown custody and original order explicit."
     },
     {
       "field": "description_history",
@@ -1229,12 +1398,45 @@
           "sources": [
             "policies.html"
           ]
+        },
+        {
+          "event_id": "metadata-profile-3.0-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Unify graph identities and qualify exported relationships and citations",
+          "note": "Local graph projection now uses one contextual identity per entity, distinguishes work-level institutional matches from selected-edition links, retains title-level ISBN uncertainty, and derives citations from the source title. Typed relation assertions and a versioned validation profile are introduced. No publication date, original source snapshot or PDF changed.",
+          "fields": [
+            "metadata_profile",
+            "relationship_assertions",
+            "identity",
+            "institutional_match_scope",
+            "citation_projection"
+          ],
+          "responsible_service": "Museum of One Digital Archive Library",
+          "method": "Source-based metadata implementation and regression validation",
+          "date_kind": "Catalogue description event; not a publication, source review or acquisition date",
+          "sources": [
+            "metadata/metadata-profile.json"
+          ]
+        },
+        {
+          "event_id": "orcid-public-profile-review-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Record inspected public ORCID profile evidence",
+          "note": "The official ORCID public person API returned the credited name Dorian Vale and the Museum of One website. This confirms a matching public profile, not independently verified biographical or affiliation claims. Original creator arrays and source snapshots are unchanged.",
+          "fields": [
+            "orcid_authority"
+          ],
+          "responsible_service": "Museum of One Digital Archive Library",
+          "method": "Read-only official public API inspection",
+          "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
+          "sources": [
+            "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+          ]
         }
       ],
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Catalogue description events; these are not work publication dates or acquisition dates.",
-      "reviewed": "2026-11-04"
+      "note": "Catalogue description events; these are not work publication dates or acquisition dates."
     },
     {
       "field": "pirr_references",
@@ -1260,6 +1462,155 @@
       "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
       "status": "institutional_context_relationship",
       "note": "PIRR project IDs and programme references identify research records, not publication versions or independent chapter deposits."
+    },
+    {
+      "field": "relationship_assertions",
+      "value": [
+        {
+          "id": "urn:museum-of-one:assertion:8197bdc0d1706a8341a1777519c687488dc0e7820bd099802a106bbec1a4356b",
+          "subject": "https://archive.museumofone.art/items/21715085.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#authored-by",
+          "object": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The matching institutional publication record credits Dorian Vale as author."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:dcf065760a48ea6455e4dbe3367a61e0da8667b30fde87b0245df91b1ecac4d0",
+          "subject": "https://archive.museumofone.art/items/21715085.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#published-by",
+          "object": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:eb00f75eccb675f312f70aae7148ef83836137de9a6ecf9ce19dbd713388d1ba",
+          "subject": "https://archive.museumofone.art/items/21715085.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+          "object": "https://archive.museumofone.art/entities/eva-hesse.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay explicitly names Expanded Expansion and its materials."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:bfd6f3019bb61fbe19437f74214e8a96dccb09e5a8da9899416caf1f78b47d23",
+          "subject": "https://archive.museumofone.art/items/21715085.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+          "object": "https://archive.museumofone.art/entities/felix-gonzalez-torres.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay discusses “Untitled” (Portrait of Ross in L.A.)."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:907d06f553e3de9f5770c7b9d5934a73a6181eb1440f2997d0f10f65d634160a",
+          "subject": "https://archive.museumofone.art/items/21715085.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+          "object": "https://archive.museumofone.art/entities/expanded-expansion.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay explicitly attributes the work to Eva Hesse."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:96ad76d3ed73356e8b74c4134f397d8d89e7da9b94532070a108ffc5a5304d24",
+          "subject": "https://archive.museumofone.art/items/21715085.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+          "object": "https://archive.museumofone.art/entities/untitled-portrait-of-ross-in-la.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay explicitly attributes the work to Felix Gonzalez-Torres."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:76f74d4ae6d398952cc13d89449fb2f673d1e6644eebb4f92c007c1e27e7971c",
+          "subject": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#describes",
+          "object": "https://doi.org/10.5281/zenodo.21715084",
+          "scope": "version_family",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "source_location": {
+            "kind": "metadata_field",
+            "field": "linked_zenodo_dois",
+            "values": [
+              "10.5281/zenodo.21715084"
+            ]
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "Exact-edition matching requires the selected DOI in the reviewed page metadata; other matches retain their wider scope."
+        }
+      ],
+      "status": "typed_evidence_projection",
+      "note": "Stable, typed assertions retain source scope and explicit unknown review metadata."
     },
     {
       "field": "reading_copy",
@@ -1304,7 +1655,11 @@
       "entity_type": "Person",
       "relation": "author",
       "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-      "note": "The matching institutional publication record credits Dorian Vale as author."
+      "note": "The matching institutional publication record credits Dorian Vale as author.",
+      "variants": [
+        "Vale, Dorian"
+      ],
+      "evidence_scope": "work"
     },
     {
       "id": "museum-of-one",
@@ -1312,7 +1667,12 @@
       "entity_type": "Organization",
       "relation": "publisher",
       "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+      "variants": [
+        "MuseumofOne",
+        "MUSEUM OF ONE"
+      ],
+      "evidence_scope": "work"
     },
     {
       "id": "eva-hesse",
@@ -1320,7 +1680,9 @@
       "entity_type": "Person",
       "relation": "artist discussed",
       "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-      "note": "The essay explicitly names Expanded Expansion and its materials."
+      "note": "The essay explicitly names Expanded Expansion and its materials.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "felix-gonzalez-torres",
@@ -1328,7 +1690,9 @@
       "entity_type": "Person",
       "relation": "artist discussed",
       "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-      "note": "The essay discusses “Untitled” (Portrait of Ross in L.A.)."
+      "note": "The essay discusses “Untitled” (Portrait of Ross in L.A.).",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "expanded-expansion",
@@ -1336,7 +1700,9 @@
       "entity_type": "Artwork",
       "relation": "artwork discussed",
       "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-      "note": "The essay explicitly attributes the work to Eva Hesse."
+      "note": "The essay explicitly attributes the work to Eva Hesse.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "untitled-portrait-of-ross-in-la",
@@ -1344,7 +1710,9 @@
       "entity_type": "Artwork",
       "relation": "artwork discussed",
       "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-      "note": "The essay explicitly attributes the work to Felix Gonzalez-Torres."
+      "note": "The essay explicitly attributes the work to Felix Gonzalez-Torres.",
+      "variants": [],
+      "evidence_scope": "work"
     }
   ],
   "contents": [],
@@ -1550,14 +1918,61 @@
       "sources": [
         "policies.html"
       ]
+    },
+    {
+      "event_id": "metadata-profile-3.0-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Unify graph identities and qualify exported relationships and citations",
+      "note": "Local graph projection now uses one contextual identity per entity, distinguishes work-level institutional matches from selected-edition links, retains title-level ISBN uncertainty, and derives citations from the source title. Typed relation assertions and a versioned validation profile are introduced. No publication date, original source snapshot or PDF changed.",
+      "fields": [
+        "metadata_profile",
+        "relationship_assertions",
+        "identity",
+        "institutional_match_scope",
+        "citation_projection"
+      ],
+      "responsible_service": "Museum of One Digital Archive Library",
+      "method": "Source-based metadata implementation and regression validation",
+      "date_kind": "Catalogue description event; not a publication, source review or acquisition date",
+      "sources": [
+        "metadata/metadata-profile.json"
+      ]
+    },
+    {
+      "event_id": "orcid-public-profile-review-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Record inspected public ORCID profile evidence",
+      "note": "The official ORCID public person API returned the credited name Dorian Vale and the Museum of One website. This confirms a matching public profile, not independently verified biographical or affiliation claims. Original creator arrays and source snapshots are unchanged.",
+      "fields": [
+        "orcid_authority"
+      ],
+      "responsible_service": "Museum of One Digital Archive Library",
+      "method": "Read-only official public API inspection",
+      "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
+      "sources": [
+        "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+      ]
     }
   ],
+  "record_modified": "2026-11-04",
+  "record_modified_provenance": {
+    "status": "derived_from_description_history",
+    "event_ids": [
+      "public-source-description-2026-11-04",
+      "qualified-description-2026-11-04",
+      "access-copy-verification-2026-11-04",
+      "description-policy-1.0-2026-11-04",
+      "metadata-profile-3.0-2026-11-04",
+      "orcid-public-profile-review-2026-11-04"
+    ],
+    "note": "Latest documented local description event; not a publication, repository or source-review date."
+  },
   "archival_context": {
     "description_profile": "moo-description-policy-1.0",
     "catalogue_snapshot_date": "2026-11-04",
     "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
     "record_category": "Published library and repository material",
-    "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+    "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a previous catalogue accession.",
     "source_repository": {
       "name": "Zenodo",
       "record_url": "https://zenodo.org/records/21715085"
@@ -1628,5 +2043,171 @@
     "edition_doi": "10.5281/zenodo.21715085",
     "zenodo_record_id": "21715085",
     "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication."
+  },
+  "metadata_origin": "https://archive.museumofone.art",
+  "identity": {
+    "work": "https://archive.museumofone.art/items/21715085.html#work",
+    "edition": "https://doi.org/10.5281/zenodo.21715085",
+    "version_family": "https://doi.org/10.5281/zenodo.21715084",
+    "catalogue_record": "https://archive.museumofone.art/items/21715085.html#catalogue-record"
+  },
+  "institutional_match_scope": "version_family",
+  "relationship_assertions": [
+    {
+      "id": "urn:museum-of-one:assertion:8197bdc0d1706a8341a1777519c687488dc0e7820bd099802a106bbec1a4356b",
+      "subject": "https://archive.museumofone.art/items/21715085.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#authored-by",
+      "object": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:dcf065760a48ea6455e4dbe3367a61e0da8667b30fde87b0245df91b1ecac4d0",
+      "subject": "https://archive.museumofone.art/items/21715085.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#published-by",
+      "object": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:eb00f75eccb675f312f70aae7148ef83836137de9a6ecf9ce19dbd713388d1ba",
+      "subject": "https://archive.museumofone.art/items/21715085.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+      "object": "https://archive.museumofone.art/entities/eva-hesse.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay explicitly names Expanded Expansion and its materials."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:bfd6f3019bb61fbe19437f74214e8a96dccb09e5a8da9899416caf1f78b47d23",
+      "subject": "https://archive.museumofone.art/items/21715085.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+      "object": "https://archive.museumofone.art/entities/felix-gonzalez-torres.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay discusses “Untitled” (Portrait of Ross in L.A.)."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:907d06f553e3de9f5770c7b9d5934a73a6181eb1440f2997d0f10f65d634160a",
+      "subject": "https://archive.museumofone.art/items/21715085.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+      "object": "https://archive.museumofone.art/entities/expanded-expansion.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay explicitly attributes the work to Eva Hesse."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:96ad76d3ed73356e8b74c4134f397d8d89e7da9b94532070a108ffc5a5304d24",
+      "subject": "https://archive.museumofone.art/items/21715085.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+      "object": "https://archive.museumofone.art/entities/untitled-portrait-of-ross-in-la.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay explicitly attributes the work to Felix Gonzalez-Torres."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:76f74d4ae6d398952cc13d89449fb2f673d1e6644eebb4f92c007c1e27e7971c",
+      "subject": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#describes",
+      "object": "https://doi.org/10.5281/zenodo.21715084",
+      "scope": "version_family",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "source_location": {
+        "kind": "metadata_field",
+        "field": "linked_zenodo_dois",
+        "values": [
+          "10.5281/zenodo.21715084"
+        ]
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "Exact-edition matching requires the selected DOI in the reviewed page metadata; other matches retain their wider scope."
+    }
+  ],
+  "orcid_authority": {
+    "scheme": "ORCID",
+    "value": "0009-0004-7737-5094",
+    "url": "https://orcid.org/0009-0004-7737-5094",
+    "status": "public_orcid_profile_inspected",
+    "evidence_urls": [
+      "https://www.museumofone.art/archives-scholarly-infrastructure/",
+      "https://eprints.rclis.org/47182/",
+      "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+    ],
+    "access_note": "Public ORCID v3 person API returned HTTP 200 on 4 November 2026. Credit name Dorian Vale and the Museum of One website URL match the local author record. Profile names and links are user-supplied; affiliation, biography and endorsement are not independently verified.",
+    "reviewed": "2026-11-04",
+    "evidence_receipt": "data/source/authority-review-2026-11-04.json"
   }
 }

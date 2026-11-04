@@ -21,6 +21,7 @@
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.20383926"
       },
+      "lastReviewed": "2026-11-04",
       "breadcrumb": {
         "@id": "https://archive.museumofone.art/items/20383926.html#breadcrumb"
       }
@@ -88,8 +89,29 @@
       ]
     },
     {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/20383926.html#work",
+      "name": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
+      "description": "Local work identity, distinct from its deposited editions, repository version family and catalogue description.",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source-reported title-level ISBN",
+        "value": "978-1-06-982034-1",
+        "description": "Edition/format applicability remains unresolved; not exported as the deposited edition's ISBN."
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.20095467"
+      },
+      "author": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      }
+    },
+    {
       "@type": "Person",
-      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
       "name": "Dorian Vale",
       "identifier": {
         "@type": "PropertyValue",
@@ -99,7 +121,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://archive.museumofone.art/#publisher",
+      "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
       "name": "Museum of One",
       "url": "https://www.museumofone.art/"
     },
@@ -111,6 +133,9 @@
         "@type": "PropertyValue",
         "propertyID": "Zenodo concept DOI",
         "value": "10.5281/zenodo.20095467"
+      },
+      "exampleOfWork": {
+        "@id": "https://archive.museumofone.art/items/20383926.html#work"
       },
       "workExample": {
         "@id": "https://doi.org/10.5281/zenodo.20383926"
@@ -228,12 +253,11 @@
         "built environment"
       ],
       "author": {
-        "@id": "https://orcid.org/0009-0004-7737-5094"
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
       },
       "publisher": {
-        "@id": "https://archive.museumofone.art/#publisher"
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
-      "isbn": "978-1-06-982034-1",
       "alternateName": [],
       "bookEdition": "First-edition PDF, first published 9 May 2026 (Museum of One publication record)",
       "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -321,13 +345,18 @@
       "@type": "WebPage",
       "@id": "https://www.museumofone.art/publication-moral-evidence-of-space/",
       "name": "Museum of One institutional publication context",
+      "description": "Reviewed relationship scope: exact edition",
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.20383926"
       }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/20383926.html#relationship-dorian-vale-author",
+      "identifier": "urn:museum-of-one:assertion:7515d7cd47fee770bc43022acc8ce8fc3d252885b11eedf418a0b962d85dd00c",
       "name": "author",
       "about": {
         "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
@@ -335,11 +364,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/publication-moral-evidence-of-space/"
       },
-      "description": "The matching institutional publication record credits Dorian Vale as author."
+      "description": "The matching institutional publication record credits Dorian Vale as author.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/20383926.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#authored-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/publication-moral-evidence-of-space/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/20383926.html#relationship-museum-of-one-publisher",
+      "identifier": "urn:museum-of-one:assertion:c50559322dabd2b8ca28f9d0284f0ffa3c93ff5a1025c6552cf7faa81737504e",
       "name": "publisher",
       "about": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
@@ -347,7 +392,19 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/publication-moral-evidence-of-space/"
       },
-      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/20383926.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#published-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/publication-moral-evidence-of-space/"
+      }
     },
     {
       "@type": "DefinedTermSet",

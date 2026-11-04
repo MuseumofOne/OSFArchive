@@ -4,6 +4,7 @@ This module adds local descriptive context without changing source metadata.
 It makes no assertion of physical acquisition or original archival custody.
 """
 from copy import deepcopy
+from datetime import date
 from html import escape
 from pathlib import Path
 from urllib.parse import urlencode
@@ -37,6 +38,28 @@ def _prior_records(existing_data):
     return {}
 
 
+def _latest_description_date(history):
+    """Return an evidenced local event day, never a repository/work date.
+
+    Description-history dates are deliberately day-precision. Invalid or partial
+    dates cannot establish a local lifecycle day and are retained only as events.
+    """
+    dated = []
+    for event in history:
+        value = event.get('date')
+        if not isinstance(value, str) or len(value) != 10:
+            continue
+        try:
+            if date.fromisoformat(value).isoformat() == value:
+                dated.append((value, event.get('event_id')))
+        except ValueError:
+            continue
+    if not dated:
+        return None, []
+    latest = max(value for value, _ in dated)
+    return latest, [event_id for value, event_id in dated if value == latest and event_id]
+
+
 def attach_catalogue_history(records, existing_data=None):
     """Return enriched copies, preserving source fields and any earlier events.
 
@@ -46,6 +69,9 @@ def attach_catalogue_history(records, existing_data=None):
     unknown source retrieval and custody information is never fabricated.
     """
     policy = _policy()
+    baseline_path = ROOT / 'data/description-baseline.json'
+    baseline = json.loads(baseline_path.read_text()) if baseline_path.exists() else {}
+    initial_ids = set(baseline.get('record_ids', []))
     previous = _prior_records(existing_data)
     manifest_path = ROOT / 'data/readers.json'
     manifests = json.loads(manifest_path.read_text()) if manifest_path.exists() else []
@@ -54,6 +80,8 @@ def attach_catalogue_history(records, existing_data=None):
     for original in records:
         record = deepcopy(original)
         rid = str(record['id'])
+        initial = rid in initial_ids
+        baseline_date = baseline.get('date')
         provenance = record.get('provenance') or {}
         source_files = record.get('files') or []
         copy = record.get('reading_copy') or copies.get(rid)
@@ -65,17 +93,17 @@ def attach_catalogue_history(records, existing_data=None):
             'date_kind': 'Catalogue description event; not a publication or acquisition date',
         }
         events = []
-        if repository_url:
+        if initial and repository_url:
             events.append(dict(event_base,
                 event_id='public-source-description-2026-11-04',
-                date=policy['effective_date'],
+                date=baseline_date,
                 action='Source-based catalogue description',
                 note='Local description assembled from the identified public repository record and available institutional work record. Source metadata remains separately identifiable.',
                 sources=source_urls))
-        if provenance.get('editorial_fields') or record.get('metadata_profile') or record.get('date_precision'):
+        if initial and (provenance.get('editorial_fields') or record.get('metadata_profile') or record.get('date_precision')):
             events.append(dict(event_base,
                 event_id='qualified-description-2026-11-04',
-                date=policy['effective_date'],
+                date=baseline_date,
                 action='Qualified descriptive enrichment',
                 note='Local editorial description, arrangement and source-qualified bibliographic context recorded alongside source metadata. Unknown or disputed values remain qualified.',
                 fields=provenance.get('editorial_fields', []), sources=source_urls))
@@ -87,12 +115,13 @@ def attach_catalogue_history(records, existing_data=None):
                 note='Downloaded access-copy MD5 matched the source checksum; local SHA-256 and PDF file-page count are recorded in the file manifest. This event does not describe transfer of custody.',
                 method='Automated file checksum and PDF inspection',
                 sources=[copy['source_url']] if copy.get('source_url') else []))
-        events.append(dict(event_base,
-            event_id='description-policy-1.0-2026-11-04',
-            date=policy['effective_date'],
-            action='Description policy and provenance context adopted',
-            note='Responsible service, source repository, local access-copy role, unknown custody and original order, correction route and dated description history made explicit under ' + policy['profile_id'] + '.',
-            sources=['policies.html']))
+        if initial:
+            events.append(dict(event_base,
+                event_id='description-policy-1.0-2026-11-04',
+                date=baseline_date,
+                action='Description policy and provenance context adopted',
+                note='Responsible service, source repository, local access-copy role, unknown custody and original order, correction route and dated description history made explicit under ' + baseline.get('profile_id', '') + '.',
+                sources=['policies.html']))
         history = []
         seen = set()
         for event in (previous.get(rid, {}).get('description_history', [])
@@ -107,10 +136,10 @@ def attach_catalogue_history(records, existing_data=None):
         context = deepcopy(record.get('archival_context') or {})
         context.update({
             'description_profile': policy['profile_id'],
-            'catalogue_snapshot_date': policy['catalogue_snapshot_date'],
+            'catalogue_snapshot_date': baseline_date if initial else record.get('catalogue_snapshot_date'),
             'snapshot_note': 'Selected catalogue snapshot; not a live repository synchronisation.',
             'record_category': 'Published library and repository material',
-            'reference_code_status': 'Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.',
+            'reference_code_status': 'Stable local catalogue reference; not evidence of an archival acquisition or a previous catalogue accession.',
             'source_repository': {'name': 'Zenodo' if repository_url else 'Not documented', 'record_url': repository_url},
             'institutional_context_url': record.get('institutional_url'),
             'source_metadata_retrieved': provenance.get('retrieved'),
@@ -140,6 +169,18 @@ def attach_catalogue_history(records, existing_data=None):
         else:
             context['access_copy'] = {'role': 'No local reading-copy manifest documented'}
         record['description_history'] = history
+        # An earlier creation date cannot be recovered from a current snapshot.
+        # The latest documented local event is usable as a modification day, but
+        # neither source review nor repository deposit timestamps establish it.
+        if not record.get('record_modified') or (record.get('record_modified_provenance') or {}).get('status') == 'derived_from_description_history':
+            modified, event_ids = _latest_description_date(history)
+            if modified:
+                record['record_modified'] = modified
+                record['record_modified_provenance'] = {
+                    'status': 'derived_from_description_history',
+                    'event_ids': event_ids,
+                    'note': 'Latest documented local description event, at day precision; not a publication, repository-deposit or original-work date.',
+                }
         record['archival_context'] = context
         result.append(record)
     return result
@@ -156,6 +197,9 @@ def policy_record_panel(record, base='../'):
     rows = [
         ('Responsible service', _e(context['responsible_service']['name'])),
         ('Catalogue snapshot', _e(context['catalogue_snapshot_date']) + ' · Selected catalogue, not live synchronisation'),
+        ('Local record created', _e(record.get('record_created') or 'Not documented')),
+        ('Local record modified', _e(record.get('record_modified') or 'Not documented') + (' · Latest documented description event' if (record.get('record_modified_provenance') or {}).get('status') == 'derived_from_description_history' else '')),
+        ('Source review', _e(record.get('source_review') or record.get('reviewed') or 'Not documented')),
         ('Source metadata retrieved', _e(context.get('source_metadata_retrieved') or 'Not documented')),
         ('Original source filenames', '<br>'.join(_e(n) for n in context.get('source_filenames', [])) or 'Not documented'),
         ('Selection and custody', _e(context['custodial_history']['statement'])),

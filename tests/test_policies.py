@@ -63,7 +63,8 @@ class Policies(unittest.TestCase):
         self.assertEqual(context['source_repository']['name'], 'Not documented')
         self.assertEqual(context['source_filenames'], [])
         self.assertNotIn('verified_at', context['access_copy'])
-        self.assertEqual(len(result['description_history']), 1)
+        self.assertEqual(result['description_history'], [])
+        self.assertNotIn('record_modified', result)
 
     def test_repeated_builds_preserve_history_without_duplicates(self):
         enriched = attach_catalogue_history(self.records)
@@ -114,6 +115,47 @@ class Policies(unittest.TestCase):
         query = next(parse_qs(urlparse(link).query) for link in links if link.startswith('mailto:'))
         self.assertIn(record['accession'], query['subject'][0])
         self.assertIn(record['doi'], query['body'][0])
+
+    def test_lifecycle_comes_from_documented_local_events_not_source_dates(self):
+        record = copy.deepcopy(self.records[0])
+        record['source_created'] = '2000-01-01T12:00:00Z'
+        record['source_modified'] = '2099-12-31T12:00:00Z'
+        record['source_review'] = '2099-12-30'
+        record['description_history'] = [
+            {'event_id': 'invalid-day', 'date': '2099-02-31'},
+            {'event_id': 'partial-day', 'date': '2099-12'},
+            {'event_id': 'reviewed-correction', 'date': '2026-11-05', 'action': 'Documented catalogue correction'},
+        ]
+        result = attach_catalogue_history([record])[0]
+        self.assertNotIn('record_created',result)
+        self.assertEqual(result['record_modified'],'2026-11-05')
+        self.assertEqual(result['record_modified_provenance']['event_ids'],['reviewed-correction'])
+        self.assertEqual(result['source_modified'],record['source_modified'])
+        self.assertEqual(result['source_review'],record['source_review'])
+        self.assertIn('Latest documented description event',policy_record_panel(result))
+        self.assertEqual(attach_catalogue_history([result])[0],result)
+        result['description_history'].append({'event_id':'later-correction','date':'2026-11-06','action':'Later documented catalogue correction'})
+        updated=attach_catalogue_history([result])[0]
+        self.assertEqual(updated['record_modified'],'2026-11-06')
+        self.assertEqual(updated['record_modified_provenance']['event_ids'],['later-correction'])
+        record['record_created']='2026-11-01'
+        record['record_modified']='2026-11-06'
+        explicit=attach_catalogue_history([record])[0]
+        self.assertEqual(explicit['record_created'],'2026-11-01')
+        self.assertEqual(explicit['record_modified'],'2026-11-06')
+        self.assertNotIn('record_modified_provenance',explicit)
+
+    def test_future_record_does_not_inherit_initial_policy_adoption_date(self):
+        record = {'id':'future-record', 'title':'A future description',
+                  'zenodo_url':'https://zenodo.org/records/99999999',
+                  'date_precision':'day', 'provenance':{'retrieved':'2027-03-01'}}
+        result = attach_catalogue_history([record])[0]
+        self.assertNotIn('record_created', result)
+        self.assertNotIn('record_modified', result)
+        self.assertFalse(result['description_history'])
+        self.assertIsNone(result['archival_context']['catalogue_snapshot_date'])
+        record['description_history'] = [{'event_id':'new-description', 'date':'2027-03-02', 'action':'Documented description'}]
+        self.assertEqual(attach_catalogue_history([record])[0]['record_modified'], '2027-03-02')
 
 
 if __name__ == '__main__':

@@ -21,6 +21,7 @@
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.19864115"
       },
+      "lastReviewed": "2026-11-04",
       "breadcrumb": {
         "@id": "https://archive.museumofone.art/items/19864115.html#breadcrumb"
       }
@@ -88,8 +89,29 @@
       ]
     },
     {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19864115.html#work",
+      "name": "Post-Interpretive Criticism: Volume II — Essays from the Field",
+      "description": "Local work identity, distinct from its deposited editions, repository version family and catalogue description.",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source-reported title-level ISBN",
+        "value": "978-1-06-982031-0",
+        "description": "Edition/format applicability remains unresolved; not exported as the deposited edition's ISBN."
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.17078846"
+      },
+      "author": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      }
+    },
+    {
       "@type": "Person",
-      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
       "name": "Dorian Vale",
       "identifier": {
         "@type": "PropertyValue",
@@ -99,7 +121,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://archive.museumofone.art/#publisher",
+      "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
       "name": "Museum of One",
       "url": "https://www.museumofone.art/"
     },
@@ -111,6 +133,9 @@
         "@type": "PropertyValue",
         "propertyID": "Zenodo concept DOI",
         "value": "10.5281/zenodo.17078846"
+      },
+      "exampleOfWork": {
+        "@id": "https://archive.museumofone.art/items/19864115.html#work"
       },
       "workExample": {
         "@id": "https://doi.org/10.5281/zenodo.19864115"
@@ -249,12 +274,11 @@
         "contemporary art"
       ],
       "author": {
-        "@id": "https://orcid.org/0009-0004-7737-5094"
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
       },
       "publisher": {
-        "@id": "https://archive.museumofone.art/#publisher"
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
-      "isbn": "978-1-06-982031-0",
       "alternateName": [
         "Post-Interpretive Criticism: Volume II - Essays from the Field"
       ],
@@ -346,13 +370,18 @@
       "@type": "WebPage",
       "@id": "https://www.museumofone.art/publication-essays-from-field/",
       "name": "Museum of One institutional publication context",
+      "description": "Reviewed relationship scope: exact edition",
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.19864115"
       }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/19864115.html#relationship-dorian-vale-author",
+      "identifier": "urn:museum-of-one:assertion:63fd2ad74f5a120ae03c5ad820cc084845d15d7e7cd41e630e2baa0da387b349",
       "name": "author",
       "about": {
         "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
@@ -360,11 +389,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/publication-essays-from-field/"
       },
-      "description": "The matching institutional publication record credits Dorian Vale as author."
+      "description": "The matching institutional publication record credits Dorian Vale as author.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/19864115.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#authored-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/publication-essays-from-field/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/19864115.html#relationship-museum-of-one-publisher",
+      "identifier": "urn:museum-of-one:assertion:8bff333b89219130841a09fc92e44b82cd466ec471b3a78d7c049b03f5af0692",
       "name": "publisher",
       "about": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
@@ -372,7 +417,19 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/publication-essays-from-field/"
       },
-      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/19864115.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#published-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/publication-essays-from-field/"
+      }
     },
     {
       "@type": "DefinedTermSet",

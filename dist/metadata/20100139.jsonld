@@ -21,6 +21,7 @@
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.20100139"
       },
+      "lastReviewed": "2026-11-04",
       "breadcrumb": {
         "@id": "https://archive.museumofone.art/items/20100139.html#breadcrumb"
       }
@@ -82,8 +83,23 @@
       ]
     },
     {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/20100139.html#work",
+      "name": "A Quantitative Analysis of Critical Posture in Art Writing, 1980-2025 (Dataset - 20 Critical Texts 1980–2025) v.2",
+      "description": "Local work identity, distinct from its deposited editions, repository version family and catalogue description.",
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.18205642"
+      },
+      "author": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      }
+    },
+    {
       "@type": "Person",
-      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
       "name": "Dorian Vale",
       "identifier": {
         "@type": "PropertyValue",
@@ -93,7 +109,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://archive.museumofone.art/#publisher",
+      "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
       "name": "Museum of One",
       "url": "https://www.museumofone.art/"
     },
@@ -105,6 +121,9 @@
         "@type": "PropertyValue",
         "propertyID": "Zenodo concept DOI",
         "value": "10.5281/zenodo.18205642"
+      },
+      "exampleOfWork": {
+        "@id": "https://archive.museumofone.art/items/20100139.html#work"
       },
       "workExample": {
         "@id": "https://doi.org/10.5281/zenodo.20100139"
@@ -261,10 +280,10 @@
         "This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and _Art as Truth: A Treatise_ (Q136329071), _Aesthetic Recursion Theory_ (Q136339843), The Journal of Post-Interpretive Criticism (Q136530009), Canon of Witnesses (Q136565881),Interpretive Load Index (ILI) (Q137709526), Viewer Displacement Ratio (VDR) (Q137709583) , Ethical Proximity Score (EPS) (Q137709600) , Institutional Alignment Indicator (IAI) (Q137709608), Post-Hermeneutic Phenomenology (Q137711946)"
       ],
       "author": {
-        "@id": "https://orcid.org/0009-0004-7737-5094"
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
       },
       "publisher": {
-        "@id": "https://archive.museumofone.art/#publisher"
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "exampleOfWork": {
@@ -302,13 +321,18 @@
       "@type": "WebPage",
       "@id": "https://www.museumofone.art/a-quantitative-analysis-of-critical-posture-in-art-writing-1980-2025-dataset-20-critical-texts-1980-2025/",
       "name": "Museum of One institutional publication context",
+      "description": "Reviewed relationship scope: exact edition",
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.20100139"
       }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/20100139.html#relationship-dorian-vale-author",
+      "identifier": "urn:museum-of-one:assertion:5547506b00dc3b4ecb8d9042f31bb4afbe68f28f1b61745a90f0e942c38052a6",
       "name": "author",
       "about": {
         "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
@@ -316,11 +340,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/a-quantitative-analysis-of-critical-posture-in-art-writing-1980-2025-dataset-20-critical-texts-1980-2025/"
       },
-      "description": "The matching institutional publication record credits Dorian Vale as author."
+      "description": "The matching institutional publication record credits Dorian Vale as author.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/20100139.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#authored-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/a-quantitative-analysis-of-critical-posture-in-art-writing-1980-2025-dataset-20-critical-texts-1980-2025/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/20100139.html#relationship-museum-of-one-publisher",
+      "identifier": "urn:museum-of-one:assertion:4aea9e1eec2f4442cf3711822906d80b9c6e8ed2ae391a2a1355d431d54127ef",
       "name": "publisher",
       "about": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
@@ -328,7 +368,19 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/a-quantitative-analysis-of-critical-posture-in-art-writing-1980-2025-dataset-20-critical-texts-1980-2025/"
       },
-      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/20100139.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#published-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/a-quantitative-analysis-of-critical-posture-in-art-writing-1980-2025-dataset-20-critical-texts-1980-2025/"
+      }
     },
     {
       "@type": "DefinedTermSet",

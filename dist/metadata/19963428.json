@@ -447,8 +447,8 @@
   "authority_links": [],
   "metadata_profile": {
     "name": "Museum of One source-qualified catalogue profile",
-    "version": "2",
-    "note": "Local application profile using schema.org and qualified Dublin Core; not an archival standards certification.",
+    "version": "3.0.0",
+    "url": "https://archive.museumofone.art/metadata/metadata-profile.json",
     "source_snapshot_preserved": true
   },
   "reading_copy": {
@@ -653,6 +653,20 @@
       "reviewed": "2026-11-04"
     },
     {
+      "field": "record_modified",
+      "value": "2026-11-04",
+      "status": "derived_from_description_history",
+      "note": "Latest documented local description event; not a publication, repository or source-review date.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_review",
+      "value": "2026-11-04",
+      "status": "catalogue_source_review",
+      "note": "Review of descriptive sources; not the creation or modification date of the work or repository record.",
+      "reviewed": "2026-11-04"
+    },
+    {
       "field": "author",
       "value": "Dorian Vale",
       "status": "institutional_context",
@@ -674,6 +688,27 @@
       "status": "source_linked_identifier",
       "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
       "note": "Creator identifier supplied by the linked sources; no affiliation or endorsement is inferred.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "orcid_authority",
+      "value": {
+        "scheme": "ORCID",
+        "value": "0009-0004-7737-5094",
+        "url": "https://orcid.org/0009-0004-7737-5094",
+        "status": "public_orcid_profile_inspected",
+        "evidence_urls": [
+          "https://www.museumofone.art/archives-scholarly-infrastructure/",
+          "https://eprints.rclis.org/47182/",
+          "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+        ],
+        "access_note": "Public ORCID v3 person API returned HTTP 200 on 4 November 2026. Credit name Dorian Vale and the Museum of One website URL match the local author record. Profile names and links are user-supplied; affiliation, biography and endorsement are not independently verified.",
+        "reviewed": "2026-11-04",
+        "evidence_receipt": "data/source/authority-review-2026-11-04.json"
+      },
+      "status": "public_orcid_profile_inspected",
+      "source_url": "https://orcid.org/0009-0004-7737-5094",
+      "note": "Public ORCID v3 person API returned HTTP 200 on 4 November 2026. Credit name Dorian Vale and the Museum of One website URL match the local author record. Profile names and links are user-supplied; affiliation, biography and endorsement are not independently verified.",
       "reviewed": "2026-11-04"
     },
     {
@@ -847,11 +882,35 @@
         "entity_type": "Person",
         "relation": "author",
         "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "variants": [
+          "Vale, Dorian"
+        ],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:b1fc0214d7ba6bd6dec4c30d6becdc507e76ad5feff110efeca30651b8992565",
+        "subject": "https://archive.museumofone.art/items/19963428.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#authored-by",
+        "object": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The matching institutional publication record credits Dorian Vale as author."
+      }
     },
     {
       "field": "entity_link:museum-of-one:publisher",
@@ -861,11 +920,36 @@
         "entity_type": "Organization",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "variants": [
+          "MuseumofOne",
+          "MUSEUM OF ONE"
+        ],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:8e59c0c3c5e7f89055ffb62d584b2be914d50ea6815ed0a5482992868fdd543b",
+        "subject": "https://archive.museumofone.art/items/19963428.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#published-by",
+        "object": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      }
     },
     {
       "field": "entity_link:harald-szeemann:curator discussed",
@@ -875,11 +959,33 @@
         "entity_type": "Person",
         "relation": "curator discussed",
         "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-        "note": "The essay connects Szeemann with When Attitudes Become Form; this is critical discussion, not an institutional affiliation."
+        "note": "The essay connects Szeemann with When Attitudes Become Form; this is critical discussion, not an institutional affiliation.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:52ce0ee6f3de295963f6146d4f6b8e53c8f52b62dff1cd6db4e2e3d6ebd51444",
+        "subject": "https://archive.museumofone.art/items/19963428.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-curator",
+        "object": "https://archive.museumofone.art/entities/harald-szeemann.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay connects Szeemann with When Attitudes Become Form; this is critical discussion, not an institutional affiliation."
+      }
     },
     {
       "field": "entity_link:okwui-enwezor:curator discussed",
@@ -889,11 +995,33 @@
         "entity_type": "Person",
         "relation": "curator discussed",
         "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-        "note": "The essay connects Enwezor with Documenta 11; this is critical discussion, not an institutional affiliation."
+        "note": "The essay connects Enwezor with Documenta 11; this is critical discussion, not an institutional affiliation.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:6d9d6ff8b15d09af97a340f0a6768679501c1d772502d0ebc2c6501563ceffcb",
+        "subject": "https://archive.museumofone.art/items/19963428.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-curator",
+        "object": "https://archive.museumofone.art/entities/okwui-enwezor.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay connects Enwezor with Documenta 11; this is critical discussion, not an institutional affiliation."
+      }
     },
     {
       "field": "entity_link:when-attitudes-become-form:exhibition discussed",
@@ -903,11 +1031,33 @@
         "entity_type": "Exhibition",
         "relation": "exhibition discussed",
         "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-        "note": "The essay names this exhibition in its discussion of Harald Szeemann and curatorial authorship."
+        "note": "The essay names this exhibition in its discussion of Harald Szeemann and curatorial authorship.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:ae27631460b3184cbbe509b4569e54a6af92305e92b7785990e042dac530358a",
+        "subject": "https://archive.museumofone.art/items/19963428.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-exhibition",
+        "object": "https://archive.museumofone.art/entities/when-attitudes-become-form.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay names this exhibition in its discussion of Harald Szeemann and curatorial authorship."
+      }
     },
     {
       "field": "entity_link:documenta-11:exhibition discussed",
@@ -917,11 +1067,33 @@
         "entity_type": "Exhibition",
         "relation": "exhibition discussed",
         "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-        "note": "The essay names this exhibition in its discussion of Okwui Enwezor and curatorial context."
+        "note": "The essay names this exhibition in its discussion of Okwui Enwezor and curatorial context.",
+        "variants": [],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:faa993379ffc2be27ec67d700b7310dfed04a6b119cda954ef0504094d0c4f91",
+        "subject": "https://archive.museumofone.art/items/19963428.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-exhibition",
+        "object": "https://archive.museumofone.art/entities/documenta-11.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The essay names this exhibition in its discussion of Okwui Enwezor and curatorial context."
+      }
     },
     {
       "field": "controlled_subjects",
@@ -1035,8 +1207,7 @@
       ],
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Local preferred terms with definitions and synonyms. External alignment is scoped in the vocabulary register.",
-      "reviewed": "2026-11-04"
+      "note": "Local preferred terms with definitions and synonyms. External alignment is scoped in the vocabulary register."
     },
     {
       "field": "genre_terms",
@@ -1081,8 +1252,7 @@
       ],
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Local resource-genre classification. Digital file format is recorded separately.",
-      "reviewed": "2026-11-04"
+      "note": "Local resource-genre classification. Digital file format is recorded separately."
     },
     {
       "field": "archival_context",
@@ -1091,7 +1261,7 @@
         "catalogue_snapshot_date": "2026-11-04",
         "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
         "record_category": "Published library and repository material",
-        "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+        "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a previous catalogue accession.",
         "source_repository": {
           "name": "Zenodo",
           "record_url": "https://zenodo.org/records/19963428"
@@ -1139,8 +1309,7 @@
       },
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Provenance records what is documented and leaves unknown custody and original order explicit.",
-      "reviewed": "2026-11-04"
+      "note": "Provenance records what is documented and leaves unknown custody and original order explicit."
     },
     {
       "field": "description_history",
@@ -1201,12 +1370,45 @@
           "sources": [
             "policies.html"
           ]
+        },
+        {
+          "event_id": "metadata-profile-3.0-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Unify graph identities and qualify exported relationships and citations",
+          "note": "Local graph projection now uses one contextual identity per entity, distinguishes work-level institutional matches from selected-edition links, retains title-level ISBN uncertainty, and derives citations from the source title. Typed relation assertions and a versioned validation profile are introduced. No publication date, original source snapshot or PDF changed.",
+          "fields": [
+            "metadata_profile",
+            "relationship_assertions",
+            "identity",
+            "institutional_match_scope",
+            "citation_projection"
+          ],
+          "responsible_service": "Museum of One Digital Archive Library",
+          "method": "Source-based metadata implementation and regression validation",
+          "date_kind": "Catalogue description event; not a publication, source review or acquisition date",
+          "sources": [
+            "metadata/metadata-profile.json"
+          ]
+        },
+        {
+          "event_id": "orcid-public-profile-review-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Record inspected public ORCID profile evidence",
+          "note": "The official ORCID public person API returned the credited name Dorian Vale and the Museum of One website. This confirms a matching public profile, not independently verified biographical or affiliation claims. Original creator arrays and source snapshots are unchanged.",
+          "fields": [
+            "orcid_authority"
+          ],
+          "responsible_service": "Museum of One Digital Archive Library",
+          "method": "Read-only official public API inspection",
+          "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
+          "sources": [
+            "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+          ]
         }
       ],
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Catalogue description events; these are not work publication dates or acquisition dates.",
-      "reviewed": "2026-11-04"
+      "note": "Catalogue description events; these are not work publication dates or acquisition dates."
     },
     {
       "field": "pirr_references",
@@ -1232,6 +1434,155 @@
       "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
       "status": "institutional_context_relationship",
       "note": "PIRR project IDs and programme references identify research records, not publication versions or independent chapter deposits."
+    },
+    {
+      "field": "relationship_assertions",
+      "value": [
+        {
+          "id": "urn:museum-of-one:assertion:b1fc0214d7ba6bd6dec4c30d6becdc507e76ad5feff110efeca30651b8992565",
+          "subject": "https://archive.museumofone.art/items/19963428.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#authored-by",
+          "object": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The matching institutional publication record credits Dorian Vale as author."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:8e59c0c3c5e7f89055ffb62d584b2be914d50ea6815ed0a5482992868fdd543b",
+          "subject": "https://archive.museumofone.art/items/19963428.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#published-by",
+          "object": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:52ce0ee6f3de295963f6146d4f6b8e53c8f52b62dff1cd6db4e2e3d6ebd51444",
+          "subject": "https://archive.museumofone.art/items/19963428.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-curator",
+          "object": "https://archive.museumofone.art/entities/harald-szeemann.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay connects Szeemann with When Attitudes Become Form; this is critical discussion, not an institutional affiliation."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:6d9d6ff8b15d09af97a340f0a6768679501c1d772502d0ebc2c6501563ceffcb",
+          "subject": "https://archive.museumofone.art/items/19963428.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-curator",
+          "object": "https://archive.museumofone.art/entities/okwui-enwezor.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay connects Enwezor with Documenta 11; this is critical discussion, not an institutional affiliation."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:ae27631460b3184cbbe509b4569e54a6af92305e92b7785990e042dac530358a",
+          "subject": "https://archive.museumofone.art/items/19963428.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-exhibition",
+          "object": "https://archive.museumofone.art/entities/when-attitudes-become-form.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay names this exhibition in its discussion of Harald Szeemann and curatorial authorship."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:faa993379ffc2be27ec67d700b7310dfed04a6b119cda954ef0504094d0c4f91",
+          "subject": "https://archive.museumofone.art/items/19963428.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-exhibition",
+          "object": "https://archive.museumofone.art/entities/documenta-11.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The essay names this exhibition in its discussion of Okwui Enwezor and curatorial context."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:b3e7685c393201e94e6d0330b72223f6ba6c78a86817a98c68547204026685f0",
+          "subject": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#describes",
+          "object": "https://doi.org/10.5281/zenodo.19957859",
+          "scope": "version_family",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "source_location": {
+            "kind": "metadata_field",
+            "field": "linked_zenodo_dois",
+            "values": [
+              "10.5281/zenodo.19957859"
+            ]
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "Exact-edition matching requires the selected DOI in the reviewed page metadata; other matches retain their wider scope."
+        }
+      ],
+      "status": "typed_evidence_projection",
+      "note": "Stable, typed assertions retain source scope and explicit unknown review metadata."
     },
     {
       "field": "reading_copy",
@@ -1276,7 +1627,11 @@
       "entity_type": "Person",
       "relation": "author",
       "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-      "note": "The matching institutional publication record credits Dorian Vale as author."
+      "note": "The matching institutional publication record credits Dorian Vale as author.",
+      "variants": [
+        "Vale, Dorian"
+      ],
+      "evidence_scope": "work"
     },
     {
       "id": "museum-of-one",
@@ -1284,7 +1639,12 @@
       "entity_type": "Organization",
       "relation": "publisher",
       "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+      "variants": [
+        "MuseumofOne",
+        "MUSEUM OF ONE"
+      ],
+      "evidence_scope": "work"
     },
     {
       "id": "harald-szeemann",
@@ -1292,7 +1652,9 @@
       "entity_type": "Person",
       "relation": "curator discussed",
       "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-      "note": "The essay connects Szeemann with When Attitudes Become Form; this is critical discussion, not an institutional affiliation."
+      "note": "The essay connects Szeemann with When Attitudes Become Form; this is critical discussion, not an institutional affiliation.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "okwui-enwezor",
@@ -1300,7 +1662,9 @@
       "entity_type": "Person",
       "relation": "curator discussed",
       "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-      "note": "The essay connects Enwezor with Documenta 11; this is critical discussion, not an institutional affiliation."
+      "note": "The essay connects Enwezor with Documenta 11; this is critical discussion, not an institutional affiliation.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "when-attitudes-become-form",
@@ -1308,7 +1672,9 @@
       "entity_type": "Exhibition",
       "relation": "exhibition discussed",
       "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-      "note": "The essay names this exhibition in its discussion of Harald Szeemann and curatorial authorship."
+      "note": "The essay names this exhibition in its discussion of Harald Szeemann and curatorial authorship.",
+      "variants": [],
+      "evidence_scope": "work"
     },
     {
       "id": "documenta-11",
@@ -1316,7 +1682,9 @@
       "entity_type": "Exhibition",
       "relation": "exhibition discussed",
       "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-      "note": "The essay names this exhibition in its discussion of Okwui Enwezor and curatorial context."
+      "note": "The essay names this exhibition in its discussion of Okwui Enwezor and curatorial context.",
+      "variants": [],
+      "evidence_scope": "work"
     }
   ],
   "contents": [],
@@ -1525,14 +1893,61 @@
       "sources": [
         "policies.html"
       ]
+    },
+    {
+      "event_id": "metadata-profile-3.0-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Unify graph identities and qualify exported relationships and citations",
+      "note": "Local graph projection now uses one contextual identity per entity, distinguishes work-level institutional matches from selected-edition links, retains title-level ISBN uncertainty, and derives citations from the source title. Typed relation assertions and a versioned validation profile are introduced. No publication date, original source snapshot or PDF changed.",
+      "fields": [
+        "metadata_profile",
+        "relationship_assertions",
+        "identity",
+        "institutional_match_scope",
+        "citation_projection"
+      ],
+      "responsible_service": "Museum of One Digital Archive Library",
+      "method": "Source-based metadata implementation and regression validation",
+      "date_kind": "Catalogue description event; not a publication, source review or acquisition date",
+      "sources": [
+        "metadata/metadata-profile.json"
+      ]
+    },
+    {
+      "event_id": "orcid-public-profile-review-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Record inspected public ORCID profile evidence",
+      "note": "The official ORCID public person API returned the credited name Dorian Vale and the Museum of One website. This confirms a matching public profile, not independently verified biographical or affiliation claims. Original creator arrays and source snapshots are unchanged.",
+      "fields": [
+        "orcid_authority"
+      ],
+      "responsible_service": "Museum of One Digital Archive Library",
+      "method": "Read-only official public API inspection",
+      "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
+      "sources": [
+        "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+      ]
     }
   ],
+  "record_modified": "2026-11-04",
+  "record_modified_provenance": {
+    "status": "derived_from_description_history",
+    "event_ids": [
+      "public-source-description-2026-11-04",
+      "qualified-description-2026-11-04",
+      "access-copy-verification-2026-11-04",
+      "description-policy-1.0-2026-11-04",
+      "metadata-profile-3.0-2026-11-04",
+      "orcid-public-profile-review-2026-11-04"
+    ],
+    "note": "Latest documented local description event; not a publication, repository or source-review date."
+  },
   "archival_context": {
     "description_profile": "moo-description-policy-1.0",
     "catalogue_snapshot_date": "2026-11-04",
     "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
     "record_category": "Published library and repository material",
-    "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+    "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a previous catalogue accession.",
     "source_repository": {
       "name": "Zenodo",
       "record_url": "https://zenodo.org/records/19963428"
@@ -1603,5 +2018,171 @@
     "edition_doi": "10.5281/zenodo.19963428",
     "zenodo_record_id": "19963428",
     "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication."
+  },
+  "metadata_origin": "https://archive.museumofone.art",
+  "identity": {
+    "work": "https://archive.museumofone.art/items/19963428.html#work",
+    "edition": "https://doi.org/10.5281/zenodo.19963428",
+    "version_family": "https://doi.org/10.5281/zenodo.19957859",
+    "catalogue_record": "https://archive.museumofone.art/items/19963428.html#catalogue-record"
+  },
+  "institutional_match_scope": "version_family",
+  "relationship_assertions": [
+    {
+      "id": "urn:museum-of-one:assertion:b1fc0214d7ba6bd6dec4c30d6becdc507e76ad5feff110efeca30651b8992565",
+      "subject": "https://archive.museumofone.art/items/19963428.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#authored-by",
+      "object": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:8e59c0c3c5e7f89055ffb62d584b2be914d50ea6815ed0a5482992868fdd543b",
+      "subject": "https://archive.museumofone.art/items/19963428.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#published-by",
+      "object": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:52ce0ee6f3de295963f6146d4f6b8e53c8f52b62dff1cd6db4e2e3d6ebd51444",
+      "subject": "https://archive.museumofone.art/items/19963428.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-curator",
+      "object": "https://archive.museumofone.art/entities/harald-szeemann.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay connects Szeemann with When Attitudes Become Form; this is critical discussion, not an institutional affiliation."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:6d9d6ff8b15d09af97a340f0a6768679501c1d772502d0ebc2c6501563ceffcb",
+      "subject": "https://archive.museumofone.art/items/19963428.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-curator",
+      "object": "https://archive.museumofone.art/entities/okwui-enwezor.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay connects Enwezor with Documenta 11; this is critical discussion, not an institutional affiliation."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:ae27631460b3184cbbe509b4569e54a6af92305e92b7785990e042dac530358a",
+      "subject": "https://archive.museumofone.art/items/19963428.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-exhibition",
+      "object": "https://archive.museumofone.art/entities/when-attitudes-become-form.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay names this exhibition in its discussion of Harald Szeemann and curatorial authorship."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:faa993379ffc2be27ec67d700b7310dfed04a6b119cda954ef0504094d0c4f91",
+      "subject": "https://archive.museumofone.art/items/19963428.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#discusses-exhibition",
+      "object": "https://archive.museumofone.art/entities/documenta-11.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The essay names this exhibition in its discussion of Okwui Enwezor and curatorial context."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:b3e7685c393201e94e6d0330b72223f6ba6c78a86817a98c68547204026685f0",
+      "subject": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#describes",
+      "object": "https://doi.org/10.5281/zenodo.19957859",
+      "scope": "version_family",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+      "source_location": {
+        "kind": "metadata_field",
+        "field": "linked_zenodo_dois",
+        "values": [
+          "10.5281/zenodo.19957859"
+        ]
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "Exact-edition matching requires the selected DOI in the reviewed page metadata; other matches retain their wider scope."
+    }
+  ],
+  "orcid_authority": {
+    "scheme": "ORCID",
+    "value": "0009-0004-7737-5094",
+    "url": "https://orcid.org/0009-0004-7737-5094",
+    "status": "public_orcid_profile_inspected",
+    "evidence_urls": [
+      "https://www.museumofone.art/archives-scholarly-infrastructure/",
+      "https://eprints.rclis.org/47182/",
+      "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+    ],
+    "access_note": "Public ORCID v3 person API returned HTTP 200 on 4 November 2026. Credit name Dorian Vale and the Museum of One website URL match the local author record. Profile names and links are user-supplied; affiliation, biography and endorsement are not independently verified.",
+    "reviewed": "2026-11-04",
+    "evidence_receipt": "data/source/authority-review-2026-11-04.json"
   }
 }

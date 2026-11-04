@@ -21,6 +21,7 @@
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.21241866"
       },
+      "lastReviewed": "2026-11-04",
       "breadcrumb": {
         "@id": "https://archive.museumofone.art/items/21241866.html#breadcrumb"
       }
@@ -97,8 +98,34 @@
       ]
     },
     {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/21241866.html#work",
+      "name": "Hassan Sharif's Objects: The Ascetic of the Everyday",
+      "description": "Local work identity, distinct from its deposited editions, repository version family and catalogue description.",
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.21241865"
+      },
+      "author": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "about": [
+        {
+          "@id": "https://archive.museumofone.art/entities/hassan-sharif.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/shopping-bags.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/plastic-funnel-and-aluminium-foil.html#entity"
+        }
+      ]
+    },
+    {
       "@type": "Person",
-      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
       "name": "Dorian Vale",
       "identifier": {
         "@type": "PropertyValue",
@@ -108,7 +135,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://archive.museumofone.art/#publisher",
+      "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
       "name": "Museum of One",
       "url": "https://www.museumofone.art/"
     },
@@ -120,6 +147,9 @@
         "@type": "PropertyValue",
         "propertyID": "Zenodo concept DOI",
         "value": "10.5281/zenodo.21241865"
+      },
+      "exampleOfWork": {
+        "@id": "https://archive.museumofone.art/items/21241866.html#work"
       },
       "workExample": {
         "@id": "https://doi.org/10.5281/zenodo.21241866"
@@ -303,10 +333,10 @@
         "Anti-monumentality"
       ],
       "author": {
-        "@id": "https://orcid.org/0009-0004-7737-5094"
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
       },
       "publisher": {
-        "@id": "https://archive.museumofone.art/#publisher"
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
       "alternateName": [],
       "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -319,17 +349,6 @@
         },
         {
           "@id": "https://archive.museumofone.art/assets/documents/21241866.pdf"
-        }
-      ],
-      "about": [
-        {
-          "@id": "https://archive.museumofone.art/entities/hassan-sharif.html#entity"
-        },
-        {
-          "@id": "https://archive.museumofone.art/entities/shopping-bags.html#entity"
-        },
-        {
-          "@id": "https://archive.museumofone.art/entities/plastic-funnel-and-aluminium-foil.html#entity"
         }
       ]
     },
@@ -356,13 +375,18 @@
       "@type": "WebPage",
       "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/",
       "name": "Museum of One institutional publication context",
+      "description": "Reviewed relationship scope: version family",
       "about": {
-        "@id": "https://doi.org/10.5281/zenodo.21241866"
+        "@id": "https://doi.org/10.5281/zenodo.21241865"
       }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/21241866.html#relationship-dorian-vale-author",
+      "identifier": "urn:museum-of-one:assertion:df5e6746cebd1c7fb5d27b459f7e3c90cb61d14d0e3674ea6bbbe6ac1e7f3a1a",
       "name": "author",
       "about": {
         "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
@@ -370,11 +394,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
       },
-      "description": "The matching institutional publication record credits Dorian Vale as author."
+      "description": "The matching institutional publication record credits Dorian Vale as author.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/21241866.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#authored-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/21241866.html#relationship-museum-of-one-publisher",
+      "identifier": "urn:museum-of-one:assertion:eaa1ddcb3f97d1813de0a0dcefaa03edd85e3be155b646f8ab738557e6d1ba80",
       "name": "publisher",
       "about": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
@@ -382,11 +422,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
       },
-      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/21241866.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#published-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/21241866.html#relationship-hassan-sharif-artist-discussed",
+      "identifier": "urn:museum-of-one:assertion:aba1e680cb8c8e2dee5413473942a23b24708bc3e170e29a8217d83786938d0c",
       "name": "artist discussed",
       "about": {
         "@id": "https://archive.museumofone.art/entities/hassan-sharif.html#entity"
@@ -394,11 +450,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
       },
-      "description": "The essay studies Sharif’s Objects and captions Shopping Bags and Plastic Funnel and Aluminium Foil."
+      "description": "The essay studies Sharif’s Objects and captions Shopping Bags and Plastic Funnel and Aluminium Foil.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/21241866.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#discusses-artist"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/hassan-sharif.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/21241866.html#relationship-shopping-bags-artwork-discussed",
+      "identifier": "urn:museum-of-one:assertion:bb26cfc9eda391e450c0a2eb560352bceff28be2ca67097a9170acaea98b4946",
       "name": "artwork discussed",
       "about": {
         "@id": "https://archive.museumofone.art/entities/shopping-bags.html#entity"
@@ -406,11 +478,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
       },
-      "description": "Named in the image caption as a work by Hassan Sharif."
+      "description": "Named in the image caption as a work by Hassan Sharif.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/21241866.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/shopping-bags.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/21241866.html#relationship-plastic-funnel-and-aluminium-foil-artwork-discussed",
+      "identifier": "urn:museum-of-one:assertion:ef9e15b527daa15e8893223c368f928529145e22157df07ec15b1554163d3e11",
       "name": "artwork discussed",
       "about": {
         "@id": "https://archive.museumofone.art/entities/plastic-funnel-and-aluminium-foil.html#entity"
@@ -418,7 +506,19 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
       },
-      "description": "Named in the image caption as a work by Hassan Sharif."
+      "description": "Named in the image caption as a work by Hassan Sharif.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/21241866.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/plastic-funnel-and-aluminium-foil.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
+      }
     },
     {
       "@type": "DefinedTermSet",

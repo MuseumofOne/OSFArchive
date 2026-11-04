@@ -21,6 +21,7 @@
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.23430200"
       },
+      "lastReviewed": "2026-11-04",
       "breadcrumb": {
         "@id": "https://archive.museumofone.art/items/23430200.html#breadcrumb"
       }
@@ -97,8 +98,31 @@
       ]
     },
     {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23430200.html#work",
+      "name": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles",
+      "description": "Local work identity, distinct from its deposited editions, repository version family and catalogue description.",
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.23430199"
+      },
+      "author": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "about": [
+        {
+          "@id": "https://archive.museumofone.art/entities/simon-maris.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/isabella.html#entity"
+        }
+      ]
+    },
+    {
       "@type": "Person",
-      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
       "name": "Dorian Vale",
       "identifier": {
         "@type": "PropertyValue",
@@ -108,7 +132,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://archive.museumofone.art/#publisher",
+      "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
       "name": "Museum of One",
       "url": "https://www.museumofone.art/"
     },
@@ -120,6 +144,9 @@
         "@type": "PropertyValue",
         "propertyID": "Zenodo concept DOI",
         "value": "10.5281/zenodo.23430199"
+      },
+      "exampleOfWork": {
+        "@id": "https://archive.museumofone.art/items/23430200.html#work"
       },
       "workExample": {
         "@id": "https://doi.org/10.5281/zenodo.23430200"
@@ -259,10 +286,10 @@
         "Epistemology of Art"
       ],
       "author": {
-        "@id": "https://orcid.org/0009-0004-7737-5094"
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
       },
       "publisher": {
-        "@id": "https://archive.museumofone.art/#publisher"
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
       "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
       "exampleOfWork": {
@@ -312,14 +339,6 @@
         {
           "@id": "https://archive.museumofone.art/assets/documents/23430200.pdf"
         }
-      ],
-      "about": [
-        {
-          "@id": "https://archive.museumofone.art/entities/simon-maris.html#entity"
-        },
-        {
-          "@id": "https://archive.museumofone.art/entities/isabella.html#entity"
-        }
       ]
     },
     {
@@ -345,13 +364,18 @@
       "@type": "WebPage",
       "@id": "https://www.museumofone.art/after-the-interpretation-changes/",
       "name": "Museum of One institutional publication context",
+      "description": "Reviewed relationship scope: exact edition",
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.23430200"
       }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/23430200.html#relationship-dorian-vale-author",
+      "identifier": "urn:museum-of-one:assertion:f4caf8eb7846f4233360058d01fb0f6bef64c0d5367b8dfe2a8e0091bf51aeb9",
       "name": "author",
       "about": {
         "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
@@ -359,11 +383,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
       },
-      "description": "The matching institutional publication record credits Dorian Vale as author."
+      "description": "The matching institutional publication record credits Dorian Vale as author.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/23430200.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#authored-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/23430200.html#relationship-museum-of-one-publisher",
+      "identifier": "urn:museum-of-one:assertion:594393ee5ef8bcd2501a4c5b004d168d9f679feefbfb579c0845f43ec2bcaa6f",
       "name": "publisher",
       "about": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
@@ -371,11 +411,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
       },
-      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/23430200.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#published-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/23430200.html#relationship-simon-maris-artist-discussed",
+      "identifier": "urn:museum-of-one:assertion:89abb4856a48db487c8e3fde3bfd3e547d4828f01b2a9f6559effd263165dd19",
       "name": "artist discussed",
       "about": {
         "@id": "https://archive.museumofone.art/entities/simon-maris.html#entity"
@@ -383,11 +439,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
       },
-      "description": "The abstract identifies Simon Maris as the artist of the portrait now titled Isabella."
+      "description": "The abstract identifies Simon Maris as the artist of the portrait now titled Isabella.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/23430200.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#discusses-artist"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/simon-maris.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/23430200.html#relationship-alexander-viktorovich-markov-scholarly-correspondent",
+      "identifier": "urn:museum-of-one:assertion:8ab286bbc76d19e318848536592a0a311ce1019bffbe2b8b17f6ec0276459c76",
       "name": "scholarly correspondent",
       "about": {
         "@id": "https://archive.museumofone.art/entities/alexander-viktorovich-markov.html#entity"
@@ -395,11 +467,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
       },
-      "description": "The source records scholarly correspondence and a critical response. It explicitly states that Markov is not a coauthor and that this is not formal peer review or agreement with every proposal."
+      "description": "The source records scholarly correspondence and a critical response. It explicitly states that Markov is not a coauthor and that this is not formal peer review or agreement with every proposal.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/23430200.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#has-scholarly-correspondent"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/alexander-viktorovich-markov.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/23430200.html#relationship-isabella-artwork-discussed",
+      "identifier": "urn:museum-of-one:assertion:9b9176ac726ef49049a1bccf3023ff91c38c448b619716b73640f73063441e39",
       "name": "artwork discussed",
       "about": {
         "@id": "https://archive.museumofone.art/entities/isabella.html#entity"
@@ -407,7 +495,19 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
       },
-      "description": "The abstract identifies the current title and artist. The changing catalogue title is the subject of the paper; historic terminology is not adopted as the preferred label."
+      "description": "The abstract identifies the current title and artist. The changing catalogue title is the subject of the paper; historic terminology is not adopted as the preferred label.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/23430200.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/isabella.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
+      }
     },
     {
       "@type": "DefinedTermSet",

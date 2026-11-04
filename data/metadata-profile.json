@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://archive.museumofone.art/metadata/metadata-profile.json",
+  "title": "Museum of One source-qualified catalogue profile",
+  "version": "3.0.0",
+  "description": "A local application profile with evidence-scoped identity and export rules; not an external certification.",
+  "type": "object",
+  "required": [
+    "id",
+    "accession",
+    "title",
+    "source_title",
+    "doi",
+    "date",
+    "type",
+    "zenodo_url",
+    "institutional_url",
+    "creators",
+    "license",
+    "files"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[0-9]+$"
+    },
+    "accession": {
+      "type": "string",
+      "pattern": "^MOO-CAT-[0-9]{3,}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "doi": {
+      "type": "string",
+      "pattern": "^10\\.[0-9]{4,9}/\\S+$"
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"
+    },
+    "type": {
+      "enum": [
+        "Book",
+        "Journal article",
+        "Working paper",
+        "Dataset"
+      ]
+    },
+    "zenodo_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "institutional_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "creators": {
+      "type": "array",
+      "minItems": 1
+    },
+    "license": {
+      "type": "object"
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1
+    }
+  },
+  "x-identity-rules": [
+    "Separate Work, deposited edition, version family, file, catalogue description and webpage.",
+    "All contextual entity references use the shared entity URI.",
+    "An exact institutional edition match requires the selected DOI in linked_zenodo_dois."
+  ],
+  "x-export-rules": [
+    "Only evidenced edition_format ISBN allocation is emitted as edition ISBN.",
+    "Citation title is source_title, with display title as fallback only when absent.",
+    "Unknown creation dates and reviewers remain unknown; source review is not live external verification."
+  ],
+  "x-validation": "scripts/metadata_profile.py validates required fields, types, patterns, cardinality, URI/date semantics, scoped assertions and whole-graph references."
+}

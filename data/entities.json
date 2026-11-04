@@ -11,8 +11,10 @@
         "scheme": "ORCID",
         "value": "0009-0004-7737-5094",
         "url": "https://orcid.org/0009-0004-7737-5094",
-        "source_url": "https://zenodo.org/records/19864099",
-        "note": "Creator identifier supplied by deposited Zenodo metadata."
+        "source_url": "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person",
+        "note": "The official public ORCID API profile has credit name Dorian Vale and links to Museum of One; observed 4 November 2026. User-supplied profile information does not independently establish affiliations or endorsement.",
+        "reviewed": "2026-11-04",
+        "status": "public_registry_profile_inspected"
       }
     ],
     "summary": "Author of the selected publications in this catalogue.",
@@ -97,6 +99,11 @@
         "url": "https://www.museumofone.art/language-as-custody-writing-without-harm-in-post-interpretive-criticism/",
         "label": "Language as Custody",
         "note": "The matching institutional publication record credits Dorian Vale as author."
+      },
+      {
+        "url": "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person",
+        "label": "ORCID public person record",
+        "note": "Credit name and Museum of One website URL inspected on 4 November 2026; minimal observation retained in the authority review receipt."
       }
     ],
     "record_links": [

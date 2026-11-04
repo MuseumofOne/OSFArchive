@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-04",
+  "profile_id": "moo-description-policy-1.0",
+  "scope": "Documented initial description events for these 16 selected records only; never extend this list to backdate later additions. Later records require their own dated description_history.",
+  "record_ids": [
+    "19864099",
+    "19864115",
+    "23395654",
+    "20383926",
+    "23430200",
+    "23428974",
+    "21715085",
+    "21241866",
+    "20593003",
+    "19963428",
+    "20100136",
+    "20100139",
+    "21786998",
+    "19863790",
+    "19863836",
+    "19863851"
+  ]
+}

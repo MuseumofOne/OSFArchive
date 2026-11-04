@@ -1,0 +1,56 @@
+{
+  "profile_version": "3.0.0",
+  "scope": "Local source/profile and generated-output validation. No live registry or indexing verification.",
+  "records": 16,
+  "passed": true,
+  "checks": {
+    "profile": {
+      "errors": []
+    },
+    "global_graph": {
+      "executed": true,
+      "errors": []
+    },
+    "citation_exports": {
+      "executed": true,
+      "errors": []
+    }
+  },
+  "dimensions": {
+    "institutional_match_scope": {
+      "exact_edition": 7,
+      "version_family": 6,
+      "work": 3
+    },
+    "typed_relationships": 99,
+    "relationships_with_evidence": 99,
+    "relationships_with_review_date": 83,
+    "relationships_with_named_reviewer": 0,
+    "relationships_with_passage_locator": 0,
+    "title_level_isbn_format_unresolved": [
+      "19864099",
+      "19864115",
+      "23395654",
+      "20383926"
+    ],
+    "local_creation_date_unknown": [
+      "19864099",
+      "19864115",
+      "23395654",
+      "20383926",
+      "23430200",
+      "23428974",
+      "21715085",
+      "21241866",
+      "20593003",
+      "19963428",
+      "20100136",
+      "20100139",
+      "21786998",
+      "19863790",
+      "19863836",
+      "19863851"
+    ]
+  },
+  "interpretation": "Unknown or qualified values remain explicit. Structural success does not establish external authority assignment, factual certainty, or search-engine inclusion."
+}

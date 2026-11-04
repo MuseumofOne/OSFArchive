@@ -7,12 +7,15 @@
       "scheme": "ORCID",
       "value": "0009-0004-7737-5094",
       "url": "https://orcid.org/0009-0004-7737-5094",
-      "status": "corroborated_by_institutional_and_repository_sources",
+      "status": "public_orcid_profile_inspected",
       "evidence_urls": [
         "https://www.museumofone.art/archives-scholarly-infrastructure/",
-        "https://eprints.rclis.org/47182/"
+        "https://eprints.rclis.org/47182/",
+        "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
       ],
-      "access_note": "ORCID landing page resolves but requires JavaScript; public ORCID API profile not inspected."
+      "access_note": "Public ORCID v3 person API returned HTTP 200 on 4 November 2026. Credit name Dorian Vale and the Museum of One website URL match the local author record. Profile names and links are user-supplied; affiliation, biography and endorsement are not independently verified.",
+      "reviewed": "2026-11-04",
+      "evidence_receipt": "data/source/authority-review-2026-11-04.json"
     },
     "isni": {
       "status": "unresolved_conflict",
@@ -20,7 +23,9 @@
         "0000000528819744",
         "0000000537155247"
       ],
-      "note": "Different institutional/repository pages cite conflicting author ISNI values. Do not assert either as independently verified or sameAs."
+      "note": "Different institutional/repository pages cite conflicting author ISNI values. Do not assert either as independently verified or sameAs.",
+      "reviewed": "2026-11-04",
+      "access_note": "Both official ISNI identifier pages returned HTTP 403 during the current check. The conflicting assignments remain unresolved."
     }
   },
   "serial": {

@@ -21,6 +21,7 @@
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.23395654"
       },
+      "lastReviewed": "2026-11-04",
       "breadcrumb": {
         "@id": "https://archive.museumofone.art/items/23395654.html#breadcrumb"
       }
@@ -100,8 +101,29 @@
       ]
     },
     {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23395654.html#work",
+      "name": "Threads of Sand, Scar & Scripture: Sudanese Art and the Ethics of Witnessing (A Post-Interpretive Study)",
+      "description": "Local work identity, distinct from its deposited editions, repository version family and catalogue description.",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source-reported title-level ISBN",
+        "value": "978-1-06-982033-4",
+        "description": "Edition/format applicability remains unresolved; not exported as the deposited edition's ISBN."
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.19207069"
+      },
+      "author": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      }
+    },
+    {
       "@type": "Person",
-      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
       "name": "Dorian Vale",
       "identifier": {
         "@type": "PropertyValue",
@@ -111,7 +133,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://archive.museumofone.art/#publisher",
+      "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
       "name": "Museum of One",
       "url": "https://www.museumofone.art/"
     },
@@ -123,6 +145,9 @@
         "@type": "PropertyValue",
         "propertyID": "Zenodo concept DOI",
         "value": "10.5281/zenodo.19207069"
+      },
+      "exampleOfWork": {
+        "@id": "https://archive.museumofone.art/items/23395654.html#work"
       },
       "workExample": {
         "@id": "https://doi.org/10.5281/zenodo.23395654"
@@ -263,12 +288,11 @@
         "displacement"
       ],
       "author": {
-        "@id": "https://orcid.org/0009-0004-7737-5094"
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
       },
       "publisher": {
-        "@id": "https://archive.museumofone.art/#publisher"
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
-      "isbn": "978-1-06-982033-4",
       "alternateName": [],
       "bookEdition": "Second edition, 18 May 2026 (Museum of One publication record)",
       "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -365,13 +389,18 @@
       "@type": "WebPage",
       "@id": "https://www.museumofone.art/publication-threads-of-sand/",
       "name": "Museum of One institutional publication context",
+      "description": "Reviewed relationship scope: exact edition",
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.23395654"
       }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/23395654.html#relationship-dorian-vale-author",
+      "identifier": "urn:museum-of-one:assertion:7d3ccaa4c0544d3c1f50c8948b752a948c61106ed585e203f288e66163e37f2e",
       "name": "author",
       "about": {
         "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
@@ -379,11 +408,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/publication-threads-of-sand/"
       },
-      "description": "The matching institutional publication record credits Dorian Vale as author."
+      "description": "The matching institutional publication record credits Dorian Vale as author.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/23395654.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#authored-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/publication-threads-of-sand/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/23395654.html#relationship-museum-of-one-publisher",
+      "identifier": "urn:museum-of-one:assertion:9f3c72a22524892c4d67a948806c261493664e751f69e997bc44d64aa3b213f3",
       "name": "publisher",
       "about": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
@@ -391,7 +436,19 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/publication-threads-of-sand/"
       },
-      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/23395654.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#published-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/publication-threads-of-sand/"
+      }
     },
     {
       "@type": "DefinedTermSet",

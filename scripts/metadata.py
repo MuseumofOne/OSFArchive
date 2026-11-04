@@ -6,6 +6,8 @@ Qualified Dublin Core XML is an application export, not an OAI-PMH response.
 from __future__ import annotations
 
 from relationship_metadata import extend_graph, relationship_assertions
+from identities import (work_uri, responsibility_uri, institutional_target,
+                        institutional_scope, edition_isbn)
 import mimetypes
 import re
 from typing import Any
@@ -68,12 +70,23 @@ def build_assertions(r: dict) -> list[dict]:
                   "keywords", "language", "license", "rights", "files",
                   "source_created", "source_modified"):
         add(field, r.get(field))
+    for field in ("record_created", "record_modified"):
+        provenance = r.get(field + "_provenance") or {}
+        add(field, r.get(field), None, provenance.get("status") or "local_catalogue_lifecycle",
+            provenance.get("note") or "Explicit local catalogue lifecycle date; not an original-work, publication or repository-record date.")
+    add("source_review", reviewed, None, "catalogue_source_review",
+        "Review of descriptive sources; not the creation or modification date of the work or repository record.")
     for field in ("author", "publisher", "first_edition", "edition_statement", "isbn"):
         add(field, r.get(field), institution or source, "institutional_context",
             "Consult the linked edition record; a repository version is not a new book edition."
             if field in ("first_edition", "edition_statement", "isbn") else "Institutional responsibility statement; original repository creator roles remain separate.")
     add("orcid", r.get("orcid"), institution or source, "source_linked_identifier",
         "Creator identifier supplied by the linked sources; no affiliation or endorsement is inferred.")
+    if r.get('orcid_authority'):
+        authority = r['orcid_authority']
+        results.append(assertion('orcid_authority', authority, authority.get('url'),
+                                 authority.get('status', 'source_linked_identifier'),
+                                 authority.get('access_note', ''), authority.get('reviewed')))
     add("summary", r.get("summary"), institution or source, "editorial_enrichment",
         "Catalogue-editor summary based on the linked work; not an original publisher abstract.")
     add("subjects", r.get("subjects"), institution or source, "editorial_enrichment",
@@ -129,8 +142,9 @@ def build_graph(r: dict, itemurl: str, origin: str) -> dict:
     institution_url = r.get("institutional_url")
     author_name = r.get("author")
     orcid = _orcid(r.get("orcid"))
-    author_id = orcid or itemurl + "#author"
-    publisher_id = origin + "/#publisher"
+    author_id = responsibility_uri(r, 'author', origin)
+    publisher_id = responsibility_uri(r, 'publisher', origin)
+    work_id = work_uri(r, origin)
     catalogue_id = itemurl + "#catalogue-record"
     webpage_id = itemurl + "#webpage"
     graph = [
@@ -155,12 +169,24 @@ def build_graph(r: dict, itemurl: str, origin: str) -> dict:
     if r.get("accession") or r.get("id"):
         catalogue["identifier"] = {"@type": "PropertyValue", "propertyID": "Local catalogue identifier",
                                    "value": r.get("accession") or str(r["id"])}
+    if r.get("record_created"):
+        catalogue["dateCreated"] = r["record_created"]
+    if r.get("record_modified"):
+        catalogue["dateModified"] = r["record_modified"]
     if r.get("source_review") or r.get("reviewed"):
-        catalogue["dateModified"] = r.get("source_review") or r["reviewed"]
+        graph[1]["lastReviewed"] = r.get("source_review") or r["reviewed"]
     sources = [{"@id": u} for u in (source_url, institution_url) if u]
     if sources:
         catalogue["isBasedOn"] = sources
     graph.append(catalogue)
+
+    work = {"@type": "CreativeWork", "@id": work_id,
+            "name": r.get("title") or r.get("source_title"),
+            "description": "Local work identity, distinct from its deposited editions, repository version family and catalogue description."}
+    if r.get('isbn') and not edition_isbn(r):
+        work['identifier'] = {"@type": "PropertyValue", "propertyID": "Source-reported title-level ISBN",
+                              "value": r['isbn'], "description": "Edition/format applicability remains unresolved; not exported as the deposited edition's ISBN."}
+    graph.append(work)
 
     edition = {"@type": _kind(r), "@id": edition_id,
                "name": r.get("source_title") or r.get("title") or "Deposited publication",
@@ -192,8 +218,8 @@ def build_graph(r: dict, itemurl: str, origin: str) -> dict:
         if "museum of one" in publisher_name.lower():
             publisher["url"] = "https://www.museumofone.art/"
         graph.append(publisher)
-    if r.get("isbn") and edition["@type"] == "Book" and r.get("isbn_applicability") != "unverified":
-        edition["isbn"] = r["isbn"]
+    if edition_isbn(r) and edition["@type"] == "Book":
+        edition["isbn"] = edition_isbn(r)
     if r.get("alternate_titles"):
         edition["alternateName"] = [t["title"] for t in r["alternate_titles"] if t.get("kind") != "institutional_web_record_title"]
     edition_statement = r.get("edition_statement") or (r.get("institutional_metadata") or {}).get("edition")
@@ -212,7 +238,11 @@ def build_graph(r: dict, itemurl: str, origin: str) -> dict:
                       "name": (r.get("title") or "Publication") + " — version family",
                       "identifier": {"@type": "PropertyValue", "propertyID": "Zenodo concept DOI",
                                      "value": family_id.removeprefix("https://doi.org/")},
-                      "workExample": {"@id": edition_id}})
+                      "exampleOfWork": {"@id": work_id}, "workExample": {"@id": edition_id}})
+        work['workExample'] = {'@id': family_id}
+    else:
+        edition['exampleOfWork'] = {'@id': work_id}
+        work['workExample'] = {'@id': edition_id}
     # Only map relationships whose schema.org meaning matches the source label.
     # Other source relationships remain intact in JSON/XML provenance exports.
     for relation in r.get("relations") or []:
@@ -304,7 +334,8 @@ def build_graph(r: dict, itemurl: str, origin: str) -> dict:
     if institution_url:
         graph.append({"@type": "WebPage", "@id": institution_url,
                       "name": "Museum of One institutional publication context",
-                      "about": {"@id": edition_id}})
+                      "description": "Reviewed relationship scope: " + institutional_scope(r).replace('_', ' '),
+                      "about": {"@id": institutional_target(r, origin)}})
     return extend_graph({"@context": "https://schema.org", "@graph": graph},r,itemurl,origin)
 
 
@@ -312,7 +343,7 @@ def build_dc(r: dict) -> str:
     """Qualified DC application export, with explicit local provenance extensions."""
     for prefix, ns in (("dc", DC), ("dcterms", DCT), ("cat", CAT)):
         ET.register_namespace(prefix, ns)
-    root = ET.Element("{" + CAT + "}record", {"profile": "qualified-dublin-core-with-catalogue-provenance", "version": "1"})
+    root = ET.Element("{" + CAT + "}record", {"profile": "qualified-dublin-core-with-catalogue-provenance", "version": "2"})
 
     def add(term, value, namespace=DCT, origin=None):
         if value in (None, "", [], {}):
@@ -331,12 +362,19 @@ def build_dc(r: dict) -> str:
     add("creator", r.get("author"), origin="institutional_responsibility")
     add("publisher", r.get("publisher"), origin="institutional_context")
     add("issued", r.get("date"), origin="repository_publication_date")
-    add("created", r.get("source_created"), origin="repository_record_creation")
-    add("modified", r.get("source_modified"), origin="repository_record_modification")
+    # The top-level DC description concerns the deposited edition. Repository
+    # and local catalogue lifecycle dates therefore use explicitly scoped terms.
+    add("repositoryRecordCreated", r.get("source_created"), namespace=CAT, origin="repository_record_creation")
+    add("repositoryRecordModified", r.get("source_modified"), namespace=CAT, origin="repository_record_modification")
+    add("recordCreated", r.get("record_created"), namespace=CAT, origin="local_catalogue_lifecycle")
+    add("recordModified", r.get("record_modified"), namespace=CAT, origin="local_catalogue_lifecycle")
+    add("sourceReviewDate", r.get("source_review") or r.get("reviewed"), namespace=CAT, origin="catalogue_source_review")
     add("identifier", _doi(r.get("doi")), origin="repository_version")
     add("identifier", r.get("accession") or str(r.get("id") or ""), origin="local_catalogue")
-    if r.get("isbn"):
-        add("identifier", "ISBN " + r["isbn"], origin="edition_identifier_from_linked_sources")
+    if edition_isbn(r):
+        add("identifier", "ISBN " + edition_isbn(r), origin="evidenced_edition_format_identifier")
+    elif r.get("isbn"):
+        add("titleLevelISBN", r["isbn"], namespace=CAT, origin="source_reported_title_identifier_format_unresolved")
     add("source", r.get("zenodo_url"), origin="repository_record")
     add("references", r.get("institutional_url"), origin="institutional_corroboration")
     add("isVersionOf", _doi(r.get("conceptdoi")), origin="repository_version_family")

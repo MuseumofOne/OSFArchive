@@ -1,12 +1,12 @@
 # Museum of One Digital Archive Library
 
-A portable, buildless digital catalogue with static HTML item pages, a searchable catalogue, provenance-qualified metadata and JSON-LD. Zenodo remains the publication source of record; verified reading copies are included. No subscription, database or application backend is required.
+A portable static digital catalogue generated with Python with static HTML item pages, a searchable catalogue, provenance-qualified metadata and JSON-LD. Zenodo remains the publication source of record; verified reading copies are included. No subscription, database or application backend is required.
 
 This is a custom static implementation, not an installed CollectionBuilder or Wax instance. It can be hosted on GitHub Pages using the included workflow.
 
 ## Rebuild
 
-Run `python scripts/build.py`. The site lives in `dist/`. Relative internal links support GitHub Pages project sites. Set `SITE_ORIGIN` to your eventual public origin (including a project path when applicable) before rebuilding to update canonical URLs, JSON-LD and the sitemap.
+Use Python 3.12 (the CI version) with the pinned dependencies from `requirements-test.txt`: `python -m pip install -r requirements-test.txt`, then run `python scripts/build.py`. The current full build requires PyMuPDF for source-PDF text extraction as well as verification; the requirements filename is retained from the earlier test-only setup. The site lives in `dist/`. Relative internal links support GitHub Pages project sites. Set `SITE_ORIGIN` to your eventual public origin (including a project path when applicable) before rebuilding to update canonical URLs, JSON-LD and the sitemap.
 
 ## Source and editorial metadata
 
@@ -53,3 +53,20 @@ Policies, description responsibility/history, source acquisition context, resear
 ## Hosting target
 
 Target repository: MuseumofOne/OSFArchive. Hosting: public GitHub Pages. Custom hostname: archive.museumofone.art. The generated CNAME file and canonical URLs use that hostname. Add the DNS CNAME described in DOMAIN_SETUP.md and enable Pages with GitHub Actions. This source package excludes the old Sites deployment identity.
+
+
+## Consolidation branch and Ghost integration
+
+The `integration/ghost-archive-consolidation` branch prepares the independent archive and its public integration contract. See [architecture](docs/ARCHITECTURE.md), [Ghost integration](docs/GHOST_INTEGRATION.md), [metadata validation](docs/METADATA_VALIDATION.md), [legacy migration](docs/MIGRATION.md), [deployment and rollback](docs/DEPLOYMENT.md), and [maintenance](docs/MAINTENANCE.md).
+
+The current archive working copy is directly in `/Volumes/T7-Shield/Digital Archive Library` on the mounted T7. The latest functioning Desktop theme, version 1.11.10, was inspected and verified against its ZIP. The prepared 1.12.0 theme adds a native entrance at the existing `/digital-archive-library/` address and replaces public legacy destinations. The source, ZIP, checksums and current evidence belong together in the existing Desktop theme folder; full Ghost backups remain separately outside this public repository. Final package/browser results are recorded in release evidence. No further Google Drive updates, Ghost installation, deployment or DNS changes are part of this local preparation.
+
+The existing `metadata/discovery.json` reading-list feed and `metadata/search-index.v1.json` integration feed remain compatible. The current shared retrieval contract is `metadata/research-discovery.v2.json`, covering publications, described chapters, entities, concepts, programmes and a reviewed snapshot of published public Ghost records. `metadata/research-passages.v2.json` separately provides literal PDF text-layer passages and source-page links. Both are generated from reviewed inputs and include deterministic content versions. Ghost bundles matching snapshots; remote refresh remains disabled until public HTTPS/CORS are verified. See [connected discovery](docs/DISCOVERY.md) and the [metadata profile](docs/METADATA_PROFILE.md).
+
+This repository accepts public, source-evidenced catalogue items only. The build stops before writing artifacts if a future item is marked private, draft or hidden, or lacks the required public Zenodo snapshot. Keep unpublished institutional material outside this public catalogue. Other repositories and descriptive levels need an explicit publication policy before export.
+
+The handoff inspection recorded the target GitHub repository as private with Pages disabled; that administration state has not been reverified by this local build. A hosting target, generated CNAME file or successful local build is not evidence of a public deployment. Production installation, deployment and DNS changes require explicit authorization under the current implementation instructions.
+
+## Current validation and exports
+
+The build applies the local metadata application profile before publication and validates the generated outputs again. Item CSL-JSON, BibTeX, RIS, visible citations, applicable Scholar tags, qualified Dublin Core and JSON-LD derive from shared models. Typed relationship assertions, the relation register, combined graph, profile and machine-readable quality report are generated under `dist/metadata/`; the visible quality report is `metadata-quality.html`. Passing local gates establish the stated consistency and source checks, not external standards certification or guaranteed indexing.

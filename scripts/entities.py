@@ -6,6 +6,8 @@ artists, correspondents and curators are never promoted to publication authors.
 from copy import deepcopy
 from html import escape
 import re
+from identities import entity_uri, doi_uri
+from relationship_assertions import RELATIONS
 
 
 def _entities(value):
@@ -44,10 +46,15 @@ def attach_entities(records, entities):
             record = by_record.get(str(link['record_id']))
             if record is None:
                 raise ValueError(f'Unknown entity-linked catalogue item: {link["record_id"]}')
+            if link.get('relation') not in RELATIONS or entity['type'] not in RELATIONS[link['relation']]['range']:
+                raise ValueError('Unsupported contextual relationship or entity type: ' + str(link.get('relation')))
             record['entity_links'].append({
                 'id': entity['id'], 'label': entity['label'],
                 'entity_type': entity['type'], 'relation': link['relation'],
                 'source_url': link['source_url'], 'note': link.get('note', ''),
+                'variants': deepcopy(entity.get('variants', [])),
+                'evidence_scope': link.get('evidence_scope', 'work'),
+                **{key: deepcopy(link[key]) for key in ('source_location', 'reviewed', 'reviewer') if key in link},
             })
     return result
 
@@ -75,12 +82,41 @@ def _nav(base=''):
             f'<a class="pill" href="{base}exhibitions.html">Exhibitions discussed</a></nav>')
 
 
+def entity_graph(entities, origin):
+    """The same authority nodes used by entity pages and the combined graph."""
+    entities = _entities(entities)
+    _validate(entities)
+    by_id = {entity['id']: entity for entity in entities}
+    nodes = []
+    for entity in entities:
+        path = f'entities/{entity["id"]}.html'
+        schema_type = {'Artwork': 'CreativeWork', 'Exhibition': 'ExhibitionEvent'}.get(entity['type'], entity['type'])
+        node = {'@context': 'https://schema.org', '@type': schema_type,
+                '@id': entity_uri(entity['id'], origin), 'name': entity['label'],
+                'description': entity.get('summary', f'Contextual record for {entity["label"]}.'),
+                'url': origin.rstrip('/') + '/' + path}
+        if entity.get('variants'):
+            node['alternateName'] = entity['variants']
+        if entity.get('identifiers'):
+            node['identifier'] = [{'@type': 'PropertyValue', 'propertyID': i['scheme'], 'value': i['value']}
+                                  for i in entity['identifiers']]
+        creators = [r for r in entity.get('relationships', []) if r['relation'] == 'created by']
+        if creators:
+            node['creator'] = [{'@type': 'Person', '@id': entity_uri(r['id'], origin),
+                                'name': by_id[r['id']]['label']} for r in creators]
+        node['subjectOf'] = [{'@type': 'CreativeWork', '@id': origin.rstrip('/')+'/items/'+str(link['record_id'])+'.html#work'}
+                             for link in entity.get('record_links', []) if link['relation'] not in {'author', 'publisher'}]
+        nodes.append(node)
+    return {'@context': 'https://schema.org', '@graph': nodes}
+
+
 def build_entity_pages(records, entities, write, layout, origin):
     """Write indexes and individual authorities; return paths for the sitemap."""
     entities = _entities(entities)
     _validate(entities)
     by_id = {entity['id']: entity for entity in entities}
     by_record = {str(record['id']): record for record in records}
+    authority_nodes = {node['@id']: node for node in entity_graph(entities, origin)['@graph']}
     paths = []
     indexes = [
         ('people.html', 'People & organizations', {'Person', 'Organization'},
@@ -115,7 +151,7 @@ def build_entity_pages(records, entities, write, layout, origin):
         description = entity.get('summary', f'Contextual record for {entity["label"]}.')
         body = ('<div class="breadcrumb"><a href="../index.html">Archive</a> / '
                 '<a href="../people.html">Contextual authorities</a></div>'
-                f'<header class="page-head"><div class="eyebrow">{_e(entity["type"])} · '
+                f'<header class="page-head" id="entity"><div class="eyebrow">{_e(entity["type"])} · '
                 f'Local contextual authority record</div><h1>{_e(entity["label"])}</h1>'
                 f'<p>{_e(description)}</p></header>{_nav("../")}'
                 '<section class="item-section"><h2>Identity &amp; description</h2>'
@@ -162,22 +198,7 @@ def build_entity_pages(records, entities, write, layout, origin):
         body += ('</ul><p>Compiled from the linked publication records. Source review: 4 November 2026. '
                  'No external authority identifier is assigned where one has not been established.</p>'
                  f'<p><a href="../metadata/entities.json" download>Download contextual authority data ↓</a></p></section>')
-        schema_type = {'Artwork': 'CreativeWork', 'Exhibition': 'ExhibitionEvent'}.get(entity['type'], entity['type'])
-        node = {'@context': 'https://schema.org', '@type': schema_type,
-                '@id': origin.rstrip('/')+'/'+path, 'name': entity['label'],
-                'description': description, 'url': origin.rstrip('/')+'/'+path}
-        if entity.get('variants'):
-            node['alternateName'] = entity['variants']
-        if entity.get('identifiers'):
-            node['identifier'] = [{'@type': 'PropertyValue', 'propertyID': i['scheme'], 'value': i['value']} for i in entity['identifiers']]
-        # Work-to-person attribution is explicit; curatorial discussion is not authorship.
-        creators = [r for r in entity.get('relationships', []) if r['relation'] == 'created by']
-        if creators:
-            node['creator'] = [{'@type': 'Person', '@id': origin.rstrip('/')+'/entities/'+r['id']+'.html',
-                               'name': by_id[r['id']]['label']} for r in creators]
-        node['subjectOf'] = [{'@type': 'CreativeWork', '@id': origin.rstrip('/')+'/items/'+str(link['record_id'])+'.html'}
-                             for link in entity.get('record_links', [])
-                             if link['relation'] not in {'author', 'publisher'}]
+        node = authority_nodes[entity_uri(entity['id'], origin)]
         write(path, layout(entity['label'], description, body, path=path, base='../', schema=node))
         paths.append(path)
     return paths

@@ -21,6 +21,7 @@
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.20593003"
       },
+      "lastReviewed": "2026-11-04",
       "breadcrumb": {
         "@id": "https://archive.museumofone.art/items/20593003.html#breadcrumb"
       }
@@ -94,8 +95,31 @@
       ]
     },
     {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/20593003.html#work",
+      "name": "El Anatsui's Man's Cloth Series: Redemption of Waste as Modern Eucharist",
+      "description": "Local work identity, distinct from its deposited editions, repository version family and catalogue description.",
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.20593002"
+      },
+      "author": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "about": [
+        {
+          "@id": "https://archive.museumofone.art/entities/el-anatsui.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/old-mans-cloth.html#entity"
+        }
+      ]
+    },
+    {
       "@type": "Person",
-      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
       "name": "Dorian Vale",
       "identifier": {
         "@type": "PropertyValue",
@@ -105,7 +129,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://archive.museumofone.art/#publisher",
+      "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
       "name": "Museum of One",
       "url": "https://www.museumofone.art/"
     },
@@ -117,6 +141,9 @@
         "@type": "PropertyValue",
         "propertyID": "Zenodo concept DOI",
         "value": "10.5281/zenodo.20593002"
+      },
+      "exampleOfWork": {
+        "@id": "https://archive.museumofone.art/items/20593003.html#work"
       },
       "workExample": {
         "@id": "https://doi.org/10.5281/zenodo.20593003"
@@ -295,10 +322,10 @@
         "Interpretive Restraint"
       ],
       "author": {
-        "@id": "https://orcid.org/0009-0004-7737-5094"
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
       },
       "publisher": {
-        "@id": "https://archive.museumofone.art/#publisher"
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
       "alternateName": [],
       "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -311,14 +338,6 @@
         },
         {
           "@id": "https://archive.museumofone.art/assets/documents/20593003.pdf"
-        }
-      ],
-      "about": [
-        {
-          "@id": "https://archive.museumofone.art/entities/el-anatsui.html#entity"
-        },
-        {
-          "@id": "https://archive.museumofone.art/entities/old-mans-cloth.html#entity"
         }
       ]
     },
@@ -345,13 +364,18 @@
       "@type": "WebPage",
       "@id": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
       "name": "Museum of One institutional publication context",
+      "description": "Reviewed relationship scope: version family",
       "about": {
-        "@id": "https://doi.org/10.5281/zenodo.20593003"
+        "@id": "https://doi.org/10.5281/zenodo.20593002"
       }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/20593003.html#relationship-dorian-vale-author",
+      "identifier": "urn:museum-of-one:assertion:49b40b66256cd5f3c388244f99aa81436206f0e0c955d141166bc316918b8182",
       "name": "author",
       "about": {
         "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
@@ -359,11 +383,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
       },
-      "description": "The matching institutional publication record credits Dorian Vale as author."
+      "description": "The matching institutional publication record credits Dorian Vale as author.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/20593003.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#authored-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/20593003.html#relationship-museum-of-one-publisher",
+      "identifier": "urn:museum-of-one:assertion:68e334abdedda2703924535a6ebba584873542f760e07f04bf5058472679dee4",
       "name": "publisher",
       "about": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
@@ -371,11 +411,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
       },
-      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/20593003.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#published-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/20593003.html#relationship-el-anatsui-artist-discussed",
+      "identifier": "urn:museum-of-one:assertion:a867afe2644dd6ed805c0829c63ffe7720945acaa012caa57e4e5163249f08a0",
       "name": "artist discussed",
       "about": {
         "@id": "https://archive.museumofone.art/entities/el-anatsui.html#entity"
@@ -383,11 +439,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
       },
-      "description": "The essay studies the Man’s Cloth series and captions Old Man’s Cloth."
+      "description": "The essay studies the Man’s Cloth series and captions Old Man’s Cloth.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/20593003.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#discusses-artist"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/el-anatsui.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/20593003.html#relationship-old-mans-cloth-artwork-discussed",
+      "identifier": "urn:museum-of-one:assertion:f49d12e86bd8e006dbcd74f759d1c4b6d0099fdbc40c26bb40405d5944eb8d12",
       "name": "artwork discussed",
       "about": {
         "@id": "https://archive.museumofone.art/entities/old-mans-cloth.html#entity"
@@ -395,7 +467,19 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
       },
-      "description": "Named in the image caption as a work by El Anatsui."
+      "description": "Named in the image caption as a work by El Anatsui.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/20593003.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/old-mans-cloth.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
+      }
     },
     {
       "@type": "DefinedTermSet",

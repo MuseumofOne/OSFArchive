@@ -16,7 +16,7 @@
       "title": "Collecting scope and selection",
       "paragraphs": [
         "The current catalogue describes a selected published corpus associated with Museum of One: books, criticism, essays, research and related publication materials. Selection prioritises an identifiable public source, a stable work or version identifier, an evidenced institutional relationship and sufficient information to describe access and reuse.",
-        "These are library and repository publications described at item level. The current selection is not a complete institutional archive, an original fonds or a recovered export of the former Omeka catalogue. Inclusion records a research relationship; it does not imply endorsement, an acquisition agreement or physical ownership.",
+        "These are library and repository publications described at item level. The current selection is not a complete institutional archive, an original fonds or a recovered export of the previous catalogue. Inclusion records a research relationship; it does not imply endorsement, an acquisition agreement or physical ownership.",
         "Future collecting directions may include born-digital research records, exhibition documentation, correspondence, audiovisual material and other primary records. These categories are a scope for future appraisal, not a statement that such holdings are currently present. Each new type requires its own source, rights, access and contextual description before publication."
       ]
     },
@@ -24,7 +24,7 @@
       "id": "description",
       "title": "Description profile and responsibility",
       "paragraphs": [
-        "Museum of One is the responsible service for the Digital Archive Library. Descriptions distinguish identity, dates, extent, medium, creators and roles, scope and content, arrangement, sources, rights, access and related material. Stable MOO-CAT references identify local catalogue entries; they are not inherited Omeka accession numbers or evidence of a transfer of custody.",
+        "Museum of One is the responsible service for the Digital Archive Library. Descriptions distinguish identity, dates, extent, medium, creators and roles, scope and content, arrangement, sources, rights, access and related material. Stable MOO-CAT references identify local catalogue entries; they are not inherited catalogue accession numbers or evidence of a transfer of custody.",
         "The description profile uses source-qualified bibliographic and archival fields, Dublin Core exports and Schema.org linked data where supported. It draws on archival principles of provenance, context and levels of description; no certification, formal standards audit or equivalence to another institution is claimed.",
         "Source publication dates retain their documented precision. Publication, deposit, source modification, file verification and catalogue revision dates are separate events. Missing dates, unverified identifiers and uncertain relationships remain explicitly qualified; they are not completed by inference.",
         "Local editorial subjects and browsing groupings are identified as local concepts. External vocabulary identifiers are attached only when an evidenced match has been recorded. A related-entity link expresses the stated relationship, not identity or authorship unless the source supports that assertion.",

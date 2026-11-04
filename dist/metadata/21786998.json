@@ -193,8 +193,8 @@
   "authority_links": [],
   "metadata_profile": {
     "name": "Museum of One source-qualified catalogue profile",
-    "version": "2",
-    "note": "Local application profile using schema.org and qualified Dublin Core; not an archival standards certification.",
+    "version": "3.0.0",
+    "url": "https://archive.museumofone.art/metadata/metadata-profile.json",
     "source_snapshot_preserved": true
   },
   "reading_copy": {
@@ -323,6 +323,20 @@
       "reviewed": "2026-11-04"
     },
     {
+      "field": "record_modified",
+      "value": "2026-11-04",
+      "status": "derived_from_description_history",
+      "note": "Latest documented local description event; not a publication, repository or source-review date.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_review",
+      "value": "2026-11-04",
+      "status": "catalogue_source_review",
+      "note": "Review of descriptive sources; not the creation or modification date of the work or repository record.",
+      "reviewed": "2026-11-04"
+    },
+    {
       "field": "author",
       "value": "Dorian Vale",
       "status": "institutional_context",
@@ -344,6 +358,27 @@
       "status": "source_linked_identifier",
       "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
       "note": "Creator identifier supplied by the linked sources; no affiliation or endorsement is inferred.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "orcid_authority",
+      "value": {
+        "scheme": "ORCID",
+        "value": "0009-0004-7737-5094",
+        "url": "https://orcid.org/0009-0004-7737-5094",
+        "status": "public_orcid_profile_inspected",
+        "evidence_urls": [
+          "https://www.museumofone.art/archives-scholarly-infrastructure/",
+          "https://eprints.rclis.org/47182/",
+          "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+        ],
+        "access_note": "Public ORCID v3 person API returned HTTP 200 on 4 November 2026. Credit name Dorian Vale and the Museum of One website URL match the local author record. Profile names and links are user-supplied; affiliation, biography and endorsement are not independently verified.",
+        "reviewed": "2026-11-04",
+        "evidence_receipt": "data/source/authority-review-2026-11-04.json"
+      },
+      "status": "public_orcid_profile_inspected",
+      "source_url": "https://orcid.org/0009-0004-7737-5094",
+      "note": "Public ORCID v3 person API returned HTTP 200 on 4 November 2026. Credit name Dorian Vale and the Museum of One website URL match the local author record. Profile names and links are user-supplied; affiliation, biography and endorsement are not independently verified.",
       "reviewed": "2026-11-04"
     },
     {
@@ -514,11 +549,35 @@
         "entity_type": "Person",
         "relation": "author",
         "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "variants": [
+          "Vale, Dorian"
+        ],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:13b099ea17921d86fa2d30001802f28fa817f5d987c066afdf55d18ad421aeb5",
+        "subject": "https://archive.museumofone.art/items/21786998.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#authored-by",
+        "object": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The matching institutional publication record credits Dorian Vale as author."
+      }
     },
     {
       "field": "entity_link:museum-of-one:publisher",
@@ -528,11 +587,36 @@
         "entity_type": "Organization",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "variants": [
+          "MuseumofOne",
+          "MUSEUM OF ONE"
+        ],
+        "evidence_scope": "work"
       },
       "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
       "status": "institutional_context_relationship",
-      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.",
+      "assertion": {
+        "id": "urn:museum-of-one:assertion:e4fa74277e141b7594a3929de1a6a60faf1b409d1bdcfa61f33f37545e504209",
+        "subject": "https://archive.museumofone.art/items/21786998.html#work",
+        "predicate": "https://archive.museumofone.art/metadata/relations.json#published-by",
+        "object": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
+        "scope": "work",
+        "status": "source_corroborated_context",
+        "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+          "precision": "page"
+        },
+        "reviewed": "2026-11-04",
+        "reviewer": null,
+        "unknowns": [
+          "reviewer"
+        ],
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      }
     },
     {
       "field": "controlled_subjects",
@@ -651,8 +735,7 @@
       ],
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Local preferred terms with definitions and synonyms. External alignment is scoped in the vocabulary register.",
-      "reviewed": "2026-11-04"
+      "note": "Local preferred terms with definitions and synonyms. External alignment is scoped in the vocabulary register."
     },
     {
       "field": "genre_terms",
@@ -697,8 +780,7 @@
       ],
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Local resource-genre classification. Digital file format is recorded separately.",
-      "reviewed": "2026-11-04"
+      "note": "Local resource-genre classification. Digital file format is recorded separately."
     },
     {
       "field": "archival_context",
@@ -707,7 +789,7 @@
         "catalogue_snapshot_date": "2026-11-04",
         "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
         "record_category": "Published library and repository material",
-        "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+        "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a previous catalogue accession.",
         "source_repository": {
           "name": "Zenodo",
           "record_url": "https://zenodo.org/records/21786998"
@@ -755,8 +837,7 @@
       },
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Provenance records what is documented and leaves unknown custody and original order explicit.",
-      "reviewed": "2026-11-04"
+      "note": "Provenance records what is documented and leaves unknown custody and original order explicit."
     },
     {
       "field": "description_history",
@@ -817,12 +898,114 @@
           "sources": [
             "policies.html"
           ]
+        },
+        {
+          "event_id": "metadata-profile-3.0-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Unify graph identities and qualify exported relationships and citations",
+          "note": "Local graph projection now uses one contextual identity per entity, distinguishes work-level institutional matches from selected-edition links, retains title-level ISBN uncertainty, and derives citations from the source title. Typed relation assertions and a versioned validation profile are introduced. No publication date, original source snapshot or PDF changed.",
+          "fields": [
+            "metadata_profile",
+            "relationship_assertions",
+            "identity",
+            "institutional_match_scope",
+            "citation_projection"
+          ],
+          "responsible_service": "Museum of One Digital Archive Library",
+          "method": "Source-based metadata implementation and regression validation",
+          "date_kind": "Catalogue description event; not a publication, source review or acquisition date",
+          "sources": [
+            "metadata/metadata-profile.json"
+          ]
+        },
+        {
+          "event_id": "orcid-public-profile-review-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Record inspected public ORCID profile evidence",
+          "note": "The official ORCID public person API returned the credited name Dorian Vale and the Museum of One website. This confirms a matching public profile, not independently verified biographical or affiliation claims. Original creator arrays and source snapshots are unchanged.",
+          "fields": [
+            "orcid_authority"
+          ],
+          "responsible_service": "Museum of One Digital Archive Library",
+          "method": "Read-only official public API inspection",
+          "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
+          "sources": [
+            "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+          ]
         }
       ],
       "source_url": "https://archive.museumofone.art/policies.html",
       "status": "editorial_description_control",
-      "note": "Catalogue description events; these are not work publication dates or acquisition dates.",
-      "reviewed": "2026-11-04"
+      "note": "Catalogue description events; these are not work publication dates or acquisition dates."
+    },
+    {
+      "field": "relationship_assertions",
+      "value": [
+        {
+          "id": "urn:museum-of-one:assertion:13b099ea17921d86fa2d30001802f28fa817f5d987c066afdf55d18ad421aeb5",
+          "subject": "https://archive.museumofone.art/items/21786998.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#authored-by",
+          "object": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The matching institutional publication record credits Dorian Vale as author."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:e4fa74277e141b7594a3929de1a6a60faf1b409d1bdcfa61f33f37545e504209",
+          "subject": "https://archive.museumofone.art/items/21786998.html#work",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#published-by",
+          "object": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
+          "scope": "work",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+          "source_location": {
+            "kind": "web_page",
+            "url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+            "precision": "page"
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        },
+        {
+          "id": "urn:museum-of-one:assertion:7d1c2884b41c70421f274214204a17de0a8af9c36435e9069bcf864172d69f08",
+          "subject": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+          "predicate": "https://archive.museumofone.art/metadata/relations.json#describes",
+          "object": "https://doi.org/10.5281/zenodo.18104019",
+          "scope": "version_family",
+          "status": "source_corroborated_context",
+          "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+          "source_location": {
+            "kind": "metadata_field",
+            "field": "linked_zenodo_dois",
+            "values": [
+              "10.5281/zenodo.18104019"
+            ]
+          },
+          "reviewed": "2026-11-04",
+          "reviewer": null,
+          "unknowns": [
+            "reviewer"
+          ],
+          "note": "Exact-edition matching requires the selected DOI in the reviewed page metadata; other matches retain their wider scope."
+        }
+      ],
+      "status": "typed_evidence_projection",
+      "note": "Stable, typed assertions retain source scope and explicit unknown review metadata."
     },
     {
       "field": "reading_copy",
@@ -867,7 +1050,11 @@
       "entity_type": "Person",
       "relation": "author",
       "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
-      "note": "The matching institutional publication record credits Dorian Vale as author."
+      "note": "The matching institutional publication record credits Dorian Vale as author.",
+      "variants": [
+        "Vale, Dorian"
+      ],
+      "evidence_scope": "work"
     },
     {
       "id": "museum-of-one",
@@ -875,7 +1062,12 @@
       "entity_type": "Organization",
       "relation": "publisher",
       "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
-      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+      "variants": [
+        "MuseumofOne",
+        "MUSEUM OF ONE"
+      ],
+      "evidence_scope": "work"
     }
   ],
   "contents": [],
@@ -1089,14 +1281,61 @@
       "sources": [
         "policies.html"
       ]
+    },
+    {
+      "event_id": "metadata-profile-3.0-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Unify graph identities and qualify exported relationships and citations",
+      "note": "Local graph projection now uses one contextual identity per entity, distinguishes work-level institutional matches from selected-edition links, retains title-level ISBN uncertainty, and derives citations from the source title. Typed relation assertions and a versioned validation profile are introduced. No publication date, original source snapshot or PDF changed.",
+      "fields": [
+        "metadata_profile",
+        "relationship_assertions",
+        "identity",
+        "institutional_match_scope",
+        "citation_projection"
+      ],
+      "responsible_service": "Museum of One Digital Archive Library",
+      "method": "Source-based metadata implementation and regression validation",
+      "date_kind": "Catalogue description event; not a publication, source review or acquisition date",
+      "sources": [
+        "metadata/metadata-profile.json"
+      ]
+    },
+    {
+      "event_id": "orcid-public-profile-review-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Record inspected public ORCID profile evidence",
+      "note": "The official ORCID public person API returned the credited name Dorian Vale and the Museum of One website. This confirms a matching public profile, not independently verified biographical or affiliation claims. Original creator arrays and source snapshots are unchanged.",
+      "fields": [
+        "orcid_authority"
+      ],
+      "responsible_service": "Museum of One Digital Archive Library",
+      "method": "Read-only official public API inspection",
+      "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
+      "sources": [
+        "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+      ]
     }
   ],
+  "record_modified": "2026-11-04",
+  "record_modified_provenance": {
+    "status": "derived_from_description_history",
+    "event_ids": [
+      "public-source-description-2026-11-04",
+      "qualified-description-2026-11-04",
+      "access-copy-verification-2026-11-04",
+      "description-policy-1.0-2026-11-04",
+      "metadata-profile-3.0-2026-11-04",
+      "orcid-public-profile-review-2026-11-04"
+    ],
+    "note": "Latest documented local description event; not a publication, repository or source-review date."
+  },
   "archival_context": {
     "description_profile": "moo-description-policy-1.0",
     "catalogue_snapshot_date": "2026-11-04",
     "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
     "record_category": "Published library and repository material",
-    "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+    "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a previous catalogue accession.",
     "source_repository": {
       "name": "Zenodo",
       "record_url": "https://zenodo.org/records/21786998"
@@ -1149,5 +1388,91 @@
     "edition_doi": "10.5281/zenodo.21786998",
     "zenodo_record_id": "21786998",
     "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication."
+  },
+  "metadata_origin": "https://archive.museumofone.art",
+  "identity": {
+    "work": "https://archive.museumofone.art/items/21786998.html#work",
+    "edition": "https://doi.org/10.5281/zenodo.21786998",
+    "version_family": "https://doi.org/10.5281/zenodo.18104019",
+    "catalogue_record": "https://archive.museumofone.art/items/21786998.html#catalogue-record"
+  },
+  "institutional_match_scope": "version_family",
+  "relationship_assertions": [
+    {
+      "id": "urn:museum-of-one:assertion:13b099ea17921d86fa2d30001802f28fa817f5d987c066afdf55d18ad421aeb5",
+      "subject": "https://archive.museumofone.art/items/21786998.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#authored-by",
+      "object": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:e4fa74277e141b7594a3929de1a6a60faf1b409d1bdcfa61f33f37545e504209",
+      "subject": "https://archive.museumofone.art/items/21786998.html#work",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#published-by",
+      "object": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
+      "scope": "work",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "source_location": {
+        "kind": "web_page",
+        "url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+        "precision": "page"
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "id": "urn:museum-of-one:assertion:7d1c2884b41c70421f274214204a17de0a8af9c36435e9069bcf864172d69f08",
+      "subject": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "predicate": "https://archive.museumofone.art/metadata/relations.json#describes",
+      "object": "https://doi.org/10.5281/zenodo.18104019",
+      "scope": "version_family",
+      "status": "source_corroborated_context",
+      "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "source_location": {
+        "kind": "metadata_field",
+        "field": "linked_zenodo_dois",
+        "values": [
+          "10.5281/zenodo.18104019"
+        ]
+      },
+      "reviewed": "2026-11-04",
+      "reviewer": null,
+      "unknowns": [
+        "reviewer"
+      ],
+      "note": "Exact-edition matching requires the selected DOI in the reviewed page metadata; other matches retain their wider scope."
+    }
+  ],
+  "orcid_authority": {
+    "scheme": "ORCID",
+    "value": "0009-0004-7737-5094",
+    "url": "https://orcid.org/0009-0004-7737-5094",
+    "status": "public_orcid_profile_inspected",
+    "evidence_urls": [
+      "https://www.museumofone.art/archives-scholarly-infrastructure/",
+      "https://eprints.rclis.org/47182/",
+      "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+    ],
+    "access_note": "Public ORCID v3 person API returned HTTP 200 on 4 November 2026. Credit name Dorian Vale and the Museum of One website URL match the local author record. Profile names and links are user-supplied; affiliation, biography and endorsement are not independently verified.",
+    "reviewed": "2026-11-04",
+    "evidence_receipt": "data/source/authority-review-2026-11-04.json"
   }
 }

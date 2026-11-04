@@ -21,6 +21,7 @@
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.23428974"
       },
+      "lastReviewed": "2026-11-04",
       "breadcrumb": {
         "@id": "https://archive.museumofone.art/items/23428974.html#breadcrumb"
       }
@@ -100,8 +101,37 @@
       ]
     },
     {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23428974.html#work",
+      "name": "Answerability: Exhibition, Documentation, and Historical Evidence in Postwar Japanese Art",
+      "description": "Local work identity, distinct from its deposited editions, repository version family and catalogue description.",
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.23428973"
+      },
+      "author": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "about": [
+        {
+          "@id": "https://archive.museumofone.art/entities/shiraga-kazuo.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/reiko-tomii.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/namiko-kunimoto.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/challenging-mud.html#entity"
+        }
+      ]
+    },
+    {
       "@type": "Person",
-      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
       "name": "Dorian Vale",
       "identifier": {
         "@type": "PropertyValue",
@@ -111,7 +141,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://archive.museumofone.art/#publisher",
+      "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
       "name": "Museum of One",
       "url": "https://www.museumofone.art/"
     },
@@ -123,6 +153,9 @@
         "@type": "PropertyValue",
         "propertyID": "Zenodo concept DOI",
         "value": "10.5281/zenodo.23428973"
+      },
+      "exampleOfWork": {
+        "@id": "https://archive.museumofone.art/items/23428974.html#work"
       },
       "workExample": {
         "@id": "https://doi.org/10.5281/zenodo.23428974"
@@ -257,10 +290,10 @@
         "Art-historical methodology"
       ],
       "author": {
-        "@id": "https://orcid.org/0009-0004-7737-5094"
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
       },
       "publisher": {
-        "@id": "https://archive.museumofone.art/#publisher"
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
       "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
       "exampleOfWork": {
@@ -307,14 +340,6 @@
         {
           "@id": "https://archive.museumofone.art/assets/documents/23428974.pdf"
         }
-      ],
-      "about": [
-        {
-          "@id": "https://archive.museumofone.art/entities/shiraga-kazuo.html#entity"
-        },
-        {
-          "@id": "https://archive.museumofone.art/entities/challenging-mud.html#entity"
-        }
       ]
     },
     {
@@ -340,13 +365,18 @@
       "@type": "WebPage",
       "@id": "https://www.museumofone.art/answerability/",
       "name": "Museum of One institutional publication context",
+      "description": "Reviewed relationship scope: exact edition",
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.23428974"
       }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/23428974.html#relationship-dorian-vale-author",
+      "identifier": "urn:museum-of-one:assertion:3bb842dc4e6d87f2c3b561cb44e66295baee0bb11f9e9a8bb69997a24e4c619e",
       "name": "author",
       "about": {
         "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
@@ -354,11 +384,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/answerability/"
       },
-      "description": "The matching institutional publication record credits Dorian Vale as author."
+      "description": "The matching institutional publication record credits Dorian Vale as author.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/23428974.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#authored-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/answerability/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/23428974.html#relationship-museum-of-one-publisher",
+      "identifier": "urn:museum-of-one:assertion:d1ae13882f6c84e7ca8bfcd3f7f77f96624e3bccf4eeeb4da53840ed7ee75136",
       "name": "publisher",
       "about": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
@@ -366,11 +412,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/answerability/"
       },
-      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/23428974.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#published-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/answerability/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/23428974.html#relationship-shiraga-kazuo-artist-discussed",
+      "identifier": "urn:museum-of-one:assertion:6ca1a3a0666273553ef0227dc69fde02894c77444137621706db775571d472c2",
       "name": "artist discussed",
       "about": {
         "@id": "https://archive.museumofone.art/entities/shiraga-kazuo.html#entity"
@@ -378,11 +440,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/answerability/"
       },
-      "description": "The abstract identifies Shiraga Kazuo’s Challenging Mud as the principal case."
+      "description": "The abstract identifies Shiraga Kazuo’s Challenging Mud as the principal case.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/23428974.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#discusses-artist"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/shiraga-kazuo.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/answerability/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/23428974.html#relationship-reiko-tomii-scholar-discussed",
+      "identifier": "urn:museum-of-one:assertion:123ccae55316d10562e27370749c1e5eab46dfcf736a7837c028b0a0b4954206",
       "name": "scholar discussed",
       "about": {
         "@id": "https://archive.museumofone.art/entities/reiko-tomii.html#entity"
@@ -390,11 +468,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/answerability/"
       },
-      "description": "The paper engages Tomii’s scholarship and records discussion and feedback. The source explicitly states that Tomii is not a coauthor and that no blanket endorsement or formal peer review is implied."
+      "description": "The paper engages Tomii’s scholarship and records discussion and feedback. The source explicitly states that Tomii is not a coauthor and that no blanket endorsement or formal peer review is implied.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/23428974.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#discusses-scholar"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/reiko-tomii.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/answerability/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/23428974.html#relationship-namiko-kunimoto-scholar-discussed",
+      "identifier": "urn:museum-of-one:assertion:489656dbd2f936567e14d946b22c352642e2de94ce1ef6865f04de5ec30b0186",
       "name": "scholar discussed",
       "about": {
         "@id": "https://archive.museumofone.art/entities/namiko-kunimoto.html#entity"
@@ -402,11 +496,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/answerability/"
       },
-      "description": "The abstract identifies Kunimoto’s analysis as scholarship read alongside Tomii’s work; no coauthorship is asserted."
+      "description": "The abstract identifies Kunimoto’s analysis as scholarship read alongside Tomii’s work; no coauthorship is asserted.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/23428974.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#discusses-scholar"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/namiko-kunimoto.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/answerability/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/23428974.html#relationship-challenging-mud-artwork-discussed",
+      "identifier": "urn:museum-of-one:assertion:921bc94da701d09e6a5715e70509b7ea43b98bfcf3067762ba549ee2116947da",
       "name": "artwork discussed",
       "about": {
         "@id": "https://archive.museumofone.art/entities/challenging-mud.html#entity"
@@ -414,7 +524,19 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/answerability/"
       },
-      "description": "The abstract identifies the title and artist. Different executions and the relationship between action and displayed result are examined in the paper; this record does not merge those events into a single documented object."
+      "description": "The abstract identifies the title and artist. Different executions and the relationship between action and displayed result are examined in the paper; this record does not merge those events into a single documented object.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/23428974.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/challenging-mud.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/answerability/"
+      }
     },
     {
       "@type": "DefinedTermSet",

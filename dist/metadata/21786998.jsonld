@@ -21,6 +21,7 @@
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.21786998"
       },
+      "lastReviewed": "2026-11-04",
       "breadcrumb": {
         "@id": "https://archive.museumofone.art/items/21786998.html#breadcrumb"
       }
@@ -82,8 +83,23 @@
       ]
     },
     {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/21786998.html#work",
+      "name": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century",
+      "description": "Local work identity, distinct from its deposited editions, repository version family and catalogue description.",
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.18104019"
+      },
+      "author": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      }
+    },
+    {
       "@type": "Person",
-      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
       "name": "Dorian Vale",
       "identifier": {
         "@type": "PropertyValue",
@@ -93,7 +109,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://archive.museumofone.art/#publisher",
+      "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
       "name": "Museum of One",
       "url": "https://www.museumofone.art/"
     },
@@ -105,6 +121,9 @@
         "@type": "PropertyValue",
         "propertyID": "Zenodo concept DOI",
         "value": "10.5281/zenodo.18104019"
+      },
+      "exampleOfWork": {
+        "@id": "https://archive.museumofone.art/items/21786998.html#work"
       },
       "workExample": {
         "@id": "https://doi.org/10.5281/zenodo.21786998"
@@ -214,10 +233,10 @@
         "ethics of witnessing"
       ],
       "author": {
-        "@id": "https://orcid.org/0009-0004-7737-5094"
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
       },
       "publisher": {
-        "@id": "https://archive.museumofone.art/#publisher"
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "exampleOfWork": {
@@ -265,13 +284,18 @@
       "@type": "WebPage",
       "@id": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
       "name": "Museum of One institutional publication context",
+      "description": "Reviewed relationship scope: version family",
       "about": {
-        "@id": "https://doi.org/10.5281/zenodo.21786998"
+        "@id": "https://doi.org/10.5281/zenodo.18104019"
       }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/21786998.html#relationship-dorian-vale-author",
+      "identifier": "urn:museum-of-one:assertion:13b099ea17921d86fa2d30001802f28fa817f5d987c066afdf55d18ad421aeb5",
       "name": "author",
       "about": {
         "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
@@ -279,11 +303,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/"
       },
-      "description": "The matching institutional publication record credits Dorian Vale as author."
+      "description": "The matching institutional publication record credits Dorian Vale as author.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/21786998.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#authored-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/21786998.html#relationship-museum-of-one-publisher",
+      "identifier": "urn:museum-of-one:assertion:e4fa74277e141b7594a3929de1a6a60faf1b409d1bdcfa61f33f37545e504209",
       "name": "publisher",
       "about": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
@@ -291,7 +331,19 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/"
       },
-      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/21786998.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#published-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/"
+      }
     },
     {
       "@type": "DefinedTermSet",

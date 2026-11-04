@@ -78,7 +78,7 @@ def enhance_page(path,html,records,programmes):
   html=html.replace('<section class="hero">','<div class="archive-masthead"><span class="archive-masthead-title">Digital Archive Library</span><span class="archive-masthead-aside">Museum of One / Catalogue edition 02</span></div><section class="hero">',1)
   html=html.replace('A quiet place<br>for <em>the record.</em>','The record.<br><em>In context.</em>')
   html=html.replace('Published thought, carefully held.<br>Explore the books, treatises, and critical writing of Museum of One through a source-linked archival catalogue.','A reading room for published thought.<br>Follow a work from its first edition to the questions it continues to open.')
-  html=html.replace('<div class="actions"><a class="button" href="catalogue.html">','<form class="home-search" action="catalogue.html"><label class="sr-only" for="home-query">Search the digital archive library</label><input id="home-query" name="q" type="search" placeholder="Begin with a title, idea, or identifier…"><button type="submit" aria-label="Search the archive">↗</button></form><div class="actions"><a class="button" href="catalogue.html">',1)
+  html=html.replace('<div class="actions"><a class="button" href="catalogue.html">','<form class="home-search" action="research-discovery.html"><label class="sr-only" for="home-query">Search the digital archive library</label><input id="home-query" name="q" type="search" placeholder="Begin with a title, idea, or identifier…"><button type="submit" aria-label="Search the archive">↗</button></form><div class="actions"><a class="button" href="catalogue.html">',1)
   books=[r for r in records if r.get('cover')][:4]
   if books:
    r=books[0]

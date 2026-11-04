@@ -1,0 +1,153 @@
+{
+  "profile_version": "3.0.0",
+  "scope": "Museum of One local relationship vocabulary; no external approval implied.",
+  "relations": [
+    {
+      "id": "authored-by",
+      "inverse": "author-of",
+      "range": [
+        "Person",
+        "Organization"
+      ],
+      "label": "author",
+      "uri": "https://archive.museumofone.art/metadata/relations.json#authored-by",
+      "domain": [
+        "Work"
+      ],
+      "evidence_required": true
+    },
+    {
+      "id": "published-by",
+      "inverse": "publisher-of",
+      "range": [
+        "Organization"
+      ],
+      "label": "publisher",
+      "uri": "https://archive.museumofone.art/metadata/relations.json#published-by",
+      "domain": [
+        "Work"
+      ],
+      "evidence_required": true
+    },
+    {
+      "id": "discusses-artist",
+      "inverse": "artist-discussed-in",
+      "range": [
+        "Person"
+      ],
+      "label": "artist discussed",
+      "uri": "https://archive.museumofone.art/metadata/relations.json#discusses-artist",
+      "domain": [
+        "Work"
+      ],
+      "evidence_required": true
+    },
+    {
+      "id": "discusses-artwork",
+      "inverse": "artwork-discussed-in",
+      "range": [
+        "Artwork"
+      ],
+      "label": "artwork discussed",
+      "uri": "https://archive.museumofone.art/metadata/relations.json#discusses-artwork",
+      "domain": [
+        "Work"
+      ],
+      "evidence_required": true
+    },
+    {
+      "id": "discusses-exhibition",
+      "inverse": "exhibition-discussed-in",
+      "range": [
+        "Exhibition"
+      ],
+      "label": "exhibition discussed",
+      "uri": "https://archive.museumofone.art/metadata/relations.json#discusses-exhibition",
+      "domain": [
+        "Work"
+      ],
+      "evidence_required": true
+    },
+    {
+      "id": "discusses-scholar",
+      "inverse": "scholar-discussed-in",
+      "range": [
+        "Person"
+      ],
+      "label": "scholar discussed",
+      "uri": "https://archive.museumofone.art/metadata/relations.json#discusses-scholar",
+      "domain": [
+        "Work"
+      ],
+      "evidence_required": true
+    },
+    {
+      "id": "discusses-curator",
+      "inverse": "curator-discussed-in",
+      "range": [
+        "Person"
+      ],
+      "label": "curator discussed",
+      "uri": "https://archive.museumofone.art/metadata/relations.json#discusses-curator",
+      "domain": [
+        "Work"
+      ],
+      "evidence_required": true
+    },
+    {
+      "id": "has-scholarly-correspondent",
+      "inverse": "correspondent-in",
+      "range": [
+        "Person"
+      ],
+      "label": "scholarly correspondent",
+      "uri": "https://archive.museumofone.art/metadata/relations.json#has-scholarly-correspondent",
+      "domain": [
+        "Work"
+      ],
+      "evidence_required": true
+    },
+    {
+      "id": "created-by",
+      "inverse": "creator-of",
+      "domain": [
+        "Artwork"
+      ],
+      "range": [
+        "Person",
+        "Organization"
+      ],
+      "label": "created by",
+      "uri": "https://archive.museumofone.art/metadata/relations.json#created-by",
+      "evidence_required": true
+    },
+    {
+      "id": "curator-discussed-with-exhibition",
+      "inverse": "exhibition-discussed-with-curator",
+      "domain": [
+        "Exhibition"
+      ],
+      "range": [
+        "Person"
+      ],
+      "label": "curator discussed in connection with exhibition",
+      "uri": "https://archive.museumofone.art/metadata/relations.json#curator-discussed-with-exhibition",
+      "evidence_required": true
+    },
+    {
+      "id": "describes",
+      "label": "describes",
+      "uri": "https://archive.museumofone.art/metadata/relations.json#describes",
+      "inverse": "described-by",
+      "domain": [
+        "WebPage"
+      ],
+      "range": [
+        "Work",
+        "Edition",
+        "VersionFamily"
+      ],
+      "evidence_required": true
+    }
+  ]
+}

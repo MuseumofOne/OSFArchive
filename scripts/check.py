@@ -36,11 +36,16 @@ class Page(HTMLParser):
         self.jsonld_buffer = None
         self.text = []
         self.canonical = None
+        self.canonicals = []
+        self.meta = {}
+        self.iframes = []
         self.feed(path.read_text(encoding="utf-8"))
         self.close()
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if tag == 'iframe':
+            self.iframes.append(attrs.get('src', ''))
         if attrs.get("id"):
             self.ids.append(attrs["id"])
         if tag == "a" and attrs.get("name"):
@@ -52,6 +57,9 @@ class Page(HTMLParser):
                 self.links.append(attrs[key])
         if tag == "link" and attrs.get("rel") == "canonical":
             self.canonical = attrs.get("href")
+            self.canonicals.append(self.canonical)
+        if tag == "meta" and attrs.get("name"):
+            self.meta.setdefault(attrs['name'], []).append(attrs.get('content', ''))
 
     def handle_data(self, data):
         if self.jsonld_buffer is not None:
@@ -85,10 +93,18 @@ def main():
     require(len(pages) >= 5, "Core pages are missing.")
     origins = {urlsplit(page.canonical).netloc for page in pages.values() if page.canonical}
     require(len(origins) == 1, f"Canonical URLs use inconsistent origins: {origins}")
+    public_catalogue = load(DIST / 'metadata' / 'catalogue.json') or {}
+    origin = str(public_catalogue.get('canonical_origin') or '').rstrip('/')
+    require(urlsplit(origin).scheme == 'https' and bool(urlsplit(origin).netloc), 'Public catalogue lacks an absolute HTTPS canonical_origin.')
+    canonical_values = [page.canonical for page in pages.values()]
+    require(len(canonical_values) == len(set(canonical_values)), 'Multiple HTML pages have the same canonical URL.')
     internal_links = 0
     for path, page in pages.items():
         relative = path.relative_to(DIST)
         require(bool(page.canonical), f"Missing canonical URL: {relative}")
+        require(len(page.canonicals) == 1, f"Expected exactly one canonical URL: {relative}")
+        require(page.canonical == origin + '/' + relative.as_posix(), f"Canonical URL does not match the stable page path: {relative}")
+        require(not page.iframes, f"Archive must operate without iframe dependencies: {relative}")
         duplicates = [k for k, v in Counter(page.ids).items() if v > 1]
         require(not duplicates, f"Duplicate fragment IDs in {relative}: {duplicates}")
         text = " ".join(page.text)
@@ -100,12 +116,17 @@ def main():
                 ERRORS.append(f"Invalid inline JSON-LD in {relative}: {exc}")
         for link in page.links:
             parsed = urlsplit(link)
+            require(parsed.hostname != 'museumofone.omeka.net', f"Active legacy Omeka destination in {relative}: {link}")
             if parsed.scheme and parsed.scheme not in ("http", "https"):
                 continue
             if parsed.netloc and parsed.netloc not in origins:
                 continue
             if parsed.path.startswith("/") or parsed.netloc:
-                target = DIST / unquote(parsed.path).lstrip("/")
+                target_path = unquote(parsed.path)
+                base_path = urlsplit(origin).path.rstrip('/')
+                if base_path and (target_path == base_path or target_path.startswith(base_path + '/')):
+                    target_path = target_path[len(base_path):]
+                target = DIST / target_path.lstrip("/")
             elif not parsed.path:
                 target = path
             else:
@@ -129,6 +150,16 @@ def main():
     for extension in ("*.json", "*.jsonld"):
         for path in DIST.rglob(extension):
             parsed_json[path.resolve()] = load(path)
+    # Retired service references can also hide in inline structured data,
+    # search feeds and scripts, rather than ordinary navigation anchors.
+    # Original deposited PDFs are preservation objects and are not rewritten.
+    for path in DIST.rglob('*'):
+        if path.is_file() and path.suffix.lower() in {'.html', '.json', '.jsonld', '.js', '.css', '.xml', '.txt', '.bib', '.ris'}:
+            require('museumofone.omeka.net' not in path.read_text(encoding='utf-8').lower(),
+                    f'Retired archive hostname in public output: {path.relative_to(DIST)}')
+    quality = load(DIST / 'metadata' / 'quality-report.json') or {}
+    require(bool(quality.get('checks')) and all(not check.get('errors') and check.get('executed', True)
+            for check in quality.get('checks', {}).values()), 'Metadata quality checks are missing, failed or unexecuted.')
     for path in DIST.rglob("*.xml"):
         try:
             ET.parse(path)
@@ -142,6 +173,26 @@ def main():
     dois = [normalized_doi(r.get("doi")) for r in records]
     require(all(ids) and len(set(ids)) == len(ids), "Record IDs are empty or duplicated.")
     require(all(dois) and len(set(dois)) == len(dois), "Record DOIs are empty or duplicated.")
+    expected_items = {rid + '.html' for rid in ids}
+    require({path.name for path in (DIST/'items').glob('*.html')} == expected_items,
+            'Stale or missing item pages: reconcile withdrawn/renamed records explicitly before deployment.')
+    feed = load(DIST / 'metadata' / 'search-index.v1.json') or {}
+    require(feed.get('schema_version') == 1 and feed.get('canonical_origin') == origin, 'Integration feed version/origin mismatch.')
+    feed_records = feed.get('records') or []
+    require({str(r.get('id')) for r in feed_records} == set(ids) and len(feed_records) == len(ids),
+            'Public search feed differs from the selected public catalogue.')
+    for record in feed_records:
+        require(record.get('url') == origin + '/items/' + str(record.get('id')) + '.html',
+                'Search result does not link to its canonical record: ' + str(record.get('id')))
+    try:
+        ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+        locations = [node.text for node in ET.parse(DIST/'sitemap.xml').findall('s:url/s:loc', ns)]
+        intended = {page.canonical for path, page in pages.items() if path.name != '404.html'}
+        require(len(locations) == len(set(locations)) and set(locations) == intended,
+                'Sitemap must contain every intended public HTML page exactly once, excluding the error page.')
+        require('noindex' in ','.join(pages[(DIST/'404.html').resolve()].meta.get('robots', [])), 'Error page lacks noindex.')
+    except (OSError, ET.ParseError, KeyError) as exc:
+        ERRORS.append('Sitemap/error-page contract failed: ' + str(exc))
     for r in records:
         rid = str(r["id"])
         source = load(ROOT / "data" / "source" / (rid + ".json"))

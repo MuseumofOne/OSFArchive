@@ -1,9 +1,9 @@
-"""Generate a portable, source-qualified static archive. Python standard library only."""
+"""Generate a portable, source-qualified static archive. Python catalogue with verified PDF text extraction."""
 from metadata import build_graph, build_dc, build_assertions
 from experience import enhance_page, discovery_payload
 from enrich import enrich_record
 from finding_aid import build_finding_aid
-from entities import attach_entities, build_entity_pages
+from entities import attach_entities, build_entity_pages, entity_graph
 from contents import attach_contents, build_content_pages
 from vocabulary import attach_vocabulary, build_vocabulary_pages
 from policies import attach_catalogue_history, build_policy_pages
@@ -12,6 +12,12 @@ from institutional import institutional_page
 from pirr import load_pirr, attach_pirr, build_pirr_pages
 from archival import archival_page
 from readers import apply_reading_metadata, reader_link, build_reader_pages
+from integration_search import build_search_index, encode_search_index, load_source_snapshots, public_export_eligible, searchable_text
+from descriptions import repository_description_html
+from relationship_assertions import relation_register, typed_entity_relationship_assertions
+from quality_page import collect_graphs, build_quality_page
+from citations import build_citation_model, visible_citation, csl_json, bibtex, ris, scholar_meta
+from discovery_v2 import build_research_discovery, build_fulltext_index, build_discovery_page, encode_index
 from pathlib import Path
 from html import escape
 import json, os, re, shutil, urllib.parse, xml.etree.ElementTree as ET
@@ -20,6 +26,12 @@ OUT=ROOT/'dist'; DATA=ROOT/'data'
 ORIGIN=(os.environ.get('SITE_ORIGIN') or 'https://archive.museumofone.art').rstrip('/')
 RECORDS=json.loads((DATA/'catalogue.json').read_text())
 if isinstance(RECORDS,dict): RECORDS=RECORDS['records']
+# This repository is a public catalogue, never a draft store. Fail before writing
+# any artifact if a future record lacks explicit public source evidence.
+SOURCE_SNAPSHOTS=load_source_snapshots(RECORDS,DATA/'source')
+ineligible=[str(r.get('id','unknown')) for r in RECORDS if not public_export_eligible(r,SOURCE_SNAPSHOTS.get(str(r.get('id'))))]
+if ineligible:raise ValueError('Catalogue contains records not eligible for public export: '+', '.join(ineligible))
+from metadata_profile import PROFILE, prepare_metadata_records, build_quality_report, require_valid_report, combine_graphs, validate_metadata_profile
 AUTHORITIES=json.loads((DATA/'authorities.json').read_text())
 RECORDS=apply_reading_metadata([enrich_record(r,AUTHORITIES) for r in RECORDS],ROOT)
 ENTITIES=json.loads((DATA/'entities.json').read_text())
@@ -34,6 +46,9 @@ TODAY='2026-11-04'
 PROGRAMMES=json.loads((DATA/'programmes.json').read_text()) if (DATA/'programmes.json').exists() else []
 PIRR=load_pirr()
 RECORDS,PROGRAMMES=attach_pirr(RECORDS,PROGRAMMES,PIRR)
+RECORDS=prepare_metadata_records(RECORDS,ORIGIN)
+PROFILE_ERRORS=validate_metadata_profile(RECORDS,ORIGIN)
+if PROFILE_ERRORS:raise ValueError("Metadata source profile failed: "+"; ".join(PROFILE_ERRORS))
 def programme_id(p):return urllib.parse.urlparse(p['url']).path.strip('/').split('/')[-1]
 def programmes_for(r):return r.get('research_programmes',[])
 def programme_badges(r,base=''):
@@ -49,18 +64,20 @@ def url(path): return ORIGIN+'/'+path.lstrip('/')
 def href(path,base):return base+path
 
 def header(base,active=''):
- return f'''<a class="skip" href="#main">Skip to content</a><div class="shell"><div class="utility"><a href="https://www.museumofone.art/">Museum of One / Research, criticism & preservation ↗</a><span>A source-linked digital catalogue · Selected works</span></div><header class="header"><a class="brand" href="{base}index.html"><img class="brand-seal" src="{base}assets/institution-seal.webp" alt=""><span><strong>Museum of One</strong><small>Digital Archive Library</small></span></a><nav class="nav" aria-label="Main navigation">'''+''.join(f'<a href="{base}{p}"'+(' aria-current="page"' if active==key else '')+f'>{label}</a>' for key,p,label in [('catalogue','catalogue.html','Catalogue'),('collections','collections.html','Collections'),('programmes','programmes.html','Research'),('about','about.html','About the archive')])+f'<a class="nav-search" href="{base}catalogue.html#catalogue-search">{SEARCH_ICON}<span>Search</span></a></nav></header></div>'
+ return f'''<a class="skip" href="#main">Skip to content</a><div class="shell"><div class="utility"><a href="https://www.museumofone.art/">Museum of One / Research, criticism & preservation ↗</a><span>A source-linked digital catalogue · Selected works</span></div><header class="header"><a class="brand" href="{base}index.html"><img class="brand-seal" src="{base}assets/institution-seal.webp" alt=""><span><strong>Museum of One</strong><small>Digital Archive Library</small></span></a><nav class="nav" aria-label="Main navigation">'''+''.join(f'<a href="{base}{p}"'+(' aria-current="page"' if active==key else '')+f'>{label}</a>' for key,p,label in [('discovery','research-discovery.html','Discover'),('catalogue','catalogue.html','Catalogue'),('collections','collections.html','Collections'),('programmes','programmes.html','Research'),('about','about.html','About the archive')])+f'<a class="nav-search" href="{base}research-discovery.html">{SEARCH_ICON}<span>Search</span></a></nav></header></div>'
 def footer(base):
- return f'''<div class="shell"><footer class="footer"><div class="footer-main"><div><h2>Museum of One</h2><p>An archival reading room for published work in aesthetics, art criticism, and the ethics of witnessing.</p></div><div class="footer-links"><div><a href="{base}catalogue.html">Browse the catalogue</a><a href="{base}collections.html">Explore collections</a><a href="{base}programmes.html">Research programmes</a><a href="{base}subjects.html">Subject index</a><a href="{base}about.html">About & metadata policy</a></div><div><a href="https://www.museumofone.art/">Museum of One ↗</a><a href="{base}sources.html">Sources & authority records</a><a href="{base}metadata/catalogue.json" download>Download catalogue JSON ↓</a></div></div></div><div class="footer-bottom"><span>© Museum of One · Individual works retain their own rights.</span><span>Selected catalogue · Source review {TODAY} · Independent of Omeka</span></div></footer></div>'''
+ return f'''<div class="shell"><footer class="footer"><div class="footer-main"><div><h2>Museum of One</h2><p>An archival reading room for published work in aesthetics, art criticism, and the ethics of witnessing.</p></div><div class="footer-links"><div><a href="{base}catalogue.html">Browse the catalogue</a><a href="{base}collections.html">Explore collections</a><a href="{base}programmes.html">Research programmes</a><a href="{base}subjects.html">Subject index</a><a href="{base}about.html">About & metadata policy</a></div><div><a href="https://www.museumofone.art/">Museum of One ↗</a><a href="{base}sources.html">Sources & authority records</a><a href="{base}metadata-quality.html">Catalogue quality</a><a href="{base}metadata/catalogue.json" download>Download catalogue JSON ↓</a></div></div></div><div class="footer-bottom"><span>© Museum of One · Individual works retain their own rights.</span><span>Selected catalogue · Source review {TODAY} · Persistent catalogue records</span></div></footer></div>'''
 def layout(title,desc,content,path='index.html',base='',active='',schema=None):
  graph=schema or {'@context':'https://schema.org','@type':'CollectionPage','name':title,'description':desc,'url':url(path),'isPartOf':{'@type':'WebSite','name':'Museum of One Digital Archive Library','url':ORIGIN}}
  return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{E(title)} | Museum of One Digital Archive Library</title><meta name="description" content="{E(desc[:170])}"><link rel="canonical" href="{E(url(path))}"><meta property="og:type" content="website"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc[:200])}"><meta property="og:url" content="{E(url(path))}"><meta name="theme-color" content="#f3f0e8"><link rel="icon" href="{base}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{base}assets/style.css"><script type="application/ld+json">{J(graph)}</script><script defer src="{base}assets/app.js"></script></head><body>{header(base,active)}<main id="main" class="shell">{content}</main>{footer(base)}</body></html>'''
 def write(path,content):
- if path.endswith('.html'):
+ if path.endswith('.html') and path != '404.html':
   content=enhance_page(path,content,RECORDS,PROGRAMMES)
   content=archival_page(path,content,RECORDS,PROGRAMMES)
   content=reader_link(path,content,RECORDS)
   content=institutional_page(path,content,RECORDS,PROGRAMMES)
+  design_base="../" if "/" in path else ""
+  content=content.replace("</head>",f'<link rel="stylesheet" href="{design_base}assets/archival-design.css"></head>')
  p=OUT/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(content)
 def cover(r,base='',hero=False):
  if r.get('cover'): return f'<img src="{base}{E(r["cover"])}" alt="{E(r.get("cover_alt") or "Published cover of "+r["title"])}" '+('fetchpriority="high"' if hero else 'loading="lazy"')+' decoding="async">'
@@ -68,7 +85,7 @@ def cover(r,base='',hero=False):
 def card(r,base='',search=False):
  attrs=''
  if search:
-  searchtext=' '.join([r['title'],r['accession'],r['author'],r['doi'],(r.get('isbn') or ''),r.get('summary',''),' '.join(r['subjects']),' '.join(r.get('keywords',[])),r.get('source_title',''),' '.join(p['title'] for p in programmes_for(r)),' '.join(e['label'] for e in r.get('entity_links',[])),' '.join(c['title'] for c in r.get('contents',[])),' '.join(a for t in r.get('controlled_subjects',[]) for a in t.get('alternative_labels',[])),' '.join(i['value'] for p in r.get('pirr_references',[]) for i in p.get('identifiers',[]))])
+  searchtext=searchable_text(r)
   attrs=f' data-programmes="{E(json.dumps([programme_id(p) for p in programmes_for(r)]))}" data-type="{E(r["type"])}" data-record data-title="{E(r["title"])}" data-search="{E(searchtext)}" data-group="{E(r["collection"])}" data-year="{E(r["date"][:4])}" data-date="{E(r["date"])}" data-subjects="{E(json.dumps(r["subjects"]))}"'
  return f'<a class="book-card" href="{base}items/{r["id"]}.html"{attrs}><div class="cover-well">{cover(r,base)}</div><div class="catalogue-id">{E(r["accession"])} <span class="arrow" aria-hidden="true">↗</span></div><h3>{E(r.get("short_title",r["title"]))}</h3><p>{E(r["author"])} · {E(r["date"][:4])}<br>{E(r["type"])}</p></a>'
 def pagehead(eyebrow,title,desc):
@@ -109,7 +126,8 @@ write('collections.html',layout('Collections','Explore books, theoretical writin
 
 for r in RECORDS:
  rid=r['id'];base='../'; itemurl=url(f'items/{rid}.html'); doiurl='https://doi.org/'+r['doi']
- citation=r.get('citation') or f'{r["author"]}. ({r["date"][:4]}). {r["title"]}'+(f' ({r["version"]})' if r.get('version') else '')+f'. Zenodo. {doiurl}'
+ model=build_citation_model(r,catalogue_url=itemurl,pdf_url=url(f'assets/documents/{rid}.pdf'))
+ citation=visible_citation(model)
  institutional=r.get('institutional_url','https://www.museumofone.art/publications/')
  schema=build_graph(r,itemurl,ORIGIN)
  lic=r.get('license') or {}
@@ -145,6 +163,7 @@ for r in RECORDS:
  body+='<section class="item-section"><h2>Subjects & discovery</h2><span class="source-label">Editorial subjects · Local discovery vocabulary</span>'+''.join(f'<a class="pill" href="../catalogue.html?subject={urllib.parse.quote(s)}">{E(s)}</a>' for s in r['subjects'])
  if r.get('keywords'):body+='<h3>Repository keywords</h3><p>'+E(' · '.join(r['keywords']))+'</p>'
  body+='</section>'
+ body+=repository_description_html(r)
  body+=f'<section class="item-section" id="source-evidence"><h2>Source corroboration</h2><p>{E(r.get("corroboration") or "The deposited record is linked to the corresponding Museum of One work page. The catalogue retains edition-specific repository identifiers and institutional publication context separately.")}</p><ul class="source-list"><li><a href="{E(r["zenodo_url"])}">Zenodo edition record ↗</a><small>Deposited metadata, files, version and rights.</small></li><li><a href="{E(institutional)}">Museum of One work record ↗</a><small>Institutional title, authorship and publication context.</small></li></ul>'
  auth_data=json.loads((DATA/'authorities.json').read_text()) if (DATA/'authorities.json').exists() else {}
  matches=[w for w in auth_data.get('works',[]) if w['match_title'].lower() in (r['title']+' '+r.get('short_title','')).lower()]
@@ -184,28 +203,28 @@ for r in RECORDS:
  for f in r.get('files',[])[:4]:
   if f.get('url'):aside+=f'<p><a href="{E(f["url"])}">{E(f.get("name") or "Repository file")} ↗</a>'+ (f'<br>{E(f.get("size_label", ""))}' if f.get('size_label') else '')+'</p>'
  aside+='</div><div class="access-card"><h2>Record downloads</h2><p>Source-qualified metadata for research and reuse.</p>'
- for ext,label in [('json','Catalogue metadata · JSON'),('jsonld','Structured data · JSON-LD'),('xml','Qualified Dublin Core · XML'),('bib','Citation · BibTeX')]:aside+=f'<p><a href="../metadata/{rid}.{ext}" download>{label} ↓</a></p>'
+ for ext,label in [('json','Catalogue metadata · JSON'),('jsonld','Structured data · JSON-LD'),('xml','Qualified Dublin Core · XML'),('bib','Citation · BibTeX'),('ris','Citation · RIS'),('csl.json','Citation · CSL-JSON')]:aside+=f'<p><a href="../metadata/{rid}.{ext}" download>{label} ↓</a></p>'
  aside+=f'<p><a href="../metadata/source/{rid}.json" download>Original Zenodo metadata snapshot ↓</a></p></div><div class="access-card"><h2>Wider discovery</h2><p>Authority identifiers and external catalogue context are documented separately.</p><a class="text-link" href="../sources.html">Catalogue & authority links ↗</a></div>'
  content+='<nav class="record-tabs" aria-label="On this record"><a href="#bibliographic-record">Bibliographic record ↓</a><a href="#research-context">Research context ↓</a><a href="#source-evidence">Source evidence ↓</a><a href="#files-record">Files & preservation metadata ↓</a></nav>'
  content+=f'<div class="item-layout"><div>{body}</div><aside>{aside}</aside></div>'
  # Scholarly citation tags complement schema.org metadata.
  html=layout(r['title'],r['summary'],content,f'items/{rid}.html',base,schema=schema)
- tags=f'<meta name="citation_title" content="{E(r["title"])}"><meta name="citation_author" content="{E(r["author"])}"><meta name="citation_publication_date" content="{E(r["date"])}"><meta name="citation_doi" content="{E(r["doi"])}">'
+ tags=''.join(f'<meta name="{E(name)}" content="{E(value)}">' for name,value in scholar_meta(model))
  html=html.replace('</head>',tags+'</head>');write(f'items/{rid}.html',html)
  write(f'metadata/{rid}.json',json.dumps({**r,'field_assertions':build_assertions(r)},ensure_ascii=False,indent=2));write(f'metadata/{rid}.jsonld',json.dumps(schema,ensure_ascii=False,indent=2))
  write(f'metadata/{rid}.xml',build_dc(r))
- def bib(v):return str(v).replace('\\','\\textbackslash{}').replace('{','\\{').replace('}','\\}').replace('&','\\&').replace('%','\\%').replace('_','\\_').replace('#','\\#')
- bibentry='@'+('book' if r['collection']=='Books & volumes' else 'misc')+'{museumofone'+rid+',\n'+',\n'.join('  '+k+' = {'+bib(v)+'}' for k,v in [('title',r['title']),('author',r['author']),('year',r['date'][:4]),('doi',r['doi']),('url',doiurl),('note','Zenodo repository edition '+r.get('version',''))])+'\n}\n'
- write(f'metadata/{rid}.bib',bibentry)
+ write(f'metadata/{rid}.bib',bibtex(model))
+ write(f'metadata/{rid}.ris',ris(model))
+ write(f'metadata/{rid}.csl.json',json.dumps(csl_json(model),ensure_ascii=False,indent=2))
  source=DATA/'source'/f'{rid}.json'
  if source.exists():shutil.copy2(source,OUT/'metadata/source'/f'{rid}.json')
 
 about=pagehead('About the archive','Custody, context,<br>and careful description.'.replace('<br>',' '),'A digital reading room for Museum of One’s published work, rebuilt from public sources.')
-about+='''<div class="reading"><h2>The scope of this catalogue</h2><p>This first edition gathers a selected corpus of publications associated with Museum of One and Dorian Vale. It is a new, source-linked catalogue, not an export of the former Omeka site or a claim to have recovered all its records.</p><p>The archive presents item records, publication covers, and an in-site document reader. Zenodo remains the source of record. Byte-identical local access copies support page turning, facing-page reading, thumbnails and zoom. Source checksums are matched before a reading copy is made available.</p><h2>How the records are made</h2><p>Zenodo supplies repository titles, dates, version identifiers, creators, file information, licence notices, and persistent identifiers. Museum of One’s corresponding work pages supply corroborating publication context. Where a page points to a different edition, that relationship is noted rather than treated as an exact match.</p><p>Each item separates repository publication dates from any first-edition statement. A local catalogue identifier is assigned for navigation; it is not represented as an accession number from the former archive.</p><h2>Editorial enrichment</h2><p>Concise catalogue summaries and local subject groupings are editorial additions based on the linked source material. They aid discovery without overwriting the original metadata. They are not publisher-approved abstracts or formally assigned Library of Congress subject headings.</p><p>Where Zenodo creator roles differ from the authorship stated on Museum of One, both are recorded. Version-specific DOIs are used for citations; concept DOIs are identified separately when available.</p><h2>Authority control & external links</h2><p>Identifiers and external links are qualified by what the source actually establishes. A catalogue search link is not evidence of a holding. A web-archive capture is not a book deposit. An ISBN or ISSN identifies a publication or serial; it does not establish peer review or institutional endorsement.</p><p><a href="sources.html">Read the sources and authority notes ↗</a></p><h2>Metadata for reuse</h2><p>Item records are available as JSON, schema.org JSON-LD, qualified Dublin Core XML, and BibTeX. Original Zenodo snapshots are retained separately. This provides portable descriptive metadata; the site does not claim formal archival standards certification or an OAI-PMH endpoint.</p><h2>Rights & corrections</h2><p>Licences are attached to individual works and editions. Cover illustrations and quoted artworks may retain separate rights. Consult the original deposited file before reusing material.</p><p>For institutional bibliographic corrections, contact <a href="mailto:research@museumofone.art">research@museumofone.art</a> and include the work’s DOI and the field in question.</p><h2>A portable archive</h2><p>This static site needs no subscription or database. Its HTML, metadata, and assets can be hosted on GitHub Pages. It is a custom catalogue rather than an installation of CollectionBuilder or Wax. Source review is a dated snapshot, not automatic synchronization with a Zenodo account.</p></div>'''
+about+='''<div class="reading"><h2>The scope of this catalogue</h2><p>This first edition gathers a selected corpus of publications associated with Museum of One and Dorian Vale. It is a new, source-linked catalogue, not an export of the previous catalogue or a claim to have recovered all its records.</p><p>The archive presents item records, publication covers, and an in-site document reader. Zenodo remains the source of record. Byte-identical local access copies support page turning, facing-page reading, thumbnails and zoom. Source checksums are matched before a reading copy is made available.</p><h2>How the records are made</h2><p>Zenodo supplies repository titles, dates, version identifiers, creators, file information, licence notices, and persistent identifiers. Museum of One’s corresponding work pages supply corroborating publication context. Where a page points to a different edition, that relationship is noted rather than treated as an exact match.</p><p>Each item separates repository publication dates from any first-edition statement. A local catalogue identifier is assigned for navigation; it is not represented as an accession number from the former archive.</p><h2>Editorial enrichment</h2><p>Concise catalogue summaries and local subject groupings are editorial additions based on the linked source material. They aid discovery without overwriting the original metadata. They are not publisher-approved abstracts or formally assigned Library of Congress subject headings.</p><p>Where Zenodo creator roles differ from the authorship stated on Museum of One, both are recorded. Version-specific DOIs are used for citations; concept DOIs are identified separately when available.</p><h2>Authority control & external links</h2><p>Identifiers and external links are qualified by what the source actually establishes. A catalogue search link is not evidence of a holding. A web-archive capture is not a book deposit. An ISBN or ISSN identifies a publication or serial; it does not establish peer review or institutional endorsement.</p><p><a href="sources.html">Read the sources and authority notes ↗</a></p><h2>Metadata for reuse</h2><p>Item records are available as JSON, schema.org JSON-LD, qualified Dublin Core XML, and BibTeX. Original Zenodo snapshots are retained separately. This provides portable descriptive metadata; the site does not claim formal archival standards certification or an OAI-PMH endpoint.</p><h2>Rights & corrections</h2><p>Licences are attached to individual works and editions. Cover illustrations and quoted artworks may retain separate rights. Consult the original deposited file before reusing material.</p><p>For institutional bibliographic corrections, contact <a href="mailto:research@museumofone.art">research@museumofone.art</a> and include the work’s DOI and the field in question.</p><h2>A portable archive</h2><p>This static site needs no subscription or database. Its HTML, metadata, and assets can be hosted on GitHub Pages. It is a custom catalogue rather than an installation of CollectionBuilder or Wax. Source review is a dated snapshot, not automatic synchronization with a Zenodo account.</p></div>'''
 write('about.html',layout('About & metadata policy','The scope, source policy and editorial metadata practices of Museum of One’s archival catalogue.',about,'about.html',active='about'))
 
 sourcepage=pagehead('Sources & authority records','Follow the evidence.','Repository records, institutional context, and external identifiers—each linked according to what it establishes.')
-sourcepage+='''<div class="reading"><h2>Publication sources</h2><p><a href="https://www.museumofone.art/publications/">Museum of One publication register ↗</a> provides institutional work and edition records. Each catalogue item links to its corresponding page and the selected Zenodo edition. Original repository metadata is available from the item’s download panel.</p><h2>Library and Archives Canada</h2><p><a href="https://library-archives.canada.ca/eng">Library and Archives Canada ↗</a> provides national library, archival, and publication infrastructure. This catalogue does not assert that every included edition has a verified LAC holding.</p><p><a href="https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art">Search LAC web-archive captures of Museum of One ↗</a>. This is a web-capture lookup, not evidence of a deposited book or a verified capture for a particular date.</p><h2>Identity and serial authority</h2><ul class="source-list"><li><a href="https://orcid.org/0009-0004-7737-5094">Dorian Vale · ORCID 0009-0004-7737-5094 ↗</a><small>Creator identifier linked by Museum of One. An identifier is not a claim of institutional affiliation.</small></li><li><a href="https://portal.issn.org/resource/ISSN/2819-7232">ISSN Portal · 2819-7232 ↗</a><small>Key title: Post-interpretive criticism. Serial identity is distinct from the individual volume or edition.</small></li></ul><h2>Additional catalogue context</h2>'''
+sourcepage+='''<div class="reading"><h2>Publication sources</h2><p><a href="https://www.museumofone.art/publications/">Museum of One publication register ↗</a> provides institutional work and edition records. Each catalogue item links to its corresponding page and the selected Zenodo edition. Original repository metadata is available from the item’s download panel.</p><h2>Library and Archives Canada</h2><p><a href="https://library-archives.canada.ca/eng">Library and Archives Canada ↗</a> provides national library, archival, and publication infrastructure. This catalogue does not assert that every included edition has a verified LAC holding.</p><p><a href="https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art">Search LAC web-archive captures of Museum of One ↗</a>. This is a web-capture lookup, not evidence of a deposited book or a verified capture for a particular date.</p><h2>Identity and serial authority</h2><ul class="source-list"><li><a href="https://orcid.org/0009-0004-7737-5094">Dorian Vale · ORCID 0009-0004-7737-5094 ↗</a><small>Public ORCID profile inspected on 4 November 2026: its credit name and Museum of One link match. This does not verify affiliations or other biographical claims.</small></li><li><a href="https://portal.issn.org/resource/ISSN/2819-7232">ISSN Portal · 2819-7232 ↗</a><small>Key title: Post-interpretive criticism. Serial identity is distinct from the individual volume or edition.</small></li></ul><h2>Additional catalogue context</h2>'''
 authfile=DATA/'authorities.json'
 if authfile.exists():
  auth=json.loads(authfile.read_text())
@@ -235,7 +254,7 @@ for subject in sorted({s for r in RECORDS for s in r['subjects']}):
 subject_content+='</div>'
 subject_content=subject_content.replace('<div class="directory-grid">','<p class="vocabulary-register-link"><a href="vocabulary.html">Open the controlled vocabulary: preferred terms, definitions and synonyms ↗</a></p><div class="directory-grid">')
 write('subjects.html',layout('Subject index','Browse editorial subjects across Museum of One books, treatises and critical research.',subject_content,'subjects.html'))
-write('metadata/catalogue.json',json.dumps({'title':'Museum of One Digital Archive Library','reviewed':TODAY,'scope':'Selected corpus; not a complete Omeka recovery','records':[{**r,'field_assertions':build_assertions(r)} for r in RECORDS]},ensure_ascii=False,indent=2))
+write('metadata/catalogue.json',json.dumps({'title':'Museum of One Digital Archive Library','canonical_origin':ORIGIN,'reviewed':TODAY,'scope':'Selected corpus; not a complete recovery of the previous catalogue','records':[{**r,'field_assertions':build_assertions(r)} for r in RECORDS]},ensure_ascii=False,indent=2))
 write('assets/favicon.svg','<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#f3f0e8"/><circle cx="32" cy="32" r="27" fill="none" stroke="#713e3e"/><text x="32" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="36" fill="#713e3e">M</text></svg>')
 build_finding_aid(RECORDS,PROGRAMMES,write,layout)
 paths=['finding-aid.html','index.html','catalogue.html','collections.html','about.html','sources.html','programmes.html','subjects.html']+[f'items/{r["id"]}.html' for r in RECORDS]
@@ -248,11 +267,38 @@ paths+=build_stewardship_page(RECORDS,write,layout,ORIGIN)
 paths+=build_pirr_pages(RECORDS,PROGRAMMES,PIRR,write,layout,ORIGIN)
 write('metadata/entities.json',json.dumps(ENTITIES,ensure_ascii=False,indent=2))
 write('metadata/contents.json',json.dumps(CONTENTS,ensure_ascii=False,indent=2))
-write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{E(url(p))}</loc><lastmod>{TODAY}</lastmod></url>' for p in paths)+'</urlset>')
+# One generated discovery model serves archive pages and the native Ghost entrance.
+GHOST_DISCOVERY=json.loads((DATA/'source/ghost-discovery.json').read_text())['records'] if (DATA/'source/ghost-discovery.json').exists() else []
+DISCOVERY_V2=build_research_discovery(RECORDS,ENTITIES,VOCABULARY,PROGRAMMES,ORIGIN,root=ROOT,ghost_records=GHOST_DISCOVERY)
+PASSAGES_V2=build_fulltext_index(RECORDS,ROOT,ORIGIN)
+write('metadata/research-discovery.v2.json',encode_index(DISCOVERY_V2))
+write('metadata/research-passages.v2.json',encode_index(PASSAGES_V2))
+paths+=build_discovery_page(write,layout,DISCOVERY_V2,ORIGIN)
+write('metadata/metadata-profile.json',json.dumps(PROFILE,ensure_ascii=False,indent=2))
+write('metadata/relations.json',json.dumps(relation_register(ORIGIN),ensure_ascii=False,indent=2))
+write('metadata/relationships.json',json.dumps({'profile_version':PROFILE['version'],'assertions':[a for r in RECORDS for a in r['relationship_assertions']]+typed_entity_relationship_assertions(ENTITIES,ORIGIN)},ensure_ascii=False,indent=2))
+ALL_GRAPHS=collect_graphs(OUT,paths)
+QUALITY=build_quality_report(RECORDS,ALL_GRAPHS,entity_graph(ENTITIES,ORIGIN),ORIGIN,output_dir=OUT,entity_records=ENTITIES)
+write('metadata/quality-report.json',json.dumps(QUALITY,ensure_ascii=False,indent=2))
+require_valid_report(QUALITY)
+write('metadata/knowledge-graph.jsonld',json.dumps(combine_graphs(ALL_GRAPHS),ensure_ascii=False,indent=2))
+paths+=build_quality_page(write,layout,QUALITY)
+# Only dated local description events justify a sitemap modification date.
+modified={f'items/{r["id"]}.html':r.get('record_modified') for r in RECORDS}
+write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{E(url(p))}</loc>'+ (f'<lastmod>{E(modified[p])}</lastmod>' if modified.get(p) else '')+'</url>' for p in paths)+'</urlset>')
 write('robots.txt','User-agent: *\nAllow: /\nSitemap: '+url('sitemap.xml')+'\n')
+
+# GitHub Pages serves this file at arbitrary missing paths. Root-relative assets
+# and navigation must therefore work without knowing the requested directory.
+errorbase=urllib.parse.urlparse(ORIGIN).path.rstrip('/')+'/'
+errorcontent=f'<section class="page-head"><div class="eyebrow">Digital Archive Library / 404</div><h1>Record not found.</h1><p>This address does not identify an available archive page. Search the catalogue by title, local item number or DOI.</p><div class="actions"><a class="button" href="{E(errorbase)}catalogue.html">Search the catalogue</a><a class="text-link" href="{E(errorbase)}finding-aid.html">Consult the finding aid</a></div></section>'
+errorhtml=layout('Page not found','Search the Museum of One Digital Archive Library for a publication or archival description.',errorcontent,'404.html',errorbase,schema={'@context':'https://schema.org','@type':'WebPage','name':'Page not found','url':url('404.html')})
+errorhtml=errorhtml.replace(f'<script defer src="{errorbase}assets/app.js"></script>','').replace('</head>','<meta name="robots" content="noindex,follow"></head>')
+write('404.html',errorhtml)
 print(f'Built {len(paths)} HTML pages and metadata for {len(RECORDS)} records in {OUT}')
 
 write('metadata/discovery.json',json.dumps(discovery_payload(RECORDS),ensure_ascii=False))
+write('metadata/search-index.v1.json',encode_search_index(build_search_index(RECORDS,ORIGIN,SOURCE_SNAPSHOTS)))
 
 write('CNAME','archive.museumofone.art\n')
 write('.nojekyll','')

@@ -16,7 +16,7 @@ def collection_tree(path,records,programmes):
    tree+=f'<li><a href="{base}items/{r["id"]}.html"'+(' aria-current="page"' if current and current['id']==r['id'] else '')+f'><span>{E(r["accession"])}</span>{E(r.get("short_title") or r["title"])}</a></li>'
   tree+='</ul></details>'
  tree+='</div><div class="tree-tools">'
- for dest,label in [('contents.html','Chapters & essays'),('people.html','People & organisations'),('artworks.html','Artworks discussed'),('exhibitions.html','Exhibition context'),('research-registry.html','PIRR research records'),('programmes.html','Research pathways'),('vocabulary.html','Discovery vocabulary'),('policies.html','Policies & description'),('stewardship.html','Digital stewardship'),('research-help.html','Research enquiries')]:
+ for dest,label in [('research-discovery.html','Discover across the archive'),('contents.html','Chapters & essays'),('people.html','People & organisations'),('artworks.html','Artworks discussed'),('exhibitions.html','Exhibition context'),('research-registry.html','PIRR research records'),('programmes.html','Research pathways'),('vocabulary.html','Discovery vocabulary'),('policies.html','Policies & description'),('stewardship.html','Digital stewardship'),('research-help.html','Research enquiries')]:
   tree+=f'<a href="{base}{dest}"'+(' aria-current="page"' if path==dest else '')+f'>{label}</a>'
  tree+='</div><p class="tree-note">Published items and analytic parts. Editorial arrangement is described in the finding aid.</p></nav></details></aside>'
  return tree

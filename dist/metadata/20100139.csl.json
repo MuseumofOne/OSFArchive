@@ -1,0 +1,23 @@
+{
+  "id": "20100139",
+  "type": "dataset",
+  "title": "A Quantitative Analysis of Critical Posture in Art Writing, 1980-2025 (Dataset - 20 Critical Texts 1980–2025) v.2",
+  "author": [
+    {
+      "family": "Vale",
+      "given": "Dorian"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2026,
+        2,
+        9
+      ]
+    ]
+  },
+  "DOI": "10.5281/zenodo.20100139",
+  "URL": "https://doi.org/10.5281/zenodo.20100139",
+  "publisher": "Museum of One"
+}

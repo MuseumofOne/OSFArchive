@@ -1,0 +1,322 @@
+{
+  "version": 1,
+  "scope": "Forty explicitly chosen known-item, alias, identifier, chapter, programme and verbatim-passage tasks. This is a regression benchmark, not a claim of exhaustive research quality.",
+  "queries": [
+    {
+      "label": "edition DOI",
+      "query": "10.5281/zenodo.19864099",
+      "expected_id": "publication:19864099",
+      "max_rank": 1
+    },
+    {
+      "label": "DOI URL",
+      "query": "https://doi.org/10.5281/zenodo.19864115",
+      "expected_id": "publication:19864115",
+      "max_rank": 1
+    },
+    {
+      "label": "ISBN",
+      "query": "978-1-06-982033-4",
+      "expected_id": "publication:23395654",
+      "max_rank": 1
+    },
+    {
+      "label": "accession",
+      "query": "MOO-CAT-004",
+      "expected_id": "publication:20383926",
+      "max_rank": 1
+    },
+    {
+      "label": "recent item DOI",
+      "query": "10.5281/zenodo.23430200",
+      "expected_id": "publication:23430200",
+      "max_rank": 1
+    },
+    {
+      "label": "recent item accession",
+      "query": "MOO-CAT-006",
+      "expected_id": "publication:23428974",
+      "max_rank": 1
+    },
+    {
+      "label": "article accession",
+      "query": "MOO-CAT-007",
+      "expected_id": "publication:21715085",
+      "max_rank": 1
+    },
+    {
+      "label": "article DOI",
+      "query": "10.5281/zenodo.21241866",
+      "expected_id": "publication:21241866",
+      "max_rank": 1
+    },
+    {
+      "label": "concept DOI",
+      "query": "10.5281/zenodo.20593002",
+      "expected_id": "publication:20593003",
+      "max_rank": 1
+    },
+    {
+      "label": "case insensitive accession",
+      "query": "moo-cat-010",
+      "expected_id": "publication:19963428",
+      "max_rank": 1
+    },
+    {
+      "label": "manual DOI",
+      "query": "10.5281/zenodo.20100136",
+      "expected_id": "publication:20100136",
+      "max_rank": 1
+    },
+    {
+      "label": "dataset DOI",
+      "query": "doi:10.5281/zenodo.20100139",
+      "expected_id": "publication:20100139",
+      "max_rank": 1
+    },
+    {
+      "label": "interpretation accession",
+      "query": "MOO-CAT-013",
+      "expected_id": "publication:21786998",
+      "max_rank": 1
+    },
+    {
+      "label": "moral proximity accession",
+      "query": "MOO-CAT-014",
+      "expected_id": "publication:19863790",
+      "max_rank": 1
+    },
+    {
+      "label": "afterlife accession",
+      "query": "MOO-CAT-015",
+      "expected_id": "publication:19863836",
+      "max_rank": 1
+    },
+    {
+      "label": "custody accession",
+      "query": "MOO-CAT-016",
+      "expected_id": "publication:19863851",
+      "max_rank": 1
+    },
+    {
+      "label": "short title",
+      "query": "Answerability",
+      "expected_id": "publication:23428974",
+      "max_rank": 1,
+      "filters": {
+        "kind": "publication"
+      }
+    },
+    {
+      "label": "partial title",
+      "query": "After the Interpretation Changes",
+      "expected_id": "publication:23430200",
+      "max_rank": 1,
+      "filters": {
+        "kind": "publication"
+      }
+    },
+    {
+      "label": "curly apostrophe",
+      "query": "The Curator’s Shadow",
+      "expected_id": "publication:19963428",
+      "max_rank": 1,
+      "filters": {
+        "kind": "publication"
+      }
+    },
+    {
+      "label": "unordered title words",
+      "query": "Hassan everyday Objects",
+      "expected_id": "publication:21241866",
+      "max_rank": 1,
+      "filters": {
+        "kind": "publication"
+      }
+    },
+    {
+      "label": "chapter reference",
+      "query": "MOO-CAT-001/C003",
+      "expected_id": "chapter:19864099:c003",
+      "max_rank": 1,
+      "filters": {
+        "kind": "chapter"
+      }
+    },
+    {
+      "label": "chapter title",
+      "query": "The Architecture of Shame",
+      "expected_id": "chapter:20383926:c006",
+      "max_rank": 1,
+      "filters": {
+        "kind": "chapter"
+      }
+    },
+    {
+      "label": "chapter phrase",
+      "query": "Oral Memory",
+      "expected_id": "chapter:23395654:c010",
+      "max_rank": 1,
+      "filters": {
+        "kind": "chapter"
+      }
+    },
+    {
+      "label": "chapter partial",
+      "query": "Against the Compulsive Urge",
+      "expected_id": "chapter:19864115:c003",
+      "max_rank": 1,
+      "filters": {
+        "kind": "chapter"
+      }
+    },
+    {
+      "label": "name variant",
+      "query": "Kazuo Shiraga",
+      "expected_id": "entity:shiraga-kazuo",
+      "max_rank": 1,
+      "filters": {
+        "kind": "entity"
+      }
+    },
+    {
+      "label": "name abbreviation",
+      "query": "Alexander V. Markov",
+      "expected_id": "entity:alexander-viktorovich-markov",
+      "max_rank": 1,
+      "filters": {
+        "kind": "entity"
+      }
+    },
+    {
+      "label": "ORCID URL",
+      "query": "https://orcid.org/0009-0004-7737-5094",
+      "expected_id": "entity:dorian-vale",
+      "max_rank": 1,
+      "filters": {
+        "kind": "entity"
+      }
+    },
+    {
+      "label": "artwork title",
+      "query": "Atrabiliarios",
+      "expected_id": "entity:atrabiliarios",
+      "max_rank": 1,
+      "filters": {
+        "kind": "entity"
+      }
+    },
+    {
+      "label": "framework acronym",
+      "query": "PIC",
+      "expected_id": "concept:post-interpretive-criticism",
+      "max_rank": 1,
+      "filters": {
+        "kind": "concept"
+      }
+    },
+    {
+      "label": "spelling variant",
+      "query": "Museum cataloging",
+      "expected_id": "concept:museum-cataloguing",
+      "max_rank": 1,
+      "filters": {
+        "kind": "concept"
+      }
+    },
+    {
+      "label": "hyphenation variant",
+      "query": "Interrater reliability",
+      "expected_id": "concept:inter-rater-reliability",
+      "max_rank": 1,
+      "filters": {
+        "kind": "concept"
+      }
+    },
+    {
+      "label": "regional spelling",
+      "query": "Repetition and labor",
+      "expected_id": "concept:repetition-and-labour",
+      "max_rank": 1,
+      "filters": {
+        "kind": "concept"
+      }
+    },
+    {
+      "label": "programme ID",
+      "query": "pir-prj-xgd6wb9d",
+      "expected_id": "programme:research-intellectual-history",
+      "max_rank": 1,
+      "filters": {
+        "kind": "programme"
+      }
+    },
+    {
+      "label": "programme title",
+      "query": "Threads of Sand: Arabic Translation",
+      "expected_id": "programme:arabic-translation-threads-of-sand",
+      "max_rank": 1,
+      "filters": {
+        "kind": "programme"
+      }
+    },
+    {
+      "label": "programme name",
+      "query": "Reiko Tomii",
+      "expected_id": "programme:reiko-tomii",
+      "max_rank": 1,
+      "filters": {
+        "kind": "programme"
+      }
+    },
+    {
+      "label": "programme subject",
+      "query": "Sudanese Art and Aesthetics",
+      "expected_id": "programme:sudanese-art-and-aesthetics",
+      "max_rank": 1,
+      "filters": {
+        "kind": "programme"
+      }
+    },
+    {
+      "label": "title circulation passage",
+      "query": "\"provisional identification remains\"",
+      "expected_id": "passage:23430200:5",
+      "max_rank": 3,
+      "filters": {
+        "kind": "passage"
+      },
+      "fulltext": true
+    },
+    {
+      "label": "historical inference passage",
+      "query": "\"Her careful phrasing supplies\"",
+      "expected_id": "passage:23428974:6",
+      "max_rank": 3,
+      "filters": {
+        "kind": "passage"
+      },
+      "fulltext": true
+    },
+    {
+      "label": "architecture sequence passage",
+      "query": "\"a claim about sequence\"",
+      "expected_id": "passage:20383926:20",
+      "max_rank": 3,
+      "filters": {
+        "kind": "passage"
+      },
+      "fulltext": true
+    },
+    {
+      "label": "Sudanese space passage",
+      "query": "\"This is where Sudanese minimalism is born\"",
+      "expected_id": "passage:23395654:30",
+      "max_rank": 3,
+      "filters": {
+        "kind": "passage"
+      },
+      "fulltext": true
+    }
+  ]
+}

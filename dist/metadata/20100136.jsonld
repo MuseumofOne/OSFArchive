@@ -21,6 +21,7 @@
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.20100136"
       },
+      "lastReviewed": "2026-11-04",
       "breadcrumb": {
         "@id": "https://archive.museumofone.art/items/20100136.html#breadcrumb"
       }
@@ -88,8 +89,23 @@
       ]
     },
     {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/20100136.html#work",
+      "name": "Diagnostics Without Possession: An Operational Manual for Post-Interpretive Criticism (Operational reference for inter-rater reliability)",
+      "description": "Local work identity, distinct from its deposited editions, repository version family and catalogue description.",
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.20099594"
+      },
+      "author": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      }
+    },
+    {
       "@type": "Person",
-      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
       "name": "Dorian Vale",
       "identifier": {
         "@type": "PropertyValue",
@@ -99,7 +115,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://archive.museumofone.art/#publisher",
+      "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
       "name": "Museum of One",
       "url": "https://www.museumofone.art/"
     },
@@ -111,6 +127,9 @@
         "@type": "PropertyValue",
         "propertyID": "Zenodo concept DOI",
         "value": "10.5281/zenodo.20099594"
+      },
+      "exampleOfWork": {
+        "@id": "https://archive.museumofone.art/items/20100136.html#work"
       },
       "workExample": {
         "@id": "https://doi.org/10.5281/zenodo.20100136"
@@ -284,10 +303,10 @@
         "Interpretive Restraint"
       ],
       "author": {
-        "@id": "https://orcid.org/0009-0004-7737-5094"
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
       },
       "publisher": {
-        "@id": "https://archive.museumofone.art/#publisher"
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "exampleOfWork": {
@@ -325,13 +344,18 @@
       "@type": "WebPage",
       "@id": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/",
       "name": "Museum of One institutional publication context",
+      "description": "Reviewed relationship scope: version family",
       "about": {
-        "@id": "https://doi.org/10.5281/zenodo.20100136"
+        "@id": "https://doi.org/10.5281/zenodo.20099594"
       }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/20100136.html#relationship-dorian-vale-author",
+      "identifier": "urn:museum-of-one:assertion:a3bb5172a9a431903a7f5cd3d5847fcba7258f2bfe00684dd45df575dc1fe812",
       "name": "author",
       "about": {
         "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
@@ -339,11 +363,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/"
       },
-      "description": "The matching institutional publication record credits Dorian Vale as author."
+      "description": "The matching institutional publication record credits Dorian Vale as author.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/20100136.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#authored-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/20100136.html#relationship-museum-of-one-publisher",
+      "identifier": "urn:museum-of-one:assertion:927aca40fca883c2dba85e6b5fd3b82fb2898fd883a9d6442107e7c1c6aab5cc",
       "name": "publisher",
       "about": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
@@ -351,7 +391,19 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/"
       },
-      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/20100136.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#published-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/"
+      }
     },
     {
       "@type": "DefinedTermSet",

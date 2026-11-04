@@ -1,0 +1,39 @@
+{
+  "reviewed": "2026-11-04",
+  "scope": "Minimal public authority observations; original bibliographic snapshots are unchanged.",
+  "observations": [
+    {
+      "identifier": "0009-0004-7737-5094",
+      "scheme": "ORCID",
+      "source_url": "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person",
+      "http_status": 200,
+      "response_sha256": "0d1d040b8d232ce3d78f068902d609fcb3c90e70736595cedb372f8f9b1ed252",
+      "retained_fields": {
+        "credit-name": "Dorian Vale",
+        "researcher-url": "https://www.museumofone.art/"
+      },
+      "status": "public_registry_profile_inspected",
+      "note": "Public profile credit name and website match the catalogue author. These user-supplied profile fields do not independently verify biography, affiliations or endorsement. Other personal profile fields are not retained."
+    },
+    {
+      "scheme": "ISNI",
+      "identifiers": [
+        "0000000528819744",
+        "0000000537155247"
+      ],
+      "source_urls": [
+        "https://isni.org/isni/0000000528819744",
+        "https://isni.org/isni/0000000537155247"
+      ],
+      "http_status": 403,
+      "status": "authority_access_unavailable_conflict_unresolved",
+      "note": "Both official identifier pages returned Forbidden; no assignment decision was made."
+    },
+    {
+      "scheme": "ISBN",
+      "source_url": "https://www.isbn-international.org/node/88",
+      "status": "assignment_policy_checked_item_allocation_unresolved",
+      "note": "Official ISBN Agency guidance distinguishes editions and separately available formats. No item-level Canadian allocation evidence was obtained in this review. Existing book ISBNs retain their qualified title-level scope."
+    }
+  ]
+}

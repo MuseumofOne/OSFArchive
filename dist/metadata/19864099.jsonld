@@ -21,6 +21,7 @@
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.19864099"
       },
+      "lastReviewed": "2026-11-04",
       "breadcrumb": {
         "@id": "https://archive.museumofone.art/items/19864099.html#breadcrumb"
       }
@@ -94,8 +95,29 @@
       ]
     },
     {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19864099.html#work",
+      "name": "Post-Interpretive Criticism: Volume I - The Foundational Essays",
+      "description": "Local work identity, distinct from its deposited editions, repository version family and catalogue description.",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source-reported title-level ISBN",
+        "value": "978-1-06-982030-3",
+        "description": "Edition/format applicability remains unresolved; not exported as the deposited edition's ISBN."
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.17058411"
+      },
+      "author": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      }
+    },
+    {
       "@type": "Person",
-      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity",
       "name": "Dorian Vale",
       "identifier": {
         "@type": "PropertyValue",
@@ -105,7 +127,7 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://archive.museumofone.art/#publisher",
+      "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity",
       "name": "Museum of One",
       "url": "https://www.museumofone.art/"
     },
@@ -117,6 +139,9 @@
         "@type": "PropertyValue",
         "propertyID": "Zenodo concept DOI",
         "value": "10.5281/zenodo.17058411"
+      },
+      "exampleOfWork": {
+        "@id": "https://archive.museumofone.art/items/19864099.html#work"
       },
       "workExample": {
         "@id": "https://doi.org/10.5281/zenodo.19864099"
@@ -323,12 +348,11 @@
         "Q136530009"
       ],
       "author": {
-        "@id": "https://orcid.org/0009-0004-7737-5094"
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
       },
       "publisher": {
-        "@id": "https://archive.museumofone.art/#publisher"
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
       },
-      "isbn": "978-1-06-982030-3",
       "alternateName": [
         "Post–Interprative Criticism: Volume I",
         "Foundational Essays (Collected Doctrines, Treaties, Theories, and Application)"
@@ -419,13 +443,18 @@
       "@type": "WebPage",
       "@id": "https://www.museumofone.art/publication-foundational-essays/",
       "name": "Museum of One institutional publication context",
+      "description": "Reviewed relationship scope: exact edition",
       "about": {
         "@id": "https://doi.org/10.5281/zenodo.19864099"
       }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/19864099.html#relationship-dorian-vale-author",
+      "identifier": "urn:museum-of-one:assertion:3bd40f6440eb63034377e3d23be3b003153cfd9e815dd6ac9d74eb5359ab4463",
       "name": "author",
       "about": {
         "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
@@ -433,11 +462,27 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/publication-foundational-essays/"
       },
-      "description": "The matching institutional publication record credits Dorian Vale as author."
+      "description": "The matching institutional publication record credits Dorian Vale as author.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/19864099.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#authored-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/publication-foundational-essays/"
+      }
     },
     {
-      "@type": "CreativeWork",
+      "@type": [
+        "CreativeWork",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
       "@id": "https://archive.museumofone.art/items/19864099.html#relationship-museum-of-one-publisher",
+      "identifier": "urn:museum-of-one:assertion:d1ca756bc59a8357de71cb33c4cd56172c202222c4b7dde049b6bab8105ce4e1",
       "name": "publisher",
       "about": {
         "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
@@ -445,7 +490,19 @@
       "isBasedOn": {
         "@id": "https://www.museumofone.art/publication-foundational-essays/"
       },
-      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": {
+        "@id": "https://archive.museumofone.art/items/19864099.html#work"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+        "@id": "https://archive.museumofone.art/metadata/relations.json#published-by"
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "http://www.w3.org/ns/prov#wasDerivedFrom": {
+        "@id": "https://www.museumofone.art/publication-foundational-essays/"
+      }
     },
     {
       "@type": "DefinedTermSet",
