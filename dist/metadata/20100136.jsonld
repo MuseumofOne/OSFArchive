@@ -1,0 +1,404 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://archive.museumofone.art/#website",
+      "name": "Museum of One Digital Archive Library",
+      "url": "https://archive.museumofone.art/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://archive.museumofone.art/items/20100136.html#webpage",
+      "url": "https://archive.museumofone.art/items/20100136.html",
+      "name": "Diagnostics Without Possession: An Operational Manual for Post-Interpretive Criticism (Operational reference for inter-rater reliability)",
+      "isPartOf": {
+        "@id": "https://archive.museumofone.art/#website"
+      },
+      "mainEntity": {
+        "@id": "https://archive.museumofone.art/items/20100136.html#catalogue-record"
+      },
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.20100136"
+      },
+      "breadcrumb": {
+        "@id": "https://archive.museumofone.art/items/20100136.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/20100136.html#catalogue-record",
+      "name": "Diagnostics Without Possession: An Operational Manual for Post-Interpretive Criticism (Operational reference for inter-rater reliability)",
+      "url": "https://archive.museumofone.art/items/20100136.html",
+      "mainEntityOfPage": {
+        "@id": "https://archive.museumofone.art/items/20100136.html#webpage"
+      },
+      "about": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20100136"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#research-methods"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#critical-language"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#coding-procedures"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#inter-rater-reliability"
+        }
+      ],
+      "disambiguatingDescription": "Local catalogue record describing a deposited publication version.",
+      "description": "An operational manual for applying the diagnostic indices of Post-Interpretive Criticism across coding, comparative study, and self-audit. Procedures for testing agreement are distinct from completed reliability findings.",
+      "keywords": [
+        "Research methods",
+        "Critical language",
+        "Coding procedures",
+        "Inter-rater reliability"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Local catalogue identifier",
+        "value": "MOO-CAT-011"
+      },
+      "dateModified": "2026-11-04",
+      "isBasedOn": [
+        {
+          "@id": "https://zenodo.org/records/20100136"
+        },
+        {
+          "@id": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/"
+        },
+        {
+          "@id": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.museumofone.art/research-methods/"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "name": "Dorian Vale",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0004-7737-5094"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/#publisher",
+      "name": "Museum of One",
+      "url": "https://www.museumofone.art/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.20099594",
+      "name": "Diagnostics Without Possession: An Operational Manual for Post-Interpretive Criticism (Operational reference for inter-rater reliability) — version family",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Zenodo concept DOI",
+        "value": "10.5281/zenodo.20099594"
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.20100136"
+      }
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/items/20100136.html#file-1",
+      "contentUrl": "https://zenodo.org/api/records/20100136/files/Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/content",
+      "name": "Diagnostics Without Possession - An Operational Manual for Post-Interpretive Criticism.pdf",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.20100136"
+      },
+      "encodingFormat": "application/pdf",
+      "contentSize": "525965 bytes",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source checksum",
+        "value": "md5:2dc93b7125bb645e67fba4b0f54696e5"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/research-methods/",
+      "url": "https://www.museumofone.art/research-methods/",
+      "name": "Phenomenological Methods and Diagnostic Reading",
+      "description": "Published operational manual in this programme.",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "PIRR project ID",
+          "value": "pir-prj-pyp5yx3w",
+          "url": "https://www.museumofone.art/research-methods/#programme-record"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://archive.museumofone.art/items/20100136.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Digital Archive Library",
+          "item": "https://archive.museumofone.art/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Catalogue",
+          "item": "https://archive.museumofone.art/catalogue.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MOO-CAT-011",
+          "item": "https://archive.museumofone.art/items/20100136.html"
+        }
+      ]
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/assets/documents/20100136.pdf",
+      "contentUrl": "https://archive.museumofone.art/assets/documents/20100136.pdf",
+      "name": "Verified reading copy of Diagnostics Without Possession: An Operational Manual for Post-Interpretive Criticism (Operational reference for inter-rater reliability)",
+      "encodingFormat": "application/pdf",
+      "contentSize": "525965 bytes",
+      "description": "30 PDF file pages, including covers and unnumbered pages. Byte-identical local access copy; source checksum matched 2026-11-04.",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.20100136"
+      },
+      "isBasedOn": {
+        "@id": "https://archive.museumofone.art/items/20100136.html#file-1"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256 of local reading copy",
+        "value": "05ae5249a7c8d7cf67cac93ac1fbdf18888800606411312ec5762765353b9c42"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://doi.org/10.5281/zenodo.20100136",
+      "name": "Diagnostics Without Possession: An Operational Manual for Post-Interpretive Criticism (Operational reference for inter-rater reliability)",
+      "mainEntityOfPage": {
+        "@id": "https://zenodo.org/records/20100136"
+      },
+      "url": "https://zenodo.org/records/20100136",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.20100136"
+      },
+      "datePublished": "2026-02-09",
+      "keywords": [
+        "Post-Interpretive Criticism",
+        "Stillmark Theory",
+        "Message-Transfer Theory",
+        "Aesthetic Displacement Theory",
+        "Theory of Misplacement",
+        "Absential Aesthetics",
+        "Witness Aesthetics",
+        "Hauntmark Theory",
+        "Presence-Based Criticism",
+        "Custodianship of Art",
+        "Art as Ontology",
+        "Aesthetic Recursion Theory",
+        "Aesthetic Recursion",
+        "Viewer as Evidence Theory",
+        "Interpretive Load Index (ILI)",
+        "Viewer Displacement Ratio (VDR)",
+        "Ethical Proximity Score (EPS)",
+        "Institutional Alignment Indicator (IAI)",
+        "Epoché Fidelity Index (EFI)",
+        "Phenomenological Phase Alignment Score (PPAS)",
+        "Residue Engagement Restraint Ratio (RERR)",
+        "Quasi-Subject Agency Recognition Index (QSARI)",
+        "Dialectical Circulation Index (DCI)",
+        "Restraint in front of art",
+        "Moral proximity",
+        "Interpretive silence",
+        "Erasure as ethics",
+        "Temporal scarcity",
+        "Silence as method",
+        "Ontology of beauty",
+        "Aesthetic mercy",
+        "Language as violence",
+        "Art encounter ethics",
+        "Epistemology of witness",
+        "Philosophy of Art",
+        "Aesthetics",
+        "Art TheoryContemporary Aesthetics",
+        "Comparative Aesthetics",
+        "Phenomenology and Art",
+        "Aesthetic Phenomenology",
+        "Phenomenology",
+        "Phenomenology of Aesthetic",
+        "post-hermeneutics phenomenology",
+        "Ethics in Art Criticism",
+        "Interpretation and Meaning",
+        "Criticism and Reception Theory",
+        "Epistemology of Art",
+        "Visual Culture Studies",
+        "Dorian Vale",
+        "Founder of Post-Interpretive Criticism",
+        "Post-Aesthetic Critic",
+        "Independent Philosopher of Art",
+        "Museum of One",
+        "Art Writer and Theorist",
+        "Aesthetic Philosopher",
+        "Custodian of Witness Aesthetics",
+        "The Doctrine of Post-Interpretive Criticism",
+        "The Custodian's Oath",
+        "The Canon of Witnesses",
+        "Art as Truth",
+        "Art as Presence",
+        "The Viewer as Evidence",
+        "Interpretation vs. Witnessing",
+        "Language as Custody",
+        "Erasure as Afterlife",
+        "Museum of One Manifesto",
+        "Post-Interpretive Lexicon",
+        "Alternative art criticism",
+        "New art criticism movement",
+        "Ethical art theory",
+        "Criticism beyond interpretation",
+        "\\Slow looking philosophy",
+        "Quiet philosophy of art",
+        "Radical art restraint",
+        "Interpretive Restraint"
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0004-7737-5094"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/#publisher"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "exampleOfWork": {
+        "@id": "https://doi.org/10.5281/zenodo.20099594"
+      },
+      "encoding": [
+        {
+          "@id": "https://archive.museumofone.art/items/20100136.html#file-1"
+        },
+        {
+          "@id": "https://archive.museumofone.art/assets/documents/20100136.pdf"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zenodo.org/records/20100136",
+      "name": "Zenodo deposited-version record",
+      "mainEntity": {
+        "@id": "https://doi.org/10.5281/zenodo.20100136"
+      },
+      "publisher": {
+        "@id": "https://zenodo.org/#repository"
+      },
+      "dateCreated": "2026-05-09T19:04:52.528705+00:00",
+      "dateModified": "2026-05-09T19:04:52.862725+00:00"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zenodo.org/#repository",
+      "name": "Zenodo",
+      "url": "https://zenodo.org/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/",
+      "name": "Museum of One institutional publication context",
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.20100136"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/20100136.html#relationship-dorian-vale-author",
+      "name": "author",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/"
+      },
+      "description": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/20100136.html#relationship-museum-of-one-publisher",
+      "name": "publisher",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/"
+      },
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://archive.museumofone.art/vocabulary.html",
+      "name": "Museum of One local editorial discovery vocabulary",
+      "url": "https://archive.museumofone.art/vocabulary.html",
+      "description": "Published preferred labels, definitions, alternative labels and qualified external mappings."
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#research-methods",
+      "name": "Research methods",
+      "termCode": "research-methods",
+      "description": "Procedures for conducting, documenting, or evaluating an inquiry.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#critical-language",
+      "name": "Critical language",
+      "termCode": "critical-language",
+      "description": "The terms and linguistic choices through which critical claims are made.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#coding-procedures",
+      "name": "Coding procedures",
+      "termCode": "coding-procedures",
+      "description": "Documented rules for assigning analytical codes to research material.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#inter-rater-reliability",
+      "name": "Inter-rater reliability",
+      "termCode": "inter-rater-reliability",
+      "description": "Agreement between independent coders applying a shared analytical procedure.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "created": "2026-07-31T06:35:35.777378+00:00",
+  "modified": "2026-07-31T06:35:36.092919+00:00",
+  "id": 21715085,
+  "conceptrecid": "21715084",
+  "doi": "10.5281/zenodo.21715085",
+  "conceptdoi": "10.5281/zenodo.21715084",
+  "doi_url": "https://doi.org/10.5281/zenodo.21715085",
+  "metadata": {
+    "title": "Art That Falls Apart: Material Fatigue as Moral Statement",
+    "doi": "10.5281/zenodo.21715085",
+    "publication_date": "2026-07-31",
+    "description": "<p class=\"p1\"><strong>Abstract</strong></p>\n<p class=\"p3\">This essay examines material deterioration in contemporary art as an ethical and aesthetic condition rather than a conservation problem. Challenging the museum&rsquo;s traditional commitment to permanence, it argues that entropy, material fatigue, and physical decay can function as intrinsic components of artistic meaning rather than accidental losses requiring restoration. Drawing upon principles of Post-Interpretive Criticism, the essay proposes that deterioration constitutes evidence of an artwork&rsquo;s temporal existence and should be approached through witnessing rather than interpretive recovery.</p>\n<p class=\"p3\">Through discussions of works by Eva Hesse, Gordon Matta-Clark, Joseph Beuys, Anselm Kiefer, Dieter Roth, Anya Gallaccio, Felix Gonzalez-Torres, and Zoe Leonard, the essay explores how unstable materials&mdash;including latex, fat, organic matter, flowers, candy, and architectural interventions&mdash;redefine the relationship between object, institution, and viewer. It argues that museums often operate within a preservation paradigm that privileges permanence, stability, and market value, while overlooking the ethical significance of material transformation. Cases of conservation intervention further reveal the tension between institutional stewardship and artistic intentions that incorporate impermanence.</p>\n<p class=\"p3\">Rather than treating physical degradation as damage or failure, the essay frames material fatigue as a visible record of time, encounter, and existence. It proposes that criticism should abandon the pursuit of hidden meanings in favor of attentive witnessing, where cracks, fading pigments, decomposition, and structural instability become legitimate aesthetic events. In this framework, decay functions not as the negation of the artwork but as part of its continuing presence.</p>\n<p class=\"p4\">By repositioning entropy as an ethical condition of viewing, the essay contributes to contemporary debates in aesthetics, conservation ethics, museum studies, material culture, and conceptual art. It advances the view that the moral responsibility of both institutions and critics is not to deny mortality through preservation alone, but to recognize impermanence as an essential dimension of artistic experience.</p>\n<ul>\n<li><span class=\"s1\"><strong>Title:</strong></span> <span class=\"s1\"><em>Art That Falls Apart: Material Fatigue as Moral Statement</em></span></li>\n<li><span class=\"s1\"><strong>Creator:</strong></span><span class=\"s2\"> Dorian Vale</span></li>\n<li><span class=\"s1\"><strong>Publisher:</strong></span><span class=\"s2\"> Museum of One</span></li>\n<li><span class=\"s1\"><strong>Publication Year:</strong></span><span class=\"s2\"> 2026</span></li>\n<li><span class=\"s1\"><strong>Resource Type:</strong></span> Journal Article / Critical Essay</li>\n<li><span class=\"s1\"><strong>Language:</strong></span><span class=\"s2\"> English</span></li>\n<li><span class=\"s1\"><strong>Subjects / Keywords:</strong></span> Post-Interpretive Criticism; contemporary aesthetics; material fatigue; entropy; impermanence; conservation ethics; museum studies; conceptual art; contemporary art; materiality; decay; aesthetics; phenomenology of art; witnessing; art conservation; institutional critique; Eva Hesse; Joseph Beuys; Gordon Matta-Clark; Anselm Kiefer; Felix Gonzalez-Torres; Anya Gallaccio; Zoe Leonard; museum ethics; material culture.</li>\n</ul>\n<div class=\"el-p\">\n<p>This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and&nbsp;<em>Art as Truth: A Treatise</em>&nbsp;(Q136329071),&nbsp;<em>Aesthetic Recursion Theory</em>&nbsp;(Q136339843), The Journal of Post-Interpretive Criticism (Q136530009), Canon of Witnesses (Q136565881),Interpretive Load Index (ILI)&nbsp;(Q137709526), Viewer Displacement Ratio (VDR)&nbsp;(Q137709583)&nbsp;, Ethical Proximity Score (EPS)&nbsp;(Q137709600)&nbsp;, Institutional Alignment Indicator (IAI)&nbsp;(Q137709608), Post-Hermeneutic Phenomenology&nbsp;(Q137711946)</p>\n</div>\n<div class=\"el-p\">&nbsp;</div>\n<div class=\"el-p\">\n<div class=\"el-p\">\n<p><strong>Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen.</strong></p>\n</div>\n<div class=\"el-h2\">\n<h2>&nbsp;</h2>\n</div>\n</div>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": null,
+        "orcid": "0009-0004-7737-5094"
+      },
+      {
+        "name": "Museum of One",
+        "affiliation": null
+      }
+    ],
+    "keywords": [
+      "Post-Interpretive Criticism",
+      "Stillmark Theory",
+      "Message-Transfer Theory",
+      "MTT",
+      "Misplacement",
+      "Displacement",
+      "Aesthetic Displacement Theory",
+      "Theory of Misplacement",
+      "Absential Aesthetics",
+      "Witness Aesthetics",
+      "Hauntmark Theory",
+      "Presence-Based Criticism",
+      "Custodianship of Art",
+      "Art as Ontology",
+      "Aesthetic Recursion",
+      "Aesthetic Recursion Theory",
+      "Viewer as Evidence Theory",
+      "Interpretive Load Index (ILI)",
+      "Viewer Displacement Ratio (VDR)",
+      "Ethical Proximity Score (EPS)",
+      "Institutional Alignment Indicator (IAI)",
+      "Epoché Fidelity Index (EFI)",
+      "Phenomenological Phase Alignment Score (PPAS)",
+      "Residue Engagement Restraint Ratio (RERR)",
+      "Quasi-Subject Agency Recognition Index (QSARI)",
+      "Dialectical Circulation Index (DCI)",
+      "Restraint in front of art",
+      "Moral proximity",
+      "Interpretive silence",
+      "Erasure as ethics",
+      "Temporal scarcity",
+      "Silence as method",
+      "Ontology of beauty",
+      "Language as violence",
+      "Aesthetic mercy",
+      "Art encounter ethics",
+      "Epistemology of witness",
+      "Philosophy of Art",
+      "Aesthetics",
+      "Art Theory",
+      "Contemporary Aesthetics",
+      "Comparative Aesthetics",
+      "Phenomenology and Art",
+      "Phenomenology",
+      "Aesthetic Phenomenology",
+      "Phenomenology of Aesthetic",
+      "post-hermeneutics phenomenology",
+      "Ethics in Art Criticism",
+      "Interpretation and Meaning",
+      "Criticism and Reception Theory",
+      "Epistemology of Art",
+      "Visual Culture Studies",
+      "Dorian Vale",
+      "Founder of Post-Interpretive Criticism",
+      "Post-Aesthetic Critic",
+      "Independent Philosopher of Art",
+      "Museum of One",
+      "Art Writer and Theorist",
+      "Aesthetic Philosopher",
+      "Custodian of Witness Aesthetics",
+      "The Doctrine of Post-Interpretive Criticism",
+      "The Custodian's Oath",
+      "The Canon of Witnesses",
+      "Art as Truth",
+      "Art as Presence",
+      "The Viewer as Evidence",
+      "Interpretation vs. Witnessing",
+      "Language as Custody",
+      "Erasure as Afterlife",
+      "Museum of One Manifesto",
+      "Post-Interpretive Lexicon",
+      "Alternative art criticism",
+      "New art criticism movement",
+      "Ethical art theory",
+      "Criticism beyond interpretation",
+      "Slow looking philosophy",
+      "Contemporary sacred aesthetics",
+      "Quiet philosophy of art",
+      "Radical art restraint",
+      "Witness over interpretation",
+      "Interpretive Restraint"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "978-1-06-982030-3",
+        "relation": "isSupplementTo",
+        "scheme": "isbn"
+      },
+      {
+        "identifier": "978-1-06-982031-0",
+        "relation": "isSupplementTo",
+        "scheme": "isbn"
+      },
+      {
+        "identifier": "978-1-06-982032-7",
+        "relation": "isSupplementTo",
+        "scheme": "isbn"
+      },
+      {
+        "identifier": "978-1-06-982033-4",
+        "relation": "isSupplementTo",
+        "scheme": "isbn"
+      },
+      {
+        "identifier": "978-1-06-982034-1",
+        "relation": "isSupplementTo",
+        "scheme": "isbn"
+      },
+      {
+        "identifier": "https://www.museumofone.art",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://zenodo.org/communities/post-interpretive-criticism",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://osf.io/zhnre/",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://works.hcommons.org/records/xv2j2-g6927",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://philpapers.org/rec/VALPCF-2",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.researchcatalogue.net/profile",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://archive.org/details/the-journal-of-post-interpretive-criticism-vi",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://scholar.google.com/citations?user=15tvhjAAAAAJ",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://independent.academia.edu/DorianVale",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://core.ac.uk/search/?q=post-interpretive+criticism+dorian+vale",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.base-search.net/Search/Results?lookfor=Post-Interpretive+Criticism",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://commons.datacite.org/?query=Post-Interpretive+Criticism",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://openalex.org/works?filter=title_and_abstract.search:Post-Interpretive+Criticism+Dorian+Vale",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      }
+    ],
+    "references": [
+      "https://www.museumofone.art"
+    ],
+    "resource_type": {
+      "title": "Journal article",
+      "type": "publication",
+      "subtype": "article"
+    },
+    "journal": {
+      "title": "Journal of Post-Interpretive Criticism"
+    },
+    "meeting": {
+      "url": "https://www.museumofone.art"
+    },
+    "alternate_identifiers": [
+      {
+        "identifier": "2819-7232"
+      },
+      {
+        "identifier": "0000000528819728"
+      },
+      {
+        "identifier": "0000000528819787"
+      },
+      {
+        "identifier": "0000000528819744"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "post-interpretive-criticism"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "21715084"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Art That Falls Apart: Material Fatigue as Moral Statement",
+  "links": {
+    "self": "https://zenodo.org/api/records/21715085",
+    "self_html": "https://zenodo.org/records/21715085",
+    "preview_html": "https://zenodo.org/records/21715085?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.21715085",
+    "self_doi": "https://doi.org/10.5281/zenodo.21715085",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.21715085",
+    "reserve_doi": "https://zenodo.org/api/records/21715085/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/21715084",
+    "parent_html": "https://zenodo.org/records/21715084",
+    "parent_doi": "https://doi.org/10.5281/zenodo.21715084",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.21715084",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:21715085/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:21715085/sequence/default",
+    "files": "https://zenodo.org/api/records/21715085/files",
+    "media_files": "https://zenodo.org/api/records/21715085/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:21715085:Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:21715085:Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:21715085:Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:21715085:Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:21715085:Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:21715085:Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "latest": "https://zenodo.org/api/records/21715085/versions/latest",
+    "latest_html": "https://zenodo.org/records/21715085/latest",
+    "versions": "https://zenodo.org/api/records/21715085/versions",
+    "draft": "https://zenodo.org/api/records/21715085/draft",
+    "access_links": "https://zenodo.org/api/records/21715085/access/links",
+    "access_grants": "https://zenodo.org/api/records/21715085/access/grants",
+    "access_users": "https://zenodo.org/api/records/21715085/access/users",
+    "access_request": "https://zenodo.org/api/records/21715085/access/request",
+    "access": "https://zenodo.org/api/records/21715085/access",
+    "communities": "https://zenodo.org/api/records/21715085/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/21715085/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/21715085/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/21715085/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/21715085/quota-increase",
+    "requests": "https://zenodo.org/api/records/21715085/requests"
+  },
+  "updated": "2026-07-31T06:35:36.092919+00:00",
+  "recid": "21715085",
+  "revision": 4,
+  "files": [
+    {
+      "id": "091d8974-c623-4b8e-b7ee-215cd149239c",
+      "key": "Art That Falls Apart — material fatigue as moral statement.pdf",
+      "size": 880295,
+      "checksum": "md5:9865b03866bdebb2458da23c34d23c07",
+      "links": {
+        "self": "https://zenodo.org/api/records/21715085/files/Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1392900"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 21,
+    "unique_downloads": 19,
+    "views": 62,
+    "unique_views": 60,
+    "version_downloads": 21,
+    "version_unique_downloads": 19,
+    "version_unique_views": 60,
+    "version_views": 62
+  },
+  "state": "done",
+  "submitted": true
+}

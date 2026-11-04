@@ -1,0 +1,406 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://archive.museumofone.art/#website",
+      "name": "Museum of One Digital Archive Library",
+      "url": "https://archive.museumofone.art/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://archive.museumofone.art/items/19863851.html#webpage",
+      "url": "https://archive.museumofone.art/items/19863851.html",
+      "name": "Language as Custody — Writing Without Harm in Post-Interpretive Criticism",
+      "isPartOf": {
+        "@id": "https://archive.museumofone.art/#website"
+      },
+      "mainEntity": {
+        "@id": "https://archive.museumofone.art/items/19863851.html#catalogue-record"
+      },
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.19863851"
+      },
+      "breadcrumb": {
+        "@id": "https://archive.museumofone.art/items/19863851.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19863851.html#catalogue-record",
+      "name": "Language as Custody — Writing Without Harm in Post-Interpretive Criticism",
+      "url": "https://archive.museumofone.art/items/19863851.html",
+      "mainEntityOfPage": {
+        "@id": "https://archive.museumofone.art/items/19863851.html#webpage"
+      },
+      "about": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.19863851"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#critical-language"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#art-writing"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#custodianship"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism"
+        }
+      ],
+      "disambiguatingDescription": "Local catalogue record describing a deposited publication version.",
+      "description": "An essay considering how language may protect or distort the ethical force of artworks. It develops restraint in writing as a form of custodianship, particularly around trauma, silence, and exile.",
+      "keywords": [
+        "Critical language",
+        "Art writing",
+        "Custodianship",
+        "Post-Interpretive Criticism"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Local catalogue identifier",
+        "value": "MOO-CAT-016"
+      },
+      "dateModified": "2026-11-04",
+      "isBasedOn": [
+        {
+          "@id": "https://zenodo.org/records/19863851"
+        },
+        {
+          "@id": "https://www.museumofone.art/language-as-custody-writing-without-harm-in-post-interpretive-criticism/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "name": "Dorian Vale",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0004-7737-5094"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/#publisher",
+      "name": "Museum of One",
+      "url": "https://www.museumofone.art/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17077652",
+      "name": "Language as Custody — Writing Without Harm in Post-Interpretive Criticism — version family",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Zenodo concept DOI",
+        "value": "10.5281/zenodo.17077652"
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.19863851"
+      }
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/items/19863851.html#file-1",
+      "contentUrl": "https://zenodo.org/api/records/19863851/files/Language%20as%20Custody%20%E2%80%94%20Writing%20Without%20Harm%20in%20Post-Interpretive%20Criticism.pdf/content",
+      "name": "Language as Custody — Writing Without Harm in Post-Interpretive Criticism.pdf",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19863851"
+      },
+      "encodingFormat": "application/pdf",
+      "contentSize": "253299 bytes",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source checksum",
+        "value": "md5:634bb017af7a7d068ea135a9c85a7a57"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/items/19863851.html#source-contributor-2",
+      "name": "Museumofone.art"
+    },
+    {
+      "@type": "Role",
+      "@id": "https://archive.museumofone.art/items/19863851.html#source-role-2",
+      "roleName": "RightsHolder",
+      "contributor": {
+        "@id": "https://archive.museumofone.art/items/19863851.html#source-contributor-2"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://archive.museumofone.art/items/19863851.html#source-contributor-3",
+      "name": "Vale, Dorian"
+    },
+    {
+      "@type": "Role",
+      "@id": "https://archive.museumofone.art/items/19863851.html#source-role-3",
+      "roleName": "RightsHolder",
+      "contributor": {
+        "@id": "https://archive.museumofone.art/items/19863851.html#source-contributor-3"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://archive.museumofone.art/items/19863851.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Digital Archive Library",
+          "item": "https://archive.museumofone.art/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Catalogue",
+          "item": "https://archive.museumofone.art/catalogue.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MOO-CAT-016",
+          "item": "https://archive.museumofone.art/items/19863851.html"
+        }
+      ]
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/assets/documents/19863851.pdf",
+      "contentUrl": "https://archive.museumofone.art/assets/documents/19863851.pdf",
+      "name": "Verified reading copy of Language as Custody — Writing Without Harm in Post-Interpretive Criticism",
+      "encodingFormat": "application/pdf",
+      "contentSize": "253299 bytes",
+      "description": "4 PDF file pages, including covers and unnumbered pages. Byte-identical local access copy; source checksum matched 2026-11-04.",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19863851"
+      },
+      "isBasedOn": {
+        "@id": "https://archive.museumofone.art/items/19863851.html#file-1"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256 of local reading copy",
+        "value": "19c917b77900de0fc1602c77d0ebd293a2b926a68e052ea36aca75623ed217c5"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5281/zenodo.19863851",
+      "name": "Language as Custody — Writing Without Harm in Post-Interpretive Criticism",
+      "mainEntityOfPage": {
+        "@id": "https://zenodo.org/records/19863851"
+      },
+      "url": "https://zenodo.org/records/19863851",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.19863851"
+      },
+      "datePublished": "2026",
+      "keywords": [
+        "Restraint in front of art",
+        "Moral proximity",
+        "Interpretive silence",
+        "Erasure as ethics",
+        "Silence as method",
+        "Ontology of beauty",
+        "Aesthetic mercy",
+        "Language as violence",
+        "Art encounter ethics",
+        "Epistemology of witness",
+        "Divine proximity in aesthetics",
+        "Philosophy of Art",
+        "Aesthetics",
+        "Art Theory",
+        "Contemporary Aesthetics",
+        "Phenomenology and Art",
+        "Ethics in Art Criticism",
+        "Interpretation and Meaning",
+        "Criticism and Reception Theory",
+        "Visual Culture Studies",
+        "Founder of Post-Interpretive Criticism",
+        "Post-Aesthetic Critic",
+        "Independent Philosopher of Art",
+        "Museum of One",
+        "Art Writer and Theorist",
+        "Custodian of Witness Aesthetics",
+        "Art as Truth",
+        "The Viewer as Evidence",
+        "nterpretation vs. Witnessing",
+        "Erasure as Afterlife",
+        "Language as Custody",
+        "Post-Interpretive Lexicon",
+        "Alternative art criticism",
+        "New art criticism movement",
+        "Ethical art theory",
+        "Criticism beyond interpretation",
+        "Quiet philosophy of art",
+        "Radical art restraint",
+        "Witness over interpretation",
+        "Post-Interpretive Criticism",
+        "Dorian Vale",
+        "Witness Aesthetics",
+        "Stillmark Theory",
+        "Art as Presence",
+        "Art Criticism Ethics",
+        "Custodianship of Art",
+        "Copyright © Dorian Vale. Published by Museum of One.",
+        "https://www.museumofone.art/",
+        "https://hcommons.org/members/dorianvale/",
+        "https://philpeople.org/profiles/dorian-vale",
+        "https://osf.io/xa5jw/",
+        "https://independent.academia.edu/DorianVale",
+        "https://doi.org/10.5281/zenodo.17078847",
+        "https://doi.org/10.5281/zenodo.17112807",
+        "https://doi.org/10.5281/zenodo.17069115",
+        "https://figshare.com/authors/Dorian_Vale/22186984",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5443334",
+        "http://dx.doi.org/10.2139/ssrn.5443334",
+        "http://dx.doi.org/10.2139/ssrn.5443334",
+        "Q136308909",
+        "Q136308879",
+        "Q136308916",
+        "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ"
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0004-7737-5094"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/#publisher"
+      },
+      "alternateName": [],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "exampleOfWork": {
+        "@id": "https://doi.org/10.5281/zenodo.17077652"
+      },
+      "encoding": [
+        {
+          "@id": "https://archive.museumofone.art/items/19863851.html#file-1"
+        },
+        {
+          "@id": "https://archive.museumofone.art/assets/documents/19863851.pdf"
+        }
+      ],
+      "contributor": [
+        {
+          "@id": "https://archive.museumofone.art/items/19863851.html#source-role-2"
+        },
+        {
+          "@id": "https://archive.museumofone.art/items/19863851.html#source-role-3"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zenodo.org/records/19863851",
+      "name": "Zenodo deposited-version record",
+      "mainEntity": {
+        "@id": "https://doi.org/10.5281/zenodo.19863851"
+      },
+      "publisher": {
+        "@id": "https://zenodo.org/#repository"
+      },
+      "dateCreated": "2026-04-28T18:55:23.348733+00:00",
+      "dateModified": "2026-10-11T17:52:14.842757+00:00"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zenodo.org/#repository",
+      "name": "Zenodo",
+      "url": "https://zenodo.org/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/language-as-custody-writing-without-harm-in-post-interpretive-criticism/",
+      "name": "Museum of One institutional publication context",
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.19863851"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19863851.html#relationship-dorian-vale-author",
+      "name": "author",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/language-as-custody-writing-without-harm-in-post-interpretive-criticism/"
+      },
+      "description": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19863851.html#relationship-museum-of-one-publisher",
+      "name": "publisher",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/language-as-custody-writing-without-harm-in-post-interpretive-criticism/"
+      },
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://archive.museumofone.art/vocabulary.html",
+      "name": "Museum of One local editorial discovery vocabulary",
+      "url": "https://archive.museumofone.art/vocabulary.html",
+      "description": "Published preferred labels, definitions, alternative labels and qualified external mappings."
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#critical-language",
+      "name": "Critical language",
+      "termCode": "critical-language",
+      "description": "The terms and linguistic choices through which critical claims are made.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#art-writing",
+      "name": "Art writing",
+      "termCode": "art-writing",
+      "description": "Writing about art as a literary and critical practice.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#custodianship",
+      "name": "Custodianship",
+      "termCode": "custodianship",
+      "description": "A responsibility of care toward artworks within the author’s critical framework.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism",
+      "name": "Post-Interpretive Criticism",
+      "termCode": "post-interpretive-criticism",
+      "description": "The critical framework named and developed in the Museum of One publications.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    }
+  ]
+}

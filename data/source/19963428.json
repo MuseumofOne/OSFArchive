@@ -1,0 +1,327 @@
+{
+  "created": "2026-05-02T00:09:25.313806+00:00",
+  "modified": "2026-05-02T00:09:25.743533+00:00",
+  "id": 19963428,
+  "conceptrecid": "19957859",
+  "doi": "10.5281/zenodo.19963428",
+  "conceptdoi": "10.5281/zenodo.19957859",
+  "doi_url": "https://doi.org/10.5281/zenodo.19963428",
+  "metadata": {
+    "title": "The Curator's Shadow: The Unspoken Authorship Behind Neutrality.",
+    "doi": "10.5281/zenodo.19963428",
+    "publication_date": "2025-05-01",
+    "description": "<p class=\"p1\"><em>The Curator&rsquo;s Shadow: The Unspoken Authorship Behind Neutrality</em> examines the persistent fiction of curatorial neutrality within modern and contemporary museology, reframing the curator as an invisible yet decisive author of the exhibitionary encounter. Drawing on historical analysis from Enlightenment-era taxonomic displays to contemporary global curatorial practice, the article argues that neutrality operates not as absence, but as a rhetorical and institutional posture that conceals authorship while intensifying its power. Through a Post-Interpretive Criticism framework, the exhibition is reconceived as a spatial text in which sequencing, lighting, distance, and omission function as syntactic and ethical decisions rather than logistical ones.</p>\n<p class=\"p1\">The study traces how curatorial authority evolved from custodianship of objects to governance of narrative, revealing the exhibition as a structured field of visibility shaped by ideological, architectural, and institutional inheritances, including colonial epistemologies and modernist claims to universality. By analyzing the curatorial role as a form of &ldquo;moral choreography,&rdquo; the article foregrounds how exhibition design mediates the viewer&rsquo;s encounter with trauma, beauty, and knowledge, determining whether the experience produces reverence, detachment, or consumption.</p>\n<p class=\"p1\">Engaging key figures such as Harald Szeemann, Okwui Enwezor, and Hans-Ulrich Obrist, the article situates the shift from curatorial invisibility to auteurship, identifying the contemporary challenge as neither neutrality nor self-display, but the cultivation of disciplined authorship. Within this context, Post-Interpretive Criticism proposes an ethical reorientation: the curator as witness rather than interpreter, whose task is to preserve the conditions of meaning rather than impose it.</p>\n<p class=\"p1\">The article further introduces the concept of &ldquo;curatorial shadow&rdquo; as a diagnostic lens for evaluating institutional power, where silence, absence, and spatial arrangement are treated as forms of authorship with measurable ethical consequences. It argues for a redefinition of neutrality as ego-restraint rather than objectivity, and for the transformation of exhibition-making into an ethics of care grounded in humility, proximity, and responsibility.</p>\n<p class=\"p2\">Ultimately, the article positions curatorial practice as a threshold condition&mdash;an act of structuring encounter without closure&mdash;where the success of an exhibition is measured not by the clarity of its message, but by its capacity to sustain the viewer&rsquo;s presence without domination. In doing so, it contributes to the broader Post-Interpretive movement by extending its principles beyond criticism into the architecture of display, offering a philosophical and methodological foundation for ethically attuned exhibition-making in the twenty-first century.</p>\n<p class=\"p1\">Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen. This name is used for all official publications, essays, and theoretical works indexed through DOI-linked repositories including Zenodo, OSF, PhilPapers, and SSRN.</p>\n<p class=\"p1\">Post-Interpretive Criticism, Stillmark Theory, Message-Transfer Theory, MTT, Misplacement, Displacement, Aesthetic Displacement Theory, Theory of Misplacement, Absential Aesthetics, Witness Aesthetics, Adab for Art, Hauntmark Theory, Spiritual Criticism, Presence-Based Criticism, Custodianship of Art, Art as Ontology, Aesthetic Recursion Theory, Aesthetic Recursion, Viewer as Evidence Theory, Restraint in front of art, Moral proximity, Interpretive silence, Erasure as ethics, Temporal scarcity, Silence as method, Ontology of beauty, Aesthetic mercy, Language as violence, Art encounter ethics, Epistemology of witness, Philosophy of Art, Aesthetics, Art Theory, Contemporary Aesthetics, Comparative Aesthetics, Phenomenology and Art, Ethics in Art Criticism, Interpretation and Meaning, Criticism and Reception Theory, Epistemology of Art, Visual Culture Studies, Dorian Vale, Founder of Post-Interpretive Criticism, Post-Aesthetic Critic, Independent Philosopher of Art, Museum of One, Art Writer and Theorist, Aesthetic Philosopher, Custodian of Witness Aesthetics, Spiritual Aesthetics Movement, The Doctrine of Post-Interpretive Criticism, The Custodian&rsquo;s Oath, The Canon of Witnesses, Art as Truth, Art as Presence, The Viewer as Evidence, Interpretation vs. Witnessing, Language as Custody, Erasure as Afterlife, Museum of One Manifesto, Alternative art criticism, New art criticism movement, Ethical art theory, Criticism beyond interpretation, Slow looking philosophy, Quiet philosophy of art, Radical art restraint, Witness over interpretation, Interpretive Restraint, The Journal of Post-Interpretive criticism, The Journal of Post-Interpretive criticism ISSN 2819-7232), The Journal of Post-Interpretive Criticism (<span class=\"s1\">Q136530009), </span>&nbsp;<span class=\"s2\">Interpretive Load Index (ILI)&nbsp;</span><span class=\"s3\">(Q137709526), </span><span class=\"s2\">Viewer Displacement Ratio (VDR)&nbsp;</span><span class=\"s3\">(Q137709583)</span>&nbsp;, <span class=\"s2\">Ethical Proximity Score (EPS)&nbsp;</span><span class=\"s3\">(Q137709600)</span>&nbsp;, Institutional Alignment Indicator (IAI)&nbsp;<span class=\"s1\">(Q137709608), </span></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": "Museum of One",
+        "orcid": "0009-0004-7737-5094"
+      },
+      {
+        "name": "Museum of One",
+        "affiliation": null
+      }
+    ],
+    "keywords": [
+      "Post-Interpretive Criticism",
+      "Stillmark Theory",
+      "Message-Transfer Theory",
+      "MTT",
+      "Misplacement",
+      "Displacement",
+      "Aesthetic Displacement Theory",
+      "Theory of Misplacement",
+      "Absential Aesthetics",
+      "Witness Aesthetics",
+      "Hauntmark Theory",
+      "Presence-Based Criticism",
+      "Custodianship of Art",
+      "Art as Ontology",
+      "Aesthetic Recursion Theory",
+      "Aesthetic Recursion",
+      "Viewer as Evidence Theory",
+      "Interpretive Load Index (ILI)",
+      "Viewer Displacement Ratio (VDR)",
+      "Ethical Proximity Score (EPS)",
+      "Institutional Alignment Indicator (IAI)",
+      "Epoché Fidelity Index (EFI)",
+      "Phenomenological Phase Alignment Score (PPAS)",
+      "Residue Engagement Restraint Ratio (RERR)",
+      "Quasi-Subject Agency Recognition Index (QSARI)",
+      "Dialectical Circulation Index (DCI)",
+      "Restraint in front of art",
+      "Moral proximity",
+      "Interpretive silence",
+      "Erasure as ethics",
+      "Temporal scarcity",
+      "Silence as method",
+      "Ontology of beauty",
+      "Aesthetic mercy",
+      "Language as violence",
+      "Art encounter ethics",
+      "Epistemology of witness",
+      "Philosophy of Art",
+      "Aesthetics",
+      "Art Theory",
+      "Contemporary Aesthetics",
+      "Comparative Aesthetics",
+      "Phenomenology and Art",
+      "Phenomenology",
+      "Aesthetic Phenomenology",
+      "'Phenomenology of Aesthetic",
+      "post-hermeneutics phenomenology",
+      "Ethics in Art Criticism",
+      "Interpretation and Meaning",
+      "Criticism and Reception Theory",
+      "Epistemology of Art",
+      "Visual Culture Studies",
+      "Dorian Vale",
+      "Founder of Post-Interpretive Criticism",
+      "Independent Philosopher of Art",
+      "Post-Aesthetic Critic",
+      "Museum of One",
+      "Art Writer and Theorist",
+      "Aesthetic Philosopher",
+      "Custodian of Witness Aesthetics",
+      "The Doctrine of Post-Interpretive Criticism",
+      "The Custodian's Oath",
+      "The Canon of Witnesses",
+      "Art as TruthArt as Presence",
+      "The Viewer as Evidence",
+      "Interpretation vs. Witnessing",
+      "Erasure as Afterlife",
+      "Language as Custody",
+      "Museum of One Manifesto",
+      "Post-Interpretive Lexicon",
+      "New art criticism movement",
+      "Alternative art criticism",
+      "Ethical art theory",
+      "Criticism beyond interpretation",
+      "Slow looking philosophy",
+      "Quiet philosophy of art",
+      "Radical art restraint",
+      "Witness over interpretationInterpretive Restraint"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://www.museumofone.art",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://zenodo.org/communities/post-interpretive-criticism",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://osf.io/zhnre/",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://works.hcommons.org/records/xv2j2-g6927",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://philpapers.org/rec/VALPCF-2",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.researchcatalogue.net/profile",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://archive.org/details/the-journal-of-post-interpretive-criticism-vi",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://scholar.google.com/citations?user=15tvhjAAAAAJ",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://independent.academia.edu/DorianVale",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.zotero.org/groups/6279725/post-interpretive-criticism",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://core.ac.uk/search/?q=post-interpretive+criticism+dorian+vale",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.base-search.net/Search/Results?lookfor=Post-Interpretive+Criticism",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://commons.datacite.org/?query=Post-Interpretive+Criticism",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://openalex.org/works?filter=title_and_abstract.search:Post-Interpretive+Criticism+Dorian+Vale",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      }
+    ],
+    "references": [
+      "https://www.museumofone.art",
+      "https://zenodo.org/communities/post-interpretive-criticism",
+      "https://osf.io/zhnre/",
+      "https://works.hcommons.org/records/xv2j2-g6927",
+      "https://philpapers.org/rec/VALPCF-2",
+      "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+      "https://archive.org/details/the-journal-of-post-interpretive-criticism-vi",
+      "https://scholar.google.com/citations?user=15tvhjAAAAAJ",
+      "https://independent.academia.edu/DorianVale",
+      "https://www.zotero.org/groups/6279725/post-interpretive-criticism",
+      "https://core.ac.uk/search/?q=post-interpretive+criticism+dorian+vale",
+      "https://www.base-search.net/Search/Results?lookfor=Post-Interpretive+Criticism",
+      "https://commons.datacite.org/?query=Post-Interpretive+Criticism",
+      "https://openalex.org/works?filter=title_and_abstract.search:Post-Interpretive+Criticism+Dorian+Vale",
+      "https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art",
+      "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/"
+    ],
+    "resource_type": {
+      "title": "Journal article",
+      "type": "publication",
+      "subtype": "article"
+    },
+    "journal": {
+      "title": "Journal of Post-Interpretive Criticism"
+    },
+    "meeting": {
+      "url": "https://www.museumofone.art"
+    },
+    "alternate_identifiers": [
+      {
+        "identifier": "2819-7232"
+      },
+      {
+        "identifier": "0000000528819728"
+      },
+      {
+        "identifier": "0000000528819787"
+      },
+      {
+        "identifier": "0000000528819744"
+      },
+      {
+        "identifier": "https://www.museumofone.art"
+      },
+      {
+        "identifier": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "19957859"
+          }
+        }
+      ]
+    }
+  },
+  "title": "The Curator's Shadow: The Unspoken Authorship Behind Neutrality.",
+  "links": {
+    "self": "https://zenodo.org/api/records/19963428",
+    "self_html": "https://zenodo.org/records/19963428",
+    "preview_html": "https://zenodo.org/records/19963428?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.19963428",
+    "self_doi": "https://doi.org/10.5281/zenodo.19963428",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.19963428",
+    "reserve_doi": "https://zenodo.org/api/records/19963428/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/19957859",
+    "parent_html": "https://zenodo.org/records/19957859",
+    "parent_doi": "https://doi.org/10.5281/zenodo.19957859",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.19957859",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:19963428/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:19963428/sequence/default",
+    "files": "https://zenodo.org/api/records/19963428/files",
+    "media_files": "https://zenodo.org/api/records/19963428/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:19963428:The%20Curator%E2%80%99s%20Shadow%20%E2%80%93%20the%20unspoken%20authorship%20behind%20neutrality.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:19963428:The%20Curator%E2%80%99s%20Shadow%20%E2%80%93%20the%20unspoken%20authorship%20behind%20neutrality.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:19963428:The%20Curator%E2%80%99s%20Shadow%20%E2%80%93%20the%20unspoken%20authorship%20behind%20neutrality.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:19963428:The%20Curator%E2%80%99s%20Shadow%20%E2%80%93%20the%20unspoken%20authorship%20behind%20neutrality.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:19963428:The%20Curator%E2%80%99s%20Shadow%20%E2%80%93%20the%20unspoken%20authorship%20behind%20neutrality.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:19963428:The%20Curator%E2%80%99s%20Shadow%20%E2%80%93%20the%20unspoken%20authorship%20behind%20neutrality.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "latest": "https://zenodo.org/api/records/19963428/versions/latest",
+    "latest_html": "https://zenodo.org/records/19963428/latest",
+    "versions": "https://zenodo.org/api/records/19963428/versions",
+    "draft": "https://zenodo.org/api/records/19963428/draft",
+    "access_links": "https://zenodo.org/api/records/19963428/access/links",
+    "access_grants": "https://zenodo.org/api/records/19963428/access/grants",
+    "access_users": "https://zenodo.org/api/records/19963428/access/users",
+    "access_request": "https://zenodo.org/api/records/19963428/access/request",
+    "access": "https://zenodo.org/api/records/19963428/access",
+    "communities": "https://zenodo.org/api/records/19963428/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/19963428/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/19963428/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/19963428/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/19963428/quota-increase",
+    "requests": "https://zenodo.org/api/records/19963428/requests"
+  },
+  "updated": "2026-05-02T00:09:25.743533+00:00",
+  "recid": "19963428",
+  "revision": 4,
+  "files": [
+    {
+      "id": "6331fd8c-f241-478f-861c-905209e61a51",
+      "key": "The Curator’s Shadow – the unspoken authorship behind neutrality.pdf",
+      "size": 400025,
+      "checksum": "md5:60e68ced54424e21fcd7d42f6f3c8bf5",
+      "links": {
+        "self": "https://zenodo.org/api/records/19963428/files/The%20Curator%E2%80%99s%20Shadow%20%E2%80%93%20the%20unspoken%20authorship%20behind%20neutrality.pdf/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1392900"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 84,
+    "unique_downloads": 79,
+    "views": 172,
+    "unique_views": 168,
+    "version_downloads": 44,
+    "version_unique_downloads": 41,
+    "version_unique_views": 85,
+    "version_views": 87
+  },
+  "state": "done",
+  "submitted": true
+}

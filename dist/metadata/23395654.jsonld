@@ -1,0 +1,444 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://archive.museumofone.art/#website",
+      "name": "Museum of One Digital Archive Library",
+      "url": "https://archive.museumofone.art/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://archive.museumofone.art/items/23395654.html#webpage",
+      "url": "https://archive.museumofone.art/items/23395654.html",
+      "name": "Threads of Sand, Scar & Scripture: Sudanese Art and the Ethics of Witnessing (A Post-Interpretive Study)",
+      "isPartOf": {
+        "@id": "https://archive.museumofone.art/#website"
+      },
+      "mainEntity": {
+        "@id": "https://archive.museumofone.art/items/23395654.html#catalogue-record"
+      },
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.23395654"
+      },
+      "breadcrumb": {
+        "@id": "https://archive.museumofone.art/items/23395654.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23395654.html#catalogue-record",
+      "name": "Threads of Sand, Scar & Scripture: Sudanese Art and the Ethics of Witnessing (A Post-Interpretive Study)",
+      "url": "https://archive.museumofone.art/items/23395654.html",
+      "mainEntityOfPage": {
+        "@id": "https://archive.museumofone.art/items/23395654.html#webpage"
+      },
+      "about": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.23395654"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#sudanese-art"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#displacement"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#ethics-of-witnessing"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism"
+        }
+      ],
+      "disambiguatingDescription": "Local catalogue record describing a deposited publication version.",
+      "description": "A study of Sudanese art in relation to war, displacement, and historical fragmentation. The author approaches critical writing as an ethical practice of proximity and restraint.",
+      "keywords": [
+        "Sudanese art",
+        "Displacement",
+        "Ethics of witnessing",
+        "Post-Interpretive Criticism"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Local catalogue identifier",
+        "value": "MOO-CAT-003"
+      },
+      "dateModified": "2026-11-04",
+      "isBasedOn": [
+        {
+          "@id": "https://zenodo.org/records/23395654"
+        },
+        {
+          "@id": "https://www.museumofone.art/publication-threads-of-sand/"
+        },
+        {
+          "@id": "https://www.museumofone.art/publication-threads-of-sand/"
+        },
+        {
+          "@id": "https://www.museumofone.art/publication-threads-of-sand/"
+        },
+        {
+          "@id": "https://www.museumofone.art/publication-threads-of-sand/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.museumofone.art/research-witness-material-memory/"
+        },
+        {
+          "@id": "https://www.museumofone.art/arabic-translation-threads-of-sand/"
+        },
+        {
+          "@id": "https://www.museumofone.art/sudanese-art-and-aesthetics/"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "name": "Dorian Vale",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0004-7737-5094"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/#publisher",
+      "name": "Museum of One",
+      "url": "https://www.museumofone.art/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.19207069",
+      "name": "Threads of Sand, Scar & Scripture: Sudanese Art and the Ethics of Witnessing (A Post-Interpretive Study) — version family",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Zenodo concept DOI",
+        "value": "10.5281/zenodo.19207069"
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.23395654"
+      }
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/items/23395654.html#file-1",
+      "contentUrl": "https://zenodo.org/api/records/23395654/files/Threads%20of%20Sand,%20Scar%20&%20Scripture.pdf/content",
+      "name": "Threads of Sand, Scar & Scripture.pdf",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.23395654"
+      },
+      "encodingFormat": "application/pdf",
+      "contentSize": "1285819 bytes",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source checksum",
+        "value": "md5:46a6f18c00b10acb6753fcda97d91cd8"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/research-witness-material-memory/",
+      "url": "https://www.museumofone.art/research-witness-material-memory/",
+      "name": "Witness, Material Presence, and Cultural Memory",
+      "description": "Published study associated with the continuing inquiry.",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "PIRR project ID",
+          "value": "pir-prj-dd7kt5rw",
+          "url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/arabic-translation-threads-of-sand/",
+      "url": "https://www.museumofone.art/arabic-translation-threads-of-sand/",
+      "name": "Threads of Sand: Arabic Translation",
+      "description": "Published English-language source edition for translation.",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "PIRR programme reference",
+          "value": "moo-program-ccb726880981ccbeb400023c",
+          "url": "https://www.museumofone.art/arabic-translation-threads-of-sand/#programme-record"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/sudanese-art-and-aesthetics/",
+      "url": "https://www.museumofone.art/sudanese-art-and-aesthetics/",
+      "name": "Sudanese Art and Aesthetics",
+      "description": "Published study within the continuing programme.",
+      "identifier": []
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/items/23395654.html#source-contributor-2",
+      "name": "Museum of One"
+    },
+    {
+      "@type": "Role",
+      "@id": "https://archive.museumofone.art/items/23395654.html#source-role-2",
+      "roleName": "HostingInstitution",
+      "contributor": {
+        "@id": "https://archive.museumofone.art/items/23395654.html#source-contributor-2"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://archive.museumofone.art/items/23395654.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Digital Archive Library",
+          "item": "https://archive.museumofone.art/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Catalogue",
+          "item": "https://archive.museumofone.art/catalogue.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MOO-CAT-003",
+          "item": "https://archive.museumofone.art/items/23395654.html"
+        }
+      ]
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/assets/documents/23395654.pdf",
+      "contentUrl": "https://archive.museumofone.art/assets/documents/23395654.pdf",
+      "name": "Verified reading copy of Threads of Sand, Scar & Scripture: Sudanese Art and the Ethics of Witnessing (A Post-Interpretive Study)",
+      "encodingFormat": "application/pdf",
+      "contentSize": "1285819 bytes",
+      "description": "226 PDF file pages, including covers and unnumbered pages. Byte-identical local access copy; source checksum matched 2026-11-04.",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.23395654"
+      },
+      "isBasedOn": {
+        "@id": "https://archive.museumofone.art/items/23395654.html#file-1"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256 of local reading copy",
+        "value": "314714912e2fef212ea2960c105309c422b13a7d14a2ff2ec350c938c13a31c6"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://doi.org/10.5281/zenodo.23395654",
+      "name": "Threads of Sand, Scar & Scripture: Sudanese Art and the Ethics of Witnessing (A Post-Interpretive Study)",
+      "mainEntityOfPage": {
+        "@id": "https://zenodo.org/records/23395654"
+      },
+      "url": "https://zenodo.org/records/23395654",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.23395654"
+      },
+      "datePublished": "2026-05-18",
+      "keywords": [
+        "Sudanese art",
+        "Post-Interpretive Criticism",
+        "ethics of witnessing",
+        "art criticism",
+        "cultural memory",
+        "displacement"
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0004-7737-5094"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/#publisher"
+      },
+      "isbn": "978-1-06-982033-4",
+      "alternateName": [],
+      "bookEdition": "Second edition, 18 May 2026 (Museum of One publication record)",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "exampleOfWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19207069"
+      },
+      "encoding": [
+        {
+          "@id": "https://archive.museumofone.art/items/23395654.html#file-1"
+        },
+        {
+          "@id": "https://archive.museumofone.art/assets/documents/23395654.pdf"
+        }
+      ],
+      "contributor": [
+        {
+          "@id": "https://archive.museumofone.art/items/23395654.html#source-role-2"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c001.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c002.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c003.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c004.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c005.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c006.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c007.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c008.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c009.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c010.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c011.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c012.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c013.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c014.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c015.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c016.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/23395654-c017.html#component"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zenodo.org/records/23395654",
+      "name": "Zenodo deposited-version record",
+      "mainEntity": {
+        "@id": "https://doi.org/10.5281/zenodo.23395654"
+      },
+      "publisher": {
+        "@id": "https://zenodo.org/#repository"
+      },
+      "dateCreated": "2026-10-15T13:02:22.774012+00:00",
+      "dateModified": "2026-10-15T13:02:23.227934+00:00"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zenodo.org/#repository",
+      "name": "Zenodo",
+      "url": "https://zenodo.org/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/publication-threads-of-sand/",
+      "name": "Museum of One institutional publication context",
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.23395654"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23395654.html#relationship-dorian-vale-author",
+      "name": "author",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/publication-threads-of-sand/"
+      },
+      "description": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23395654.html#relationship-museum-of-one-publisher",
+      "name": "publisher",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/publication-threads-of-sand/"
+      },
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://archive.museumofone.art/vocabulary.html",
+      "name": "Museum of One local editorial discovery vocabulary",
+      "url": "https://archive.museumofone.art/vocabulary.html",
+      "description": "Published preferred labels, definitions, alternative labels and qualified external mappings."
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#sudanese-art",
+      "name": "Sudanese art",
+      "termCode": "sudanese-art",
+      "description": "Art discussed in relation to Sudan and Sudanese histories or experiences.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#displacement",
+      "name": "Displacement",
+      "termCode": "displacement",
+      "description": "Dislocation from place or context as a subject of art and critical writing.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#ethics-of-witnessing",
+      "name": "Ethics of witnessing",
+      "termCode": "ethics-of-witnessing",
+      "description": "Ethical responsibility in attending to artworks and the histories they engage.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism",
+      "name": "Post-Interpretive Criticism",
+      "termCode": "post-interpretive-criticism",
+      "description": "The critical framework named and developed in the Museum of One publications.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    }
+  ]
+}

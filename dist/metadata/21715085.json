@@ -1,0 +1,1632 @@
+{
+  "id": "21715085",
+  "accession": "MOO-CAT-007",
+  "title": "Art That Falls Apart: Material Fatigue as Moral Statement",
+  "source_title": "Art That Falls Apart: Material Fatigue as Moral Statement",
+  "short_title": "Art That Falls Apart",
+  "author": "Dorian Vale",
+  "creators": [
+    {
+      "name": "Vale, Dorian",
+      "affiliation": null,
+      "orcid": "0009-0004-7737-5094"
+    },
+    {
+      "name": "Museum of One",
+      "affiliation": null
+    }
+  ],
+  "doi": "10.5281/zenodo.21715085",
+  "conceptdoi": "10.5281/zenodo.21715084",
+  "zenodo_url": "https://zenodo.org/records/21715085",
+  "date": "2026-07-31",
+  "type": "Journal article",
+  "source_resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "version": "",
+  "collection": "Essays & research",
+  "summary": "An essay considering unstable materials, deterioration, and the tension between conservation and artistic impermanence. It reads material fatigue through the ethics of witnessing.",
+  "subjects": [
+    "Contemporary art",
+    "Material deterioration",
+    "Conservation ethics",
+    "Impermanence"
+  ],
+  "keywords": [
+    "Post-Interpretive Criticism",
+    "Stillmark Theory",
+    "Message-Transfer Theory",
+    "MTT",
+    "Misplacement",
+    "Displacement",
+    "Aesthetic Displacement Theory",
+    "Theory of Misplacement",
+    "Absential Aesthetics",
+    "Witness Aesthetics",
+    "Hauntmark Theory",
+    "Presence-Based Criticism",
+    "Custodianship of Art",
+    "Art as Ontology",
+    "Aesthetic Recursion",
+    "Aesthetic Recursion Theory",
+    "Viewer as Evidence Theory",
+    "Interpretive Load Index (ILI)",
+    "Viewer Displacement Ratio (VDR)",
+    "Ethical Proximity Score (EPS)",
+    "Institutional Alignment Indicator (IAI)",
+    "Epoché Fidelity Index (EFI)",
+    "Phenomenological Phase Alignment Score (PPAS)",
+    "Residue Engagement Restraint Ratio (RERR)",
+    "Quasi-Subject Agency Recognition Index (QSARI)",
+    "Dialectical Circulation Index (DCI)",
+    "Restraint in front of art",
+    "Moral proximity",
+    "Interpretive silence",
+    "Erasure as ethics",
+    "Temporal scarcity",
+    "Silence as method",
+    "Ontology of beauty",
+    "Language as violence",
+    "Aesthetic mercy",
+    "Art encounter ethics",
+    "Epistemology of witness",
+    "Philosophy of Art",
+    "Aesthetics",
+    "Art Theory",
+    "Contemporary Aesthetics",
+    "Comparative Aesthetics",
+    "Phenomenology and Art",
+    "Phenomenology",
+    "Aesthetic Phenomenology",
+    "Phenomenology of Aesthetic",
+    "post-hermeneutics phenomenology",
+    "Ethics in Art Criticism",
+    "Interpretation and Meaning",
+    "Criticism and Reception Theory",
+    "Epistemology of Art",
+    "Visual Culture Studies",
+    "Dorian Vale",
+    "Founder of Post-Interpretive Criticism",
+    "Post-Aesthetic Critic",
+    "Independent Philosopher of Art",
+    "Museum of One",
+    "Art Writer and Theorist",
+    "Aesthetic Philosopher",
+    "Custodian of Witness Aesthetics",
+    "The Doctrine of Post-Interpretive Criticism",
+    "The Custodian's Oath",
+    "The Canon of Witnesses",
+    "Art as Truth",
+    "Art as Presence",
+    "The Viewer as Evidence",
+    "Interpretation vs. Witnessing",
+    "Language as Custody",
+    "Erasure as Afterlife",
+    "Museum of One Manifesto",
+    "Post-Interpretive Lexicon",
+    "Alternative art criticism",
+    "New art criticism movement",
+    "Ethical art theory",
+    "Criticism beyond interpretation",
+    "Slow looking philosophy",
+    "Contemporary sacred aesthetics",
+    "Quiet philosophy of art",
+    "Radical art restraint",
+    "Witness over interpretation",
+    "Interpretive Restraint"
+  ],
+  "license": {
+    "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "files": [
+    {
+      "name": "Art That Falls Apart — material fatigue as moral statement.pdf",
+      "url": "https://zenodo.org/api/records/21715085/files/Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/content",
+      "size": 880295,
+      "size_label": "860 KB",
+      "checksum": "md5:9865b03866bdebb2458da23c34d23c07",
+      "mimetype": "application/pdf"
+    }
+  ],
+  "institutional_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+  "corroboration": "Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. Its repository links and publication dates are retained separately from this selected Zenodo edition. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.",
+  "discrepancies": [
+    "The repository also lists organizational or URL-form creator entries. The catalogue displays Dorian Vale as bibliographic author while retaining the deposited creator list separately.",
+    "The Museum of One web record is dated 29 July 2026; this selected Zenodo edition gives 31 July 2026. These describe separate publication records."
+  ],
+  "orcid": "0009-0004-7737-5094",
+  "publisher": "Museum of One",
+  "language": null,
+  "isbn": null,
+  "related_identifiers": [
+    {
+      "identifier": "978-1-06-982030-3",
+      "relation": "isSupplementTo",
+      "scheme": "isbn"
+    },
+    {
+      "identifier": "978-1-06-982031-0",
+      "relation": "isSupplementTo",
+      "scheme": "isbn"
+    },
+    {
+      "identifier": "978-1-06-982032-7",
+      "relation": "isSupplementTo",
+      "scheme": "isbn"
+    },
+    {
+      "identifier": "978-1-06-982033-4",
+      "relation": "isSupplementTo",
+      "scheme": "isbn"
+    },
+    {
+      "identifier": "978-1-06-982034-1",
+      "relation": "isSupplementTo",
+      "scheme": "isbn"
+    },
+    {
+      "identifier": "https://www.museumofone.art",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://zenodo.org/communities/post-interpretive-criticism",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://osf.io/zhnre/",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://works.hcommons.org/records/xv2j2-g6927",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://philpapers.org/rec/VALPCF-2",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.researchcatalogue.net/profile",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://archive.org/details/the-journal-of-post-interpretive-criticism-vi",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://scholar.google.com/citations?user=15tvhjAAAAAJ",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://independent.academia.edu/DorianVale",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://core.ac.uk/search/?q=post-interpretive+criticism+dorian+vale",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.base-search.net/Search/Results?lookfor=Post-Interpretive+Criticism",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://commons.datacite.org/?query=Post-Interpretive+Criticism",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://openalex.org/works?filter=title_and_abstract.search:Post-Interpretive+Criticism+Dorian+Vale",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    }
+  ],
+  "alternate_identifiers": [
+    {
+      "identifier": "2819-7232"
+    },
+    {
+      "identifier": "0000000528819728"
+    },
+    {
+      "identifier": "0000000528819787"
+    },
+    {
+      "identifier": "0000000528819744"
+    }
+  ],
+  "source_references": [
+    "https://www.museumofone.art"
+  ],
+  "source_journal": {
+    "title": "Journal of Post-Interpretive Criticism"
+  },
+  "source_imprint": null,
+  "source_contributors": [],
+  "source_created": "2026-07-31T06:35:35.777378+00:00",
+  "source_modified": "2026-07-31T06:35:36.092919+00:00",
+  "source_description_html": "<p class=\"p1\"><strong>Abstract</strong></p>\n<p class=\"p3\">This essay examines material deterioration in contemporary art as an ethical and aesthetic condition rather than a conservation problem. Challenging the museum&rsquo;s traditional commitment to permanence, it argues that entropy, material fatigue, and physical decay can function as intrinsic components of artistic meaning rather than accidental losses requiring restoration. Drawing upon principles of Post-Interpretive Criticism, the essay proposes that deterioration constitutes evidence of an artwork&rsquo;s temporal existence and should be approached through witnessing rather than interpretive recovery.</p>\n<p class=\"p3\">Through discussions of works by Eva Hesse, Gordon Matta-Clark, Joseph Beuys, Anselm Kiefer, Dieter Roth, Anya Gallaccio, Felix Gonzalez-Torres, and Zoe Leonard, the essay explores how unstable materials&mdash;including latex, fat, organic matter, flowers, candy, and architectural interventions&mdash;redefine the relationship between object, institution, and viewer. It argues that museums often operate within a preservation paradigm that privileges permanence, stability, and market value, while overlooking the ethical significance of material transformation. Cases of conservation intervention further reveal the tension between institutional stewardship and artistic intentions that incorporate impermanence.</p>\n<p class=\"p3\">Rather than treating physical degradation as damage or failure, the essay frames material fatigue as a visible record of time, encounter, and existence. It proposes that criticism should abandon the pursuit of hidden meanings in favor of attentive witnessing, where cracks, fading pigments, decomposition, and structural instability become legitimate aesthetic events. In this framework, decay functions not as the negation of the artwork but as part of its continuing presence.</p>\n<p class=\"p4\">By repositioning entropy as an ethical condition of viewing, the essay contributes to contemporary debates in aesthetics, conservation ethics, museum studies, material culture, and conceptual art. It advances the view that the moral responsibility of both institutions and critics is not to deny mortality through preservation alone, but to recognize impermanence as an essential dimension of artistic experience.</p>\n<ul>\n<li><span class=\"s1\"><strong>Title:</strong></span> <span class=\"s1\"><em>Art That Falls Apart: Material Fatigue as Moral Statement</em></span></li>\n<li><span class=\"s1\"><strong>Creator:</strong></span><span class=\"s2\"> Dorian Vale</span></li>\n<li><span class=\"s1\"><strong>Publisher:</strong></span><span class=\"s2\"> Museum of One</span></li>\n<li><span class=\"s1\"><strong>Publication Year:</strong></span><span class=\"s2\"> 2026</span></li>\n<li><span class=\"s1\"><strong>Resource Type:</strong></span> Journal Article / Critical Essay</li>\n<li><span class=\"s1\"><strong>Language:</strong></span><span class=\"s2\"> English</span></li>\n<li><span class=\"s1\"><strong>Subjects / Keywords:</strong></span> Post-Interpretive Criticism; contemporary aesthetics; material fatigue; entropy; impermanence; conservation ethics; museum studies; conceptual art; contemporary art; materiality; decay; aesthetics; phenomenology of art; witnessing; art conservation; institutional critique; Eva Hesse; Joseph Beuys; Gordon Matta-Clark; Anselm Kiefer; Felix Gonzalez-Torres; Anya Gallaccio; Zoe Leonard; museum ethics; material culture.</li>\n</ul>\n<div class=\"el-p\">\n<p>This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and&nbsp;<em>Art as Truth: A Treatise</em>&nbsp;(Q136329071),&nbsp;<em>Aesthetic Recursion Theory</em>&nbsp;(Q136339843), The Journal of Post-Interpretive Criticism (Q136530009), Canon of Witnesses (Q136565881),Interpretive Load Index (ILI)&nbsp;(Q137709526), Viewer Displacement Ratio (VDR)&nbsp;(Q137709583)&nbsp;, Ethical Proximity Score (EPS)&nbsp;(Q137709600)&nbsp;, Institutional Alignment Indicator (IAI)&nbsp;(Q137709608), Post-Hermeneutic Phenomenology&nbsp;(Q137711946)</p>\n</div>\n<div class=\"el-p\">&nbsp;</div>\n<div class=\"el-p\">\n<div class=\"el-p\">\n<p><strong>Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen.</strong></p>\n</div>\n<div class=\"el-h2\">\n<h2>&nbsp;</h2>\n</div>\n</div>",
+  "provenance": {
+    "repository": "Zenodo REST API response supplied in query.json",
+    "retrieved": "2026-11-04",
+    "editorial_fields": [
+      "summary",
+      "subjects",
+      "collection",
+      "short_title",
+      "accession"
+    ],
+    "source_snapshot": "source/21715085.json",
+    "institutional_review": "Reviewed page-level title, author and repository links in saved public institutional HTML, 2026-11-04."
+  },
+  "source_review": "2026-11-04",
+  "relations": [
+    {
+      "identifier": "978-1-06-982030-3",
+      "relation": "isSupplementTo",
+      "scheme": "isbn"
+    },
+    {
+      "identifier": "978-1-06-982031-0",
+      "relation": "isSupplementTo",
+      "scheme": "isbn"
+    },
+    {
+      "identifier": "978-1-06-982032-7",
+      "relation": "isSupplementTo",
+      "scheme": "isbn"
+    },
+    {
+      "identifier": "978-1-06-982033-4",
+      "relation": "isSupplementTo",
+      "scheme": "isbn"
+    },
+    {
+      "identifier": "978-1-06-982034-1",
+      "relation": "isSupplementTo",
+      "scheme": "isbn"
+    },
+    {
+      "identifier": "https://www.museumofone.art",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://zenodo.org/communities/post-interpretive-criticism",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://osf.io/zhnre/",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://works.hcommons.org/records/xv2j2-g6927",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://philpapers.org/rec/VALPCF-2",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.researchcatalogue.net/profile",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://archive.org/details/the-journal-of-post-interpretive-criticism-vi",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://scholar.google.com/citations?user=15tvhjAAAAAJ",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://independent.academia.edu/DorianVale",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://core.ac.uk/search/?q=post-interpretive+criticism+dorian+vale",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.base-search.net/Search/Results?lookfor=Post-Interpretive+Criticism",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://commons.datacite.org/?query=Post-Interpretive+Criticism",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://openalex.org/works?filter=title_and_abstract.search:Post-Interpretive+Criticism+Dorian+Vale",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    }
+  ],
+  "institutional_metadata": {
+    "title": "Art That Falls Apart: Material Fatigue as Moral Statement",
+    "author": "Dorian Vale",
+    "web_publication": "2026-07-29T08:06:52.000Z",
+    "web_updated": "2026-11-03T00:37:00.000Z",
+    "linked_zenodo_dois": [
+      "10.5281/zenodo.21715084"
+    ],
+    "reviewed": "2026-11-04",
+    "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+    "publication_title": "Art That Falls Apart: Material Fatigue as Moral Statement",
+    "publication_status": "Published field essay",
+    "publication_date": "2026-07-29",
+    "edition": null
+  },
+  "research_programmes": [
+    {
+      "title": "Witness, Material Presence, and Cultural Memory",
+      "url": "https://www.museumofone.art/research-witness-material-memory/",
+      "status": "Continuing research",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "relation": "Published field essay in this programme.",
+      "relation_label": "Published field essay in this programme."
+    }
+  ],
+  "record_level": "Item",
+  "record_status": "Published source; selected catalogue record",
+  "digital_formats": [
+    "application/pdf"
+  ],
+  "extent": "1 digital file; 880295 bytes",
+  "medium": "Digital document",
+  "record_reviewed": "2026-11-04",
+  "date_precision": "day",
+  "alternate_titles": [],
+  "digital_extent": {
+    "file_count": 1,
+    "total_bytes": 880295,
+    "formats": [
+      "application/pdf"
+    ],
+    "checksums": [
+      {
+        "filename": "Art That Falls Apart — material fatigue as moral statement.pdf",
+        "algorithm": "md5",
+        "value": "9865b03866bdebb2458da23c34d23c07",
+        "syntax_valid": true,
+        "verification": "source_checksum_transcription; bytes not independently recomputed"
+      }
+    ],
+    "source_url": "https://zenodo.org/records/21715085",
+    "derivation": "File count and total bytes calculated from repository file metadata; MIME inferred from filename when absent."
+  },
+  "identifier_validation": {
+    "orcid": {
+      "source_value": "0009-0004-7737-5094",
+      "checksum_valid": true,
+      "note": "ISO 7064 MOD 11-2 checksum only; this is not a live registry verification."
+    },
+    "isbn": [],
+    "doi": {
+      "source_value": "10.5281/zenodo.21715085",
+      "syntax_valid": true,
+      "note": "Syntax check only; repository snapshot supplies the identifier."
+    }
+  },
+  "isbn_applicability": "not_supplied",
+  "serial": null,
+  "contributor_roles": [
+    {
+      "name": "Vale, Dorian",
+      "source_category": "creator",
+      "source_role": null,
+      "role_label": "Creator (role not supplied)",
+      "affiliation_as_supplied": null,
+      "source_url": "https://zenodo.org/records/21715085"
+    },
+    {
+      "name": "Museum of One",
+      "source_category": "creator",
+      "source_role": null,
+      "role_label": "Creator (role not supplied)",
+      "affiliation_as_supplied": null,
+      "source_url": "https://zenodo.org/records/21715085"
+    }
+  ],
+  "authority_links": [],
+  "metadata_profile": {
+    "name": "Museum of One source-qualified catalogue profile",
+    "version": "2",
+    "note": "Local application profile using schema.org and qualified Dublin Core; not an archival standards certification.",
+    "source_snapshot_preserved": true
+  },
+  "reading_copy": {
+    "id": "21715085",
+    "title": "Art That Falls Apart: Material Fatigue as Moral Statement",
+    "accession": "MOO-CAT-007",
+    "pdf_url": "../assets/documents/21715085.pdf",
+    "source_url": "https://zenodo.org/api/records/21715085/files/Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/content",
+    "zenodo_url": "https://zenodo.org/records/21715085",
+    "source_filename": "Art That Falls Apart — material fatigue as moral statement.pdf",
+    "checksum": "md5:9865b03866bdebb2458da23c34d23c07",
+    "sha256": "f43ae89bec1051c9a3d9ecd807bb473530ebad8a844194835713bb4caefb3e45",
+    "bytes": 880295,
+    "page_count": 5,
+    "verified_at": "2026-11-04",
+    "checksum_match": true,
+    "rights": {
+      "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "role": "Local reading copy; original repository file retained unchanged"
+  },
+  "page_count": 5,
+  "field_assertions": [
+    {
+      "field": "title",
+      "value": "Art That Falls Apart: Material Fatigue as Moral Statement",
+      "status": "catalogue_title",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "note": "Local display title; the deposited title is retained separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_title",
+      "value": "Art That Falls Apart: Material Fatigue as Moral Statement",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21715085",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "doi",
+      "value": "10.5281/zenodo.21715085",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21715085",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "date",
+      "value": "2026-07-31",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21715085",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "conceptdoi",
+      "value": "10.5281/zenodo.21715084",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21715085",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "creators",
+      "value": [
+        {
+          "name": "Vale, Dorian",
+          "affiliation": null,
+          "orcid": "0009-0004-7737-5094"
+        },
+        {
+          "name": "Museum of One",
+          "affiliation": null
+        }
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21715085",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "keywords",
+      "value": [
+        "Post-Interpretive Criticism",
+        "Stillmark Theory",
+        "Message-Transfer Theory",
+        "MTT",
+        "Misplacement",
+        "Displacement",
+        "Aesthetic Displacement Theory",
+        "Theory of Misplacement",
+        "Absential Aesthetics",
+        "Witness Aesthetics",
+        "Hauntmark Theory",
+        "Presence-Based Criticism",
+        "Custodianship of Art",
+        "Art as Ontology",
+        "Aesthetic Recursion",
+        "Aesthetic Recursion Theory",
+        "Viewer as Evidence Theory",
+        "Interpretive Load Index (ILI)",
+        "Viewer Displacement Ratio (VDR)",
+        "Ethical Proximity Score (EPS)",
+        "Institutional Alignment Indicator (IAI)",
+        "Epoché Fidelity Index (EFI)",
+        "Phenomenological Phase Alignment Score (PPAS)",
+        "Residue Engagement Restraint Ratio (RERR)",
+        "Quasi-Subject Agency Recognition Index (QSARI)",
+        "Dialectical Circulation Index (DCI)",
+        "Restraint in front of art",
+        "Moral proximity",
+        "Interpretive silence",
+        "Erasure as ethics",
+        "Temporal scarcity",
+        "Silence as method",
+        "Ontology of beauty",
+        "Language as violence",
+        "Aesthetic mercy",
+        "Art encounter ethics",
+        "Epistemology of witness",
+        "Philosophy of Art",
+        "Aesthetics",
+        "Art Theory",
+        "Contemporary Aesthetics",
+        "Comparative Aesthetics",
+        "Phenomenology and Art",
+        "Phenomenology",
+        "Aesthetic Phenomenology",
+        "Phenomenology of Aesthetic",
+        "post-hermeneutics phenomenology",
+        "Ethics in Art Criticism",
+        "Interpretation and Meaning",
+        "Criticism and Reception Theory",
+        "Epistemology of Art",
+        "Visual Culture Studies",
+        "Dorian Vale",
+        "Founder of Post-Interpretive Criticism",
+        "Post-Aesthetic Critic",
+        "Independent Philosopher of Art",
+        "Museum of One",
+        "Art Writer and Theorist",
+        "Aesthetic Philosopher",
+        "Custodian of Witness Aesthetics",
+        "The Doctrine of Post-Interpretive Criticism",
+        "The Custodian's Oath",
+        "The Canon of Witnesses",
+        "Art as Truth",
+        "Art as Presence",
+        "The Viewer as Evidence",
+        "Interpretation vs. Witnessing",
+        "Language as Custody",
+        "Erasure as Afterlife",
+        "Museum of One Manifesto",
+        "Post-Interpretive Lexicon",
+        "Alternative art criticism",
+        "New art criticism movement",
+        "Ethical art theory",
+        "Criticism beyond interpretation",
+        "Slow looking philosophy",
+        "Contemporary sacred aesthetics",
+        "Quiet philosophy of art",
+        "Radical art restraint",
+        "Witness over interpretation",
+        "Interpretive Restraint"
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21715085",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "license",
+      "value": {
+        "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21715085",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "files",
+      "value": [
+        {
+          "name": "Art That Falls Apart — material fatigue as moral statement.pdf",
+          "url": "https://zenodo.org/api/records/21715085/files/Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/content",
+          "size": 880295,
+          "size_label": "860 KB",
+          "checksum": "md5:9865b03866bdebb2458da23c34d23c07",
+          "mimetype": "application/pdf"
+        }
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21715085",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_created",
+      "value": "2026-07-31T06:35:35.777378+00:00",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21715085",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_modified",
+      "value": "2026-07-31T06:35:36.092919+00:00",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21715085",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "author",
+      "value": "Dorian Vale",
+      "status": "institutional_context",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "note": "Institutional responsibility statement; original repository creator roles remain separate.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "publisher",
+      "value": "Museum of One",
+      "status": "institutional_context",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "note": "Institutional responsibility statement; original repository creator roles remain separate.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "orcid",
+      "value": "0009-0004-7737-5094",
+      "status": "source_linked_identifier",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "note": "Creator identifier supplied by the linked sources; no affiliation or endorsement is inferred.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "summary",
+      "value": "An essay considering unstable materials, deterioration, and the tension between conservation and artistic impermanence. It reads material fatigue through the ethics of witnessing.",
+      "status": "editorial_enrichment",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "note": "Catalogue-editor summary based on the linked work; not an original publisher abstract.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "subjects",
+      "value": [
+        "Contemporary art",
+        "Material deterioration",
+        "Conservation ethics",
+        "Impermanence"
+      ],
+      "status": "editorial_enrichment",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "note": "Local discovery terms; no controlled-vocabulary assignment is claimed.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "collection",
+      "value": "Essays & research",
+      "status": "editorial_grouping",
+      "note": "A local browsing collection, not an original repository collection.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "corroboration",
+      "value": "Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. Its repository links and publication dates are retained separately from this selected Zenodo edition. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.",
+      "status": "catalogue_review_note",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "discrepancies",
+      "value": [
+        "The repository also lists organizational or URL-form creator entries. The catalogue displays Dorian Vale as bibliographic author while retaining the deposited creator list separately.",
+        "The Museum of One web record is dated 29 July 2026; this selected Zenodo edition gives 31 July 2026. These describe separate publication records."
+      ],
+      "status": "catalogue_review_note",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "date_precision",
+      "value": "day",
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/21715085",
+      "note": "Precision reported exactly as supplied; missing month or day is not filled.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "medium",
+      "value": "Digital document",
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/21715085",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "digital_formats",
+      "value": [
+        "application/pdf"
+      ],
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/21715085",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "extent",
+      "value": "1 digital file; 880295 bytes",
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/21715085",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "digital_extent",
+      "value": {
+        "file_count": 1,
+        "total_bytes": 880295,
+        "formats": [
+          "application/pdf"
+        ],
+        "checksums": [
+          {
+            "filename": "Art That Falls Apart — material fatigue as moral statement.pdf",
+            "algorithm": "md5",
+            "value": "9865b03866bdebb2458da23c34d23c07",
+            "syntax_valid": true,
+            "verification": "source_checksum_transcription; bytes not independently recomputed"
+          }
+        ],
+        "source_url": "https://zenodo.org/records/21715085",
+        "derivation": "File count and total bytes calculated from repository file metadata; MIME inferred from filename when absent."
+      },
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/21715085",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "identifier_validation",
+      "value": {
+        "orcid": {
+          "source_value": "0009-0004-7737-5094",
+          "checksum_valid": true,
+          "note": "ISO 7064 MOD 11-2 checksum only; this is not a live registry verification."
+        },
+        "isbn": [],
+        "doi": {
+          "source_value": "10.5281/zenodo.21715085",
+          "syntax_valid": true,
+          "note": "Syntax check only; repository snapshot supplies the identifier."
+        }
+      },
+      "status": "local_syntax_validation",
+      "source_url": "https://zenodo.org/records/21715085",
+      "note": "Checksum/syntax validation does not verify registration, assignment or edition applicability.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "contributor_roles",
+      "value": [
+        {
+          "name": "Vale, Dorian",
+          "source_category": "creator",
+          "source_role": null,
+          "role_label": "Creator (role not supplied)",
+          "affiliation_as_supplied": null,
+          "source_url": "https://zenodo.org/records/21715085"
+        },
+        {
+          "name": "Museum of One",
+          "source_category": "creator",
+          "source_role": null,
+          "role_label": "Creator (role not supplied)",
+          "affiliation_as_supplied": null,
+          "source_url": "https://zenodo.org/records/21715085"
+        }
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21715085",
+      "note": "Creator and contributor roles are transcribed, not inferred from names or affiliations.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "research_programme:https://www.museumofone.art/research-witness-material-memory/",
+      "value": {
+        "title": "Witness, Material Presence, and Cultural Memory",
+        "url": "https://www.museumofone.art/research-witness-material-memory/",
+        "status": "Continuing research",
+        "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "relation": "Published field essay in this programme.",
+        "relation_label": "Published field essay in this programme."
+      },
+      "status": "institutional_work_relationship",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "note": "Programme relationship and stage follow the work-specific institutional badge; publication does not imply a completed programme or collaboration.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "entity_link:dorian-vale:author",
+      "value": {
+        "id": "dorian-vale",
+        "label": "Dorian Vale",
+        "entity_type": "Person",
+        "relation": "author",
+        "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "note": "The matching institutional publication record credits Dorian Vale as author."
+      },
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:museum-of-one:publisher",
+      "value": {
+        "id": "museum-of-one",
+        "label": "Museum of One",
+        "entity_type": "Organization",
+        "relation": "publisher",
+        "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      },
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:eva-hesse:artist discussed",
+      "value": {
+        "id": "eva-hesse",
+        "label": "Eva Hesse",
+        "entity_type": "Person",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "note": "The essay explicitly names Expanded Expansion and its materials."
+      },
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:felix-gonzalez-torres:artist discussed",
+      "value": {
+        "id": "felix-gonzalez-torres",
+        "label": "Felix Gonzalez-Torres",
+        "entity_type": "Person",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "note": "The essay discusses “Untitled” (Portrait of Ross in L.A.)."
+      },
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:expanded-expansion:artwork discussed",
+      "value": {
+        "id": "expanded-expansion",
+        "label": "Expanded Expansion",
+        "entity_type": "Artwork",
+        "relation": "artwork discussed",
+        "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "note": "The essay explicitly attributes the work to Eva Hesse."
+      },
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:untitled-portrait-of-ross-in-la:artwork discussed",
+      "value": {
+        "id": "untitled-portrait-of-ross-in-la",
+        "label": "“Untitled” (Portrait of Ross in L.A.)",
+        "entity_type": "Artwork",
+        "relation": "artwork discussed",
+        "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "note": "The essay explicitly attributes the work to Felix Gonzalez-Torres."
+      },
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "controlled_subjects",
+      "value": [
+        {
+          "id": "contemporary-art",
+          "label": "Contemporary art",
+          "uri": "https://archive.museumofone.art/vocabulary.html#contemporary-art",
+          "url": "vocabulary.html#contemporary-art",
+          "persistent_id": "urn:museum-of-one:vocabulary:contemporary-art",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [],
+          "definition": "Art discussed within contemporary artistic and critical contexts.",
+          "scope_note": "A broad local subject heading; specific chronology must be supplied in the item description.",
+          "kind": "subject",
+          "broader": [],
+          "narrower": [],
+          "related": [],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "id": "material-deterioration",
+          "label": "Material deterioration",
+          "uri": "https://archive.museumofone.art/vocabulary.html#material-deterioration",
+          "url": "vocabulary.html#material-deterioration",
+          "persistent_id": "urn:museum-of-one:vocabulary:material-deterioration",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [],
+          "definition": "Physical alteration or weakening of materials over time.",
+          "scope_note": "Use for discussion of material fatigue and decay in artworks; no condition assessment of a held object is implied.",
+          "kind": "subject",
+          "broader": [],
+          "narrower": [],
+          "related": [
+            "impermanence"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "id": "conservation-ethics",
+          "label": "Conservation ethics",
+          "uri": "https://archive.museumofone.art/vocabulary.html#conservation-ethics",
+          "url": "vocabulary.html#conservation-ethics",
+          "persistent_id": "urn:museum-of-one:vocabulary:conservation-ethics",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [],
+          "definition": "Ethical questions about caring for, stabilising, or allowing change in artworks.",
+          "scope_note": "Use for discussion of conservation decisions and their relation to artistic impermanence.",
+          "kind": "subject",
+          "broader": [],
+          "narrower": [],
+          "related": [
+            "impermanence"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "id": "impermanence",
+          "label": "Impermanence",
+          "uri": "https://archive.museumofone.art/vocabulary.html#impermanence",
+          "url": "vocabulary.html#impermanence",
+          "persistent_id": "urn:museum-of-one:vocabulary:impermanence",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [],
+          "definition": "The condition of change, transience, or non-endurance as an artistic concern.",
+          "scope_note": "Use for critical discussion of impermanence; material deterioration identifies a particular physical process.",
+          "kind": "subject",
+          "broader": [],
+          "narrower": [],
+          "related": [
+            "conservation-ethics",
+            "material-deterioration"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        }
+      ],
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Local preferred terms with definitions and synonyms. External alignment is scoped in the vocabulary register.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "genre_terms",
+      "value": [
+        {
+          "id": "genre-journal-article",
+          "label": "Journal article",
+          "uri": "https://archive.museumofone.art/vocabulary.html#genre-journal-article",
+          "url": "vocabulary.html#genre-journal-article",
+          "persistent_id": "urn:museum-of-one:vocabulary:genre-journal-article",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [
+            "Journal articles"
+          ],
+          "definition": "A contribution issued as part of a journal or periodical.",
+          "scope_note": "Describes publication genre based on the catalogued source record; peer-review status is a separate question.",
+          "kind": "genre",
+          "broader": [],
+          "narrower": [],
+          "related": [],
+          "mapping_status": "verified_mapping",
+          "external_mappings": [
+            {
+              "vocabulary": "Getty Art & Architecture Thesaurus",
+              "label": "articles",
+              "uri": "http://vocab.getty.edu/aat/300048715",
+              "source_url": "https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300048715",
+              "relation": "broadMatch",
+              "status": "verified",
+              "verified_on": "2026-11-04",
+              "note": "Getty’s articles concept includes contributions to magazines, newspapers, encyclopedias, and other works; journal article is the narrower local genre."
+            }
+          ],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "type",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        }
+      ],
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Local resource-genre classification. Digital file format is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "archival_context",
+      "value": {
+        "description_profile": "moo-description-policy-1.0",
+        "catalogue_snapshot_date": "2026-11-04",
+        "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
+        "record_category": "Published library and repository material",
+        "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+        "source_repository": {
+          "name": "Zenodo",
+          "record_url": "https://zenodo.org/records/21715085"
+        },
+        "institutional_context_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+        "source_metadata_retrieved": "2026-11-04",
+        "source_metadata_retrieval_status": "Documented in catalogue source provenance",
+        "source_snapshot": "source/21715085.json",
+        "source_filenames": [
+          "Art That Falls Apart — material fatigue as moral statement.pdf"
+        ],
+        "selection_basis": "Local descriptive selection of publicly published material; public availability does not establish ownership of originals.",
+        "custodial_history": {
+          "status": "not_documented",
+          "statement": "No donation, physical transfer, acquisition agreement or chain of custody is documented by this catalogue. Zenodo remains the source repository for the deposited version."
+        },
+        "original_order": {
+          "status": "not_documented",
+          "statement": "No original archival order is asserted. Current browsing groupings are local editorial arrangement."
+        },
+        "arrangement": {
+          "status": "local_editorial",
+          "grouping": "Essays & research",
+          "statement": "A browsing grouping, not an original fonds or archival series."
+        },
+        "responsible_service": {
+          "name": "Museum of One",
+          "service": "Museum of One Digital Archive Library",
+          "website": "https://www.museumofone.art/",
+          "email": "research@museumofone.art"
+        },
+        "description_method": "Source-based description with automated drafting and metadata assistance. Responsibility for the public catalogue rests with Museum of One; automated assistance does not constitute independent scholarly or curatorial review.",
+        "policy_url": "policies.html",
+        "correction_email": "research@museumofone.art",
+        "access_copy": {
+          "role": "Local digital reading copy of the deposited file",
+          "source_url": "https://zenodo.org/api/records/21715085/files/Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/content",
+          "source_filename": "Art That Falls Apart — material fatigue as moral statement.pdf",
+          "local_path": "assets/documents/21715085.pdf",
+          "verified_at": "2026-11-04",
+          "source_checksum_match": true,
+          "sha256": "f43ae89bec1051c9a3d9ecd807bb473530ebad8a844194835713bb4caefb3e45",
+          "statement": "Access copy only; no ownership or physical custody transfer is implied."
+        }
+      },
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Provenance records what is documented and leaves unknown custody and original order explicit.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "description_history",
+      "value": [
+        {
+          "responsible_service": "Museum of One",
+          "method": "Source-based automated description assistance",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "public-source-description-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Source-based catalogue description",
+          "note": "Local description assembled from the identified public repository record and available institutional work record. Source metadata remains separately identifiable.",
+          "sources": [
+            "https://zenodo.org/records/21715085",
+            "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/"
+          ]
+        },
+        {
+          "responsible_service": "Museum of One",
+          "method": "Source-based automated description assistance",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "qualified-description-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Qualified descriptive enrichment",
+          "note": "Local editorial description, arrangement and source-qualified bibliographic context recorded alongside source metadata. Unknown or disputed values remain qualified.",
+          "fields": [
+            "summary",
+            "subjects",
+            "collection",
+            "short_title",
+            "accession"
+          ],
+          "sources": [
+            "https://zenodo.org/records/21715085",
+            "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/"
+          ]
+        },
+        {
+          "responsible_service": "Museum of One",
+          "method": "Automated file checksum and PDF inspection",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "access-copy-verification-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Digital reading copy verified",
+          "note": "Downloaded access-copy MD5 matched the source checksum; local SHA-256 and PDF file-page count are recorded in the file manifest. This event does not describe transfer of custody.",
+          "sources": [
+            "https://zenodo.org/api/records/21715085/files/Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/content"
+          ]
+        },
+        {
+          "responsible_service": "Museum of One",
+          "method": "Source-based automated description assistance",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "description-policy-1.0-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Description policy and provenance context adopted",
+          "note": "Responsible service, source repository, local access-copy role, unknown custody and original order, correction route and dated description history made explicit under moo-description-policy-1.0.",
+          "sources": [
+            "policies.html"
+          ]
+        }
+      ],
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Catalogue description events; these are not work publication dates or acquisition dates.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "pirr_references",
+      "value": [
+        {
+          "programme_key": "research-witness-material-memory",
+          "programme_title": "Witness, Material Presence, and Cultural Memory",
+          "programme_url": "https://www.museumofone.art/research-witness-material-memory/",
+          "programme_stage": "Continuing research",
+          "registry_url": "research-registry.html#research-witness-material-memory",
+          "identifiers": [
+            {
+              "scheme": "PIRR project ID",
+              "value": "pir-prj-dd7kt5rw",
+              "source_url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+            }
+          ],
+          "relation": "Published field essay in this programme.",
+          "relation_note": "Published field essay in this programme.",
+          "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/"
+        }
+      ],
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "status": "institutional_context_relationship",
+      "note": "PIRR project IDs and programme references identify research records, not publication versions or independent chapter deposits."
+    },
+    {
+      "field": "reading_copy",
+      "value": {
+        "id": "21715085",
+        "title": "Art That Falls Apart: Material Fatigue as Moral Statement",
+        "accession": "MOO-CAT-007",
+        "pdf_url": "../assets/documents/21715085.pdf",
+        "source_url": "https://zenodo.org/api/records/21715085/files/Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/content",
+        "zenodo_url": "https://zenodo.org/records/21715085",
+        "source_filename": "Art That Falls Apart — material fatigue as moral statement.pdf",
+        "checksum": "md5:9865b03866bdebb2458da23c34d23c07",
+        "sha256": "f43ae89bec1051c9a3d9ecd807bb473530ebad8a844194835713bb4caefb3e45",
+        "bytes": 880295,
+        "page_count": 5,
+        "verified_at": "2026-11-04",
+        "checksum_match": true,
+        "rights": {
+          "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+          "url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "role": "Local reading copy; original repository file retained unchanged"
+      },
+      "source_url": "https://zenodo.org/api/records/21715085/files/Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/content",
+      "status": "derived_file_inspection",
+      "reviewed": "2026-11-04",
+      "note": "Byte-identical local access copy. Source MD5 was recomputed and matched; SHA-256 and page count were measured from the downloaded PDF. This is not a preservation-deposit claim."
+    },
+    {
+      "field": "page_count",
+      "value": 5,
+      "source_url": "https://zenodo.org/api/records/21715085/files/Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/content",
+      "status": "derived_file_inspection",
+      "reviewed": "2026-11-04",
+      "note": "Total PDF file pages measured from the deposited file, including cover and unnumbered pages. Not a claim about printed pagination."
+    }
+  ],
+  "entity_links": [
+    {
+      "id": "dorian-vale",
+      "label": "Dorian Vale",
+      "entity_type": "Person",
+      "relation": "author",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "note": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "id": "museum-of-one",
+      "label": "Museum of One",
+      "entity_type": "Organization",
+      "relation": "publisher",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "id": "eva-hesse",
+      "label": "Eva Hesse",
+      "entity_type": "Person",
+      "relation": "artist discussed",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "note": "The essay explicitly names Expanded Expansion and its materials."
+    },
+    {
+      "id": "felix-gonzalez-torres",
+      "label": "Felix Gonzalez-Torres",
+      "entity_type": "Person",
+      "relation": "artist discussed",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "note": "The essay discusses “Untitled” (Portrait of Ross in L.A.)."
+    },
+    {
+      "id": "expanded-expansion",
+      "label": "Expanded Expansion",
+      "entity_type": "Artwork",
+      "relation": "artwork discussed",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "note": "The essay explicitly attributes the work to Eva Hesse."
+    },
+    {
+      "id": "untitled-portrait-of-ross-in-la",
+      "label": "“Untitled” (Portrait of Ross in L.A.)",
+      "entity_type": "Artwork",
+      "relation": "artwork discussed",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+      "note": "The essay explicitly attributes the work to Felix Gonzalez-Torres."
+    }
+  ],
+  "contents": [],
+  "controlled_subjects": [
+    {
+      "id": "contemporary-art",
+      "label": "Contemporary art",
+      "uri": "https://archive.museumofone.art/vocabulary.html#contemporary-art",
+      "url": "vocabulary.html#contemporary-art",
+      "persistent_id": "urn:museum-of-one:vocabulary:contemporary-art",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [],
+      "definition": "Art discussed within contemporary artistic and critical contexts.",
+      "scope_note": "A broad local subject heading; specific chronology must be supplied in the item description.",
+      "kind": "subject",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "id": "material-deterioration",
+      "label": "Material deterioration",
+      "uri": "https://archive.museumofone.art/vocabulary.html#material-deterioration",
+      "url": "vocabulary.html#material-deterioration",
+      "persistent_id": "urn:museum-of-one:vocabulary:material-deterioration",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [],
+      "definition": "Physical alteration or weakening of materials over time.",
+      "scope_note": "Use for discussion of material fatigue and decay in artworks; no condition assessment of a held object is implied.",
+      "kind": "subject",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "impermanence"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "id": "conservation-ethics",
+      "label": "Conservation ethics",
+      "uri": "https://archive.museumofone.art/vocabulary.html#conservation-ethics",
+      "url": "vocabulary.html#conservation-ethics",
+      "persistent_id": "urn:museum-of-one:vocabulary:conservation-ethics",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [],
+      "definition": "Ethical questions about caring for, stabilising, or allowing change in artworks.",
+      "scope_note": "Use for discussion of conservation decisions and their relation to artistic impermanence.",
+      "kind": "subject",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "impermanence"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "id": "impermanence",
+      "label": "Impermanence",
+      "uri": "https://archive.museumofone.art/vocabulary.html#impermanence",
+      "url": "vocabulary.html#impermanence",
+      "persistent_id": "urn:museum-of-one:vocabulary:impermanence",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [],
+      "definition": "The condition of change, transience, or non-endurance as an artistic concern.",
+      "scope_note": "Use for critical discussion of impermanence; material deterioration identifies a particular physical process.",
+      "kind": "subject",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "conservation-ethics",
+        "material-deterioration"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    }
+  ],
+  "genre_terms": [
+    {
+      "id": "genre-journal-article",
+      "label": "Journal article",
+      "uri": "https://archive.museumofone.art/vocabulary.html#genre-journal-article",
+      "url": "vocabulary.html#genre-journal-article",
+      "persistent_id": "urn:museum-of-one:vocabulary:genre-journal-article",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [
+        "Journal articles"
+      ],
+      "definition": "A contribution issued as part of a journal or periodical.",
+      "scope_note": "Describes publication genre based on the catalogued source record; peer-review status is a separate question.",
+      "kind": "genre",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "verified_mapping",
+      "external_mappings": [
+        {
+          "vocabulary": "Getty Art & Architecture Thesaurus",
+          "label": "articles",
+          "uri": "http://vocab.getty.edu/aat/300048715",
+          "source_url": "https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300048715",
+          "relation": "broadMatch",
+          "status": "verified",
+          "verified_on": "2026-11-04",
+          "note": "Getty’s articles concept includes contributions to magazines, newspapers, encyclopedias, and other works; journal article is the narrower local genre."
+        }
+      ],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "type",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    }
+  ],
+  "vocabulary_version": 4,
+  "description_history": [
+    {
+      "responsible_service": "Museum of One",
+      "method": "Source-based automated description assistance",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "public-source-description-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Source-based catalogue description",
+      "note": "Local description assembled from the identified public repository record and available institutional work record. Source metadata remains separately identifiable.",
+      "sources": [
+        "https://zenodo.org/records/21715085",
+        "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/"
+      ]
+    },
+    {
+      "responsible_service": "Museum of One",
+      "method": "Source-based automated description assistance",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "qualified-description-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Qualified descriptive enrichment",
+      "note": "Local editorial description, arrangement and source-qualified bibliographic context recorded alongside source metadata. Unknown or disputed values remain qualified.",
+      "fields": [
+        "summary",
+        "subjects",
+        "collection",
+        "short_title",
+        "accession"
+      ],
+      "sources": [
+        "https://zenodo.org/records/21715085",
+        "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/"
+      ]
+    },
+    {
+      "responsible_service": "Museum of One",
+      "method": "Automated file checksum and PDF inspection",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "access-copy-verification-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Digital reading copy verified",
+      "note": "Downloaded access-copy MD5 matched the source checksum; local SHA-256 and PDF file-page count are recorded in the file manifest. This event does not describe transfer of custody.",
+      "sources": [
+        "https://zenodo.org/api/records/21715085/files/Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/content"
+      ]
+    },
+    {
+      "responsible_service": "Museum of One",
+      "method": "Source-based automated description assistance",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "description-policy-1.0-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Description policy and provenance context adopted",
+      "note": "Responsible service, source repository, local access-copy role, unknown custody and original order, correction route and dated description history made explicit under moo-description-policy-1.0.",
+      "sources": [
+        "policies.html"
+      ]
+    }
+  ],
+  "archival_context": {
+    "description_profile": "moo-description-policy-1.0",
+    "catalogue_snapshot_date": "2026-11-04",
+    "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
+    "record_category": "Published library and repository material",
+    "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+    "source_repository": {
+      "name": "Zenodo",
+      "record_url": "https://zenodo.org/records/21715085"
+    },
+    "institutional_context_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+    "source_metadata_retrieved": "2026-11-04",
+    "source_metadata_retrieval_status": "Documented in catalogue source provenance",
+    "source_snapshot": "source/21715085.json",
+    "source_filenames": [
+      "Art That Falls Apart — material fatigue as moral statement.pdf"
+    ],
+    "selection_basis": "Local descriptive selection of publicly published material; public availability does not establish ownership of originals.",
+    "custodial_history": {
+      "status": "not_documented",
+      "statement": "No donation, physical transfer, acquisition agreement or chain of custody is documented by this catalogue. Zenodo remains the source repository for the deposited version."
+    },
+    "original_order": {
+      "status": "not_documented",
+      "statement": "No original archival order is asserted. Current browsing groupings are local editorial arrangement."
+    },
+    "arrangement": {
+      "status": "local_editorial",
+      "grouping": "Essays & research",
+      "statement": "A browsing grouping, not an original fonds or archival series."
+    },
+    "responsible_service": {
+      "name": "Museum of One",
+      "service": "Museum of One Digital Archive Library",
+      "website": "https://www.museumofone.art/",
+      "email": "research@museumofone.art"
+    },
+    "description_method": "Source-based description with automated drafting and metadata assistance. Responsibility for the public catalogue rests with Museum of One; automated assistance does not constitute independent scholarly or curatorial review.",
+    "policy_url": "policies.html",
+    "correction_email": "research@museumofone.art",
+    "access_copy": {
+      "role": "Local digital reading copy of the deposited file",
+      "source_url": "https://zenodo.org/api/records/21715085/files/Art%20That%20Falls%20Apart%20%E2%80%94%20material%20fatigue%20as%20moral%20statement.pdf/content",
+      "source_filename": "Art That Falls Apart — material fatigue as moral statement.pdf",
+      "local_path": "assets/documents/21715085.pdf",
+      "verified_at": "2026-11-04",
+      "source_checksum_match": true,
+      "sha256": "f43ae89bec1051c9a3d9ecd807bb473530ebad8a844194835713bb4caefb3e45",
+      "statement": "Access copy only; no ownership or physical custody transfer is implied."
+    }
+  },
+  "description_policy_url": "https://archive.museumofone.art/policies.html",
+  "pirr_references": [
+    {
+      "programme_key": "research-witness-material-memory",
+      "programme_title": "Witness, Material Presence, and Cultural Memory",
+      "programme_url": "https://www.museumofone.art/research-witness-material-memory/",
+      "programme_stage": "Continuing research",
+      "registry_url": "research-registry.html#research-witness-material-memory",
+      "identifiers": [
+        {
+          "scheme": "PIRR project ID",
+          "value": "pir-prj-dd7kt5rw",
+          "source_url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+        }
+      ],
+      "relation": "Published field essay in this programme.",
+      "relation_note": "Published field essay in this programme.",
+      "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/"
+    }
+  ],
+  "pirr_work_identity": {
+    "archive_reference": "MOO-CAT-007",
+    "edition_doi": "10.5281/zenodo.21715085",
+    "zenodo_record_id": "21715085",
+    "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication."
+  }
+}

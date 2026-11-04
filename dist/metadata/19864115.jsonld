@@ -1,0 +1,425 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://archive.museumofone.art/#website",
+      "name": "Museum of One Digital Archive Library",
+      "url": "https://archive.museumofone.art/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://archive.museumofone.art/items/19864115.html#webpage",
+      "url": "https://archive.museumofone.art/items/19864115.html",
+      "name": "Post-Interpretive Criticism: Volume II — Essays from the Field",
+      "isPartOf": {
+        "@id": "https://archive.museumofone.art/#website"
+      },
+      "mainEntity": {
+        "@id": "https://archive.museumofone.art/items/19864115.html#catalogue-record"
+      },
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.19864115"
+      },
+      "breadcrumb": {
+        "@id": "https://archive.museumofone.art/items/19864115.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19864115.html#catalogue-record",
+      "name": "Post-Interpretive Criticism: Volume II — Essays from the Field",
+      "url": "https://archive.museumofone.art/items/19864115.html",
+      "mainEntityOfPage": {
+        "@id": "https://archive.museumofone.art/items/19864115.html#webpage"
+      },
+      "about": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.19864115"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#art-criticism"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#witnessing"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#pedagogy"
+        }
+      ],
+      "disambiguatingDescription": "Local catalogue record describing a deposited publication version.",
+      "description": "A collection connecting Post-Interpretive Criticism with encounters with artworks and practical exercises in viewing and writing. The deposited description distinguishes canonical essays from pedagogical texts.",
+      "keywords": [
+        "Post-Interpretive Criticism",
+        "Art criticism",
+        "Witnessing",
+        "Pedagogy"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Local catalogue identifier",
+        "value": "MOO-CAT-002"
+      },
+      "dateModified": "2026-11-04",
+      "isBasedOn": [
+        {
+          "@id": "https://zenodo.org/records/19864115"
+        },
+        {
+          "@id": "https://www.museumofone.art/publication-essays-from-field/"
+        },
+        {
+          "@id": "https://www.museumofone.art/publication-essays-from-field/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.museumofone.art/research-witness-material-memory/"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "name": "Dorian Vale",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0004-7737-5094"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/#publisher",
+      "name": "Museum of One",
+      "url": "https://www.museumofone.art/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17078846",
+      "name": "Post-Interpretive Criticism: Volume II — Essays from the Field — version family",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Zenodo concept DOI",
+        "value": "10.5281/zenodo.17078846"
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.19864115"
+      }
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/items/19864115.html#file-1",
+      "contentUrl": "https://zenodo.org/api/records/19864115/files/post-interpretive-criticism-volume-ii-STANDARD.pdf/content",
+      "name": "post-interpretive-criticism-volume-ii-STANDARD.pdf",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19864115"
+      },
+      "encodingFormat": "application/pdf",
+      "contentSize": "2610097 bytes",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source checksum",
+        "value": "md5:9487d0fc48e7afdfb960fc328d8e4881"
+      }
+    },
+    {
+      "@type": "Periodical",
+      "@id": "https://portal.issn.org/resource/ISSN/2819-7232",
+      "name": "Post-interpretive criticism",
+      "issn": "2819-7232",
+      "url": "https://portal.issn.org/resource/ISSN/2819-7232"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/research-witness-material-memory/",
+      "url": "https://www.museumofone.art/research-witness-material-memory/",
+      "name": "Witness, Material Presence, and Cultural Memory",
+      "description": "Published collection associated with the continuing inquiry.",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "PIRR project ID",
+          "value": "pir-prj-dd7kt5rw",
+          "url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://archive.museumofone.art/items/19864115.html#source-contributor-2",
+      "name": "Vale, Dorian"
+    },
+    {
+      "@type": "Role",
+      "@id": "https://archive.museumofone.art/items/19864115.html#source-role-2",
+      "roleName": "RightsHolder",
+      "contributor": {
+        "@id": "https://archive.museumofone.art/items/19864115.html#source-contributor-2"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/items/19864115.html#source-contributor-3",
+      "name": "Museum of One"
+    },
+    {
+      "@type": "Role",
+      "@id": "https://archive.museumofone.art/items/19864115.html#source-role-3",
+      "roleName": "HostingInstitution",
+      "contributor": {
+        "@id": "https://archive.museumofone.art/items/19864115.html#source-contributor-3"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://archive.museumofone.art/items/19864115.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Digital Archive Library",
+          "item": "https://archive.museumofone.art/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Catalogue",
+          "item": "https://archive.museumofone.art/catalogue.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MOO-CAT-002",
+          "item": "https://archive.museumofone.art/items/19864115.html"
+        }
+      ]
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/assets/documents/19864115.pdf",
+      "contentUrl": "https://archive.museumofone.art/assets/documents/19864115.pdf",
+      "name": "Verified reading copy of Post-Interpretive Criticism: Volume II — Essays from the Field",
+      "encodingFormat": "application/pdf",
+      "contentSize": "2610097 bytes",
+      "description": "96 PDF file pages, including covers and unnumbered pages. Byte-identical local access copy; source checksum matched 2026-11-04.",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19864115"
+      },
+      "isBasedOn": {
+        "@id": "https://archive.museumofone.art/items/19864115.html#file-1"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256 of local reading copy",
+        "value": "1ab810a867166d02b30a284db253b32e2794338a59695858385ec85a982e04ac"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://doi.org/10.5281/zenodo.19864115",
+      "name": "Post-Interpretive Criticism: Volume II — Essays from the Field",
+      "mainEntityOfPage": {
+        "@id": "https://zenodo.org/records/19864115"
+      },
+      "url": "https://zenodo.org/records/19864115",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.19864115"
+      },
+      "datePublished": "2025",
+      "keywords": [
+        "Post-Interpretive Criticism",
+        "art criticism",
+        "aesthetics",
+        "ethics of witnessing",
+        "moral proximity",
+        "restraint",
+        "contemporary art"
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0004-7737-5094"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/#publisher"
+      },
+      "isbn": "978-1-06-982031-0",
+      "alternateName": [
+        "Post-Interpretive Criticism: Volume II - Essays from the Field"
+      ],
+      "bookEdition": "First edition, 2025; selected repository release April 2026 (Museum of One publication record)",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "exampleOfWork": {
+        "@id": "https://doi.org/10.5281/zenodo.17078846"
+      },
+      "encoding": [
+        {
+          "@id": "https://archive.museumofone.art/items/19864115.html#file-1"
+        },
+        {
+          "@id": "https://archive.museumofone.art/assets/documents/19864115.pdf"
+        }
+      ],
+      "isPartOf": [
+        {
+          "@id": "https://portal.issn.org/resource/ISSN/2819-7232"
+        }
+      ],
+      "contributor": [
+        {
+          "@id": "https://archive.museumofone.art/items/19864115.html#source-role-2"
+        },
+        {
+          "@id": "https://archive.museumofone.art/items/19864115.html#source-role-3"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "https://archive.museumofone.art/parts/19864115-c001.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864115-c002.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864115-c003.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864115-c004.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864115-c005.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864115-c006.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864115-c007.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864115-c008.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864115-c009.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864115-c010.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864115-c011.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864115-c012.html#component"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zenodo.org/records/19864115",
+      "name": "Zenodo deposited-version record",
+      "mainEntity": {
+        "@id": "https://doi.org/10.5281/zenodo.19864115"
+      },
+      "publisher": {
+        "@id": "https://zenodo.org/#repository"
+      },
+      "dateCreated": "2026-04-28T19:19:00.113516+00:00",
+      "dateModified": "2026-10-15T12:15:14.061006+00:00"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zenodo.org/#repository",
+      "name": "Zenodo",
+      "url": "https://zenodo.org/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/publication-essays-from-field/",
+      "name": "Museum of One institutional publication context",
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.19864115"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19864115.html#relationship-dorian-vale-author",
+      "name": "author",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/publication-essays-from-field/"
+      },
+      "description": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19864115.html#relationship-museum-of-one-publisher",
+      "name": "publisher",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/publication-essays-from-field/"
+      },
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://archive.museumofone.art/vocabulary.html",
+      "name": "Museum of One local editorial discovery vocabulary",
+      "url": "https://archive.museumofone.art/vocabulary.html",
+      "description": "Published preferred labels, definitions, alternative labels and qualified external mappings."
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism",
+      "name": "Post-Interpretive Criticism",
+      "termCode": "post-interpretive-criticism",
+      "description": "The critical framework named and developed in the Museum of One publications.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#art-criticism",
+      "name": "Art criticism",
+      "termCode": "art-criticism",
+      "description": "Critical examination and discussion of artworks and encounters with art.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#witnessing",
+      "name": "Witnessing",
+      "termCode": "witnessing",
+      "description": "Attentive encounter with artworks and their effects within the corpus.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#pedagogy",
+      "name": "Pedagogy",
+      "termCode": "pedagogy",
+      "description": "Teaching and learning practices related to viewing, thinking, and writing about art.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    }
+  ]
+}

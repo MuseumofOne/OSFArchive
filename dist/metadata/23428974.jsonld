@@ -1,0 +1,467 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://archive.museumofone.art/#website",
+      "name": "Museum of One Digital Archive Library",
+      "url": "https://archive.museumofone.art/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://archive.museumofone.art/items/23428974.html#webpage",
+      "url": "https://archive.museumofone.art/items/23428974.html",
+      "name": "Answerability: Exhibition, Documentation, and Historical Evidence in Postwar Japanese Art",
+      "isPartOf": {
+        "@id": "https://archive.museumofone.art/#website"
+      },
+      "mainEntity": {
+        "@id": "https://archive.museumofone.art/items/23428974.html#catalogue-record"
+      },
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.23428974"
+      },
+      "breadcrumb": {
+        "@id": "https://archive.museumofone.art/items/23428974.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23428974.html#catalogue-record",
+      "name": "Answerability: Exhibition, Documentation, and Historical Evidence in Postwar Japanese Art",
+      "url": "https://archive.museumofone.art/items/23428974.html",
+      "mainEntityOfPage": {
+        "@id": "https://archive.museumofone.art/items/23428974.html#webpage"
+      },
+      "about": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.23428974"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#postwar-japanese-art"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#historical-evidence"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#exhibition-histories"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#documentation"
+        }
+      ],
+      "disambiguatingDescription": "Local catalogue record describing a deposited publication version.",
+      "description": "Research Working Paper No. 1 examines when exhibition and documentary evidence requires an art-historical account to limit or revise its claims, with particular attention to postwar Japanese art and Shiraga Kazuo.",
+      "keywords": [
+        "Postwar Japanese art",
+        "Historical evidence",
+        "Exhibition histories",
+        "Documentation"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Local catalogue identifier",
+        "value": "MOO-CAT-006"
+      },
+      "dateModified": "2026-11-04",
+      "isBasedOn": [
+        {
+          "@id": "https://zenodo.org/records/23428974"
+        },
+        {
+          "@id": "https://www.museumofone.art/answerability/"
+        },
+        {
+          "@id": "https://www.museumofone.art/answerability/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.museumofone.art/reiko-tomii/"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/shiraga-kazuo.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/reiko-tomii.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/namiko-kunimoto.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/challenging-mud.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "name": "Dorian Vale",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0004-7737-5094"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/#publisher",
+      "name": "Museum of One",
+      "url": "https://www.museumofone.art/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.23428973",
+      "name": "Answerability: Exhibition, Documentation, and Historical Evidence in Postwar Japanese Art — version family",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Zenodo concept DOI",
+        "value": "10.5281/zenodo.23428973"
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.23428974"
+      }
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/items/23428974.html#file-1",
+      "contentUrl": "https://zenodo.org/api/records/23428974/files/Answerability_Working_Paper_01_v1_0.pdf/content",
+      "name": "Answerability_Working_Paper_01_v1_0.pdf",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.23428974"
+      },
+      "encodingFormat": "application/pdf",
+      "contentSize": "208809 bytes",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source checksum",
+        "value": "md5:908dc7989ef983324ddcba78684aee12"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/reiko-tomii/",
+      "url": "https://www.museumofone.art/reiko-tomii/",
+      "name": "Reiko Tomii: Operation and Historical Answerability",
+      "description": "Published working paper within a developing inquiry",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "PIRR programme reference",
+          "value": "moo-program-fc96d462c463652ce260cd27",
+          "url": "https://www.museumofone.art/reiko-tomii/#programme-record"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://archive.museumofone.art/items/23428974.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Digital Archive Library",
+          "item": "https://archive.museumofone.art/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Catalogue",
+          "item": "https://archive.museumofone.art/catalogue.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MOO-CAT-006",
+          "item": "https://archive.museumofone.art/items/23428974.html"
+        }
+      ]
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/assets/documents/23428974.pdf",
+      "contentUrl": "https://archive.museumofone.art/assets/documents/23428974.pdf",
+      "name": "Verified reading copy of Answerability: Exhibition, Documentation, and Historical Evidence in Postwar Japanese Art",
+      "encodingFormat": "application/pdf",
+      "contentSize": "208809 bytes",
+      "description": "10 PDF file pages, including covers and unnumbered pages. Byte-identical local access copy; source checksum matched 2026-11-04.",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.23428974"
+      },
+      "isBasedOn": {
+        "@id": "https://archive.museumofone.art/items/23428974.html#file-1"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256 of local reading copy",
+        "value": "079dcc91558e146ca7f9c204d5441c3fe6f9958ca4668700bcc0016766c75ad9"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.23428974",
+      "name": "Answerability: Exhibition, Documentation, and Historical Evidence in Postwar Japanese Art",
+      "mainEntityOfPage": {
+        "@id": "https://zenodo.org/records/23428974"
+      },
+      "url": "https://zenodo.org/records/23428974",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.23428974"
+      },
+      "datePublished": "2026-10-17",
+      "version": "1.0",
+      "inLanguage": "eng",
+      "keywords": [
+        "Historical answerability",
+        "Art historiography",
+        "Postwar Japanese art",
+        "Exhibition history",
+        "Documentation",
+        "Historical evidence",
+        "Artistic operation",
+        "Interpretation",
+        "Post-Interpretive Criticism",
+        "Shiraga Kazuo",
+        "Challenging Mud",
+        "Reiko Tomii",
+        "Namiko Kunimoto",
+        "Hi Red Center",
+        "GUN",
+        "Aesthetics",
+        "Museum of One",
+        "Dorian Vale",
+        "Philosophy of Art",
+        "Art Criticism",
+        "Art Theory",
+        "Visual Culture Studies",
+        "Ethics in Art Criticism",
+        "Interpretation and Meaning",
+        "Interpretive Restraint",
+        "Criticism and Reception Theory",
+        "Epistemology of Art",
+        "Gutai",
+        "Japanese avant-garde art",
+        "Postwar Japanese art history",
+        "Art collectives in Japan",
+        "Performance art in Japan",
+        "Photographic documentation",
+        "Art-historical methodology"
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0004-7737-5094"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/#publisher"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "exampleOfWork": {
+        "@id": "https://doi.org/10.5281/zenodo.23428973"
+      },
+      "isPartOf": [
+        {
+          "@id": "https://www.museumofone.art/research-working-papers/"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.historians.org/resource/statement-on-standards-of-professional-conduct/"
+        },
+        {
+          "@id": "https://doi.org/10.1111/j.1467-8365.2012.00951.x"
+        },
+        {
+          "@id": "https://www.moma.org/collection/works/127373"
+        },
+        {
+          "@id": "https://www.aaa-a.org/programs/conversation-with-reiko-tomii"
+        },
+        {
+          "@id": "https://www.aaa-a.org/programs/i-challenged-mud-after"
+        },
+        {
+          "@id": "https://field-journal.com/issue-7/localizing-socially-engaged-art-some-observations-on-collective-operations-in-prewar-and-postwar-japan/"
+        },
+        {
+          "@id": "https://doi.org/10.37050/wpc-co-01_05"
+        },
+        {
+          "@id": "https://doi.org/10.1017/CBO9780511498381"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.18104019"
+        }
+      ],
+      "encoding": [
+        {
+          "@id": "https://archive.museumofone.art/items/23428974.html#file-1"
+        },
+        {
+          "@id": "https://archive.museumofone.art/assets/documents/23428974.pdf"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://archive.museumofone.art/entities/shiraga-kazuo.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/challenging-mud.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zenodo.org/records/23428974",
+      "name": "Zenodo deposited-version record",
+      "mainEntity": {
+        "@id": "https://doi.org/10.5281/zenodo.23428974"
+      },
+      "publisher": {
+        "@id": "https://zenodo.org/#repository"
+      },
+      "dateCreated": "2026-10-17T02:14:15.319009+00:00",
+      "dateModified": "2026-10-17T06:40:32.872759+00:00"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zenodo.org/#repository",
+      "name": "Zenodo",
+      "url": "https://zenodo.org/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/answerability/",
+      "name": "Museum of One institutional publication context",
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.23428974"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23428974.html#relationship-dorian-vale-author",
+      "name": "author",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/answerability/"
+      },
+      "description": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23428974.html#relationship-museum-of-one-publisher",
+      "name": "publisher",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/answerability/"
+      },
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23428974.html#relationship-shiraga-kazuo-artist-discussed",
+      "name": "artist discussed",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/shiraga-kazuo.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/answerability/"
+      },
+      "description": "The abstract identifies Shiraga Kazuo’s Challenging Mud as the principal case."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23428974.html#relationship-reiko-tomii-scholar-discussed",
+      "name": "scholar discussed",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/reiko-tomii.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/answerability/"
+      },
+      "description": "The paper engages Tomii’s scholarship and records discussion and feedback. The source explicitly states that Tomii is not a coauthor and that no blanket endorsement or formal peer review is implied."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23428974.html#relationship-namiko-kunimoto-scholar-discussed",
+      "name": "scholar discussed",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/namiko-kunimoto.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/answerability/"
+      },
+      "description": "The abstract identifies Kunimoto’s analysis as scholarship read alongside Tomii’s work; no coauthorship is asserted."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23428974.html#relationship-challenging-mud-artwork-discussed",
+      "name": "artwork discussed",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/challenging-mud.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/answerability/"
+      },
+      "description": "The abstract identifies the title and artist. Different executions and the relationship between action and displayed result are examined in the paper; this record does not merge those events into a single documented object."
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://archive.museumofone.art/vocabulary.html",
+      "name": "Museum of One local editorial discovery vocabulary",
+      "url": "https://archive.museumofone.art/vocabulary.html",
+      "description": "Published preferred labels, definitions, alternative labels and qualified external mappings."
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#postwar-japanese-art",
+      "name": "Postwar Japanese art",
+      "termCode": "postwar-japanese-art",
+      "description": "Art in Japan considered in relation to the period after the Second World War.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#historical-evidence",
+      "name": "Historical evidence",
+      "termCode": "historical-evidence",
+      "description": "Evidence used to support or constrain accounts of past artistic activity.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#exhibition-histories",
+      "name": "Exhibition histories",
+      "termCode": "exhibition-histories",
+      "description": "Historical study of exhibitions, their events, and their documentary traces.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#documentation",
+      "name": "Documentation",
+      "termCode": "documentation",
+      "description": "The recording and preservation of information about art, events, or practices.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    }
+  ]
+}

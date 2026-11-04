@@ -1,0 +1,74 @@
+{
+  "profile_id": "moo-description-policy-1.0",
+  "version": "1.0",
+  "effective_date": "2026-11-04",
+  "catalogue_snapshot_date": "2026-11-04",
+  "responsible_service": {
+    "name": "Museum of One",
+    "service": "Museum of One Digital Archive Library",
+    "website": "https://www.museumofone.art/",
+    "email": "research@museumofone.art"
+  },
+  "description_method": "Source-based description with automated drafting and metadata assistance. Responsibility for the public catalogue rests with Museum of One; automated assistance does not constitute independent scholarly or curatorial review.",
+  "sections": [
+    {
+      "id": "scope",
+      "title": "Collecting scope and selection",
+      "paragraphs": [
+        "The current catalogue describes a selected published corpus associated with Museum of One: books, criticism, essays, research and related publication materials. Selection prioritises an identifiable public source, a stable work or version identifier, an evidenced institutional relationship and sufficient information to describe access and reuse.",
+        "These are library and repository publications described at item level. The current selection is not a complete institutional archive, an original fonds or a recovered export of the former Omeka catalogue. Inclusion records a research relationship; it does not imply endorsement, an acquisition agreement or physical ownership.",
+        "Future collecting directions may include born-digital research records, exhibition documentation, correspondence, audiovisual material and other primary records. These categories are a scope for future appraisal, not a statement that such holdings are currently present. Each new type requires its own source, rights, access and contextual description before publication."
+      ]
+    },
+    {
+      "id": "description",
+      "title": "Description profile and responsibility",
+      "paragraphs": [
+        "Museum of One is the responsible service for the Digital Archive Library. Descriptions distinguish identity, dates, extent, medium, creators and roles, scope and content, arrangement, sources, rights, access and related material. Stable MOO-CAT references identify local catalogue entries; they are not inherited Omeka accession numbers or evidence of a transfer of custody.",
+        "The description profile uses source-qualified bibliographic and archival fields, Dublin Core exports and Schema.org linked data where supported. It draws on archival principles of provenance, context and levels of description; no certification, formal standards audit or equivalence to another institution is claimed.",
+        "Source publication dates retain their documented precision. Publication, deposit, source modification, file verification and catalogue revision dates are separate events. Missing dates, unverified identifiers and uncertain relationships remain explicitly qualified; they are not completed by inference.",
+        "Local editorial subjects and browsing groupings are identified as local concepts. External vocabulary identifiers are attached only when an evidenced match has been recorded. A related-entity link expresses the stated relationship, not identity or authorship unless the source supports that assertion.",
+        "Source-based description uses automated drafting and metadata assistance. This is disclosed in each record's description history. Responsibility remains with Museum of One; the history does not imply that an independent curator or scholar has reviewed the record."
+      ]
+    },
+    {
+      "id": "sources",
+      "title": "Sources, corroboration and original context",
+      "paragraphs": [
+        "Zenodo deposit metadata and deposited files are the primary sources for the selected publications. Museum of One work pages provide institutional corroboration and research-programme context. The catalogue preserves source titles, identifiers and source snapshots alongside qualified local description; disagreement between sources is recorded rather than silently resolved.",
+        "A local digital reading copy is an access copy of the identified deposited file. Its manifest records the source URL, original filename, byte extent, checksums and verification date. Source metadata retrieval dates and local file verification dates are stated separately. The repository remains the source of record for the deposited version.",
+        "The three current browsing groupings are a local editorial arrangement, not an original order, archival series or repository collection. No donation, physical transfer, chain of custody or ownership of originals is inferred from public online availability.",
+        "For any future primary archival material, description must retain the creating person or body, documented custodial history, transfer or acquisition basis where known, original grouping and order where evidenced, restrictions and links to related records. Unknown custody or order must remain unknown. Contextual relationships must not be replaced by the library publication arrangement."
+      ]
+    },
+    {
+      "id": "revisions",
+      "title": "Revisions and corrections",
+      "paragraphs": [
+        "Each record carries a dated description history for the recorded stages of this catalogue: source-based description, qualified enrichment, verified access copies where available, and adoption of the description policy. Existing history entries are retained when a new revision is added. The displayed snapshot date identifies a catalogue release, not a live connection to Zenodo.",
+        "Corrections should identify the local reference code or DOI, the disputed field, the proposed wording and supporting evidence. Send them to the public research contact. Museum of One can amend a local description and record the reason and date; changes to a Zenodo deposit or another source remain the responsibility of that source's record owner.",
+        "No guaranteed response time, peer-review process or automatic synchronisation is implied. A correction request is an email to the responsible service, not an automated ticket or a successful submission until it has been sent."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "Rights, reading access and reuse",
+      "paragraphs": [
+        "Access copies support reading in the archive and direct PDF access. Each record identifies the rights statement or licence supplied for that work or deposited edition. A publication licence does not automatically clear separately credited images, correspondence or other third-party material inside it.",
+        "Citation and metadata downloads assist research; they do not grant permissions beyond the applicable licence. When rights are unclear, consult the source record and rights holder before reuse. The archive does not assert blanket ownership of the publications or authority to license third-party work.",
+        "A measured checksum establishes the tested file's identity at the stated verification date. It does not by itself establish archival preservation certification, continuous monitoring or a particular independent backup schedule. Any implemented stewardship controls are described separately with their evidence."
+      ]
+    },
+    {
+      "id": "ethics",
+      "title": "Personal records, consent and sensitive material",
+      "paragraphs": [
+        "The current catalogue publishes selected material already deposited for public access. Public availability alone is not a sufficient basis to publish private correspondence, personal information or newly received unpublished records.",
+        "Before future primary records are made public, the responsible service must document the basis for access and reuse, examine privacy, copyright, consent and potential harm, and record restrictions or redactions with their reasons. A correspondent's identity and a donor's permission do not automatically establish the consent or rights of every person represented.",
+        "Requests concerning inaccurate personal information, sensitive material, rights or access restrictions can be sent to the research contact with the record reference and reason. Do not send confidential documents in an initial enquiry. Proposed deposits require a separate agreement; the public email link is not a deposit or transfer mechanism."
+      ]
+    }
+  ],
+  "catalogue_record_count": 16,
+  "description_histories_url": "https://archive.museumofone.art/metadata/description-history.json"
+}

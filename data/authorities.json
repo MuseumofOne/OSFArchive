@@ -1,0 +1,223 @@
+{
+  "checked_at": "2026-11-04",
+  "scope": "Public source verification for Museum of One archive. External records do not establish affiliation, peer review, accreditation or endorsement.",
+  "author": {
+    "preferred_name": "Dorian Vale",
+    "identifier": {
+      "scheme": "ORCID",
+      "value": "0009-0004-7737-5094",
+      "url": "https://orcid.org/0009-0004-7737-5094",
+      "status": "corroborated_by_institutional_and_repository_sources",
+      "evidence_urls": [
+        "https://www.museumofone.art/archives-scholarly-infrastructure/",
+        "https://eprints.rclis.org/47182/"
+      ],
+      "access_note": "ORCID landing page resolves but requires JavaScript; public ORCID API profile not inspected."
+    },
+    "isni": {
+      "status": "unresolved_conflict",
+      "values": [
+        "0000000528819744",
+        "0000000537155247"
+      ],
+      "note": "Different institutional/repository pages cite conflicting author ISNI values. Do not assert either as independently verified or sameAs."
+    }
+  },
+  "serial": {
+    "title": "Post-interpretive criticism",
+    "institutional_title": "The Journal of Post-Interpretive Criticism",
+    "issn": "2819-7232",
+    "issn_l": "2819-7232",
+    "medium": "Online",
+    "country": "Canada",
+    "url": "https://portal.issn.org/resource/ISSN/2819-7232",
+    "status": "independent_authority_record_metadata_observed_in_search_index",
+    "evidence": {
+      "key_title": "Post-interpretive criticism",
+      "record_status": "Confirmed record",
+      "responsible_issn_centre": "Canada",
+      "last_modified": "2025/10/29",
+      "note": "Search-indexed ISSN Portal record observed; direct fetch encountered bot protection."
+    }
+  },
+  "links": [
+    {
+      "title": "Library and Archives Canada",
+      "url": "https://www.canada.ca/en/library-archives.html",
+      "kind": "institution_directory",
+      "scope": "General LAC services",
+      "status": "verified_homepage",
+      "note": "A general institutional link; not an item-level holdings record. Official homepage reports Collection Search technical issues as of 2026-10-29."
+    },
+    {
+      "title": "LAC web archive — Museum of One",
+      "url": "https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art",
+      "kind": "web_archive_index",
+      "scope": "Institutional website, not individual deposited books",
+      "status": "institutional_source_link_not_independently_inspectable",
+      "evidence_url": "https://www.museumofone.art/research-discovery-and-archive-sources/",
+      "note": "LAC host returned rate-limit page; do not assert a specific capture or comprehensive holdings."
+    },
+    {
+      "title": "Museum of One source directory",
+      "url": "https://www.museumofone.art/research-discovery-and-archive-sources/",
+      "kind": "institutional_source_directory",
+      "status": "verified_page",
+      "scope": "Discovery, catalogue and archive links"
+    },
+    {
+      "title": "Museum of One archives and scholarly infrastructure",
+      "url": "https://www.museumofone.art/archives-scholarly-infrastructure/",
+      "kind": "institutional_source_directory",
+      "status": "verified_page",
+      "scope": "Corpus-level links with explicit distinctions among deposits, identifiers and catalogue records"
+    },
+    {
+      "title": "Post-Interpretive Criticism Zenodo community",
+      "url": "https://zenodo.org/communities/post-interpretive-criticism",
+      "kind": "repository_community",
+      "status": "corroborated_institutional_and_repository_link",
+      "scope": "Repository collection"
+    }
+  ],
+  "works": [
+    {
+      "match_title": "The Foundational Essays",
+      "institutional_url": "https://www.museumofone.art/post-interpretive-criticism-volume-i-foundational-essays/",
+      "isbn": "978-1-0698203-0-3",
+      "isbn_status": "institutional_report_of_title_level_assignment",
+      "edition": "First edition, 2025",
+      "note": "Institution says current PDF 82 pages; repository version 5 April 2026 does not mean new edition. ISBN Canada logbook reports Electronic book; original PDF/EPUB allocation reconciliation pending.",
+      "records": [
+        {
+          "title": "E-LIS repository record",
+          "url": "https://eprints.rclis.org/47182/",
+          "kind": "repository_record",
+          "status": "verified_record",
+          "evidence": "Title, Vale, Dorian, year 2025 and DOI 10.5281/zenodo.17069115 observed. E-LIS labels item Unpublished / In collection while file label says Published version; retain discrepancy. File is deposited by author, not an independent review.",
+          "identifier": "http://hdl.handle.net/10760/47182",
+          "note": "Do not transfer E-LIS licence to a different Zenodo edition."
+        },
+        {
+          "title": "BiblioBoard catalogue access",
+          "url": "https://library.biblioboard.com/content/f8192c42-14a5-4c79-8b38-c16c078f5331",
+          "kind": "catalogue_access",
+          "status": "institutional_link_access_restricted",
+          "note": "Institution verifies title; record format, edition and ISBN not inspectable. Landing page only loaded generic shell."
+        }
+      ]
+    },
+    {
+      "match_title": "Essays from the Field",
+      "institutional_url": "https://www.museumofone.art/post-interpretive-criticism-volume-ii-essays-from-the-field/",
+      "isbn": "978-1-0698203-1-0",
+      "isbn_status": "institutional_report_of_title_level_assignment",
+      "edition": "First edition, 2025",
+      "note": "Institution says current PDF 96 pages; repository v2 April 2026 does not mean new edition. ISBN Canada logbook Electronic book; original format-specific allocation pending.",
+      "records": [
+        {
+          "title": "BiblioBoard catalogue access",
+          "url": "https://library.biblioboard.com/content/3df5b09d-767c-4f3a-9adb-7d0c619b55b1",
+          "kind": "catalogue_access",
+          "status": "institutional_link_access_restricted",
+          "note": "Institution verifies title; format, edition and ISBN not independently inspectable."
+        },
+        {
+          "title": "Knowledge Commons repository record",
+          "url": "https://works.hcommons.org/records/9vm5z-cyq62",
+          "kind": "repository_record",
+          "status": "institutional_source_link_not_independently_inspected",
+          "evidence_url": "https://www.museumofone.art/archives-scholarly-infrastructure/"
+        }
+      ]
+    },
+    {
+      "match_title": "Canon of Witnesses",
+      "isbn": "978-1-0698203-2-7",
+      "isbn_status": "repository_metadata_observed_in_search_index",
+      "records": [
+        {
+          "title": "AfricArXiv full metadata",
+          "url": "https://africarxiv.ubuntunet.net/entities/publication/ffc404b3-6222-4439-9ce9-5caec5d423aa/full",
+          "kind": "repository_record",
+          "status": "record_metadata_observed_in_search_index",
+          "evidence": "Title, Museum of One publisher, book type, ISBN 978-1-0698203-2-7 and ISSN 2819-7232 visible in indexed full-metadata record.",
+          "identifier": "https://doi.org/10.60763/africarxiv/10244",
+          "note": "Handle https://africarxiv.ubuntunet.net/handle/1/10502 returned 502 on direct fetch."
+        }
+      ]
+    },
+    {
+      "match_title": "Threads of Sand",
+      "isbn": "978-1-0698203-3-4",
+      "isbn_status": "corroborated_google_books_metadata",
+      "records": [
+        {
+          "title": "Google Books bibliographic record",
+          "url": "https://books.google.com/books/about/Threads_of_Sand_Scar_Scripture_Sudanese.html?hl=en&id=Kr3jEQAAQBAJ&output=html_text",
+          "kind": "bibliographic_record",
+          "status": "record_metadata_observed_in_search_index",
+          "evidence": "Dorian Vale; Museum of One Press, 2026; ISBN 1069820334 / 9781069820334.",
+          "note": "Do not import Google Books subject categories blindly; assess relevance against text."
+        },
+        {
+          "title": "BiblioBoard catalogue access",
+          "url": "https://library.biblioboard.com/content/bb70fe23-bf8d-4963-9a32-be559e7af083",
+          "kind": "catalogue_access",
+          "status": "institutional_link_access_restricted",
+          "evidence_url": "https://www.museumofone.art/research-discovery-and-archive-sources/",
+          "note": "Format, edition and ISBN not independently inspectable."
+        }
+      ]
+    },
+    {
+      "match_title": "The Moral Evidence of Space",
+      "isbn": "978-1-0698203-4-1",
+      "isbn_status": "institutional_publication_record",
+      "institutional_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "records": [
+        {
+          "title": "BiblioBoard catalogue access",
+          "url": "https://library.biblioboard.com/content/fca202e1-3b5b-4ef4-a29c-00127b2bda84",
+          "kind": "catalogue_access",
+          "status": "institutional_link_access_restricted",
+          "evidence_url": "https://www.museumofone.art/research-discovery-and-archive-sources/",
+          "note": "Format, edition and ISBN not independently inspectable."
+        },
+        {
+          "title": "PhilArchive bibliographic record",
+          "url": "https://philarchive.org/rec/VALTME-3",
+          "kind": "repository_record",
+          "status": "record_metadata_observed_in_search_index"
+        }
+      ]
+    }
+  ],
+  "excluded_claims": [
+    {
+      "identifiers": [
+        "OCLC 1412305300",
+        "OCLC 1412468296"
+      ],
+      "reason": "Only institutional assertions found; WorldCat records inaccessible and title matches could not be independently checked. Do not present as verified OCLC authority records."
+    },
+    {
+      "claim": "Held / preserved by LAC for every publication",
+      "reason": "No item-level LAC catalogue holding verified. LAC general link and website archive index have different scopes."
+    },
+    {
+      "claim": "ROR registration",
+      "reason": "Institutional page says pending; no ROR identifier verified."
+    }
+  ],
+  "schema_recommendations": [
+    "Separate Work, Edition/Version, Digital File, Repository Record, and local Catalogue Record entities. Give each a stable URI; do not use the catalogue URL as DOI identity.",
+    "Keep a per-field assertion object {value, source_url, retrieved_at, status, note}; preserve original source values and label catalogue-editor additions.",
+    "Export Dublin Core Terms: title, alternative, creator, contributor, issued, modified, identifier, bibliographicCitation, publisher, language, type, format, extent, subject, spatial, temporal, rights, license, source, relation, isVersionOf, hasVersion, isPartOf.",
+    "Use schema.org Book / ScholarlyArticle for the actual work, CreativeWork for the local catalogue record, Person for creator, Organization for publisher and Periodical for serial. Set mainEntityOfPage and subjectOf deliberately; do not equate every link with sameAs.",
+    "Represent DOI, ISBN, ISSN, ORCID as scoped identifiers. Attach serial ISSN to Periodical; edition ISBN to Book; version DOI to that deposited version. URI-normalize ORCID and DOI.",
+    "Use provenance fields in JSON export and human-readable Sources & Catalogue Notes; keep local subject groupings distinct from source keywords. Do not claim LCSH / Getty AAT controlled terms until labels and URIs verified.",
+    "Treat web-page publication dates, book first-edition year, Zenodo publication date and deposit creation/modified timestamps as distinct fields.",
+    "Show exact verified external records as bibliographic links; general search links or inaccessible records must be labelled separately. Preserve original rights per version and third-party image rights."
+  ]
+}

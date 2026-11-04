@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='utf-8'?>
+<cat:record xmlns:cat="urn:museum-of-one:catalogue:metadata:1:" xmlns:dcterms="http://purl.org/dc/terms/" profile="qualified-dublin-core-with-catalogue-provenance" version="1">
+  <dcterms:title cat:origin="catalogue_display">Diagnostics Without Possession: An Operational Manual for Post-Interpretive Criticism (Operational reference for inter-rater reliability)</dcterms:title>
+  <dcterms:creator cat:origin="institutional_responsibility">Dorian Vale</dcterms:creator>
+  <dcterms:publisher cat:origin="institutional_context">Museum of One</dcterms:publisher>
+  <dcterms:issued cat:origin="repository_publication_date">2026-02-09</dcterms:issued>
+  <dcterms:created cat:origin="repository_record_creation">2026-05-09T19:04:52.528705+00:00</dcterms:created>
+  <dcterms:modified cat:origin="repository_record_modification">2026-05-09T19:04:52.862725+00:00</dcterms:modified>
+  <dcterms:identifier cat:origin="repository_version">https://doi.org/10.5281/zenodo.20100136</dcterms:identifier>
+  <dcterms:identifier cat:origin="local_catalogue">MOO-CAT-011</dcterms:identifier>
+  <dcterms:source cat:origin="repository_record">https://zenodo.org/records/20100136</dcterms:source>
+  <dcterms:references cat:origin="institutional_corroboration">https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/</dcterms:references>
+  <dcterms:isVersionOf cat:origin="repository_version_family">https://doi.org/10.5281/zenodo.20099594</dcterms:isVersionOf>
+  <dcterms:type cat:origin="catalogue_resource_type">Dataset</dcterms:type>
+  <dcterms:description cat:origin="editorial_summary">An operational manual for applying the diagnostic indices of Post-Interpretive Criticism across coding, comparative study, and self-audit. Procedures for testing agreement are distinct from completed reliability findings.</dcterms:description>
+  <dcterms:subject cat:origin="editorial_local_vocabulary">Research methods</dcterms:subject>
+  <dcterms:subject cat:origin="editorial_local_vocabulary">Critical language</dcterms:subject>
+  <dcterms:subject cat:origin="editorial_local_vocabulary">Coding procedures</dcterms:subject>
+  <dcterms:subject cat:origin="editorial_local_vocabulary">Inter-rater reliability</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Post-Interpretive Criticism</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Stillmark Theory</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Message-Transfer Theory</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Aesthetic Displacement Theory</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Theory of Misplacement</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Absential Aesthetics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Witness Aesthetics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Hauntmark Theory</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Presence-Based Criticism</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Custodianship of Art</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Art as Ontology</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Aesthetic Recursion Theory</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Aesthetic Recursion</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Viewer as Evidence Theory</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Interpretive Load Index (ILI)</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Viewer Displacement Ratio (VDR)</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Ethical Proximity Score (EPS)</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Institutional Alignment Indicator (IAI)</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Epoché Fidelity Index (EFI)</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Phenomenological Phase Alignment Score (PPAS)</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Residue Engagement Restraint Ratio (RERR)</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Quasi-Subject Agency Recognition Index (QSARI)</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Dialectical Circulation Index (DCI)</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Restraint in front of art</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Moral proximity</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Interpretive silence</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Erasure as ethics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Temporal scarcity</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Silence as method</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Ontology of beauty</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Aesthetic mercy</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Language as violence</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Art encounter ethics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Epistemology of witness</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Philosophy of Art</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Aesthetics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Art TheoryContemporary Aesthetics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Comparative Aesthetics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Phenomenology and Art</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Aesthetic Phenomenology</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Phenomenology</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Phenomenology of Aesthetic</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">post-hermeneutics phenomenology</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Ethics in Art Criticism</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Interpretation and Meaning</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Criticism and Reception Theory</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Epistemology of Art</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Visual Culture Studies</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Dorian Vale</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Founder of Post-Interpretive Criticism</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Post-Aesthetic Critic</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Independent Philosopher of Art</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Museum of One</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Art Writer and Theorist</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Aesthetic Philosopher</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Custodian of Witness Aesthetics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">The Doctrine of Post-Interpretive Criticism</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">The Custodian's Oath</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">The Canon of Witnesses</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Art as Truth</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Art as Presence</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">The Viewer as Evidence</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Interpretation vs. Witnessing</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Language as Custody</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Erasure as Afterlife</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Museum of One Manifesto</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Post-Interpretive Lexicon</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Alternative art criticism</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">New art criticism movement</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Ethical art theory</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Criticism beyond interpretation</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">\Slow looking philosophy</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Quiet philosophy of art</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Radical art restraint</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Interpretive Restraint</dcterms:subject>
+  <dcterms:license cat:origin="repository_edition_licence">https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+  <dcterms:extent cat:origin="derived_repository_file_metadata">1 digital file; 525965 bytes</dcterms:extent>
+  <dcterms:format cat:origin="source_or_inferred_file_format">application/pdf</dcterms:format>
+  <dcterms:medium cat:origin="derived_digital_medium">Digital document</dcterms:medium>
+  <dcterms:relation cat:origin="institutional_research_context">https://www.museumofone.art/research-methods/</dcterms:relation>
+  <dcterms:hasFormat cat:origin="repository_file">https://zenodo.org/api/records/20100136/files/Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/content</dcterms:hasFormat>
+  <dcterms:relation cat:origin="source_qualified_entity_relationship">Dorian Vale [author]</dcterms:relation>
+  <dcterms:relation cat:origin="source_qualified_entity_relationship">Museum of One [publisher]</dcterms:relation>
+  <dcterms:subject cat:origin="maintained_local_controlled_vocabulary">https://archive.museumofone.art/vocabulary.html#research-methods</dcterms:subject>
+  <dcterms:subject cat:origin="maintained_local_controlled_vocabulary">https://archive.museumofone.art/vocabulary.html#critical-language</dcterms:subject>
+  <dcterms:subject cat:origin="maintained_local_controlled_vocabulary">https://archive.museumofone.art/vocabulary.html#coding-procedures</dcterms:subject>
+  <dcterms:subject cat:origin="maintained_local_controlled_vocabulary">https://archive.museumofone.art/vocabulary.html#inter-rater-reliability</dcterms:subject>
+  <dcterms:relation cat:origin="source_relation">https://www.museumofone.art</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://zenodo.org/communities/post-interpretive-criticism</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://osf.io/zhnre/</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://works.hcommons.org/records/xv2j2-g6927</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://philpapers.org/rec/VALPCF-2</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://www.semanticscholar.org/author/Dorian-Vale/2380743266</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://www.researchcatalogue.net/profile</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://archive.org/details/the-journal-of-post-interpretive-criticism-vi</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://scholar.google.com/citations?user=15tvhjAAAAAJ</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://independent.academia.edu/DorianVale</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://www.zotero.org/groups/6279725/post-interpretive-criticism</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://core.ac.uk/search/?q=post-interpretive+criticism+dorian+vale</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://www.base-search.net/Search/Results?lookfor=Post-Interpretive+Criticism</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://commons.datacite.org/?query=Post-Interpretive+Criticism</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://openalex.org/works?filter=title_and_abstract.search:Post-Interpretive+Criticism+Dorian+Vale</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art</dcterms:relation>
+  <dcterms:provenance>Repository metadata, institutional publication context, and catalogue-editor enrichment are distinguished below. Repository dates are not assertions of first publication; repository version labels do not establish new book editions.</dcterms:provenance>
+  <cat:assertions>
+    <cat:assertion field="title" status="catalogue_title">
+      <cat:value>Diagnostics Without Possession: An Operational Manual for Post-Interpretive Criticism (Operational reference for inter-rater reliability)</cat:value>
+      <cat:source_url>https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/</cat:source_url>
+      <cat:note>Local display title; the deposited title is retained separately.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="source_title" status="source_transcription">
+      <cat:value>Diagnostics Without Possession: An Operational Manual for Post-Interpretive Criticism (Operational reference for inter-rater reliability)</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="doi" status="source_transcription">
+      <cat:value>10.5281/zenodo.20100136</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="date" status="source_transcription">
+      <cat:value>2026-02-09</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="conceptdoi" status="source_transcription">
+      <cat:value>10.5281/zenodo.20099594</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="creators" status="source_transcription">
+      <cat:value>[{"name": "Vale, Dorian", "affiliation": "Museum of One", "orcid": "0009-0004-7737-5094"}, {"name": "Museum of One", "affiliation": null}]</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="keywords" status="source_transcription">
+      <cat:value>["Post-Interpretive Criticism", "Stillmark Theory", "Message-Transfer Theory", "Aesthetic Displacement Theory", "Theory of Misplacement", "Absential Aesthetics", "Witness Aesthetics", "Hauntmark Theory", "Presence-Based Criticism", "Custodianship of Art", "Art as Ontology", "Aesthetic Recursion Theory", "Aesthetic Recursion", "Viewer as Evidence Theory", "Interpretive Load Index (ILI)", "Viewer Displacement Ratio (VDR)", "Ethical Proximity Score (EPS)", "Institutional Alignment Indicator (IAI)", "Epoché Fidelity Index (EFI)", "Phenomenological Phase Alignment Score (PPAS)", "Residue Engagement Restraint Ratio (RERR)", "Quasi-Subject Agency Recognition Index (QSARI)", "Dialectical Circulation Index (DCI)", "Restraint in front of art", "Moral proximity", "Interpretive silence", "Erasure as ethics", "Temporal scarcity", "Silence as method", "Ontology of beauty", "Aesthetic mercy", "Language as violence", "Art encounter ethics", "Epistemology of witness", "Philosophy of Art", "Aesthetics", "Art TheoryContemporary Aesthetics", "Comparative Aesthetics", "Phenomenology and Art", "Aesthetic Phenomenology", "Phenomenology", "Phenomenology of Aesthetic", "post-hermeneutics phenomenology", "Ethics in Art Criticism", "Interpretation and Meaning", "Criticism and Reception Theory", "Epistemology of Art", "Visual Culture Studies", "Dorian Vale", "Founder of Post-Interpretive Criticism", "Post-Aesthetic Critic", "Independent Philosopher of Art", "Museum of One", "Art Writer and Theorist", "Aesthetic Philosopher", "Custodian of Witness Aesthetics", "The Doctrine of Post-Interpretive Criticism", "The Custodian's Oath", "The Canon of Witnesses", "Art as Truth", "Art as Presence", "The Viewer as Evidence", "Interpretation vs. Witnessing", "Language as Custody", "Erasure as Afterlife", "Museum of One Manifesto", "Post-Interpretive Lexicon", "Alternative art criticism", "New art criticism movement", "Ethical art theory", "Criticism beyond interpretation", "\\Slow looking philosophy", "Quiet philosophy of art", "Radical art restraint", "Interpretive Restraint"]</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="license" status="source_transcription">
+      <cat:value>{"label": "Creative Commons Attribution 4.0 International (CC BY 4.0)", "url": "https://creativecommons.org/licenses/by/4.0/"}</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="files" status="source_transcription">
+      <cat:value>[{"name": "Diagnostics Without Possession - An Operational Manual for Post-Interpretive Criticism.pdf", "url": "https://zenodo.org/api/records/20100136/files/Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/content", "size": 525965, "size_label": "514 KB", "checksum": "md5:2dc93b7125bb645e67fba4b0f54696e5", "mimetype": "application/pdf"}]</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="source_created" status="source_transcription">
+      <cat:value>2026-05-09T19:04:52.528705+00:00</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="source_modified" status="source_transcription">
+      <cat:value>2026-05-09T19:04:52.862725+00:00</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="author" status="institutional_context">
+      <cat:value>Dorian Vale</cat:value>
+      <cat:source_url>https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/</cat:source_url>
+      <cat:note>Institutional responsibility statement; original repository creator roles remain separate.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="publisher" status="institutional_context">
+      <cat:value>Museum of One</cat:value>
+      <cat:source_url>https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/</cat:source_url>
+      <cat:note>Institutional responsibility statement; original repository creator roles remain separate.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="orcid" status="source_linked_identifier">
+      <cat:value>0009-0004-7737-5094</cat:value>
+      <cat:source_url>https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/</cat:source_url>
+      <cat:note>Creator identifier supplied by the linked sources; no affiliation or endorsement is inferred.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="summary" status="editorial_enrichment">
+      <cat:value>An operational manual for applying the diagnostic indices of Post-Interpretive Criticism across coding, comparative study, and self-audit. Procedures for testing agreement are distinct from completed reliability findings.</cat:value>
+      <cat:source_url>https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/</cat:source_url>
+      <cat:note>Catalogue-editor summary based on the linked work; not an original publisher abstract.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="subjects" status="editorial_enrichment">
+      <cat:value>["Research methods", "Critical language", "Coding procedures", "Inter-rater reliability"]</cat:value>
+      <cat:source_url>https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/</cat:source_url>
+      <cat:note>Local discovery terms; no controlled-vocabulary assignment is claimed.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="collection" status="editorial_grouping">
+      <cat:value>Theory &amp; treatises</cat:value>
+      <cat:note>A local browsing collection, not an original repository collection.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="corroboration" status="catalogue_review_note">
+      <cat:value>Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. Its repository links and publication dates are retained separately from this selected Zenodo edition. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.</cat:value>
+      <cat:source_url>https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="discrepancies" status="catalogue_review_note">
+      <cat:value>["The repository also lists organizational or URL-form creator entries. The catalogue displays Dorian Vale as bibliographic author while retaining the deposited creator list separately.", "Zenodo classifies this deposited operational manual as a dataset. That repository classification is retained; the editorial collection describes its methodological function."]</cat:value>
+      <cat:source_url>https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="date_precision" status="derived_from_source">
+      <cat:value>day</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:note>Precision reported exactly as supplied; missing month or day is not filled.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="medium" status="derived_from_source">
+      <cat:value>Digital document</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:note>Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="digital_formats" status="derived_from_source">
+      <cat:value>["application/pdf"]</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:note>Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="extent" status="derived_from_source">
+      <cat:value>1 digital file; 525965 bytes</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:note>Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="digital_extent" status="derived_from_source">
+      <cat:value>{"file_count": 1, "total_bytes": 525965, "formats": ["application/pdf"], "checksums": [{"filename": "Diagnostics Without Possession - An Operational Manual for Post-Interpretive Criticism.pdf", "algorithm": "md5", "value": "2dc93b7125bb645e67fba4b0f54696e5", "syntax_valid": true, "verification": "source_checksum_transcription; bytes not independently recomputed"}], "source_url": "https://zenodo.org/records/20100136", "derivation": "File count and total bytes calculated from repository file metadata; MIME inferred from filename when absent."}</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:note>Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="identifier_validation" status="local_syntax_validation">
+      <cat:value>{"orcid": {"source_value": "0009-0004-7737-5094", "checksum_valid": true, "note": "ISO 7064 MOD 11-2 checksum only; this is not a live registry verification."}, "isbn": [{"source_value": "978-1-06-982030-3", "normalized": "9781069820303", "checksum_valid": true, "note": "Checksum validation tests the identifier syntax only; it does not verify assignment, format or edition applicability.", "scope": "source_alternate_identifier; applicability to this item unverified", "source_url": "https://zenodo.org/records/20100136"}, {"source_value": "978-1-06-982031-0", "normalized": "9781069820310", "checksum_valid": true, "note": "Checksum validation tests the identifier syntax only; it does not verify assignment, format or edition applicability.", "scope": "source_alternate_identifier; applicability to this item unverified", "source_url": "https://zenodo.org/records/20100136"}, {"source_value": "978-1-06-982032-7", "normalized": "9781069820327", "checksum_valid": true, "note": "Checksum validation tests the identifier syntax only; it does not verify assignment, format or edition applicability.", "scope": "source_alternate_identifier; applicability to this item unverified", "source_url": "https://zenodo.org/records/20100136"}], "doi": {"source_value": "10.5281/zenodo.20100136", "syntax_valid": true, "note": "Syntax check only; repository snapshot supplies the identifier."}, "isbn_note": "ISBNs listed in repository alternate identifiers refer to other publications or lack item-level applicability. They are retained as source identifiers, not asserted as this item’s ISBN."}</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:note>Checksum/syntax validation does not verify registration, assignment or edition applicability.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="source_identifiers" status="source_transcription">
+      <cat:value>[{"scheme": "isbn", "value": "978-1-06-982030-3", "scope": "source_alternate_identifier; applicability to this item unverified", "source_url": "https://zenodo.org/records/20100136"}, {"scheme": "isbn", "value": "978-1-06-982031-0", "scope": "source_alternate_identifier; applicability to this item unverified", "source_url": "https://zenodo.org/records/20100136"}, {"scheme": "isbn", "value": "978-1-06-982032-7", "scope": "source_alternate_identifier; applicability to this item unverified", "source_url": "https://zenodo.org/records/20100136"}]</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:note>Retained source identifiers with applicability notes; not automatically identifiers of this item.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="contributor_roles" status="source_transcription">
+      <cat:value>[{"name": "Vale, Dorian", "source_category": "creator", "source_role": null, "role_label": "Creator (role not supplied)", "affiliation_as_supplied": "Museum of One", "source_url": "https://zenodo.org/records/20100136"}, {"name": "Museum of One", "source_category": "creator", "source_role": null, "role_label": "Creator (role not supplied)", "affiliation_as_supplied": null, "source_url": "https://zenodo.org/records/20100136"}]</cat:value>
+      <cat:source_url>https://zenodo.org/records/20100136</cat:source_url>
+      <cat:note>Creator and contributor roles are transcribed, not inferred from names or affiliations.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="research_programme:https://www.museumofone.art/research-methods/" status="institutional_work_relationship">
+      <cat:value>{"title": "Phenomenological Methods and Diagnostic Reading", "url": "https://www.museumofone.art/research-methods/", "status": "Continuing research", "source_url": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/", "relation": "Published operational manual in this programme.", "relation_label": "Published operational manual in this programme."}</cat:value>
+      <cat:source_url>https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/</cat:source_url>
+      <cat:note>Programme relationship and stage follow the work-specific institutional badge; publication does not imply a completed programme or collaboration.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="entity_link:dorian-vale:author" status="institutional_context_relationship">
+      <cat:value>{"id": "dorian-vale", "label": "Dorian Vale", "entity_type": "Person", "relation": "author", "source_url": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/", "note": "The matching institutional publication record credits Dorian Vale as author."}</cat:value>
+      <cat:source_url>https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/</cat:source_url>
+      <cat:note>Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.</cat:note>
+    </cat:assertion>
+    <cat:assertion field="entity_link:museum-of-one:publisher" status="institutional_context_relationship">
+      <cat:value>{"id": "museum-of-one", "label": "Museum of One", "entity_type": "Organization", "relation": "publisher", "source_url": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/", "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."}</cat:value>
+      <cat:source_url>https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/</cat:source_url>
+      <cat:note>Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.</cat:note>
+    </cat:assertion>
+    <cat:assertion field="controlled_subjects" status="editorial_description_control">
+      <cat:value>[{"id": "research-methods", "label": "Research methods", "uri": "https://archive.museumofone.art/vocabulary.html#research-methods", "url": "vocabulary.html#research-methods", "persistent_id": "urn:museum-of-one:vocabulary:research-methods", "scheme": "museum-of-one-discovery-vocabulary", "scheme_version": 4, "alternative_labels": [], "definition": "Procedures for conducting, documenting, or evaluating an inquiry.", "scope_note": "Use for methodological discussion; narrower local terms distinguish coding, agreement, and exploratory study.", "kind": "subject", "broader": [], "narrower": ["coding-procedures", "inter-rater-reliability", "pilot-study"], "related": [], "mapping_status": "not_asserted", "external_mappings": [], "assignment_provenance": {"status": "local_editorial_access_term", "input_field": "subjects", "editorial_owner": "Museum of One Digital Archive Library", "reviewed": "2026-11-04"}}, {"id": "critical-language", "label": "Critical language", "uri": "https://archive.museumofone.art/vocabulary.html#critical-language", "url": "vocabulary.html#critical-language", "persistent_id": "urn:museum-of-one:vocabulary:critical-language", "scheme": "museum-of-one-discovery-vocabulary", "scheme_version": 4, "alternative_labels": [], "definition": "The terms and linguistic choices through which critical claims are made.", "scope_note": "Use for publications examining wording, descriptive authority, restraint, or the circulation of interpretation.", "kind": "subject", "broader": [], "narrower": [], "related": ["art-writing", "museum-cataloguing"], "mapping_status": "not_asserted", "external_mappings": [], "assignment_provenance": {"status": "local_editorial_access_term", "input_field": "subjects", "editorial_owner": "Museum of One Digital Archive Library", "reviewed": "2026-11-04"}}, {"id": "coding-procedures", "label": "Coding procedures", "uri": "https://archive.museumofone.art/vocabulary.html#coding-procedures", "url": "vocabulary.html#coding-procedures", "persistent_id": "urn:museum-of-one:vocabulary:coding-procedures", "scheme": "museum-of-one-discovery-vocabulary", "scheme_version": 4, "alternative_labels": [], "definition": "Documented rules for assigning analytical codes to research material.", "scope_note": "Use for methodological instructions, not as evidence that their reliability has been established.", "kind": "subject", "broader": ["research-methods"], "narrower": [], "related": [], "mapping_status": "not_asserted", "external_mappings": [], "assignment_provenance": {"status": "local_editorial_access_term", "input_field": "subjects", "editorial_owner": "Museum of One Digital Archive Library", "reviewed": "2026-11-04"}}, {"id": "inter-rater-reliability", "label": "Inter-rater reliability", "uri": "https://archive.museumofone.art/vocabulary.html#inter-rater-reliability", "url": "vocabulary.html#inter-rater-reliability", "persistent_id": "urn:museum-of-one:vocabulary:inter-rater-reliability", "scheme": "museum-of-one-discovery-vocabulary", "scheme_version": 4, "alternative_labels": ["Interrater reliability", "Inter rater reliability"], "definition": "Agreement between independent coders applying a shared analytical procedure.", "scope_note": "Use for research methods addressing such agreement. Assignment does not state that independent testing or successful validation has occurred.", "kind": "subject", "broader": ["research-methods"], "narrower": [], "related": [], "mapping_status": "not_asserted", "external_mappings": [], "assignment_provenance": {"status": "local_editorial_access_term", "input_field": "subjects", "editorial_owner": "Museum of One Digital Archive Library", "reviewed": "2026-11-04"}}]</cat:value>
+      <cat:source_url>https://archive.museumofone.art/policies.html</cat:source_url>
+      <cat:note>Local preferred terms with definitions and synonyms. External alignment is scoped in the vocabulary register.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="genre_terms" status="editorial_description_control">
+      <cat:value>[{"id": "genre-dataset", "label": "Dataset", "uri": "https://archive.museumofone.art/vocabulary.html#genre-dataset", "url": "vocabulary.html#genre-dataset", "persistent_id": "urn:museum-of-one:vocabulary:genre-dataset", "scheme": "museum-of-one-discovery-vocabulary", "scheme_version": 4, "alternative_labels": ["Datasets"], "definition": "A deposited body of research data, potentially accompanied by a report.", "scope_note": "Describes the resource genre. This selected deposit includes a PDF report; the label does not promise machine-readable tabular files.", "kind": "genre", "broader": [], "narrower": [], "related": [], "mapping_status": "not_asserted", "external_mappings": [], "assignment_provenance": {"status": "local_editorial_access_term", "input_field": "type", "editorial_owner": "Museum of One Digital Archive Library", "reviewed": "2026-11-04"}}]</cat:value>
+      <cat:source_url>https://archive.museumofone.art/policies.html</cat:source_url>
+      <cat:note>Local resource-genre classification. Digital file format is recorded separately.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="archival_context" status="editorial_description_control">
+      <cat:value>{"description_profile": "moo-description-policy-1.0", "catalogue_snapshot_date": "2026-11-04", "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.", "record_category": "Published library and repository material", "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.", "source_repository": {"name": "Zenodo", "record_url": "https://zenodo.org/records/20100136"}, "institutional_context_url": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/", "source_metadata_retrieved": "2026-11-04", "source_metadata_retrieval_status": "Documented in catalogue source provenance", "source_snapshot": "source/20100136.json", "source_filenames": ["Diagnostics Without Possession - An Operational Manual for Post-Interpretive Criticism.pdf"], "selection_basis": "Local descriptive selection of publicly published material; public availability does not establish ownership of originals.", "custodial_history": {"status": "not_documented", "statement": "No donation, physical transfer, acquisition agreement or chain of custody is documented by this catalogue. Zenodo remains the source repository for the deposited version."}, "original_order": {"status": "not_documented", "statement": "No original archival order is asserted. Current browsing groupings are local editorial arrangement."}, "arrangement": {"status": "local_editorial", "grouping": "Theory &amp; treatises", "statement": "A browsing grouping, not an original fonds or archival series."}, "responsible_service": {"name": "Museum of One", "service": "Museum of One Digital Archive Library", "website": "https://www.museumofone.art/", "email": "research@museumofone.art"}, "description_method": "Source-based description with automated drafting and metadata assistance. Responsibility for the public catalogue rests with Museum of One; automated assistance does not constitute independent scholarly or curatorial review.", "policy_url": "policies.html", "correction_email": "research@museumofone.art", "access_copy": {"role": "Local digital reading copy of the deposited file", "source_url": "https://zenodo.org/api/records/20100136/files/Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/content", "source_filename": "Diagnostics Without Possession - An Operational Manual for Post-Interpretive Criticism.pdf", "local_path": "assets/documents/20100136.pdf", "verified_at": "2026-11-04", "source_checksum_match": true, "sha256": "05ae5249a7c8d7cf67cac93ac1fbdf18888800606411312ec5762765353b9c42", "statement": "Access copy only; no ownership or physical custody transfer is implied."}}</cat:value>
+      <cat:source_url>https://archive.museumofone.art/policies.html</cat:source_url>
+      <cat:note>Provenance records what is documented and leaves unknown custody and original order explicit.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="description_history" status="editorial_description_control">
+      <cat:value>[{"responsible_service": "Museum of One", "method": "Source-based automated description assistance", "date_kind": "Catalogue description event; not a publication or acquisition date", "event_id": "public-source-description-2026-11-04", "date": "2026-11-04", "action": "Source-based catalogue description", "note": "Local description assembled from the identified public repository record and available institutional work record. Source metadata remains separately identifiable.", "sources": ["https://zenodo.org/records/20100136", "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/"]}, {"responsible_service": "Museum of One", "method": "Source-based automated description assistance", "date_kind": "Catalogue description event; not a publication or acquisition date", "event_id": "qualified-description-2026-11-04", "date": "2026-11-04", "action": "Qualified descriptive enrichment", "note": "Local editorial description, arrangement and source-qualified bibliographic context recorded alongside source metadata. Unknown or disputed values remain qualified.", "fields": ["summary", "subjects", "collection", "short_title", "accession"], "sources": ["https://zenodo.org/records/20100136", "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/"]}, {"responsible_service": "Museum of One", "method": "Automated file checksum and PDF inspection", "date_kind": "Catalogue description event; not a publication or acquisition date", "event_id": "access-copy-verification-2026-11-04", "date": "2026-11-04", "action": "Digital reading copy verified", "note": "Downloaded access-copy MD5 matched the source checksum; local SHA-256 and PDF file-page count are recorded in the file manifest. This event does not describe transfer of custody.", "sources": ["https://zenodo.org/api/records/20100136/files/Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/content"]}, {"responsible_service": "Museum of One", "method": "Source-based automated description assistance", "date_kind": "Catalogue description event; not a publication or acquisition date", "event_id": "description-policy-1.0-2026-11-04", "date": "2026-11-04", "action": "Description policy and provenance context adopted", "note": "Responsible service, source repository, local access-copy role, unknown custody and original order, correction route and dated description history made explicit under moo-description-policy-1.0.", "sources": ["policies.html"]}]</cat:value>
+      <cat:source_url>https://archive.museumofone.art/policies.html</cat:source_url>
+      <cat:note>Catalogue description events; these are not work publication dates or acquisition dates.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="pirr_references" status="institutional_context_relationship">
+      <cat:value>[{"programme_key": "research-methods", "programme_title": "Phenomenological Methods and Diagnostic Reading", "programme_url": "https://www.museumofone.art/research-methods/", "programme_stage": "Continuing research", "registry_url": "research-registry.html#research-methods", "identifiers": [{"scheme": "PIRR project ID", "value": "pir-prj-pyp5yx3w", "source_url": "https://www.museumofone.art/research-methods/#programme-record"}], "relation": "Published operational manual in this programme.", "relation_note": "Published operational manual in this programme.", "source_url": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/"}]</cat:value>
+      <cat:source_url>https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/</cat:source_url>
+      <cat:note>PIRR project IDs and programme references identify research records, not publication versions or independent chapter deposits.</cat:note>
+    </cat:assertion>
+    <cat:assertion field="reading_copy" status="derived_file_inspection">
+      <cat:value>{"id": "20100136", "title": "Diagnostics Without Possession: An Operational Manual for Post-Interpretive Criticism (Operational reference for inter-rater reliability)", "accession": "MOO-CAT-011", "pdf_url": "../assets/documents/20100136.pdf", "source_url": "https://zenodo.org/api/records/20100136/files/Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/content", "zenodo_url": "https://zenodo.org/records/20100136", "source_filename": "Diagnostics Without Possession - An Operational Manual for Post-Interpretive Criticism.pdf", "checksum": "md5:2dc93b7125bb645e67fba4b0f54696e5", "sha256": "05ae5249a7c8d7cf67cac93ac1fbdf18888800606411312ec5762765353b9c42", "bytes": 525965, "page_count": 30, "verified_at": "2026-11-04", "checksum_match": true, "rights": {"label": "Creative Commons Attribution 4.0 International (CC BY 4.0)", "url": "https://creativecommons.org/licenses/by/4.0/"}, "role": "Local reading copy; original repository file retained unchanged"}</cat:value>
+      <cat:source_url>https://zenodo.org/api/records/20100136/files/Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/content</cat:source_url>
+      <cat:note>Byte-identical local access copy. Source MD5 was recomputed and matched; SHA-256 and page count were measured from the downloaded PDF. This is not a preservation-deposit claim.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="page_count" status="derived_file_inspection">
+      <cat:value>30</cat:value>
+      <cat:source_url>https://zenodo.org/api/records/20100136/files/Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/content</cat:source_url>
+      <cat:note>Total PDF file pages measured from the deposited file, including cover and unnumbered pages. Not a claim about printed pagination.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+  </cat:assertions>
+</cat:record>

@@ -1,0 +1,20 @@
+{
+  "id": "20100139",
+  "title": "A Quantitative Analysis of Critical Posture in Art Writing, 1980-2025 (Dataset - 20 Critical Texts 1980–2025) v.2",
+  "accession": "MOO-CAT-012",
+  "pdf_url": "../assets/documents/20100139.pdf",
+  "source_url": "https://zenodo.org/api/records/20100139/files/A%20Quantitative%20Analysis%20of%20Critical%20Posture%20in%20Art%20Writing,%201981%E2%80%932025%20(v.2).pdf/content",
+  "zenodo_url": "https://zenodo.org/records/20100139",
+  "source_filename": "A Quantitative Analysis of Critical Posture in Art Writing, 1981–2025 (v.2).pdf",
+  "checksum": "md5:10d88e31592df0f1a2470ec95b96bb1c",
+  "sha256": "223c4cf7b6d70c207c37d38df3165b553eb589743cc5ad6d658c7a1c49412c92",
+  "bytes": 506516,
+  "page_count": 45,
+  "verified_at": "2026-11-04",
+  "checksum_match": true,
+  "rights": {
+    "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "role": "Local reading copy; original repository file retained unchanged"
+}

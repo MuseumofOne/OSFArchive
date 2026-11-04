@@ -1,0 +1,381 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://archive.museumofone.art/#website",
+      "name": "Museum of One Digital Archive Library",
+      "url": "https://archive.museumofone.art/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://archive.museumofone.art/items/20100139.html#webpage",
+      "url": "https://archive.museumofone.art/items/20100139.html",
+      "name": "A Quantitative Analysis of Critical Posture in Art Writing, 1980-2025 (Dataset - 20 Critical Texts 1980–2025) v.2",
+      "isPartOf": {
+        "@id": "https://archive.museumofone.art/#website"
+      },
+      "mainEntity": {
+        "@id": "https://archive.museumofone.art/items/20100139.html#catalogue-record"
+      },
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.20100139"
+      },
+      "breadcrumb": {
+        "@id": "https://archive.museumofone.art/items/20100139.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/20100139.html#catalogue-record",
+      "name": "A Quantitative Analysis of Critical Posture in Art Writing, 1980-2025 (Dataset - 20 Critical Texts 1980–2025) v.2",
+      "url": "https://archive.museumofone.art/items/20100139.html",
+      "mainEntityOfPage": {
+        "@id": "https://archive.museumofone.art/items/20100139.html#webpage"
+      },
+      "about": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20100139"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#art-criticism"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#research-methods"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#critical-language"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#pilot-study"
+        }
+      ],
+      "disambiguatingDescription": "Local catalogue record describing a deposited publication version.",
+      "description": "A deposited dataset and report examining twenty critical texts through five diagnostic indices. The institutional tools page characterizes the associated work as a single-coder pilot, rather than independent validation.",
+      "keywords": [
+        "Art criticism",
+        "Research methods",
+        "Critical language",
+        "Pilot study"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Local catalogue identifier",
+        "value": "MOO-CAT-012"
+      },
+      "dateModified": "2026-11-04",
+      "isBasedOn": [
+        {
+          "@id": "https://zenodo.org/records/20100139"
+        },
+        {
+          "@id": "https://www.museumofone.art/a-quantitative-analysis-of-critical-posture-in-art-writing-1980-2025-dataset-20-critical-texts-1980-2025/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "name": "Dorian Vale",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0004-7737-5094"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/#publisher",
+      "name": "Museum of One",
+      "url": "https://www.museumofone.art/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.18205642",
+      "name": "A Quantitative Analysis of Critical Posture in Art Writing, 1980-2025 (Dataset - 20 Critical Texts 1980–2025) v.2 — version family",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Zenodo concept DOI",
+        "value": "10.5281/zenodo.18205642"
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.20100139"
+      }
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/items/20100139.html#file-1",
+      "contentUrl": "https://zenodo.org/api/records/20100139/files/A%20Quantitative%20Analysis%20of%20Critical%20Posture%20in%20Art%20Writing,%201981%E2%80%932025%20(v.2).pdf/content",
+      "name": "A Quantitative Analysis of Critical Posture in Art Writing, 1981–2025 (v.2).pdf",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.20100139"
+      },
+      "encodingFormat": "application/pdf",
+      "contentSize": "506516 bytes",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source checksum",
+        "value": "md5:10d88e31592df0f1a2470ec95b96bb1c"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://archive.museumofone.art/items/20100139.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Digital Archive Library",
+          "item": "https://archive.museumofone.art/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Catalogue",
+          "item": "https://archive.museumofone.art/catalogue.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MOO-CAT-012",
+          "item": "https://archive.museumofone.art/items/20100139.html"
+        }
+      ]
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/assets/documents/20100139.pdf",
+      "contentUrl": "https://archive.museumofone.art/assets/documents/20100139.pdf",
+      "name": "Verified reading copy of A Quantitative Analysis of Critical Posture in Art Writing, 1980-2025 (Dataset - 20 Critical Texts 1980–2025) v.2",
+      "encodingFormat": "application/pdf",
+      "contentSize": "506516 bytes",
+      "description": "45 PDF file pages, including covers and unnumbered pages. Byte-identical local access copy; source checksum matched 2026-11-04.",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.20100139"
+      },
+      "isBasedOn": {
+        "@id": "https://archive.museumofone.art/items/20100139.html#file-1"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256 of local reading copy",
+        "value": "223c4cf7b6d70c207c37d38df3165b553eb589743cc5ad6d658c7a1c49412c92"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://doi.org/10.5281/zenodo.20100139",
+      "name": "A Quantitative Analysis of Critical Posture in Art Writing, 1980-2025 (Dataset - 20 Critical Texts 1980–2025) v.2",
+      "mainEntityOfPage": {
+        "@id": "https://zenodo.org/records/20100139"
+      },
+      "url": "https://zenodo.org/records/20100139",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.20100139"
+      },
+      "datePublished": "2026-02-09",
+      "keywords": [
+        "Post-Interpretive Criticism",
+        "Stillmark Theory",
+        "Message-Transfer Theory",
+        "MTT",
+        "Misplacement",
+        "Displacement",
+        "Aesthetic Displacement Theory",
+        "Theory of Misplacement",
+        "Absential Aesthetics",
+        "Witness Aesthetics",
+        "Hauntmark Theory",
+        "Presence-Based Criticism",
+        "Custodianship of Art",
+        "Art as Ontology",
+        "Aesthetic Recursion Theory",
+        "Aesthetic Recursion",
+        "Viewer as Evidence Theory",
+        "Interpretive Load Index (ILI)",
+        "Viewer Displacement Ratio (VDR)",
+        "Ethical Proximity Score (EPS)",
+        "Institutional Alignment Indicator (IAI)",
+        "Restraint in front of art",
+        "Moral proximity",
+        "Interpretive silence",
+        "Erasure as ethics",
+        "Temporal scarcity",
+        "Silence as method",
+        "Ontology of beauty",
+        "Aesthetic mercy",
+        "Language as violence",
+        "Art encounter ethics",
+        "Epistemology of witness",
+        "Philosophy of Art",
+        "Aesthetics",
+        "Art Theory",
+        "Contemporary Aesthetics",
+        "Comparative Aesthetics",
+        "Phenomenology and Art",
+        "Ethics in Art Criticism",
+        "Interpretation and Meaning",
+        "Criticism and Reception Theory",
+        "Epistemology of Art",
+        "Visual Culture Studies",
+        "Dorian Vale",
+        "Founder of Post-Interpretive Criticism",
+        "Post-Aesthetic Critic",
+        "Independent Philosopher of Art",
+        "Museum of One",
+        "Art Writer and Theorist",
+        "Aesthetic Philosopher",
+        "Custodian of Witness Aesthetics",
+        "The Doctrine of Post-Interpretive Criticism",
+        "The Custodian's Oath",
+        "The Canon of Witnesses",
+        "Art as Truth",
+        "Art as Presence",
+        "The Viewer as Evidence",
+        "Interpretation vs. Witnessing",
+        "Language as Custody",
+        "Erasure as Afterlife",
+        "Museum of One Manifesto",
+        "Post-Interpretive Lexicon",
+        "Alternative art criticism",
+        "New art criticism movement",
+        "Criticism beyond interpretation",
+        "Ethical art theory",
+        "Slow looking philosophy",
+        "Contemporary sacred aesthetics",
+        "Quiet philosophy of art",
+        "Radical art restraint",
+        "Witness over interpretation",
+        "Interpretive Restraint",
+        "This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and _Art as Truth: A Treatise_ (Q136329071), _Aesthetic Recursion Theory_ (Q136339843), The Journal of Post-Interpretive Criticism (Q136530009), Canon of Witnesses (Q136565881),Interpretive Load Index (ILI) (Q137709526), Viewer Displacement Ratio (VDR) (Q137709583) , Ethical Proximity Score (EPS) (Q137709600) , Institutional Alignment Indicator (IAI) (Q137709608), Post-Hermeneutic Phenomenology (Q137711946)"
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0004-7737-5094"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/#publisher"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "exampleOfWork": {
+        "@id": "https://doi.org/10.5281/zenodo.18205642"
+      },
+      "encoding": [
+        {
+          "@id": "https://archive.museumofone.art/items/20100139.html#file-1"
+        },
+        {
+          "@id": "https://archive.museumofone.art/assets/documents/20100139.pdf"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zenodo.org/records/20100139",
+      "name": "Zenodo deposited-version record",
+      "mainEntity": {
+        "@id": "https://doi.org/10.5281/zenodo.20100139"
+      },
+      "publisher": {
+        "@id": "https://zenodo.org/#repository"
+      },
+      "dateCreated": "2026-05-09T19:05:37.382757+00:00",
+      "dateModified": "2026-10-22T19:57:04.870933+00:00"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zenodo.org/#repository",
+      "name": "Zenodo",
+      "url": "https://zenodo.org/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/a-quantitative-analysis-of-critical-posture-in-art-writing-1980-2025-dataset-20-critical-texts-1980-2025/",
+      "name": "Museum of One institutional publication context",
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.20100139"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/20100139.html#relationship-dorian-vale-author",
+      "name": "author",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/a-quantitative-analysis-of-critical-posture-in-art-writing-1980-2025-dataset-20-critical-texts-1980-2025/"
+      },
+      "description": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/20100139.html#relationship-museum-of-one-publisher",
+      "name": "publisher",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/a-quantitative-analysis-of-critical-posture-in-art-writing-1980-2025-dataset-20-critical-texts-1980-2025/"
+      },
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://archive.museumofone.art/vocabulary.html",
+      "name": "Museum of One local editorial discovery vocabulary",
+      "url": "https://archive.museumofone.art/vocabulary.html",
+      "description": "Published preferred labels, definitions, alternative labels and qualified external mappings."
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#art-criticism",
+      "name": "Art criticism",
+      "termCode": "art-criticism",
+      "description": "Critical examination and discussion of artworks and encounters with art.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#research-methods",
+      "name": "Research methods",
+      "termCode": "research-methods",
+      "description": "Procedures for conducting, documenting, or evaluating an inquiry.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#critical-language",
+      "name": "Critical language",
+      "termCode": "critical-language",
+      "description": "The terms and linguistic choices through which critical claims are made.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#pilot-study",
+      "name": "Pilot study",
+      "termCode": "pilot-study",
+      "description": "An exploratory study used to investigate a research approach on a limited sample.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    }
+  ]
+}

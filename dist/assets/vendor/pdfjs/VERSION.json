@@ -1,0 +1,7 @@
+{
+  "package": "pdfjs-dist",
+  "version": "6.5.438",
+  "license": "Apache-2.0",
+  "source": "https://registry.npmjs.org/pdfjs-dist/-/pdfjs-dist-6.5.438.tgz",
+  "build": "legacy/build"
+}

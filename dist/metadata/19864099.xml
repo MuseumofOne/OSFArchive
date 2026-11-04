@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='utf-8'?>
+<cat:record xmlns:cat="urn:museum-of-one:catalogue:metadata:1:" xmlns:dcterms="http://purl.org/dc/terms/" profile="qualified-dublin-core-with-catalogue-provenance" version="1">
+  <dcterms:title cat:origin="catalogue_display">Post-Interpretive Criticism: Volume I - The Foundational Essays</dcterms:title>
+  <dcterms:creator cat:origin="institutional_responsibility">Dorian Vale</dcterms:creator>
+  <dcterms:publisher cat:origin="institutional_context">Museum of One</dcterms:publisher>
+  <dcterms:issued cat:origin="repository_publication_date">2026-04</dcterms:issued>
+  <dcterms:created cat:origin="repository_record_creation">2026-04-28T19:07:18.070464+00:00</dcterms:created>
+  <dcterms:modified cat:origin="repository_record_modification">2026-10-15T14:32:18.509095+00:00</dcterms:modified>
+  <dcterms:identifier cat:origin="repository_version">https://doi.org/10.5281/zenodo.19864099</dcterms:identifier>
+  <dcterms:identifier cat:origin="local_catalogue">MOO-CAT-001</dcterms:identifier>
+  <dcterms:identifier cat:origin="edition_identifier_from_linked_sources">ISBN 978-1-06-982030-3</dcterms:identifier>
+  <dcterms:source cat:origin="repository_record">https://zenodo.org/records/19864099</dcterms:source>
+  <dcterms:references cat:origin="institutional_corroboration">https://www.museumofone.art/publication-foundational-essays/</dcterms:references>
+  <dcterms:isVersionOf cat:origin="repository_version_family">https://doi.org/10.5281/zenodo.17058411</dcterms:isVersionOf>
+  <dcterms:type cat:origin="catalogue_resource_type">Book</dcterms:type>
+  <dcterms:description cat:origin="editorial_summary">Collected foundational writings introducing Post-Interpretive Criticism through doctrines, theoretical propositions, and applications concerned with restraint, presence, and witnessing.</dcterms:description>
+  <dcterms:subject cat:origin="editorial_local_vocabulary">Post-Interpretive Criticism</dcterms:subject>
+  <dcterms:subject cat:origin="editorial_local_vocabulary">Aesthetics</dcterms:subject>
+  <dcterms:subject cat:origin="editorial_local_vocabulary">Art criticism</dcterms:subject>
+  <dcterms:subject cat:origin="editorial_local_vocabulary">Foundational writings</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Post-Interpretive Criticism</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Stillmark Theory</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Absential Aesthetics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Witness Aesthetics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Hauntmark Theory</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Presence-Based Criticism</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Custodianship of Art</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Art as Ontology</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Restraint in front of art</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Moral proximity</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Interpretive silence</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Erasure as ethics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Temporal scarcity</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Silence as method</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Ontology of beauty</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Aesthetic mercy</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Language as violence</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Art encounter ethics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Epistemology of witness</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Philosophy of Art</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Aesthetics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Art Theory</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Contemporary Aesthetics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Phenomenology and Art</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Ethics in Art Criticism</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Interpretation and Meaning</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Criticism and Reception Theory</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Epistemology of Art</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Visual Culture Studies</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Dorian Vale</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Founder of Post-Interpretive Criticism</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Post-Aesthetic Critic</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Independent Philosopher of Art</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Museum of One</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Art Writer and Theorist</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Aesthetic Philosopher</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Custodian of Witness Aesthetics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">The Doctrine of Post-Interpretive Criticism</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">The Custodian's Oath</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">The Canon of Witnesses</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Art as Truth</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Art as Presence</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">The Viewer as Evidence</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Interpretation vs. Witnessing</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Language as Custody</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Erasure as Afterlife</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Museum of One Manifesto</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Post-Interpretive Lexicon</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Alternative art criticism</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">New art criticism movement</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Ethical art theory</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Criticism beyond interpretation</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Quiet philosophy of art</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Radical art restraint</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Witness over interpretation</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Interpretive Restraint</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Aesthetics of Mercy</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Art Criticism Ethics</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Museum Of One</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">https://www.museumofone.art/</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">https://hcommons.org/members/dorianvale/</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">https://philpeople.org/profiles/dorian-vale</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">https://osf.io/xa5jw/</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">https://independent.academia.edu/DorianVale</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">https://figshare.com/authors/Dorian_Vale/22186984</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">osf.io/zhnre</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">https://doi.org/10.5281/zenodo.17112807</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">https://doi.org/10.17605/OSF.IO/KVE9Y</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">https://archive.org/details/osf-registrations-kve9y-v1</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5443334</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">http://dx.doi.org/10.2139/ssrn.5443334</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Part of the Post-Interpretive Criticism movement (Q136308909), published by Museum of One (Q136308879), authored by Dorian Vale (Q136308916).</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Q136308909</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Q136308879</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Q136308916</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">https://zenodo.org/communities/post-interpretive-criticism</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">https://www.semanticscholar.org/author/Dorian-Vale/2380743266</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">https://scholar.google.com/citations?hl=en&amp;authuser=1&amp;user=15tvhjAAAAAJ</dcterms:subject>
+  <dcterms:subject cat:origin="repository_keywords">Q136530009</dcterms:subject>
+  <dcterms:license cat:origin="repository_edition_licence">https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+  <cat:version cat:origin="repository_version_label">Repository release v5 (source description)</cat:version>
+  <cat:editionStatement cat:origin="institutional_context">First published by Museum of One in 2025; first edition (source bibliographic clarification).</cat:editionStatement>
+  <dcterms:alternative cat:origin="institutional_web_record_title">The Foundational Essays</dcterms:alternative>
+  <dcterms:alternative cat:origin="title_page_variant_reported_by_repository">Post–Interprative Criticism: Volume I</dcterms:alternative>
+  <dcterms:alternative cat:origin="title_page_subtitle_reported_by_repository">Foundational Essays (Collected Doctrines, Treaties, Theories, and Application)</dcterms:alternative>
+  <dcterms:extent cat:origin="derived_repository_file_metadata">1 digital file; 1044796 bytes</dcterms:extent>
+  <dcterms:format cat:origin="source_or_inferred_file_format">application/pdf</dcterms:format>
+  <dcterms:medium cat:origin="derived_digital_medium">Digital document</dcterms:medium>
+  <dcterms:contributor cat:origin="repository_contributor_role">Museum Of One [HostingInstitution]</dcterms:contributor>
+  <dcterms:relation cat:origin="institutional_research_context">https://www.museumofone.art/research-intellectual-history/</dcterms:relation>
+  <dcterms:relation cat:origin="institutional_research_context">https://www.museumofone.art/research-methods/</dcterms:relation>
+  <dcterms:hasFormat cat:origin="repository_file">https://zenodo.org/api/records/19864099/files/post-interprative-criticism-volume-i-STANDARD.pdf/content</dcterms:hasFormat>
+  <dcterms:hasPart cat:origin="source_verified_local_analytic_description">parts/19864099-c001.html</dcterms:hasPart>
+  <dcterms:hasPart cat:origin="source_verified_local_analytic_description">parts/19864099-c002.html</dcterms:hasPart>
+  <dcterms:hasPart cat:origin="source_verified_local_analytic_description">parts/19864099-c003.html</dcterms:hasPart>
+  <dcterms:hasPart cat:origin="source_verified_local_analytic_description">parts/19864099-c004.html</dcterms:hasPart>
+  <dcterms:hasPart cat:origin="source_verified_local_analytic_description">parts/19864099-c005.html</dcterms:hasPart>
+  <dcterms:hasPart cat:origin="source_verified_local_analytic_description">parts/19864099-c006.html</dcterms:hasPart>
+  <dcterms:hasPart cat:origin="source_verified_local_analytic_description">parts/19864099-c007.html</dcterms:hasPart>
+  <dcterms:hasPart cat:origin="source_verified_local_analytic_description">parts/19864099-c008.html</dcterms:hasPart>
+  <dcterms:hasPart cat:origin="source_verified_local_analytic_description">parts/19864099-c009.html</dcterms:hasPart>
+  <dcterms:hasPart cat:origin="source_verified_local_analytic_description">parts/19864099-c010.html</dcterms:hasPart>
+  <dcterms:hasPart cat:origin="source_verified_local_analytic_description">parts/19864099-c011.html</dcterms:hasPart>
+  <dcterms:hasPart cat:origin="source_verified_local_analytic_description">parts/19864099-c012.html</dcterms:hasPart>
+  <dcterms:hasPart cat:origin="source_verified_local_analytic_description">parts/19864099-c013.html</dcterms:hasPart>
+  <dcterms:hasPart cat:origin="source_verified_local_analytic_description">parts/19864099-c014.html</dcterms:hasPart>
+  <dcterms:relation cat:origin="source_qualified_entity_relationship">Dorian Vale [author]</dcterms:relation>
+  <dcterms:relation cat:origin="source_qualified_entity_relationship">Museum of One [publisher]</dcterms:relation>
+  <dcterms:subject cat:origin="maintained_local_controlled_vocabulary">https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism</dcterms:subject>
+  <dcterms:subject cat:origin="maintained_local_controlled_vocabulary">https://archive.museumofone.art/vocabulary.html#aesthetics</dcterms:subject>
+  <dcterms:subject cat:origin="maintained_local_controlled_vocabulary">https://archive.museumofone.art/vocabulary.html#art-criticism</dcterms:subject>
+  <dcterms:subject cat:origin="maintained_local_controlled_vocabulary">https://archive.museumofone.art/vocabulary.html#foundational-writings</dcterms:subject>
+  <dcterms:relation cat:origin="source_relation">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5443334</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">10.2139/ssrn.5443334</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://core.ac.uk/works/299792897</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">http://eprints.rclis.org/47182/</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://repository.africarxiv.org/handle/1/10438</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://open.icm.edu.pl/workspaceitems/33643/view</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://repository.crossasia.org/receive/crossasia_mods_00000623</dcterms:relation>
+  <dcterms:relation cat:origin="source_relation">https://repository.crossasia.org/receive/crossasia_mods_00000624</dcterms:relation>
+  <dcterms:provenance>Repository metadata, institutional publication context, and catalogue-editor enrichment are distinguished below. Repository dates are not assertions of first publication; repository version labels do not establish new book editions.</dcterms:provenance>
+  <cat:assertions>
+    <cat:assertion field="title" status="catalogue_title">
+      <cat:value>Post-Interpretive Criticism: Volume I - The Foundational Essays</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:note>Local display title; the deposited title is retained separately.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="source_title" status="source_transcription">
+      <cat:value>Post-Interpretive Criticism: Volume I - The Foundational Essays</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="doi" status="source_transcription">
+      <cat:value>10.5281/zenodo.19864099</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="date" status="source_transcription">
+      <cat:value>2026-04</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="version" status="source_transcription">
+      <cat:value>Repository release v5 (source description)</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="conceptdoi" status="source_transcription">
+      <cat:value>10.5281/zenodo.17058411</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="creators" status="source_transcription">
+      <cat:value>[{"name": "Vale, Dorian", "affiliation": "MuseumofOne", "orcid": "0009-0004-7737-5094"}]</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="keywords" status="source_transcription">
+      <cat:value>["Post-Interpretive Criticism", "Stillmark Theory", "Absential Aesthetics", "Witness Aesthetics", "Hauntmark Theory", "Presence-Based Criticism", "Custodianship of Art", "Art as Ontology", "Restraint in front of art", "Moral proximity", "Interpretive silence", "Erasure as ethics", "Temporal scarcity", "Silence as method", "Ontology of beauty", "Aesthetic mercy", "Language as violence", "Art encounter ethics", "Epistemology of witness", "Philosophy of Art", "Aesthetics", "Art Theory", "Contemporary Aesthetics", "Phenomenology and Art", "Ethics in Art Criticism", "Interpretation and Meaning", "Criticism and Reception Theory", "Epistemology of Art", "Visual Culture Studies", "Dorian Vale", "Founder of Post-Interpretive Criticism", "Post-Aesthetic Critic", "Independent Philosopher of Art", "Museum of One", "Art Writer and Theorist", "Aesthetic Philosopher", "Custodian of Witness Aesthetics", "The Doctrine of Post-Interpretive Criticism", "The Custodian's Oath", "The Canon of Witnesses", "Art as Truth", "Art as Presence", "The Viewer as Evidence", "Interpretation vs. Witnessing", "Language as Custody", "Erasure as Afterlife", "Museum of One Manifesto", "Post-Interpretive Lexicon", "Alternative art criticism", "New art criticism movement", "Ethical art theory", "Criticism beyond interpretation", "Quiet philosophy of art", "Radical art restraint", "Witness over interpretation", "Interpretive Restraint", "Aesthetics of Mercy", "Art Criticism Ethics", "Museum Of One", "https://www.museumofone.art/", "https://hcommons.org/members/dorianvale/", "https://philpeople.org/profiles/dorian-vale", "https://osf.io/xa5jw/", "https://independent.academia.edu/DorianVale", "https://figshare.com/authors/Dorian_Vale/22186984", "osf.io/zhnre", "https://doi.org/10.5281/zenodo.17112807", "https://doi.org/10.17605/OSF.IO/KVE9Y", "https://archive.org/details/osf-registrations-kve9y-v1", "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5443334", "http://dx.doi.org/10.2139/ssrn.5443334", "Part of the Post-Interpretive Criticism movement (Q136308909), published by Museum of One (Q136308879), authored by Dorian Vale (Q136308916).", "Q136308909", "Q136308879", "Q136308916", "https://zenodo.org/communities/post-interpretive-criticism", "https://www.semanticscholar.org/author/Dorian-Vale/2380743266", "https://scholar.google.com/citations?hl=en&amp;authuser=1&amp;user=15tvhjAAAAAJ", "Q136530009"]</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="license" status="source_transcription">
+      <cat:value>{"label": "Creative Commons Attribution 4.0 International (CC BY 4.0)", "url": "https://creativecommons.org/licenses/by/4.0/"}</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="files" status="source_transcription">
+      <cat:value>[{"name": "post-interprative-criticism-volume-i-STANDARD.pdf", "url": "https://zenodo.org/api/records/19864099/files/post-interprative-criticism-volume-i-STANDARD.pdf/content", "size": 1044796, "size_label": "1020 KB", "checksum": "md5:2cbd120db1c6358cb65702d5090d042a", "mimetype": "application/pdf"}]</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="source_created" status="source_transcription">
+      <cat:value>2026-04-28T19:07:18.070464+00:00</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="source_modified" status="source_transcription">
+      <cat:value>2026-10-15T14:32:18.509095+00:00</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="author" status="institutional_context">
+      <cat:value>Dorian Vale</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:note>Institutional responsibility statement; original repository creator roles remain separate.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="publisher" status="institutional_context">
+      <cat:value>Museum of One</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:note>Institutional responsibility statement; original repository creator roles remain separate.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="first_edition" status="institutional_context">
+      <cat:value>First published by Museum of One in 2025; first edition (source bibliographic clarification).</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:note>Consult the linked edition record; a repository version is not a new book edition.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="isbn" status="institutional_context">
+      <cat:value>978-1-06-982030-3</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:note>Consult the linked edition record; a repository version is not a new book edition.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="orcid" status="source_linked_identifier">
+      <cat:value>0009-0004-7737-5094</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:note>Creator identifier supplied by the linked sources; no affiliation or endorsement is inferred.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="summary" status="editorial_enrichment">
+      <cat:value>Collected foundational writings introducing Post-Interpretive Criticism through doctrines, theoretical propositions, and applications concerned with restraint, presence, and witnessing.</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:note>Catalogue-editor summary based on the linked work; not an original publisher abstract.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="subjects" status="editorial_enrichment">
+      <cat:value>["Post-Interpretive Criticism", "Aesthetics", "Art criticism", "Foundational writings"]</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:note>Local discovery terms; no controlled-vocabulary assignment is claimed.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="collection" status="editorial_grouping">
+      <cat:value>Books &amp; volumes</cat:value>
+      <cat:note>A local browsing collection, not an original repository collection.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="corroboration" status="catalogue_review_note">
+      <cat:value>Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. It links the selected Zenodo edition DOI. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="discrepancies" status="catalogue_review_note">
+      <cat:value>["The source describes a title-page variant, “Post–Interprative Criticism: Volume I,” alongside the current publisher citation title. The deposited PDF is unchanged.", "The source states first publication in 2025, first edition; April 2026 identifies repository release v5 rather than a new book edition. The ISBN is retained as printed; an agency assignment has not been independently verified."]</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="alternate_titles" status="source_qualified_title_variants">
+      <cat:value>[{"title": "The Foundational Essays", "kind": "institutional_web_record_title", "source_url": "https://www.museumofone.art/publication-foundational-essays/"}, {"title": "Post–Interprative Criticism: Volume I", "kind": "title_page_variant_reported_by_repository", "source_url": "https://zenodo.org/records/19864099"}, {"title": "Foundational Essays (Collected Doctrines, Treaties, Theories, and Application)", "kind": "title_page_subtitle_reported_by_repository", "source_url": "https://zenodo.org/records/19864099"}]</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:note>Each variant retains its own source and scope; a web page title is not a title-page transcription.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="date_precision" status="derived_from_source">
+      <cat:value>month</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:note>Precision reported exactly as supplied; missing month or day is not filled.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="medium" status="derived_from_source">
+      <cat:value>Digital document</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:note>Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="digital_formats" status="derived_from_source">
+      <cat:value>["application/pdf"]</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:note>Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="extent" status="derived_from_source">
+      <cat:value>1 digital file; 1044796 bytes</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:note>Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="digital_extent" status="derived_from_source">
+      <cat:value>{"file_count": 1, "total_bytes": 1044796, "formats": ["application/pdf"], "checksums": [{"filename": "post-interprative-criticism-volume-i-STANDARD.pdf", "algorithm": "md5", "value": "2cbd120db1c6358cb65702d5090d042a", "syntax_valid": true, "verification": "source_checksum_transcription; bytes not independently recomputed"}], "source_url": "https://zenodo.org/records/19864099", "derivation": "File count and total bytes calculated from repository file metadata; MIME inferred from filename when absent."}</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:note>Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="identifier_validation" status="local_syntax_validation">
+      <cat:value>{"orcid": {"source_value": "0009-0004-7737-5094", "checksum_valid": true, "note": "ISO 7064 MOD 11-2 checksum only; this is not a live registry verification."}, "isbn": [{"source_value": "978-1-06-982030-3", "normalized": "9781069820303", "checksum_valid": true, "note": "Checksum validation tests the identifier syntax only; it does not verify assignment, format or edition applicability.", "scope": "title_level_book_identifier; format applicability follows edition source", "source_url": "https://zenodo.org/records/19864099"}], "doi": {"source_value": "10.5281/zenodo.19864099", "syntax_valid": true, "note": "Syntax check only; repository snapshot supplies the identifier."}}</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:note>Checksum/syntax validation does not verify registration, assignment or edition applicability.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="contributor_roles" status="source_transcription">
+      <cat:value>[{"name": "Vale, Dorian", "source_category": "creator", "source_role": null, "role_label": "Creator (role not supplied)", "affiliation_as_supplied": "MuseumofOne", "source_url": "https://zenodo.org/records/19864099"}, {"name": "Museum Of One", "source_category": "contributor", "source_role": "HostingInstitution", "role_label": "HostingInstitution", "affiliation_as_supplied": "https://www.museumofone.art/", "source_url": "https://zenodo.org/records/19864099"}]</cat:value>
+      <cat:source_url>https://zenodo.org/records/19864099</cat:source_url>
+      <cat:note>Creator and contributor roles are transcribed, not inferred from names or affiliations.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="authority_links" status="source_qualified_external_context">
+      <cat:value>[{"title": "E-LIS repository record", "url": "https://eprints.rclis.org/47182/", "kind": "repository_record", "status": "verified_record", "evidence": "Title, Vale, Dorian, year 2025 and DOI 10.5281/zenodo.17069115 observed. E-LIS labels item Unpublished / In collection while file label says Published version; retain discrepancy. File is deposited by author, not an independent review.", "identifier": "http://hdl.handle.net/10760/47182", "note": "Do not transfer E-LIS licence to a different Zenodo edition.", "scope": "Bibliographic context; inspect source for edition applicability", "source_url": "https://www.museumofone.art/post-interpretive-criticism-volume-i-foundational-essays/"}, {"title": "BiblioBoard catalogue access", "url": "https://library.biblioboard.com/content/f8192c42-14a5-4c79-8b38-c16c078f5331", "kind": "catalogue_access", "status": "institutional_link_access_restricted", "note": "Institution verifies title; record format, edition and ISBN not inspectable. Landing page only loaded generic shell.", "scope": "Bibliographic context; inspect source for edition applicability", "source_url": "https://www.museumofone.art/post-interpretive-criticism-volume-i-foundational-essays/"}]</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:note>External records have separate status and edition scope; links are not endorsements or equivalence assertions.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="research_programme:https://www.museumofone.art/research-intellectual-history/" status="institutional_work_relationship">
+      <cat:value>{"title": "Intellectual History and Conceptual Development", "url": "https://www.museumofone.art/research-intellectual-history/", "status": "Continuing research", "source_url": "https://www.museumofone.art/publication-foundational-essays/", "relation": "Earlier foundation examined by this programme.", "relation_label": "Earlier foundation examined by this programme."}</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:note>Programme relationship and stage follow the work-specific institutional badge; publication does not imply a completed programme or collaboration.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="research_programme:https://www.museumofone.art/research-methods/" status="institutional_work_relationship">
+      <cat:value>{"title": "Phenomenological Methods and Diagnostic Reading", "url": "https://www.museumofone.art/research-methods/", "status": "Continuing research", "source_url": "https://www.museumofone.art/publication-foundational-essays/", "relation": "Earlier theoretical foundation for methodological investigation.", "relation_label": "Earlier theoretical foundation for methodological investigation."}</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:note>Programme relationship and stage follow the work-specific institutional badge; publication does not imply a completed programme or collaboration.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="entity_link:dorian-vale:author" status="institutional_context_relationship">
+      <cat:value>{"id": "dorian-vale", "label": "Dorian Vale", "entity_type": "Person", "relation": "author", "source_url": "https://www.museumofone.art/publication-foundational-essays/", "note": "The matching institutional publication record credits Dorian Vale as author."}</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:note>Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.</cat:note>
+    </cat:assertion>
+    <cat:assertion field="entity_link:museum-of-one:publisher" status="institutional_context_relationship">
+      <cat:value>{"id": "museum-of-one", "label": "Museum of One", "entity_type": "Organization", "relation": "publisher", "source_url": "https://www.museumofone.art/publication-foundational-essays/", "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."}</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:note>Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors.</cat:note>
+    </cat:assertion>
+    <cat:assertion field="contents" status="derived_file_inspection">
+      <cat:value>[{"title": "Preface", "type": "Preface", "pdf_start": 6, "pdf_end": 7, "printed_start": "iv", "printed_end": "v", "id": "c001", "evidence": {"file": "assets/documents/19864099.pdf", "pdf_pages": [6, 7], "title_source": "Full heading on PDF file page 6; contents page 5", "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.", "reviewed": "2026-11-04"}, "parent_id": "19864099", "parent_doi": "10.5281/zenodo.19864099", "reference": "MOO-CAT-001/C001", "url": "parts/19864099-c001.html", "reader_url": "read/19864099.html#page=6", "description_level": "Local analytic description of a publication component", "creator": "Dorian Vale", "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.", "source": {"file": "assets/documents/19864099.pdf", "page_count": 82, "pdf_pages": [5], "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.", "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.", "reviewed": "2026-11-04"}}, {"number": 1, "title": "Post-Interpretive Criticism: A Doctrine of Restraint, Witness, and Moral Proximity in Contemporary Art Writing", "type": "Essay", "pdf_start": 9, "printed_start": "1", "id": "c002", "pdf_end": 15, "printed_end": "7", "evidence": {"file": "assets/documents/19864099.pdf", "pdf_pages": [9, 15], "title_source": "Full heading on PDF file page 9; contents page 5", "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.", "reviewed": "2026-11-04"}, "parent_id": "19864099", "parent_doi": "10.5281/zenodo.19864099", "reference": "MOO-CAT-001/C002", "url": "parts/19864099-c002.html", "reader_url": "read/19864099.html#page=9", "description_level": "Local analytic description of a publication component", "creator": "Dorian Vale", "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.", "source": {"file": "assets/documents/19864099.pdf", "page_count": 82, "pdf_pages": [5], "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.", "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.", "reviewed": "2026-11-04"}}, {"number": 2, "title": "A Philosophical Departure from Post-Criticism", "type": "Essay", "pdf_start": 16, "printed_start": "8", "id": "c003", "pdf_end": 21, "printed_end": "13", "evidence": {"file": "assets/documents/19864099.pdf", "pdf_pages": [16, 21], "title_source": "Full heading on PDF file page 16; contents page 5", "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.", "reviewed": "2026-11-04"}, "parent_id": "19864099", "parent_doi": "10.5281/zenodo.19864099", "reference": "MOO-CAT-001/C003", "url": "parts/19864099-c003.html", "reader_url": "read/19864099.html#page=16", "description_level": "Local analytic description of a publication component", "creator": "Dorian Vale", "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.", "source": {"file": "assets/documents/19864099.pdf", "page_count": 82, "pdf_pages": [5], "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.", "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.", "reviewed": "2026-11-04"}}, {"number": 3, "title": "Art as Truth: A Treatise", "type": "Essay", "pdf_start": 22, "printed_start": "14", "id": "c004", "pdf_end": 27, "printed_end": "19", "evidence": {"file": "assets/documents/19864099.pdf", "pdf_pages": [22, 27], "title_source": "Full heading on PDF file page 22; contents page 5", "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.", "reviewed": "2026-11-04"}, "parent_id": "19864099", "parent_doi": "10.5281/zenodo.19864099", "reference": "MOO-CAT-001/C004", "url": "parts/19864099-c004.html", "reader_url": "read/19864099.html#page=22", "description_level": "Local analytic description of a publication component", "creator": "Dorian Vale", "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.", "source": {"file": "assets/documents/19864099.pdf", "page_count": 82, "pdf_pages": [5], "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.", "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.", "reviewed": "2026-11-04"}}, {"number": 4, "title": "Stillmark Theory: A Treatise on Presence, Vanishing, and the Discipline of the Fleeting", "type": "Essay", "pdf_start": 28, "printed_start": "20", "id": "c005", "pdf_end": 34, "printed_end": "26", "evidence": {"file": "assets/documents/19864099.pdf", "pdf_pages": [28, 34], "title_source": "Full heading on PDF file page 28; contents page 5", "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.", "reviewed": "2026-11-04"}, "parent_id": "19864099", "parent_doi": "10.5281/zenodo.19864099", "reference": "MOO-CAT-001/C005", "url": "parts/19864099-c005.html", "reader_url": "read/19864099.html#page=28", "description_level": "Local analytic description of a publication component", "creator": "Dorian Vale", "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.", "source": {"file": "assets/documents/19864099.pdf", "page_count": 82, "pdf_pages": [5], "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.", "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.", "reviewed": "2026-11-04"}}, {"number": 5, "title": "Absential Aesthetics Theory: On Ghosts, Absence, and the Afterlife of Art", "type": "Essay", "pdf_start": 35, "printed_start": "27", "id": "c006", "pdf_end": 39, "printed_end": "31", "evidence": {"file": "assets/documents/19864099.pdf", "pdf_pages": [35, 39], "title_source": "Full heading on PDF file page 35; contents page 5", "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.", "reviewed": "2026-11-04"}, "parent_id": "19864099", "parent_doi": "10.5281/zenodo.19864099", "reference": "MOO-CAT-001/C006", "url": "parts/19864099-c006.html", "reader_url": "read/19864099.html#page=35", "description_level": "Local analytic description of a publication component", "creator": "Dorian Vale", "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.", "source": {"file": "assets/documents/19864099.pdf", "page_count": 82, "pdf_pages": [5], "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.", "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.", "reviewed": "2026-11-04"}}, {"number": 6, "title": "Hauntmark Theory: The Lingering Weight of Words", "type": "Essay", "pdf_start": 40, "printed_start": "32", "id": "c007", "pdf_end": 46, "printed_end": "38", "evidence": {"file": "assets/documents/19864099.pdf", "pdf_pages": [40, 46], "title_source": "Full heading on PDF file page 40; contents page 5", "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.", "reviewed": "2026-11-04"}, "parent_id": "19864099", "parent_doi": "10.5281/zenodo.19864099", "reference": "MOO-CAT-001/C007", "url": "parts/19864099-c007.html", "reader_url": "read/19864099.html#page=40", "description_level": "Local analytic description of a publication component", "creator": "Dorian Vale", "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.", "source": {"file": "assets/documents/19864099.pdf", "page_count": 82, "pdf_pages": [5], "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.", "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.", "reviewed": "2026-11-04"}}, {"number": 7, "title": "Language as a Blade: The Ethics of Precision in Post-Interpretive Criticism", "type": "Essay", "pdf_start": 47, "printed_start": "39", "id": "c008", "pdf_end": 53, "printed_end": "45", "evidence": {"file": "assets/documents/19864099.pdf", "pdf_pages": [47, 53], "title_source": "Full heading on PDF file page 47; contents page 5", "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.", "reviewed": "2026-11-04"}, "parent_id": "19864099", "parent_doi": "10.5281/zenodo.19864099", "reference": "MOO-CAT-001/C008", "url": "parts/19864099-c008.html", "reader_url": "read/19864099.html#page=47", "description_level": "Local analytic description of a publication component", "creator": "Dorian Vale", "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.", "source": {"file": "assets/documents/19864099.pdf", "page_count": 82, "pdf_pages": [5], "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.", "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.", "reviewed": "2026-11-04"}}, {"number": 8, "title": "Message Transfer Theory (MTT): A Treatise on the Reversal of Meaning, the Displacement of Intent, and the Object as Conduit", "type": "Essay", "pdf_start": 54, "printed_start": "46", "id": "c009", "pdf_end": 60, "printed_end": "52", "evidence": {"file": "assets/documents/19864099.pdf", "pdf_pages": [54, 60], "title_source": "Full heading on PDF file page 54; contents page 5", "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.", "reviewed": "2026-11-04"}, "parent_id": "19864099", "parent_doi": "10.5281/zenodo.19864099", "reference": "MOO-CAT-001/C009", "url": "parts/19864099-c009.html", "reader_url": "read/19864099.html#page=54", "description_level": "Local analytic description of a publication component", "creator": "Dorian Vale", "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.", "source": {"file": "assets/documents/19864099.pdf", "page_count": 82, "pdf_pages": [5], "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.", "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.", "reviewed": "2026-11-04"}}, {"number": 9, "title": "The Viewer as Evidence: A Treatise on Witness, Residue, and Critical Consequence", "type": "Essay", "pdf_start": 61, "printed_start": "53", "id": "c010", "pdf_end": 69, "printed_end": "61", "evidence": {"file": "assets/documents/19864099.pdf", "pdf_pages": [61, 69], "title_source": "Full heading on PDF file page 61; contents page 5", "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.", "reviewed": "2026-11-04"}, "parent_id": "19864099", "parent_doi": "10.5281/zenodo.19864099", "reference": "MOO-CAT-001/C010", "url": "parts/19864099-c010.html", "reader_url": "read/19864099.html#page=61", "description_level": "Local analytic description of a publication component", "creator": "Dorian Vale", "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.", "source": {"file": "assets/documents/19864099.pdf", "page_count": 82, "pdf_pages": [5], "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.", "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.", "reviewed": "2026-11-04"}}, {"number": 10, "title": "Theory of Aesthetic Displacement: A Treatise on Witness, Alteration, and the Irreversible Encounter", "type": "Essay", "pdf_start": 70, "printed_start": "62", "id": "c011", "pdf_end": 73, "printed_end": "65", "evidence": {"file": "assets/documents/19864099.pdf", "pdf_pages": [70, 73], "title_source": "Full heading on PDF file page 70; contents page 5", "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.", "reviewed": "2026-11-04"}, "parent_id": "19864099", "parent_doi": "10.5281/zenodo.19864099", "reference": "MOO-CAT-001/C011", "url": "parts/19864099-c011.html", "reader_url": "read/19864099.html#page=70", "description_level": "Local analytic description of a publication component", "creator": "Dorian Vale", "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.", "source": {"file": "assets/documents/19864099.pdf", "page_count": 82, "pdf_pages": [5], "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.", "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.", "reviewed": "2026-11-04"}}, {"number": 11, "title": "The Theory of Misplacement", "type": "Essay", "pdf_start": 74, "printed_start": "66", "id": "c012", "pdf_end": 78, "printed_end": "70", "evidence": {"file": "assets/documents/19864099.pdf", "pdf_pages": [74, 78], "title_source": "Full heading on PDF file page 74; contents page 5", "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.", "reviewed": "2026-11-04"}, "parent_id": "19864099", "parent_doi": "10.5281/zenodo.19864099", "reference": "MOO-CAT-001/C012", "url": "parts/19864099-c012.html", "reader_url": "read/19864099.html#page=74", "description_level": "Local analytic description of a publication component", "creator": "Dorian Vale", "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.", "source": {"file": "assets/documents/19864099.pdf", "page_count": 82, "pdf_pages": [5], "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.", "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.", "reviewed": "2026-11-04"}}, {"number": 12, "title": "The Archive as Movement", "type": "Essay", "pdf_start": 79, "printed_start": "71", "id": "c013", "pdf_end": 80, "printed_end": "72", "evidence": {"file": "assets/documents/19864099.pdf", "pdf_pages": [79, 80], "title_source": "Full heading on PDF file page 79; contents page 5", "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.", "reviewed": "2026-11-04"}, "parent_id": "19864099", "parent_doi": "10.5281/zenodo.19864099", "reference": "MOO-CAT-001/C013", "url": "parts/19864099-c013.html", "reader_url": "read/19864099.html#page=79", "description_level": "Local analytic description of a publication component", "creator": "Dorian Vale", "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.", "source": {"file": "assets/documents/19864099.pdf", "page_count": 82, "pdf_pages": [5], "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.", "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.", "reviewed": "2026-11-04"}}, {"title": "About the Author", "type": "Biographical note", "pdf_start": 81, "printed_start": "73", "id": "c014", "pdf_end": 81, "printed_end": "73", "evidence": {"file": "assets/documents/19864099.pdf", "pdf_pages": [81, 81], "title_source": "Full heading on PDF file page 81; contents page 5", "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.", "reviewed": "2026-11-04"}, "parent_id": "19864099", "parent_doi": "10.5281/zenodo.19864099", "reference": "MOO-CAT-001/C014", "url": "parts/19864099-c014.html", "reader_url": "read/19864099.html#page=81", "description_level": "Local analytic description of a publication component", "creator": "Dorian Vale", "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.", "source": {"file": "assets/documents/19864099.pdf", "page_count": 82, "pdf_pages": [5], "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.", "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.", "reviewed": "2026-11-04"}}]</cat:value>
+      <cat:source_url>https://zenodo.org/api/records/19864099/files/post-interprative-criticism-volume-i-STANDARD.pdf/content</cat:source_url>
+      <cat:note>Analytic descriptions were checked against headings and pagination in the deposited PDF. Component records do not have independent deposits or DOIs.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="controlled_subjects" status="editorial_description_control">
+      <cat:value>[{"id": "post-interpretive-criticism", "label": "Post-Interpretive Criticism", "uri": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism", "url": "vocabulary.html#post-interpretive-criticism", "persistent_id": "urn:museum-of-one:vocabulary:post-interpretive-criticism", "scheme": "museum-of-one-discovery-vocabulary", "scheme_version": 4, "alternative_labels": ["PIC", "Post Interpretive Criticism"], "definition": "The critical framework named and developed in the Museum of One publications.", "scope_note": "Local named intellectual framework. Used for records explicitly concerned with it; no Getty, Library of Congress, or other external equivalence is asserted.", "kind": "local-framework-concept", "broader": [], "narrower": [], "related": ["custodianship", "ethics-of-witnessing", "foundational-writings", "moral-proximity"], "mapping_status": "not_asserted", "external_mappings": [], "assignment_provenance": {"status": "local_editorial_access_term", "input_field": "subjects", "editorial_owner": "Museum of One Digital Archive Library", "reviewed": "2026-11-04"}}, {"id": "aesthetics", "label": "Aesthetics", "uri": "https://archive.museumofone.art/vocabulary.html#aesthetics", "url": "vocabulary.html#aesthetics", "persistent_id": "urn:museum-of-one:vocabulary:aesthetics", "scheme": "museum-of-one-discovery-vocabulary", "scheme_version": 4, "alternative_labels": [], "definition": "Philosophical inquiry into art, perception, and aesthetic experience.", "scope_note": "Used as a broad disciplinary access term; no external vocabulary equivalence is asserted.", "kind": "subject", "broader": [], "narrower": ["aesthetic-theory"], "related": [], "mapping_status": "not_asserted", "external_mappings": [], "assignment_provenance": {"status": "local_editorial_access_term", "input_field": "subjects", "editorial_owner": "Museum of One Digital Archive Library", "reviewed": "2026-11-04"}}, {"id": "art-criticism", "label": "Art criticism", "uri": "https://archive.museumofone.art/vocabulary.html#art-criticism", "url": "vocabulary.html#art-criticism", "persistent_id": "urn:museum-of-one:vocabulary:art-criticism", "scheme": "museum-of-one-discovery-vocabulary", "scheme_version": 4, "alternative_labels": ["Art Criticism"], "definition": "Critical examination and discussion of artworks and encounters with art.", "scope_note": "Use for publications addressing criticism as a practice, method, or ethical responsibility.", "kind": "subject", "broader": [], "narrower": [], "related": ["art-writing", "interpretation"], "mapping_status": "not_asserted", "external_mappings": [], "assignment_provenance": {"status": "local_editorial_access_term", "input_field": "subjects", "editorial_owner": "Museum of One Digital Archive Library", "reviewed": "2026-11-04"}}, {"id": "foundational-writings", "label": "Foundational writings", "uri": "https://archive.museumofone.art/vocabulary.html#foundational-writings", "url": "vocabulary.html#foundational-writings", "persistent_id": "urn:museum-of-one:vocabulary:foundational-writings", "scheme": "museum-of-one-discovery-vocabulary", "scheme_version": 4, "alternative_labels": [], "definition": "Writings presented within the corpus as introducing its foundational propositions.", "scope_note": "Local editorial grouping for discovery; does not confer institutional canonisation or external recognition.", "kind": "subject", "broader": [], "narrower": [], "related": ["post-interpretive-criticism"], "mapping_status": "not_asserted", "external_mappings": [], "assignment_provenance": {"status": "local_editorial_access_term", "input_field": "subjects", "editorial_owner": "Museum of One Digital Archive Library", "reviewed": "2026-11-04"}}]</cat:value>
+      <cat:source_url>https://archive.museumofone.art/policies.html</cat:source_url>
+      <cat:note>Local preferred terms with definitions and synonyms. External alignment is scoped in the vocabulary register.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="genre_terms" status="editorial_description_control">
+      <cat:value>[{"id": "genre-book", "label": "Book", "uri": "https://archive.museumofone.art/vocabulary.html#genre-book", "url": "vocabulary.html#genre-book", "persistent_id": "urn:museum-of-one:vocabulary:genre-book", "scheme": "museum-of-one-discovery-vocabulary", "scheme_version": 4, "alternative_labels": ["Books", "Digital book"], "definition": "Book-length publication represented by a deposited digital edition.", "scope_note": "Describes publication genre. The local PDF is not being described as a physical bound volume.", "kind": "genre", "broader": [], "narrower": [], "related": [], "mapping_status": "verified_mapping", "external_mappings": [{"vocabulary": "Getty Art &amp; Architecture Thesaurus", "label": "books", "uri": "http://vocab.getty.edu/aat/300028051", "source_url": "https://vocab.getty.edu/page/aat/300028051", "relation": "relatedMatch", "status": "verified", "verified_on": "2026-11-04", "note": "Getty’s concept concerns bound physical volumes. It is a related form reference for this digital-publication genre, not an exact equivalence or physical-holdings assertion."}], "assignment_provenance": {"status": "local_editorial_access_term", "input_field": "type", "editorial_owner": "Museum of One Digital Archive Library", "reviewed": "2026-11-04"}}]</cat:value>
+      <cat:source_url>https://archive.museumofone.art/policies.html</cat:source_url>
+      <cat:note>Local resource-genre classification. Digital file format is recorded separately.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="archival_context" status="editorial_description_control">
+      <cat:value>{"description_profile": "moo-description-policy-1.0", "catalogue_snapshot_date": "2026-11-04", "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.", "record_category": "Published library and repository material", "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.", "source_repository": {"name": "Zenodo", "record_url": "https://zenodo.org/records/19864099"}, "institutional_context_url": "https://www.museumofone.art/publication-foundational-essays/", "source_metadata_retrieved": "2026-11-04", "source_metadata_retrieval_status": "Documented in catalogue source provenance", "source_snapshot": "source/19864099.json", "source_filenames": ["post-interprative-criticism-volume-i-STANDARD.pdf"], "selection_basis": "Local descriptive selection of publicly published material; public availability does not establish ownership of originals.", "custodial_history": {"status": "not_documented", "statement": "No donation, physical transfer, acquisition agreement or chain of custody is documented by this catalogue. Zenodo remains the source repository for the deposited version."}, "original_order": {"status": "not_documented", "statement": "No original archival order is asserted. Current browsing groupings are local editorial arrangement."}, "arrangement": {"status": "local_editorial", "grouping": "Books &amp; volumes", "statement": "A browsing grouping, not an original fonds or archival series."}, "responsible_service": {"name": "Museum of One", "service": "Museum of One Digital Archive Library", "website": "https://www.museumofone.art/", "email": "research@museumofone.art"}, "description_method": "Source-based description with automated drafting and metadata assistance. Responsibility for the public catalogue rests with Museum of One; automated assistance does not constitute independent scholarly or curatorial review.", "policy_url": "policies.html", "correction_email": "research@museumofone.art", "access_copy": {"role": "Local digital reading copy of the deposited file", "source_url": "https://zenodo.org/api/records/19864099/files/post-interprative-criticism-volume-i-STANDARD.pdf/content", "source_filename": "post-interprative-criticism-volume-i-STANDARD.pdf", "local_path": "assets/documents/19864099.pdf", "verified_at": "2026-11-04", "source_checksum_match": true, "sha256": "cff270ffc96c98812c0ab708cd159c2c34cbd43f13f378696802a7f2a939ac3d", "statement": "Access copy only; no ownership or physical custody transfer is implied."}}</cat:value>
+      <cat:source_url>https://archive.museumofone.art/policies.html</cat:source_url>
+      <cat:note>Provenance records what is documented and leaves unknown custody and original order explicit.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="description_history" status="editorial_description_control">
+      <cat:value>[{"responsible_service": "Museum of One", "method": "Source-based automated description assistance", "date_kind": "Catalogue description event; not a publication or acquisition date", "event_id": "public-source-description-2026-11-04", "date": "2026-11-04", "action": "Source-based catalogue description", "note": "Local description assembled from the identified public repository record and available institutional work record. Source metadata remains separately identifiable.", "sources": ["https://zenodo.org/records/19864099", "https://www.museumofone.art/publication-foundational-essays/"]}, {"responsible_service": "Museum of One", "method": "Source-based automated description assistance", "date_kind": "Catalogue description event; not a publication or acquisition date", "event_id": "qualified-description-2026-11-04", "date": "2026-11-04", "action": "Qualified descriptive enrichment", "note": "Local editorial description, arrangement and source-qualified bibliographic context recorded alongside source metadata. Unknown or disputed values remain qualified.", "fields": ["summary", "subjects", "collection", "short_title", "accession"], "sources": ["https://zenodo.org/records/19864099", "https://www.museumofone.art/publication-foundational-essays/"]}, {"responsible_service": "Museum of One", "method": "Automated file checksum and PDF inspection", "date_kind": "Catalogue description event; not a publication or acquisition date", "event_id": "access-copy-verification-2026-11-04", "date": "2026-11-04", "action": "Digital reading copy verified", "note": "Downloaded access-copy MD5 matched the source checksum; local SHA-256 and PDF file-page count are recorded in the file manifest. This event does not describe transfer of custody.", "sources": ["https://zenodo.org/api/records/19864099/files/post-interprative-criticism-volume-i-STANDARD.pdf/content"]}, {"responsible_service": "Museum of One", "method": "Source-based automated description assistance", "date_kind": "Catalogue description event; not a publication or acquisition date", "event_id": "description-policy-1.0-2026-11-04", "date": "2026-11-04", "action": "Description policy and provenance context adopted", "note": "Responsible service, source repository, local access-copy role, unknown custody and original order, correction route and dated description history made explicit under moo-description-policy-1.0.", "sources": ["policies.html"]}]</cat:value>
+      <cat:source_url>https://archive.museumofone.art/policies.html</cat:source_url>
+      <cat:note>Catalogue description events; these are not work publication dates or acquisition dates.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="pirr_references" status="institutional_context_relationship">
+      <cat:value>[{"programme_key": "research-intellectual-history", "programme_title": "Intellectual History and Conceptual Development", "programme_url": "https://www.museumofone.art/research-intellectual-history/", "programme_stage": "Continuing research", "registry_url": "research-registry.html#research-intellectual-history", "identifiers": [{"scheme": "PIRR project ID", "value": "pir-prj-xgd6wb9d", "source_url": "https://www.museumofone.art/research-intellectual-history/#programme-record"}], "relation": "Earlier foundation examined by this programme.", "relation_note": "Earlier foundation examined by this programme.", "source_url": "https://www.museumofone.art/publication-foundational-essays/"}, {"programme_key": "research-methods", "programme_title": "Phenomenological Methods and Diagnostic Reading", "programme_url": "https://www.museumofone.art/research-methods/", "programme_stage": "Continuing research", "registry_url": "research-registry.html#research-methods", "identifiers": [{"scheme": "PIRR project ID", "value": "pir-prj-pyp5yx3w", "source_url": "https://www.museumofone.art/research-methods/#programme-record"}], "relation": "Earlier theoretical foundation for methodological investigation.", "relation_note": "Earlier theoretical foundation for methodological investigation.", "source_url": "https://www.museumofone.art/publication-foundational-essays/"}]</cat:value>
+      <cat:source_url>https://www.museumofone.art/publication-foundational-essays/</cat:source_url>
+      <cat:note>PIRR project IDs and programme references identify research records, not publication versions or independent chapter deposits.</cat:note>
+    </cat:assertion>
+    <cat:assertion field="reading_copy" status="derived_file_inspection">
+      <cat:value>{"id": "19864099", "title": "Post-Interpretive Criticism: Volume I - The Foundational Essays", "accession": "MOO-CAT-001", "pdf_url": "../assets/documents/19864099.pdf", "source_url": "https://zenodo.org/api/records/19864099/files/post-interprative-criticism-volume-i-STANDARD.pdf/content", "zenodo_url": "https://zenodo.org/records/19864099", "source_filename": "post-interprative-criticism-volume-i-STANDARD.pdf", "checksum": "md5:2cbd120db1c6358cb65702d5090d042a", "sha256": "cff270ffc96c98812c0ab708cd159c2c34cbd43f13f378696802a7f2a939ac3d", "bytes": 1044796, "page_count": 82, "verified_at": "2026-11-04", "checksum_match": true, "rights": {"label": "Creative Commons Attribution 4.0 International (CC BY 4.0)", "url": "https://creativecommons.org/licenses/by/4.0/"}, "role": "Local reading copy; original repository file retained unchanged"}</cat:value>
+      <cat:source_url>https://zenodo.org/api/records/19864099/files/post-interprative-criticism-volume-i-STANDARD.pdf/content</cat:source_url>
+      <cat:note>Byte-identical local access copy. Source MD5 was recomputed and matched; SHA-256 and page count were measured from the downloaded PDF. This is not a preservation-deposit claim.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+    <cat:assertion field="page_count" status="derived_file_inspection">
+      <cat:value>82</cat:value>
+      <cat:source_url>https://zenodo.org/api/records/19864099/files/post-interprative-criticism-volume-i-STANDARD.pdf/content</cat:source_url>
+      <cat:note>Total PDF file pages measured from the deposited file, including cover and unnumbered pages. Not a claim about printed pagination.</cat:note>
+      <cat:reviewed>2026-11-04</cat:reviewed>
+    </cat:assertion>
+  </cat:assertions>
+</cat:record>

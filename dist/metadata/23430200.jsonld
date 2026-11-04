@@ -1,0 +1,460 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://archive.museumofone.art/#website",
+      "name": "Museum of One Digital Archive Library",
+      "url": "https://archive.museumofone.art/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://archive.museumofone.art/items/23430200.html#webpage",
+      "url": "https://archive.museumofone.art/items/23430200.html",
+      "name": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles",
+      "isPartOf": {
+        "@id": "https://archive.museumofone.art/#website"
+      },
+      "mainEntity": {
+        "@id": "https://archive.museumofone.art/items/23430200.html#catalogue-record"
+      },
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.23430200"
+      },
+      "breadcrumb": {
+        "@id": "https://archive.museumofone.art/items/23430200.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23430200.html#catalogue-record",
+      "name": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles",
+      "url": "https://archive.museumofone.art/items/23430200.html",
+      "mainEntityOfPage": {
+        "@id": "https://archive.museumofone.art/items/23430200.html#webpage"
+      },
+      "about": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.23430200"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#museum-cataloguing"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#critical-language"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#documentary-evidence"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#title-correction"
+        }
+      ],
+      "disambiguatingDescription": "Local catalogue record describing a deposited publication version.",
+      "description": "Research Working Paper No. 2 distinguishes title correction, later identification, and the circulation of catalogue descriptions through a study of Simon Maris’s portrait Isabella and its repository records.",
+      "keywords": [
+        "Museum cataloguing",
+        "Critical language",
+        "Documentary evidence",
+        "Title correction"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Local catalogue identifier",
+        "value": "MOO-CAT-005"
+      },
+      "dateModified": "2026-11-04",
+      "isBasedOn": [
+        {
+          "@id": "https://zenodo.org/records/23430200"
+        },
+        {
+          "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
+        },
+        {
+          "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.museumofone.art/research-critical-language/"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/simon-maris.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/alexander-viktorovich-markov.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/isabella.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "name": "Dorian Vale",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0004-7737-5094"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/#publisher",
+      "name": "Museum of One",
+      "url": "https://www.museumofone.art/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.23430199",
+      "name": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles — version family",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Zenodo concept DOI",
+        "value": "10.5281/zenodo.23430199"
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.23430200"
+      }
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/items/23430200.html#file-1",
+      "contentUrl": "https://zenodo.org/api/records/23430200/files/After_the_Interpretation_Changes_Working_Paper_2_v1.0.pdf/content",
+      "name": "After_the_Interpretation_Changes_Working_Paper_2_v1.0.pdf",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.23430200"
+      },
+      "encodingFormat": "application/pdf",
+      "contentSize": "180105 bytes",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source checksum",
+        "value": "md5:aa7d5753758bf6e178342117ef9ad3db"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/research-critical-language/",
+      "url": "https://www.museumofone.art/research-critical-language/",
+      "name": "Alexander Viktorovich Markov: Critical Language and Lasting Correction",
+      "description": "Published working paper within a developing inquiry",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "PIRR programme reference",
+          "value": "moo-program-2b3ad664cbd92f69b862db8c",
+          "url": "https://www.museumofone.art/research-critical-language/#programme-record"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://archive.museumofone.art/items/23430200.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Digital Archive Library",
+          "item": "https://archive.museumofone.art/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Catalogue",
+          "item": "https://archive.museumofone.art/catalogue.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MOO-CAT-005",
+          "item": "https://archive.museumofone.art/items/23430200.html"
+        }
+      ]
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/assets/documents/23430200.pdf",
+      "contentUrl": "https://archive.museumofone.art/assets/documents/23430200.pdf",
+      "name": "Verified reading copy of After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles",
+      "encodingFormat": "application/pdf",
+      "contentSize": "180105 bytes",
+      "description": "10 PDF file pages, including covers and unnumbered pages. Byte-identical local access copy; source checksum matched 2026-11-04.",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.23430200"
+      },
+      "isBasedOn": {
+        "@id": "https://archive.museumofone.art/items/23430200.html#file-1"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256 of local reading copy",
+        "value": "272b077f00db6a02d04c03b87608a0ab8cc34972b11759e51b7ece3890228716"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.23430200",
+      "name": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles",
+      "mainEntityOfPage": {
+        "@id": "https://zenodo.org/records/23430200"
+      },
+      "url": "https://zenodo.org/records/23430200",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.23430200"
+      },
+      "datePublished": "2026-10-17",
+      "version": "1.0",
+      "inLanguage": "eng",
+      "keywords": [
+        "Post-Interpretive Criticism",
+        "Museum of One",
+        "Dorian Vale",
+        "Alexander Viktorovich Markov",
+        "Museum titles",
+        "Museum cataloguing",
+        "Correction",
+        "Completion",
+        "Circulation",
+        "Interpretive authority",
+        "Rijksmuseum",
+        "Simon Maris",
+        "Isabella",
+        "Europeana",
+        "Wikimedia Commons",
+        "Collection records",
+        "Cultural heritage metadata",
+        "Documentary research",
+        "Provenance",
+        "Historical evidence",
+        "Art historiography",
+        "Documentation",
+        "Deactivation",
+        "Contestability",
+        "Semantic persistence",
+        "Reauthorization",
+        "Successional authority",
+        "Museum terminology",
+        "Dutch art",
+        "Aesthetics",
+        "Philosophy of Art",
+        "Art Criticism",
+        "Art Theory",
+        "Visual Culture Studies",
+        "Ethics in Art Criticism",
+        "Interpretation and Meaning",
+        "Interpretive Restraint",
+        "Criticism and Reception Theory",
+        "Epistemology of Art"
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0004-7737-5094"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/#publisher"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "exampleOfWork": {
+        "@id": "https://doi.org/10.5281/zenodo.23430199"
+      },
+      "isPartOf": [
+        {
+          "@id": "https://www.museumofone.art/research-working-papers/"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://id.rijksmuseum.nl/200109696"
+        },
+        {
+          "@id": "https://www.rijksmuseum.nl/en/research/our-research/overarching/terminology"
+        },
+        {
+          "@id": "https://doi.org/10.52476/trb.9685"
+        },
+        {
+          "@id": "https://id.rijksmuseum.nl/300304730"
+        },
+        {
+          "@id": "https://nltimes.nl/2015/12/09/rijksmuseum-stripping-insensitive-words-artwork-titles-descriptions"
+        },
+        {
+          "@id": "https://www.theguardian.com/artanddesign/jonathanjonesblog/2015/dec/15/artworks-racist-titles-rijksmuseum-amsterdam"
+        },
+        {
+          "@id": "https://id.rijksmuseum.nl/200839673"
+        },
+        {
+          "@id": "https://www.leidenarthistoryblog.nl/articles/presenting-the-colonial-past-in-the-museum"
+        },
+        {
+          "@id": "https://www.europeana.eu/nl/item/90402/SK_A_2931"
+        },
+        {
+          "@id": "https://commons.wikimedia.org/wiki/File:Jonge_vrouw_met_waaier,_SK-A-2931.jpg"
+        }
+      ],
+      "encoding": [
+        {
+          "@id": "https://archive.museumofone.art/items/23430200.html#file-1"
+        },
+        {
+          "@id": "https://archive.museumofone.art/assets/documents/23430200.pdf"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://archive.museumofone.art/entities/simon-maris.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/isabella.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zenodo.org/records/23430200",
+      "name": "Zenodo deposited-version record",
+      "mainEntity": {
+        "@id": "https://doi.org/10.5281/zenodo.23430200"
+      },
+      "publisher": {
+        "@id": "https://zenodo.org/#repository"
+      },
+      "dateCreated": "2026-10-17T04:35:17.777799+00:00",
+      "dateModified": "2026-10-17T06:42:45.273937+00:00"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zenodo.org/#repository",
+      "name": "Zenodo",
+      "url": "https://zenodo.org/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/after-the-interpretation-changes/",
+      "name": "Museum of One institutional publication context",
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.23430200"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23430200.html#relationship-dorian-vale-author",
+      "name": "author",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
+      },
+      "description": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23430200.html#relationship-museum-of-one-publisher",
+      "name": "publisher",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
+      },
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23430200.html#relationship-simon-maris-artist-discussed",
+      "name": "artist discussed",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/simon-maris.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
+      },
+      "description": "The abstract identifies Simon Maris as the artist of the portrait now titled Isabella."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23430200.html#relationship-alexander-viktorovich-markov-scholarly-correspondent",
+      "name": "scholarly correspondent",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/alexander-viktorovich-markov.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
+      },
+      "description": "The source records scholarly correspondence and a critical response. It explicitly states that Markov is not a coauthor and that this is not formal peer review or agreement with every proposal."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/23430200.html#relationship-isabella-artwork-discussed",
+      "name": "artwork discussed",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/isabella.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/after-the-interpretation-changes/"
+      },
+      "description": "The abstract identifies the current title and artist. The changing catalogue title is the subject of the paper; historic terminology is not adopted as the preferred label."
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://archive.museumofone.art/vocabulary.html",
+      "name": "Museum of One local editorial discovery vocabulary",
+      "url": "https://archive.museumofone.art/vocabulary.html",
+      "description": "Published preferred labels, definitions, alternative labels and qualified external mappings."
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#museum-cataloguing",
+      "name": "Museum cataloguing",
+      "termCode": "museum-cataloguing",
+      "description": "The creation, revision, and circulation of descriptive records for museum objects.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#critical-language",
+      "name": "Critical language",
+      "termCode": "critical-language",
+      "description": "The terms and linguistic choices through which critical claims are made.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#documentary-evidence",
+      "name": "Documentary evidence",
+      "termCode": "documentary-evidence",
+      "description": "Documents considered as support for an interpretive or historical claim.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#title-correction",
+      "name": "Title correction",
+      "termCode": "title-correction",
+      "description": "Revision of an object title or identification in a descriptive record.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    }
+  ]
+}

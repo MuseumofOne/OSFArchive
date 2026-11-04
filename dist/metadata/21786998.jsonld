@@ -1,0 +1,344 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://archive.museumofone.art/#website",
+      "name": "Museum of One Digital Archive Library",
+      "url": "https://archive.museumofone.art/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://archive.museumofone.art/items/21786998.html#webpage",
+      "url": "https://archive.museumofone.art/items/21786998.html",
+      "name": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century",
+      "isPartOf": {
+        "@id": "https://archive.museumofone.art/#website"
+      },
+      "mainEntity": {
+        "@id": "https://archive.museumofone.art/items/21786998.html#catalogue-record"
+      },
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.21786998"
+      },
+      "breadcrumb": {
+        "@id": "https://archive.museumofone.art/items/21786998.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/21786998.html#catalogue-record",
+      "name": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century",
+      "url": "https://archive.museumofone.art/items/21786998.html",
+      "mainEntityOfPage": {
+        "@id": "https://archive.museumofone.art/items/21786998.html#webpage"
+      },
+      "about": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.21786998"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#aesthetic-theory"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#interpretation"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#critical-language"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism"
+        }
+      ],
+      "disambiguatingDescription": "Local catalogue record describing a deposited publication version.",
+      "description": "An early theoretical essay that questions the assumption that interpretation provides a neutral foundation for aesthetic meaning, proposing instead that mediation carries ethical consequences.",
+      "keywords": [
+        "Aesthetic theory",
+        "Interpretation",
+        "Critical language",
+        "Post-Interpretive Criticism"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Local catalogue identifier",
+        "value": "MOO-CAT-013"
+      },
+      "dateModified": "2026-11-04",
+      "isBasedOn": [
+        {
+          "@id": "https://zenodo.org/records/21786998"
+        },
+        {
+          "@id": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "name": "Dorian Vale",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0004-7737-5094"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/#publisher",
+      "name": "Museum of One",
+      "url": "https://www.museumofone.art/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.18104019",
+      "name": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century — version family",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Zenodo concept DOI",
+        "value": "10.5281/zenodo.18104019"
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.21786998"
+      }
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/items/21786998.html#file-1",
+      "contentUrl": "https://zenodo.org/api/records/21786998/files/Interpretation%20at%20Risk%20Post-Interpretive%20Criticism%20After%20the%2020th%20Century.pdf/content",
+      "name": "Interpretation at Risk Post-Interpretive Criticism After the 20th Century.pdf",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.21786998"
+      },
+      "encodingFormat": "application/pdf",
+      "contentSize": "229568 bytes",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source checksum",
+        "value": "md5:d18570c20f85fd773c64d6f7730443d3"
+      }
+    },
+    {
+      "@type": "Periodical",
+      "@id": "https://portal.issn.org/resource/ISSN/2819-7232",
+      "name": "Post-interpretive criticism",
+      "issn": "2819-7232",
+      "url": "https://portal.issn.org/resource/ISSN/2819-7232"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/items/21786998.html#source-contributor-2",
+      "name": "Museum of One"
+    },
+    {
+      "@type": "Role",
+      "@id": "https://archive.museumofone.art/items/21786998.html#source-role-2",
+      "roleName": "HostingInstitution",
+      "contributor": {
+        "@id": "https://archive.museumofone.art/items/21786998.html#source-contributor-2"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://archive.museumofone.art/items/21786998.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Digital Archive Library",
+          "item": "https://archive.museumofone.art/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Catalogue",
+          "item": "https://archive.museumofone.art/catalogue.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MOO-CAT-013",
+          "item": "https://archive.museumofone.art/items/21786998.html"
+        }
+      ]
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/assets/documents/21786998.pdf",
+      "contentUrl": "https://archive.museumofone.art/assets/documents/21786998.pdf",
+      "name": "Verified reading copy of Interpretation at Risk: Post-Interpretive Criticism After the 20th Century",
+      "encodingFormat": "application/pdf",
+      "contentSize": "229568 bytes",
+      "description": "6 PDF file pages, including covers and unnumbered pages. Byte-identical local access copy; source checksum matched 2026-11-04.",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.21786998"
+      },
+      "isBasedOn": {
+        "@id": "https://archive.museumofone.art/items/21786998.html#file-1"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256 of local reading copy",
+        "value": "925b0b72d3349f32d6dbbc595baea96390439e36275d576a6d33fa4ce1fe3ff8"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5281/zenodo.21786998",
+      "name": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century",
+      "mainEntityOfPage": {
+        "@id": "https://zenodo.org/records/21786998"
+      },
+      "url": "https://zenodo.org/records/21786998",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.21786998"
+      },
+      "datePublished": "2025-12-31",
+      "keywords": [
+        "Post-Interpretive Criticism",
+        "interpretation",
+        "aesthetics",
+        "phenomenology",
+        "art criticism",
+        "ethics of witnessing"
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0004-7737-5094"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/#publisher"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "exampleOfWork": {
+        "@id": "https://doi.org/10.5281/zenodo.18104019"
+      },
+      "encoding": [
+        {
+          "@id": "https://archive.museumofone.art/items/21786998.html#file-1"
+        },
+        {
+          "@id": "https://archive.museumofone.art/assets/documents/21786998.pdf"
+        }
+      ],
+      "isPartOf": [
+        {
+          "@id": "https://portal.issn.org/resource/ISSN/2819-7232"
+        }
+      ],
+      "contributor": [
+        {
+          "@id": "https://archive.museumofone.art/items/21786998.html#source-role-2"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zenodo.org/records/21786998",
+      "name": "Zenodo deposited-version record",
+      "mainEntity": {
+        "@id": "https://doi.org/10.5281/zenodo.21786998"
+      },
+      "publisher": {
+        "@id": "https://zenodo.org/#repository"
+      },
+      "dateCreated": "2026-08-04T07:48:39.211908+00:00",
+      "dateModified": "2026-10-15T12:20:13.956799+00:00"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zenodo.org/#repository",
+      "name": "Zenodo",
+      "url": "https://zenodo.org/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "name": "Museum of One institutional publication context",
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.21786998"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/21786998.html#relationship-dorian-vale-author",
+      "name": "author",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/"
+      },
+      "description": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/21786998.html#relationship-museum-of-one-publisher",
+      "name": "publisher",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/"
+      },
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://archive.museumofone.art/vocabulary.html",
+      "name": "Museum of One local editorial discovery vocabulary",
+      "url": "https://archive.museumofone.art/vocabulary.html",
+      "description": "Published preferred labels, definitions, alternative labels and qualified external mappings."
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#aesthetic-theory",
+      "name": "Aesthetic theory",
+      "termCode": "aesthetic-theory",
+      "description": "Theoretical propositions about how art is encountered, understood, or valued.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#interpretation",
+      "name": "Interpretation",
+      "termCode": "interpretation",
+      "description": "The production and negotiation of meaning in encounters with art.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#critical-language",
+      "name": "Critical language",
+      "termCode": "critical-language",
+      "description": "The terms and linguistic choices through which critical claims are made.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism",
+      "name": "Post-Interpretive Criticism",
+      "termCode": "post-interpretive-criticism",
+      "description": "The critical framework named and developed in the Museum of One publications.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    }
+  ]
+}

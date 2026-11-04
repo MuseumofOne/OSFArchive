@@ -1,0 +1,1198 @@
+{
+  "schema_version": 1,
+  "description": "Local analytic descriptions of components within four published PDF editions. These are parts of their parent publications, not independently deposited records. PDF file pages are one-based; printed page labels are transcribed separately.",
+  "books": {
+    "19864099": {
+      "source": {
+        "file": "assets/documents/19864099.pdf",
+        "page_count": 82,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      },
+      "components": [
+        {
+          "title": "Preface",
+          "type": "Preface",
+          "pdf_start": 6,
+          "pdf_end": 7,
+          "printed_start": "iv",
+          "printed_end": "v",
+          "id": "c001",
+          "evidence": {
+            "file": "assets/documents/19864099.pdf",
+            "pdf_pages": [
+              6,
+              7
+            ],
+            "title_source": "Full heading on PDF file page 6; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 1,
+          "title": "Post-Interpretive Criticism: A Doctrine of Restraint, Witness, and Moral Proximity in Contemporary Art Writing",
+          "type": "Essay",
+          "pdf_start": 9,
+          "printed_start": "1",
+          "id": "c002",
+          "pdf_end": 15,
+          "printed_end": "7",
+          "evidence": {
+            "file": "assets/documents/19864099.pdf",
+            "pdf_pages": [
+              9,
+              15
+            ],
+            "title_source": "Full heading on PDF file page 9; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 2,
+          "title": "A Philosophical Departure from Post-Criticism",
+          "type": "Essay",
+          "pdf_start": 16,
+          "printed_start": "8",
+          "id": "c003",
+          "pdf_end": 21,
+          "printed_end": "13",
+          "evidence": {
+            "file": "assets/documents/19864099.pdf",
+            "pdf_pages": [
+              16,
+              21
+            ],
+            "title_source": "Full heading on PDF file page 16; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 3,
+          "title": "Art as Truth: A Treatise",
+          "type": "Essay",
+          "pdf_start": 22,
+          "printed_start": "14",
+          "id": "c004",
+          "pdf_end": 27,
+          "printed_end": "19",
+          "evidence": {
+            "file": "assets/documents/19864099.pdf",
+            "pdf_pages": [
+              22,
+              27
+            ],
+            "title_source": "Full heading on PDF file page 22; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 4,
+          "title": "Stillmark Theory: A Treatise on Presence, Vanishing, and the Discipline of the Fleeting",
+          "type": "Essay",
+          "pdf_start": 28,
+          "printed_start": "20",
+          "id": "c005",
+          "pdf_end": 34,
+          "printed_end": "26",
+          "evidence": {
+            "file": "assets/documents/19864099.pdf",
+            "pdf_pages": [
+              28,
+              34
+            ],
+            "title_source": "Full heading on PDF file page 28; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Absential Aesthetics Theory: On Ghosts, Absence, and the Afterlife of Art",
+          "type": "Essay",
+          "pdf_start": 35,
+          "printed_start": "27",
+          "id": "c006",
+          "pdf_end": 39,
+          "printed_end": "31",
+          "evidence": {
+            "file": "assets/documents/19864099.pdf",
+            "pdf_pages": [
+              35,
+              39
+            ],
+            "title_source": "Full heading on PDF file page 35; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 6,
+          "title": "Hauntmark Theory: The Lingering Weight of Words",
+          "type": "Essay",
+          "pdf_start": 40,
+          "printed_start": "32",
+          "id": "c007",
+          "pdf_end": 46,
+          "printed_end": "38",
+          "evidence": {
+            "file": "assets/documents/19864099.pdf",
+            "pdf_pages": [
+              40,
+              46
+            ],
+            "title_source": "Full heading on PDF file page 40; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 7,
+          "title": "Language as a Blade: The Ethics of Precision in Post-Interpretive Criticism",
+          "type": "Essay",
+          "pdf_start": 47,
+          "printed_start": "39",
+          "id": "c008",
+          "pdf_end": 53,
+          "printed_end": "45",
+          "evidence": {
+            "file": "assets/documents/19864099.pdf",
+            "pdf_pages": [
+              47,
+              53
+            ],
+            "title_source": "Full heading on PDF file page 47; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 8,
+          "title": "Message Transfer Theory (MTT): A Treatise on the Reversal of Meaning, the Displacement of Intent, and the Object as Conduit",
+          "type": "Essay",
+          "pdf_start": 54,
+          "printed_start": "46",
+          "id": "c009",
+          "pdf_end": 60,
+          "printed_end": "52",
+          "evidence": {
+            "file": "assets/documents/19864099.pdf",
+            "pdf_pages": [
+              54,
+              60
+            ],
+            "title_source": "Full heading on PDF file page 54; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 9,
+          "title": "The Viewer as Evidence: A Treatise on Witness, Residue, and Critical Consequence",
+          "type": "Essay",
+          "pdf_start": 61,
+          "printed_start": "53",
+          "id": "c010",
+          "pdf_end": 69,
+          "printed_end": "61",
+          "evidence": {
+            "file": "assets/documents/19864099.pdf",
+            "pdf_pages": [
+              61,
+              69
+            ],
+            "title_source": "Full heading on PDF file page 61; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 10,
+          "title": "Theory of Aesthetic Displacement: A Treatise on Witness, Alteration, and the Irreversible Encounter",
+          "type": "Essay",
+          "pdf_start": 70,
+          "printed_start": "62",
+          "id": "c011",
+          "pdf_end": 73,
+          "printed_end": "65",
+          "evidence": {
+            "file": "assets/documents/19864099.pdf",
+            "pdf_pages": [
+              70,
+              73
+            ],
+            "title_source": "Full heading on PDF file page 70; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 11,
+          "title": "The Theory of Misplacement",
+          "type": "Essay",
+          "pdf_start": 74,
+          "printed_start": "66",
+          "id": "c012",
+          "pdf_end": 78,
+          "printed_end": "70",
+          "evidence": {
+            "file": "assets/documents/19864099.pdf",
+            "pdf_pages": [
+              74,
+              78
+            ],
+            "title_source": "Full heading on PDF file page 74; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 12,
+          "title": "The Archive as Movement",
+          "type": "Essay",
+          "pdf_start": 79,
+          "printed_start": "71",
+          "id": "c013",
+          "pdf_end": 80,
+          "printed_end": "72",
+          "evidence": {
+            "file": "assets/documents/19864099.pdf",
+            "pdf_pages": [
+              79,
+              80
+            ],
+            "title_source": "Full heading on PDF file page 79; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "title": "About the Author",
+          "type": "Biographical note",
+          "pdf_start": 81,
+          "printed_start": "73",
+          "id": "c014",
+          "pdf_end": 81,
+          "printed_end": "73",
+          "evidence": {
+            "file": "assets/documents/19864099.pdf",
+            "pdf_pages": [
+              81,
+              81
+            ],
+            "title_source": "Full heading on PDF file page 81; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        }
+      ]
+    },
+    "19864115": {
+      "source": {
+        "file": "assets/documents/19864115.pdf",
+        "page_count": 96,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      },
+      "components": [
+        {
+          "title": "Preface",
+          "type": "Preface",
+          "pdf_start": 6,
+          "pdf_end": 7,
+          "printed_start": "iv",
+          "printed_end": "v",
+          "id": "c001",
+          "evidence": {
+            "file": "assets/documents/19864115.pdf",
+            "pdf_pages": [
+              6,
+              7
+            ],
+            "title_source": "Full heading on PDF file page 6; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 1,
+          "title": "The Custodian of Consequence: Reframing the Role of the Critic",
+          "type": "Essay",
+          "pdf_start": 9,
+          "printed_start": "1",
+          "id": "c002",
+          "pdf_end": 15,
+          "printed_end": "7",
+          "evidence": {
+            "file": "assets/documents/19864115.pdf",
+            "pdf_pages": [
+              9,
+              15
+            ],
+            "title_source": "Full heading on PDF file page 9; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 2,
+          "title": "Against the Compulsive Urge to Interpret",
+          "type": "Essay",
+          "pdf_start": 16,
+          "printed_start": "8",
+          "id": "c003",
+          "pdf_end": 21,
+          "printed_end": "13",
+          "evidence": {
+            "file": "assets/documents/19864115.pdf",
+            "pdf_pages": [
+              16,
+              21
+            ],
+            "title_source": "Full heading on PDF file page 16; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 3,
+          "title": "Moral Proximity: Ethics as Method in Post-Interpretive Criticism",
+          "type": "Essay",
+          "pdf_start": 22,
+          "printed_start": "14",
+          "id": "c004",
+          "pdf_end": 27,
+          "printed_end": "19",
+          "evidence": {
+            "file": "assets/documents/19864115.pdf",
+            "pdf_pages": [
+              22,
+              27
+            ],
+            "title_source": "Full heading on PDF file page 22; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 4,
+          "title": "The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism",
+          "type": "Essay",
+          "pdf_start": 28,
+          "printed_start": "20",
+          "id": "c005",
+          "pdf_end": 41,
+          "printed_end": "33",
+          "evidence": {
+            "file": "assets/documents/19864115.pdf",
+            "pdf_pages": [
+              28,
+              41
+            ],
+            "title_source": "Full heading on PDF file page 28; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Post-Interpretive Method: How to Practice Restraint in Front of a Work of Art",
+          "type": "Essay",
+          "pdf_start": 42,
+          "printed_start": "34",
+          "id": "c006",
+          "pdf_end": 45,
+          "printed_end": "37",
+          "evidence": {
+            "file": "assets/documents/19864115.pdf",
+            "pdf_pages": [
+              42,
+              45
+            ],
+            "title_source": "Full heading on PDF file page 42; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 6,
+          "title": "Witnessing vs. Interpreting – A Post-Interpretive Comparative Exercise",
+          "type": "Essay",
+          "pdf_start": 46,
+          "printed_start": "38",
+          "id": "c007",
+          "pdf_end": 51,
+          "printed_end": "43",
+          "evidence": {
+            "file": "assets/documents/19864115.pdf",
+            "pdf_pages": [
+              46,
+              51
+            ],
+            "title_source": "Full heading on PDF file page 46; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 7,
+          "title": "Language as Custody — Writing Without Harm in Post-Interpretive Criticism",
+          "type": "Essay",
+          "pdf_start": 52,
+          "printed_start": "44",
+          "id": "c008",
+          "pdf_end": 55,
+          "printed_end": "47",
+          "evidence": {
+            "file": "assets/documents/19864115.pdf",
+            "pdf_pages": [
+              52,
+              55
+            ],
+            "title_source": "Full heading on PDF file page 52; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 8,
+          "title": "Five Principles of Post-Interpretive Criticism: A Study Guide",
+          "type": "Essay",
+          "pdf_start": 56,
+          "printed_start": "48",
+          "id": "c009",
+          "pdf_end": 61,
+          "printed_end": "53",
+          "evidence": {
+            "file": "assets/documents/19864115.pdf",
+            "pdf_pages": [
+              56,
+              61
+            ],
+            "title_source": "Full heading on PDF file page 56; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 9,
+          "title": "Formal Defense of Post-Interpretive Criticism",
+          "type": "Essay",
+          "pdf_start": 62,
+          "printed_start": "54",
+          "id": "c010",
+          "pdf_end": 67,
+          "printed_end": "59",
+          "evidence": {
+            "file": "assets/documents/19864115.pdf",
+            "pdf_pages": [
+              62,
+              67
+            ],
+            "title_source": "Full heading on PDF file page 62; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 10,
+          "title": "A Philosophical Departure from Post-Criticism",
+          "type": "Essay",
+          "pdf_start": 68,
+          "printed_start": "60",
+          "id": "c011",
+          "pdf_end": 73,
+          "printed_end": "65",
+          "evidence": {
+            "file": "assets/documents/19864115.pdf",
+            "pdf_pages": [
+              68,
+              73
+            ],
+            "title_source": "Full heading on PDF file page 68; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 11,
+          "title": "The First Break Since Postmodernism: The Rise of Post-Interpretive Criticism",
+          "type": "Essay",
+          "pdf_start": 74,
+          "printed_start": "66",
+          "id": "c012",
+          "pdf_end": 95,
+          "printed_end": "87",
+          "evidence": {
+            "file": "assets/documents/19864115.pdf",
+            "pdf_pages": [
+              74,
+              95
+            ],
+            "title_source": "Full heading on PDF file page 74; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        }
+      ]
+    },
+    "23395654": {
+      "source": {
+        "file": "assets/documents/23395654.pdf",
+        "page_count": 226,
+        "pdf_pages": [
+          5,
+          6
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      },
+      "components": [
+        {
+          "title": "Preface",
+          "type": "Preface",
+          "pdf_start": 7,
+          "pdf_end": 10,
+          "printed_start": "v",
+          "printed_end": "viii",
+          "id": "c001",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              7,
+              10
+            ],
+            "title_source": "Full heading on PDF file page 7; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 1,
+          "title": "The Lens of Origin: The Unwritten Archive, Before Islam, Before Labels",
+          "type": "Chapter",
+          "pdf_start": 11,
+          "printed_start": "1",
+          "id": "c002",
+          "pdf_end": 27,
+          "printed_end": "17",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              11,
+              27
+            ],
+            "title_source": "Full heading on PDF file page 11; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 2,
+          "title": "The Lens of the Land: River-Cosmology and Desert Intelligence",
+          "type": "Chapter",
+          "pdf_start": 28,
+          "printed_start": "18",
+          "id": "c003",
+          "pdf_end": 47,
+          "printed_end": "37",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              28,
+              47
+            ],
+            "title_source": "Full heading on PDF file page 28; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 3,
+          "title": "The Lens of the Body: Scar, Pattern, and Totem",
+          "type": "Chapter",
+          "pdf_start": 48,
+          "printed_start": "38",
+          "id": "c004",
+          "pdf_end": 62,
+          "printed_end": "52",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              48,
+              62
+            ],
+            "title_source": "Full heading on PDF file page 48; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 4,
+          "title": "The Lens of Aftermath: Art After the Border Was Drawn",
+          "type": "Chapter",
+          "pdf_start": 63,
+          "printed_start": "53",
+          "id": "c005",
+          "pdf_end": 78,
+          "printed_end": "68",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              63,
+              78
+            ],
+            "title_source": "Full heading on PDF file page 63; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 5,
+          "title": "The Lens of Erasure: When Civilizing Became a Curriculum",
+          "type": "Chapter",
+          "pdf_start": 79,
+          "printed_start": "69",
+          "id": "c006",
+          "pdf_end": 95,
+          "printed_end": "85",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              79,
+              95
+            ],
+            "title_source": "Full heading on PDF file page 79; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 6,
+          "title": "The Lens of Resistance: When Beauty Became a Code",
+          "type": "Chapter",
+          "pdf_start": 96,
+          "printed_start": "86",
+          "id": "c007",
+          "pdf_end": 109,
+          "printed_end": "99",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              96,
+              109
+            ],
+            "title_source": "Full heading on PDF file page 96; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 7,
+          "title": "The Lens of the Sacred: The Theology of Repetition",
+          "type": "Chapter",
+          "pdf_start": 110,
+          "printed_start": "100",
+          "id": "c008",
+          "pdf_end": 118,
+          "printed_end": "108",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              110,
+              118
+            ],
+            "title_source": "Full heading on PDF file page 110; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 8,
+          "title": "The Lens of Sand & Scripture: Aesthetic Islam in Sudan",
+          "type": "Chapter",
+          "pdf_start": 119,
+          "printed_start": "109",
+          "id": "c009",
+          "pdf_end": 133,
+          "printed_end": "123",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              119,
+              133
+            ],
+            "title_source": "Full heading on PDF file page 119; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 9,
+          "title": "The Lens of Oral Memory: The Artwork That Walks Before the Pen",
+          "type": "Chapter",
+          "pdf_start": 134,
+          "printed_start": "124",
+          "id": "c010",
+          "pdf_end": 143,
+          "printed_end": "133",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              134,
+              143
+            ],
+            "title_source": "Full heading on PDF file page 134; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 10,
+          "title": "The Lens of Architecture: Sudanese Space as Moral Instruction",
+          "type": "Chapter",
+          "pdf_start": 144,
+          "printed_start": "134",
+          "id": "c011",
+          "pdf_end": 153,
+          "printed_end": "143",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              144,
+              153
+            ],
+            "title_source": "Full heading on PDF file page 144; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 11,
+          "title": "The Lens of Craft: Inheritance in the Hands",
+          "type": "Chapter",
+          "pdf_start": 154,
+          "printed_start": "144",
+          "id": "c012",
+          "pdf_end": 165,
+          "printed_end": "155",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              154,
+              165
+            ],
+            "title_source": "Full heading on PDF file page 154; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 12,
+          "title": "The Lens of Migration: The Shadow Canon of Diaspora",
+          "type": "Chapter",
+          "pdf_start": 166,
+          "printed_start": "156",
+          "id": "c013",
+          "pdf_end": 179,
+          "printed_end": "169",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              166,
+              179
+            ],
+            "title_source": "Full heading on PDF file page 166; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 13,
+          "title": "The Lens of Rupture: The Hand Continues",
+          "type": "Chapter",
+          "pdf_start": 180,
+          "printed_start": "170",
+          "id": "c014",
+          "pdf_end": 193,
+          "printed_end": "183",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              180,
+              193
+            ],
+            "title_source": "Full heading on PDF file page 180; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 14,
+          "title": "The Lens of Silence: Withheld Testimony as Strategy",
+          "type": "Chapter",
+          "pdf_start": 194,
+          "printed_start": "184",
+          "id": "c015",
+          "pdf_end": 206,
+          "printed_end": "196",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              194,
+              206
+            ],
+            "title_source": "Full heading on PDF file page 194; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 15,
+          "title": "The Lens of the Ghost: What Sudan Tried to Forget",
+          "type": "Chapter",
+          "pdf_start": 207,
+          "printed_start": "197",
+          "id": "c016",
+          "pdf_end": 223,
+          "printed_end": "213",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              207,
+              223
+            ],
+            "title_source": "Full heading on PDF file page 207; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 16,
+          "title": "Epilogue: The Custodian’s Oath",
+          "type": "Chapter",
+          "pdf_start": 224,
+          "printed_start": "214",
+          "id": "c017",
+          "pdf_end": 225,
+          "printed_end": "215",
+          "evidence": {
+            "file": "assets/documents/23395654.pdf",
+            "pdf_pages": [
+              224,
+              225
+            ],
+            "title_source": "Full heading on PDF file page 224; contents pages 5–6",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        }
+      ]
+    },
+    "20383926": {
+      "source": {
+        "file": "assets/documents/20383926.pdf",
+        "page_count": 196,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      },
+      "components": [
+        {
+          "title": "Preface",
+          "type": "Preface",
+          "pdf_start": 6,
+          "pdf_end": 8,
+          "printed_start": "iv",
+          "printed_end": "vi",
+          "id": "c001",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              6,
+              8
+            ],
+            "title_source": "Full heading on PDF file page 6; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 1,
+          "title": "Introduction",
+          "type": "Chapter",
+          "pdf_start": 9,
+          "printed_start": "1",
+          "id": "c002",
+          "pdf_end": 22,
+          "printed_end": "14",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              9,
+              22
+            ],
+            "title_source": "Full heading on PDF file page 9; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 2,
+          "title": "The Moral Birth of Spaces",
+          "type": "Chapter",
+          "pdf_start": 23,
+          "printed_start": "15",
+          "id": "c003",
+          "pdf_end": 36,
+          "printed_end": "28",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              23,
+              36
+            ],
+            "title_source": "Full heading on PDF file page 23; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 3,
+          "title": "The Choreographers: A Lineage of Power",
+          "type": "Chapter",
+          "pdf_start": 37,
+          "printed_start": "29",
+          "id": "c004",
+          "pdf_end": 51,
+          "printed_end": "43",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              37,
+              51
+            ],
+            "title_source": "Full heading on PDF file page 37; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 4,
+          "title": "The Body as the First Blueprint",
+          "type": "Chapter",
+          "pdf_start": 52,
+          "printed_start": "44",
+          "id": "c005",
+          "pdf_end": 66,
+          "printed_end": "58",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              52,
+              66
+            ],
+            "title_source": "Full heading on PDF file page 52; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 5,
+          "title": "The Architecture of Shame",
+          "type": "Chapter",
+          "pdf_start": 67,
+          "printed_start": "59",
+          "id": "c006",
+          "pdf_end": 81,
+          "printed_end": "73",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              67,
+              81
+            ],
+            "title_source": "Full heading on PDF file page 67; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 6,
+          "title": "The Architecture of Obedience",
+          "type": "Chapter",
+          "pdf_start": 82,
+          "printed_start": "74",
+          "id": "c007",
+          "pdf_end": 97,
+          "printed_end": "89",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              82,
+              97
+            ],
+            "title_source": "Full heading on PDF file page 82; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 7,
+          "title": "The Architecture of Awe",
+          "type": "Chapter",
+          "pdf_start": 98,
+          "printed_start": "90",
+          "id": "c008",
+          "pdf_end": 112,
+          "printed_end": "104",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              98,
+              112
+            ],
+            "title_source": "Full heading on PDF file page 98; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 8,
+          "title": "Space as Moral Evidence",
+          "type": "Chapter",
+          "pdf_start": 113,
+          "printed_start": "105",
+          "id": "c009",
+          "pdf_end": 129,
+          "printed_end": "121",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              113,
+              129
+            ],
+            "title_source": "Full heading on PDF file page 113; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 9,
+          "title": "Against Interpretation: The Ethical Stance",
+          "type": "Chapter",
+          "pdf_start": 130,
+          "printed_start": "122",
+          "id": "c010",
+          "pdf_end": 147,
+          "printed_end": "139",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              130,
+              147
+            ],
+            "title_source": "Full heading on PDF file page 130; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 10,
+          "title": "The Ethics of Custodial Space",
+          "type": "Chapter",
+          "pdf_start": 148,
+          "printed_start": "140",
+          "id": "c011",
+          "pdf_end": 162,
+          "printed_end": "154",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              148,
+              162
+            ],
+            "title_source": "Full heading on PDF file page 148; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 11,
+          "title": "The Critic as Witness",
+          "type": "Chapter",
+          "pdf_start": 163,
+          "printed_start": "155",
+          "id": "c012",
+          "pdf_end": 175,
+          "printed_end": "167",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              163,
+              175
+            ],
+            "title_source": "Full heading on PDF file page 163; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 12,
+          "title": "The Post-Interpretive Doctrine",
+          "type": "Chapter",
+          "pdf_start": 176,
+          "printed_start": "168",
+          "id": "c013",
+          "pdf_end": 189,
+          "printed_end": "181",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              176,
+              189
+            ],
+            "title_source": "Full heading on PDF file page 176; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 13,
+          "title": "The Benedict",
+          "type": "Chapter",
+          "pdf_start": 190,
+          "printed_start": "182",
+          "id": "c014",
+          "pdf_end": 196,
+          "printed_end": "188",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              190,
+              196
+            ],
+            "title_source": "Full heading on PDF file page 190; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          }
+        }
+      ]
+    }
+  }
+}

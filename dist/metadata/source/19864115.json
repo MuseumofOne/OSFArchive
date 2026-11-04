@@ -1,0 +1,161 @@
+{
+  "created": "2026-04-28T19:19:00.113516+00:00",
+  "modified": "2026-10-15T12:15:14.061006+00:00",
+  "id": 19864115,
+  "conceptrecid": "17078846",
+  "doi": "10.5281/zenodo.19864115",
+  "conceptdoi": "10.5281/zenodo.17078846",
+  "doi_url": "https://doi.org/10.5281/zenodo.19864115",
+  "metadata": {
+    "title": "Post-Interpretive Criticism: Volume II — Essays from the Field",
+    "doi": "10.5281/zenodo.19864115",
+    "publication_date": "2025",
+    "description": "<p><strong>Post-Interpretive Criticism: Volume II &mdash; Essays from the Field</strong> continues the formal articulation of a new movement in contemporary art thought: one rooted not in interpretation, but in <em>presence</em>. As the second major volume by Dorian Vale, this collection gathers eight pivotal essays that apply and expand the doctrines of <strong>Post-Interpretive Criticism (PIC)</strong>&mdash;a philosophical and aesthetic framework grounded in restraint, moral proximity, and the ethics of witnessing.</p>\n<p>Divided into two sections, the book offers:</p>\n<ul>\n<li>\n<p><strong>Part I &mdash; Canonical Essays</strong>: Deep explorations of works by Doris Salcedo, Zarina Hashmi, Kimsooja, and Ana Mendieta, each demonstrating how post-interpretive principles reveal new modes of custodial engagement with trauma, exile, stillness, and erasure.</p>\n</li>\n<li>\n<p><strong>Part II &mdash; Pedagogical Essays</strong>: Practical tools and educational resources designed to teach and transmit PIC as a method. These essays guide readers through practices of restraint, witnessing, and language discipline, equipping students, curators, and viewers alike to approach art with greater reverence and ethical literacy.</p>\n</li>\n</ul>\n<p>Together, these writings mark the maturation of a critical movement that refuses sensationalism, values silence, and honors the unspoken. This volume cements Dorian Vale&rsquo;s position not only as the founder of Post-Interpretive Criticism, but as a leading voice in rethinking what it means to encounter art&mdash;<em>not to explain it, but to stand beside it</em>.</p>\n<p>&nbsp;</p>\n<p>Vale, Dorian. Post-Interpretive Criticism: Volume II &mdash; Essays from the Field. Museum of One, 2025. DOI: 10.5281/zenodo.17078846</p>\n<p>&nbsp;</p>\n<p>First published by Museum of One in 2025. Stable work DOI: <a href=\"https://doi.org/10.5281/zenodo.17078846\">10.5281/zenodo.17078846</a></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": "MuseumofOne",
+        "orcid": "0009-0004-7737-5094"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": "https://www.museumofone.art/",
+        "type": "RightsHolder"
+      },
+      {
+        "name": "Museum of One",
+        "affiliation": null,
+        "type": "HostingInstitution"
+      }
+    ],
+    "keywords": [
+      "Post-Interpretive Criticism",
+      "art criticism",
+      "aesthetics",
+      "ethics of witnessing",
+      "moral proximity",
+      "restraint",
+      "contemporary art"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.17058411",
+        "relation": "continues",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "2819-7232",
+        "relation": "isPartOf",
+        "scheme": "issn"
+      }
+    ],
+    "resource_type": {
+      "title": "Book",
+      "type": "publication",
+      "subtype": "book"
+    },
+    "imprint": {},
+    "alternate_identifiers": [
+      {
+        "identifier": "978-1-06-982031-0"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "post-interpretive-criticism"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17078846"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Post-Interpretive Criticism: Volume II — Essays from the Field",
+  "links": {
+    "self": "https://zenodo.org/api/records/19864115",
+    "self_html": "https://zenodo.org/records/19864115",
+    "preview_html": "https://zenodo.org/records/19864115?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.19864115",
+    "self_doi": "https://doi.org/10.5281/zenodo.19864115",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.19864115",
+    "reserve_doi": "https://zenodo.org/api/records/19864115/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17078846",
+    "parent_html": "https://zenodo.org/records/17078846",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17078846",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17078846",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:19864115/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:19864115/sequence/default",
+    "files": "https://zenodo.org/api/records/19864115/files",
+    "media_files": "https://zenodo.org/api/records/19864115/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:19864115:post-interpretive-criticism-volume-ii-STANDARD.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:19864115:post-interpretive-criticism-volume-ii-STANDARD.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:19864115:post-interpretive-criticism-volume-ii-STANDARD.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:19864115:post-interpretive-criticism-volume-ii-STANDARD.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:19864115:post-interpretive-criticism-volume-ii-STANDARD.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:19864115:post-interpretive-criticism-volume-ii-STANDARD.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "latest": "https://zenodo.org/api/records/19864115/versions/latest",
+    "latest_html": "https://zenodo.org/records/19864115/latest",
+    "versions": "https://zenodo.org/api/records/19864115/versions",
+    "draft": "https://zenodo.org/api/records/19864115/draft",
+    "access_links": "https://zenodo.org/api/records/19864115/access/links",
+    "access_grants": "https://zenodo.org/api/records/19864115/access/grants",
+    "access_users": "https://zenodo.org/api/records/19864115/access/users",
+    "access_request": "https://zenodo.org/api/records/19864115/access/request",
+    "access": "https://zenodo.org/api/records/19864115/access",
+    "communities": "https://zenodo.org/api/records/19864115/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/19864115/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/19864115/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/19864115/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/19864115/quota-increase",
+    "requests": "https://zenodo.org/api/records/19864115/requests"
+  },
+  "updated": "2026-10-15T12:15:14.061006+00:00",
+  "recid": "19864115",
+  "revision": 18,
+  "files": [
+    {
+      "id": "fbe85ade-132c-4f48-a00e-0b6a84fdad27",
+      "key": "post-interpretive-criticism-volume-ii-STANDARD.pdf",
+      "size": 2610097,
+      "checksum": "md5:9487d0fc48e7afdfb960fc328d8e4881",
+      "links": {
+        "self": "https://zenodo.org/api/records/19864115/files/post-interpretive-criticism-volume-ii-STANDARD.pdf/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1392900"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 403,
+    "unique_downloads": 281,
+    "views": 497,
+    "unique_views": 436,
+    "version_downloads": 94,
+    "version_unique_downloads": 78,
+    "version_unique_views": 134,
+    "version_views": 159
+  },
+  "state": "done",
+  "submitted": true
+}

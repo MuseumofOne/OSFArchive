@@ -1,0 +1,138 @@
+{
+  "created": "2026-10-15T13:02:22.774012+00:00",
+  "modified": "2026-10-15T13:02:23.227934+00:00",
+  "id": 23395654,
+  "conceptrecid": "19207069",
+  "doi": "10.5281/zenodo.23395654",
+  "conceptdoi": "10.5281/zenodo.19207069",
+  "doi_url": "https://doi.org/10.5281/zenodo.23395654",
+  "metadata": {
+    "title": "Threads of Sand, Scar & Scripture: Sudanese Art and the Ethics of Witnessing (A Post-Interpretive Study)",
+    "doi": "10.5281/zenodo.23395654",
+    "publication_date": "2026-05-18",
+    "description": "<p><strong>Title:</strong> Threads of Sand, Scar &amp; Scripture: Sudanese Art and the Ethics of Witnessing (A Post-Interpretive Study)</p>\n<p><strong>Author:</strong> Dorian Vale</p>\n<p><strong>Affiliation:</strong> Museum of One &mdash; Registered Archive &amp; Independent Research Institute for Contemporary Aesthetics</p>\n<p>This book presents a sustained philosophical and critical inquiry into Sudanese art under conditions of war, displacement, and historical fragmentation, advancing <strong>Post-Interpretive Criticism (PIC)</strong> as an ethical alternative to dominant interpretive frameworks in contemporary art discourse. Rather than treating artworks as objects to be decoded, explained, or culturally translated for external audiences, this study repositions the critic as a <strong>witness in proximity</strong>&mdash;one who resists extraction, narrative closure, and symbolic appropriation.</p>\n<p>Through a series of close encounters with Sudanese visual practices&mdash;ranging from material craft traditions and domestic forms to contemporary expressions shaped by exile and rupture&mdash;the book develops a methodology grounded in <strong>restraint, presence, and moral adjacency</strong>. It argues that conventional art criticism, particularly within post-1950s interpretive paradigms, has produced a condition of <strong>interpretive saturation</strong>, wherein artworks are reduced to vehicles for meaning rather than approached as sites of lived continuity and fragile coherence.</p>\n<p>Drawing on the philosophical architecture of Post-Interpretive Criticism&mdash;including concepts such as <strong>viewer-as-evidence, ethical proximity, and the refusal of interpretive closure</strong>&mdash;the text examines how Sudanese art operates not as representation but as <strong>survival infrastructure</strong>: a means of carrying memory, dignity, and cultural continuity through conditions of systemic disruption. In doing so, it reframes aesthetic experience as an ethical encounter shaped by limits, rather than an opportunity for discursive expansion.</p>\n<p>The book further situates Sudanese art within broader discussions of <strong>archive politics, institutional mediation, and the epistemic violence of interpretation</strong>, arguing that acts of naming, framing, and explaining often function as forms of displacement. Against this, it proposes a discipline of witnessing that privileges <strong>silence, material attention, and positional awareness</strong> over interpretive authority.</p>\n<p>Positioned at the intersection of aesthetics, anthropology, and philosophy,&nbsp;<em>Threads of Sand, Scar, &amp; Scripture</em> contributes to emerging post-hermeneutic approaches to art criticism by offering both a theoretical framework and a series of applied analyses. It establishes Post-Interpretive Criticism not merely as a method, but as a <strong>necessary ethical recalibration</strong> in the face of cultural fragility, where the role of criticism is no longer to extract meaning, but to <strong>remain answerable to what survives</strong>.</p>\n<div>\n<p><strong>Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen.</strong></p>\n</div>\n<p>Repository file correction, 15 October 2026: this version restores the verified Threads PDF from public version 10.5281/zenodo.20272105. It corrects the unrelated Moral Evidence PDF deposited in version 10.5281/zenodo.20274964. The restored PDF is unchanged and identifies itself as the Second edition; this repository correction does not create a new book edition. First publication date for this edition: 18 May 2026. All earlier repository versions remain in the history. Stable concept DOI: 10.5281/zenodo.19207069.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": null,
+        "orcid": "0009-0004-7737-5094"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Museum of One",
+        "affiliation": null,
+        "type": "HostingInstitution"
+      }
+    ],
+    "keywords": [
+      "Sudanese art",
+      "Post-Interpretive Criticism",
+      "ethics of witnessing",
+      "art criticism",
+      "cultural memory",
+      "displacement"
+    ],
+    "resource_type": {
+      "title": "Book",
+      "type": "publication",
+      "subtype": "book"
+    },
+    "imprint": {},
+    "alternate_identifiers": [
+      {
+        "identifier": "978-1-06-982033-4"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 5,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "19207069"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Threads of Sand, Scar & Scripture: Sudanese Art and the Ethics of Witnessing (A Post-Interpretive Study)",
+  "links": {
+    "self": "https://zenodo.org/api/records/23395654",
+    "self_html": "https://zenodo.org/records/23395654",
+    "preview_html": "https://zenodo.org/records/23395654?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.23395654",
+    "self_doi": "https://doi.org/10.5281/zenodo.23395654",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23395654",
+    "reserve_doi": "https://zenodo.org/api/records/23395654/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/19207069",
+    "parent_html": "https://zenodo.org/records/19207069",
+    "parent_doi": "https://doi.org/10.5281/zenodo.19207069",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.19207069",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:23395654/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:23395654/sequence/default",
+    "files": "https://zenodo.org/api/records/23395654/files",
+    "media_files": "https://zenodo.org/api/records/23395654/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:23395654:Threads%20of%20Sand,%20Scar%20&%20Scripture.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:23395654:Threads%20of%20Sand,%20Scar%20&%20Scripture.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:23395654:Threads%20of%20Sand,%20Scar%20&%20Scripture.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:23395654:Threads%20of%20Sand,%20Scar%20&%20Scripture.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:23395654:Threads%20of%20Sand,%20Scar%20&%20Scripture.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:23395654:Threads%20of%20Sand,%20Scar%20&%20Scripture.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "latest": "https://zenodo.org/api/records/23395654/versions/latest",
+    "latest_html": "https://zenodo.org/records/23395654/latest",
+    "versions": "https://zenodo.org/api/records/23395654/versions",
+    "draft": "https://zenodo.org/api/records/23395654/draft",
+    "access_links": "https://zenodo.org/api/records/23395654/access/links",
+    "access_grants": "https://zenodo.org/api/records/23395654/access/grants",
+    "access_users": "https://zenodo.org/api/records/23395654/access/users",
+    "access_request": "https://zenodo.org/api/records/23395654/access/request",
+    "access": "https://zenodo.org/api/records/23395654/access",
+    "communities": "https://zenodo.org/api/records/23395654/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/23395654/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/23395654/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/23395654/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/23395654/quota-increase",
+    "requests": "https://zenodo.org/api/records/23395654/requests"
+  },
+  "updated": "2026-10-15T13:02:23.227934+00:00",
+  "recid": "23395654",
+  "revision": 4,
+  "files": [
+    {
+      "id": "d5a1c84f-ae18-4cbd-ba20-4112baa883fd",
+      "key": "Threads of Sand, Scar & Scripture.pdf",
+      "size": 1285819,
+      "checksum": "md5:46a6f18c00b10acb6753fcda97d91cd8",
+      "links": {
+        "self": "https://zenodo.org/api/records/23395654/files/Threads%20of%20Sand,%20Scar%20&%20Scripture.pdf/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1392900"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 205,
+    "unique_downloads": 188,
+    "views": 452,
+    "unique_views": 410,
+    "version_downloads": 28,
+    "version_unique_downloads": 22,
+    "version_unique_views": 38,
+    "version_views": 46
+  },
+  "state": "done",
+  "submitted": true
+}

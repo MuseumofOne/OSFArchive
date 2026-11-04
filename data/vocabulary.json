@@ -1,0 +1,1765 @@
+{
+  "scheme": {
+    "id": "museum-of-one-discovery-vocabulary",
+    "title": "Museum of One Local Discovery Vocabulary",
+    "version": 4,
+    "modified": "2026-11-04",
+    "language": "en",
+    "base_uri": "https://archive.museumofone.art/vocabulary.html",
+    "editorial_owner": "Museum of One Digital Archive Library",
+    "scope_note": "A maintained local vocabulary for consistent access to this selected Museum of One corpus. Definitions describe how terms are used here; they do not replace source wording or claim external authority endorsement.",
+    "maintenance_note": "New labels require a documented scope, source warrant, and review before assignment. Stable local identifiers are retained when labels change. External mappings require a checked authority record and an explicit relationship.",
+    "external_vocabulary_references": [
+      {
+        "title": "Getty Art & Architecture Thesaurus",
+        "url": "https://www.getty.edu/research/tools/vocabularies/aat/",
+        "mapping_status": "term_specific_only",
+        "note": "Two genre references are verified below; other local terms carry no Getty assignment."
+      },
+      {
+        "title": "Library of Congress Linked Data Service",
+        "url": "https://id.loc.gov/",
+        "mapping_status": "not_asserted",
+        "note": "Reference for future checked subject reconciliation; no blanket Library of Congress assignment is asserted."
+      }
+    ]
+  },
+  "terms": [
+    {
+      "id": "aesthetic-theory",
+      "persistent_id": "urn:museum-of-one:vocabulary:aesthetic-theory",
+      "preferred_label": "Aesthetic theory",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Theoretical propositions about how art is encountered, understood, or valued.",
+      "scope_note": "Use for explicit theoretical argument; distinguish the wider field of Aesthetics.",
+      "broader": [
+        "aesthetics"
+      ],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "21786998"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/21786998"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "aesthetics",
+      "persistent_id": "urn:museum-of-one:vocabulary:aesthetics",
+      "preferred_label": "Aesthetics",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Philosophical inquiry into art, perception, and aesthetic experience.",
+      "scope_note": "Used as a broad disciplinary access term; no external vocabulary equivalence is asserted.",
+      "broader": [],
+      "narrower": [
+        "aesthetic-theory"
+      ],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Aesthetics"
+        ],
+        "record_ids": [
+          "19864099"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19864099"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "architecture",
+      "persistent_id": "urn:museum-of-one:vocabulary:architecture",
+      "preferred_label": "Architecture",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Buildings and the built environment as subjects of critical study.",
+      "scope_note": "Use for the subject of a publication, not to classify the deposited document as a building.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "power-and-institutions",
+        "spatial-experience"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "architecture"
+        ],
+        "record_ids": [
+          "20383926"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/20383926"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "art-criticism",
+      "persistent_id": "urn:museum-of-one:vocabulary:art-criticism",
+      "preferred_label": "Art criticism",
+      "alternative_labels": [
+        "Art Criticism"
+      ],
+      "kind": "subject",
+      "definition": "Critical examination and discussion of artworks and encounters with art.",
+      "scope_note": "Use for publications addressing criticism as a practice, method, or ethical responsibility.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "art-writing",
+        "interpretation"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "art criticism"
+        ],
+        "record_ids": [
+          "19864099",
+          "19864115",
+          "20100139",
+          "19863790"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19864099",
+          "https://zenodo.org/records/19864115",
+          "https://zenodo.org/records/20100139",
+          "https://zenodo.org/records/19863790"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "art-writing",
+      "persistent_id": "urn:museum-of-one:vocabulary:art-writing",
+      "preferred_label": "Art writing",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Writing about art as a literary and critical practice.",
+      "scope_note": "Use when the act and responsibility of writing are central; related to but distinct from Art criticism.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "art-criticism",
+        "critical-language"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "19863851"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19863851"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "assemblage",
+      "persistent_id": "urn:museum-of-one:vocabulary:assemblage",
+      "preferred_label": "Assemblage",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Artistic practice involving the combination of existing objects or materials.",
+      "scope_note": "In this catalogue, used for discussion of El Anatsui’s material constructions; does not classify the deposited PDF as an artwork.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "material-practice"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "20593003"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/20593003"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "authorship",
+      "persistent_id": "urn:museum-of-one:vocabulary:authorship",
+      "preferred_label": "Authorship",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "The attribution and exercise of creative or intellectual agency.",
+      "scope_note": "Use for discussion of curatorial or critical authorship; named creators belong in agent authority records.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "19963428"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19963428"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "coding-procedures",
+      "persistent_id": "urn:museum-of-one:vocabulary:coding-procedures",
+      "preferred_label": "Coding procedures",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Documented rules for assigning analytical codes to research material.",
+      "scope_note": "Use for methodological instructions, not as evidence that their reliability has been established.",
+      "broader": [
+        "research-methods"
+      ],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "20100136"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/20100136"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "conservation-ethics",
+      "persistent_id": "urn:museum-of-one:vocabulary:conservation-ethics",
+      "preferred_label": "Conservation ethics",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Ethical questions about caring for, stabilising, or allowing change in artworks.",
+      "scope_note": "Use for discussion of conservation decisions and their relation to artistic impermanence.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "impermanence"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "21715085"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/21715085"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "contemporary-art",
+      "persistent_id": "urn:museum-of-one:vocabulary:contemporary-art",
+      "preferred_label": "Contemporary art",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Art discussed within contemporary artistic and critical contexts.",
+      "scope_note": "A broad local subject heading; specific chronology must be supplied in the item description.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "21715085"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/21715085"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "critical-language",
+      "persistent_id": "urn:museum-of-one:vocabulary:critical-language",
+      "preferred_label": "Critical language",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "The terms and linguistic choices through which critical claims are made.",
+      "scope_note": "Use for publications examining wording, descriptive authority, restraint, or the circulation of interpretation.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "art-writing",
+        "museum-cataloguing"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "23430200",
+          "20100136",
+          "20100139",
+          "21786998",
+          "19863851"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/23430200",
+          "https://zenodo.org/records/20100136",
+          "https://zenodo.org/records/20100139",
+          "https://zenodo.org/records/21786998",
+          "https://zenodo.org/records/19863851"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "curatorial-practice",
+      "persistent_id": "urn:museum-of-one:vocabulary:curatorial-practice",
+      "preferred_label": "Curatorial practice",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "The selection, organisation, and presentation of art in exhibitions.",
+      "scope_note": "Use for inquiry into curatorial decisions and their effects on an encounter with art.",
+      "broader": [],
+      "narrower": [
+        "exhibition-design"
+      ],
+      "related": [
+        "institutional-critique"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "19963428"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19963428"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "custodianship",
+      "persistent_id": "urn:museum-of-one:vocabulary:custodianship",
+      "preferred_label": "Custodianship",
+      "alternative_labels": [],
+      "kind": "local-framework-concept",
+      "definition": "A responsibility of care toward artworks within the author’s critical framework.",
+      "scope_note": "Local PIC concept. This intellectual use is distinct from legal custody, repository ownership, or archival transfer.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "post-interpretive-criticism"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "19863851"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19863851"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "displacement",
+      "persistent_id": "urn:museum-of-one:vocabulary:displacement",
+      "preferred_label": "Displacement",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Dislocation from place or context as a subject of art and critical writing.",
+      "scope_note": "In the current assignment, refers to displacement in the Sudanese art study; do not merge with the author’s named Aesthetic Displacement Theory.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "displacement"
+        ],
+        "record_ids": [
+          "23395654"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/23395654"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "documentary-evidence",
+      "persistent_id": "urn:museum-of-one:vocabulary:documentary-evidence",
+      "preferred_label": "Documentary evidence",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Documents considered as support for an interpretive or historical claim.",
+      "scope_note": "Use when the evidentiary function of records is central, rather than the production of documentation alone.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "documentation",
+        "historical-evidence"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "23430200"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/23430200"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "documentation",
+      "persistent_id": "urn:museum-of-one:vocabulary:documentation",
+      "preferred_label": "Documentation",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "The recording and preservation of information about art, events, or practices.",
+      "scope_note": "Use for discussion of documentary processes and their limitations; related to Documentary evidence.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "documentary-evidence",
+        "exhibition-histories"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Documentation"
+        ],
+        "record_ids": [
+          "23428974"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/23428974"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "el-anatsui",
+      "persistent_id": "urn:museum-of-one:vocabulary:el-anatsui",
+      "preferred_label": "El Anatsui",
+      "alternative_labels": [],
+      "kind": "named-subject",
+      "definition": "Named-subject access point for publications discussing the artist El Anatsui.",
+      "scope_note": "This local heading supports subject discovery. Identity and external authority assertions belong in the separate entity register.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "20593003"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/20593003"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "emirati-art",
+      "persistent_id": "urn:museum-of-one:vocabulary:emirati-art",
+      "preferred_label": "Emirati art",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Art discussed in relation to the United Arab Emirates.",
+      "scope_note": "A contextual subject heading, not a statement of any individual’s citizenship or an external geographic authority assignment.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "21241866"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/21241866"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "ethics-of-witnessing",
+      "persistent_id": "urn:museum-of-one:vocabulary:ethics-of-witnessing",
+      "preferred_label": "Ethics of witnessing",
+      "alternative_labels": [
+        "ethics of witnessing"
+      ],
+      "kind": "local-framework-concept",
+      "definition": "Ethical responsibility in attending to artworks and the histories they engage.",
+      "scope_note": "Local access term used for the Museum of One corpus. Preserve the author’s framework attribution; no equivalence with an external philosophical school is asserted.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "post-interpretive-criticism",
+        "witnessing"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "ethics of witnessing"
+        ],
+        "record_ids": [
+          "23395654",
+          "20383926",
+          "19863790",
+          "19863836"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/23395654",
+          "https://zenodo.org/records/20383926",
+          "https://zenodo.org/records/19863790",
+          "https://zenodo.org/records/19863836"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "exhibition-design",
+      "persistent_id": "urn:museum-of-one:vocabulary:exhibition-design",
+      "preferred_label": "Exhibition design",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "The spatial and material arrangements through which exhibitions present works.",
+      "scope_note": "Use for analysis of sequence, lighting, distance, and other presentation decisions.",
+      "broader": [
+        "curatorial-practice"
+      ],
+      "narrower": [],
+      "related": [
+        "spatial-experience"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "19963428"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19963428"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "exhibition-histories",
+      "persistent_id": "urn:museum-of-one:vocabulary:exhibition-histories",
+      "preferred_label": "Exhibition histories",
+      "alternative_labels": [
+        "Exhibition history"
+      ],
+      "kind": "subject",
+      "definition": "Historical study of exhibitions, their events, and their documentary traces.",
+      "scope_note": "Use for publications examining what exhibition records allow a historical account to claim.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "documentation"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "23428974"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/23428974"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "foundational-writings",
+      "persistent_id": "urn:museum-of-one:vocabulary:foundational-writings",
+      "preferred_label": "Foundational writings",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Writings presented within the corpus as introducing its foundational propositions.",
+      "scope_note": "Local editorial grouping for discovery; does not confer institutional canonisation or external recognition.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "post-interpretive-criticism"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "19864099"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19864099"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "hassan-sharif",
+      "persistent_id": "urn:museum-of-one:vocabulary:hassan-sharif",
+      "preferred_label": "Hassan Sharif",
+      "alternative_labels": [],
+      "kind": "named-subject",
+      "definition": "Named-subject access point for publications discussing the artist Hassan Sharif.",
+      "scope_note": "This local heading supports subject discovery. Identity and external authority assertions belong in the separate entity register.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Hassan Sharif"
+        ],
+        "record_ids": [
+          "21241866"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/21241866"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "historical-evidence",
+      "persistent_id": "urn:museum-of-one:vocabulary:historical-evidence",
+      "preferred_label": "Historical evidence",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Evidence used to support or constrain accounts of past artistic activity.",
+      "scope_note": "Use for methodological discussion of what an art-historical claim can substantiate.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "documentary-evidence"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Historical evidence"
+        ],
+        "record_ids": [
+          "23428974"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/23428974"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "historical-memory",
+      "persistent_id": "urn:museum-of-one:vocabulary:historical-memory",
+      "preferred_label": "Historical memory",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "The retention and mediation of the past through art and its material histories.",
+      "scope_note": "Used for studies linking an artwork’s materials or practices to remembered histories; related to the broader subject Memory.",
+      "broader": [
+        "memory"
+      ],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "20593003"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/20593003"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "impermanence",
+      "persistent_id": "urn:museum-of-one:vocabulary:impermanence",
+      "preferred_label": "Impermanence",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "The condition of change, transience, or non-endurance as an artistic concern.",
+      "scope_note": "Use for critical discussion of impermanence; material deterioration identifies a particular physical process.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "conservation-ethics",
+        "material-deterioration"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "21715085"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/21715085"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "institutional-critique",
+      "persistent_id": "urn:museum-of-one:vocabulary:institutional-critique",
+      "preferred_label": "Institutional critique",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Critical examination of the authority and practices of art institutions.",
+      "scope_note": "Use as a subject heading for inquiry into institutional framing; it does not classify a deposited essay as an artwork in that tradition.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "curatorial-practice"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "19963428"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19963428"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "inter-rater-reliability",
+      "persistent_id": "urn:museum-of-one:vocabulary:inter-rater-reliability",
+      "preferred_label": "Inter-rater reliability",
+      "alternative_labels": [
+        "Interrater reliability",
+        "Inter rater reliability"
+      ],
+      "kind": "subject",
+      "definition": "Agreement between independent coders applying a shared analytical procedure.",
+      "scope_note": "Use for research methods addressing such agreement. Assignment does not state that independent testing or successful validation has occurred.",
+      "broader": [
+        "research-methods"
+      ],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "20100136"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/20100136"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "interpretation",
+      "persistent_id": "urn:museum-of-one:vocabulary:interpretation",
+      "preferred_label": "Interpretation",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "The production and negotiation of meaning in encounters with art.",
+      "scope_note": "Use for discussion of interpretive activity and its limits; separate from the specific local Post-Interpretive Criticism framework.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "art-criticism"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "interpretation"
+        ],
+        "record_ids": [
+          "21786998"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/21786998"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "material-deterioration",
+      "persistent_id": "urn:museum-of-one:vocabulary:material-deterioration",
+      "preferred_label": "Material deterioration",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Physical alteration or weakening of materials over time.",
+      "scope_note": "Use for discussion of material fatigue and decay in artworks; no condition assessment of a held object is implied.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "impermanence"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "21715085"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/21715085"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "material-practice",
+      "persistent_id": "urn:museum-of-one:vocabulary:material-practice",
+      "preferred_label": "Material practice",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Artistic working with materials and their properties, histories, or uses.",
+      "scope_note": "Use as a broad subject for material processes; techniques such as Assemblage may be assigned separately.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "assemblage",
+        "repetition-and-labour"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "21241866",
+          "20593003"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/21241866",
+          "https://zenodo.org/records/20593003"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "memory",
+      "persistent_id": "urn:museum-of-one:vocabulary:memory",
+      "preferred_label": "Memory",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "The retention and continuing effects of experiences or histories.",
+      "scope_note": "Use for work addressing remembered encounters with art; Historical memory provides a narrower local access term.",
+      "broader": [],
+      "narrower": [
+        "historical-memory"
+      ],
+      "related": [
+        "viewer-response"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "19863836"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19863836"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "moral-proximity",
+      "persistent_id": "urn:museum-of-one:vocabulary:moral-proximity",
+      "preferred_label": "Moral proximity",
+      "alternative_labels": [
+        "Moral Proximity"
+      ],
+      "kind": "local-framework-concept",
+      "definition": "The author’s term for ethical responsibility through closeness and restraint in criticism.",
+      "scope_note": "Local PIC concept. Attribute claims to the author’s framework; no standard measurement or external theoretical equivalence is implied.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "post-interpretive-criticism"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Moral proximity"
+        ],
+        "record_ids": [
+          "19863790"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19863790"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "museum-cataloguing",
+      "persistent_id": "urn:museum-of-one:vocabulary:museum-cataloguing",
+      "preferred_label": "Museum cataloguing",
+      "alternative_labels": [
+        "Museum cataloging"
+      ],
+      "kind": "subject",
+      "definition": "The creation, revision, and circulation of descriptive records for museum objects.",
+      "scope_note": "Use when catalogue titles, descriptions, or metadata are subjects of research; distinguish this from the archive’s own cataloguing activity.",
+      "broader": [],
+      "narrower": [
+        "title-correction"
+      ],
+      "related": [
+        "critical-language"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Museum cataloguing"
+        ],
+        "record_ids": [
+          "23430200"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/23430200"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "pedagogy",
+      "persistent_id": "urn:museum-of-one:vocabulary:pedagogy",
+      "preferred_label": "Pedagogy",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Teaching and learning practices related to viewing, thinking, and writing about art.",
+      "scope_note": "Use for works containing exercises or explicit discussion of learning; does not imply an accredited course.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "19864115"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19864115"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "pilot-study",
+      "persistent_id": "urn:museum-of-one:vocabulary:pilot-study",
+      "preferred_label": "Pilot study",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "An exploratory study used to investigate a research approach on a limited sample.",
+      "scope_note": "For this corpus, retain the source qualification that the quantitative study is a single-coder pilot; do not imply independent validation.",
+      "broader": [
+        "research-methods"
+      ],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "20100139"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/20100139"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "post-interpretive-criticism",
+      "persistent_id": "urn:museum-of-one:vocabulary:post-interpretive-criticism",
+      "preferred_label": "Post-Interpretive Criticism",
+      "alternative_labels": [
+        "PIC",
+        "Post Interpretive Criticism"
+      ],
+      "kind": "local-framework-concept",
+      "definition": "The critical framework named and developed in the Museum of One publications.",
+      "scope_note": "Local named intellectual framework. Used for records explicitly concerned with it; no Getty, Library of Congress, or other external equivalence is asserted.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "custodianship",
+        "ethics-of-witnessing",
+        "foundational-writings",
+        "moral-proximity"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Post-Interpretive Criticism"
+        ],
+        "record_ids": [
+          "19864099",
+          "19864115",
+          "23395654",
+          "21786998",
+          "19863790",
+          "19863836",
+          "19863851"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19864099",
+          "https://zenodo.org/records/19864115",
+          "https://zenodo.org/records/23395654",
+          "https://zenodo.org/records/21786998",
+          "https://zenodo.org/records/19863790",
+          "https://zenodo.org/records/19863836",
+          "https://zenodo.org/records/19863851"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "postwar-japanese-art",
+      "persistent_id": "urn:museum-of-one:vocabulary:postwar-japanese-art",
+      "preferred_label": "Postwar Japanese art",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Art in Japan considered in relation to the period after the Second World War.",
+      "scope_note": "A contextual historical access point. The item description identifies the practices and dates actually discussed.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Postwar Japanese art"
+        ],
+        "record_ids": [
+          "23428974"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/23428974"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "power-and-institutions",
+      "persistent_id": "urn:museum-of-one:vocabulary:power-and-institutions",
+      "preferred_label": "Power and institutions",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Relations of authority as exercised through institutional structures and spaces.",
+      "scope_note": "Use for inquiry into access, surveillance, ordering, and authority; not an institutional affiliation field.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "architecture"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "20383926"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/20383926"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "repetition-and-labour",
+      "persistent_id": "urn:museum-of-one:vocabulary:repetition-and-labour",
+      "preferred_label": "Repetition and labour",
+      "alternative_labels": [
+        "Repetition and labor"
+      ],
+      "kind": "subject",
+      "definition": "Repeated making and the work involved in artistic production.",
+      "scope_note": "Use when repetition and labour are discussed together, particularly in the Hassan Sharif essay; not a universal synonym for either concept alone.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "material-practice"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "21241866"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/21241866"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "research-methods",
+      "persistent_id": "urn:museum-of-one:vocabulary:research-methods",
+      "preferred_label": "Research methods",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Procedures for conducting, documenting, or evaluating an inquiry.",
+      "scope_note": "Use for methodological discussion; narrower local terms distinguish coding, agreement, and exploratory study.",
+      "broader": [],
+      "narrower": [
+        "coding-procedures",
+        "inter-rater-reliability",
+        "pilot-study"
+      ],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "20100136",
+          "20100139"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/20100136",
+          "https://zenodo.org/records/20100139"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "spatial-experience",
+      "persistent_id": "urn:museum-of-one:vocabulary:spatial-experience",
+      "preferred_label": "Spatial experience",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Bodily and perceptual experience of built or arranged space.",
+      "scope_note": "Use for critical study of scale, light, thresholds, and access; related to Architecture and Exhibition design.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "architecture",
+        "exhibition-design"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "20383926"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/20383926"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "sudanese-art",
+      "persistent_id": "urn:museum-of-one:vocabulary:sudanese-art",
+      "preferred_label": "Sudanese art",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Art discussed in relation to Sudan and Sudanese histories or experiences.",
+      "scope_note": "A contextual subject heading, not a statement about any individual’s citizenship or an external geographic authority assignment.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Sudanese art"
+        ],
+        "record_ids": [
+          "23395654"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/23395654"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "title-correction",
+      "persistent_id": "urn:museum-of-one:vocabulary:title-correction",
+      "preferred_label": "Title correction",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Revision of an object title or identification in a descriptive record.",
+      "scope_note": "Use for research on corrections and their subsequent circulation; assignment does not state that every cited institution has adopted a correction.",
+      "broader": [
+        "museum-cataloguing"
+      ],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "23430200"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/23430200"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "viewer-response",
+      "persistent_id": "urn:museum-of-one:vocabulary:viewer-response",
+      "preferred_label": "Viewer response",
+      "alternative_labels": [
+        "Viewer responses"
+      ],
+      "kind": "subject",
+      "definition": "The effects of encountering art on its viewer.",
+      "scope_note": "Use for response, lasting experience, and the viewer’s role within a critical account; not a claim of empirical audience research.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "memory"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "19863836"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19863836"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "witnessing",
+      "persistent_id": "urn:museum-of-one:vocabulary:witnessing",
+      "preferred_label": "Witnessing",
+      "alternative_labels": [],
+      "kind": "subject",
+      "definition": "Attentive encounter with artworks and their effects within the corpus.",
+      "scope_note": "Use for discussion of witnessing as a critical practice. Ethics of witnessing identifies an explicitly ethical focus.",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "ethics-of-witnessing"
+      ],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local controlled term. No external equivalent has been verified or assigned.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "19864115"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19864115"
+        ],
+        "note": "Preferred label retained from the archive’s existing editorial subjects. Original deposited keyword strings remain unchanged in item records."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "genre-book",
+      "persistent_id": "urn:museum-of-one:vocabulary:genre-book",
+      "preferred_label": "Book",
+      "alternative_labels": [
+        "Books",
+        "Digital book"
+      ],
+      "kind": "genre",
+      "definition": "Book-length publication represented by a deposited digital edition.",
+      "scope_note": "Describes publication genre. The local PDF is not being described as a physical bound volume.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "verified_mapping",
+      "mapping_note": "External mapping is explicitly qualified by relationship and scope.",
+      "external_mappings": [
+        {
+          "vocabulary": "Getty Art & Architecture Thesaurus",
+          "label": "books",
+          "uri": "http://vocab.getty.edu/aat/300028051",
+          "source_url": "https://vocab.getty.edu/page/aat/300028051",
+          "relation": "relatedMatch",
+          "status": "verified",
+          "verified_on": "2026-11-04",
+          "note": "Getty’s concept concerns bound physical volumes. It is a related form reference for this digital-publication genre, not an exact equivalence or physical-holdings assertion."
+        }
+      ],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "type",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "19864099",
+          "19864115",
+          "23395654",
+          "20383926"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/19864099",
+          "https://zenodo.org/records/19864115",
+          "https://zenodo.org/records/23395654",
+          "https://zenodo.org/records/20383926"
+        ],
+        "note": "Preferred label retained from the archive’s existing resource type. Source resource-type metadata remains separately available."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "genre-journal-article",
+      "persistent_id": "urn:museum-of-one:vocabulary:genre-journal-article",
+      "preferred_label": "Journal article",
+      "alternative_labels": [
+        "Journal articles"
+      ],
+      "kind": "genre",
+      "definition": "A contribution issued as part of a journal or periodical.",
+      "scope_note": "Describes publication genre based on the catalogued source record; peer-review status is a separate question.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "verified_mapping",
+      "mapping_note": "External mapping is explicitly qualified by relationship and scope.",
+      "external_mappings": [
+        {
+          "vocabulary": "Getty Art & Architecture Thesaurus",
+          "label": "articles",
+          "uri": "http://vocab.getty.edu/aat/300048715",
+          "source_url": "https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300048715",
+          "relation": "broadMatch",
+          "status": "verified",
+          "verified_on": "2026-11-04",
+          "note": "Getty’s articles concept includes contributions to magazines, newspapers, encyclopedias, and other works; journal article is the narrower local genre."
+        }
+      ],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "type",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "21715085",
+          "21241866",
+          "20593003",
+          "19963428",
+          "21786998",
+          "19863790",
+          "19863836",
+          "19863851"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/21715085",
+          "https://zenodo.org/records/21241866",
+          "https://zenodo.org/records/20593003",
+          "https://zenodo.org/records/19963428",
+          "https://zenodo.org/records/21786998",
+          "https://zenodo.org/records/19863790",
+          "https://zenodo.org/records/19863836",
+          "https://zenodo.org/records/19863851"
+        ],
+        "note": "Preferred label retained from the archive’s existing resource type. Source resource-type metadata remains separately available."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "genre-working-paper",
+      "persistent_id": "urn:museum-of-one:vocabulary:genre-working-paper",
+      "preferred_label": "Working paper",
+      "alternative_labels": [
+        "Working papers"
+      ],
+      "kind": "genre",
+      "definition": "A research publication presented as a working or operational paper.",
+      "scope_note": "Preserve source version and programme stage. This genre does not imply peer review or final publication status.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local genre; no external equivalent is asserted.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "type",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "23430200",
+          "23428974"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/23430200",
+          "https://zenodo.org/records/23428974"
+        ],
+        "note": "Preferred label retained from the archive’s existing resource type. Source resource-type metadata remains separately available."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    },
+    {
+      "id": "genre-dataset",
+      "persistent_id": "urn:museum-of-one:vocabulary:genre-dataset",
+      "preferred_label": "Dataset",
+      "alternative_labels": [
+        "Datasets"
+      ],
+      "kind": "genre",
+      "definition": "A deposited body of research data, potentially accompanied by a report.",
+      "scope_note": "Describes the resource genre. This selected deposit includes a PDF report; the label does not promise machine-readable tabular files.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "Local genre; no external equivalent is asserted.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "type",
+        "source_keyword_labels": [],
+        "record_ids": [
+          "20100136",
+          "20100139"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/20100136",
+          "https://zenodo.org/records/20100139"
+        ],
+        "note": "Preferred label retained from the archive’s existing resource type. Source resource-type metadata remains separately available."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 4,
+      "modified": "2026-11-04"
+    }
+  ]
+}

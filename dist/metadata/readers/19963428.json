@@ -1,0 +1,20 @@
+{
+  "id": "19963428",
+  "title": "The Curator's Shadow: The Unspoken Authorship Behind Neutrality.",
+  "accession": "MOO-CAT-010",
+  "pdf_url": "../assets/documents/19963428.pdf",
+  "source_url": "https://zenodo.org/api/records/19963428/files/The%20Curator%E2%80%99s%20Shadow%20%E2%80%93%20the%20unspoken%20authorship%20behind%20neutrality.pdf/content",
+  "zenodo_url": "https://zenodo.org/records/19963428",
+  "source_filename": "The Curator’s Shadow – the unspoken authorship behind neutrality.pdf",
+  "checksum": "md5:60e68ced54424e21fcd7d42f6f3c8bf5",
+  "sha256": "020a9a33056674df08b8ac699ff0976cda380ede6e5b9684368ce8dc53c6be7c",
+  "bytes": 400025,
+  "page_count": 6,
+  "verified_at": "2026-11-04",
+  "checksum_match": true,
+  "rights": {
+    "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "role": "Local reading copy; original repository file retained unchanged"
+}

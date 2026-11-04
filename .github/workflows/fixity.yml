@@ -1,0 +1,26 @@
+name: Archive integrity evidence
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'dist/assets/documents/**'
+      - 'scripts/stewardship.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify recorded content baseline
+        run: python scripts/stewardship.py --verify
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: archive-integrity-evidence
+          path: data/stewardship.json

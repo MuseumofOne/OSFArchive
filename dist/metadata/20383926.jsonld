@@ -1,0 +1,400 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://archive.museumofone.art/#website",
+      "name": "Museum of One Digital Archive Library",
+      "url": "https://archive.museumofone.art/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://archive.museumofone.art/items/20383926.html#webpage",
+      "url": "https://archive.museumofone.art/items/20383926.html",
+      "name": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
+      "isPartOf": {
+        "@id": "https://archive.museumofone.art/#website"
+      },
+      "mainEntity": {
+        "@id": "https://archive.museumofone.art/items/20383926.html#catalogue-record"
+      },
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.20383926"
+      },
+      "breadcrumb": {
+        "@id": "https://archive.museumofone.art/items/20383926.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/20383926.html#catalogue-record",
+      "name": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
+      "url": "https://archive.museumofone.art/items/20383926.html",
+      "mainEntityOfPage": {
+        "@id": "https://archive.museumofone.art/items/20383926.html#webpage"
+      },
+      "about": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20383926"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#architecture"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#spatial-experience"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#power-and-institutions"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#ethics-of-witnessing"
+        }
+      ],
+      "disambiguatingDescription": "Local catalogue record describing a deposited publication version.",
+      "description": "A book-length study of architecture as a condition of bodily experience, authority, and ethical encounter. It extends Post-Interpretive Criticism to scale, light, thresholds, surveillance, and access.",
+      "keywords": [
+        "Architecture",
+        "Spatial experience",
+        "Power and institutions",
+        "Ethics of witnessing"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Local catalogue identifier",
+        "value": "MOO-CAT-004"
+      },
+      "dateModified": "2026-11-04",
+      "isBasedOn": [
+        {
+          "@id": "https://zenodo.org/records/20383926"
+        },
+        {
+          "@id": "https://www.museumofone.art/publication-moral-evidence-of-space/"
+        },
+        {
+          "@id": "https://www.museumofone.art/publication-moral-evidence-of-space/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.museumofone.art/research-witness-material-memory/"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "name": "Dorian Vale",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0004-7737-5094"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/#publisher",
+      "name": "Museum of One",
+      "url": "https://www.museumofone.art/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.20095467",
+      "name": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study) — version family",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Zenodo concept DOI",
+        "value": "10.5281/zenodo.20095467"
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.20383926"
+      }
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/items/20383926.html#file-1",
+      "contentUrl": "https://zenodo.org/api/records/20383926/files/The%20Moral%20Evidance%20of%20Space.pdf/content",
+      "name": "The Moral Evidance of Space.pdf",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.20383926"
+      },
+      "encodingFormat": "application/pdf",
+      "contentSize": "2713642 bytes",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source checksum",
+        "value": "md5:23cdeec1af0577374dc9b05cb22a8f2e"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/research-witness-material-memory/",
+      "url": "https://www.museumofone.art/research-witness-material-memory/",
+      "name": "Witness, Material Presence, and Cultural Memory",
+      "description": "Published study associated with the continuing inquiry.",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "PIRR project ID",
+          "value": "pir-prj-dd7kt5rw",
+          "url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/items/20383926.html#source-contributor-2",
+      "name": "Museum of One"
+    },
+    {
+      "@type": "Role",
+      "@id": "https://archive.museumofone.art/items/20383926.html#source-role-2",
+      "roleName": "HostingInstitution",
+      "contributor": {
+        "@id": "https://archive.museumofone.art/items/20383926.html#source-contributor-2"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://archive.museumofone.art/items/20383926.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Digital Archive Library",
+          "item": "https://archive.museumofone.art/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Catalogue",
+          "item": "https://archive.museumofone.art/catalogue.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MOO-CAT-004",
+          "item": "https://archive.museumofone.art/items/20383926.html"
+        }
+      ]
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/assets/documents/20383926.pdf",
+      "contentUrl": "https://archive.museumofone.art/assets/documents/20383926.pdf",
+      "name": "Verified reading copy of The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
+      "encodingFormat": "application/pdf",
+      "contentSize": "2713642 bytes",
+      "description": "196 PDF file pages, including covers and unnumbered pages. Byte-identical local access copy; source checksum matched 2026-11-04.",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.20383926"
+      },
+      "isBasedOn": {
+        "@id": "https://archive.museumofone.art/items/20383926.html#file-1"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256 of local reading copy",
+        "value": "49a76d86a81fc40c6baec3429cfb21c47582a35414f4715504d2c239b5fca5f7"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://doi.org/10.5281/zenodo.20383926",
+      "name": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
+      "mainEntityOfPage": {
+        "@id": "https://zenodo.org/records/20383926"
+      },
+      "url": "https://zenodo.org/records/20383926",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.20383926"
+      },
+      "datePublished": "2026-05-09",
+      "keywords": [
+        "architecture",
+        "spatial ethics",
+        "phenomenology",
+        "Post-Interpretive Criticism",
+        "ethics of witnessing",
+        "built environment"
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0004-7737-5094"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/#publisher"
+      },
+      "isbn": "978-1-06-982034-1",
+      "alternateName": [],
+      "bookEdition": "First-edition PDF, first published 9 May 2026 (Museum of One publication record)",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "exampleOfWork": {
+        "@id": "https://doi.org/10.5281/zenodo.20095467"
+      },
+      "encoding": [
+        {
+          "@id": "https://archive.museumofone.art/items/20383926.html#file-1"
+        },
+        {
+          "@id": "https://archive.museumofone.art/assets/documents/20383926.pdf"
+        }
+      ],
+      "contributor": [
+        {
+          "@id": "https://archive.museumofone.art/items/20383926.html#source-role-2"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "https://archive.museumofone.art/parts/20383926-c001.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/20383926-c002.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/20383926-c003.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/20383926-c004.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/20383926-c005.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/20383926-c006.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/20383926-c007.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/20383926-c008.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/20383926-c009.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/20383926-c010.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/20383926-c011.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/20383926-c012.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/20383926-c013.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/20383926-c014.html#component"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zenodo.org/records/20383926",
+      "name": "Zenodo deposited-version record",
+      "mainEntity": {
+        "@id": "https://doi.org/10.5281/zenodo.20383926"
+      },
+      "publisher": {
+        "@id": "https://zenodo.org/#repository"
+      },
+      "dateCreated": "2026-05-25T17:57:02.477362+00:00",
+      "dateModified": "2026-10-15T23:24:10.711327+00:00"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zenodo.org/#repository",
+      "name": "Zenodo",
+      "url": "https://zenodo.org/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "name": "Museum of One institutional publication context",
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.20383926"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/20383926.html#relationship-dorian-vale-author",
+      "name": "author",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/publication-moral-evidence-of-space/"
+      },
+      "description": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/20383926.html#relationship-museum-of-one-publisher",
+      "name": "publisher",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/publication-moral-evidence-of-space/"
+      },
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://archive.museumofone.art/vocabulary.html",
+      "name": "Museum of One local editorial discovery vocabulary",
+      "url": "https://archive.museumofone.art/vocabulary.html",
+      "description": "Published preferred labels, definitions, alternative labels and qualified external mappings."
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#architecture",
+      "name": "Architecture",
+      "termCode": "architecture",
+      "description": "Buildings and the built environment as subjects of critical study.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#spatial-experience",
+      "name": "Spatial experience",
+      "termCode": "spatial-experience",
+      "description": "Bodily and perceptual experience of built or arranged space.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#power-and-institutions",
+      "name": "Power and institutions",
+      "termCode": "power-and-institutions",
+      "description": "Relations of authority as exercised through institutional structures and spaces.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#ethics-of-witnessing",
+      "name": "Ethics of witnessing",
+      "termCode": "ethics-of-witnessing",
+      "description": "Ethical responsibility in attending to artworks and the histories they engage.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    }
+  ]
+}

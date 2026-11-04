@@ -1,0 +1,498 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://archive.museumofone.art/#website",
+      "name": "Museum of One Digital Archive Library",
+      "url": "https://archive.museumofone.art/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://archive.museumofone.art/items/19864099.html#webpage",
+      "url": "https://archive.museumofone.art/items/19864099.html",
+      "name": "Post-Interpretive Criticism: Volume I - The Foundational Essays",
+      "isPartOf": {
+        "@id": "https://archive.museumofone.art/#website"
+      },
+      "mainEntity": {
+        "@id": "https://archive.museumofone.art/items/19864099.html#catalogue-record"
+      },
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.19864099"
+      },
+      "breadcrumb": {
+        "@id": "https://archive.museumofone.art/items/19864099.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19864099.html#catalogue-record",
+      "name": "Post-Interpretive Criticism: Volume I - The Foundational Essays",
+      "url": "https://archive.museumofone.art/items/19864099.html",
+      "mainEntityOfPage": {
+        "@id": "https://archive.museumofone.art/items/19864099.html#webpage"
+      },
+      "about": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.19864099"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#aesthetics"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#art-criticism"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#foundational-writings"
+        }
+      ],
+      "disambiguatingDescription": "Local catalogue record describing a deposited publication version.",
+      "description": "Collected foundational writings introducing Post-Interpretive Criticism through doctrines, theoretical propositions, and applications concerned with restraint, presence, and witnessing.",
+      "keywords": [
+        "Post-Interpretive Criticism",
+        "Aesthetics",
+        "Art criticism",
+        "Foundational writings"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Local catalogue identifier",
+        "value": "MOO-CAT-001"
+      },
+      "dateModified": "2026-11-04",
+      "isBasedOn": [
+        {
+          "@id": "https://zenodo.org/records/19864099"
+        },
+        {
+          "@id": "https://www.museumofone.art/publication-foundational-essays/"
+        },
+        {
+          "@id": "https://www.museumofone.art/publication-foundational-essays/"
+        },
+        {
+          "@id": "https://www.museumofone.art/publication-foundational-essays/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.museumofone.art/research-intellectual-history/"
+        },
+        {
+          "@id": "https://www.museumofone.art/research-methods/"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "name": "Dorian Vale",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0004-7737-5094"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/#publisher",
+      "name": "Museum of One",
+      "url": "https://www.museumofone.art/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17058411",
+      "name": "Post-Interpretive Criticism: Volume I - The Foundational Essays — version family",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Zenodo concept DOI",
+        "value": "10.5281/zenodo.17058411"
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.19864099"
+      }
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/items/19864099.html#file-1",
+      "contentUrl": "https://zenodo.org/api/records/19864099/files/post-interprative-criticism-volume-i-STANDARD.pdf/content",
+      "name": "post-interprative-criticism-volume-i-STANDARD.pdf",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19864099"
+      },
+      "encodingFormat": "application/pdf",
+      "contentSize": "1044796 bytes",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source checksum",
+        "value": "md5:2cbd120db1c6358cb65702d5090d042a"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/research-intellectual-history/",
+      "url": "https://www.museumofone.art/research-intellectual-history/",
+      "name": "Intellectual History and Conceptual Development",
+      "description": "Earlier foundation examined by this programme.",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "PIRR project ID",
+          "value": "pir-prj-xgd6wb9d",
+          "url": "https://www.museumofone.art/research-intellectual-history/#programme-record"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/research-methods/",
+      "url": "https://www.museumofone.art/research-methods/",
+      "name": "Phenomenological Methods and Diagnostic Reading",
+      "description": "Earlier theoretical foundation for methodological investigation.",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "PIRR project ID",
+          "value": "pir-prj-pyp5yx3w",
+          "url": "https://www.museumofone.art/research-methods/#programme-record"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/items/19864099.html#source-contributor-2",
+      "name": "Museum Of One"
+    },
+    {
+      "@type": "Role",
+      "@id": "https://archive.museumofone.art/items/19864099.html#source-role-2",
+      "roleName": "HostingInstitution",
+      "contributor": {
+        "@id": "https://archive.museumofone.art/items/19864099.html#source-contributor-2"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://archive.museumofone.art/items/19864099.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Digital Archive Library",
+          "item": "https://archive.museumofone.art/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Catalogue",
+          "item": "https://archive.museumofone.art/catalogue.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MOO-CAT-001",
+          "item": "https://archive.museumofone.art/items/19864099.html"
+        }
+      ]
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/assets/documents/19864099.pdf",
+      "contentUrl": "https://archive.museumofone.art/assets/documents/19864099.pdf",
+      "name": "Verified reading copy of Post-Interpretive Criticism: Volume I - The Foundational Essays",
+      "encodingFormat": "application/pdf",
+      "contentSize": "1044796 bytes",
+      "description": "82 PDF file pages, including covers and unnumbered pages. Byte-identical local access copy; source checksum matched 2026-11-04.",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19864099"
+      },
+      "isBasedOn": {
+        "@id": "https://archive.museumofone.art/items/19864099.html#file-1"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256 of local reading copy",
+        "value": "cff270ffc96c98812c0ab708cd159c2c34cbd43f13f378696802a7f2a939ac3d"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://doi.org/10.5281/zenodo.19864099",
+      "name": "Post-Interpretive Criticism: Volume I - The Foundational Essays",
+      "mainEntityOfPage": {
+        "@id": "https://zenodo.org/records/19864099"
+      },
+      "url": "https://zenodo.org/records/19864099",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.19864099"
+      },
+      "datePublished": "2026-04",
+      "version": "Repository release v5 (source description)",
+      "keywords": [
+        "Post-Interpretive Criticism",
+        "Stillmark Theory",
+        "Absential Aesthetics",
+        "Witness Aesthetics",
+        "Hauntmark Theory",
+        "Presence-Based Criticism",
+        "Custodianship of Art",
+        "Art as Ontology",
+        "Restraint in front of art",
+        "Moral proximity",
+        "Interpretive silence",
+        "Erasure as ethics",
+        "Temporal scarcity",
+        "Silence as method",
+        "Ontology of beauty",
+        "Aesthetic mercy",
+        "Language as violence",
+        "Art encounter ethics",
+        "Epistemology of witness",
+        "Philosophy of Art",
+        "Aesthetics",
+        "Art Theory",
+        "Contemporary Aesthetics",
+        "Phenomenology and Art",
+        "Ethics in Art Criticism",
+        "Interpretation and Meaning",
+        "Criticism and Reception Theory",
+        "Epistemology of Art",
+        "Visual Culture Studies",
+        "Dorian Vale",
+        "Founder of Post-Interpretive Criticism",
+        "Post-Aesthetic Critic",
+        "Independent Philosopher of Art",
+        "Museum of One",
+        "Art Writer and Theorist",
+        "Aesthetic Philosopher",
+        "Custodian of Witness Aesthetics",
+        "The Doctrine of Post-Interpretive Criticism",
+        "The Custodian's Oath",
+        "The Canon of Witnesses",
+        "Art as Truth",
+        "Art as Presence",
+        "The Viewer as Evidence",
+        "Interpretation vs. Witnessing",
+        "Language as Custody",
+        "Erasure as Afterlife",
+        "Museum of One Manifesto",
+        "Post-Interpretive Lexicon",
+        "Alternative art criticism",
+        "New art criticism movement",
+        "Ethical art theory",
+        "Criticism beyond interpretation",
+        "Quiet philosophy of art",
+        "Radical art restraint",
+        "Witness over interpretation",
+        "Interpretive Restraint",
+        "Aesthetics of Mercy",
+        "Art Criticism Ethics",
+        "Museum Of One",
+        "https://www.museumofone.art/",
+        "https://hcommons.org/members/dorianvale/",
+        "https://philpeople.org/profiles/dorian-vale",
+        "https://osf.io/xa5jw/",
+        "https://independent.academia.edu/DorianVale",
+        "https://figshare.com/authors/Dorian_Vale/22186984",
+        "osf.io/zhnre",
+        "https://doi.org/10.5281/zenodo.17112807",
+        "https://doi.org/10.17605/OSF.IO/KVE9Y",
+        "https://archive.org/details/osf-registrations-kve9y-v1",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5443334",
+        "http://dx.doi.org/10.2139/ssrn.5443334",
+        "Part of the Post-Interpretive Criticism movement (Q136308909), published by Museum of One (Q136308879), authored by Dorian Vale (Q136308916).",
+        "Q136308909",
+        "Q136308879",
+        "Q136308916",
+        "https://zenodo.org/communities/post-interpretive-criticism",
+        "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+        "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ",
+        "Q136530009"
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0004-7737-5094"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/#publisher"
+      },
+      "isbn": "978-1-06-982030-3",
+      "alternateName": [
+        "Post–Interprative Criticism: Volume I",
+        "Foundational Essays (Collected Doctrines, Treaties, Theories, and Application)"
+      ],
+      "bookEdition": "First edition",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "exampleOfWork": {
+        "@id": "https://doi.org/10.5281/zenodo.17058411"
+      },
+      "encoding": [
+        {
+          "@id": "https://archive.museumofone.art/items/19864099.html#file-1"
+        },
+        {
+          "@id": "https://archive.museumofone.art/assets/documents/19864099.pdf"
+        }
+      ],
+      "contributor": [
+        {
+          "@id": "https://archive.museumofone.art/items/19864099.html#source-role-2"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "https://archive.museumofone.art/parts/19864099-c001.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864099-c002.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864099-c003.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864099-c004.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864099-c005.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864099-c006.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864099-c007.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864099-c008.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864099-c009.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864099-c010.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864099-c011.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864099-c012.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864099-c013.html#component"
+        },
+        {
+          "@id": "https://archive.museumofone.art/parts/19864099-c014.html#component"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zenodo.org/records/19864099",
+      "name": "Zenodo deposited-version record",
+      "mainEntity": {
+        "@id": "https://doi.org/10.5281/zenodo.19864099"
+      },
+      "publisher": {
+        "@id": "https://zenodo.org/#repository"
+      },
+      "dateCreated": "2026-04-28T19:07:18.070464+00:00",
+      "dateModified": "2026-10-15T14:32:18.509095+00:00"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zenodo.org/#repository",
+      "name": "Zenodo",
+      "url": "https://zenodo.org/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/publication-foundational-essays/",
+      "name": "Museum of One institutional publication context",
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.19864099"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19864099.html#relationship-dorian-vale-author",
+      "name": "author",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/publication-foundational-essays/"
+      },
+      "description": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19864099.html#relationship-museum-of-one-publisher",
+      "name": "publisher",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/publication-foundational-essays/"
+      },
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://archive.museumofone.art/vocabulary.html",
+      "name": "Museum of One local editorial discovery vocabulary",
+      "url": "https://archive.museumofone.art/vocabulary.html",
+      "description": "Published preferred labels, definitions, alternative labels and qualified external mappings."
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism",
+      "name": "Post-Interpretive Criticism",
+      "termCode": "post-interpretive-criticism",
+      "description": "The critical framework named and developed in the Museum of One publications.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#aesthetics",
+      "name": "Aesthetics",
+      "termCode": "aesthetics",
+      "description": "Philosophical inquiry into art, perception, and aesthetic experience.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#art-criticism",
+      "name": "Art criticism",
+      "termCode": "art-criticism",
+      "description": "Critical examination and discussion of artworks and encounters with art.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#foundational-writings",
+      "name": "Foundational writings",
+      "termCode": "foundational-writings",
+      "description": "Writings presented within the corpus as introducing its foundational propositions.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    }
+  ]
+}

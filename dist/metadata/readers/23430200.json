@@ -1,0 +1,20 @@
+{
+  "id": "23430200",
+  "title": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles",
+  "accession": "MOO-CAT-005",
+  "pdf_url": "../assets/documents/23430200.pdf",
+  "source_url": "https://zenodo.org/api/records/23430200/files/After_the_Interpretation_Changes_Working_Paper_2_v1.0.pdf/content",
+  "zenodo_url": "https://zenodo.org/records/23430200",
+  "source_filename": "After_the_Interpretation_Changes_Working_Paper_2_v1.0.pdf",
+  "checksum": "md5:aa7d5753758bf6e178342117ef9ad3db",
+  "sha256": "272b077f00db6a02d04c03b87608a0ab8cc34972b11759e51b7ece3890228716",
+  "bytes": 180105,
+  "page_count": 10,
+  "verified_at": "2026-11-04",
+  "checksum_match": true,
+  "rights": {
+    "label": "Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  },
+  "role": "Local reading copy; original repository file retained unchanged"
+}

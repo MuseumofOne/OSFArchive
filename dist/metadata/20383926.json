@@ -1,0 +1,2374 @@
+{
+  "id": "20383926",
+  "accession": "MOO-CAT-004",
+  "title": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
+  "source_title": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
+  "short_title": "The Moral Evidence of Space",
+  "author": "Dorian Vale",
+  "creators": [
+    {
+      "name": "Vale, Dorian",
+      "affiliation": "Museum of One",
+      "orcid": "0009-0004-7737-5094"
+    }
+  ],
+  "doi": "10.5281/zenodo.20383926",
+  "conceptdoi": "10.5281/zenodo.20095467",
+  "zenodo_url": "https://zenodo.org/records/20383926",
+  "date": "2026-05-09",
+  "type": "Book",
+  "source_resource_type": {
+    "title": "Book",
+    "type": "publication",
+    "subtype": "book"
+  },
+  "version": "",
+  "collection": "Books & volumes",
+  "summary": "A book-length study of architecture as a condition of bodily experience, authority, and ethical encounter. It extends Post-Interpretive Criticism to scale, light, thresholds, surveillance, and access.",
+  "subjects": [
+    "Architecture",
+    "Spatial experience",
+    "Power and institutions",
+    "Ethics of witnessing"
+  ],
+  "keywords": [
+    "architecture",
+    "spatial ethics",
+    "phenomenology",
+    "Post-Interpretive Criticism",
+    "ethics of witnessing",
+    "built environment"
+  ],
+  "license": {
+    "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "files": [
+    {
+      "name": "The Moral Evidance of Space.pdf",
+      "url": "https://zenodo.org/api/records/20383926/files/The%20Moral%20Evidance%20of%20Space.pdf/content",
+      "size": 2713642,
+      "size_label": "2650 KB",
+      "checksum": "md5:23cdeec1af0577374dc9b05cb22a8f2e",
+      "mimetype": "application/pdf"
+    }
+  ],
+  "institutional_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+  "corroboration": "Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. It links the selected Zenodo edition DOI. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.",
+  "discrepancies": [
+    "The institutional publication register may cite the version-family DOI. This record cites the selected deposited edition DOI and identifies the concept DOI separately."
+  ],
+  "orcid": "0009-0004-7737-5094",
+  "publisher": "Museum of One",
+  "language": null,
+  "isbn": "978-1-06-982034-1",
+  "related_identifiers": [],
+  "alternate_identifiers": [
+    {
+      "identifier": "978-1-06-982034-1"
+    }
+  ],
+  "source_references": [],
+  "source_journal": null,
+  "source_imprint": null,
+  "source_contributors": [
+    {
+      "name": "Museum of One",
+      "affiliation": null,
+      "type": "HostingInstitution"
+    }
+  ],
+  "source_created": "2026-05-25T17:57:02.477362+00:00",
+  "source_modified": "2026-10-15T23:24:10.711327+00:00",
+  "source_description_html": "<p class=\"p1\"><strong>The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing</strong> by Dorian Vale is a major philosophical and architectural treatise that expands the framework of Post-Interpretive Criticism into the spatial domain, arguing that architecture must be understood not merely as aesthetic production or functional design, but as a system of moral choreography acting directly upon the human body. Drawing from architectural history, phenomenology, spatial theory, ethics, theology, and critical aesthetics, the book proposes that built environments do not simply contain human life; they actively shape posture, perception, obedience, dignity, and emotional possibility.</p>\n<p class=\"p1\">Rejecting the interpretive traditions that reduce architecture to symbolism, style, or semiotic analysis, Vale develops a witness-based methodology centered on bodily testimony and spatial encounter. The text argues that space operates prior to language and often beyond conscious interpretation, producing ethical and psychological effects before the inhabitant can conceptualize them. From Paleolithic caves and Mesopotamian ziggurats to Gothic cathedrals, imperial complexes, corporate glass towers, hospitals, prisons, welfare offices, and public housing projects, the book traces an unbroken lineage of spatial systems that choreograph human behavior through scale, light, threshold, surveillance, circulation, elevation, enclosure, and access.</p>\n<p class=\"p1\">Central to the work is the claim that architecture is the oldest technology of moral formation. The text reframes buildings not as neutral containers but as active ethical agents that distribute visibility, shame, reverence, exclusion, and belonging through material conditions. Vale introduces concepts such as &ldquo;moral choreography,&rdquo; &ldquo;custodial space,&rdquo; &ldquo;architectures of obedience,&rdquo; and &ldquo;space as moral evidence,&rdquo; arguing that the body itself functions as the primary archive of architectural truth. Against traditions of detached architectural interpretation, the book positions testimony, presence, restraint, and witness as the proper ethical stance of criticism.</p>\n<p class=\"p1\">The work also critiques the modern fiction of neutral design, exposing how institutional and bureaucratic architectures frequently disguise systems of behavioral control beneath the language of efficiency, transparency, optimization, and functionality. By examining how spatial arrangements condition emotional and social realities, the book situates architecture within broader questions of governance, hierarchy, surveillance, ritual, and power. Simultaneously, it identifies counter-traditions of custodial architecture&mdash;spaces designed not to dominate the body but to shelter dignity, contemplation, and human presence.</p>\n<p class=\"p1\">Blending philosophical inquiry with literary prose,&nbsp;<span class=\"s1\"><em>The Moral Evidence of Space</em></span> establishes a new branch of Post-Interpretive Criticism focused on spatial ethics and the phenomenology of built environments. It positions architecture not as a passive backdrop to history but as one of the primary forces through which civilizations produce forms of subjectivity, obedience, exclusion, and transcendence. The book contributes to contemporary debates in architecture, critical theory, aesthetics, urban studies, museum studies, phenomenology, and ethics by proposing a new framework for understanding how space acts upon human beings before interpretation begins.</p>\n<p>First published by Museum of One in 2026. Stable work DOI: <a href=\"https://doi.org/10.5281/zenodo.20095467\">10.5281/zenodo.20095467</a></p>",
+  "provenance": {
+    "repository": "Zenodo REST API response supplied in query.json",
+    "retrieved": "2026-11-04",
+    "editorial_fields": [
+      "summary",
+      "subjects",
+      "collection",
+      "short_title",
+      "accession"
+    ],
+    "source_snapshot": "source/20383926.json",
+    "institutional_review": "Reviewed page-level title, author and repository links in saved public institutional HTML, 2026-11-04."
+  },
+  "cover": "assets/moral-evidence-space.jpg",
+  "cover_alt": "Published cover of The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
+  "cover_source": "https://www.museumofone.art/",
+  "source_review": "2026-11-04",
+  "relations": [],
+  "first_edition": "First edition; institutional publication date 2026-05-09",
+  "institutional_metadata": {
+    "title": "The Moral Evidence of Space",
+    "author": "Dorian Vale",
+    "web_publication": "2026-10-14T00:00:00.000Z",
+    "web_updated": "2026-10-17T16:53:59.000Z",
+    "linked_zenodo_dois": [
+      "10.5281/zenodo.20383926"
+    ],
+    "reviewed": "2026-11-04",
+    "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+    "publication_title": "The Moral Evidence of Space",
+    "publication_status": "Published book; first-edition PDF, 9 May 2026",
+    "publication_date": "2026-05-09",
+    "edition": "First edition"
+  },
+  "research_programmes": [
+    {
+      "title": "Witness, Material Presence, and Cultural Memory",
+      "url": "https://www.museumofone.art/research-witness-material-memory/",
+      "status": "Continuing research",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "relation": "Published study associated with the continuing inquiry.",
+      "relation_label": "Published study associated with the continuing inquiry."
+    }
+  ],
+  "edition_statement": "First-edition PDF, first published 9 May 2026 (Museum of One publication record)",
+  "record_level": "Item",
+  "record_status": "Published source; selected catalogue record",
+  "digital_formats": [
+    "application/pdf"
+  ],
+  "extent": "1 digital file; 2713642 bytes",
+  "medium": "Digital document",
+  "record_reviewed": "2026-11-04",
+  "date_precision": "day",
+  "alternate_titles": [
+    {
+      "title": "The Moral Evidence of Space",
+      "kind": "institutional_web_record_title",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/"
+    }
+  ],
+  "digital_extent": {
+    "file_count": 1,
+    "total_bytes": 2713642,
+    "formats": [
+      "application/pdf"
+    ],
+    "checksums": [
+      {
+        "filename": "The Moral Evidance of Space.pdf",
+        "algorithm": "md5",
+        "value": "23cdeec1af0577374dc9b05cb22a8f2e",
+        "syntax_valid": true,
+        "verification": "source_checksum_transcription; bytes not independently recomputed"
+      }
+    ],
+    "source_url": "https://zenodo.org/records/20383926",
+    "derivation": "File count and total bytes calculated from repository file metadata; MIME inferred from filename when absent."
+  },
+  "identifier_validation": {
+    "orcid": {
+      "source_value": "0009-0004-7737-5094",
+      "checksum_valid": true,
+      "note": "ISO 7064 MOD 11-2 checksum only; this is not a live registry verification."
+    },
+    "isbn": [
+      {
+        "source_value": "978-1-06-982034-1",
+        "normalized": "9781069820341",
+        "checksum_valid": true,
+        "note": "Checksum validation tests the identifier syntax only; it does not verify assignment, format or edition applicability.",
+        "scope": "title_level_book_identifier; format applicability follows edition source",
+        "source_url": "https://zenodo.org/records/20383926"
+      }
+    ],
+    "doi": {
+      "source_value": "10.5281/zenodo.20383926",
+      "syntax_valid": true,
+      "note": "Syntax check only; repository snapshot supplies the identifier."
+    }
+  },
+  "isbn_applicability": "title_level_book_identifier",
+  "serial": null,
+  "contributor_roles": [
+    {
+      "name": "Vale, Dorian",
+      "source_category": "creator",
+      "source_role": null,
+      "role_label": "Creator (role not supplied)",
+      "affiliation_as_supplied": "Museum of One",
+      "source_url": "https://zenodo.org/records/20383926"
+    },
+    {
+      "name": "Museum of One",
+      "source_category": "contributor",
+      "source_role": "HostingInstitution",
+      "role_label": "HostingInstitution",
+      "affiliation_as_supplied": null,
+      "source_url": "https://zenodo.org/records/20383926"
+    }
+  ],
+  "authority_links": [
+    {
+      "title": "BiblioBoard catalogue access",
+      "url": "https://library.biblioboard.com/content/fca202e1-3b5b-4ef4-a29c-00127b2bda84",
+      "kind": "catalogue_access",
+      "status": "institutional_link_access_restricted",
+      "evidence_url": "https://www.museumofone.art/research-discovery-and-archive-sources/",
+      "note": "Format, edition and ISBN not independently inspectable.",
+      "scope": "Bibliographic context; inspect source for edition applicability",
+      "source_url": "https://www.museumofone.art/research-discovery-and-archive-sources/"
+    },
+    {
+      "title": "PhilArchive bibliographic record",
+      "url": "https://philarchive.org/rec/VALTME-3",
+      "kind": "repository_record",
+      "status": "record_metadata_observed_in_search_index",
+      "scope": "Bibliographic context; inspect source for edition applicability",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/"
+    }
+  ],
+  "metadata_profile": {
+    "name": "Museum of One source-qualified catalogue profile",
+    "version": "2",
+    "note": "Local application profile using schema.org and qualified Dublin Core; not an archival standards certification.",
+    "source_snapshot_preserved": true
+  },
+  "reading_copy": {
+    "id": "20383926",
+    "title": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
+    "accession": "MOO-CAT-004",
+    "pdf_url": "../assets/documents/20383926.pdf",
+    "source_url": "https://zenodo.org/api/records/20383926/files/The%20Moral%20Evidance%20of%20Space.pdf/content",
+    "zenodo_url": "https://zenodo.org/records/20383926",
+    "source_filename": "The Moral Evidance of Space.pdf",
+    "checksum": "md5:23cdeec1af0577374dc9b05cb22a8f2e",
+    "sha256": "49a76d86a81fc40c6baec3429cfb21c47582a35414f4715504d2c239b5fca5f7",
+    "bytes": 2713642,
+    "page_count": 196,
+    "verified_at": "2026-11-04",
+    "checksum_match": true,
+    "rights": {
+      "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "role": "Local reading copy; original repository file retained unchanged"
+  },
+  "page_count": 196,
+  "field_assertions": [
+    {
+      "field": "title",
+      "value": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
+      "status": "catalogue_title",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "note": "Local display title; the deposited title is retained separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_title",
+      "value": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20383926",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "doi",
+      "value": "10.5281/zenodo.20383926",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20383926",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "date",
+      "value": "2026-05-09",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20383926",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "conceptdoi",
+      "value": "10.5281/zenodo.20095467",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20383926",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "creators",
+      "value": [
+        {
+          "name": "Vale, Dorian",
+          "affiliation": "Museum of One",
+          "orcid": "0009-0004-7737-5094"
+        }
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20383926",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "keywords",
+      "value": [
+        "architecture",
+        "spatial ethics",
+        "phenomenology",
+        "Post-Interpretive Criticism",
+        "ethics of witnessing",
+        "built environment"
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20383926",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "license",
+      "value": {
+        "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20383926",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "files",
+      "value": [
+        {
+          "name": "The Moral Evidance of Space.pdf",
+          "url": "https://zenodo.org/api/records/20383926/files/The%20Moral%20Evidance%20of%20Space.pdf/content",
+          "size": 2713642,
+          "size_label": "2650 KB",
+          "checksum": "md5:23cdeec1af0577374dc9b05cb22a8f2e",
+          "mimetype": "application/pdf"
+        }
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20383926",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_created",
+      "value": "2026-05-25T17:57:02.477362+00:00",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20383926",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_modified",
+      "value": "2026-10-15T23:24:10.711327+00:00",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20383926",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "author",
+      "value": "Dorian Vale",
+      "status": "institutional_context",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "note": "Institutional responsibility statement; original repository creator roles remain separate.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "publisher",
+      "value": "Museum of One",
+      "status": "institutional_context",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "note": "Institutional responsibility statement; original repository creator roles remain separate.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "first_edition",
+      "value": "First edition; institutional publication date 2026-05-09",
+      "status": "institutional_context",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "note": "Consult the linked edition record; a repository version is not a new book edition.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "edition_statement",
+      "value": "First-edition PDF, first published 9 May 2026 (Museum of One publication record)",
+      "status": "institutional_context",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "note": "Consult the linked edition record; a repository version is not a new book edition.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "isbn",
+      "value": "978-1-06-982034-1",
+      "status": "institutional_context",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "note": "Consult the linked edition record; a repository version is not a new book edition.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "orcid",
+      "value": "0009-0004-7737-5094",
+      "status": "source_linked_identifier",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "note": "Creator identifier supplied by the linked sources; no affiliation or endorsement is inferred.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "summary",
+      "value": "A book-length study of architecture as a condition of bodily experience, authority, and ethical encounter. It extends Post-Interpretive Criticism to scale, light, thresholds, surveillance, and access.",
+      "status": "editorial_enrichment",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "note": "Catalogue-editor summary based on the linked work; not an original publisher abstract.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "subjects",
+      "value": [
+        "Architecture",
+        "Spatial experience",
+        "Power and institutions",
+        "Ethics of witnessing"
+      ],
+      "status": "editorial_enrichment",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "note": "Local discovery terms; no controlled-vocabulary assignment is claimed.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "collection",
+      "value": "Books & volumes",
+      "status": "editorial_grouping",
+      "note": "A local browsing collection, not an original repository collection.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "corroboration",
+      "value": "Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. It links the selected Zenodo edition DOI. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.",
+      "status": "catalogue_review_note",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "discrepancies",
+      "value": [
+        "The institutional publication register may cite the version-family DOI. This record cites the selected deposited edition DOI and identifies the concept DOI separately."
+      ],
+      "status": "catalogue_review_note",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "alternate_titles",
+      "value": [
+        {
+          "title": "The Moral Evidence of Space",
+          "kind": "institutional_web_record_title",
+          "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/"
+        }
+      ],
+      "status": "source_qualified_title_variants",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "note": "Each variant retains its own source and scope; a web page title is not a title-page transcription.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "date_precision",
+      "value": "day",
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/20383926",
+      "note": "Precision reported exactly as supplied; missing month or day is not filled.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "medium",
+      "value": "Digital document",
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/20383926",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "digital_formats",
+      "value": [
+        "application/pdf"
+      ],
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/20383926",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "extent",
+      "value": "1 digital file; 2713642 bytes",
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/20383926",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "digital_extent",
+      "value": {
+        "file_count": 1,
+        "total_bytes": 2713642,
+        "formats": [
+          "application/pdf"
+        ],
+        "checksums": [
+          {
+            "filename": "The Moral Evidance of Space.pdf",
+            "algorithm": "md5",
+            "value": "23cdeec1af0577374dc9b05cb22a8f2e",
+            "syntax_valid": true,
+            "verification": "source_checksum_transcription; bytes not independently recomputed"
+          }
+        ],
+        "source_url": "https://zenodo.org/records/20383926",
+        "derivation": "File count and total bytes calculated from repository file metadata; MIME inferred from filename when absent."
+      },
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/20383926",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "identifier_validation",
+      "value": {
+        "orcid": {
+          "source_value": "0009-0004-7737-5094",
+          "checksum_valid": true,
+          "note": "ISO 7064 MOD 11-2 checksum only; this is not a live registry verification."
+        },
+        "isbn": [
+          {
+            "source_value": "978-1-06-982034-1",
+            "normalized": "9781069820341",
+            "checksum_valid": true,
+            "note": "Checksum validation tests the identifier syntax only; it does not verify assignment, format or edition applicability.",
+            "scope": "title_level_book_identifier; format applicability follows edition source",
+            "source_url": "https://zenodo.org/records/20383926"
+          }
+        ],
+        "doi": {
+          "source_value": "10.5281/zenodo.20383926",
+          "syntax_valid": true,
+          "note": "Syntax check only; repository snapshot supplies the identifier."
+        }
+      },
+      "status": "local_syntax_validation",
+      "source_url": "https://zenodo.org/records/20383926",
+      "note": "Checksum/syntax validation does not verify registration, assignment or edition applicability.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "contributor_roles",
+      "value": [
+        {
+          "name": "Vale, Dorian",
+          "source_category": "creator",
+          "source_role": null,
+          "role_label": "Creator (role not supplied)",
+          "affiliation_as_supplied": "Museum of One",
+          "source_url": "https://zenodo.org/records/20383926"
+        },
+        {
+          "name": "Museum of One",
+          "source_category": "contributor",
+          "source_role": "HostingInstitution",
+          "role_label": "HostingInstitution",
+          "affiliation_as_supplied": null,
+          "source_url": "https://zenodo.org/records/20383926"
+        }
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20383926",
+      "note": "Creator and contributor roles are transcribed, not inferred from names or affiliations.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "authority_links",
+      "value": [
+        {
+          "title": "BiblioBoard catalogue access",
+          "url": "https://library.biblioboard.com/content/fca202e1-3b5b-4ef4-a29c-00127b2bda84",
+          "kind": "catalogue_access",
+          "status": "institutional_link_access_restricted",
+          "evidence_url": "https://www.museumofone.art/research-discovery-and-archive-sources/",
+          "note": "Format, edition and ISBN not independently inspectable.",
+          "scope": "Bibliographic context; inspect source for edition applicability",
+          "source_url": "https://www.museumofone.art/research-discovery-and-archive-sources/"
+        },
+        {
+          "title": "PhilArchive bibliographic record",
+          "url": "https://philarchive.org/rec/VALTME-3",
+          "kind": "repository_record",
+          "status": "record_metadata_observed_in_search_index",
+          "scope": "Bibliographic context; inspect source for edition applicability",
+          "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/"
+        }
+      ],
+      "status": "source_qualified_external_context",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "note": "External records have separate status and edition scope; links are not endorsements or equivalence assertions.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "research_programme:https://www.museumofone.art/research-witness-material-memory/",
+      "value": {
+        "title": "Witness, Material Presence, and Cultural Memory",
+        "url": "https://www.museumofone.art/research-witness-material-memory/",
+        "status": "Continuing research",
+        "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+        "relation": "Published study associated with the continuing inquiry.",
+        "relation_label": "Published study associated with the continuing inquiry."
+      },
+      "status": "institutional_work_relationship",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "note": "Programme relationship and stage follow the work-specific institutional badge; publication does not imply a completed programme or collaboration.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "entity_link:dorian-vale:author",
+      "value": {
+        "id": "dorian-vale",
+        "label": "Dorian Vale",
+        "entity_type": "Person",
+        "relation": "author",
+        "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+        "note": "The matching institutional publication record credits Dorian Vale as author."
+      },
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:museum-of-one:publisher",
+      "value": {
+        "id": "museum-of-one",
+        "label": "Museum of One",
+        "entity_type": "Organization",
+        "relation": "publisher",
+        "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      },
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "contents",
+      "value": [
+        {
+          "title": "Preface",
+          "type": "Preface",
+          "pdf_start": 6,
+          "pdf_end": 8,
+          "printed_start": "iv",
+          "printed_end": "vi",
+          "id": "c001",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              6,
+              8
+            ],
+            "title_source": "Full heading on PDF file page 6; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          },
+          "parent_id": "20383926",
+          "parent_doi": "10.5281/zenodo.20383926",
+          "reference": "MOO-CAT-004/C001",
+          "url": "parts/20383926-c001.html",
+          "reader_url": "read/20383926.html#page=6",
+          "description_level": "Local analytic description of a publication component",
+          "creator": "Dorian Vale",
+          "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+          "source": {
+            "file": "assets/documents/20383926.pdf",
+            "page_count": 196,
+            "pdf_pages": [
+              5
+            ],
+            "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+            "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 1,
+          "title": "Introduction",
+          "type": "Chapter",
+          "pdf_start": 9,
+          "printed_start": "1",
+          "id": "c002",
+          "pdf_end": 22,
+          "printed_end": "14",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              9,
+              22
+            ],
+            "title_source": "Full heading on PDF file page 9; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          },
+          "parent_id": "20383926",
+          "parent_doi": "10.5281/zenodo.20383926",
+          "reference": "MOO-CAT-004/C002",
+          "url": "parts/20383926-c002.html",
+          "reader_url": "read/20383926.html#page=9",
+          "description_level": "Local analytic description of a publication component",
+          "creator": "Dorian Vale",
+          "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+          "source": {
+            "file": "assets/documents/20383926.pdf",
+            "page_count": 196,
+            "pdf_pages": [
+              5
+            ],
+            "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+            "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 2,
+          "title": "The Moral Birth of Spaces",
+          "type": "Chapter",
+          "pdf_start": 23,
+          "printed_start": "15",
+          "id": "c003",
+          "pdf_end": 36,
+          "printed_end": "28",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              23,
+              36
+            ],
+            "title_source": "Full heading on PDF file page 23; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          },
+          "parent_id": "20383926",
+          "parent_doi": "10.5281/zenodo.20383926",
+          "reference": "MOO-CAT-004/C003",
+          "url": "parts/20383926-c003.html",
+          "reader_url": "read/20383926.html#page=23",
+          "description_level": "Local analytic description of a publication component",
+          "creator": "Dorian Vale",
+          "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+          "source": {
+            "file": "assets/documents/20383926.pdf",
+            "page_count": 196,
+            "pdf_pages": [
+              5
+            ],
+            "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+            "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 3,
+          "title": "The Choreographers: A Lineage of Power",
+          "type": "Chapter",
+          "pdf_start": 37,
+          "printed_start": "29",
+          "id": "c004",
+          "pdf_end": 51,
+          "printed_end": "43",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              37,
+              51
+            ],
+            "title_source": "Full heading on PDF file page 37; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          },
+          "parent_id": "20383926",
+          "parent_doi": "10.5281/zenodo.20383926",
+          "reference": "MOO-CAT-004/C004",
+          "url": "parts/20383926-c004.html",
+          "reader_url": "read/20383926.html#page=37",
+          "description_level": "Local analytic description of a publication component",
+          "creator": "Dorian Vale",
+          "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+          "source": {
+            "file": "assets/documents/20383926.pdf",
+            "page_count": 196,
+            "pdf_pages": [
+              5
+            ],
+            "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+            "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 4,
+          "title": "The Body as the First Blueprint",
+          "type": "Chapter",
+          "pdf_start": 52,
+          "printed_start": "44",
+          "id": "c005",
+          "pdf_end": 66,
+          "printed_end": "58",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              52,
+              66
+            ],
+            "title_source": "Full heading on PDF file page 52; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          },
+          "parent_id": "20383926",
+          "parent_doi": "10.5281/zenodo.20383926",
+          "reference": "MOO-CAT-004/C005",
+          "url": "parts/20383926-c005.html",
+          "reader_url": "read/20383926.html#page=52",
+          "description_level": "Local analytic description of a publication component",
+          "creator": "Dorian Vale",
+          "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+          "source": {
+            "file": "assets/documents/20383926.pdf",
+            "page_count": 196,
+            "pdf_pages": [
+              5
+            ],
+            "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+            "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 5,
+          "title": "The Architecture of Shame",
+          "type": "Chapter",
+          "pdf_start": 67,
+          "printed_start": "59",
+          "id": "c006",
+          "pdf_end": 81,
+          "printed_end": "73",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              67,
+              81
+            ],
+            "title_source": "Full heading on PDF file page 67; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          },
+          "parent_id": "20383926",
+          "parent_doi": "10.5281/zenodo.20383926",
+          "reference": "MOO-CAT-004/C006",
+          "url": "parts/20383926-c006.html",
+          "reader_url": "read/20383926.html#page=67",
+          "description_level": "Local analytic description of a publication component",
+          "creator": "Dorian Vale",
+          "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+          "source": {
+            "file": "assets/documents/20383926.pdf",
+            "page_count": 196,
+            "pdf_pages": [
+              5
+            ],
+            "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+            "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 6,
+          "title": "The Architecture of Obedience",
+          "type": "Chapter",
+          "pdf_start": 82,
+          "printed_start": "74",
+          "id": "c007",
+          "pdf_end": 97,
+          "printed_end": "89",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              82,
+              97
+            ],
+            "title_source": "Full heading on PDF file page 82; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          },
+          "parent_id": "20383926",
+          "parent_doi": "10.5281/zenodo.20383926",
+          "reference": "MOO-CAT-004/C007",
+          "url": "parts/20383926-c007.html",
+          "reader_url": "read/20383926.html#page=82",
+          "description_level": "Local analytic description of a publication component",
+          "creator": "Dorian Vale",
+          "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+          "source": {
+            "file": "assets/documents/20383926.pdf",
+            "page_count": 196,
+            "pdf_pages": [
+              5
+            ],
+            "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+            "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 7,
+          "title": "The Architecture of Awe",
+          "type": "Chapter",
+          "pdf_start": 98,
+          "printed_start": "90",
+          "id": "c008",
+          "pdf_end": 112,
+          "printed_end": "104",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              98,
+              112
+            ],
+            "title_source": "Full heading on PDF file page 98; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          },
+          "parent_id": "20383926",
+          "parent_doi": "10.5281/zenodo.20383926",
+          "reference": "MOO-CAT-004/C008",
+          "url": "parts/20383926-c008.html",
+          "reader_url": "read/20383926.html#page=98",
+          "description_level": "Local analytic description of a publication component",
+          "creator": "Dorian Vale",
+          "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+          "source": {
+            "file": "assets/documents/20383926.pdf",
+            "page_count": 196,
+            "pdf_pages": [
+              5
+            ],
+            "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+            "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 8,
+          "title": "Space as Moral Evidence",
+          "type": "Chapter",
+          "pdf_start": 113,
+          "printed_start": "105",
+          "id": "c009",
+          "pdf_end": 129,
+          "printed_end": "121",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              113,
+              129
+            ],
+            "title_source": "Full heading on PDF file page 113; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          },
+          "parent_id": "20383926",
+          "parent_doi": "10.5281/zenodo.20383926",
+          "reference": "MOO-CAT-004/C009",
+          "url": "parts/20383926-c009.html",
+          "reader_url": "read/20383926.html#page=113",
+          "description_level": "Local analytic description of a publication component",
+          "creator": "Dorian Vale",
+          "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+          "source": {
+            "file": "assets/documents/20383926.pdf",
+            "page_count": 196,
+            "pdf_pages": [
+              5
+            ],
+            "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+            "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 9,
+          "title": "Against Interpretation: The Ethical Stance",
+          "type": "Chapter",
+          "pdf_start": 130,
+          "printed_start": "122",
+          "id": "c010",
+          "pdf_end": 147,
+          "printed_end": "139",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              130,
+              147
+            ],
+            "title_source": "Full heading on PDF file page 130; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          },
+          "parent_id": "20383926",
+          "parent_doi": "10.5281/zenodo.20383926",
+          "reference": "MOO-CAT-004/C010",
+          "url": "parts/20383926-c010.html",
+          "reader_url": "read/20383926.html#page=130",
+          "description_level": "Local analytic description of a publication component",
+          "creator": "Dorian Vale",
+          "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+          "source": {
+            "file": "assets/documents/20383926.pdf",
+            "page_count": 196,
+            "pdf_pages": [
+              5
+            ],
+            "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+            "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 10,
+          "title": "The Ethics of Custodial Space",
+          "type": "Chapter",
+          "pdf_start": 148,
+          "printed_start": "140",
+          "id": "c011",
+          "pdf_end": 162,
+          "printed_end": "154",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              148,
+              162
+            ],
+            "title_source": "Full heading on PDF file page 148; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          },
+          "parent_id": "20383926",
+          "parent_doi": "10.5281/zenodo.20383926",
+          "reference": "MOO-CAT-004/C011",
+          "url": "parts/20383926-c011.html",
+          "reader_url": "read/20383926.html#page=148",
+          "description_level": "Local analytic description of a publication component",
+          "creator": "Dorian Vale",
+          "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+          "source": {
+            "file": "assets/documents/20383926.pdf",
+            "page_count": 196,
+            "pdf_pages": [
+              5
+            ],
+            "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+            "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 11,
+          "title": "The Critic as Witness",
+          "type": "Chapter",
+          "pdf_start": 163,
+          "printed_start": "155",
+          "id": "c012",
+          "pdf_end": 175,
+          "printed_end": "167",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              163,
+              175
+            ],
+            "title_source": "Full heading on PDF file page 163; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          },
+          "parent_id": "20383926",
+          "parent_doi": "10.5281/zenodo.20383926",
+          "reference": "MOO-CAT-004/C012",
+          "url": "parts/20383926-c012.html",
+          "reader_url": "read/20383926.html#page=163",
+          "description_level": "Local analytic description of a publication component",
+          "creator": "Dorian Vale",
+          "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+          "source": {
+            "file": "assets/documents/20383926.pdf",
+            "page_count": 196,
+            "pdf_pages": [
+              5
+            ],
+            "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+            "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 12,
+          "title": "The Post-Interpretive Doctrine",
+          "type": "Chapter",
+          "pdf_start": 176,
+          "printed_start": "168",
+          "id": "c013",
+          "pdf_end": 189,
+          "printed_end": "181",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              176,
+              189
+            ],
+            "title_source": "Full heading on PDF file page 176; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          },
+          "parent_id": "20383926",
+          "parent_doi": "10.5281/zenodo.20383926",
+          "reference": "MOO-CAT-004/C013",
+          "url": "parts/20383926-c013.html",
+          "reader_url": "read/20383926.html#page=176",
+          "description_level": "Local analytic description of a publication component",
+          "creator": "Dorian Vale",
+          "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+          "source": {
+            "file": "assets/documents/20383926.pdf",
+            "page_count": 196,
+            "pdf_pages": [
+              5
+            ],
+            "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+            "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "number": 13,
+          "title": "The Benedict",
+          "type": "Chapter",
+          "pdf_start": 190,
+          "printed_start": "182",
+          "id": "c014",
+          "pdf_end": 196,
+          "printed_end": "188",
+          "evidence": {
+            "file": "assets/documents/20383926.pdf",
+            "pdf_pages": [
+              190,
+              196
+            ],
+            "title_source": "Full heading on PDF file page 190; contents page 5",
+            "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+            "reviewed": "2026-11-04"
+          },
+          "parent_id": "20383926",
+          "parent_doi": "10.5281/zenodo.20383926",
+          "reference": "MOO-CAT-004/C014",
+          "url": "parts/20383926-c014.html",
+          "reader_url": "read/20383926.html#page=190",
+          "description_level": "Local analytic description of a publication component",
+          "creator": "Dorian Vale",
+          "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+          "source": {
+            "file": "assets/documents/20383926.pdf",
+            "page_count": 196,
+            "pdf_pages": [
+              5
+            ],
+            "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+            "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+            "reviewed": "2026-11-04"
+          }
+        }
+      ],
+      "source_url": "https://zenodo.org/api/records/20383926/files/The%20Moral%20Evidance%20of%20Space.pdf/content",
+      "status": "derived_file_inspection",
+      "note": "Analytic descriptions were checked against headings and pagination in the deposited PDF. Component records do not have independent deposits or DOIs.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "controlled_subjects",
+      "value": [
+        {
+          "id": "architecture",
+          "label": "Architecture",
+          "uri": "https://archive.museumofone.art/vocabulary.html#architecture",
+          "url": "vocabulary.html#architecture",
+          "persistent_id": "urn:museum-of-one:vocabulary:architecture",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [],
+          "definition": "Buildings and the built environment as subjects of critical study.",
+          "scope_note": "Use for the subject of a publication, not to classify the deposited document as a building.",
+          "kind": "subject",
+          "broader": [],
+          "narrower": [],
+          "related": [
+            "power-and-institutions",
+            "spatial-experience"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "id": "spatial-experience",
+          "label": "Spatial experience",
+          "uri": "https://archive.museumofone.art/vocabulary.html#spatial-experience",
+          "url": "vocabulary.html#spatial-experience",
+          "persistent_id": "urn:museum-of-one:vocabulary:spatial-experience",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [],
+          "definition": "Bodily and perceptual experience of built or arranged space.",
+          "scope_note": "Use for critical study of scale, light, thresholds, and access; related to Architecture and Exhibition design.",
+          "kind": "subject",
+          "broader": [],
+          "narrower": [],
+          "related": [
+            "architecture",
+            "exhibition-design"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "id": "power-and-institutions",
+          "label": "Power and institutions",
+          "uri": "https://archive.museumofone.art/vocabulary.html#power-and-institutions",
+          "url": "vocabulary.html#power-and-institutions",
+          "persistent_id": "urn:museum-of-one:vocabulary:power-and-institutions",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [],
+          "definition": "Relations of authority as exercised through institutional structures and spaces.",
+          "scope_note": "Use for inquiry into access, surveillance, ordering, and authority; not an institutional affiliation field.",
+          "kind": "subject",
+          "broader": [],
+          "narrower": [],
+          "related": [
+            "architecture"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "id": "ethics-of-witnessing",
+          "label": "Ethics of witnessing",
+          "uri": "https://archive.museumofone.art/vocabulary.html#ethics-of-witnessing",
+          "url": "vocabulary.html#ethics-of-witnessing",
+          "persistent_id": "urn:museum-of-one:vocabulary:ethics-of-witnessing",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [
+            "ethics of witnessing"
+          ],
+          "definition": "Ethical responsibility in attending to artworks and the histories they engage.",
+          "scope_note": "Local access term used for the Museum of One corpus. Preserve the author’s framework attribution; no equivalence with an external philosophical school is asserted.",
+          "kind": "local-framework-concept",
+          "broader": [],
+          "narrower": [],
+          "related": [
+            "post-interpretive-criticism",
+            "witnessing"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        }
+      ],
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Local preferred terms with definitions and synonyms. External alignment is scoped in the vocabulary register.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "genre_terms",
+      "value": [
+        {
+          "id": "genre-book",
+          "label": "Book",
+          "uri": "https://archive.museumofone.art/vocabulary.html#genre-book",
+          "url": "vocabulary.html#genre-book",
+          "persistent_id": "urn:museum-of-one:vocabulary:genre-book",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [
+            "Books",
+            "Digital book"
+          ],
+          "definition": "Book-length publication represented by a deposited digital edition.",
+          "scope_note": "Describes publication genre. The local PDF is not being described as a physical bound volume.",
+          "kind": "genre",
+          "broader": [],
+          "narrower": [],
+          "related": [],
+          "mapping_status": "verified_mapping",
+          "external_mappings": [
+            {
+              "vocabulary": "Getty Art & Architecture Thesaurus",
+              "label": "books",
+              "uri": "http://vocab.getty.edu/aat/300028051",
+              "source_url": "https://vocab.getty.edu/page/aat/300028051",
+              "relation": "relatedMatch",
+              "status": "verified",
+              "verified_on": "2026-11-04",
+              "note": "Getty’s concept concerns bound physical volumes. It is a related form reference for this digital-publication genre, not an exact equivalence or physical-holdings assertion."
+            }
+          ],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "type",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        }
+      ],
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Local resource-genre classification. Digital file format is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "archival_context",
+      "value": {
+        "description_profile": "moo-description-policy-1.0",
+        "catalogue_snapshot_date": "2026-11-04",
+        "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
+        "record_category": "Published library and repository material",
+        "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+        "source_repository": {
+          "name": "Zenodo",
+          "record_url": "https://zenodo.org/records/20383926"
+        },
+        "institutional_context_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+        "source_metadata_retrieved": "2026-11-04",
+        "source_metadata_retrieval_status": "Documented in catalogue source provenance",
+        "source_snapshot": "source/20383926.json",
+        "source_filenames": [
+          "The Moral Evidance of Space.pdf"
+        ],
+        "selection_basis": "Local descriptive selection of publicly published material; public availability does not establish ownership of originals.",
+        "custodial_history": {
+          "status": "not_documented",
+          "statement": "No donation, physical transfer, acquisition agreement or chain of custody is documented by this catalogue. Zenodo remains the source repository for the deposited version."
+        },
+        "original_order": {
+          "status": "not_documented",
+          "statement": "No original archival order is asserted. Current browsing groupings are local editorial arrangement."
+        },
+        "arrangement": {
+          "status": "local_editorial",
+          "grouping": "Books & volumes",
+          "statement": "A browsing grouping, not an original fonds or archival series."
+        },
+        "responsible_service": {
+          "name": "Museum of One",
+          "service": "Museum of One Digital Archive Library",
+          "website": "https://www.museumofone.art/",
+          "email": "research@museumofone.art"
+        },
+        "description_method": "Source-based description with automated drafting and metadata assistance. Responsibility for the public catalogue rests with Museum of One; automated assistance does not constitute independent scholarly or curatorial review.",
+        "policy_url": "policies.html",
+        "correction_email": "research@museumofone.art",
+        "access_copy": {
+          "role": "Local digital reading copy of the deposited file",
+          "source_url": "https://zenodo.org/api/records/20383926/files/The%20Moral%20Evidance%20of%20Space.pdf/content",
+          "source_filename": "The Moral Evidance of Space.pdf",
+          "local_path": "assets/documents/20383926.pdf",
+          "verified_at": "2026-11-04",
+          "source_checksum_match": true,
+          "sha256": "49a76d86a81fc40c6baec3429cfb21c47582a35414f4715504d2c239b5fca5f7",
+          "statement": "Access copy only; no ownership or physical custody transfer is implied."
+        }
+      },
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Provenance records what is documented and leaves unknown custody and original order explicit.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "description_history",
+      "value": [
+        {
+          "responsible_service": "Museum of One",
+          "method": "Source-based automated description assistance",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "public-source-description-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Source-based catalogue description",
+          "note": "Local description assembled from the identified public repository record and available institutional work record. Source metadata remains separately identifiable.",
+          "sources": [
+            "https://zenodo.org/records/20383926",
+            "https://www.museumofone.art/publication-moral-evidence-of-space/"
+          ]
+        },
+        {
+          "responsible_service": "Museum of One",
+          "method": "Source-based automated description assistance",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "qualified-description-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Qualified descriptive enrichment",
+          "note": "Local editorial description, arrangement and source-qualified bibliographic context recorded alongside source metadata. Unknown or disputed values remain qualified.",
+          "fields": [
+            "summary",
+            "subjects",
+            "collection",
+            "short_title",
+            "accession"
+          ],
+          "sources": [
+            "https://zenodo.org/records/20383926",
+            "https://www.museumofone.art/publication-moral-evidence-of-space/"
+          ]
+        },
+        {
+          "responsible_service": "Museum of One",
+          "method": "Automated file checksum and PDF inspection",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "access-copy-verification-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Digital reading copy verified",
+          "note": "Downloaded access-copy MD5 matched the source checksum; local SHA-256 and PDF file-page count are recorded in the file manifest. This event does not describe transfer of custody.",
+          "sources": [
+            "https://zenodo.org/api/records/20383926/files/The%20Moral%20Evidance%20of%20Space.pdf/content"
+          ]
+        },
+        {
+          "responsible_service": "Museum of One",
+          "method": "Source-based automated description assistance",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "description-policy-1.0-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Description policy and provenance context adopted",
+          "note": "Responsible service, source repository, local access-copy role, unknown custody and original order, correction route and dated description history made explicit under moo-description-policy-1.0.",
+          "sources": [
+            "policies.html"
+          ]
+        }
+      ],
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Catalogue description events; these are not work publication dates or acquisition dates.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "pirr_references",
+      "value": [
+        {
+          "programme_key": "research-witness-material-memory",
+          "programme_title": "Witness, Material Presence, and Cultural Memory",
+          "programme_url": "https://www.museumofone.art/research-witness-material-memory/",
+          "programme_stage": "Continuing research",
+          "registry_url": "research-registry.html#research-witness-material-memory",
+          "identifiers": [
+            {
+              "scheme": "PIRR project ID",
+              "value": "pir-prj-dd7kt5rw",
+              "source_url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+            }
+          ],
+          "relation": "Published study associated with the continuing inquiry.",
+          "relation_note": "Published study associated with the continuing inquiry.",
+          "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/"
+        }
+      ],
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "status": "institutional_context_relationship",
+      "note": "PIRR project IDs and programme references identify research records, not publication versions or independent chapter deposits."
+    },
+    {
+      "field": "reading_copy",
+      "value": {
+        "id": "20383926",
+        "title": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
+        "accession": "MOO-CAT-004",
+        "pdf_url": "../assets/documents/20383926.pdf",
+        "source_url": "https://zenodo.org/api/records/20383926/files/The%20Moral%20Evidance%20of%20Space.pdf/content",
+        "zenodo_url": "https://zenodo.org/records/20383926",
+        "source_filename": "The Moral Evidance of Space.pdf",
+        "checksum": "md5:23cdeec1af0577374dc9b05cb22a8f2e",
+        "sha256": "49a76d86a81fc40c6baec3429cfb21c47582a35414f4715504d2c239b5fca5f7",
+        "bytes": 2713642,
+        "page_count": 196,
+        "verified_at": "2026-11-04",
+        "checksum_match": true,
+        "rights": {
+          "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+          "url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "role": "Local reading copy; original repository file retained unchanged"
+      },
+      "source_url": "https://zenodo.org/api/records/20383926/files/The%20Moral%20Evidance%20of%20Space.pdf/content",
+      "status": "derived_file_inspection",
+      "reviewed": "2026-11-04",
+      "note": "Byte-identical local access copy. Source MD5 was recomputed and matched; SHA-256 and page count were measured from the downloaded PDF. This is not a preservation-deposit claim."
+    },
+    {
+      "field": "page_count",
+      "value": 196,
+      "source_url": "https://zenodo.org/api/records/20383926/files/The%20Moral%20Evidance%20of%20Space.pdf/content",
+      "status": "derived_file_inspection",
+      "reviewed": "2026-11-04",
+      "note": "Total PDF file pages measured from the deposited file, including cover and unnumbered pages. Not a claim about printed pagination."
+    }
+  ],
+  "entity_links": [
+    {
+      "id": "dorian-vale",
+      "label": "Dorian Vale",
+      "entity_type": "Person",
+      "relation": "author",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "note": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "id": "museum-of-one",
+      "label": "Museum of One",
+      "entity_type": "Organization",
+      "relation": "publisher",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    }
+  ],
+  "contents": [
+    {
+      "title": "Preface",
+      "type": "Preface",
+      "pdf_start": 6,
+      "pdf_end": 8,
+      "printed_start": "iv",
+      "printed_end": "vi",
+      "id": "c001",
+      "evidence": {
+        "file": "assets/documents/20383926.pdf",
+        "pdf_pages": [
+          6,
+          8
+        ],
+        "title_source": "Full heading on PDF file page 6; contents page 5",
+        "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+        "reviewed": "2026-11-04"
+      },
+      "parent_id": "20383926",
+      "parent_doi": "10.5281/zenodo.20383926",
+      "reference": "MOO-CAT-004/C001",
+      "url": "parts/20383926-c001.html",
+      "reader_url": "read/20383926.html#page=6",
+      "description_level": "Local analytic description of a publication component",
+      "creator": "Dorian Vale",
+      "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+      "source": {
+        "file": "assets/documents/20383926.pdf",
+        "page_count": 196,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "number": 1,
+      "title": "Introduction",
+      "type": "Chapter",
+      "pdf_start": 9,
+      "printed_start": "1",
+      "id": "c002",
+      "pdf_end": 22,
+      "printed_end": "14",
+      "evidence": {
+        "file": "assets/documents/20383926.pdf",
+        "pdf_pages": [
+          9,
+          22
+        ],
+        "title_source": "Full heading on PDF file page 9; contents page 5",
+        "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+        "reviewed": "2026-11-04"
+      },
+      "parent_id": "20383926",
+      "parent_doi": "10.5281/zenodo.20383926",
+      "reference": "MOO-CAT-004/C002",
+      "url": "parts/20383926-c002.html",
+      "reader_url": "read/20383926.html#page=9",
+      "description_level": "Local analytic description of a publication component",
+      "creator": "Dorian Vale",
+      "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+      "source": {
+        "file": "assets/documents/20383926.pdf",
+        "page_count": 196,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "number": 2,
+      "title": "The Moral Birth of Spaces",
+      "type": "Chapter",
+      "pdf_start": 23,
+      "printed_start": "15",
+      "id": "c003",
+      "pdf_end": 36,
+      "printed_end": "28",
+      "evidence": {
+        "file": "assets/documents/20383926.pdf",
+        "pdf_pages": [
+          23,
+          36
+        ],
+        "title_source": "Full heading on PDF file page 23; contents page 5",
+        "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+        "reviewed": "2026-11-04"
+      },
+      "parent_id": "20383926",
+      "parent_doi": "10.5281/zenodo.20383926",
+      "reference": "MOO-CAT-004/C003",
+      "url": "parts/20383926-c003.html",
+      "reader_url": "read/20383926.html#page=23",
+      "description_level": "Local analytic description of a publication component",
+      "creator": "Dorian Vale",
+      "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+      "source": {
+        "file": "assets/documents/20383926.pdf",
+        "page_count": 196,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "number": 3,
+      "title": "The Choreographers: A Lineage of Power",
+      "type": "Chapter",
+      "pdf_start": 37,
+      "printed_start": "29",
+      "id": "c004",
+      "pdf_end": 51,
+      "printed_end": "43",
+      "evidence": {
+        "file": "assets/documents/20383926.pdf",
+        "pdf_pages": [
+          37,
+          51
+        ],
+        "title_source": "Full heading on PDF file page 37; contents page 5",
+        "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+        "reviewed": "2026-11-04"
+      },
+      "parent_id": "20383926",
+      "parent_doi": "10.5281/zenodo.20383926",
+      "reference": "MOO-CAT-004/C004",
+      "url": "parts/20383926-c004.html",
+      "reader_url": "read/20383926.html#page=37",
+      "description_level": "Local analytic description of a publication component",
+      "creator": "Dorian Vale",
+      "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+      "source": {
+        "file": "assets/documents/20383926.pdf",
+        "page_count": 196,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "number": 4,
+      "title": "The Body as the First Blueprint",
+      "type": "Chapter",
+      "pdf_start": 52,
+      "printed_start": "44",
+      "id": "c005",
+      "pdf_end": 66,
+      "printed_end": "58",
+      "evidence": {
+        "file": "assets/documents/20383926.pdf",
+        "pdf_pages": [
+          52,
+          66
+        ],
+        "title_source": "Full heading on PDF file page 52; contents page 5",
+        "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+        "reviewed": "2026-11-04"
+      },
+      "parent_id": "20383926",
+      "parent_doi": "10.5281/zenodo.20383926",
+      "reference": "MOO-CAT-004/C005",
+      "url": "parts/20383926-c005.html",
+      "reader_url": "read/20383926.html#page=52",
+      "description_level": "Local analytic description of a publication component",
+      "creator": "Dorian Vale",
+      "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+      "source": {
+        "file": "assets/documents/20383926.pdf",
+        "page_count": 196,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "number": 5,
+      "title": "The Architecture of Shame",
+      "type": "Chapter",
+      "pdf_start": 67,
+      "printed_start": "59",
+      "id": "c006",
+      "pdf_end": 81,
+      "printed_end": "73",
+      "evidence": {
+        "file": "assets/documents/20383926.pdf",
+        "pdf_pages": [
+          67,
+          81
+        ],
+        "title_source": "Full heading on PDF file page 67; contents page 5",
+        "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+        "reviewed": "2026-11-04"
+      },
+      "parent_id": "20383926",
+      "parent_doi": "10.5281/zenodo.20383926",
+      "reference": "MOO-CAT-004/C006",
+      "url": "parts/20383926-c006.html",
+      "reader_url": "read/20383926.html#page=67",
+      "description_level": "Local analytic description of a publication component",
+      "creator": "Dorian Vale",
+      "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+      "source": {
+        "file": "assets/documents/20383926.pdf",
+        "page_count": 196,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "number": 6,
+      "title": "The Architecture of Obedience",
+      "type": "Chapter",
+      "pdf_start": 82,
+      "printed_start": "74",
+      "id": "c007",
+      "pdf_end": 97,
+      "printed_end": "89",
+      "evidence": {
+        "file": "assets/documents/20383926.pdf",
+        "pdf_pages": [
+          82,
+          97
+        ],
+        "title_source": "Full heading on PDF file page 82; contents page 5",
+        "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+        "reviewed": "2026-11-04"
+      },
+      "parent_id": "20383926",
+      "parent_doi": "10.5281/zenodo.20383926",
+      "reference": "MOO-CAT-004/C007",
+      "url": "parts/20383926-c007.html",
+      "reader_url": "read/20383926.html#page=82",
+      "description_level": "Local analytic description of a publication component",
+      "creator": "Dorian Vale",
+      "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+      "source": {
+        "file": "assets/documents/20383926.pdf",
+        "page_count": 196,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "number": 7,
+      "title": "The Architecture of Awe",
+      "type": "Chapter",
+      "pdf_start": 98,
+      "printed_start": "90",
+      "id": "c008",
+      "pdf_end": 112,
+      "printed_end": "104",
+      "evidence": {
+        "file": "assets/documents/20383926.pdf",
+        "pdf_pages": [
+          98,
+          112
+        ],
+        "title_source": "Full heading on PDF file page 98; contents page 5",
+        "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+        "reviewed": "2026-11-04"
+      },
+      "parent_id": "20383926",
+      "parent_doi": "10.5281/zenodo.20383926",
+      "reference": "MOO-CAT-004/C008",
+      "url": "parts/20383926-c008.html",
+      "reader_url": "read/20383926.html#page=98",
+      "description_level": "Local analytic description of a publication component",
+      "creator": "Dorian Vale",
+      "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+      "source": {
+        "file": "assets/documents/20383926.pdf",
+        "page_count": 196,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "number": 8,
+      "title": "Space as Moral Evidence",
+      "type": "Chapter",
+      "pdf_start": 113,
+      "printed_start": "105",
+      "id": "c009",
+      "pdf_end": 129,
+      "printed_end": "121",
+      "evidence": {
+        "file": "assets/documents/20383926.pdf",
+        "pdf_pages": [
+          113,
+          129
+        ],
+        "title_source": "Full heading on PDF file page 113; contents page 5",
+        "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+        "reviewed": "2026-11-04"
+      },
+      "parent_id": "20383926",
+      "parent_doi": "10.5281/zenodo.20383926",
+      "reference": "MOO-CAT-004/C009",
+      "url": "parts/20383926-c009.html",
+      "reader_url": "read/20383926.html#page=113",
+      "description_level": "Local analytic description of a publication component",
+      "creator": "Dorian Vale",
+      "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+      "source": {
+        "file": "assets/documents/20383926.pdf",
+        "page_count": 196,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "number": 9,
+      "title": "Against Interpretation: The Ethical Stance",
+      "type": "Chapter",
+      "pdf_start": 130,
+      "printed_start": "122",
+      "id": "c010",
+      "pdf_end": 147,
+      "printed_end": "139",
+      "evidence": {
+        "file": "assets/documents/20383926.pdf",
+        "pdf_pages": [
+          130,
+          147
+        ],
+        "title_source": "Full heading on PDF file page 130; contents page 5",
+        "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+        "reviewed": "2026-11-04"
+      },
+      "parent_id": "20383926",
+      "parent_doi": "10.5281/zenodo.20383926",
+      "reference": "MOO-CAT-004/C010",
+      "url": "parts/20383926-c010.html",
+      "reader_url": "read/20383926.html#page=130",
+      "description_level": "Local analytic description of a publication component",
+      "creator": "Dorian Vale",
+      "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+      "source": {
+        "file": "assets/documents/20383926.pdf",
+        "page_count": 196,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "number": 10,
+      "title": "The Ethics of Custodial Space",
+      "type": "Chapter",
+      "pdf_start": 148,
+      "printed_start": "140",
+      "id": "c011",
+      "pdf_end": 162,
+      "printed_end": "154",
+      "evidence": {
+        "file": "assets/documents/20383926.pdf",
+        "pdf_pages": [
+          148,
+          162
+        ],
+        "title_source": "Full heading on PDF file page 148; contents page 5",
+        "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+        "reviewed": "2026-11-04"
+      },
+      "parent_id": "20383926",
+      "parent_doi": "10.5281/zenodo.20383926",
+      "reference": "MOO-CAT-004/C011",
+      "url": "parts/20383926-c011.html",
+      "reader_url": "read/20383926.html#page=148",
+      "description_level": "Local analytic description of a publication component",
+      "creator": "Dorian Vale",
+      "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+      "source": {
+        "file": "assets/documents/20383926.pdf",
+        "page_count": 196,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "number": 11,
+      "title": "The Critic as Witness",
+      "type": "Chapter",
+      "pdf_start": 163,
+      "printed_start": "155",
+      "id": "c012",
+      "pdf_end": 175,
+      "printed_end": "167",
+      "evidence": {
+        "file": "assets/documents/20383926.pdf",
+        "pdf_pages": [
+          163,
+          175
+        ],
+        "title_source": "Full heading on PDF file page 163; contents page 5",
+        "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+        "reviewed": "2026-11-04"
+      },
+      "parent_id": "20383926",
+      "parent_doi": "10.5281/zenodo.20383926",
+      "reference": "MOO-CAT-004/C012",
+      "url": "parts/20383926-c012.html",
+      "reader_url": "read/20383926.html#page=163",
+      "description_level": "Local analytic description of a publication component",
+      "creator": "Dorian Vale",
+      "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+      "source": {
+        "file": "assets/documents/20383926.pdf",
+        "page_count": 196,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "number": 12,
+      "title": "The Post-Interpretive Doctrine",
+      "type": "Chapter",
+      "pdf_start": 176,
+      "printed_start": "168",
+      "id": "c013",
+      "pdf_end": 189,
+      "printed_end": "181",
+      "evidence": {
+        "file": "assets/documents/20383926.pdf",
+        "pdf_pages": [
+          176,
+          189
+        ],
+        "title_source": "Full heading on PDF file page 176; contents page 5",
+        "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+        "reviewed": "2026-11-04"
+      },
+      "parent_id": "20383926",
+      "parent_doi": "10.5281/zenodo.20383926",
+      "reference": "MOO-CAT-004/C013",
+      "url": "parts/20383926-c013.html",
+      "reader_url": "read/20383926.html#page=176",
+      "description_level": "Local analytic description of a publication component",
+      "creator": "Dorian Vale",
+      "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+      "source": {
+        "file": "assets/documents/20383926.pdf",
+        "page_count": 196,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "number": 13,
+      "title": "The Benedict",
+      "type": "Chapter",
+      "pdf_start": 190,
+      "printed_start": "182",
+      "id": "c014",
+      "pdf_end": 196,
+      "printed_end": "188",
+      "evidence": {
+        "file": "assets/documents/20383926.pdf",
+        "pdf_pages": [
+          190,
+          196
+        ],
+        "title_source": "Full heading on PDF file page 190; contents page 5",
+        "method": "Checked numbered opening headings, consecutive chapter boundaries, final text pages and printed page labels in the deposited PDF text layer. Line breaks joined and discretionary hyphens displayed as hyphens. Blank leaves excluded from terminal extents.",
+        "reviewed": "2026-11-04"
+      },
+      "parent_id": "20383926",
+      "parent_doi": "10.5281/zenodo.20383926",
+      "reference": "MOO-CAT-004/C014",
+      "url": "parts/20383926-c014.html",
+      "reader_url": "read/20383926.html#page=190",
+      "description_level": "Local analytic description of a publication component",
+      "creator": "Dorian Vale",
+      "creator_inheritance": "Responsibility inherited from the parent publication; no separate chapter-level deposit or independent authorship claim is made.",
+      "source": {
+        "file": "assets/documents/20383926.pdf",
+        "page_count": 196,
+        "pdf_pages": [
+          5
+        ],
+        "title_source": "Contents list corroborated against full chapter headings in the same deposited PDF.",
+        "method": "PDF text-layer review; full heading titles take precedence over abbreviated contents entries. Extents end immediately before the next numbered opening or at the final text page. Prefaces are separately paginated.",
+        "reviewed": "2026-11-04"
+      }
+    }
+  ],
+  "controlled_subjects": [
+    {
+      "id": "architecture",
+      "label": "Architecture",
+      "uri": "https://archive.museumofone.art/vocabulary.html#architecture",
+      "url": "vocabulary.html#architecture",
+      "persistent_id": "urn:museum-of-one:vocabulary:architecture",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [],
+      "definition": "Buildings and the built environment as subjects of critical study.",
+      "scope_note": "Use for the subject of a publication, not to classify the deposited document as a building.",
+      "kind": "subject",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "power-and-institutions",
+        "spatial-experience"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "id": "spatial-experience",
+      "label": "Spatial experience",
+      "uri": "https://archive.museumofone.art/vocabulary.html#spatial-experience",
+      "url": "vocabulary.html#spatial-experience",
+      "persistent_id": "urn:museum-of-one:vocabulary:spatial-experience",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [],
+      "definition": "Bodily and perceptual experience of built or arranged space.",
+      "scope_note": "Use for critical study of scale, light, thresholds, and access; related to Architecture and Exhibition design.",
+      "kind": "subject",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "architecture",
+        "exhibition-design"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "id": "power-and-institutions",
+      "label": "Power and institutions",
+      "uri": "https://archive.museumofone.art/vocabulary.html#power-and-institutions",
+      "url": "vocabulary.html#power-and-institutions",
+      "persistent_id": "urn:museum-of-one:vocabulary:power-and-institutions",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [],
+      "definition": "Relations of authority as exercised through institutional structures and spaces.",
+      "scope_note": "Use for inquiry into access, surveillance, ordering, and authority; not an institutional affiliation field.",
+      "kind": "subject",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "architecture"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "id": "ethics-of-witnessing",
+      "label": "Ethics of witnessing",
+      "uri": "https://archive.museumofone.art/vocabulary.html#ethics-of-witnessing",
+      "url": "vocabulary.html#ethics-of-witnessing",
+      "persistent_id": "urn:museum-of-one:vocabulary:ethics-of-witnessing",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [
+        "ethics of witnessing"
+      ],
+      "definition": "Ethical responsibility in attending to artworks and the histories they engage.",
+      "scope_note": "Local access term used for the Museum of One corpus. Preserve the author’s framework attribution; no equivalence with an external philosophical school is asserted.",
+      "kind": "local-framework-concept",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "post-interpretive-criticism",
+        "witnessing"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    }
+  ],
+  "genre_terms": [
+    {
+      "id": "genre-book",
+      "label": "Book",
+      "uri": "https://archive.museumofone.art/vocabulary.html#genre-book",
+      "url": "vocabulary.html#genre-book",
+      "persistent_id": "urn:museum-of-one:vocabulary:genre-book",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [
+        "Books",
+        "Digital book"
+      ],
+      "definition": "Book-length publication represented by a deposited digital edition.",
+      "scope_note": "Describes publication genre. The local PDF is not being described as a physical bound volume.",
+      "kind": "genre",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "verified_mapping",
+      "external_mappings": [
+        {
+          "vocabulary": "Getty Art & Architecture Thesaurus",
+          "label": "books",
+          "uri": "http://vocab.getty.edu/aat/300028051",
+          "source_url": "https://vocab.getty.edu/page/aat/300028051",
+          "relation": "relatedMatch",
+          "status": "verified",
+          "verified_on": "2026-11-04",
+          "note": "Getty’s concept concerns bound physical volumes. It is a related form reference for this digital-publication genre, not an exact equivalence or physical-holdings assertion."
+        }
+      ],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "type",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    }
+  ],
+  "vocabulary_version": 4,
+  "description_history": [
+    {
+      "responsible_service": "Museum of One",
+      "method": "Source-based automated description assistance",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "public-source-description-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Source-based catalogue description",
+      "note": "Local description assembled from the identified public repository record and available institutional work record. Source metadata remains separately identifiable.",
+      "sources": [
+        "https://zenodo.org/records/20383926",
+        "https://www.museumofone.art/publication-moral-evidence-of-space/"
+      ]
+    },
+    {
+      "responsible_service": "Museum of One",
+      "method": "Source-based automated description assistance",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "qualified-description-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Qualified descriptive enrichment",
+      "note": "Local editorial description, arrangement and source-qualified bibliographic context recorded alongside source metadata. Unknown or disputed values remain qualified.",
+      "fields": [
+        "summary",
+        "subjects",
+        "collection",
+        "short_title",
+        "accession"
+      ],
+      "sources": [
+        "https://zenodo.org/records/20383926",
+        "https://www.museumofone.art/publication-moral-evidence-of-space/"
+      ]
+    },
+    {
+      "responsible_service": "Museum of One",
+      "method": "Automated file checksum and PDF inspection",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "access-copy-verification-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Digital reading copy verified",
+      "note": "Downloaded access-copy MD5 matched the source checksum; local SHA-256 and PDF file-page count are recorded in the file manifest. This event does not describe transfer of custody.",
+      "sources": [
+        "https://zenodo.org/api/records/20383926/files/The%20Moral%20Evidance%20of%20Space.pdf/content"
+      ]
+    },
+    {
+      "responsible_service": "Museum of One",
+      "method": "Source-based automated description assistance",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "description-policy-1.0-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Description policy and provenance context adopted",
+      "note": "Responsible service, source repository, local access-copy role, unknown custody and original order, correction route and dated description history made explicit under moo-description-policy-1.0.",
+      "sources": [
+        "policies.html"
+      ]
+    }
+  ],
+  "archival_context": {
+    "description_profile": "moo-description-policy-1.0",
+    "catalogue_snapshot_date": "2026-11-04",
+    "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
+    "record_category": "Published library and repository material",
+    "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+    "source_repository": {
+      "name": "Zenodo",
+      "record_url": "https://zenodo.org/records/20383926"
+    },
+    "institutional_context_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+    "source_metadata_retrieved": "2026-11-04",
+    "source_metadata_retrieval_status": "Documented in catalogue source provenance",
+    "source_snapshot": "source/20383926.json",
+    "source_filenames": [
+      "The Moral Evidance of Space.pdf"
+    ],
+    "selection_basis": "Local descriptive selection of publicly published material; public availability does not establish ownership of originals.",
+    "custodial_history": {
+      "status": "not_documented",
+      "statement": "No donation, physical transfer, acquisition agreement or chain of custody is documented by this catalogue. Zenodo remains the source repository for the deposited version."
+    },
+    "original_order": {
+      "status": "not_documented",
+      "statement": "No original archival order is asserted. Current browsing groupings are local editorial arrangement."
+    },
+    "arrangement": {
+      "status": "local_editorial",
+      "grouping": "Books & volumes",
+      "statement": "A browsing grouping, not an original fonds or archival series."
+    },
+    "responsible_service": {
+      "name": "Museum of One",
+      "service": "Museum of One Digital Archive Library",
+      "website": "https://www.museumofone.art/",
+      "email": "research@museumofone.art"
+    },
+    "description_method": "Source-based description with automated drafting and metadata assistance. Responsibility for the public catalogue rests with Museum of One; automated assistance does not constitute independent scholarly or curatorial review.",
+    "policy_url": "policies.html",
+    "correction_email": "research@museumofone.art",
+    "access_copy": {
+      "role": "Local digital reading copy of the deposited file",
+      "source_url": "https://zenodo.org/api/records/20383926/files/The%20Moral%20Evidance%20of%20Space.pdf/content",
+      "source_filename": "The Moral Evidance of Space.pdf",
+      "local_path": "assets/documents/20383926.pdf",
+      "verified_at": "2026-11-04",
+      "source_checksum_match": true,
+      "sha256": "49a76d86a81fc40c6baec3429cfb21c47582a35414f4715504d2c239b5fca5f7",
+      "statement": "Access copy only; no ownership or physical custody transfer is implied."
+    }
+  },
+  "description_policy_url": "https://archive.museumofone.art/policies.html",
+  "pirr_references": [
+    {
+      "programme_key": "research-witness-material-memory",
+      "programme_title": "Witness, Material Presence, and Cultural Memory",
+      "programme_url": "https://www.museumofone.art/research-witness-material-memory/",
+      "programme_stage": "Continuing research",
+      "registry_url": "research-registry.html#research-witness-material-memory",
+      "identifiers": [
+        {
+          "scheme": "PIRR project ID",
+          "value": "pir-prj-dd7kt5rw",
+          "source_url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+        }
+      ],
+      "relation": "Published study associated with the continuing inquiry.",
+      "relation_note": "Published study associated with the continuing inquiry.",
+      "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/"
+    }
+  ],
+  "pirr_work_identity": {
+    "archive_reference": "MOO-CAT-004",
+    "edition_doi": "10.5281/zenodo.20383926",
+    "zenodo_record_id": "20383926",
+    "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication."
+  }
+}

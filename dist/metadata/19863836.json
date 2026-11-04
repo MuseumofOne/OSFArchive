@@ -1,0 +1,1864 @@
+{
+  "id": "19863836",
+  "accession": "MOO-CAT-015",
+  "title": "The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism",
+  "source_title": "The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism",
+  "short_title": "The Afterlife of the Work",
+  "author": "Dorian Vale",
+  "creators": [
+    {
+      "name": "Vale, Dorian",
+      "affiliation": "MuseumofOne",
+      "orcid": "0009-0004-7737-5094"
+    },
+    {
+      "name": "https://www.museumofone.art/",
+      "affiliation": null
+    },
+    {
+      "name": "Museum Of One",
+      "affiliation": null
+    }
+  ],
+  "doi": "10.5281/zenodo.19863836",
+  "conceptdoi": "10.5281/zenodo.17076534",
+  "zenodo_url": "https://zenodo.org/records/19863836",
+  "date": "2026",
+  "type": "Journal article",
+  "source_resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "version": "",
+  "collection": "Theory & treatises",
+  "summary": "An essay treating the lasting effects of an encounter with art as evidence within Post-Interpretive Criticism. Its focus is the viewer’s memory, response, and continuing responsibility to the work.",
+  "subjects": [
+    "Viewer response",
+    "Ethics of witnessing",
+    "Memory",
+    "Post-Interpretive Criticism"
+  ],
+  "keywords": [
+    "Post-Interpretive Criticism",
+    "Stillmark Theory",
+    "Absential Aesthetics",
+    "Witness Aesthetics",
+    "Hauntmark Theory",
+    "Presence-Based Criticism",
+    "Custodianship of Art",
+    "Restraint in front of art",
+    "Moral proximity",
+    "Interpretive silence",
+    "Erasure as ethics",
+    "Silence as method",
+    "Language as violence",
+    "Art encounter ethics",
+    "Epistemology of witness",
+    "Philosophy of Art",
+    "Aesthetics",
+    "Art Theory",
+    "Contemporary Aesthetics",
+    "Comparative Aesthetics",
+    "Ethics in Art Criticism",
+    "Interpretation and Meaning",
+    "Criticism and Reception Theory",
+    "Visual Culture Studies",
+    "Epistemology of Art",
+    "Dorian Vale",
+    "Founder of Post-Interpretive Criticism",
+    "Post-Aesthetic Critic",
+    "Independent Philosopher of Art",
+    "Museum of One",
+    "Art Writer and Theorist",
+    "Aesthetic Philosopher",
+    "Custodian of Witness Aesthetics",
+    "The Doctrine of Post-Interpretive Criticism",
+    "The Custodian's Oath",
+    "The Canon of Witnesses",
+    "Art as Truth",
+    "Art as Presence",
+    "The Viewer as Evidence",
+    "Interpretation vs. Witnessing",
+    "Language as Custody",
+    "Erasure as Afterlife",
+    "Post-Interpretive Lexicon",
+    "Alternative art criticism",
+    "New art criticism movement",
+    "Ethical art theory",
+    "Criticism beyond interpretation",
+    "Quiet philosophy of art",
+    "Radical art restraint",
+    "Witness over interpretation",
+    "Art Criticism Ethics",
+    "Interpretive Restraint",
+    "https://hcommons.org/members/dorianvale/",
+    "https://philpeople.org/profiles/dorian-vale",
+    "https://osf.io/xa5jw/",
+    "https://independent.academia.edu/DorianVale",
+    "https://doi.org/10.5281/zenodo.17112807",
+    "https://doi.org/10.5281/zenodo.17078847",
+    "https://doi.org/10.5281/zenodo.17069115",
+    "https://figshare.com/authors/Dorian_Vale/22186984",
+    "Q136308909",
+    "Q136308879",
+    "Q136308916",
+    "Part of the Post-Interpretive Criticism movement (Q136308909), published by Museum of One (Q136308879), authored by Dorian Vale (Q136308916).",
+    "https://zenodo.org/communities/post-interpretive-criticism",
+    "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+    "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ"
+  ],
+  "license": {
+    "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "files": [
+    {
+      "name": "The Afterlife of the Work -Viewer as Evidence in Post-Interpretive Criticism.pdf",
+      "url": "https://zenodo.org/api/records/19863836/files/The%20Afterlife%20of%20the%20Work%20-Viewer%20as%20Evidence%20in%20Post-Interpretive%20Criticism.pdf/content",
+      "size": 253546,
+      "size_label": "248 KB",
+      "checksum": "md5:3661a3d21c585f0c41bbb242cb3b8cd0",
+      "mimetype": "application/pdf"
+    }
+  ],
+  "institutional_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+  "corroboration": "Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. Its repository links and publication dates are retained separately from this selected Zenodo edition. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.",
+  "discrepancies": [
+    "The repository also lists organizational or URL-form creator entries. The catalogue displays Dorian Vale as bibliographic author while retaining the deposited creator list separately.",
+    "The source description includes a 2025 citation and an earlier DOI. The selected Zenodo record has a 2026 publication-date field; a web-publication date is not substituted for that deposited date.",
+    "The institutional page does not explicitly link this selected edition DOI in its saved HTML. The match is at work level through title, authorship, and publication context; the catalogue preserves the exact repository edition separately."
+  ],
+  "orcid": "0009-0004-7737-5094",
+  "publisher": "Museum of One",
+  "language": null,
+  "isbn": null,
+  "related_identifiers": [
+    {
+      "identifier": "https://www.museumofone.art/",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://hcommons.org/members/dorianvale/",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://philpeople.org/profiles/dorian-vale",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://osf.io/xa5jw/",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://independent.academia.edu/DorianVale",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://figshare.com/authors/Dorian_Vale/22186984",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.17112807",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.17078847",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.17069115",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://zenodo.org/communities/post-interpretive-criticism",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ",
+      "relation": "cites",
+      "scheme": "url"
+    }
+  ],
+  "alternate_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.17069115"
+    },
+    {
+      "identifier": "https://www.museumofone.art/"
+    },
+    {
+      "identifier": "https://hcommons.org/members/dorianvale/"
+    },
+    {
+      "identifier": "https://philpeople.org/profiles/dorian-vale"
+    },
+    {
+      "identifier": "https://osf.io/xa5jw/"
+    },
+    {
+      "identifier": "https://independent.academia.edu/DorianVale"
+    },
+    {
+      "identifier": "https://figshare.com/authors/Dorian_Vale/22186984"
+    },
+    {
+      "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d"
+    },
+    {
+      "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266"
+    },
+    {
+      "identifier": "https://zenodo.org/communities/post-interpretive-criticism"
+    },
+    {
+      "identifier": "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ"
+    }
+  ],
+  "source_references": [
+    "https://www.museumofone.art/",
+    "https://hcommons.org/members/dorianvale/",
+    "https://philpeople.org/profiles/dorian-vale",
+    "https://osf.io/xa5jw/",
+    "https://independent.academia.edu/DorianVale",
+    "https://doi.org/10.5281/zenodo.17112807",
+    "https://doi.org/10.5281/zenodo.17078847",
+    "https://doi.org/10.5281/zenodo.17069115",
+    "https://figshare.com/authors/Dorian_Vale/22186984",
+    "Q136308909",
+    "Q136308879",
+    "Q136308916",
+    "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d",
+    "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+    "https://zenodo.org/communities/post-interpretive-criticism",
+    "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ",
+    "http://dx.doi.org/10.2139/ssrn.5471149",
+    "https://ssrn.com/abstract=5471149"
+  ],
+  "source_journal": {
+    "title": "Museum of One"
+  },
+  "source_imprint": null,
+  "source_contributors": [
+    {
+      "name": "Museum Of One",
+      "affiliation": "https://www.museumofone.art/",
+      "type": "RightsHolder"
+    }
+  ],
+  "source_created": "2026-04-28T18:52:53.714810+00:00",
+  "source_modified": "2026-04-28T18:52:54.111962+00:00",
+  "source_description_html": "<p><strong>The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism</strong></p>\n<p><em>By Dorian Vale</em></p>\n<p>This essay presents one of the central epistemological pillars of Post-Interpretive Criticism (PIC): the concept of the viewer as evidence. Dorian Vale challenges the traditional hierarchy where the critic&rsquo;s interpretation takes precedence over the encounter itself, proposing instead that the <em>afterlife</em> of the artwork&mdash;the residue it leaves in the viewer&mdash;is its most truthful legacy.</p>\n<p>&nbsp;</p>\n<p>Rather than dissect the work, Vale observes what lingers after it is gone: silence, tremor, unease, reverence. These affective traces are not emotional accidents, but ethical data. The viewer&rsquo;s internal shift becomes testimony, and the absence of interpretation becomes its own kind of presence.</p>\n<p>&nbsp;</p>\n<p>Rooted in restraint and moral proximity, this essay reframes the act of viewing as sacred evidence collection. The artwork does not exist to be understood; it exists to be endured. And in that endurance, the viewer becomes witness, custodian, and echo.</p>\n<div>\n<div>&nbsp;</div>\n<div>\n<p>Vale, Dorian. The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism. Museum of One, 2025. DOI: 10.5281/zenodo.17076535</p>\n</div>\n<div>\n<p>Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen. This name is used for all official publications, essays, and theoretical works indexed through DOI-linked repositories including Zenodo, OSF, PhilPapers, and SSRN.</p>\n</div>\n<div>\n<p>This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and <em>Art as Truth: A Treatise</em> (Q136329071), <em>Aesthetic Recursion Theory</em>&nbsp;(Q136339843)</p>\n</div>\n</div>\n<p>&nbsp;</p>\n<p>Post-Interpretive Criticism, Dorian Vale, viewer as evidence, art afterlife, ethical criticism, art encounter, aesthetic presence, trauma-informed art viewing, philosophy of art, witnessing in art, moral proximity, affective criticism</p>",
+  "provenance": {
+    "repository": "Zenodo REST API response supplied in query.json",
+    "retrieved": "2026-11-04",
+    "editorial_fields": [
+      "summary",
+      "subjects",
+      "collection",
+      "short_title",
+      "accession"
+    ],
+    "source_snapshot": "source/19863836.json",
+    "institutional_review": "Reviewed page-level title, author and repository links in saved public institutional HTML, 2026-11-04."
+  },
+  "source_review": "2026-11-04",
+  "relations": [
+    {
+      "identifier": "https://www.museumofone.art/",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://hcommons.org/members/dorianvale/",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://philpeople.org/profiles/dorian-vale",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://osf.io/xa5jw/",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://independent.academia.edu/DorianVale",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://figshare.com/authors/Dorian_Vale/22186984",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.17112807",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.17078847",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.17069115",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://zenodo.org/communities/post-interpretive-criticism",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ",
+      "relation": "cites",
+      "scheme": "url"
+    }
+  ],
+  "institutional_metadata": {
+    "title": "The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism",
+    "author": "Dorian Vale",
+    "web_publication": "2025-09-01T03:33:00.000Z",
+    "web_updated": "2026-11-03T00:48:08.000Z",
+    "linked_zenodo_dois": [
+      "10.5281/zenodo.17076535"
+    ],
+    "reviewed": "2026-11-04",
+    "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/"
+  },
+  "research_programmes": [
+    {
+      "title": "Alexander Viktorovich Markov: Critical Language and Lasting Correction",
+      "url": "https://www.museumofone.art/research-critical-language/",
+      "status": "In development",
+      "source_url": "https://www.museumofone.art/research-critical-language/",
+      "relation": "Earlier individual work linked as context for a developing programme; not a joint output or endorsement",
+      "relation_label": "Earlier individual work linked as programme context"
+    }
+  ],
+  "record_level": "Item",
+  "record_status": "Published source; selected catalogue record",
+  "digital_formats": [
+    "application/pdf"
+  ],
+  "extent": "1 digital file; 253546 bytes",
+  "medium": "Digital document",
+  "record_reviewed": "2026-11-04",
+  "date_precision": "year",
+  "alternate_titles": [],
+  "digital_extent": {
+    "file_count": 1,
+    "total_bytes": 253546,
+    "formats": [
+      "application/pdf"
+    ],
+    "checksums": [
+      {
+        "filename": "The Afterlife of the Work -Viewer as Evidence in Post-Interpretive Criticism.pdf",
+        "algorithm": "md5",
+        "value": "3661a3d21c585f0c41bbb242cb3b8cd0",
+        "syntax_valid": true,
+        "verification": "source_checksum_transcription; bytes not independently recomputed"
+      }
+    ],
+    "source_url": "https://zenodo.org/records/19863836",
+    "derivation": "File count and total bytes calculated from repository file metadata; MIME inferred from filename when absent."
+  },
+  "identifier_validation": {
+    "orcid": {
+      "source_value": "0009-0004-7737-5094",
+      "checksum_valid": true,
+      "note": "ISO 7064 MOD 11-2 checksum only; this is not a live registry verification."
+    },
+    "isbn": [],
+    "doi": {
+      "source_value": "10.5281/zenodo.19863836",
+      "syntax_valid": true,
+      "note": "Syntax check only; repository snapshot supplies the identifier."
+    }
+  },
+  "isbn_applicability": "not_supplied",
+  "serial": null,
+  "contributor_roles": [
+    {
+      "name": "Vale, Dorian",
+      "source_category": "creator",
+      "source_role": null,
+      "role_label": "Creator (role not supplied)",
+      "affiliation_as_supplied": "MuseumofOne",
+      "source_url": "https://zenodo.org/records/19863836"
+    },
+    {
+      "name": "https://www.museumofone.art/",
+      "source_category": "creator",
+      "source_role": null,
+      "role_label": "Creator (role not supplied)",
+      "affiliation_as_supplied": null,
+      "source_url": "https://zenodo.org/records/19863836"
+    },
+    {
+      "name": "Museum Of One",
+      "source_category": "creator",
+      "source_role": null,
+      "role_label": "Creator (role not supplied)",
+      "affiliation_as_supplied": null,
+      "source_url": "https://zenodo.org/records/19863836"
+    },
+    {
+      "name": "Museum Of One",
+      "source_category": "contributor",
+      "source_role": "RightsHolder",
+      "role_label": "RightsHolder",
+      "affiliation_as_supplied": "https://www.museumofone.art/",
+      "source_url": "https://zenodo.org/records/19863836"
+    }
+  ],
+  "authority_links": [],
+  "metadata_profile": {
+    "name": "Museum of One source-qualified catalogue profile",
+    "version": "2",
+    "note": "Local application profile using schema.org and qualified Dublin Core; not an archival standards certification.",
+    "source_snapshot_preserved": true
+  },
+  "reading_copy": {
+    "id": "19863836",
+    "title": "The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism",
+    "accession": "MOO-CAT-015",
+    "pdf_url": "../assets/documents/19863836.pdf",
+    "source_url": "https://zenodo.org/api/records/19863836/files/The%20Afterlife%20of%20the%20Work%20-Viewer%20as%20Evidence%20in%20Post-Interpretive%20Criticism.pdf/content",
+    "zenodo_url": "https://zenodo.org/records/19863836",
+    "source_filename": "The Afterlife of the Work -Viewer as Evidence in Post-Interpretive Criticism.pdf",
+    "checksum": "md5:3661a3d21c585f0c41bbb242cb3b8cd0",
+    "sha256": "a9b72a9f10cce025300b1019d8bd84d19833404c33dc7c0f195b370ce702aa89",
+    "bytes": 253546,
+    "page_count": 9,
+    "verified_at": "2026-11-04",
+    "checksum_match": true,
+    "rights": {
+      "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "role": "Local reading copy; original repository file retained unchanged"
+  },
+  "page_count": 9,
+  "field_assertions": [
+    {
+      "field": "title",
+      "value": "The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism",
+      "status": "catalogue_title",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "Local display title; the deposited title is retained separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_title",
+      "value": "The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/19863836",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "doi",
+      "value": "10.5281/zenodo.19863836",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/19863836",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "date",
+      "value": "2026",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/19863836",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "conceptdoi",
+      "value": "10.5281/zenodo.17076534",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/19863836",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "creators",
+      "value": [
+        {
+          "name": "Vale, Dorian",
+          "affiliation": "MuseumofOne",
+          "orcid": "0009-0004-7737-5094"
+        },
+        {
+          "name": "https://www.museumofone.art/",
+          "affiliation": null
+        },
+        {
+          "name": "Museum Of One",
+          "affiliation": null
+        }
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/19863836",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "keywords",
+      "value": [
+        "Post-Interpretive Criticism",
+        "Stillmark Theory",
+        "Absential Aesthetics",
+        "Witness Aesthetics",
+        "Hauntmark Theory",
+        "Presence-Based Criticism",
+        "Custodianship of Art",
+        "Restraint in front of art",
+        "Moral proximity",
+        "Interpretive silence",
+        "Erasure as ethics",
+        "Silence as method",
+        "Language as violence",
+        "Art encounter ethics",
+        "Epistemology of witness",
+        "Philosophy of Art",
+        "Aesthetics",
+        "Art Theory",
+        "Contemporary Aesthetics",
+        "Comparative Aesthetics",
+        "Ethics in Art Criticism",
+        "Interpretation and Meaning",
+        "Criticism and Reception Theory",
+        "Visual Culture Studies",
+        "Epistemology of Art",
+        "Dorian Vale",
+        "Founder of Post-Interpretive Criticism",
+        "Post-Aesthetic Critic",
+        "Independent Philosopher of Art",
+        "Museum of One",
+        "Art Writer and Theorist",
+        "Aesthetic Philosopher",
+        "Custodian of Witness Aesthetics",
+        "The Doctrine of Post-Interpretive Criticism",
+        "The Custodian's Oath",
+        "The Canon of Witnesses",
+        "Art as Truth",
+        "Art as Presence",
+        "The Viewer as Evidence",
+        "Interpretation vs. Witnessing",
+        "Language as Custody",
+        "Erasure as Afterlife",
+        "Post-Interpretive Lexicon",
+        "Alternative art criticism",
+        "New art criticism movement",
+        "Ethical art theory",
+        "Criticism beyond interpretation",
+        "Quiet philosophy of art",
+        "Radical art restraint",
+        "Witness over interpretation",
+        "Art Criticism Ethics",
+        "Interpretive Restraint",
+        "https://hcommons.org/members/dorianvale/",
+        "https://philpeople.org/profiles/dorian-vale",
+        "https://osf.io/xa5jw/",
+        "https://independent.academia.edu/DorianVale",
+        "https://doi.org/10.5281/zenodo.17112807",
+        "https://doi.org/10.5281/zenodo.17078847",
+        "https://doi.org/10.5281/zenodo.17069115",
+        "https://figshare.com/authors/Dorian_Vale/22186984",
+        "Q136308909",
+        "Q136308879",
+        "Q136308916",
+        "Part of the Post-Interpretive Criticism movement (Q136308909), published by Museum of One (Q136308879), authored by Dorian Vale (Q136308916).",
+        "https://zenodo.org/communities/post-interpretive-criticism",
+        "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+        "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ"
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/19863836",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "license",
+      "value": {
+        "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/19863836",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "files",
+      "value": [
+        {
+          "name": "The Afterlife of the Work -Viewer as Evidence in Post-Interpretive Criticism.pdf",
+          "url": "https://zenodo.org/api/records/19863836/files/The%20Afterlife%20of%20the%20Work%20-Viewer%20as%20Evidence%20in%20Post-Interpretive%20Criticism.pdf/content",
+          "size": 253546,
+          "size_label": "248 KB",
+          "checksum": "md5:3661a3d21c585f0c41bbb242cb3b8cd0",
+          "mimetype": "application/pdf"
+        }
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/19863836",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_created",
+      "value": "2026-04-28T18:52:53.714810+00:00",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/19863836",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_modified",
+      "value": "2026-04-28T18:52:54.111962+00:00",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/19863836",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "author",
+      "value": "Dorian Vale",
+      "status": "institutional_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "Institutional responsibility statement; original repository creator roles remain separate.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "publisher",
+      "value": "Museum of One",
+      "status": "institutional_context",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "Institutional responsibility statement; original repository creator roles remain separate.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "orcid",
+      "value": "0009-0004-7737-5094",
+      "status": "source_linked_identifier",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "Creator identifier supplied by the linked sources; no affiliation or endorsement is inferred.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "summary",
+      "value": "An essay treating the lasting effects of an encounter with art as evidence within Post-Interpretive Criticism. Its focus is the viewer’s memory, response, and continuing responsibility to the work.",
+      "status": "editorial_enrichment",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "Catalogue-editor summary based on the linked work; not an original publisher abstract.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "subjects",
+      "value": [
+        "Viewer response",
+        "Ethics of witnessing",
+        "Memory",
+        "Post-Interpretive Criticism"
+      ],
+      "status": "editorial_enrichment",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "Local discovery terms; no controlled-vocabulary assignment is claimed.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "collection",
+      "value": "Theory & treatises",
+      "status": "editorial_grouping",
+      "note": "A local browsing collection, not an original repository collection.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "corroboration",
+      "value": "Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. Its repository links and publication dates are retained separately from this selected Zenodo edition. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.",
+      "status": "catalogue_review_note",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "discrepancies",
+      "value": [
+        "The repository also lists organizational or URL-form creator entries. The catalogue displays Dorian Vale as bibliographic author while retaining the deposited creator list separately.",
+        "The source description includes a 2025 citation and an earlier DOI. The selected Zenodo record has a 2026 publication-date field; a web-publication date is not substituted for that deposited date.",
+        "The institutional page does not explicitly link this selected edition DOI in its saved HTML. The match is at work level through title, authorship, and publication context; the catalogue preserves the exact repository edition separately."
+      ],
+      "status": "catalogue_review_note",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "date_precision",
+      "value": "year",
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/19863836",
+      "note": "Precision reported exactly as supplied; missing month or day is not filled.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "medium",
+      "value": "Digital document",
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/19863836",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "digital_formats",
+      "value": [
+        "application/pdf"
+      ],
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/19863836",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "extent",
+      "value": "1 digital file; 253546 bytes",
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/19863836",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "digital_extent",
+      "value": {
+        "file_count": 1,
+        "total_bytes": 253546,
+        "formats": [
+          "application/pdf"
+        ],
+        "checksums": [
+          {
+            "filename": "The Afterlife of the Work -Viewer as Evidence in Post-Interpretive Criticism.pdf",
+            "algorithm": "md5",
+            "value": "3661a3d21c585f0c41bbb242cb3b8cd0",
+            "syntax_valid": true,
+            "verification": "source_checksum_transcription; bytes not independently recomputed"
+          }
+        ],
+        "source_url": "https://zenodo.org/records/19863836",
+        "derivation": "File count and total bytes calculated from repository file metadata; MIME inferred from filename when absent."
+      },
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/19863836",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "identifier_validation",
+      "value": {
+        "orcid": {
+          "source_value": "0009-0004-7737-5094",
+          "checksum_valid": true,
+          "note": "ISO 7064 MOD 11-2 checksum only; this is not a live registry verification."
+        },
+        "isbn": [],
+        "doi": {
+          "source_value": "10.5281/zenodo.19863836",
+          "syntax_valid": true,
+          "note": "Syntax check only; repository snapshot supplies the identifier."
+        }
+      },
+      "status": "local_syntax_validation",
+      "source_url": "https://zenodo.org/records/19863836",
+      "note": "Checksum/syntax validation does not verify registration, assignment or edition applicability.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "contributor_roles",
+      "value": [
+        {
+          "name": "Vale, Dorian",
+          "source_category": "creator",
+          "source_role": null,
+          "role_label": "Creator (role not supplied)",
+          "affiliation_as_supplied": "MuseumofOne",
+          "source_url": "https://zenodo.org/records/19863836"
+        },
+        {
+          "name": "https://www.museumofone.art/",
+          "source_category": "creator",
+          "source_role": null,
+          "role_label": "Creator (role not supplied)",
+          "affiliation_as_supplied": null,
+          "source_url": "https://zenodo.org/records/19863836"
+        },
+        {
+          "name": "Museum Of One",
+          "source_category": "creator",
+          "source_role": null,
+          "role_label": "Creator (role not supplied)",
+          "affiliation_as_supplied": null,
+          "source_url": "https://zenodo.org/records/19863836"
+        },
+        {
+          "name": "Museum Of One",
+          "source_category": "contributor",
+          "source_role": "RightsHolder",
+          "role_label": "RightsHolder",
+          "affiliation_as_supplied": "https://www.museumofone.art/",
+          "source_url": "https://zenodo.org/records/19863836"
+        }
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/19863836",
+      "note": "Creator and contributor roles are transcribed, not inferred from names or affiliations.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "research_programme:https://www.museumofone.art/research-critical-language/",
+      "value": {
+        "title": "Alexander Viktorovich Markov: Critical Language and Lasting Correction",
+        "url": "https://www.museumofone.art/research-critical-language/",
+        "status": "In development",
+        "source_url": "https://www.museumofone.art/research-critical-language/",
+        "relation": "Earlier individual work linked as context for a developing programme; not a joint output or endorsement",
+        "relation_label": "Earlier individual work linked as programme context"
+      },
+      "status": "institutional_work_relationship",
+      "source_url": "https://www.museumofone.art/research-critical-language/",
+      "note": "Programme relationship and stage follow the work-specific institutional badge; publication does not imply a completed programme or collaboration.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "entity_link:dorian-vale:author",
+      "value": {
+        "id": "dorian-vale",
+        "label": "Dorian Vale",
+        "entity_type": "Person",
+        "relation": "author",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The matching institutional publication record credits Dorian Vale as author."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:museum-of-one:publisher",
+      "value": {
+        "id": "museum-of-one",
+        "label": "Museum of One",
+        "entity_type": "Organization",
+        "relation": "publisher",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:doris-salcedo:artist discussed",
+      "value": {
+        "id": "doris-salcedo",
+        "label": "Doris Salcedo",
+        "entity_type": "Person",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The essay discusses Atrabiliarios as a case of the continuing effect of an encounter."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:zarina-hashmi:artist discussed",
+      "value": {
+        "id": "zarina-hashmi",
+        "label": "Zarina Hashmi",
+        "entity_type": "Person",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The essay discusses Home Is a Foreign Place."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:teresa-margolles:artist discussed",
+      "value": {
+        "id": "teresa-margolles",
+        "label": "Teresa Margolles",
+        "entity_type": "Person",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The essay discusses En el aire."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:marina-abramovic:artist discussed",
+      "value": {
+        "id": "marina-abramovic",
+        "label": "Marina Abramović",
+        "entity_type": "Person",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The essay discusses the performance The Artist Is Present."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:christian-boltanski:artist discussed",
+      "value": {
+        "id": "christian-boltanski",
+        "label": "Christian Boltanski",
+        "entity_type": "Person",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The essay discusses Reserve of Dead Swiss."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:araya-rasdjarmrearnsook:artist discussed",
+      "value": {
+        "id": "araya-rasdjarmrearnsook",
+        "label": "Araya Rasdjarmrearnsook",
+        "entity_type": "Person",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The essay discusses The Class."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:ana-mendieta:artist discussed",
+      "value": {
+        "id": "ana-mendieta",
+        "label": "Ana Mendieta",
+        "entity_type": "Person",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The essay discusses the Silueta Series."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:atrabiliarios:artwork discussed",
+      "value": {
+        "id": "atrabiliarios",
+        "label": "Atrabiliarios",
+        "entity_type": "Artwork",
+        "relation": "artwork discussed",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The essay explicitly attributes the installation to Doris Salcedo."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:home-is-a-foreign-place:artwork discussed",
+      "value": {
+        "id": "home-is-a-foreign-place",
+        "label": "Home Is a Foreign Place",
+        "entity_type": "Artwork",
+        "relation": "artwork discussed",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The essay explicitly attributes the woodcut portfolio to Zarina Hashmi."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:en-el-aire:artwork discussed",
+      "value": {
+        "id": "en-el-aire",
+        "label": "En el aire",
+        "entity_type": "Artwork",
+        "relation": "artwork discussed",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The essay explicitly attributes the installation to Teresa Margolles."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:the-artist-is-present:artwork discussed",
+      "value": {
+        "id": "the-artist-is-present",
+        "label": "The Artist Is Present",
+        "entity_type": "Artwork",
+        "relation": "artwork discussed",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The essay explicitly attributes the performance to Marina Abramović."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:reserve-of-dead-swiss:artwork discussed",
+      "value": {
+        "id": "reserve-of-dead-swiss",
+        "label": "Reserve of Dead Swiss",
+        "entity_type": "Artwork",
+        "relation": "artwork discussed",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The essay explicitly attributes the work to Christian Boltanski."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:the-class:artwork discussed",
+      "value": {
+        "id": "the-class",
+        "label": "The Class",
+        "entity_type": "Artwork",
+        "relation": "artwork discussed",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The essay explicitly attributes the work to Araya Rasdjarmrearnsook."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:silueta-series:artwork discussed",
+      "value": {
+        "id": "silueta-series",
+        "label": "Silueta Series",
+        "entity_type": "Artwork",
+        "relation": "artwork discussed",
+        "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "note": "The essay explicitly attributes this series to Ana Mendieta. This is a series-level contextual record."
+      },
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "controlled_subjects",
+      "value": [
+        {
+          "id": "viewer-response",
+          "label": "Viewer response",
+          "uri": "https://archive.museumofone.art/vocabulary.html#viewer-response",
+          "url": "vocabulary.html#viewer-response",
+          "persistent_id": "urn:museum-of-one:vocabulary:viewer-response",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [
+            "Viewer responses"
+          ],
+          "definition": "The effects of encountering art on its viewer.",
+          "scope_note": "Use for response, lasting experience, and the viewer’s role within a critical account; not a claim of empirical audience research.",
+          "kind": "subject",
+          "broader": [],
+          "narrower": [],
+          "related": [
+            "memory"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "id": "ethics-of-witnessing",
+          "label": "Ethics of witnessing",
+          "uri": "https://archive.museumofone.art/vocabulary.html#ethics-of-witnessing",
+          "url": "vocabulary.html#ethics-of-witnessing",
+          "persistent_id": "urn:museum-of-one:vocabulary:ethics-of-witnessing",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [
+            "ethics of witnessing"
+          ],
+          "definition": "Ethical responsibility in attending to artworks and the histories they engage.",
+          "scope_note": "Local access term used for the Museum of One corpus. Preserve the author’s framework attribution; no equivalence with an external philosophical school is asserted.",
+          "kind": "local-framework-concept",
+          "broader": [],
+          "narrower": [],
+          "related": [
+            "post-interpretive-criticism",
+            "witnessing"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "id": "memory",
+          "label": "Memory",
+          "uri": "https://archive.museumofone.art/vocabulary.html#memory",
+          "url": "vocabulary.html#memory",
+          "persistent_id": "urn:museum-of-one:vocabulary:memory",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [],
+          "definition": "The retention and continuing effects of experiences or histories.",
+          "scope_note": "Use for work addressing remembered encounters with art; Historical memory provides a narrower local access term.",
+          "kind": "subject",
+          "broader": [],
+          "narrower": [
+            "historical-memory"
+          ],
+          "related": [
+            "viewer-response"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "id": "post-interpretive-criticism",
+          "label": "Post-Interpretive Criticism",
+          "uri": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism",
+          "url": "vocabulary.html#post-interpretive-criticism",
+          "persistent_id": "urn:museum-of-one:vocabulary:post-interpretive-criticism",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [
+            "PIC",
+            "Post Interpretive Criticism"
+          ],
+          "definition": "The critical framework named and developed in the Museum of One publications.",
+          "scope_note": "Local named intellectual framework. Used for records explicitly concerned with it; no Getty, Library of Congress, or other external equivalence is asserted.",
+          "kind": "local-framework-concept",
+          "broader": [],
+          "narrower": [],
+          "related": [
+            "custodianship",
+            "ethics-of-witnessing",
+            "foundational-writings",
+            "moral-proximity"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        }
+      ],
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Local preferred terms with definitions and synonyms. External alignment is scoped in the vocabulary register.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "genre_terms",
+      "value": [
+        {
+          "id": "genre-journal-article",
+          "label": "Journal article",
+          "uri": "https://archive.museumofone.art/vocabulary.html#genre-journal-article",
+          "url": "vocabulary.html#genre-journal-article",
+          "persistent_id": "urn:museum-of-one:vocabulary:genre-journal-article",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [
+            "Journal articles"
+          ],
+          "definition": "A contribution issued as part of a journal or periodical.",
+          "scope_note": "Describes publication genre based on the catalogued source record; peer-review status is a separate question.",
+          "kind": "genre",
+          "broader": [],
+          "narrower": [],
+          "related": [],
+          "mapping_status": "verified_mapping",
+          "external_mappings": [
+            {
+              "vocabulary": "Getty Art & Architecture Thesaurus",
+              "label": "articles",
+              "uri": "http://vocab.getty.edu/aat/300048715",
+              "source_url": "https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300048715",
+              "relation": "broadMatch",
+              "status": "verified",
+              "verified_on": "2026-11-04",
+              "note": "Getty’s articles concept includes contributions to magazines, newspapers, encyclopedias, and other works; journal article is the narrower local genre."
+            }
+          ],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "type",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        }
+      ],
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Local resource-genre classification. Digital file format is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "archival_context",
+      "value": {
+        "description_profile": "moo-description-policy-1.0",
+        "catalogue_snapshot_date": "2026-11-04",
+        "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
+        "record_category": "Published library and repository material",
+        "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+        "source_repository": {
+          "name": "Zenodo",
+          "record_url": "https://zenodo.org/records/19863836"
+        },
+        "institutional_context_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+        "source_metadata_retrieved": "2026-11-04",
+        "source_metadata_retrieval_status": "Documented in catalogue source provenance",
+        "source_snapshot": "source/19863836.json",
+        "source_filenames": [
+          "The Afterlife of the Work -Viewer as Evidence in Post-Interpretive Criticism.pdf"
+        ],
+        "selection_basis": "Local descriptive selection of publicly published material; public availability does not establish ownership of originals.",
+        "custodial_history": {
+          "status": "not_documented",
+          "statement": "No donation, physical transfer, acquisition agreement or chain of custody is documented by this catalogue. Zenodo remains the source repository for the deposited version."
+        },
+        "original_order": {
+          "status": "not_documented",
+          "statement": "No original archival order is asserted. Current browsing groupings are local editorial arrangement."
+        },
+        "arrangement": {
+          "status": "local_editorial",
+          "grouping": "Theory & treatises",
+          "statement": "A browsing grouping, not an original fonds or archival series."
+        },
+        "responsible_service": {
+          "name": "Museum of One",
+          "service": "Museum of One Digital Archive Library",
+          "website": "https://www.museumofone.art/",
+          "email": "research@museumofone.art"
+        },
+        "description_method": "Source-based description with automated drafting and metadata assistance. Responsibility for the public catalogue rests with Museum of One; automated assistance does not constitute independent scholarly or curatorial review.",
+        "policy_url": "policies.html",
+        "correction_email": "research@museumofone.art",
+        "access_copy": {
+          "role": "Local digital reading copy of the deposited file",
+          "source_url": "https://zenodo.org/api/records/19863836/files/The%20Afterlife%20of%20the%20Work%20-Viewer%20as%20Evidence%20in%20Post-Interpretive%20Criticism.pdf/content",
+          "source_filename": "The Afterlife of the Work -Viewer as Evidence in Post-Interpretive Criticism.pdf",
+          "local_path": "assets/documents/19863836.pdf",
+          "verified_at": "2026-11-04",
+          "source_checksum_match": true,
+          "sha256": "a9b72a9f10cce025300b1019d8bd84d19833404c33dc7c0f195b370ce702aa89",
+          "statement": "Access copy only; no ownership or physical custody transfer is implied."
+        }
+      },
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Provenance records what is documented and leaves unknown custody and original order explicit.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "description_history",
+      "value": [
+        {
+          "responsible_service": "Museum of One",
+          "method": "Source-based automated description assistance",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "public-source-description-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Source-based catalogue description",
+          "note": "Local description assembled from the identified public repository record and available institutional work record. Source metadata remains separately identifiable.",
+          "sources": [
+            "https://zenodo.org/records/19863836",
+            "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/"
+          ]
+        },
+        {
+          "responsible_service": "Museum of One",
+          "method": "Source-based automated description assistance",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "qualified-description-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Qualified descriptive enrichment",
+          "note": "Local editorial description, arrangement and source-qualified bibliographic context recorded alongside source metadata. Unknown or disputed values remain qualified.",
+          "fields": [
+            "summary",
+            "subjects",
+            "collection",
+            "short_title",
+            "accession"
+          ],
+          "sources": [
+            "https://zenodo.org/records/19863836",
+            "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/"
+          ]
+        },
+        {
+          "responsible_service": "Museum of One",
+          "method": "Automated file checksum and PDF inspection",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "access-copy-verification-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Digital reading copy verified",
+          "note": "Downloaded access-copy MD5 matched the source checksum; local SHA-256 and PDF file-page count are recorded in the file manifest. This event does not describe transfer of custody.",
+          "sources": [
+            "https://zenodo.org/api/records/19863836/files/The%20Afterlife%20of%20the%20Work%20-Viewer%20as%20Evidence%20in%20Post-Interpretive%20Criticism.pdf/content"
+          ]
+        },
+        {
+          "responsible_service": "Museum of One",
+          "method": "Source-based automated description assistance",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "description-policy-1.0-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Description policy and provenance context adopted",
+          "note": "Responsible service, source repository, local access-copy role, unknown custody and original order, correction route and dated description history made explicit under moo-description-policy-1.0.",
+          "sources": [
+            "policies.html"
+          ]
+        }
+      ],
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Catalogue description events; these are not work publication dates or acquisition dates.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "pirr_references",
+      "value": [
+        {
+          "programme_key": "research-critical-language",
+          "programme_title": "Alexander Viktorovich Markov: Critical Language and Lasting Correction",
+          "programme_url": "https://www.museumofone.art/research-critical-language/",
+          "programme_stage": "In development",
+          "registry_url": "research-registry.html#research-critical-language",
+          "identifiers": [
+            {
+              "scheme": "PIRR programme reference",
+              "value": "moo-program-2b3ad664cbd92f69b862db8c",
+              "source_url": "https://www.museumofone.art/research-critical-language/#programme-record"
+            }
+          ],
+          "relation": "Earlier individual work linked as programme context",
+          "relation_note": "Earlier individual work linked as context for a developing programme; not a joint output or endorsement",
+          "source_url": "https://www.museumofone.art/research-critical-language/"
+        }
+      ],
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "status": "institutional_context_relationship",
+      "note": "PIRR project IDs and programme references identify research records, not publication versions or independent chapter deposits."
+    },
+    {
+      "field": "reading_copy",
+      "value": {
+        "id": "19863836",
+        "title": "The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism",
+        "accession": "MOO-CAT-015",
+        "pdf_url": "../assets/documents/19863836.pdf",
+        "source_url": "https://zenodo.org/api/records/19863836/files/The%20Afterlife%20of%20the%20Work%20-Viewer%20as%20Evidence%20in%20Post-Interpretive%20Criticism.pdf/content",
+        "zenodo_url": "https://zenodo.org/records/19863836",
+        "source_filename": "The Afterlife of the Work -Viewer as Evidence in Post-Interpretive Criticism.pdf",
+        "checksum": "md5:3661a3d21c585f0c41bbb242cb3b8cd0",
+        "sha256": "a9b72a9f10cce025300b1019d8bd84d19833404c33dc7c0f195b370ce702aa89",
+        "bytes": 253546,
+        "page_count": 9,
+        "verified_at": "2026-11-04",
+        "checksum_match": true,
+        "rights": {
+          "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+          "url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "role": "Local reading copy; original repository file retained unchanged"
+      },
+      "source_url": "https://zenodo.org/api/records/19863836/files/The%20Afterlife%20of%20the%20Work%20-Viewer%20as%20Evidence%20in%20Post-Interpretive%20Criticism.pdf/content",
+      "status": "derived_file_inspection",
+      "reviewed": "2026-11-04",
+      "note": "Byte-identical local access copy. Source MD5 was recomputed and matched; SHA-256 and page count were measured from the downloaded PDF. This is not a preservation-deposit claim."
+    },
+    {
+      "field": "page_count",
+      "value": 9,
+      "source_url": "https://zenodo.org/api/records/19863836/files/The%20Afterlife%20of%20the%20Work%20-Viewer%20as%20Evidence%20in%20Post-Interpretive%20Criticism.pdf/content",
+      "status": "derived_file_inspection",
+      "reviewed": "2026-11-04",
+      "note": "Total PDF file pages measured from the deposited file, including cover and unnumbered pages. Not a claim about printed pagination."
+    }
+  ],
+  "entity_links": [
+    {
+      "id": "dorian-vale",
+      "label": "Dorian Vale",
+      "entity_type": "Person",
+      "relation": "author",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "id": "museum-of-one",
+      "label": "Museum of One",
+      "entity_type": "Organization",
+      "relation": "publisher",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "id": "doris-salcedo",
+      "label": "Doris Salcedo",
+      "entity_type": "Person",
+      "relation": "artist discussed",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The essay discusses Atrabiliarios as a case of the continuing effect of an encounter."
+    },
+    {
+      "id": "zarina-hashmi",
+      "label": "Zarina Hashmi",
+      "entity_type": "Person",
+      "relation": "artist discussed",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The essay discusses Home Is a Foreign Place."
+    },
+    {
+      "id": "teresa-margolles",
+      "label": "Teresa Margolles",
+      "entity_type": "Person",
+      "relation": "artist discussed",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The essay discusses En el aire."
+    },
+    {
+      "id": "marina-abramovic",
+      "label": "Marina Abramović",
+      "entity_type": "Person",
+      "relation": "artist discussed",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The essay discusses the performance The Artist Is Present."
+    },
+    {
+      "id": "christian-boltanski",
+      "label": "Christian Boltanski",
+      "entity_type": "Person",
+      "relation": "artist discussed",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The essay discusses Reserve of Dead Swiss."
+    },
+    {
+      "id": "araya-rasdjarmrearnsook",
+      "label": "Araya Rasdjarmrearnsook",
+      "entity_type": "Person",
+      "relation": "artist discussed",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The essay discusses The Class."
+    },
+    {
+      "id": "ana-mendieta",
+      "label": "Ana Mendieta",
+      "entity_type": "Person",
+      "relation": "artist discussed",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The essay discusses the Silueta Series."
+    },
+    {
+      "id": "atrabiliarios",
+      "label": "Atrabiliarios",
+      "entity_type": "Artwork",
+      "relation": "artwork discussed",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The essay explicitly attributes the installation to Doris Salcedo."
+    },
+    {
+      "id": "home-is-a-foreign-place",
+      "label": "Home Is a Foreign Place",
+      "entity_type": "Artwork",
+      "relation": "artwork discussed",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The essay explicitly attributes the woodcut portfolio to Zarina Hashmi."
+    },
+    {
+      "id": "en-el-aire",
+      "label": "En el aire",
+      "entity_type": "Artwork",
+      "relation": "artwork discussed",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The essay explicitly attributes the installation to Teresa Margolles."
+    },
+    {
+      "id": "the-artist-is-present",
+      "label": "The Artist Is Present",
+      "entity_type": "Artwork",
+      "relation": "artwork discussed",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The essay explicitly attributes the performance to Marina Abramović."
+    },
+    {
+      "id": "reserve-of-dead-swiss",
+      "label": "Reserve of Dead Swiss",
+      "entity_type": "Artwork",
+      "relation": "artwork discussed",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The essay explicitly attributes the work to Christian Boltanski."
+    },
+    {
+      "id": "the-class",
+      "label": "The Class",
+      "entity_type": "Artwork",
+      "relation": "artwork discussed",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The essay explicitly attributes the work to Araya Rasdjarmrearnsook."
+    },
+    {
+      "id": "silueta-series",
+      "label": "Silueta Series",
+      "entity_type": "Artwork",
+      "relation": "artwork discussed",
+      "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+      "note": "The essay explicitly attributes this series to Ana Mendieta. This is a series-level contextual record."
+    }
+  ],
+  "contents": [],
+  "controlled_subjects": [
+    {
+      "id": "viewer-response",
+      "label": "Viewer response",
+      "uri": "https://archive.museumofone.art/vocabulary.html#viewer-response",
+      "url": "vocabulary.html#viewer-response",
+      "persistent_id": "urn:museum-of-one:vocabulary:viewer-response",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [
+        "Viewer responses"
+      ],
+      "definition": "The effects of encountering art on its viewer.",
+      "scope_note": "Use for response, lasting experience, and the viewer’s role within a critical account; not a claim of empirical audience research.",
+      "kind": "subject",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "memory"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "id": "ethics-of-witnessing",
+      "label": "Ethics of witnessing",
+      "uri": "https://archive.museumofone.art/vocabulary.html#ethics-of-witnessing",
+      "url": "vocabulary.html#ethics-of-witnessing",
+      "persistent_id": "urn:museum-of-one:vocabulary:ethics-of-witnessing",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [
+        "ethics of witnessing"
+      ],
+      "definition": "Ethical responsibility in attending to artworks and the histories they engage.",
+      "scope_note": "Local access term used for the Museum of One corpus. Preserve the author’s framework attribution; no equivalence with an external philosophical school is asserted.",
+      "kind": "local-framework-concept",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "post-interpretive-criticism",
+        "witnessing"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "id": "memory",
+      "label": "Memory",
+      "uri": "https://archive.museumofone.art/vocabulary.html#memory",
+      "url": "vocabulary.html#memory",
+      "persistent_id": "urn:museum-of-one:vocabulary:memory",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [],
+      "definition": "The retention and continuing effects of experiences or histories.",
+      "scope_note": "Use for work addressing remembered encounters with art; Historical memory provides a narrower local access term.",
+      "kind": "subject",
+      "broader": [],
+      "narrower": [
+        "historical-memory"
+      ],
+      "related": [
+        "viewer-response"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "id": "post-interpretive-criticism",
+      "label": "Post-Interpretive Criticism",
+      "uri": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism",
+      "url": "vocabulary.html#post-interpretive-criticism",
+      "persistent_id": "urn:museum-of-one:vocabulary:post-interpretive-criticism",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [
+        "PIC",
+        "Post Interpretive Criticism"
+      ],
+      "definition": "The critical framework named and developed in the Museum of One publications.",
+      "scope_note": "Local named intellectual framework. Used for records explicitly concerned with it; no Getty, Library of Congress, or other external equivalence is asserted.",
+      "kind": "local-framework-concept",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "custodianship",
+        "ethics-of-witnessing",
+        "foundational-writings",
+        "moral-proximity"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    }
+  ],
+  "genre_terms": [
+    {
+      "id": "genre-journal-article",
+      "label": "Journal article",
+      "uri": "https://archive.museumofone.art/vocabulary.html#genre-journal-article",
+      "url": "vocabulary.html#genre-journal-article",
+      "persistent_id": "urn:museum-of-one:vocabulary:genre-journal-article",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [
+        "Journal articles"
+      ],
+      "definition": "A contribution issued as part of a journal or periodical.",
+      "scope_note": "Describes publication genre based on the catalogued source record; peer-review status is a separate question.",
+      "kind": "genre",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "verified_mapping",
+      "external_mappings": [
+        {
+          "vocabulary": "Getty Art & Architecture Thesaurus",
+          "label": "articles",
+          "uri": "http://vocab.getty.edu/aat/300048715",
+          "source_url": "https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300048715",
+          "relation": "broadMatch",
+          "status": "verified",
+          "verified_on": "2026-11-04",
+          "note": "Getty’s articles concept includes contributions to magazines, newspapers, encyclopedias, and other works; journal article is the narrower local genre."
+        }
+      ],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "type",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    }
+  ],
+  "vocabulary_version": 4,
+  "description_history": [
+    {
+      "responsible_service": "Museum of One",
+      "method": "Source-based automated description assistance",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "public-source-description-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Source-based catalogue description",
+      "note": "Local description assembled from the identified public repository record and available institutional work record. Source metadata remains separately identifiable.",
+      "sources": [
+        "https://zenodo.org/records/19863836",
+        "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/"
+      ]
+    },
+    {
+      "responsible_service": "Museum of One",
+      "method": "Source-based automated description assistance",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "qualified-description-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Qualified descriptive enrichment",
+      "note": "Local editorial description, arrangement and source-qualified bibliographic context recorded alongside source metadata. Unknown or disputed values remain qualified.",
+      "fields": [
+        "summary",
+        "subjects",
+        "collection",
+        "short_title",
+        "accession"
+      ],
+      "sources": [
+        "https://zenodo.org/records/19863836",
+        "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/"
+      ]
+    },
+    {
+      "responsible_service": "Museum of One",
+      "method": "Automated file checksum and PDF inspection",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "access-copy-verification-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Digital reading copy verified",
+      "note": "Downloaded access-copy MD5 matched the source checksum; local SHA-256 and PDF file-page count are recorded in the file manifest. This event does not describe transfer of custody.",
+      "sources": [
+        "https://zenodo.org/api/records/19863836/files/The%20Afterlife%20of%20the%20Work%20-Viewer%20as%20Evidence%20in%20Post-Interpretive%20Criticism.pdf/content"
+      ]
+    },
+    {
+      "responsible_service": "Museum of One",
+      "method": "Source-based automated description assistance",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "description-policy-1.0-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Description policy and provenance context adopted",
+      "note": "Responsible service, source repository, local access-copy role, unknown custody and original order, correction route and dated description history made explicit under moo-description-policy-1.0.",
+      "sources": [
+        "policies.html"
+      ]
+    }
+  ],
+  "archival_context": {
+    "description_profile": "moo-description-policy-1.0",
+    "catalogue_snapshot_date": "2026-11-04",
+    "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
+    "record_category": "Published library and repository material",
+    "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+    "source_repository": {
+      "name": "Zenodo",
+      "record_url": "https://zenodo.org/records/19863836"
+    },
+    "institutional_context_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+    "source_metadata_retrieved": "2026-11-04",
+    "source_metadata_retrieval_status": "Documented in catalogue source provenance",
+    "source_snapshot": "source/19863836.json",
+    "source_filenames": [
+      "The Afterlife of the Work -Viewer as Evidence in Post-Interpretive Criticism.pdf"
+    ],
+    "selection_basis": "Local descriptive selection of publicly published material; public availability does not establish ownership of originals.",
+    "custodial_history": {
+      "status": "not_documented",
+      "statement": "No donation, physical transfer, acquisition agreement or chain of custody is documented by this catalogue. Zenodo remains the source repository for the deposited version."
+    },
+    "original_order": {
+      "status": "not_documented",
+      "statement": "No original archival order is asserted. Current browsing groupings are local editorial arrangement."
+    },
+    "arrangement": {
+      "status": "local_editorial",
+      "grouping": "Theory & treatises",
+      "statement": "A browsing grouping, not an original fonds or archival series."
+    },
+    "responsible_service": {
+      "name": "Museum of One",
+      "service": "Museum of One Digital Archive Library",
+      "website": "https://www.museumofone.art/",
+      "email": "research@museumofone.art"
+    },
+    "description_method": "Source-based description with automated drafting and metadata assistance. Responsibility for the public catalogue rests with Museum of One; automated assistance does not constitute independent scholarly or curatorial review.",
+    "policy_url": "policies.html",
+    "correction_email": "research@museumofone.art",
+    "access_copy": {
+      "role": "Local digital reading copy of the deposited file",
+      "source_url": "https://zenodo.org/api/records/19863836/files/The%20Afterlife%20of%20the%20Work%20-Viewer%20as%20Evidence%20in%20Post-Interpretive%20Criticism.pdf/content",
+      "source_filename": "The Afterlife of the Work -Viewer as Evidence in Post-Interpretive Criticism.pdf",
+      "local_path": "assets/documents/19863836.pdf",
+      "verified_at": "2026-11-04",
+      "source_checksum_match": true,
+      "sha256": "a9b72a9f10cce025300b1019d8bd84d19833404c33dc7c0f195b370ce702aa89",
+      "statement": "Access copy only; no ownership or physical custody transfer is implied."
+    }
+  },
+  "description_policy_url": "https://archive.museumofone.art/policies.html",
+  "pirr_references": [
+    {
+      "programme_key": "research-critical-language",
+      "programme_title": "Alexander Viktorovich Markov: Critical Language and Lasting Correction",
+      "programme_url": "https://www.museumofone.art/research-critical-language/",
+      "programme_stage": "In development",
+      "registry_url": "research-registry.html#research-critical-language",
+      "identifiers": [
+        {
+          "scheme": "PIRR programme reference",
+          "value": "moo-program-2b3ad664cbd92f69b862db8c",
+          "source_url": "https://www.museumofone.art/research-critical-language/#programme-record"
+        }
+      ],
+      "relation": "Earlier individual work linked as programme context",
+      "relation_note": "Earlier individual work linked as context for a developing programme; not a joint output or endorsement",
+      "source_url": "https://www.museumofone.art/research-critical-language/"
+    }
+  ],
+  "pirr_work_identity": {
+    "archive_reference": "MOO-CAT-015",
+    "edition_doi": "10.5281/zenodo.19863836",
+    "zenodo_record_id": "19863836",
+    "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication."
+  }
+}

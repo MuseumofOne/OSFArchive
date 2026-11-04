@@ -1,0 +1,20 @@
+{
+  "id": "19864115",
+  "title": "Post-Interpretive Criticism: Volume II — Essays from the Field",
+  "accession": "MOO-CAT-002",
+  "pdf_url": "../assets/documents/19864115.pdf",
+  "source_url": "https://zenodo.org/api/records/19864115/files/post-interpretive-criticism-volume-ii-STANDARD.pdf/content",
+  "zenodo_url": "https://zenodo.org/records/19864115",
+  "source_filename": "post-interpretive-criticism-volume-ii-STANDARD.pdf",
+  "checksum": "md5:9487d0fc48e7afdfb960fc328d8e4881",
+  "sha256": "1ab810a867166d02b30a284db253b32e2794338a59695858385ec85a982e04ac",
+  "bytes": 2610097,
+  "page_count": 96,
+  "verified_at": "2026-11-04",
+  "checksum_match": true,
+  "rights": {
+    "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "role": "Local reading copy; original repository file retained unchanged"
+}

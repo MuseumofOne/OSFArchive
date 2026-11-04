@@ -1,0 +1,20 @@
+{
+  "id": "20100136",
+  "title": "Diagnostics Without Possession: An Operational Manual for Post-Interpretive Criticism (Operational reference for inter-rater reliability)",
+  "accession": "MOO-CAT-011",
+  "pdf_url": "../assets/documents/20100136.pdf",
+  "source_url": "https://zenodo.org/api/records/20100136/files/Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/content",
+  "zenodo_url": "https://zenodo.org/records/20100136",
+  "source_filename": "Diagnostics Without Possession - An Operational Manual for Post-Interpretive Criticism.pdf",
+  "checksum": "md5:2dc93b7125bb645e67fba4b0f54696e5",
+  "sha256": "05ae5249a7c8d7cf67cac93ac1fbdf18888800606411312ec5762765353b9c42",
+  "bytes": 525965,
+  "page_count": 30,
+  "verified_at": "2026-11-04",
+  "checksum_match": true,
+  "rights": {
+    "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "role": "Local reading copy; original repository file retained unchanged"
+}

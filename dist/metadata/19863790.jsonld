@@ -1,0 +1,416 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://archive.museumofone.art/#website",
+      "name": "Museum of One Digital Archive Library",
+      "url": "https://archive.museumofone.art/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://archive.museumofone.art/items/19863790.html#webpage",
+      "url": "https://archive.museumofone.art/items/19863790.html",
+      "name": "Moral Proximity: Ethics as Method in Post-Interpretive Criticism",
+      "isPartOf": {
+        "@id": "https://archive.museumofone.art/#website"
+      },
+      "mainEntity": {
+        "@id": "https://archive.museumofone.art/items/19863790.html#catalogue-record"
+      },
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.19863790"
+      },
+      "breadcrumb": {
+        "@id": "https://archive.museumofone.art/items/19863790.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19863790.html#catalogue-record",
+      "name": "Moral Proximity: Ethics as Method in Post-Interpretive Criticism",
+      "url": "https://archive.museumofone.art/items/19863790.html",
+      "mainEntityOfPage": {
+        "@id": "https://archive.museumofone.art/items/19863790.html#webpage"
+      },
+      "about": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.19863790"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#ethics-of-witnessing"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#art-criticism"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#moral-proximity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism"
+        }
+      ],
+      "disambiguatingDescription": "Local catalogue record describing a deposited publication version.",
+      "description": "An essay developing moral proximity as a method of critical responsibility. It considers the relation between descriptive restraint, custodianship, and encounters with works concerned with trauma or absence.",
+      "keywords": [
+        "Ethics of witnessing",
+        "Art criticism",
+        "Moral proximity",
+        "Post-Interpretive Criticism"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Local catalogue identifier",
+        "value": "MOO-CAT-014"
+      },
+      "dateModified": "2026-11-04",
+      "isBasedOn": [
+        {
+          "@id": "https://zenodo.org/records/19863790"
+        },
+        {
+          "@id": "https://www.museumofone.art/moral-proximity-ethics-as-method-in-post-interpretive-criticism/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/marina-abramovic.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "name": "Dorian Vale",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0004-7737-5094"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/#publisher",
+      "name": "Museum of One",
+      "url": "https://www.museumofone.art/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17076246",
+      "name": "Moral Proximity: Ethics as Method in Post-Interpretive Criticism — version family",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Zenodo concept DOI",
+        "value": "10.5281/zenodo.17076246"
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.19863790"
+      }
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/items/19863790.html#file-1",
+      "contentUrl": "https://zenodo.org/api/records/19863790/files/Moral%20Proximity%20-%20Ethics%20as%20Method%20in%20Post%20-%20Interpretive%20Criticism.pdf/content",
+      "name": "Moral Proximity - Ethics as Method in Post - Interpretive Criticism.pdf",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19863790"
+      },
+      "encodingFormat": "application/pdf",
+      "contentSize": "224701 bytes",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source checksum",
+        "value": "md5:b7c66d06af57f17ddbf35cc4ee2d9e01"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/items/19863790.html#source-contributor-3",
+      "name": "https://www.museumofone.art/"
+    },
+    {
+      "@type": "Role",
+      "@id": "https://archive.museumofone.art/items/19863790.html#source-role-3",
+      "roleName": "Contributor (role not supplied)",
+      "contributor": {
+        "@id": "https://archive.museumofone.art/items/19863790.html#source-contributor-3"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://archive.museumofone.art/items/19863790.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Digital Archive Library",
+          "item": "https://archive.museumofone.art/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Catalogue",
+          "item": "https://archive.museumofone.art/catalogue.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MOO-CAT-014",
+          "item": "https://archive.museumofone.art/items/19863790.html"
+        }
+      ]
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/assets/documents/19863790.pdf",
+      "contentUrl": "https://archive.museumofone.art/assets/documents/19863790.pdf",
+      "name": "Verified reading copy of Moral Proximity: Ethics as Method in Post-Interpretive Criticism",
+      "encodingFormat": "application/pdf",
+      "contentSize": "224701 bytes",
+      "description": "5 PDF file pages, including covers and unnumbered pages. Byte-identical local access copy; source checksum matched 2026-11-04.",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19863790"
+      },
+      "isBasedOn": {
+        "@id": "https://archive.museumofone.art/items/19863790.html#file-1"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256 of local reading copy",
+        "value": "01dd4f6727c08692c5df59af23ef817535a15a57ca4551b930827ee8dac917fa"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5281/zenodo.19863790",
+      "name": "Moral Proximity: Ethics as Method in Post-Interpretive Criticism",
+      "mainEntityOfPage": {
+        "@id": "https://zenodo.org/records/19863790"
+      },
+      "url": "https://zenodo.org/records/19863790",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.19863790"
+      },
+      "datePublished": "2026",
+      "keywords": [
+        "Post-Interpretive Criticism",
+        "Stillmark Theory",
+        "Absential Aesthetics",
+        "Witness Aesthetics",
+        "Hauntmark Theory",
+        "Presence-Based Criticism",
+        "Custodianship of Art",
+        "Restraint in front of art",
+        "Moral proximity",
+        "Interpretive silence",
+        "Erasure as ethics",
+        "Silence as method",
+        "Language as violence",
+        "Art encounter ethics",
+        "Epistemology of witness",
+        "Philosophy of Art",
+        "Aesthetics",
+        "Art Theory",
+        "Contemporary Aesthetics",
+        "Comparative Aesthetics",
+        "Phenomenology and Art",
+        "Ethics in Art Criticism",
+        "Interpretation and Meaning",
+        "Criticism and Reception Theory",
+        "Epistemology of Art",
+        "Visual Culture Studies",
+        "Dorian Vale",
+        "Founder of Post-Interpretive Criticism",
+        "Post-Aesthetic Critic",
+        "Independent Philosopher of Art",
+        "Museum of One",
+        "Art Writer and Theorist",
+        "Aesthetic Philosopher",
+        "Custodian of Witness Aesthetics",
+        "The Doctrine of Post-Interpretive Criticism",
+        "The Custodian's Oath",
+        "The Canon of Witnesses",
+        "Art as Truth",
+        "Art as Presence",
+        "The Viewer as Evidence",
+        "Interpretation vs. Witnessing",
+        "Language as Custody",
+        "Erasure as Afterlife",
+        "Post-Interpretive Lexicon",
+        "Alternative art criticism",
+        "New art criticism movement",
+        "Ethical art theory",
+        "Criticism beyond interpretation",
+        "Quiet philosophy of art",
+        "Radical art restraint",
+        "Witness over interpretation",
+        "Interpretive Restraint",
+        "Art Criticism Ethics",
+        "Museum Of One",
+        "https://www.museumofone.art/",
+        "https://hcommons.org/members/dorianvale/",
+        "https://philpeople.org/profiles/dorian-vale",
+        "https://osf.io/xa5jw/",
+        "https://independent.academia.edu/DorianVale",
+        "https://doi.org/10.5281/zenodo.17112807",
+        "https://doi.org/10.5281/zenodo.17078847",
+        "https://doi.org/10.5281/zenodo.17069115",
+        "https://figshare.com/authors/Dorian_Vale/22186984",
+        "Part of the Post-Interpretive Criticism movement (Q136308909), published by Museum of One (Q136308879), authored by Dorian Vale (Q136308916).",
+        "Q136308909",
+        "Q136308879",
+        "Q136308916",
+        "https://zenodo.org/communities/post-interpretive-criticism",
+        "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+        "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ"
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0004-7737-5094"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/#publisher"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "exampleOfWork": {
+        "@id": "https://doi.org/10.5281/zenodo.17076246"
+      },
+      "encoding": [
+        {
+          "@id": "https://archive.museumofone.art/items/19863790.html#file-1"
+        },
+        {
+          "@id": "https://archive.museumofone.art/assets/documents/19863790.pdf"
+        }
+      ],
+      "contributor": [
+        {
+          "@id": "https://archive.museumofone.art/items/19863790.html#source-role-3"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://archive.museumofone.art/entities/marina-abramovic.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zenodo.org/records/19863790",
+      "name": "Zenodo deposited-version record",
+      "mainEntity": {
+        "@id": "https://doi.org/10.5281/zenodo.19863790"
+      },
+      "publisher": {
+        "@id": "https://zenodo.org/#repository"
+      },
+      "dateCreated": "2026-04-28T18:51:44.977265+00:00",
+      "dateModified": "2026-04-28T18:51:45.522186+00:00"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zenodo.org/#repository",
+      "name": "Zenodo",
+      "url": "https://zenodo.org/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/moral-proximity-ethics-as-method-in-post-interpretive-criticism/",
+      "name": "Museum of One institutional publication context",
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.19863790"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19863790.html#relationship-dorian-vale-author",
+      "name": "author",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/moral-proximity-ethics-as-method-in-post-interpretive-criticism/"
+      },
+      "description": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19863790.html#relationship-museum-of-one-publisher",
+      "name": "publisher",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/moral-proximity-ethics-as-method-in-post-interpretive-criticism/"
+      },
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19863790.html#relationship-marina-abramovic-artist-discussed",
+      "name": "artist discussed",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/marina-abramovic.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/moral-proximity-ethics-as-method-in-post-interpretive-criticism/"
+      },
+      "description": "The essay discusses The Artist Is Present in its argument about moral proximity."
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://archive.museumofone.art/vocabulary.html",
+      "name": "Museum of One local editorial discovery vocabulary",
+      "url": "https://archive.museumofone.art/vocabulary.html",
+      "description": "Published preferred labels, definitions, alternative labels and qualified external mappings."
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#ethics-of-witnessing",
+      "name": "Ethics of witnessing",
+      "termCode": "ethics-of-witnessing",
+      "description": "Ethical responsibility in attending to artworks and the histories they engage.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#art-criticism",
+      "name": "Art criticism",
+      "termCode": "art-criticism",
+      "description": "Critical examination and discussion of artworks and encounters with art.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#moral-proximity",
+      "name": "Moral proximity",
+      "termCode": "moral-proximity",
+      "description": "The author’s term for ethical responsibility through closeness and restraint in criticism.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism",
+      "name": "Post-Interpretive Criticism",
+      "termCode": "post-interpretive-criticism",
+      "description": "The critical framework named and developed in the Museum of One publications.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    }
+  ]
+}

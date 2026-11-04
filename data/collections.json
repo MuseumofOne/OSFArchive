@@ -1,0 +1,20 @@
+{
+  "name": "Museum of One Digital Archive Library",
+  "collections": [
+    {
+      "name": "Books & volumes",
+      "title": "The collected shelf",
+      "description": "Book-length studies and collected journal volumes, with edition-specific identifiers and repository access."
+    },
+    {
+      "name": "Theory & treatises",
+      "title": "Foundations of inquiry",
+      "description": "Texts examining presence, absence, critical language, and the ethics of interpretation."
+    },
+    {
+      "name": "Essays & research",
+      "title": "Writing in the field",
+      "description": "Critical essays and research studies that bring the framework into contact with art and its contexts."
+    }
+  ]
+}

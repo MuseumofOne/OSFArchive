@@ -1,0 +1,354 @@
+{
+  "created": "2026-05-09T19:05:37.382757+00:00",
+  "modified": "2026-10-22T19:57:04.870933+00:00",
+  "id": 20100139,
+  "conceptrecid": "18205642",
+  "doi": "10.5281/zenodo.20100139",
+  "conceptdoi": "10.5281/zenodo.18205642",
+  "doi_url": "https://doi.org/10.5281/zenodo.20100139",
+  "metadata": {
+    "title": "A Quantitative Analysis of Critical Posture in Art Writing, 1980-2025 (Dataset - 20 Critical Texts 1980–2025) v.2",
+    "doi": "10.5281/zenodo.20100139",
+    "publication_date": "2026-02-09",
+    "description": "<p>Title: A Quantitative Analysis of Critical Posture in Art Ariting, 1980-2025 (Dataset - 20 Critical Texts 1980&ndash;2025)</p>\n<p><br>Author:Dorian Vale</p>\n<p><br>Affiliation: Museum of One</p>\n<p><br>This dataset presents a quantitative diagnostic analysis of critical posture in contemporary art writing across a forty-five-year span (1980&ndash;2025). Using the Post-Interpretive Criticism (PIC) diagnostic framework, twenty influential texts drawn from journals, newspapers, magazines, institutional press releases, and exhibition discourse were coded sentence-by-sentence to examine how critical language positions itself in relation to artworks, viewers, and institutional authority. Five indices were applied: <span><strong>Rhetorical Density (RD)</strong></span>, <span><strong>Interpretive Load Index (ILI)</strong></span>, <span><strong>Viewer Displacement Ratio (VDR)</strong></span>, <span><strong>Ethical Proximity Score (EPS)</strong></span>, and <span><strong>Institutional Alignment Indicator (IAI)</strong></span>.</p>\n<p>Rather than evaluating interpretive correctness or aesthetic value, the framework isolates <em>how</em> critical claims are produced&mdash;measuring the balance between descriptive encounter and explanatory force, the degree of viewer displacement, the presence or absence of linguistic restraint, and the extent of institutional mediation. The dataset demonstrates that high rhetorical intensity does not necessarily correlate with high interpretive extraction, and that ostensibly &ldquo;plain&rdquo; theoretical language frequently produces maximal displacement. Across historical periods, the results reveal recurring postures&mdash;verdict-driven criticism, theory-dominated explanation, affective populism, and market-aligned promotion&mdash;each identifiable through distinct metric profiles.</p>\n<p>The findings provide quantitative support for a central claim of Post-Interpretive Criticism: that the ethical stakes of art writing reside not in what criticism concludes, but in how closely it remains to the conditions of encounter. This dataset is offered as a reflective and exploratory diagnostic resource, not a prescriptive model, contributing a formal complement to phenomenological and post-hermeneutic approaches in contemporary aesthetics.</p>\n<p>&nbsp;</p>\n<p>This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and _Art as Truth: A Treatise_ (Q136329071), _Aesthetic Recursion Theory_ (Q136339843), The Journal of Post-Interpretive Criticism (Q136530009), Canon of Witnesses (Q136565881),Interpretive Load Index (ILI) (Q137709526), Viewer Displacement Ratio (VDR) (Q137709583) , Ethical Proximity Score (EPS) (Q137709600) , Institutional Alignment Indicator (IAI) (Q137709608), Post-Hermeneutic Phenomenology (Q137711946)</p>\n<p>ISSN 2819-7232</p>\n<p>Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen. This name is used for all official publications, essays, and theoretical works indexed through DOI-linked repositories including Zenodo, OSF, PhilPapers, and SSRN.</p>\n<p><a href=\"https://orcid.org/0009-0004-7737-5094\">ORCID: 0009-0004-7737-5094</a></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": "Museum of One",
+        "orcid": "0009-0004-7737-5094"
+      }
+    ],
+    "keywords": [
+      "Post-Interpretive Criticism",
+      "Stillmark Theory",
+      "Message-Transfer Theory",
+      "MTT",
+      "Misplacement",
+      "Displacement",
+      "Aesthetic Displacement Theory",
+      "Theory of Misplacement",
+      "Absential Aesthetics",
+      "Witness Aesthetics",
+      "Hauntmark Theory",
+      "Presence-Based Criticism",
+      "Custodianship of Art",
+      "Art as Ontology",
+      "Aesthetic Recursion Theory",
+      "Aesthetic Recursion",
+      "Viewer as Evidence Theory",
+      "Interpretive Load Index (ILI)",
+      "Viewer Displacement Ratio (VDR)",
+      "Ethical Proximity Score (EPS)",
+      "Institutional Alignment Indicator (IAI)",
+      "Restraint in front of art",
+      "Moral proximity",
+      "Interpretive silence",
+      "Erasure as ethics",
+      "Temporal scarcity",
+      "Silence as method",
+      "Ontology of beauty",
+      "Aesthetic mercy",
+      "Language as violence",
+      "Art encounter ethics",
+      "Epistemology of witness",
+      "Philosophy of Art",
+      "Aesthetics",
+      "Art Theory",
+      "Contemporary Aesthetics",
+      "Comparative Aesthetics",
+      "Phenomenology and Art",
+      "Ethics in Art Criticism",
+      "Interpretation and Meaning",
+      "Criticism and Reception Theory",
+      "Epistemology of Art",
+      "Visual Culture Studies",
+      "Dorian Vale",
+      "Founder of Post-Interpretive Criticism",
+      "Post-Aesthetic Critic",
+      "Independent Philosopher of Art",
+      "Museum of One",
+      "Art Writer and Theorist",
+      "Aesthetic Philosopher",
+      "Custodian of Witness Aesthetics",
+      "The Doctrine of Post-Interpretive Criticism",
+      "The Custodian's Oath",
+      "The Canon of Witnesses",
+      "Art as Truth",
+      "Art as Presence",
+      "The Viewer as Evidence",
+      "Interpretation vs. Witnessing",
+      "Language as Custody",
+      "Erasure as Afterlife",
+      "Museum of One Manifesto",
+      "Post-Interpretive Lexicon",
+      "Alternative art criticism",
+      "New art criticism movement",
+      "Criticism beyond interpretation",
+      "Ethical art theory",
+      "Slow looking philosophy",
+      "Contemporary sacred aesthetics",
+      "Quiet philosophy of art",
+      "Radical art restraint",
+      "Witness over interpretation",
+      "Interpretive Restraint",
+      "This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and _Art as Truth: A Treatise_ (Q136329071), _Aesthetic Recursion Theory_ (Q136339843), The Journal of Post-Interpretive Criticism (Q136530009), Canon of Witnesses (Q136565881),Interpretive Load Index (ILI) (Q137709526), Viewer Displacement Ratio (VDR) (Q137709583) , Ethical Proximity Score (EPS) (Q137709600) , Institutional Alignment Indicator (IAI) (Q137709608), Post-Hermeneutic Phenomenology (Q137711946)"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://hcommons.org/members/dorianvale/",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://philpeople.org/profiles/dorian-vale",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.museumofone.art/",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://independent.academia.edu/DorianVale",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "10.5281/zenodo.17069115",
+        "relation": "isSupplementTo",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.17078847",
+        "relation": "isSupplementTo",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://orcid.org/0009-0004-7737-5094",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://works.hcommons.org/records/xv2j2-g6927",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.researchcatalogue.net/profile/?person=3919333",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://osf.io/gpwnq",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://osf.io/xa5jw/",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://osf.io/zhnre/",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://archive.org/details/osf-registrations-kve9y-v1",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "10.17605/OSF.IO/KVE9Y",
+        "relation": "isSupplementTo",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.17605/OSF.IO/ZHNRE",
+        "relation": "isSupplementTo",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://core.ac.uk/works/299793749/?t=ccf14485c84f6196dcddf51a8410bc88-299793749",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://core.ac.uk/works/299795319/?t=ccf14485c84f6196dcddf51a8410bc88-299795319",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://core.ac.uk/search/?q=post-interpretive+criticism+dorian+vale&page=1",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      }
+    ],
+    "references": [
+      "https://www.museumofone.art/",
+      "https://www.museumofone.art/tag/diagnostic-reading/",
+      "https://www.museumofone.art/measuring-proximity-a-post-interpretive-diagnostic-experiment-in-art-criticism-post-hermeneutic-phenomenology/"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "meeting": {
+      "url": "https://www.museumofone.art/"
+    },
+    "alternate_identifiers": [
+      {
+        "identifier": "https://hcommons.org/members/dorianvale/"
+      },
+      {
+        "identifier": "https://philpeople.org/profiles/dorian-vale"
+      },
+      {
+        "identifier": "https://www.museumofone.art/"
+      },
+      {
+        "identifier": "https://independent.academia.edu/DorianVale"
+      },
+      {
+        "identifier": "https://doi.org/10.5281/zenodo.17069115"
+      },
+      {
+        "identifier": "https://doi.org/10.5281/zenodo.17078847"
+      },
+      {
+        "identifier": "https://orcid.org/0009-0004-7737-5094"
+      },
+      {
+        "identifier": "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ"
+      },
+      {
+        "identifier": "https://works.hcommons.org/records/xv2j2-g6927"
+      },
+      {
+        "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266"
+      },
+      {
+        "identifier": "https://www.researchcatalogue.net/profile/?person=3919333"
+      },
+      {
+        "identifier": "https://doi.org/10.17605/OSF.IO/ZHNRE"
+      },
+      {
+        "identifier": "https://archive.org/details/osf-registrations-kve9y-v1"
+      },
+      {
+        "identifier": "2819-7232"
+      },
+      {
+        "identifier": "0000000528819728"
+      },
+      {
+        "identifier": "0000000528819787"
+      },
+      {
+        "identifier": "0000000528819744"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 5,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "18205642"
+          }
+        }
+      ]
+    }
+  },
+  "title": "A Quantitative Analysis of Critical Posture in Art Writing, 1980-2025 (Dataset - 20 Critical Texts 1980–2025) v.2",
+  "links": {
+    "self": "https://zenodo.org/api/records/20100139",
+    "self_html": "https://zenodo.org/records/20100139",
+    "preview_html": "https://zenodo.org/records/20100139?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.20100139",
+    "self_doi": "https://doi.org/10.5281/zenodo.20100139",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.20100139",
+    "reserve_doi": "https://zenodo.org/api/records/20100139/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/18205642",
+    "parent_html": "https://zenodo.org/records/18205642",
+    "parent_doi": "https://doi.org/10.5281/zenodo.18205642",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.18205642",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:20100139/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:20100139/sequence/default",
+    "files": "https://zenodo.org/api/records/20100139/files",
+    "media_files": "https://zenodo.org/api/records/20100139/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:20100139:A%20Quantitative%20Analysis%20of%20Critical%20Posture%20in%20Art%20Writing,%201981%E2%80%932025%20(v.2).pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:20100139:A%20Quantitative%20Analysis%20of%20Critical%20Posture%20in%20Art%20Writing,%201981%E2%80%932025%20(v.2).pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:20100139:A%20Quantitative%20Analysis%20of%20Critical%20Posture%20in%20Art%20Writing,%201981%E2%80%932025%20(v.2).pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:20100139:A%20Quantitative%20Analysis%20of%20Critical%20Posture%20in%20Art%20Writing,%201981%E2%80%932025%20(v.2).pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:20100139:A%20Quantitative%20Analysis%20of%20Critical%20Posture%20in%20Art%20Writing,%201981%E2%80%932025%20(v.2).pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:20100139:A%20Quantitative%20Analysis%20of%20Critical%20Posture%20in%20Art%20Writing,%201981%E2%80%932025%20(v.2).pdf/full/%5E1200,/0/default.jpg"
+    },
+    "latest": "https://zenodo.org/api/records/20100139/versions/latest",
+    "latest_html": "https://zenodo.org/records/20100139/latest",
+    "versions": "https://zenodo.org/api/records/20100139/versions",
+    "draft": "https://zenodo.org/api/records/20100139/draft",
+    "access_links": "https://zenodo.org/api/records/20100139/access/links",
+    "access_grants": "https://zenodo.org/api/records/20100139/access/grants",
+    "access_users": "https://zenodo.org/api/records/20100139/access/users",
+    "access_request": "https://zenodo.org/api/records/20100139/access/request",
+    "access": "https://zenodo.org/api/records/20100139/access",
+    "communities": "https://zenodo.org/api/records/20100139/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/20100139/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/20100139/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/20100139/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/20100139/quota-increase",
+    "requests": "https://zenodo.org/api/records/20100139/requests"
+  },
+  "updated": "2026-10-22T19:57:04.870933+00:00",
+  "recid": "20100139",
+  "revision": 6,
+  "files": [
+    {
+      "id": "785c90ae-92b3-440a-981a-96d4817ce7ab",
+      "key": "A Quantitative Analysis of Critical Posture in Art Writing, 1981–2025 (v.2).pdf",
+      "size": 506516,
+      "checksum": "md5:10d88e31592df0f1a2470ec95b96bb1c",
+      "links": {
+        "self": "https://zenodo.org/api/records/20100139/files/A%20Quantitative%20Analysis%20of%20Critical%20Posture%20in%20Art%20Writing,%201981%E2%80%932025%20(v.2).pdf/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1392900"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 172,
+    "unique_downloads": 160,
+    "views": 440,
+    "unique_views": 416,
+    "version_downloads": 38,
+    "version_unique_downloads": 35,
+    "version_unique_views": 141,
+    "version_views": 146
+  },
+  "state": "done",
+  "submitted": true
+}

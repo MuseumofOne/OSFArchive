@@ -1,0 +1,137 @@
+{
+  "created": "2026-05-25T17:57:02.477362+00:00",
+  "modified": "2026-10-15T23:24:10.711327+00:00",
+  "id": 20383926,
+  "conceptrecid": "20095467",
+  "doi": "10.5281/zenodo.20383926",
+  "conceptdoi": "10.5281/zenodo.20095467",
+  "doi_url": "https://doi.org/10.5281/zenodo.20383926",
+  "metadata": {
+    "title": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
+    "doi": "10.5281/zenodo.20383926",
+    "publication_date": "2026-05-09",
+    "description": "<p class=\"p1\"><strong>The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing</strong> by Dorian Vale is a major philosophical and architectural treatise that expands the framework of Post-Interpretive Criticism into the spatial domain, arguing that architecture must be understood not merely as aesthetic production or functional design, but as a system of moral choreography acting directly upon the human body. Drawing from architectural history, phenomenology, spatial theory, ethics, theology, and critical aesthetics, the book proposes that built environments do not simply contain human life; they actively shape posture, perception, obedience, dignity, and emotional possibility.</p>\n<p class=\"p1\">Rejecting the interpretive traditions that reduce architecture to symbolism, style, or semiotic analysis, Vale develops a witness-based methodology centered on bodily testimony and spatial encounter. The text argues that space operates prior to language and often beyond conscious interpretation, producing ethical and psychological effects before the inhabitant can conceptualize them. From Paleolithic caves and Mesopotamian ziggurats to Gothic cathedrals, imperial complexes, corporate glass towers, hospitals, prisons, welfare offices, and public housing projects, the book traces an unbroken lineage of spatial systems that choreograph human behavior through scale, light, threshold, surveillance, circulation, elevation, enclosure, and access.</p>\n<p class=\"p1\">Central to the work is the claim that architecture is the oldest technology of moral formation. The text reframes buildings not as neutral containers but as active ethical agents that distribute visibility, shame, reverence, exclusion, and belonging through material conditions. Vale introduces concepts such as &ldquo;moral choreography,&rdquo; &ldquo;custodial space,&rdquo; &ldquo;architectures of obedience,&rdquo; and &ldquo;space as moral evidence,&rdquo; arguing that the body itself functions as the primary archive of architectural truth. Against traditions of detached architectural interpretation, the book positions testimony, presence, restraint, and witness as the proper ethical stance of criticism.</p>\n<p class=\"p1\">The work also critiques the modern fiction of neutral design, exposing how institutional and bureaucratic architectures frequently disguise systems of behavioral control beneath the language of efficiency, transparency, optimization, and functionality. By examining how spatial arrangements condition emotional and social realities, the book situates architecture within broader questions of governance, hierarchy, surveillance, ritual, and power. Simultaneously, it identifies counter-traditions of custodial architecture&mdash;spaces designed not to dominate the body but to shelter dignity, contemplation, and human presence.</p>\n<p class=\"p1\">Blending philosophical inquiry with literary prose,&nbsp;<span class=\"s1\"><em>The Moral Evidence of Space</em></span> establishes a new branch of Post-Interpretive Criticism focused on spatial ethics and the phenomenology of built environments. It positions architecture not as a passive backdrop to history but as one of the primary forces through which civilizations produce forms of subjectivity, obedience, exclusion, and transcendence. The book contributes to contemporary debates in architecture, critical theory, aesthetics, urban studies, museum studies, phenomenology, and ethics by proposing a new framework for understanding how space acts upon human beings before interpretation begins.</p>\n<p>First published by Museum of One in 2026. Stable work DOI: <a href=\"https://doi.org/10.5281/zenodo.20095467\">10.5281/zenodo.20095467</a></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": "Museum of One",
+        "orcid": "0009-0004-7737-5094"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Museum of One",
+        "affiliation": null,
+        "type": "HostingInstitution"
+      }
+    ],
+    "keywords": [
+      "architecture",
+      "spatial ethics",
+      "phenomenology",
+      "Post-Interpretive Criticism",
+      "ethics of witnessing",
+      "built environment"
+    ],
+    "resource_type": {
+      "title": "Book",
+      "type": "publication",
+      "subtype": "book"
+    },
+    "alternate_identifiers": [
+      {
+        "identifier": "978-1-06-982034-1"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 3,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "20095467"
+          }
+        }
+      ]
+    }
+  },
+  "title": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
+  "links": {
+    "self": "https://zenodo.org/api/records/20383926",
+    "self_html": "https://zenodo.org/records/20383926",
+    "preview_html": "https://zenodo.org/records/20383926?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.20383926",
+    "self_doi": "https://doi.org/10.5281/zenodo.20383926",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.20383926",
+    "reserve_doi": "https://zenodo.org/api/records/20383926/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/20095467",
+    "parent_html": "https://zenodo.org/records/20095467",
+    "parent_doi": "https://doi.org/10.5281/zenodo.20095467",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.20095467",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:20383926/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:20383926/sequence/default",
+    "files": "https://zenodo.org/api/records/20383926/files",
+    "media_files": "https://zenodo.org/api/records/20383926/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:20383926:The%20Moral%20Evidance%20of%20Space.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:20383926:The%20Moral%20Evidance%20of%20Space.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:20383926:The%20Moral%20Evidance%20of%20Space.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:20383926:The%20Moral%20Evidance%20of%20Space.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:20383926:The%20Moral%20Evidance%20of%20Space.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:20383926:The%20Moral%20Evidance%20of%20Space.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "latest": "https://zenodo.org/api/records/20383926/versions/latest",
+    "latest_html": "https://zenodo.org/records/20383926/latest",
+    "versions": "https://zenodo.org/api/records/20383926/versions",
+    "draft": "https://zenodo.org/api/records/20383926/draft",
+    "access_links": "https://zenodo.org/api/records/20383926/access/links",
+    "access_grants": "https://zenodo.org/api/records/20383926/access/grants",
+    "access_users": "https://zenodo.org/api/records/20383926/access/users",
+    "access_request": "https://zenodo.org/api/records/20383926/access/request",
+    "access": "https://zenodo.org/api/records/20383926/access",
+    "communities": "https://zenodo.org/api/records/20383926/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/20383926/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/20383926/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/20383926/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/20383926/quota-increase",
+    "requests": "https://zenodo.org/api/records/20383926/requests"
+  },
+  "updated": "2026-10-15T23:24:10.711327+00:00",
+  "recid": "20383926",
+  "revision": 12,
+  "files": [
+    {
+      "id": "8b2fc977-d328-47c7-8b1e-a636c5b0eb71",
+      "key": "The Moral Evidance of Space.pdf",
+      "size": 2713642,
+      "checksum": "md5:23cdeec1af0577374dc9b05cb22a8f2e",
+      "links": {
+        "self": "https://zenodo.org/api/records/20383926/files/The%20Moral%20Evidance%20of%20Space.pdf/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1392900"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 188,
+    "unique_downloads": 165,
+    "views": 434,
+    "unique_views": 377,
+    "version_downloads": 82,
+    "version_unique_downloads": 73,
+    "version_unique_views": 139,
+    "version_views": 159
+  },
+  "state": "done",
+  "submitted": true
+}

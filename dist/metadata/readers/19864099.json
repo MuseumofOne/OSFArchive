@@ -1,0 +1,20 @@
+{
+  "id": "19864099",
+  "title": "Post-Interpretive Criticism: Volume I - The Foundational Essays",
+  "accession": "MOO-CAT-001",
+  "pdf_url": "../assets/documents/19864099.pdf",
+  "source_url": "https://zenodo.org/api/records/19864099/files/post-interprative-criticism-volume-i-STANDARD.pdf/content",
+  "zenodo_url": "https://zenodo.org/records/19864099",
+  "source_filename": "post-interprative-criticism-volume-i-STANDARD.pdf",
+  "checksum": "md5:2cbd120db1c6358cb65702d5090d042a",
+  "sha256": "cff270ffc96c98812c0ab708cd159c2c34cbd43f13f378696802a7f2a939ac3d",
+  "bytes": 1044796,
+  "page_count": 82,
+  "verified_at": "2026-11-04",
+  "checksum_match": true,
+  "rights": {
+    "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "role": "Local reading copy; original repository file retained unchanged"
+}

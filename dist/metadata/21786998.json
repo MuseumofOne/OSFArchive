@@ -1,0 +1,1153 @@
+{
+  "id": "21786998",
+  "accession": "MOO-CAT-013",
+  "title": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century",
+  "source_title": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century",
+  "short_title": "Interpretation at Risk",
+  "author": "Dorian Vale",
+  "creators": [
+    {
+      "name": "Vale, Dorian",
+      "affiliation": "Museum of One",
+      "orcid": "0009-0004-7737-5094"
+    }
+  ],
+  "doi": "10.5281/zenodo.21786998",
+  "conceptdoi": "10.5281/zenodo.18104019",
+  "zenodo_url": "https://zenodo.org/records/21786998",
+  "date": "2025-12-31",
+  "type": "Journal article",
+  "source_resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "version": "",
+  "collection": "Theory & treatises",
+  "summary": "An early theoretical essay that questions the assumption that interpretation provides a neutral foundation for aesthetic meaning, proposing instead that mediation carries ethical consequences.",
+  "subjects": [
+    "Aesthetic theory",
+    "Interpretation",
+    "Critical language",
+    "Post-Interpretive Criticism"
+  ],
+  "keywords": [
+    "Post-Interpretive Criticism",
+    "interpretation",
+    "aesthetics",
+    "phenomenology",
+    "art criticism",
+    "ethics of witnessing"
+  ],
+  "license": {
+    "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "files": [
+    {
+      "name": "Interpretation at Risk Post-Interpretive Criticism After the 20th Century.pdf",
+      "url": "https://zenodo.org/api/records/21786998/files/Interpretation%20at%20Risk%20Post-Interpretive%20Criticism%20After%20the%2020th%20Century.pdf/content",
+      "size": 229568,
+      "size_label": "224 KB",
+      "checksum": "md5:d18570c20f85fd773c64d6f7730443d3",
+      "mimetype": "application/pdf"
+    }
+  ],
+  "institutional_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+  "corroboration": "Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. Its repository links and publication dates are retained separately from this selected Zenodo edition. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.",
+  "discrepancies": [],
+  "orcid": "0009-0004-7737-5094",
+  "publisher": "Museum of One",
+  "language": null,
+  "isbn": null,
+  "related_identifiers": [
+    {
+      "identifier": "2819-7232",
+      "relation": "isPublishedIn",
+      "scheme": "issn"
+    }
+  ],
+  "alternate_identifiers": [],
+  "source_references": [],
+  "source_journal": {
+    "title": "Post-interpretive criticism"
+  },
+  "source_imprint": null,
+  "source_contributors": [
+    {
+      "name": "Museum of One",
+      "affiliation": null,
+      "type": "HostingInstitution"
+    }
+  ],
+  "source_created": "2026-08-04T07:48:39.211908+00:00",
+  "source_modified": "2026-10-15T12:20:13.956799+00:00",
+  "source_description_html": "<p><strong>Title:</strong></p>\n<p><strong>Interpretation at Risk: Post‑Interpretive Criticism After the 20th Century</strong></p>\n<p><strong>Author:</strong></p>\n<p>Dorian Vale</p>\n<p><strong>Affiliation:</strong></p>\n<p>Museum of One &mdash; Registered Archive and Independent Research Institute for Contemporary Aesthetics</p>\n<p><strong>Abstract:</strong></p>\n<p>This essay establishes Post‑Interpretive Criticism as a formal break with the dominant aesthetic consensus of the late twentieth century, which treated meaning as something produced through mediation rather than encountered through structure. Surveying post‑1950 traditions across structuralism, hermeneutics, phenomenology, critical theory, and post‑structuralism, the essay identifies a shared assumption underlying their disagreements: interpretation functions as the necessary and ethically justified ground of meaning. Post‑Interpretive Criticism rejects this premise not by proposing an alternative theory of meaning‑production, but by questioning whether production itself is the correct frame.</p>\n<p>The essay argues that interpretation is not neutral, inevitable, or inherently liberatory, but structurally hazardous. Language, when introduced prematurely or excessively, alters the proportions of the aesthetic encounter, collapsing interval, crowding distance, and displacing presence with discourse. Meaning, on this account, does not originate in interpretation but in a relational field between work and witness that possesses structure prior to mediation. Interpretation is therefore recast as an intervention rather than a foundation&mdash;one that must justify itself ethically by preserving proportion rather than overwhelming it.</p>\n<p>Positioning Post‑Interpretive Criticism against the historical conditions that necessitated interpretive excess in the post‑war period, the essay argues that contemporary aesthetics now faces the inverse problem: interpretive saturation. Where interpretation once functioned as moral responsibility, it now frequently preempts encounter, substituting commentary for perception. Drawing careful distinctions from phenomenological aesthetics, the essay emphasizes that description of experience is insufficient without a discipline governing speech. Post‑Interpretive Criticism introduces restraint as method, silence as ethical posture, and proportion as evaluative criterion.</p>\n<p>The essay concludes by outlining the institutional, pedagogical, and critical consequences of adopting Post‑Interpretive Criticism, including reduced interpretive authority, contraction of discourse, and the re‑training of attention prior to articulation. It does not argue for universal application, but claims necessity under specific contemporary conditions. Interpretation, once required, is now placed at risk&mdash;not because meaning has vanished, but because the encounter has returned as the primary site of aesthetic responsibility.</p>\n<p><strong>Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen.</strong></p>\n<p>First published by Museum of One on 31 December 2025. Stable work DOI: <a href=\"https://doi.org/10.5281/zenodo.18104019\">10.5281/zenodo.18104019</a></p>",
+  "provenance": {
+    "repository": "Zenodo REST API response supplied in query.json",
+    "retrieved": "2026-11-04",
+    "editorial_fields": [
+      "summary",
+      "subjects",
+      "collection",
+      "short_title",
+      "accession"
+    ],
+    "source_snapshot": "source/21786998.json",
+    "institutional_review": "Reviewed page-level title, author and repository links in saved public institutional HTML, 2026-11-04."
+  },
+  "source_review": "2026-11-04",
+  "relations": [
+    {
+      "identifier": "2819-7232",
+      "relation": "isPublishedIn",
+      "scheme": "issn"
+    }
+  ],
+  "institutional_metadata": {
+    "title": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century",
+    "author": "Dorian Vale",
+    "web_publication": "2025-12-31T06:13:00.000Z",
+    "web_updated": "2026-11-03T00:42:11.000Z",
+    "linked_zenodo_dois": [
+      "10.5281/zenodo.18104019"
+    ],
+    "reviewed": "2026-11-04",
+    "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/"
+  },
+  "research_programmes": [],
+  "record_level": "Item",
+  "record_status": "Published source; selected catalogue record",
+  "digital_formats": [
+    "application/pdf"
+  ],
+  "extent": "1 digital file; 229568 bytes",
+  "medium": "Digital document",
+  "record_reviewed": "2026-11-04",
+  "date_precision": "day",
+  "alternate_titles": [],
+  "digital_extent": {
+    "file_count": 1,
+    "total_bytes": 229568,
+    "formats": [
+      "application/pdf"
+    ],
+    "checksums": [
+      {
+        "filename": "Interpretation at Risk Post-Interpretive Criticism After the 20th Century.pdf",
+        "algorithm": "md5",
+        "value": "d18570c20f85fd773c64d6f7730443d3",
+        "syntax_valid": true,
+        "verification": "source_checksum_transcription; bytes not independently recomputed"
+      }
+    ],
+    "source_url": "https://zenodo.org/records/21786998",
+    "derivation": "File count and total bytes calculated from repository file metadata; MIME inferred from filename when absent."
+  },
+  "identifier_validation": {
+    "orcid": {
+      "source_value": "0009-0004-7737-5094",
+      "checksum_valid": true,
+      "note": "ISO 7064 MOD 11-2 checksum only; this is not a live registry verification."
+    },
+    "isbn": [],
+    "doi": {
+      "source_value": "10.5281/zenodo.21786998",
+      "syntax_valid": true,
+      "note": "Syntax check only; repository snapshot supplies the identifier."
+    },
+    "issn": {
+      "source_value": "2819-7232",
+      "checksum_valid": true,
+      "scope": "serial identifier, not item DOI or ISBN",
+      "note": "Checksum only; source relationship and authority-record status are documented separately."
+    }
+  },
+  "isbn_applicability": "not_supplied",
+  "serial": {
+    "title": "Post-interpretive criticism",
+    "issn": "2819-7232",
+    "url": "https://portal.issn.org/resource/ISSN/2819-7232",
+    "source_url": "https://zenodo.org/records/21786998",
+    "source_relation": "isPublishedIn",
+    "authority_status": "independent_authority_record_metadata_observed_in_search_index"
+  },
+  "contributor_roles": [
+    {
+      "name": "Vale, Dorian",
+      "source_category": "creator",
+      "source_role": null,
+      "role_label": "Creator (role not supplied)",
+      "affiliation_as_supplied": "Museum of One",
+      "source_url": "https://zenodo.org/records/21786998"
+    },
+    {
+      "name": "Museum of One",
+      "source_category": "contributor",
+      "source_role": "HostingInstitution",
+      "role_label": "HostingInstitution",
+      "affiliation_as_supplied": null,
+      "source_url": "https://zenodo.org/records/21786998"
+    }
+  ],
+  "authority_links": [],
+  "metadata_profile": {
+    "name": "Museum of One source-qualified catalogue profile",
+    "version": "2",
+    "note": "Local application profile using schema.org and qualified Dublin Core; not an archival standards certification.",
+    "source_snapshot_preserved": true
+  },
+  "reading_copy": {
+    "id": "21786998",
+    "title": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century",
+    "accession": "MOO-CAT-013",
+    "pdf_url": "../assets/documents/21786998.pdf",
+    "source_url": "https://zenodo.org/api/records/21786998/files/Interpretation%20at%20Risk%20Post-Interpretive%20Criticism%20After%20the%2020th%20Century.pdf/content",
+    "zenodo_url": "https://zenodo.org/records/21786998",
+    "source_filename": "Interpretation at Risk Post-Interpretive Criticism After the 20th Century.pdf",
+    "checksum": "md5:d18570c20f85fd773c64d6f7730443d3",
+    "sha256": "925b0b72d3349f32d6dbbc595baea96390439e36275d576a6d33fa4ce1fe3ff8",
+    "bytes": 229568,
+    "page_count": 6,
+    "verified_at": "2026-11-04",
+    "checksum_match": true,
+    "rights": {
+      "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "role": "Local reading copy; original repository file retained unchanged"
+  },
+  "page_count": 6,
+  "field_assertions": [
+    {
+      "field": "title",
+      "value": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century",
+      "status": "catalogue_title",
+      "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "note": "Local display title; the deposited title is retained separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_title",
+      "value": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21786998",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "doi",
+      "value": "10.5281/zenodo.21786998",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21786998",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "date",
+      "value": "2025-12-31",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21786998",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "conceptdoi",
+      "value": "10.5281/zenodo.18104019",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21786998",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "creators",
+      "value": [
+        {
+          "name": "Vale, Dorian",
+          "affiliation": "Museum of One",
+          "orcid": "0009-0004-7737-5094"
+        }
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21786998",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "keywords",
+      "value": [
+        "Post-Interpretive Criticism",
+        "interpretation",
+        "aesthetics",
+        "phenomenology",
+        "art criticism",
+        "ethics of witnessing"
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21786998",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "license",
+      "value": {
+        "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21786998",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "files",
+      "value": [
+        {
+          "name": "Interpretation at Risk Post-Interpretive Criticism After the 20th Century.pdf",
+          "url": "https://zenodo.org/api/records/21786998/files/Interpretation%20at%20Risk%20Post-Interpretive%20Criticism%20After%20the%2020th%20Century.pdf/content",
+          "size": 229568,
+          "size_label": "224 KB",
+          "checksum": "md5:d18570c20f85fd773c64d6f7730443d3",
+          "mimetype": "application/pdf"
+        }
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21786998",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_created",
+      "value": "2026-08-04T07:48:39.211908+00:00",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21786998",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_modified",
+      "value": "2026-10-15T12:20:13.956799+00:00",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21786998",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "author",
+      "value": "Dorian Vale",
+      "status": "institutional_context",
+      "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "note": "Institutional responsibility statement; original repository creator roles remain separate.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "publisher",
+      "value": "Museum of One",
+      "status": "institutional_context",
+      "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "note": "Institutional responsibility statement; original repository creator roles remain separate.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "orcid",
+      "value": "0009-0004-7737-5094",
+      "status": "source_linked_identifier",
+      "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "note": "Creator identifier supplied by the linked sources; no affiliation or endorsement is inferred.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "summary",
+      "value": "An early theoretical essay that questions the assumption that interpretation provides a neutral foundation for aesthetic meaning, proposing instead that mediation carries ethical consequences.",
+      "status": "editorial_enrichment",
+      "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "note": "Catalogue-editor summary based on the linked work; not an original publisher abstract.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "subjects",
+      "value": [
+        "Aesthetic theory",
+        "Interpretation",
+        "Critical language",
+        "Post-Interpretive Criticism"
+      ],
+      "status": "editorial_enrichment",
+      "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "note": "Local discovery terms; no controlled-vocabulary assignment is claimed.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "collection",
+      "value": "Theory & treatises",
+      "status": "editorial_grouping",
+      "note": "A local browsing collection, not an original repository collection.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "corroboration",
+      "value": "Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. Its repository links and publication dates are retained separately from this selected Zenodo edition. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.",
+      "status": "catalogue_review_note",
+      "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "date_precision",
+      "value": "day",
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/21786998",
+      "note": "Precision reported exactly as supplied; missing month or day is not filled.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "medium",
+      "value": "Digital document",
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/21786998",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "digital_formats",
+      "value": [
+        "application/pdf"
+      ],
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/21786998",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "extent",
+      "value": "1 digital file; 229568 bytes",
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/21786998",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "digital_extent",
+      "value": {
+        "file_count": 1,
+        "total_bytes": 229568,
+        "formats": [
+          "application/pdf"
+        ],
+        "checksums": [
+          {
+            "filename": "Interpretation at Risk Post-Interpretive Criticism After the 20th Century.pdf",
+            "algorithm": "md5",
+            "value": "d18570c20f85fd773c64d6f7730443d3",
+            "syntax_valid": true,
+            "verification": "source_checksum_transcription; bytes not independently recomputed"
+          }
+        ],
+        "source_url": "https://zenodo.org/records/21786998",
+        "derivation": "File count and total bytes calculated from repository file metadata; MIME inferred from filename when absent."
+      },
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/21786998",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "identifier_validation",
+      "value": {
+        "orcid": {
+          "source_value": "0009-0004-7737-5094",
+          "checksum_valid": true,
+          "note": "ISO 7064 MOD 11-2 checksum only; this is not a live registry verification."
+        },
+        "isbn": [],
+        "doi": {
+          "source_value": "10.5281/zenodo.21786998",
+          "syntax_valid": true,
+          "note": "Syntax check only; repository snapshot supplies the identifier."
+        },
+        "issn": {
+          "source_value": "2819-7232",
+          "checksum_valid": true,
+          "scope": "serial identifier, not item DOI or ISBN",
+          "note": "Checksum only; source relationship and authority-record status are documented separately."
+        }
+      },
+      "status": "local_syntax_validation",
+      "source_url": "https://zenodo.org/records/21786998",
+      "note": "Checksum/syntax validation does not verify registration, assignment or edition applicability.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "contributor_roles",
+      "value": [
+        {
+          "name": "Vale, Dorian",
+          "source_category": "creator",
+          "source_role": null,
+          "role_label": "Creator (role not supplied)",
+          "affiliation_as_supplied": "Museum of One",
+          "source_url": "https://zenodo.org/records/21786998"
+        },
+        {
+          "name": "Museum of One",
+          "source_category": "contributor",
+          "source_role": "HostingInstitution",
+          "role_label": "HostingInstitution",
+          "affiliation_as_supplied": null,
+          "source_url": "https://zenodo.org/records/21786998"
+        }
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/21786998",
+      "note": "Creator and contributor roles are transcribed, not inferred from names or affiliations.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "serial",
+      "value": {
+        "title": "Post-interpretive criticism",
+        "issn": "2819-7232",
+        "url": "https://portal.issn.org/resource/ISSN/2819-7232",
+        "source_url": "https://zenodo.org/records/21786998",
+        "source_relation": "isPublishedIn",
+        "authority_status": "independent_authority_record_metadata_observed_in_search_index"
+      },
+      "status": "source_declared_relationship",
+      "source_url": "https://zenodo.org/records/21786998",
+      "note": "Serial context is attached only where the repository declares the ISSN relationship.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "entity_link:dorian-vale:author",
+      "value": {
+        "id": "dorian-vale",
+        "label": "Dorian Vale",
+        "entity_type": "Person",
+        "relation": "author",
+        "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+        "note": "The matching institutional publication record credits Dorian Vale as author."
+      },
+      "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:museum-of-one:publisher",
+      "value": {
+        "id": "museum-of-one",
+        "label": "Museum of One",
+        "entity_type": "Organization",
+        "relation": "publisher",
+        "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      },
+      "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "controlled_subjects",
+      "value": [
+        {
+          "id": "aesthetic-theory",
+          "label": "Aesthetic theory",
+          "uri": "https://archive.museumofone.art/vocabulary.html#aesthetic-theory",
+          "url": "vocabulary.html#aesthetic-theory",
+          "persistent_id": "urn:museum-of-one:vocabulary:aesthetic-theory",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [],
+          "definition": "Theoretical propositions about how art is encountered, understood, or valued.",
+          "scope_note": "Use for explicit theoretical argument; distinguish the wider field of Aesthetics.",
+          "kind": "subject",
+          "broader": [
+            "aesthetics"
+          ],
+          "narrower": [],
+          "related": [],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "id": "interpretation",
+          "label": "Interpretation",
+          "uri": "https://archive.museumofone.art/vocabulary.html#interpretation",
+          "url": "vocabulary.html#interpretation",
+          "persistent_id": "urn:museum-of-one:vocabulary:interpretation",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [],
+          "definition": "The production and negotiation of meaning in encounters with art.",
+          "scope_note": "Use for discussion of interpretive activity and its limits; separate from the specific local Post-Interpretive Criticism framework.",
+          "kind": "subject",
+          "broader": [],
+          "narrower": [],
+          "related": [
+            "art-criticism"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "id": "critical-language",
+          "label": "Critical language",
+          "uri": "https://archive.museumofone.art/vocabulary.html#critical-language",
+          "url": "vocabulary.html#critical-language",
+          "persistent_id": "urn:museum-of-one:vocabulary:critical-language",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [],
+          "definition": "The terms and linguistic choices through which critical claims are made.",
+          "scope_note": "Use for publications examining wording, descriptive authority, restraint, or the circulation of interpretation.",
+          "kind": "subject",
+          "broader": [],
+          "narrower": [],
+          "related": [
+            "art-writing",
+            "museum-cataloguing"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "id": "post-interpretive-criticism",
+          "label": "Post-Interpretive Criticism",
+          "uri": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism",
+          "url": "vocabulary.html#post-interpretive-criticism",
+          "persistent_id": "urn:museum-of-one:vocabulary:post-interpretive-criticism",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [
+            "PIC",
+            "Post Interpretive Criticism"
+          ],
+          "definition": "The critical framework named and developed in the Museum of One publications.",
+          "scope_note": "Local named intellectual framework. Used for records explicitly concerned with it; no Getty, Library of Congress, or other external equivalence is asserted.",
+          "kind": "local-framework-concept",
+          "broader": [],
+          "narrower": [],
+          "related": [
+            "custodianship",
+            "ethics-of-witnessing",
+            "foundational-writings",
+            "moral-proximity"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        }
+      ],
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Local preferred terms with definitions and synonyms. External alignment is scoped in the vocabulary register.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "genre_terms",
+      "value": [
+        {
+          "id": "genre-journal-article",
+          "label": "Journal article",
+          "uri": "https://archive.museumofone.art/vocabulary.html#genre-journal-article",
+          "url": "vocabulary.html#genre-journal-article",
+          "persistent_id": "urn:museum-of-one:vocabulary:genre-journal-article",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [
+            "Journal articles"
+          ],
+          "definition": "A contribution issued as part of a journal or periodical.",
+          "scope_note": "Describes publication genre based on the catalogued source record; peer-review status is a separate question.",
+          "kind": "genre",
+          "broader": [],
+          "narrower": [],
+          "related": [],
+          "mapping_status": "verified_mapping",
+          "external_mappings": [
+            {
+              "vocabulary": "Getty Art & Architecture Thesaurus",
+              "label": "articles",
+              "uri": "http://vocab.getty.edu/aat/300048715",
+              "source_url": "https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300048715",
+              "relation": "broadMatch",
+              "status": "verified",
+              "verified_on": "2026-11-04",
+              "note": "Getty’s articles concept includes contributions to magazines, newspapers, encyclopedias, and other works; journal article is the narrower local genre."
+            }
+          ],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "type",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        }
+      ],
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Local resource-genre classification. Digital file format is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "archival_context",
+      "value": {
+        "description_profile": "moo-description-policy-1.0",
+        "catalogue_snapshot_date": "2026-11-04",
+        "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
+        "record_category": "Published library and repository material",
+        "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+        "source_repository": {
+          "name": "Zenodo",
+          "record_url": "https://zenodo.org/records/21786998"
+        },
+        "institutional_context_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+        "source_metadata_retrieved": "2026-11-04",
+        "source_metadata_retrieval_status": "Documented in catalogue source provenance",
+        "source_snapshot": "source/21786998.json",
+        "source_filenames": [
+          "Interpretation at Risk Post-Interpretive Criticism After the 20th Century.pdf"
+        ],
+        "selection_basis": "Local descriptive selection of publicly published material; public availability does not establish ownership of originals.",
+        "custodial_history": {
+          "status": "not_documented",
+          "statement": "No donation, physical transfer, acquisition agreement or chain of custody is documented by this catalogue. Zenodo remains the source repository for the deposited version."
+        },
+        "original_order": {
+          "status": "not_documented",
+          "statement": "No original archival order is asserted. Current browsing groupings are local editorial arrangement."
+        },
+        "arrangement": {
+          "status": "local_editorial",
+          "grouping": "Theory & treatises",
+          "statement": "A browsing grouping, not an original fonds or archival series."
+        },
+        "responsible_service": {
+          "name": "Museum of One",
+          "service": "Museum of One Digital Archive Library",
+          "website": "https://www.museumofone.art/",
+          "email": "research@museumofone.art"
+        },
+        "description_method": "Source-based description with automated drafting and metadata assistance. Responsibility for the public catalogue rests with Museum of One; automated assistance does not constitute independent scholarly or curatorial review.",
+        "policy_url": "policies.html",
+        "correction_email": "research@museumofone.art",
+        "access_copy": {
+          "role": "Local digital reading copy of the deposited file",
+          "source_url": "https://zenodo.org/api/records/21786998/files/Interpretation%20at%20Risk%20Post-Interpretive%20Criticism%20After%20the%2020th%20Century.pdf/content",
+          "source_filename": "Interpretation at Risk Post-Interpretive Criticism After the 20th Century.pdf",
+          "local_path": "assets/documents/21786998.pdf",
+          "verified_at": "2026-11-04",
+          "source_checksum_match": true,
+          "sha256": "925b0b72d3349f32d6dbbc595baea96390439e36275d576a6d33fa4ce1fe3ff8",
+          "statement": "Access copy only; no ownership or physical custody transfer is implied."
+        }
+      },
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Provenance records what is documented and leaves unknown custody and original order explicit.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "description_history",
+      "value": [
+        {
+          "responsible_service": "Museum of One",
+          "method": "Source-based automated description assistance",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "public-source-description-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Source-based catalogue description",
+          "note": "Local description assembled from the identified public repository record and available institutional work record. Source metadata remains separately identifiable.",
+          "sources": [
+            "https://zenodo.org/records/21786998",
+            "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/"
+          ]
+        },
+        {
+          "responsible_service": "Museum of One",
+          "method": "Source-based automated description assistance",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "qualified-description-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Qualified descriptive enrichment",
+          "note": "Local editorial description, arrangement and source-qualified bibliographic context recorded alongside source metadata. Unknown or disputed values remain qualified.",
+          "fields": [
+            "summary",
+            "subjects",
+            "collection",
+            "short_title",
+            "accession"
+          ],
+          "sources": [
+            "https://zenodo.org/records/21786998",
+            "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/"
+          ]
+        },
+        {
+          "responsible_service": "Museum of One",
+          "method": "Automated file checksum and PDF inspection",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "access-copy-verification-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Digital reading copy verified",
+          "note": "Downloaded access-copy MD5 matched the source checksum; local SHA-256 and PDF file-page count are recorded in the file manifest. This event does not describe transfer of custody.",
+          "sources": [
+            "https://zenodo.org/api/records/21786998/files/Interpretation%20at%20Risk%20Post-Interpretive%20Criticism%20After%20the%2020th%20Century.pdf/content"
+          ]
+        },
+        {
+          "responsible_service": "Museum of One",
+          "method": "Source-based automated description assistance",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "description-policy-1.0-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Description policy and provenance context adopted",
+          "note": "Responsible service, source repository, local access-copy role, unknown custody and original order, correction route and dated description history made explicit under moo-description-policy-1.0.",
+          "sources": [
+            "policies.html"
+          ]
+        }
+      ],
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Catalogue description events; these are not work publication dates or acquisition dates.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "reading_copy",
+      "value": {
+        "id": "21786998",
+        "title": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century",
+        "accession": "MOO-CAT-013",
+        "pdf_url": "../assets/documents/21786998.pdf",
+        "source_url": "https://zenodo.org/api/records/21786998/files/Interpretation%20at%20Risk%20Post-Interpretive%20Criticism%20After%20the%2020th%20Century.pdf/content",
+        "zenodo_url": "https://zenodo.org/records/21786998",
+        "source_filename": "Interpretation at Risk Post-Interpretive Criticism After the 20th Century.pdf",
+        "checksum": "md5:d18570c20f85fd773c64d6f7730443d3",
+        "sha256": "925b0b72d3349f32d6dbbc595baea96390439e36275d576a6d33fa4ce1fe3ff8",
+        "bytes": 229568,
+        "page_count": 6,
+        "verified_at": "2026-11-04",
+        "checksum_match": true,
+        "rights": {
+          "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+          "url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "role": "Local reading copy; original repository file retained unchanged"
+      },
+      "source_url": "https://zenodo.org/api/records/21786998/files/Interpretation%20at%20Risk%20Post-Interpretive%20Criticism%20After%20the%2020th%20Century.pdf/content",
+      "status": "derived_file_inspection",
+      "reviewed": "2026-11-04",
+      "note": "Byte-identical local access copy. Source MD5 was recomputed and matched; SHA-256 and page count were measured from the downloaded PDF. This is not a preservation-deposit claim."
+    },
+    {
+      "field": "page_count",
+      "value": 6,
+      "source_url": "https://zenodo.org/api/records/21786998/files/Interpretation%20at%20Risk%20Post-Interpretive%20Criticism%20After%20the%2020th%20Century.pdf/content",
+      "status": "derived_file_inspection",
+      "reviewed": "2026-11-04",
+      "note": "Total PDF file pages measured from the deposited file, including cover and unnumbered pages. Not a claim about printed pagination."
+    }
+  ],
+  "entity_links": [
+    {
+      "id": "dorian-vale",
+      "label": "Dorian Vale",
+      "entity_type": "Person",
+      "relation": "author",
+      "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "note": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "id": "museum-of-one",
+      "label": "Museum of One",
+      "entity_type": "Organization",
+      "relation": "publisher",
+      "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    }
+  ],
+  "contents": [],
+  "controlled_subjects": [
+    {
+      "id": "aesthetic-theory",
+      "label": "Aesthetic theory",
+      "uri": "https://archive.museumofone.art/vocabulary.html#aesthetic-theory",
+      "url": "vocabulary.html#aesthetic-theory",
+      "persistent_id": "urn:museum-of-one:vocabulary:aesthetic-theory",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [],
+      "definition": "Theoretical propositions about how art is encountered, understood, or valued.",
+      "scope_note": "Use for explicit theoretical argument; distinguish the wider field of Aesthetics.",
+      "kind": "subject",
+      "broader": [
+        "aesthetics"
+      ],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "id": "interpretation",
+      "label": "Interpretation",
+      "uri": "https://archive.museumofone.art/vocabulary.html#interpretation",
+      "url": "vocabulary.html#interpretation",
+      "persistent_id": "urn:museum-of-one:vocabulary:interpretation",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [],
+      "definition": "The production and negotiation of meaning in encounters with art.",
+      "scope_note": "Use for discussion of interpretive activity and its limits; separate from the specific local Post-Interpretive Criticism framework.",
+      "kind": "subject",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "art-criticism"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "id": "critical-language",
+      "label": "Critical language",
+      "uri": "https://archive.museumofone.art/vocabulary.html#critical-language",
+      "url": "vocabulary.html#critical-language",
+      "persistent_id": "urn:museum-of-one:vocabulary:critical-language",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [],
+      "definition": "The terms and linguistic choices through which critical claims are made.",
+      "scope_note": "Use for publications examining wording, descriptive authority, restraint, or the circulation of interpretation.",
+      "kind": "subject",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "art-writing",
+        "museum-cataloguing"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "id": "post-interpretive-criticism",
+      "label": "Post-Interpretive Criticism",
+      "uri": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism",
+      "url": "vocabulary.html#post-interpretive-criticism",
+      "persistent_id": "urn:museum-of-one:vocabulary:post-interpretive-criticism",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [
+        "PIC",
+        "Post Interpretive Criticism"
+      ],
+      "definition": "The critical framework named and developed in the Museum of One publications.",
+      "scope_note": "Local named intellectual framework. Used for records explicitly concerned with it; no Getty, Library of Congress, or other external equivalence is asserted.",
+      "kind": "local-framework-concept",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "custodianship",
+        "ethics-of-witnessing",
+        "foundational-writings",
+        "moral-proximity"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    }
+  ],
+  "genre_terms": [
+    {
+      "id": "genre-journal-article",
+      "label": "Journal article",
+      "uri": "https://archive.museumofone.art/vocabulary.html#genre-journal-article",
+      "url": "vocabulary.html#genre-journal-article",
+      "persistent_id": "urn:museum-of-one:vocabulary:genre-journal-article",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [
+        "Journal articles"
+      ],
+      "definition": "A contribution issued as part of a journal or periodical.",
+      "scope_note": "Describes publication genre based on the catalogued source record; peer-review status is a separate question.",
+      "kind": "genre",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "verified_mapping",
+      "external_mappings": [
+        {
+          "vocabulary": "Getty Art & Architecture Thesaurus",
+          "label": "articles",
+          "uri": "http://vocab.getty.edu/aat/300048715",
+          "source_url": "https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300048715",
+          "relation": "broadMatch",
+          "status": "verified",
+          "verified_on": "2026-11-04",
+          "note": "Getty’s articles concept includes contributions to magazines, newspapers, encyclopedias, and other works; journal article is the narrower local genre."
+        }
+      ],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "type",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    }
+  ],
+  "vocabulary_version": 4,
+  "description_history": [
+    {
+      "responsible_service": "Museum of One",
+      "method": "Source-based automated description assistance",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "public-source-description-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Source-based catalogue description",
+      "note": "Local description assembled from the identified public repository record and available institutional work record. Source metadata remains separately identifiable.",
+      "sources": [
+        "https://zenodo.org/records/21786998",
+        "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/"
+      ]
+    },
+    {
+      "responsible_service": "Museum of One",
+      "method": "Source-based automated description assistance",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "qualified-description-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Qualified descriptive enrichment",
+      "note": "Local editorial description, arrangement and source-qualified bibliographic context recorded alongside source metadata. Unknown or disputed values remain qualified.",
+      "fields": [
+        "summary",
+        "subjects",
+        "collection",
+        "short_title",
+        "accession"
+      ],
+      "sources": [
+        "https://zenodo.org/records/21786998",
+        "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/"
+      ]
+    },
+    {
+      "responsible_service": "Museum of One",
+      "method": "Automated file checksum and PDF inspection",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "access-copy-verification-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Digital reading copy verified",
+      "note": "Downloaded access-copy MD5 matched the source checksum; local SHA-256 and PDF file-page count are recorded in the file manifest. This event does not describe transfer of custody.",
+      "sources": [
+        "https://zenodo.org/api/records/21786998/files/Interpretation%20at%20Risk%20Post-Interpretive%20Criticism%20After%20the%2020th%20Century.pdf/content"
+      ]
+    },
+    {
+      "responsible_service": "Museum of One",
+      "method": "Source-based automated description assistance",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "description-policy-1.0-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Description policy and provenance context adopted",
+      "note": "Responsible service, source repository, local access-copy role, unknown custody and original order, correction route and dated description history made explicit under moo-description-policy-1.0.",
+      "sources": [
+        "policies.html"
+      ]
+    }
+  ],
+  "archival_context": {
+    "description_profile": "moo-description-policy-1.0",
+    "catalogue_snapshot_date": "2026-11-04",
+    "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
+    "record_category": "Published library and repository material",
+    "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+    "source_repository": {
+      "name": "Zenodo",
+      "record_url": "https://zenodo.org/records/21786998"
+    },
+    "institutional_context_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+    "source_metadata_retrieved": "2026-11-04",
+    "source_metadata_retrieval_status": "Documented in catalogue source provenance",
+    "source_snapshot": "source/21786998.json",
+    "source_filenames": [
+      "Interpretation at Risk Post-Interpretive Criticism After the 20th Century.pdf"
+    ],
+    "selection_basis": "Local descriptive selection of publicly published material; public availability does not establish ownership of originals.",
+    "custodial_history": {
+      "status": "not_documented",
+      "statement": "No donation, physical transfer, acquisition agreement or chain of custody is documented by this catalogue. Zenodo remains the source repository for the deposited version."
+    },
+    "original_order": {
+      "status": "not_documented",
+      "statement": "No original archival order is asserted. Current browsing groupings are local editorial arrangement."
+    },
+    "arrangement": {
+      "status": "local_editorial",
+      "grouping": "Theory & treatises",
+      "statement": "A browsing grouping, not an original fonds or archival series."
+    },
+    "responsible_service": {
+      "name": "Museum of One",
+      "service": "Museum of One Digital Archive Library",
+      "website": "https://www.museumofone.art/",
+      "email": "research@museumofone.art"
+    },
+    "description_method": "Source-based description with automated drafting and metadata assistance. Responsibility for the public catalogue rests with Museum of One; automated assistance does not constitute independent scholarly or curatorial review.",
+    "policy_url": "policies.html",
+    "correction_email": "research@museumofone.art",
+    "access_copy": {
+      "role": "Local digital reading copy of the deposited file",
+      "source_url": "https://zenodo.org/api/records/21786998/files/Interpretation%20at%20Risk%20Post-Interpretive%20Criticism%20After%20the%2020th%20Century.pdf/content",
+      "source_filename": "Interpretation at Risk Post-Interpretive Criticism After the 20th Century.pdf",
+      "local_path": "assets/documents/21786998.pdf",
+      "verified_at": "2026-11-04",
+      "source_checksum_match": true,
+      "sha256": "925b0b72d3349f32d6dbbc595baea96390439e36275d576a6d33fa4ce1fe3ff8",
+      "statement": "Access copy only; no ownership or physical custody transfer is implied."
+    }
+  },
+  "description_policy_url": "https://archive.museumofone.art/policies.html",
+  "pirr_references": [],
+  "pirr_work_identity": {
+    "archive_reference": "MOO-CAT-013",
+    "edition_doi": "10.5281/zenodo.21786998",
+    "zenodo_record_id": "21786998",
+    "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication."
+  }
+}

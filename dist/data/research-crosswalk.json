@@ -1,0 +1,1161 @@
+{
+  "reviewed": "2026-11-04",
+  "scope": "A local crosswalk of public Museum of One research programme accounts and the archive’s deposited publications. PIRR project IDs and programme references remain distinct; no independent PIRR publication identifiers are assigned.",
+  "archive_origin": "https://archive.museumofone.art",
+  "registry_url": "https://www.museumofone.art/research-programmes/#pirr",
+  "programmes": [
+    {
+      "key": "research-aesthetics-experience",
+      "title": "Aesthetics, Experience, and Art-Historical Mediation",
+      "url": "https://www.museumofone.art/research-aesthetics-experience/",
+      "source_url": "https://www.museumofone.art/research-aesthetics-experience/",
+      "reviewed": "2026-11-04",
+      "stage": "In development",
+      "identifiers": [
+        {
+          "scheme": "PIRR programme reference",
+          "value": "moo-program-cea97d3424057b2f28700b16",
+          "source_url": "https://www.museumofone.art/research-aesthetics-experience/#programme-record"
+        }
+      ],
+      "question": "The programme asks how a critic can remain accountable to an experience while recognising the historical and conceptual conditions that shape it. It attends to the relation between the work, the viewer, and the writing subject; to the use of names and categories; and to the limits of claims made on an artwork's behalf.",
+      "form": "Co-authored book",
+      "responsibility": "Dong-Yeon Koh and Dorian Vale",
+      "current_work": "Dong-Yeon Koh and Dorian Vale are co-authoring Between Image and Interpretation: On Restraint . The project examines interpretation, aesthetic experience, mediation, art history, and the developing implications of Post-Interpretive Criticism. It asks what restraint requires when a critic encounters, situates, describes and interprets a work. The published conversation and the developing book are distinct records. This entry does not present the manuscript as a completed publication.",
+      "public_sources": [
+        {
+          "title": "The Conversation: Dong-Yeon Koh × Dorian Vale",
+          "url": "https://www.museumofone.art/dong-yeon-koh/",
+          "relation": "Available public record listed by the programme account"
+        },
+        {
+          "title": "Original conversation hosted by Koh",
+          "url": "https://www.dongyeonkoh.com/conversation",
+          "relation": "Available public record listed by the programme account"
+        }
+      ]
+    },
+    {
+      "key": "research-critical-language",
+      "title": "Alexander Viktorovich Markov: Critical Language and Lasting Correction",
+      "url": "https://www.museumofone.art/research-critical-language/",
+      "source_url": "https://www.museumofone.art/research-critical-language/",
+      "reviewed": "2026-11-04",
+      "stage": "In development",
+      "identifiers": [
+        {
+          "scheme": "PIRR programme reference",
+          "value": "moo-program-2b3ad664cbd92f69b862db8c",
+          "source_url": "https://www.museumofone.art/research-critical-language/#programme-record"
+        }
+      ],
+      "question": "What makes a correction to an interpretation remain effective over time?",
+      "form": "Theoretical dialogue",
+      "responsibility": "Alexander Viktorovich Markov and Dorian Vale",
+      "current_work": "A developing theoretical dialogue with philosopher and literary theorist Alexander Viktorovich Markov concerns the authority of critical language and the endurance of correction. The programme asks how an interpretation comes to guide subsequent decisions, and what allows a justified correction to remain available and effective when that interpretation is encountered again. The dialogue asks how critical language shapes later encounters with a work, and who remains responsible for its use. Shared writing is under discussion; no format or venue has been agreed.",
+      "public_sources": [
+        {
+          "title": "Hauntmark Theory: The Lingering Weight of Words",
+          "url": "https://www.museumofone.art/hauntmark-theory-the-lingering-weight-of-words/",
+          "relation": "Available public record listed by the programme account"
+        },
+        {
+          "title": "The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "relation": "Available public record listed by the programme account"
+        }
+      ]
+    },
+    {
+      "key": "oindrilla-maity-surai",
+      "title": "Oindrilla Maity Surai: Curatorial Context and Interpretation",
+      "url": "https://www.museumofone.art/oindrilla-maity-surai/",
+      "source_url": "https://www.museumofone.art/oindrilla-maity-surai/",
+      "reviewed": "2026-11-04",
+      "stage": "In development",
+      "identifiers": [],
+      "question": "How can curatorial context make a work accessible without prescribing the account a viewer gives of it?",
+      "form": "Curatorial micro-study in development",
+      "responsibility": "Oindrilla Maity Surai and Dorian Vale",
+      "current_work": "The inquiry examines how a curatorial decision shapes access to an artwork and the accounts that follow an encounter. It considers selection, omission, sequence, language, and the authority carried by exhibition texts. Oindrilla Maity Surai leads the curatorial work and local relationships. Dorian Vale develops comparative documentation and analysis through Museum of One. The study brings their respective contributions into discussion with Post-Interpretive Criticism, including the distinction between context necessary for access and language that directs a viewer towards a settled reading. The study does not assume that less context is preferable. Historical information, language access, and the conditions in which a work is shown must be considered before comparing alternative framings."
+    },
+    {
+      "key": "paul-gladston",
+      "title": "Paul Gladston: Witnessing, Chinese Aesthetics, and Curatorial Afterlives",
+      "url": "https://www.museumofone.art/paul-gladston/",
+      "source_url": "https://www.museumofone.art/paul-gladston/",
+      "reviewed": "2026-11-04",
+      "stage": "In development",
+      "identifiers": [],
+      "question": "How do witnessing, Chinese aesthetics, and plural critical perspectives shape a curatorial encounter, and what happens to a framework after it enters circulation?",
+      "form": "Written dialogue in development",
+      "responsibility": "Paul Gladston and Dorian Vale",
+      "current_work": "The conversation developed from reciprocal correspondence and an agreed exchange of questions, responses, and follow-up responses. Each response can prompt further questions; the exchange is not a fixed interview. Gladston’s scholarship supplies distinct perspectives on contemporary Chinese art, cultural translation, deconstruction, and polylogue. Vale brings questions developed through Post-Interpretive Criticism about witnessing, mediation, and how provisional accounts can shape later encounters. These contributions remain attributable to their respective authors; a shared conversation does not imply complete theoretical agreement."
+    },
+    {
+      "key": "research-methods",
+      "title": "Phenomenological Methods and Diagnostic Reading",
+      "url": "https://www.museumofone.art/research-methods/",
+      "source_url": "https://www.museumofone.art/research-methods/",
+      "reviewed": "2026-11-04",
+      "stage": "Continuing research",
+      "identifiers": [
+        {
+          "scheme": "PIRR project ID",
+          "value": "pir-prj-pyp5yx3w",
+          "source_url": "https://www.museumofone.art/research-methods/#programme-record"
+        }
+      ],
+      "question": "This programme examines whether the conduct of critical writing can be described with sufficient precision to support comparison, disagreement, and revision. It connects phenomenological aesthetics with practical questions about what a text observes, what it infers, how forcefully it interprets, and what evidence supports its claims.",
+      "form": "Research and experimental methods",
+      "responsibility": "Museum of One",
+      "current_work": "Measuring Proximity , From Husserl's Mathematics to Dufrenne's Aesthetics , and Quantifying Critical Posture develop the published methodological sequence. Diagnostics Without Possession provides an operational reference for coding and inter-rater reliability work. The reading tools show how the proposed distinctions can be applied to critical language.",
+      "public_sources": [
+        {
+          "title": "Diagnostics Without Possession",
+          "url": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/",
+          "relation": "Available public record listed by the programme account"
+        },
+        {
+          "title": "Research and diagnostic tools",
+          "url": "https://www.museumofone.art/analytical-diagnostic-tools/",
+          "relation": "Available public record listed by the programme account"
+        }
+      ]
+    },
+    {
+      "key": "reiko-tomii",
+      "title": "Reiko Tomii: Operation and Historical Answerability",
+      "url": "https://www.museumofone.art/reiko-tomii/",
+      "source_url": "https://www.museumofone.art/reiko-tomii/",
+      "reviewed": "2026-11-04",
+      "stage": "In development",
+      "identifiers": [
+        {
+          "scheme": "PIRR programme reference",
+          "value": "moo-program-fc96d462c463652ce260cd27",
+          "source_url": "https://www.museumofone.art/reiko-tomii/#programme-record"
+        }
+      ],
+      "question": "How can evidence of artistic labour, organization, and access change an art-historical account, rather than remain background to it?",
+      "form": "Independent inquiry following discussion with Reiko Tomii",
+      "responsibility": "Dorian Vale",
+      "current_work": "Following discussion and feedback from Reiko Tomii and engagement with her published research, Dorian Vale is developing an independent inquiry into operation, documentation, and historical answerability. It asks how evidence of artistic labour, organization, and access can change an art-historical account, rather than remain background to it. Tomii's distinction between expression and operation provides a point of contact. Vale's further question concerns what an account must do when operational evidence places pressure on an established interpretation: what must be revised, which claims remain supportable, and how the grounds of a correction can remain available to later readers. Tomii's conceptual contribution and historical work are attributed to her. The further argument and proposed research direction belong to Vale. This entry does not imply her coauthorship, endorsement, participation in every part of the inquiry, or an agreed joint publication. The discussion and the independent working study are distinct from a published dialogue. Private meeting records and correspondence are not reproduced here.",
+      "public_sources": [
+        {
+          "title": "Tomii's Thinking Operationally",
+          "url": "https://doi.org/10.37050/wpc-co-01_05",
+          "relation": "Available public record listed by the programme account"
+        },
+        {
+          "title": "Vale's published context: Hauntmark Theory",
+          "url": "https://www.museumofone.art/hauntmark-theory-the-lingering-weight-of-words/",
+          "relation": "Available public record listed by the programme account"
+        }
+      ]
+    },
+    {
+      "key": "sudanese-art-and-aesthetics",
+      "title": "Sudanese Art and Aesthetics",
+      "url": "https://www.museumofone.art/sudanese-art-and-aesthetics/",
+      "source_url": "https://www.museumofone.art/sudanese-art-and-aesthetics/",
+      "reviewed": "2026-11-04",
+      "stage": "Continuing research",
+      "identifiers": [],
+      "question": "What can sustained attention to Sudanese art disclose about aesthetic experience, cultural memory and the critic’s responsibilities to works and their histories?",
+      "form": "Art-historical and aesthetic research",
+      "responsibility": "Dorian Vale. Other contributions are credited within their individual records.",
+      "current_work": "This programme brings together research on Sudanese art, aesthetic experience and the ethics of criticism. It provides a home for books, papers and critical essays, tracing how particular investigations develop into further work. Cultural Authority Beyond the Song , a working paper in progress, extends the inquiry to singers, reverence and artistic hierarchy in Sudan. The inquiry examines artworks and artistic practices alongside the histories, sources and conditions through which they become available to a critic. Questions of war, displacement and cultural memory remain part of this work, alongside attention to material practice and the aesthetic life of the works themselves. The Arabic translation of Threads of Sand, Scar & Scripture belongs within this wider programme. Its translator, progress and edition history retain their own record."
+    },
+    {
+      "key": "research-witness-material-memory",
+      "title": "Witness, Material Presence, and Cultural Memory",
+      "url": "https://www.museumofone.art/research-witness-material-memory/",
+      "source_url": "https://www.museumofone.art/research-witness-material-memory/",
+      "reviewed": "2026-11-04",
+      "stage": "Continuing research",
+      "identifiers": [
+        {
+          "scheme": "PIRR project ID",
+          "value": "pir-prj-dd7kt5rw",
+          "source_url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+        }
+      ],
+      "question": "Applied criticism tests the responsibilities described in the philosophical work against particular artworks, spaces, materials, and histories. This programme attends to absence, grief, displacement, material fatigue, and the persistence of a work's consequences without allowing a subject's seriousness to stand in for close attention.",
+      "current_work": "The Canon of Witnesses and the field essays preserve encounters with named works and artists. Long-form publications extend this inquiry to Sudanese art and the ethics of witnessing, and to architecture, power, and the moral evidence of space.",
+      "form": "Field essays and studies",
+      "responsibility": "Museum of One",
+      "public_sources": [
+        {
+          "title": "Art That Falls Apart",
+          "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "relation": "Available public record listed by the programme account"
+        },
+        {
+          "title": "Canon of Witnesses",
+          "url": "https://www.museumofone.art/tag/canon-of-witnesses/",
+          "relation": "Available public record listed by the programme account"
+        },
+        {
+          "title": "Critical writing and field essays",
+          "url": "https://www.museumofone.art/tag/art-criticism-reflective-field-essays/",
+          "relation": "Available public record listed by the programme account"
+        }
+      ]
+    },
+    {
+      "key": "research-intellectual-history",
+      "title": "Intellectual History and Conceptual Development",
+      "url": "https://www.museumofone.art/research-intellectual-history/",
+      "source_url": "https://www.museumofone.art/research-intellectual-history/",
+      "reviewed": "2026-11-04",
+      "stage": "Continuing research",
+      "identifiers": [
+        {
+          "scheme": "PIRR project ID",
+          "value": "pir-prj-xgd6wb9d",
+          "source_url": "https://www.museumofone.art/research-intellectual-history/#programme-record"
+        }
+      ],
+      "question": "This programme follows the development of Post-Interpretive Criticism's vocabulary, distinctions, and qualifications across the published work. It examines how a concept is introduced, how its use changes, and how later arguments qualify earlier formulations.",
+      "current_work": "The Living Lexicon records the vocabulary used in the foundational essays and doctrine. A definition does not establish universal adoption or independent validation. Source-based research keeps a term attached to the work in which it is proposed and the argument through which its use is defended.",
+      "form": "Source-based research",
+      "responsibility": "Museum of One",
+      "public_sources": [
+        {
+          "title": "Living Lexicon",
+          "url": "https://www.museumofone.art/the-living-lexicon/",
+          "relation": "Available public record listed by the programme account"
+        },
+        {
+          "title": "Doctrine, Foundational Essays & Investigations",
+          "url": "https://www.museumofone.art/tag/doctrine-foundational-essays-investigations/",
+          "relation": "Available public record listed by the programme account"
+        }
+      ]
+    },
+    {
+      "key": "arabic-translation-threads-of-sand",
+      "title": "Threads of Sand: Arabic Translation",
+      "url": "https://www.museumofone.art/arabic-translation-threads-of-sand/",
+      "source_url": "https://www.museumofone.art/arabic-translation-threads-of-sand/",
+      "reviewed": "2026-11-04",
+      "stage": "In development",
+      "identifiers": [
+        {
+          "scheme": "PIRR programme reference",
+          "value": "moo-program-ccb726880981ccbeb400023c",
+          "source_url": "https://www.museumofone.art/arabic-translation-threads-of-sand/#programme-record"
+        }
+      ],
+      "question": "How can a critical study of Sudanese art address war, displacement and cultural memory through the ethics of witnessing?",
+      "current_work": "Threads of Sand is being translated into Arabic by Osman Omran, a Sudanese graphic and book designer and freelance translator based in Muscat, Oman. Omran proposed the translation for Sudanese readers and a wider Arabic-language readership. Dorian Vale authorized the work on 21 August 2026 and accepted the proposed translator's preface. Omran subsequently reported that the translation was progressing. The work extends the book's access across languages while retaining the distinction between the author's argument and the translator's contribution. Translation, design, and an eventual edition are related activities, but progress in one does not establish that the others are complete. The Arabic translation is authorized and in progress. No completed Arabic edition, delivery date, or publishing agreement is announced here.",
+      "form": "Arabic translation",
+      "responsibility": "Osman Omran, translator; Dorian Vale, author",
+      "public_sources": [
+        {
+          "title": "Existing English-language publication",
+          "url": "https://www.museumofone.art/publication-threads-of-sand/",
+          "relation": "Available public record listed by the programme account"
+        }
+      ]
+    }
+  ],
+  "programme_relations": [
+    {
+      "from": "research-methods",
+      "to": "research-witness-material-memory",
+      "relation": "Related development",
+      "source_url": "https://www.museumofone.art/research-methods/"
+    },
+    {
+      "from": "sudanese-art-and-aesthetics",
+      "to": "arabic-translation-threads-of-sand",
+      "relation": "Translation strand within the Sudanese art programme",
+      "source_url": "https://www.museumofone.art/sudanese-art-and-aesthetics/"
+    }
+  ],
+  "publications": [
+    {
+      "archive_reference": "MOO-CAT-001",
+      "edition_doi": "10.5281/zenodo.19864099",
+      "zenodo_record_id": "19864099",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "Post-Interpretive Criticism: Volume I - The Foundational Essays",
+      "url": "https://archive.museumofone.art/items/19864099.html",
+      "programme_relationships": [
+        {
+          "programme_key": "research-intellectual-history",
+          "programme_title": "Intellectual History and Conceptual Development",
+          "programme_url": "https://www.museumofone.art/research-intellectual-history/",
+          "programme_stage": "Continuing research",
+          "registry_url": "https://archive.museumofone.art/research-registry.html#research-intellectual-history",
+          "identifiers": [
+            {
+              "scheme": "PIRR project ID",
+              "value": "pir-prj-xgd6wb9d",
+              "source_url": "https://www.museumofone.art/research-intellectual-history/#programme-record"
+            }
+          ],
+          "relation": "Earlier foundation examined by this programme.",
+          "relation_note": "Earlier foundation examined by this programme.",
+          "source_url": "https://www.museumofone.art/publication-foundational-essays/"
+        },
+        {
+          "programme_key": "research-methods",
+          "programme_title": "Phenomenological Methods and Diagnostic Reading",
+          "programme_url": "https://www.museumofone.art/research-methods/",
+          "programme_stage": "Continuing research",
+          "registry_url": "https://archive.museumofone.art/research-registry.html#research-methods",
+          "identifiers": [
+            {
+              "scheme": "PIRR project ID",
+              "value": "pir-prj-pyp5yx3w",
+              "source_url": "https://www.museumofone.art/research-methods/#programme-record"
+            }
+          ],
+          "relation": "Earlier theoretical foundation for methodological investigation.",
+          "relation_note": "Earlier theoretical foundation for methodological investigation.",
+          "source_url": "https://www.museumofone.art/publication-foundational-essays/"
+        }
+      ],
+      "components": [
+        {
+          "reference": "MOO-CAT-001/C001",
+          "title": "Preface",
+          "url": "https://archive.museumofone.art/parts/19864099-c001.html",
+          "reader_url": "https://archive.museumofone.art/read/19864099.html#page=6",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-001/C002",
+          "title": "Post-Interpretive Criticism: A Doctrine of Restraint, Witness, and Moral Proximity in Contemporary Art Writing",
+          "url": "https://archive.museumofone.art/parts/19864099-c002.html",
+          "reader_url": "https://archive.museumofone.art/read/19864099.html#page=9",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-001/C003",
+          "title": "A Philosophical Departure from Post-Criticism",
+          "url": "https://archive.museumofone.art/parts/19864099-c003.html",
+          "reader_url": "https://archive.museumofone.art/read/19864099.html#page=16",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-001/C004",
+          "title": "Art as Truth: A Treatise",
+          "url": "https://archive.museumofone.art/parts/19864099-c004.html",
+          "reader_url": "https://archive.museumofone.art/read/19864099.html#page=22",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-001/C005",
+          "title": "Stillmark Theory: A Treatise on Presence, Vanishing, and the Discipline of the Fleeting",
+          "url": "https://archive.museumofone.art/parts/19864099-c005.html",
+          "reader_url": "https://archive.museumofone.art/read/19864099.html#page=28",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-001/C006",
+          "title": "Absential Aesthetics Theory: On Ghosts, Absence, and the Afterlife of Art",
+          "url": "https://archive.museumofone.art/parts/19864099-c006.html",
+          "reader_url": "https://archive.museumofone.art/read/19864099.html#page=35",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-001/C007",
+          "title": "Hauntmark Theory: The Lingering Weight of Words",
+          "url": "https://archive.museumofone.art/parts/19864099-c007.html",
+          "reader_url": "https://archive.museumofone.art/read/19864099.html#page=40",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-001/C008",
+          "title": "Language as a Blade: The Ethics of Precision in Post-Interpretive Criticism",
+          "url": "https://archive.museumofone.art/parts/19864099-c008.html",
+          "reader_url": "https://archive.museumofone.art/read/19864099.html#page=47",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-001/C009",
+          "title": "Message Transfer Theory (MTT): A Treatise on the Reversal of Meaning, the Displacement of Intent, and the Object as Conduit",
+          "url": "https://archive.museumofone.art/parts/19864099-c009.html",
+          "reader_url": "https://archive.museumofone.art/read/19864099.html#page=54",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-001/C010",
+          "title": "The Viewer as Evidence: A Treatise on Witness, Residue, and Critical Consequence",
+          "url": "https://archive.museumofone.art/parts/19864099-c010.html",
+          "reader_url": "https://archive.museumofone.art/read/19864099.html#page=61",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-001/C011",
+          "title": "Theory of Aesthetic Displacement: A Treatise on Witness, Alteration, and the Irreversible Encounter",
+          "url": "https://archive.museumofone.art/parts/19864099-c011.html",
+          "reader_url": "https://archive.museumofone.art/read/19864099.html#page=70",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-001/C012",
+          "title": "The Theory of Misplacement",
+          "url": "https://archive.museumofone.art/parts/19864099-c012.html",
+          "reader_url": "https://archive.museumofone.art/read/19864099.html#page=74",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-001/C013",
+          "title": "The Archive as Movement",
+          "url": "https://archive.museumofone.art/parts/19864099-c013.html",
+          "reader_url": "https://archive.museumofone.art/read/19864099.html#page=79",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-001/C014",
+          "title": "About the Author",
+          "url": "https://archive.museumofone.art/parts/19864099-c014.html",
+          "reader_url": "https://archive.museumofone.art/read/19864099.html#page=81",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        }
+      ]
+    },
+    {
+      "archive_reference": "MOO-CAT-002",
+      "edition_doi": "10.5281/zenodo.19864115",
+      "zenodo_record_id": "19864115",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "Post-Interpretive Criticism: Volume II — Essays from the Field",
+      "url": "https://archive.museumofone.art/items/19864115.html",
+      "programme_relationships": [
+        {
+          "programme_key": "research-witness-material-memory",
+          "programme_title": "Witness, Material Presence, and Cultural Memory",
+          "programme_url": "https://www.museumofone.art/research-witness-material-memory/",
+          "programme_stage": "Continuing research",
+          "registry_url": "https://archive.museumofone.art/research-registry.html#research-witness-material-memory",
+          "identifiers": [
+            {
+              "scheme": "PIRR project ID",
+              "value": "pir-prj-dd7kt5rw",
+              "source_url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+            }
+          ],
+          "relation": "Published collection associated with the continuing inquiry.",
+          "relation_note": "Published collection associated with the continuing inquiry.",
+          "source_url": "https://www.museumofone.art/publication-essays-from-field/"
+        }
+      ],
+      "components": [
+        {
+          "reference": "MOO-CAT-002/C001",
+          "title": "Preface",
+          "url": "https://archive.museumofone.art/parts/19864115-c001.html",
+          "reader_url": "https://archive.museumofone.art/read/19864115.html#page=6",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-002/C002",
+          "title": "The Custodian of Consequence: Reframing the Role of the Critic",
+          "url": "https://archive.museumofone.art/parts/19864115-c002.html",
+          "reader_url": "https://archive.museumofone.art/read/19864115.html#page=9",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-002/C003",
+          "title": "Against the Compulsive Urge to Interpret",
+          "url": "https://archive.museumofone.art/parts/19864115-c003.html",
+          "reader_url": "https://archive.museumofone.art/read/19864115.html#page=16",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-002/C004",
+          "title": "Moral Proximity: Ethics as Method in Post-Interpretive Criticism",
+          "url": "https://archive.museumofone.art/parts/19864115-c004.html",
+          "reader_url": "https://archive.museumofone.art/read/19864115.html#page=22",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-002/C005",
+          "title": "The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism",
+          "url": "https://archive.museumofone.art/parts/19864115-c005.html",
+          "reader_url": "https://archive.museumofone.art/read/19864115.html#page=28",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-002/C006",
+          "title": "Post-Interpretive Method: How to Practice Restraint in Front of a Work of Art",
+          "url": "https://archive.museumofone.art/parts/19864115-c006.html",
+          "reader_url": "https://archive.museumofone.art/read/19864115.html#page=42",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-002/C007",
+          "title": "Witnessing vs. Interpreting – A Post-Interpretive Comparative Exercise",
+          "url": "https://archive.museumofone.art/parts/19864115-c007.html",
+          "reader_url": "https://archive.museumofone.art/read/19864115.html#page=46",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-002/C008",
+          "title": "Language as Custody — Writing Without Harm in Post-Interpretive Criticism",
+          "url": "https://archive.museumofone.art/parts/19864115-c008.html",
+          "reader_url": "https://archive.museumofone.art/read/19864115.html#page=52",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-002/C009",
+          "title": "Five Principles of Post-Interpretive Criticism: A Study Guide",
+          "url": "https://archive.museumofone.art/parts/19864115-c009.html",
+          "reader_url": "https://archive.museumofone.art/read/19864115.html#page=56",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-002/C010",
+          "title": "Formal Defense of Post-Interpretive Criticism",
+          "url": "https://archive.museumofone.art/parts/19864115-c010.html",
+          "reader_url": "https://archive.museumofone.art/read/19864115.html#page=62",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-002/C011",
+          "title": "A Philosophical Departure from Post-Criticism",
+          "url": "https://archive.museumofone.art/parts/19864115-c011.html",
+          "reader_url": "https://archive.museumofone.art/read/19864115.html#page=68",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-002/C012",
+          "title": "The First Break Since Postmodernism: The Rise of Post-Interpretive Criticism",
+          "url": "https://archive.museumofone.art/parts/19864115-c012.html",
+          "reader_url": "https://archive.museumofone.art/read/19864115.html#page=74",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        }
+      ]
+    },
+    {
+      "archive_reference": "MOO-CAT-003",
+      "edition_doi": "10.5281/zenodo.23395654",
+      "zenodo_record_id": "23395654",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "Threads of Sand, Scar & Scripture: Sudanese Art and the Ethics of Witnessing (A Post-Interpretive Study)",
+      "url": "https://archive.museumofone.art/items/23395654.html",
+      "programme_relationships": [
+        {
+          "programme_key": "research-witness-material-memory",
+          "programme_title": "Witness, Material Presence, and Cultural Memory",
+          "programme_url": "https://www.museumofone.art/research-witness-material-memory/",
+          "programme_stage": "Continuing research",
+          "registry_url": "https://archive.museumofone.art/research-registry.html#research-witness-material-memory",
+          "identifiers": [
+            {
+              "scheme": "PIRR project ID",
+              "value": "pir-prj-dd7kt5rw",
+              "source_url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+            }
+          ],
+          "relation": "Published study associated with the continuing inquiry.",
+          "relation_note": "Published study associated with the continuing inquiry.",
+          "source_url": "https://www.museumofone.art/publication-threads-of-sand/"
+        },
+        {
+          "programme_key": "arabic-translation-threads-of-sand",
+          "programme_title": "Threads of Sand: Arabic Translation",
+          "programme_url": "https://www.museumofone.art/arabic-translation-threads-of-sand/",
+          "programme_stage": "In development",
+          "registry_url": "https://archive.museumofone.art/research-registry.html#arabic-translation-threads-of-sand",
+          "identifiers": [
+            {
+              "scheme": "PIRR programme reference",
+              "value": "moo-program-ccb726880981ccbeb400023c",
+              "source_url": "https://www.museumofone.art/arabic-translation-threads-of-sand/#programme-record"
+            }
+          ],
+          "relation": "Published English-language source edition for translation.",
+          "relation_note": "Published English-language source edition for translation.",
+          "source_url": "https://www.museumofone.art/publication-threads-of-sand/"
+        },
+        {
+          "programme_key": "sudanese-art-and-aesthetics",
+          "programme_title": "Sudanese Art and Aesthetics",
+          "programme_url": "https://www.museumofone.art/sudanese-art-and-aesthetics/",
+          "programme_stage": "Continuing research",
+          "registry_url": "https://archive.museumofone.art/research-registry.html#sudanese-art-and-aesthetics",
+          "identifiers": [],
+          "relation": "Published study within the continuing programme.",
+          "relation_note": "Published study within the continuing programme.",
+          "source_url": "https://www.museumofone.art/publication-threads-of-sand/"
+        }
+      ],
+      "components": [
+        {
+          "reference": "MOO-CAT-003/C001",
+          "title": "Preface",
+          "url": "https://archive.museumofone.art/parts/23395654-c001.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=7",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C002",
+          "title": "The Lens of Origin: The Unwritten Archive, Before Islam, Before Labels",
+          "url": "https://archive.museumofone.art/parts/23395654-c002.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=11",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C003",
+          "title": "The Lens of the Land: River-Cosmology and Desert Intelligence",
+          "url": "https://archive.museumofone.art/parts/23395654-c003.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=28",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C004",
+          "title": "The Lens of the Body: Scar, Pattern, and Totem",
+          "url": "https://archive.museumofone.art/parts/23395654-c004.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=48",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C005",
+          "title": "The Lens of Aftermath: Art After the Border Was Drawn",
+          "url": "https://archive.museumofone.art/parts/23395654-c005.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=63",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C006",
+          "title": "The Lens of Erasure: When Civilizing Became a Curriculum",
+          "url": "https://archive.museumofone.art/parts/23395654-c006.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=79",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C007",
+          "title": "The Lens of Resistance: When Beauty Became a Code",
+          "url": "https://archive.museumofone.art/parts/23395654-c007.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=96",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C008",
+          "title": "The Lens of the Sacred: The Theology of Repetition",
+          "url": "https://archive.museumofone.art/parts/23395654-c008.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=110",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C009",
+          "title": "The Lens of Sand & Scripture: Aesthetic Islam in Sudan",
+          "url": "https://archive.museumofone.art/parts/23395654-c009.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=119",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C010",
+          "title": "The Lens of Oral Memory: The Artwork That Walks Before the Pen",
+          "url": "https://archive.museumofone.art/parts/23395654-c010.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=134",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C011",
+          "title": "The Lens of Architecture: Sudanese Space as Moral Instruction",
+          "url": "https://archive.museumofone.art/parts/23395654-c011.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=144",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C012",
+          "title": "The Lens of Craft: Inheritance in the Hands",
+          "url": "https://archive.museumofone.art/parts/23395654-c012.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=154",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C013",
+          "title": "The Lens of Migration: The Shadow Canon of Diaspora",
+          "url": "https://archive.museumofone.art/parts/23395654-c013.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=166",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C014",
+          "title": "The Lens of Rupture: The Hand Continues",
+          "url": "https://archive.museumofone.art/parts/23395654-c014.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=180",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C015",
+          "title": "The Lens of Silence: Withheld Testimony as Strategy",
+          "url": "https://archive.museumofone.art/parts/23395654-c015.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=194",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C016",
+          "title": "The Lens of the Ghost: What Sudan Tried to Forget",
+          "url": "https://archive.museumofone.art/parts/23395654-c016.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=207",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-003/C017",
+          "title": "Epilogue: The Custodian’s Oath",
+          "url": "https://archive.museumofone.art/parts/23395654-c017.html",
+          "reader_url": "https://archive.museumofone.art/read/23395654.html#page=224",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        }
+      ]
+    },
+    {
+      "archive_reference": "MOO-CAT-004",
+      "edition_doi": "10.5281/zenodo.20383926",
+      "zenodo_record_id": "20383926",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
+      "url": "https://archive.museumofone.art/items/20383926.html",
+      "programme_relationships": [
+        {
+          "programme_key": "research-witness-material-memory",
+          "programme_title": "Witness, Material Presence, and Cultural Memory",
+          "programme_url": "https://www.museumofone.art/research-witness-material-memory/",
+          "programme_stage": "Continuing research",
+          "registry_url": "https://archive.museumofone.art/research-registry.html#research-witness-material-memory",
+          "identifiers": [
+            {
+              "scheme": "PIRR project ID",
+              "value": "pir-prj-dd7kt5rw",
+              "source_url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+            }
+          ],
+          "relation": "Published study associated with the continuing inquiry.",
+          "relation_note": "Published study associated with the continuing inquiry.",
+          "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/"
+        }
+      ],
+      "components": [
+        {
+          "reference": "MOO-CAT-004/C001",
+          "title": "Preface",
+          "url": "https://archive.museumofone.art/parts/20383926-c001.html",
+          "reader_url": "https://archive.museumofone.art/read/20383926.html#page=6",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-004/C002",
+          "title": "Introduction",
+          "url": "https://archive.museumofone.art/parts/20383926-c002.html",
+          "reader_url": "https://archive.museumofone.art/read/20383926.html#page=9",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-004/C003",
+          "title": "The Moral Birth of Spaces",
+          "url": "https://archive.museumofone.art/parts/20383926-c003.html",
+          "reader_url": "https://archive.museumofone.art/read/20383926.html#page=23",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-004/C004",
+          "title": "The Choreographers: A Lineage of Power",
+          "url": "https://archive.museumofone.art/parts/20383926-c004.html",
+          "reader_url": "https://archive.museumofone.art/read/20383926.html#page=37",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-004/C005",
+          "title": "The Body as the First Blueprint",
+          "url": "https://archive.museumofone.art/parts/20383926-c005.html",
+          "reader_url": "https://archive.museumofone.art/read/20383926.html#page=52",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-004/C006",
+          "title": "The Architecture of Shame",
+          "url": "https://archive.museumofone.art/parts/20383926-c006.html",
+          "reader_url": "https://archive.museumofone.art/read/20383926.html#page=67",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-004/C007",
+          "title": "The Architecture of Obedience",
+          "url": "https://archive.museumofone.art/parts/20383926-c007.html",
+          "reader_url": "https://archive.museumofone.art/read/20383926.html#page=82",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-004/C008",
+          "title": "The Architecture of Awe",
+          "url": "https://archive.museumofone.art/parts/20383926-c008.html",
+          "reader_url": "https://archive.museumofone.art/read/20383926.html#page=98",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-004/C009",
+          "title": "Space as Moral Evidence",
+          "url": "https://archive.museumofone.art/parts/20383926-c009.html",
+          "reader_url": "https://archive.museumofone.art/read/20383926.html#page=113",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-004/C010",
+          "title": "Against Interpretation: The Ethical Stance",
+          "url": "https://archive.museumofone.art/parts/20383926-c010.html",
+          "reader_url": "https://archive.museumofone.art/read/20383926.html#page=130",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-004/C011",
+          "title": "The Ethics of Custodial Space",
+          "url": "https://archive.museumofone.art/parts/20383926-c011.html",
+          "reader_url": "https://archive.museumofone.art/read/20383926.html#page=148",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-004/C012",
+          "title": "The Critic as Witness",
+          "url": "https://archive.museumofone.art/parts/20383926-c012.html",
+          "reader_url": "https://archive.museumofone.art/read/20383926.html#page=163",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-004/C013",
+          "title": "The Post-Interpretive Doctrine",
+          "url": "https://archive.museumofone.art/parts/20383926-c013.html",
+          "reader_url": "https://archive.museumofone.art/read/20383926.html#page=176",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        },
+        {
+          "reference": "MOO-CAT-004/C014",
+          "title": "The Benedict",
+          "url": "https://archive.museumofone.art/parts/20383926-c014.html",
+          "reader_url": "https://archive.museumofone.art/read/20383926.html#page=190",
+          "identifier_scheme": "Local analytic description reference",
+          "programme_attribution": "Access through parent publication; no independent component-level programme relationship asserted."
+        }
+      ]
+    },
+    {
+      "archive_reference": "MOO-CAT-005",
+      "edition_doi": "10.5281/zenodo.23430200",
+      "zenodo_record_id": "23430200",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles",
+      "url": "https://archive.museumofone.art/items/23430200.html",
+      "programme_relationships": [
+        {
+          "programme_key": "research-critical-language",
+          "programme_title": "Alexander Viktorovich Markov: Critical Language and Lasting Correction",
+          "programme_url": "https://www.museumofone.art/research-critical-language/",
+          "programme_stage": "In development",
+          "registry_url": "https://archive.museumofone.art/research-registry.html#research-critical-language",
+          "identifiers": [
+            {
+              "scheme": "PIRR programme reference",
+              "value": "moo-program-2b3ad664cbd92f69b862db8c",
+              "source_url": "https://www.museumofone.art/research-critical-language/#programme-record"
+            }
+          ],
+          "relation": "Published working paper within a developing inquiry",
+          "relation_note": "Published working paper within a developing inquiry",
+          "source_url": "https://www.museumofone.art/after-the-interpretation-changes/"
+        }
+      ],
+      "components": []
+    },
+    {
+      "archive_reference": "MOO-CAT-006",
+      "edition_doi": "10.5281/zenodo.23428974",
+      "zenodo_record_id": "23428974",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "Answerability: Exhibition, Documentation, and Historical Evidence in Postwar Japanese Art",
+      "url": "https://archive.museumofone.art/items/23428974.html",
+      "programme_relationships": [
+        {
+          "programme_key": "reiko-tomii",
+          "programme_title": "Reiko Tomii: Operation and Historical Answerability",
+          "programme_url": "https://www.museumofone.art/reiko-tomii/",
+          "programme_stage": "In development",
+          "registry_url": "https://archive.museumofone.art/research-registry.html#reiko-tomii",
+          "identifiers": [
+            {
+              "scheme": "PIRR programme reference",
+              "value": "moo-program-fc96d462c463652ce260cd27",
+              "source_url": "https://www.museumofone.art/reiko-tomii/#programme-record"
+            }
+          ],
+          "relation": "Published working paper within a developing inquiry",
+          "relation_note": "Published working paper within a developing inquiry",
+          "source_url": "https://www.museumofone.art/answerability/"
+        }
+      ],
+      "components": []
+    },
+    {
+      "archive_reference": "MOO-CAT-007",
+      "edition_doi": "10.5281/zenodo.21715085",
+      "zenodo_record_id": "21715085",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "Art That Falls Apart: Material Fatigue as Moral Statement",
+      "url": "https://archive.museumofone.art/items/21715085.html",
+      "programme_relationships": [
+        {
+          "programme_key": "research-witness-material-memory",
+          "programme_title": "Witness, Material Presence, and Cultural Memory",
+          "programme_url": "https://www.museumofone.art/research-witness-material-memory/",
+          "programme_stage": "Continuing research",
+          "registry_url": "https://archive.museumofone.art/research-registry.html#research-witness-material-memory",
+          "identifiers": [
+            {
+              "scheme": "PIRR project ID",
+              "value": "pir-prj-dd7kt5rw",
+              "source_url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+            }
+          ],
+          "relation": "Published field essay in this programme.",
+          "relation_note": "Published field essay in this programme.",
+          "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/"
+        }
+      ],
+      "components": []
+    },
+    {
+      "archive_reference": "MOO-CAT-008",
+      "edition_doi": "10.5281/zenodo.21241866",
+      "zenodo_record_id": "21241866",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "Hassan Sharif's Objects: The Ascetic of the Everyday",
+      "url": "https://archive.museumofone.art/items/21241866.html",
+      "programme_relationships": [
+        {
+          "programme_key": "research-witness-material-memory",
+          "programme_title": "Witness, Material Presence, and Cultural Memory",
+          "programme_url": "https://www.museumofone.art/research-witness-material-memory/",
+          "programme_stage": "Continuing research",
+          "registry_url": "https://archive.museumofone.art/research-registry.html#research-witness-material-memory",
+          "identifiers": [
+            {
+              "scheme": "PIRR project ID",
+              "value": "pir-prj-dd7kt5rw",
+              "source_url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+            }
+          ],
+          "relation": "Related field essay on material presence, the visibility of labour and the responsibilities of preserving fragile work.",
+          "relation_note": "Related field essay on material presence, the visibility of labour and the responsibilities of preserving fragile work.",
+          "source_url": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
+        }
+      ],
+      "components": []
+    },
+    {
+      "archive_reference": "MOO-CAT-009",
+      "edition_doi": "10.5281/zenodo.20593003",
+      "zenodo_record_id": "20593003",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "El Anatsui's Man's Cloth Series: Redemption of Waste as Modern Eucharist",
+      "url": "https://archive.museumofone.art/items/20593003.html",
+      "programme_relationships": [
+        {
+          "programme_key": "research-witness-material-memory",
+          "programme_title": "Witness, Material Presence, and Cultural Memory",
+          "programme_url": "https://www.museumofone.art/research-witness-material-memory/",
+          "programme_stage": "Continuing research",
+          "registry_url": "https://archive.museumofone.art/research-registry.html#research-witness-material-memory",
+          "identifiers": [
+            {
+              "scheme": "PIRR project ID",
+              "value": "pir-prj-dd7kt5rw",
+              "source_url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+            }
+          ],
+          "relation": "Related field essay on material residue, collective making and the continuing consequences of an artwork's presentation.",
+          "relation_note": "Related field essay on material residue, collective making and the continuing consequences of an artwork's presentation.",
+          "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
+        }
+      ],
+      "components": []
+    },
+    {
+      "archive_reference": "MOO-CAT-010",
+      "edition_doi": "10.5281/zenodo.19963428",
+      "zenodo_record_id": "19963428",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "The Curator's Shadow: The Unspoken Authorship Behind Neutrality.",
+      "url": "https://archive.museumofone.art/items/19963428.html",
+      "programme_relationships": [
+        {
+          "programme_key": "research-witness-material-memory",
+          "programme_title": "Witness, Material Presence, and Cultural Memory",
+          "programme_url": "https://www.museumofone.art/research-witness-material-memory/",
+          "programme_stage": "Continuing research",
+          "registry_url": "https://archive.museumofone.art/research-registry.html#research-witness-material-memory",
+          "identifiers": [
+            {
+              "scheme": "PIRR project ID",
+              "value": "pir-prj-dd7kt5rw",
+              "source_url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+            }
+          ],
+          "relation": "Related field essay on how exhibition arrangements shape the conditions and responsibilities of witnessing.",
+          "relation_note": "Related field essay on how exhibition arrangements shape the conditions and responsibilities of witnessing.",
+          "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/"
+        }
+      ],
+      "components": []
+    },
+    {
+      "archive_reference": "MOO-CAT-011",
+      "edition_doi": "10.5281/zenodo.20100136",
+      "zenodo_record_id": "20100136",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "Diagnostics Without Possession: An Operational Manual for Post-Interpretive Criticism (Operational reference for inter-rater reliability)",
+      "url": "https://archive.museumofone.art/items/20100136.html",
+      "programme_relationships": [
+        {
+          "programme_key": "research-methods",
+          "programme_title": "Phenomenological Methods and Diagnostic Reading",
+          "programme_url": "https://www.museumofone.art/research-methods/",
+          "programme_stage": "Continuing research",
+          "registry_url": "https://archive.museumofone.art/research-registry.html#research-methods",
+          "identifiers": [
+            {
+              "scheme": "PIRR project ID",
+              "value": "pir-prj-pyp5yx3w",
+              "source_url": "https://www.museumofone.art/research-methods/#programme-record"
+            }
+          ],
+          "relation": "Published operational manual in this programme.",
+          "relation_note": "Published operational manual in this programme.",
+          "source_url": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/"
+        }
+      ],
+      "components": []
+    },
+    {
+      "archive_reference": "MOO-CAT-012",
+      "edition_doi": "10.5281/zenodo.20100139",
+      "zenodo_record_id": "20100139",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "A Quantitative Analysis of Critical Posture in Art Writing, 1980-2025 (Dataset - 20 Critical Texts 1980–2025) v.2",
+      "url": "https://archive.museumofone.art/items/20100139.html",
+      "programme_relationships": [],
+      "components": []
+    },
+    {
+      "archive_reference": "MOO-CAT-013",
+      "edition_doi": "10.5281/zenodo.21786998",
+      "zenodo_record_id": "21786998",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century",
+      "url": "https://archive.museumofone.art/items/21786998.html",
+      "programme_relationships": [],
+      "components": []
+    },
+    {
+      "archive_reference": "MOO-CAT-014",
+      "edition_doi": "10.5281/zenodo.19863790",
+      "zenodo_record_id": "19863790",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "Moral Proximity: Ethics as Method in Post-Interpretive Criticism",
+      "url": "https://archive.museumofone.art/items/19863790.html",
+      "programme_relationships": [],
+      "components": []
+    },
+    {
+      "archive_reference": "MOO-CAT-015",
+      "edition_doi": "10.5281/zenodo.19863836",
+      "zenodo_record_id": "19863836",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism",
+      "url": "https://archive.museumofone.art/items/19863836.html",
+      "programme_relationships": [
+        {
+          "programme_key": "research-critical-language",
+          "programme_title": "Alexander Viktorovich Markov: Critical Language and Lasting Correction",
+          "programme_url": "https://www.museumofone.art/research-critical-language/",
+          "programme_stage": "In development",
+          "registry_url": "https://archive.museumofone.art/research-registry.html#research-critical-language",
+          "identifiers": [
+            {
+              "scheme": "PIRR programme reference",
+              "value": "moo-program-2b3ad664cbd92f69b862db8c",
+              "source_url": "https://www.museumofone.art/research-critical-language/#programme-record"
+            }
+          ],
+          "relation": "Earlier individual work linked as programme context",
+          "relation_note": "Earlier individual work linked as context for a developing programme; not a joint output or endorsement",
+          "source_url": "https://www.museumofone.art/research-critical-language/"
+        }
+      ],
+      "components": []
+    },
+    {
+      "archive_reference": "MOO-CAT-016",
+      "edition_doi": "10.5281/zenodo.19863851",
+      "zenodo_record_id": "19863851",
+      "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication.",
+      "title": "Language as Custody — Writing Without Harm in Post-Interpretive Criticism",
+      "url": "https://archive.museumofone.art/items/19863851.html",
+      "programme_relationships": [],
+      "components": []
+    }
+  ]
+}

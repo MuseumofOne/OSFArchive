@@ -1,0 +1,1540 @@
+{
+  "id": "20593003",
+  "accession": "MOO-CAT-009",
+  "title": "El Anatsui's Man's Cloth Series: Redemption of Waste as Modern Eucharist",
+  "source_title": "El Anatsui's Man's Cloth Series: Redemption of Waste as Modern Eucharist",
+  "short_title": "El Anatsui’s Man’s Cloth Series",
+  "author": "Dorian Vale",
+  "creators": [
+    {
+      "name": "Vale, Dorian",
+      "affiliation": "Museum of One",
+      "orcid": "0009-0004-7737-5094"
+    }
+  ],
+  "doi": "10.5281/zenodo.20593003",
+  "conceptdoi": "10.5281/zenodo.20593002",
+  "zenodo_url": "https://zenodo.org/records/20593003",
+  "date": "2026-06-08",
+  "type": "Journal article",
+  "source_resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "version": "",
+  "collection": "Essays & research",
+  "summary": "An essay on El Anatsui’s bottle-cap assemblages, linking discarded materials and collaborative labour with historical memory, installation practices, and the author’s account of reparation.",
+  "subjects": [
+    "El Anatsui",
+    "Assemblage",
+    "Material practice",
+    "Historical memory"
+  ],
+  "keywords": [
+    "Post-Interpretive Criticism",
+    "Stillmark Theory",
+    "Message-Transfer Theory",
+    "Misplacement",
+    "Displacement",
+    "Aesthetic Displacement Theory",
+    "Theory of Misplacement",
+    "Absential Aesthetics",
+    "Witness Aesthetics",
+    "Hauntmark Theory",
+    "Presence-Based Criticism",
+    "Custodianship of Art",
+    "Art as Ontology",
+    "Aesthetic Recursion Theory",
+    "Aesthetic Recursion",
+    "Viewer as Evidence Theory",
+    "Interpretive Load Index (ILI)",
+    "Viewer Displacement Ratio (VDR)",
+    "Ethical Proximity Score (EPS)",
+    "Institutional Alignment Indicator (IAI)",
+    "Epoché Fidelity Index (EFI)",
+    "Phenomenological Phase Alignment Score (PPAS)",
+    "Residue Engagement Restraint Ratio (RERR)",
+    "Quasi-Subject Agency Recognition Index (QSARI)",
+    "Dialectical Circulation Index (DCI)",
+    "Restraint in front of art",
+    "Moral proximity",
+    "Interpretive silence",
+    "Erasure as ethics",
+    "Temporal scarcity",
+    "Silence as method",
+    "Ontology of beauty",
+    "Aesthetic mercy",
+    "Language as violence",
+    "Art encounter ethics",
+    "Epistemology of witness",
+    "Aesthetics",
+    "Philosophy of Art",
+    "Art Theory",
+    "Contemporary Aesthetics",
+    "Comparative Aesthetics",
+    "Phenomenology and Art",
+    "Phenomenology",
+    "Aesthetic Phenomenology",
+    "Phenomenology of Aesthetic",
+    "post-hermeneutics phenomenology",
+    "Ethics in Art Criticism",
+    "Interpretation and Meaning",
+    "Criticism and Reception Theory",
+    "Epistemology of Art",
+    "Visual Culture Studies",
+    "Dorian Vale",
+    "Founder of Post-Interpretive Criticism",
+    "Post-Aesthetic Critic",
+    "Independent Philosopher of Art",
+    "Museum of One",
+    "Art Writer and Theorist",
+    "Aesthetic Philosopher",
+    "Custodian of Witness Aesthetics",
+    "The Doctrine of Post-Interpretive Criticism",
+    "The Custodian's Oath",
+    "The Canon of Witnesses",
+    "Art as Truth",
+    "Art as Presence",
+    "The Viewer as Evidence",
+    "Interpretation vs. Witnessing",
+    "Language as Custody",
+    "Erasure as Afterlife",
+    "Museum of One Manifesto",
+    "Post-Interpretive Lexicon",
+    "Alternative art criticism",
+    "New art criticism movement",
+    "Ethical art theory",
+    "Criticism beyond interpretation",
+    "Slow looking philosophy",
+    "Contemporary sacred aesthetics",
+    "Quiet philosophy of art",
+    "Radical art restraint",
+    "Witness over interpretation",
+    "Interpretive Restraint"
+  ],
+  "license": {
+    "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "files": [
+    {
+      "name": "El Anatsui’s Man’s Cloth Series; Redemption of Waste as Modern Eucharist.pdf",
+      "url": "https://zenodo.org/api/records/20593003/files/El%20Anatsui%E2%80%99s%20Man%E2%80%99s%20Cloth%20Series;%20Redemption%20of%20Waste%20as%20Modern%20Eucharist.pdf/content",
+      "size": 360669,
+      "size_label": "352 KB",
+      "checksum": "md5:e92667e9ca21506ec2846700a323c12e",
+      "mimetype": "application/pdf"
+    }
+  ],
+  "institutional_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+  "corroboration": "Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. Its repository links and publication dates are retained separately from this selected Zenodo edition. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.",
+  "discrepancies": [],
+  "orcid": "0009-0004-7737-5094",
+  "publisher": "Museum of One",
+  "language": null,
+  "isbn": null,
+  "related_identifiers": [
+    {
+      "identifier": "https://www.museumofone.art",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://zenodo.org/communities/post-interpretive-criticism",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://osf.io/zhnre/",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://works.hcommons.org/records/xv2j2-g6927",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://philpapers.org/rec/VALPCF-2",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.researchcatalogue.net/profile",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://archive.org/details/the-journal-of-post-interpretive-criticism-vi",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://scholar.google.com/citations?user=15tvhjAAAAAJ",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://independent.academia.edu/DorianVale",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.zotero.org/groups/6279725/post-interpretive-criticism",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://core.ac.uk/search/?q=post-interpretive+criticism+dorian+vale",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.base-search.net/Search/Results?lookfor=Post-Interpretive+Criticism",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://commons.datacite.org/?query=Post-Interpretive+Criticism",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://openalex.org/works?filter=title_and_abstract.search:Post-Interpretive+Criticism+Dorian+Vale",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    }
+  ],
+  "alternate_identifiers": [
+    {
+      "identifier": "0000000528819728"
+    },
+    {
+      "identifier": "0000000528819787"
+    },
+    {
+      "identifier": "0000000528819744"
+    },
+    {
+      "identifier": "https://www.museumofone.art"
+    }
+  ],
+  "source_references": [
+    "https://www.museumofone.art",
+    "https://zenodo.org/communities/post-interpretive-criticism",
+    "https://osf.io/zhnre/",
+    "https://works.hcommons.org/records/xv2j2-g6927",
+    "https://philpapers.org/rec/VALPCF-2",
+    "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+    "https://www.researchcatalogue.net/profile",
+    "https://archive.org/details/the-journal-of-post-interpretive-criticism-vi",
+    "https://scholar.google.com/citations?user=15tvhjAAAAAJ",
+    "https://independent.academia.edu/DorianVale",
+    "https://www.zotero.org/groups/6279725/post-interpretive-criticism",
+    "https://core.ac.uk/search/?q=post-interpretive+criticism+dorian+vale",
+    "https://www.base-search.net/Search/Results?lookfor=Post-Interpretive+Criticism",
+    "https://commons.datacite.org/?query=Post-Interpretive+Criticism",
+    "https://openalex.org/works?filter=title_and_abstract.search:Post-Interpretive+Criticism+Dorian+Vale",
+    "https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art"
+  ],
+  "source_journal": {
+    "title": "Journal of Post-Interpretive Critiism"
+  },
+  "source_imprint": null,
+  "source_contributors": [],
+  "source_created": "2026-06-08T11:37:51.610402+00:00",
+  "source_modified": "2026-06-08T11:37:51.823356+00:00",
+  "source_description_html": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">This article examines El Anatsui's <em>Man's Cloth</em> Series (c. 1999&ndash;) as a sustained practice of material redemption, tracing the ethical and aesthetic logic by which discarded liquor bottle caps, residues of the Atlantic trade economy, are transformed into monumental textile-like assemblages. Drawing on Post-Interpretive Criticism, the essay argues that Anatsui's work enacts what PIC terms the ethics of reparation: the restoration of moral and material dignity to objects declared worthless by colonial and capitalist systems. The analysis attends to the formal conditions of this transformation, collective studio labour, the retention of legible brand markings, the open-ended installation protocols Anatsui extends to curators and preparators, and reads these not as curatorial gestures but as structural enactments of repair. The piece further situates <em>Man's Cloth</em> within Anatsui's broader bottle-cap practice and his Ewe-Kente inheritance, arguing that the series produces what might be called a new aesthetic theology: one in which beauty is diagnostic rather than decorative, and continuity of historical record is treated as a moral obligation of form. The essay concludes by considering Anatsui's institutional presence, from the British Museum's Sainsbury African Galleries to Tate Modern's Turbine Hall, and the capacity of these works to resist capture even within spaces of preservation and prestige.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">&nbsp;</p>\n<p class=\"p1\">Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen. This name is used for all official publications, essays, and theoretical works indexed through DOI-linked repositories including Zenodo, OSF, PhilPapers, and SSRN.</p>\n<p class=\"p1\">&nbsp;</p>\n<p class=\"p1\"></p>\n<p>This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and <em>Art as Truth: A Treatise</em> (Q136329071), <em>Aesthetic Recursion Theory</em> (Q136339843), The Journal of Post-Interpretive Criticism (Q136530009), Canon of Witnesses (Q136565881),Interpretive Load Index (ILI)&nbsp;(Q137709526), Viewer Displacement Ratio (VDR)&nbsp;(Q137709583)&nbsp;, Ethical Proximity Score (EPS)&nbsp;(Q137709600)&nbsp;, Institutional Alignment Indicator (IAI)&nbsp;(Q137709608), Post-Hermeneutic Phenomenology&nbsp;(Q137711946)</p>",
+  "provenance": {
+    "repository": "Zenodo REST API response supplied in query.json",
+    "retrieved": "2026-11-04",
+    "editorial_fields": [
+      "summary",
+      "subjects",
+      "collection",
+      "short_title",
+      "accession"
+    ],
+    "source_snapshot": "source/20593003.json",
+    "institutional_review": "Reviewed page-level title, author and repository links in saved public institutional HTML, 2026-11-04."
+  },
+  "source_review": "2026-11-04",
+  "relations": [
+    {
+      "identifier": "https://www.museumofone.art",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://zenodo.org/communities/post-interpretive-criticism",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://osf.io/zhnre/",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://works.hcommons.org/records/xv2j2-g6927",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://philpapers.org/rec/VALPCF-2",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.researchcatalogue.net/profile",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://archive.org/details/the-journal-of-post-interpretive-criticism-vi",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://scholar.google.com/citations?user=15tvhjAAAAAJ",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://independent.academia.edu/DorianVale",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.zotero.org/groups/6279725/post-interpretive-criticism",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://core.ac.uk/search/?q=post-interpretive+criticism+dorian+vale",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.base-search.net/Search/Results?lookfor=Post-Interpretive+Criticism",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://commons.datacite.org/?query=Post-Interpretive+Criticism",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://openalex.org/works?filter=title_and_abstract.search:Post-Interpretive+Criticism+Dorian+Vale",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    }
+  ],
+  "institutional_metadata": {
+    "title": "El Anatsui’s Man’s Cloth Series: Redemption of Waste as Modern Eucharist",
+    "author": "Dorian Vale",
+    "web_publication": "2026-06-08T11:42:36.000Z",
+    "web_updated": "2026-11-03T00:38:45.000Z",
+    "linked_zenodo_dois": [
+      "10.5281/zenodo.20593002"
+    ],
+    "reviewed": "2026-11-04",
+    "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
+  },
+  "research_programmes": [
+    {
+      "title": "Witness, Material Presence, and Cultural Memory",
+      "url": "https://www.museumofone.art/research-witness-material-memory/",
+      "status": "Continuing research",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "relation": "Related field essay on material residue, collective making and the continuing consequences of an artwork's presentation.",
+      "relation_label": "Related field essay on material residue, collective making and the continuing consequences of an artwork's presentation."
+    }
+  ],
+  "record_level": "Item",
+  "record_status": "Published source; selected catalogue record",
+  "digital_formats": [
+    "application/pdf"
+  ],
+  "extent": "1 digital file; 360669 bytes",
+  "medium": "Digital document",
+  "record_reviewed": "2026-11-04",
+  "date_precision": "day",
+  "alternate_titles": [
+    {
+      "title": "El Anatsui’s Man’s Cloth Series: Redemption of Waste as Modern Eucharist",
+      "kind": "institutional_web_record_title",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
+    }
+  ],
+  "digital_extent": {
+    "file_count": 1,
+    "total_bytes": 360669,
+    "formats": [
+      "application/pdf"
+    ],
+    "checksums": [
+      {
+        "filename": "El Anatsui’s Man’s Cloth Series; Redemption of Waste as Modern Eucharist.pdf",
+        "algorithm": "md5",
+        "value": "e92667e9ca21506ec2846700a323c12e",
+        "syntax_valid": true,
+        "verification": "source_checksum_transcription; bytes not independently recomputed"
+      }
+    ],
+    "source_url": "https://zenodo.org/records/20593003",
+    "derivation": "File count and total bytes calculated from repository file metadata; MIME inferred from filename when absent."
+  },
+  "identifier_validation": {
+    "orcid": {
+      "source_value": "0009-0004-7737-5094",
+      "checksum_valid": true,
+      "note": "ISO 7064 MOD 11-2 checksum only; this is not a live registry verification."
+    },
+    "isbn": [],
+    "doi": {
+      "source_value": "10.5281/zenodo.20593003",
+      "syntax_valid": true,
+      "note": "Syntax check only; repository snapshot supplies the identifier."
+    }
+  },
+  "isbn_applicability": "not_supplied",
+  "serial": null,
+  "contributor_roles": [
+    {
+      "name": "Vale, Dorian",
+      "source_category": "creator",
+      "source_role": null,
+      "role_label": "Creator (role not supplied)",
+      "affiliation_as_supplied": "Museum of One",
+      "source_url": "https://zenodo.org/records/20593003"
+    }
+  ],
+  "authority_links": [],
+  "metadata_profile": {
+    "name": "Museum of One source-qualified catalogue profile",
+    "version": "2",
+    "note": "Local application profile using schema.org and qualified Dublin Core; not an archival standards certification.",
+    "source_snapshot_preserved": true
+  },
+  "reading_copy": {
+    "id": "20593003",
+    "title": "El Anatsui's Man's Cloth Series: Redemption of Waste as Modern Eucharist",
+    "accession": "MOO-CAT-009",
+    "pdf_url": "../assets/documents/20593003.pdf",
+    "source_url": "https://zenodo.org/api/records/20593003/files/El%20Anatsui%E2%80%99s%20Man%E2%80%99s%20Cloth%20Series;%20Redemption%20of%20Waste%20as%20Modern%20Eucharist.pdf/content",
+    "zenodo_url": "https://zenodo.org/records/20593003",
+    "source_filename": "El Anatsui’s Man’s Cloth Series; Redemption of Waste as Modern Eucharist.pdf",
+    "checksum": "md5:e92667e9ca21506ec2846700a323c12e",
+    "sha256": "2d042e0c2cdc2e8db76802fc763618a76ac27aa7898b9f5049ff1d862be76c85",
+    "bytes": 360669,
+    "page_count": 6,
+    "verified_at": "2026-11-04",
+    "checksum_match": true,
+    "rights": {
+      "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "role": "Local reading copy; original repository file retained unchanged"
+  },
+  "page_count": 6,
+  "field_assertions": [
+    {
+      "field": "title",
+      "value": "El Anatsui's Man's Cloth Series: Redemption of Waste as Modern Eucharist",
+      "status": "catalogue_title",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "note": "Local display title; the deposited title is retained separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_title",
+      "value": "El Anatsui's Man's Cloth Series: Redemption of Waste as Modern Eucharist",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20593003",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "doi",
+      "value": "10.5281/zenodo.20593003",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20593003",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "date",
+      "value": "2026-06-08",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20593003",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "conceptdoi",
+      "value": "10.5281/zenodo.20593002",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20593003",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "creators",
+      "value": [
+        {
+          "name": "Vale, Dorian",
+          "affiliation": "Museum of One",
+          "orcid": "0009-0004-7737-5094"
+        }
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20593003",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "keywords",
+      "value": [
+        "Post-Interpretive Criticism",
+        "Stillmark Theory",
+        "Message-Transfer Theory",
+        "Misplacement",
+        "Displacement",
+        "Aesthetic Displacement Theory",
+        "Theory of Misplacement",
+        "Absential Aesthetics",
+        "Witness Aesthetics",
+        "Hauntmark Theory",
+        "Presence-Based Criticism",
+        "Custodianship of Art",
+        "Art as Ontology",
+        "Aesthetic Recursion Theory",
+        "Aesthetic Recursion",
+        "Viewer as Evidence Theory",
+        "Interpretive Load Index (ILI)",
+        "Viewer Displacement Ratio (VDR)",
+        "Ethical Proximity Score (EPS)",
+        "Institutional Alignment Indicator (IAI)",
+        "Epoché Fidelity Index (EFI)",
+        "Phenomenological Phase Alignment Score (PPAS)",
+        "Residue Engagement Restraint Ratio (RERR)",
+        "Quasi-Subject Agency Recognition Index (QSARI)",
+        "Dialectical Circulation Index (DCI)",
+        "Restraint in front of art",
+        "Moral proximity",
+        "Interpretive silence",
+        "Erasure as ethics",
+        "Temporal scarcity",
+        "Silence as method",
+        "Ontology of beauty",
+        "Aesthetic mercy",
+        "Language as violence",
+        "Art encounter ethics",
+        "Epistemology of witness",
+        "Aesthetics",
+        "Philosophy of Art",
+        "Art Theory",
+        "Contemporary Aesthetics",
+        "Comparative Aesthetics",
+        "Phenomenology and Art",
+        "Phenomenology",
+        "Aesthetic Phenomenology",
+        "Phenomenology of Aesthetic",
+        "post-hermeneutics phenomenology",
+        "Ethics in Art Criticism",
+        "Interpretation and Meaning",
+        "Criticism and Reception Theory",
+        "Epistemology of Art",
+        "Visual Culture Studies",
+        "Dorian Vale",
+        "Founder of Post-Interpretive Criticism",
+        "Post-Aesthetic Critic",
+        "Independent Philosopher of Art",
+        "Museum of One",
+        "Art Writer and Theorist",
+        "Aesthetic Philosopher",
+        "Custodian of Witness Aesthetics",
+        "The Doctrine of Post-Interpretive Criticism",
+        "The Custodian's Oath",
+        "The Canon of Witnesses",
+        "Art as Truth",
+        "Art as Presence",
+        "The Viewer as Evidence",
+        "Interpretation vs. Witnessing",
+        "Language as Custody",
+        "Erasure as Afterlife",
+        "Museum of One Manifesto",
+        "Post-Interpretive Lexicon",
+        "Alternative art criticism",
+        "New art criticism movement",
+        "Ethical art theory",
+        "Criticism beyond interpretation",
+        "Slow looking philosophy",
+        "Contemporary sacred aesthetics",
+        "Quiet philosophy of art",
+        "Radical art restraint",
+        "Witness over interpretation",
+        "Interpretive Restraint"
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20593003",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "license",
+      "value": {
+        "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20593003",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "files",
+      "value": [
+        {
+          "name": "El Anatsui’s Man’s Cloth Series; Redemption of Waste as Modern Eucharist.pdf",
+          "url": "https://zenodo.org/api/records/20593003/files/El%20Anatsui%E2%80%99s%20Man%E2%80%99s%20Cloth%20Series;%20Redemption%20of%20Waste%20as%20Modern%20Eucharist.pdf/content",
+          "size": 360669,
+          "size_label": "352 KB",
+          "checksum": "md5:e92667e9ca21506ec2846700a323c12e",
+          "mimetype": "application/pdf"
+        }
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20593003",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_created",
+      "value": "2026-06-08T11:37:51.610402+00:00",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20593003",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "source_modified",
+      "value": "2026-06-08T11:37:51.823356+00:00",
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20593003",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "author",
+      "value": "Dorian Vale",
+      "status": "institutional_context",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "note": "Institutional responsibility statement; original repository creator roles remain separate.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "publisher",
+      "value": "Museum of One",
+      "status": "institutional_context",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "note": "Institutional responsibility statement; original repository creator roles remain separate.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "orcid",
+      "value": "0009-0004-7737-5094",
+      "status": "source_linked_identifier",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "note": "Creator identifier supplied by the linked sources; no affiliation or endorsement is inferred.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "summary",
+      "value": "An essay on El Anatsui’s bottle-cap assemblages, linking discarded materials and collaborative labour with historical memory, installation practices, and the author’s account of reparation.",
+      "status": "editorial_enrichment",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "note": "Catalogue-editor summary based on the linked work; not an original publisher abstract.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "subjects",
+      "value": [
+        "El Anatsui",
+        "Assemblage",
+        "Material practice",
+        "Historical memory"
+      ],
+      "status": "editorial_enrichment",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "note": "Local discovery terms; no controlled-vocabulary assignment is claimed.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "collection",
+      "value": "Essays & research",
+      "status": "editorial_grouping",
+      "note": "A local browsing collection, not an original repository collection.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "corroboration",
+      "value": "Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. Its repository links and publication dates are retained separately from this selected Zenodo edition. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.",
+      "status": "catalogue_review_note",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "alternate_titles",
+      "value": [
+        {
+          "title": "El Anatsui’s Man’s Cloth Series: Redemption of Waste as Modern Eucharist",
+          "kind": "institutional_web_record_title",
+          "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
+        }
+      ],
+      "status": "source_qualified_title_variants",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "note": "Each variant retains its own source and scope; a web page title is not a title-page transcription.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "date_precision",
+      "value": "day",
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/20593003",
+      "note": "Precision reported exactly as supplied; missing month or day is not filled.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "medium",
+      "value": "Digital document",
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/20593003",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "digital_formats",
+      "value": [
+        "application/pdf"
+      ],
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/20593003",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "extent",
+      "value": "1 digital file; 360669 bytes",
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/20593003",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "digital_extent",
+      "value": {
+        "file_count": 1,
+        "total_bytes": 360669,
+        "formats": [
+          "application/pdf"
+        ],
+        "checksums": [
+          {
+            "filename": "El Anatsui’s Man’s Cloth Series; Redemption of Waste as Modern Eucharist.pdf",
+            "algorithm": "md5",
+            "value": "e92667e9ca21506ec2846700a323c12e",
+            "syntax_valid": true,
+            "verification": "source_checksum_transcription; bytes not independently recomputed"
+          }
+        ],
+        "source_url": "https://zenodo.org/records/20593003",
+        "derivation": "File count and total bytes calculated from repository file metadata; MIME inferred from filename when absent."
+      },
+      "status": "derived_from_source",
+      "source_url": "https://zenodo.org/records/20593003",
+      "note": "Digital medium and extent derived from repository file metadata; no physical custody is implied. MIME may be inferred from filename. Repository checksums are transcribed; reading-copy verification, where available, is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "identifier_validation",
+      "value": {
+        "orcid": {
+          "source_value": "0009-0004-7737-5094",
+          "checksum_valid": true,
+          "note": "ISO 7064 MOD 11-2 checksum only; this is not a live registry verification."
+        },
+        "isbn": [],
+        "doi": {
+          "source_value": "10.5281/zenodo.20593003",
+          "syntax_valid": true,
+          "note": "Syntax check only; repository snapshot supplies the identifier."
+        }
+      },
+      "status": "local_syntax_validation",
+      "source_url": "https://zenodo.org/records/20593003",
+      "note": "Checksum/syntax validation does not verify registration, assignment or edition applicability.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "contributor_roles",
+      "value": [
+        {
+          "name": "Vale, Dorian",
+          "source_category": "creator",
+          "source_role": null,
+          "role_label": "Creator (role not supplied)",
+          "affiliation_as_supplied": "Museum of One",
+          "source_url": "https://zenodo.org/records/20593003"
+        }
+      ],
+      "status": "source_transcription",
+      "source_url": "https://zenodo.org/records/20593003",
+      "note": "Creator and contributor roles are transcribed, not inferred from names or affiliations.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "research_programme:https://www.museumofone.art/research-witness-material-memory/",
+      "value": {
+        "title": "Witness, Material Presence, and Cultural Memory",
+        "url": "https://www.museumofone.art/research-witness-material-memory/",
+        "status": "Continuing research",
+        "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+        "relation": "Related field essay on material residue, collective making and the continuing consequences of an artwork's presentation.",
+        "relation_label": "Related field essay on material residue, collective making and the continuing consequences of an artwork's presentation."
+      },
+      "status": "institutional_work_relationship",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "note": "Programme relationship and stage follow the work-specific institutional badge; publication does not imply a completed programme or collaboration.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "entity_link:dorian-vale:author",
+      "value": {
+        "id": "dorian-vale",
+        "label": "Dorian Vale",
+        "entity_type": "Person",
+        "relation": "author",
+        "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+        "note": "The matching institutional publication record credits Dorian Vale as author."
+      },
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:museum-of-one:publisher",
+      "value": {
+        "id": "museum-of-one",
+        "label": "Museum of One",
+        "entity_type": "Organization",
+        "relation": "publisher",
+        "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      },
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:el-anatsui:artist discussed",
+      "value": {
+        "id": "el-anatsui",
+        "label": "El Anatsui",
+        "entity_type": "Person",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+        "note": "The essay studies the Man’s Cloth series and captions Old Man’s Cloth."
+      },
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "entity_link:old-mans-cloth:artwork discussed",
+      "value": {
+        "id": "old-mans-cloth",
+        "label": "Old Man’s Cloth",
+        "entity_type": "Artwork",
+        "relation": "artwork discussed",
+        "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+        "note": "Named in the image caption as a work by El Anatsui."
+      },
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "status": "institutional_context_relationship",
+      "note": "Contextual role is source-qualified; subject artists and referenced scholars are not publication coauthors."
+    },
+    {
+      "field": "controlled_subjects",
+      "value": [
+        {
+          "id": "el-anatsui",
+          "label": "El Anatsui",
+          "uri": "https://archive.museumofone.art/vocabulary.html#el-anatsui",
+          "url": "vocabulary.html#el-anatsui",
+          "persistent_id": "urn:museum-of-one:vocabulary:el-anatsui",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [],
+          "definition": "Named-subject access point for publications discussing the artist El Anatsui.",
+          "scope_note": "This local heading supports subject discovery. Identity and external authority assertions belong in the separate entity register.",
+          "kind": "named-subject",
+          "broader": [],
+          "narrower": [],
+          "related": [],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "id": "assemblage",
+          "label": "Assemblage",
+          "uri": "https://archive.museumofone.art/vocabulary.html#assemblage",
+          "url": "vocabulary.html#assemblage",
+          "persistent_id": "urn:museum-of-one:vocabulary:assemblage",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [],
+          "definition": "Artistic practice involving the combination of existing objects or materials.",
+          "scope_note": "In this catalogue, used for discussion of El Anatsui’s material constructions; does not classify the deposited PDF as an artwork.",
+          "kind": "subject",
+          "broader": [],
+          "narrower": [],
+          "related": [
+            "material-practice"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "id": "material-practice",
+          "label": "Material practice",
+          "uri": "https://archive.museumofone.art/vocabulary.html#material-practice",
+          "url": "vocabulary.html#material-practice",
+          "persistent_id": "urn:museum-of-one:vocabulary:material-practice",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [],
+          "definition": "Artistic working with materials and their properties, histories, or uses.",
+          "scope_note": "Use as a broad subject for material processes; techniques such as Assemblage may be assigned separately.",
+          "kind": "subject",
+          "broader": [],
+          "narrower": [],
+          "related": [
+            "assemblage",
+            "repetition-and-labour"
+          ],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        },
+        {
+          "id": "historical-memory",
+          "label": "Historical memory",
+          "uri": "https://archive.museumofone.art/vocabulary.html#historical-memory",
+          "url": "vocabulary.html#historical-memory",
+          "persistent_id": "urn:museum-of-one:vocabulary:historical-memory",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [],
+          "definition": "The retention and mediation of the past through art and its material histories.",
+          "scope_note": "Used for studies linking an artwork’s materials or practices to remembered histories; related to the broader subject Memory.",
+          "kind": "subject",
+          "broader": [
+            "memory"
+          ],
+          "narrower": [],
+          "related": [],
+          "mapping_status": "not_asserted",
+          "external_mappings": [],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "subjects",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        }
+      ],
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Local preferred terms with definitions and synonyms. External alignment is scoped in the vocabulary register.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "genre_terms",
+      "value": [
+        {
+          "id": "genre-journal-article",
+          "label": "Journal article",
+          "uri": "https://archive.museumofone.art/vocabulary.html#genre-journal-article",
+          "url": "vocabulary.html#genre-journal-article",
+          "persistent_id": "urn:museum-of-one:vocabulary:genre-journal-article",
+          "scheme": "museum-of-one-discovery-vocabulary",
+          "scheme_version": 4,
+          "alternative_labels": [
+            "Journal articles"
+          ],
+          "definition": "A contribution issued as part of a journal or periodical.",
+          "scope_note": "Describes publication genre based on the catalogued source record; peer-review status is a separate question.",
+          "kind": "genre",
+          "broader": [],
+          "narrower": [],
+          "related": [],
+          "mapping_status": "verified_mapping",
+          "external_mappings": [
+            {
+              "vocabulary": "Getty Art & Architecture Thesaurus",
+              "label": "articles",
+              "uri": "http://vocab.getty.edu/aat/300048715",
+              "source_url": "https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300048715",
+              "relation": "broadMatch",
+              "status": "verified",
+              "verified_on": "2026-11-04",
+              "note": "Getty’s articles concept includes contributions to magazines, newspapers, encyclopedias, and other works; journal article is the narrower local genre."
+            }
+          ],
+          "assignment_provenance": {
+            "status": "local_editorial_access_term",
+            "input_field": "type",
+            "editorial_owner": "Museum of One Digital Archive Library",
+            "reviewed": "2026-11-04"
+          }
+        }
+      ],
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Local resource-genre classification. Digital file format is recorded separately.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "archival_context",
+      "value": {
+        "description_profile": "moo-description-policy-1.0",
+        "catalogue_snapshot_date": "2026-11-04",
+        "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
+        "record_category": "Published library and repository material",
+        "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+        "source_repository": {
+          "name": "Zenodo",
+          "record_url": "https://zenodo.org/records/20593003"
+        },
+        "institutional_context_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+        "source_metadata_retrieved": "2026-11-04",
+        "source_metadata_retrieval_status": "Documented in catalogue source provenance",
+        "source_snapshot": "source/20593003.json",
+        "source_filenames": [
+          "El Anatsui’s Man’s Cloth Series; Redemption of Waste as Modern Eucharist.pdf"
+        ],
+        "selection_basis": "Local descriptive selection of publicly published material; public availability does not establish ownership of originals.",
+        "custodial_history": {
+          "status": "not_documented",
+          "statement": "No donation, physical transfer, acquisition agreement or chain of custody is documented by this catalogue. Zenodo remains the source repository for the deposited version."
+        },
+        "original_order": {
+          "status": "not_documented",
+          "statement": "No original archival order is asserted. Current browsing groupings are local editorial arrangement."
+        },
+        "arrangement": {
+          "status": "local_editorial",
+          "grouping": "Essays & research",
+          "statement": "A browsing grouping, not an original fonds or archival series."
+        },
+        "responsible_service": {
+          "name": "Museum of One",
+          "service": "Museum of One Digital Archive Library",
+          "website": "https://www.museumofone.art/",
+          "email": "research@museumofone.art"
+        },
+        "description_method": "Source-based description with automated drafting and metadata assistance. Responsibility for the public catalogue rests with Museum of One; automated assistance does not constitute independent scholarly or curatorial review.",
+        "policy_url": "policies.html",
+        "correction_email": "research@museumofone.art",
+        "access_copy": {
+          "role": "Local digital reading copy of the deposited file",
+          "source_url": "https://zenodo.org/api/records/20593003/files/El%20Anatsui%E2%80%99s%20Man%E2%80%99s%20Cloth%20Series;%20Redemption%20of%20Waste%20as%20Modern%20Eucharist.pdf/content",
+          "source_filename": "El Anatsui’s Man’s Cloth Series; Redemption of Waste as Modern Eucharist.pdf",
+          "local_path": "assets/documents/20593003.pdf",
+          "verified_at": "2026-11-04",
+          "source_checksum_match": true,
+          "sha256": "2d042e0c2cdc2e8db76802fc763618a76ac27aa7898b9f5049ff1d862be76c85",
+          "statement": "Access copy only; no ownership or physical custody transfer is implied."
+        }
+      },
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Provenance records what is documented and leaves unknown custody and original order explicit.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "description_history",
+      "value": [
+        {
+          "responsible_service": "Museum of One",
+          "method": "Source-based automated description assistance",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "public-source-description-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Source-based catalogue description",
+          "note": "Local description assembled from the identified public repository record and available institutional work record. Source metadata remains separately identifiable.",
+          "sources": [
+            "https://zenodo.org/records/20593003",
+            "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
+          ]
+        },
+        {
+          "responsible_service": "Museum of One",
+          "method": "Source-based automated description assistance",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "qualified-description-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Qualified descriptive enrichment",
+          "note": "Local editorial description, arrangement and source-qualified bibliographic context recorded alongside source metadata. Unknown or disputed values remain qualified.",
+          "fields": [
+            "summary",
+            "subjects",
+            "collection",
+            "short_title",
+            "accession"
+          ],
+          "sources": [
+            "https://zenodo.org/records/20593003",
+            "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
+          ]
+        },
+        {
+          "responsible_service": "Museum of One",
+          "method": "Automated file checksum and PDF inspection",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "access-copy-verification-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Digital reading copy verified",
+          "note": "Downloaded access-copy MD5 matched the source checksum; local SHA-256 and PDF file-page count are recorded in the file manifest. This event does not describe transfer of custody.",
+          "sources": [
+            "https://zenodo.org/api/records/20593003/files/El%20Anatsui%E2%80%99s%20Man%E2%80%99s%20Cloth%20Series;%20Redemption%20of%20Waste%20as%20Modern%20Eucharist.pdf/content"
+          ]
+        },
+        {
+          "responsible_service": "Museum of One",
+          "method": "Source-based automated description assistance",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "event_id": "description-policy-1.0-2026-11-04",
+          "date": "2026-11-04",
+          "action": "Description policy and provenance context adopted",
+          "note": "Responsible service, source repository, local access-copy role, unknown custody and original order, correction route and dated description history made explicit under moo-description-policy-1.0.",
+          "sources": [
+            "policies.html"
+          ]
+        }
+      ],
+      "source_url": "https://archive.museumofone.art/policies.html",
+      "status": "editorial_description_control",
+      "note": "Catalogue description events; these are not work publication dates or acquisition dates.",
+      "reviewed": "2026-11-04"
+    },
+    {
+      "field": "pirr_references",
+      "value": [
+        {
+          "programme_key": "research-witness-material-memory",
+          "programme_title": "Witness, Material Presence, and Cultural Memory",
+          "programme_url": "https://www.museumofone.art/research-witness-material-memory/",
+          "programme_stage": "Continuing research",
+          "registry_url": "research-registry.html#research-witness-material-memory",
+          "identifiers": [
+            {
+              "scheme": "PIRR project ID",
+              "value": "pir-prj-dd7kt5rw",
+              "source_url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+            }
+          ],
+          "relation": "Related field essay on material residue, collective making and the continuing consequences of an artwork's presentation.",
+          "relation_note": "Related field essay on material residue, collective making and the continuing consequences of an artwork's presentation.",
+          "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
+        }
+      ],
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "status": "institutional_context_relationship",
+      "note": "PIRR project IDs and programme references identify research records, not publication versions or independent chapter deposits."
+    },
+    {
+      "field": "reading_copy",
+      "value": {
+        "id": "20593003",
+        "title": "El Anatsui's Man's Cloth Series: Redemption of Waste as Modern Eucharist",
+        "accession": "MOO-CAT-009",
+        "pdf_url": "../assets/documents/20593003.pdf",
+        "source_url": "https://zenodo.org/api/records/20593003/files/El%20Anatsui%E2%80%99s%20Man%E2%80%99s%20Cloth%20Series;%20Redemption%20of%20Waste%20as%20Modern%20Eucharist.pdf/content",
+        "zenodo_url": "https://zenodo.org/records/20593003",
+        "source_filename": "El Anatsui’s Man’s Cloth Series; Redemption of Waste as Modern Eucharist.pdf",
+        "checksum": "md5:e92667e9ca21506ec2846700a323c12e",
+        "sha256": "2d042e0c2cdc2e8db76802fc763618a76ac27aa7898b9f5049ff1d862be76c85",
+        "bytes": 360669,
+        "page_count": 6,
+        "verified_at": "2026-11-04",
+        "checksum_match": true,
+        "rights": {
+          "label": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+          "url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "role": "Local reading copy; original repository file retained unchanged"
+      },
+      "source_url": "https://zenodo.org/api/records/20593003/files/El%20Anatsui%E2%80%99s%20Man%E2%80%99s%20Cloth%20Series;%20Redemption%20of%20Waste%20as%20Modern%20Eucharist.pdf/content",
+      "status": "derived_file_inspection",
+      "reviewed": "2026-11-04",
+      "note": "Byte-identical local access copy. Source MD5 was recomputed and matched; SHA-256 and page count were measured from the downloaded PDF. This is not a preservation-deposit claim."
+    },
+    {
+      "field": "page_count",
+      "value": 6,
+      "source_url": "https://zenodo.org/api/records/20593003/files/El%20Anatsui%E2%80%99s%20Man%E2%80%99s%20Cloth%20Series;%20Redemption%20of%20Waste%20as%20Modern%20Eucharist.pdf/content",
+      "status": "derived_file_inspection",
+      "reviewed": "2026-11-04",
+      "note": "Total PDF file pages measured from the deposited file, including cover and unnumbered pages. Not a claim about printed pagination."
+    }
+  ],
+  "entity_links": [
+    {
+      "id": "dorian-vale",
+      "label": "Dorian Vale",
+      "entity_type": "Person",
+      "relation": "author",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "note": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "id": "museum-of-one",
+      "label": "Museum of One",
+      "entity_type": "Organization",
+      "relation": "publisher",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "id": "el-anatsui",
+      "label": "El Anatsui",
+      "entity_type": "Person",
+      "relation": "artist discussed",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "note": "The essay studies the Man’s Cloth series and captions Old Man’s Cloth."
+    },
+    {
+      "id": "old-mans-cloth",
+      "label": "Old Man’s Cloth",
+      "entity_type": "Artwork",
+      "relation": "artwork discussed",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+      "note": "Named in the image caption as a work by El Anatsui."
+    }
+  ],
+  "contents": [],
+  "controlled_subjects": [
+    {
+      "id": "el-anatsui",
+      "label": "El Anatsui",
+      "uri": "https://archive.museumofone.art/vocabulary.html#el-anatsui",
+      "url": "vocabulary.html#el-anatsui",
+      "persistent_id": "urn:museum-of-one:vocabulary:el-anatsui",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [],
+      "definition": "Named-subject access point for publications discussing the artist El Anatsui.",
+      "scope_note": "This local heading supports subject discovery. Identity and external authority assertions belong in the separate entity register.",
+      "kind": "named-subject",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "id": "assemblage",
+      "label": "Assemblage",
+      "uri": "https://archive.museumofone.art/vocabulary.html#assemblage",
+      "url": "vocabulary.html#assemblage",
+      "persistent_id": "urn:museum-of-one:vocabulary:assemblage",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [],
+      "definition": "Artistic practice involving the combination of existing objects or materials.",
+      "scope_note": "In this catalogue, used for discussion of El Anatsui’s material constructions; does not classify the deposited PDF as an artwork.",
+      "kind": "subject",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "material-practice"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "id": "material-practice",
+      "label": "Material practice",
+      "uri": "https://archive.museumofone.art/vocabulary.html#material-practice",
+      "url": "vocabulary.html#material-practice",
+      "persistent_id": "urn:museum-of-one:vocabulary:material-practice",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [],
+      "definition": "Artistic working with materials and their properties, histories, or uses.",
+      "scope_note": "Use as a broad subject for material processes; techniques such as Assemblage may be assigned separately.",
+      "kind": "subject",
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "assemblage",
+        "repetition-and-labour"
+      ],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    },
+    {
+      "id": "historical-memory",
+      "label": "Historical memory",
+      "uri": "https://archive.museumofone.art/vocabulary.html#historical-memory",
+      "url": "vocabulary.html#historical-memory",
+      "persistent_id": "urn:museum-of-one:vocabulary:historical-memory",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [],
+      "definition": "The retention and mediation of the past through art and its material histories.",
+      "scope_note": "Used for studies linking an artwork’s materials or practices to remembered histories; related to the broader subject Memory.",
+      "kind": "subject",
+      "broader": [
+        "memory"
+      ],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "external_mappings": [],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "subjects",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    }
+  ],
+  "genre_terms": [
+    {
+      "id": "genre-journal-article",
+      "label": "Journal article",
+      "uri": "https://archive.museumofone.art/vocabulary.html#genre-journal-article",
+      "url": "vocabulary.html#genre-journal-article",
+      "persistent_id": "urn:museum-of-one:vocabulary:genre-journal-article",
+      "scheme": "museum-of-one-discovery-vocabulary",
+      "scheme_version": 4,
+      "alternative_labels": [
+        "Journal articles"
+      ],
+      "definition": "A contribution issued as part of a journal or periodical.",
+      "scope_note": "Describes publication genre based on the catalogued source record; peer-review status is a separate question.",
+      "kind": "genre",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "verified_mapping",
+      "external_mappings": [
+        {
+          "vocabulary": "Getty Art & Architecture Thesaurus",
+          "label": "articles",
+          "uri": "http://vocab.getty.edu/aat/300048715",
+          "source_url": "https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300048715",
+          "relation": "broadMatch",
+          "status": "verified",
+          "verified_on": "2026-11-04",
+          "note": "Getty’s articles concept includes contributions to magazines, newspapers, encyclopedias, and other works; journal article is the narrower local genre."
+        }
+      ],
+      "assignment_provenance": {
+        "status": "local_editorial_access_term",
+        "input_field": "type",
+        "editorial_owner": "Museum of One Digital Archive Library",
+        "reviewed": "2026-11-04"
+      }
+    }
+  ],
+  "vocabulary_version": 4,
+  "description_history": [
+    {
+      "responsible_service": "Museum of One",
+      "method": "Source-based automated description assistance",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "public-source-description-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Source-based catalogue description",
+      "note": "Local description assembled from the identified public repository record and available institutional work record. Source metadata remains separately identifiable.",
+      "sources": [
+        "https://zenodo.org/records/20593003",
+        "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
+      ]
+    },
+    {
+      "responsible_service": "Museum of One",
+      "method": "Source-based automated description assistance",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "qualified-description-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Qualified descriptive enrichment",
+      "note": "Local editorial description, arrangement and source-qualified bibliographic context recorded alongside source metadata. Unknown or disputed values remain qualified.",
+      "fields": [
+        "summary",
+        "subjects",
+        "collection",
+        "short_title",
+        "accession"
+      ],
+      "sources": [
+        "https://zenodo.org/records/20593003",
+        "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
+      ]
+    },
+    {
+      "responsible_service": "Museum of One",
+      "method": "Automated file checksum and PDF inspection",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "access-copy-verification-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Digital reading copy verified",
+      "note": "Downloaded access-copy MD5 matched the source checksum; local SHA-256 and PDF file-page count are recorded in the file manifest. This event does not describe transfer of custody.",
+      "sources": [
+        "https://zenodo.org/api/records/20593003/files/El%20Anatsui%E2%80%99s%20Man%E2%80%99s%20Cloth%20Series;%20Redemption%20of%20Waste%20as%20Modern%20Eucharist.pdf/content"
+      ]
+    },
+    {
+      "responsible_service": "Museum of One",
+      "method": "Source-based automated description assistance",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "event_id": "description-policy-1.0-2026-11-04",
+      "date": "2026-11-04",
+      "action": "Description policy and provenance context adopted",
+      "note": "Responsible service, source repository, local access-copy role, unknown custody and original order, correction route and dated description history made explicit under moo-description-policy-1.0.",
+      "sources": [
+        "policies.html"
+      ]
+    }
+  ],
+  "archival_context": {
+    "description_profile": "moo-description-policy-1.0",
+    "catalogue_snapshot_date": "2026-11-04",
+    "snapshot_note": "Selected catalogue snapshot; not a live repository synchronisation.",
+    "record_category": "Published library and repository material",
+    "reference_code_status": "Stable local catalogue reference; not evidence of an archival acquisition or a former Omeka accession.",
+    "source_repository": {
+      "name": "Zenodo",
+      "record_url": "https://zenodo.org/records/20593003"
+    },
+    "institutional_context_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+    "source_metadata_retrieved": "2026-11-04",
+    "source_metadata_retrieval_status": "Documented in catalogue source provenance",
+    "source_snapshot": "source/20593003.json",
+    "source_filenames": [
+      "El Anatsui’s Man’s Cloth Series; Redemption of Waste as Modern Eucharist.pdf"
+    ],
+    "selection_basis": "Local descriptive selection of publicly published material; public availability does not establish ownership of originals.",
+    "custodial_history": {
+      "status": "not_documented",
+      "statement": "No donation, physical transfer, acquisition agreement or chain of custody is documented by this catalogue. Zenodo remains the source repository for the deposited version."
+    },
+    "original_order": {
+      "status": "not_documented",
+      "statement": "No original archival order is asserted. Current browsing groupings are local editorial arrangement."
+    },
+    "arrangement": {
+      "status": "local_editorial",
+      "grouping": "Essays & research",
+      "statement": "A browsing grouping, not an original fonds or archival series."
+    },
+    "responsible_service": {
+      "name": "Museum of One",
+      "service": "Museum of One Digital Archive Library",
+      "website": "https://www.museumofone.art/",
+      "email": "research@museumofone.art"
+    },
+    "description_method": "Source-based description with automated drafting and metadata assistance. Responsibility for the public catalogue rests with Museum of One; automated assistance does not constitute independent scholarly or curatorial review.",
+    "policy_url": "policies.html",
+    "correction_email": "research@museumofone.art",
+    "access_copy": {
+      "role": "Local digital reading copy of the deposited file",
+      "source_url": "https://zenodo.org/api/records/20593003/files/El%20Anatsui%E2%80%99s%20Man%E2%80%99s%20Cloth%20Series;%20Redemption%20of%20Waste%20as%20Modern%20Eucharist.pdf/content",
+      "source_filename": "El Anatsui’s Man’s Cloth Series; Redemption of Waste as Modern Eucharist.pdf",
+      "local_path": "assets/documents/20593003.pdf",
+      "verified_at": "2026-11-04",
+      "source_checksum_match": true,
+      "sha256": "2d042e0c2cdc2e8db76802fc763618a76ac27aa7898b9f5049ff1d862be76c85",
+      "statement": "Access copy only; no ownership or physical custody transfer is implied."
+    }
+  },
+  "description_policy_url": "https://archive.museumofone.art/policies.html",
+  "pirr_references": [
+    {
+      "programme_key": "research-witness-material-memory",
+      "programme_title": "Witness, Material Presence, and Cultural Memory",
+      "programme_url": "https://www.museumofone.art/research-witness-material-memory/",
+      "programme_stage": "Continuing research",
+      "registry_url": "research-registry.html#research-witness-material-memory",
+      "identifiers": [
+        {
+          "scheme": "PIRR project ID",
+          "value": "pir-prj-dd7kt5rw",
+          "source_url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+        }
+      ],
+      "relation": "Related field essay on material residue, collective making and the continuing consequences of an artwork's presentation.",
+      "relation_note": "Related field essay on material residue, collective making and the continuing consequences of an artwork's presentation.",
+      "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/"
+    }
+  ],
+  "pirr_work_identity": {
+    "archive_reference": "MOO-CAT-009",
+    "edition_doi": "10.5281/zenodo.20593003",
+    "zenodo_record_id": "20593003",
+    "identifier_scope": "Publication identity; PIRR identifiers in programme relationships identify research records, not this publication."
+  }
+}

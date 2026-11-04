@@ -1,0 +1,368 @@
+{
+  "created": "2026-04-28T18:55:23.348733+00:00",
+  "modified": "2026-10-11T17:52:14.842757+00:00",
+  "id": 19863851,
+  "conceptrecid": "17077652",
+  "doi": "10.5281/zenodo.19863851",
+  "conceptdoi": "10.5281/zenodo.17077652",
+  "doi_url": "https://doi.org/10.5281/zenodo.19863851",
+  "metadata": {
+    "title": "Language as Custody — Writing Without Harm in Post-Interpretive Criticism",
+    "doi": "10.5281/zenodo.19863851",
+    "publication_date": "2026",
+    "description": "<p><strong>Language as Custody &mdash; Writing Without Harm in Post-Interpretive Criticism</strong></p>\n<p><em>By Dorian Vale</em></p>\n<p>In this critical essay, Dorian Vale addresses the often overlooked violence of language in art criticism. Drawing from the philosophical core of <strong>Post-Interpretive Criticism (PIC)</strong>, this work reframes writing not as interpretation, but as <strong>custody</strong>&mdash;an act of ethical stewardship over what cannot be explained without distortion.</p>\n<p>&nbsp;</p>\n<p>Vale explores how clinical, ironic, or overly descriptive language can flatten the moral gravity of witness-based artworks&mdash;particularly those dealing with trauma, silence, exile, or the sacred. Instead of attempting to decode or resolve these works, the essay proposes a discipline of linguistic restraint, where words become <strong>protective vessels</strong> rather than invasive instruments.</p>\n<p>&nbsp;</p>\n<p>Through real case studies and comparative language analysis, <em>Language as Custody</em> offers both a conceptual foundation and practical framework for how one might write without harm. The goal is not to say more, but to write in a way that holds what the work cannot say aloud.</p>\n<p>&nbsp;</p>\n<p>This is not a guide for translation&mdash;it is a doctrine for presence. A refusal to violate what resists interpretation. And in that refusal, it calls for a quieter, more reverent kind of authorship.</p>\n<p>&nbsp;</p>\n<p>Vale, Dorian. Language as Custody &mdash; Writing Without Harm in Post-Interpretive Criticism. Museum of One, 2025. DOI:&nbsp;10.5281/zenodo.17077653</p>\n<div>\n<div>&nbsp;</div>\n<div>\n<p>This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and <em>Art as Truth: A Treatise</em> (Q136329071), <em>Aesthetic Recursion Theory</em>&nbsp;<span>(Q136339843)</span></p>\n</div>\n</div>\n<p>&nbsp;</p>\n<p>post-interpretive criticism, Dorian Vale, study guide for art criticism, five principles of art ethics, ethical witnessing in art, presence over interpretation, restraint in criticism, moral proximity, viewer as evidence, rejecting performance, contemporary art criticism, poetic criticism, art education resources, museum pedagogy, witnessing trauma in art, art writing without interpretation, anti-interpretation philosophy, critique without harm, non-extractive art writing</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": null,
+        "orcid": "0009-0004-7737-5094"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Museumofone.art",
+        "affiliation": null,
+        "type": "RightsHolder"
+      },
+      {
+        "name": "Vale, Dorian",
+        "affiliation": "https://www.museumofone.art/",
+        "type": "RightsHolder"
+      }
+    ],
+    "keywords": [
+      "Restraint in front of art",
+      "Moral proximity",
+      "Interpretive silence",
+      "Erasure as ethics",
+      "Silence as method",
+      "Ontology of beauty",
+      "Aesthetic mercy",
+      "Language as violence",
+      "Art encounter ethics",
+      "Epistemology of witness",
+      "Divine proximity in aesthetics",
+      "Philosophy of Art",
+      "Aesthetics",
+      "Art Theory",
+      "Contemporary Aesthetics",
+      "Phenomenology and Art",
+      "Ethics in Art Criticism",
+      "Interpretation and Meaning",
+      "Criticism and Reception Theory",
+      "Visual Culture Studies",
+      "Founder of Post-Interpretive Criticism",
+      "Post-Aesthetic Critic",
+      "Independent Philosopher of Art",
+      "Museum of One",
+      "Art Writer and Theorist",
+      "Custodian of Witness Aesthetics",
+      "Art as Truth",
+      "The Viewer as Evidence",
+      "nterpretation vs. Witnessing",
+      "Erasure as Afterlife",
+      "Language as Custody",
+      "Post-Interpretive Lexicon",
+      "Alternative art criticism",
+      "New art criticism movement",
+      "Ethical art theory",
+      "Criticism beyond interpretation",
+      "Quiet philosophy of art",
+      "Radical art restraint",
+      "Witness over interpretation",
+      "Post-Interpretive Criticism",
+      "Dorian Vale",
+      "Witness Aesthetics",
+      "Stillmark Theory",
+      "Art as Presence",
+      "Art Criticism Ethics",
+      "Custodianship of Art",
+      "Copyright © Dorian Vale. Published by Museum of One.",
+      "https://www.museumofone.art/",
+      "https://hcommons.org/members/dorianvale/",
+      "https://philpeople.org/profiles/dorian-vale",
+      "https://osf.io/xa5jw/",
+      "https://independent.academia.edu/DorianVale",
+      "https://doi.org/10.5281/zenodo.17078847",
+      "https://doi.org/10.5281/zenodo.17112807",
+      "https://doi.org/10.5281/zenodo.17069115",
+      "https://figshare.com/authors/Dorian_Vale/22186984",
+      "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5443334",
+      "http://dx.doi.org/10.2139/ssrn.5443334",
+      "http://dx.doi.org/10.2139/ssrn.5443334",
+      "Q136308909",
+      "Q136308879",
+      "Q136308916",
+      "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://www.museumofone.art/",
+        "relation": "cites",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://hcommons.org/members/dorianvale/",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://osf.io/xa5jw/",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://philpeople.org/profiles/dorian-vale",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://independent.academia.edu/DorianVale",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://figshare.com/authors/Dorian_Vale/22186984",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "10.5281/zenodo.17112807",
+        "relation": "isSupplementTo",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.17078847",
+        "relation": "isSupplementTo",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.17069115",
+        "relation": "isSupplementTo",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5443334",
+        "relation": "isIdenticalTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "10.2139/ssrn.5443334",
+        "relation": "isSupplementTo",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://zenodo.org/communities/post-interpretive-criticism",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ",
+        "relation": "cites",
+        "scheme": "url"
+      },
+      {
+        "identifier": "10.2139/ssrn.5471149",
+        "relation": "isSupplementTo",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://ssrn.com/abstract=5471149",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      }
+    ],
+    "references": [
+      "https://www.museumofone.art/",
+      "https://hcommons.org/members/dorianvale/",
+      "https://philpeople.org/profiles/dorian-vale",
+      "https://osf.io/xa5jw/",
+      "https://independent.academia.edu/DorianVale",
+      "https://doi.org/10.5281/zenodo.17112807",
+      "https://doi.org/10.5281/zenodo.17078847",
+      "https://doi.org/10.5281/zenodo.17069115",
+      "https://figshare.com/authors/Dorian_Vale/22186984",
+      "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5443334",
+      "http://dx.doi.org/10.2139/ssrn.5443334",
+      "http://dx.doi.org/10.2139/ssrn.5443334",
+      "Q136308909",
+      "Q136308879",
+      "Q136308916",
+      "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d",
+      "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+      "https://zenodo.org/communities/post-interpretive-criticism",
+      "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ",
+      "https://ssrn.com/abstract=5471149",
+      "http://dx.doi.org/10.2139/ssrn.5471149"
+    ],
+    "resource_type": {
+      "title": "Journal article",
+      "type": "publication",
+      "subtype": "article"
+    },
+    "journal": {
+      "title": "Museum of One"
+    },
+    "meeting": {
+      "url": "https://www.museumofone.art/"
+    },
+    "alternate_identifiers": [
+      {
+        "identifier": "https://www.museumofone.art/"
+      },
+      {
+        "identifier": "https://hcommons.org/members/dorianvale/"
+      },
+      {
+        "identifier": "https://philpeople.org/profiles/dorian-vale"
+      },
+      {
+        "identifier": "https://osf.io/xa5jw/"
+      },
+      {
+        "identifier": "https://independent.academia.edu/DorianVale"
+      },
+      {
+        "identifier": "https://doi.org/10.5281/zenodo.17112807"
+      },
+      {
+        "identifier": "https://doi.org/10.5281/zenodo.17078847"
+      },
+      {
+        "identifier": "https://doi.org/10.5281/zenodo.17069115"
+      },
+      {
+        "identifier": "https://figshare.com/authors/Dorian_Vale/22186984"
+      },
+      {
+        "identifier": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5443334"
+      },
+      {
+        "identifier": "10.2139/ssrn.5443334"
+      },
+      {
+        "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d"
+      },
+      {
+        "identifier": "https://zenodo.org/communities/post-interpretive-criticism"
+      },
+      {
+        "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266"
+      },
+      {
+        "identifier": "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ"
+      },
+      {
+        "identifier": "https://ssrn.com/abstract=5471149"
+      },
+      {
+        "identifier": "10.2139/ssrn.5471149"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "post-interpretive-criticism"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17077652"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Language as Custody — Writing Without Harm in Post-Interpretive Criticism",
+  "links": {
+    "self": "https://zenodo.org/api/records/19863851",
+    "self_html": "https://zenodo.org/records/19863851",
+    "preview_html": "https://zenodo.org/records/19863851?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.19863851",
+    "self_doi": "https://doi.org/10.5281/zenodo.19863851",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.19863851",
+    "reserve_doi": "https://zenodo.org/api/records/19863851/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17077652",
+    "parent_html": "https://zenodo.org/records/17077652",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17077652",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17077652",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:19863851/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:19863851/sequence/default",
+    "files": "https://zenodo.org/api/records/19863851/files",
+    "media_files": "https://zenodo.org/api/records/19863851/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:19863851:Language%20as%20Custody%20%E2%80%94%20Writing%20Without%20Harm%20in%20Post-Interpretive%20Criticism.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:19863851:Language%20as%20Custody%20%E2%80%94%20Writing%20Without%20Harm%20in%20Post-Interpretive%20Criticism.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:19863851:Language%20as%20Custody%20%E2%80%94%20Writing%20Without%20Harm%20in%20Post-Interpretive%20Criticism.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:19863851:Language%20as%20Custody%20%E2%80%94%20Writing%20Without%20Harm%20in%20Post-Interpretive%20Criticism.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:19863851:Language%20as%20Custody%20%E2%80%94%20Writing%20Without%20Harm%20in%20Post-Interpretive%20Criticism.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:19863851:Language%20as%20Custody%20%E2%80%94%20Writing%20Without%20Harm%20in%20Post-Interpretive%20Criticism.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "latest": "https://zenodo.org/api/records/19863851/versions/latest",
+    "latest_html": "https://zenodo.org/records/19863851/latest",
+    "versions": "https://zenodo.org/api/records/19863851/versions",
+    "draft": "https://zenodo.org/api/records/19863851/draft",
+    "access_links": "https://zenodo.org/api/records/19863851/access/links",
+    "access_grants": "https://zenodo.org/api/records/19863851/access/grants",
+    "access_users": "https://zenodo.org/api/records/19863851/access/users",
+    "access_request": "https://zenodo.org/api/records/19863851/access/request",
+    "access": "https://zenodo.org/api/records/19863851/access",
+    "communities": "https://zenodo.org/api/records/19863851/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/19863851/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/19863851/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/19863851/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/19863851/quota-increase",
+    "requests": "https://zenodo.org/api/records/19863851/requests"
+  },
+  "updated": "2026-10-11T17:52:14.842757+00:00",
+  "recid": "19863851",
+  "revision": 6,
+  "files": [
+    {
+      "id": "438ea814-aaa0-46cc-ae5d-2621d7427527",
+      "key": "Language as Custody — Writing Without Harm in Post-Interpretive Criticism.pdf",
+      "size": 253299,
+      "checksum": "md5:634bb017af7a7d068ea135a9c85a7a57",
+      "links": {
+        "self": "https://zenodo.org/api/records/19863851/files/Language%20as%20Custody%20%E2%80%94%20Writing%20Without%20Harm%20in%20Post-Interpretive%20Criticism.pdf/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1392900"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 127,
+    "unique_downloads": 114,
+    "views": 224,
+    "unique_views": 206,
+    "version_downloads": 34,
+    "version_unique_downloads": 34,
+    "version_unique_views": 88,
+    "version_views": 90
+  },
+  "state": "done",
+  "submitted": true
+}

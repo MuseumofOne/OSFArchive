@@ -1,0 +1,471 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://archive.museumofone.art/#website",
+      "name": "Museum of One Digital Archive Library",
+      "url": "https://archive.museumofone.art/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://archive.museumofone.art/items/21241866.html#webpage",
+      "url": "https://archive.museumofone.art/items/21241866.html",
+      "name": "Hassan Sharif's Objects: The Ascetic of the Everyday",
+      "isPartOf": {
+        "@id": "https://archive.museumofone.art/#website"
+      },
+      "mainEntity": {
+        "@id": "https://archive.museumofone.art/items/21241866.html#catalogue-record"
+      },
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.21241866"
+      },
+      "breadcrumb": {
+        "@id": "https://archive.museumofone.art/items/21241866.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/21241866.html#catalogue-record",
+      "name": "Hassan Sharif's Objects: The Ascetic of the Everyday",
+      "url": "https://archive.museumofone.art/items/21241866.html",
+      "mainEntityOfPage": {
+        "@id": "https://archive.museumofone.art/items/21241866.html#webpage"
+      },
+      "about": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.21241866"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#hassan-sharif"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#emirati-art"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#repetition-and-labour"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#material-practice"
+        }
+      ],
+      "disambiguatingDescription": "Local catalogue record describing a deposited publication version.",
+      "description": "An essay on Hassan Sharif’s handmade accumulations of ordinary materials, examining repetition, labour, consumption, and the ethical implications of material fragility.",
+      "keywords": [
+        "Hassan Sharif",
+        "Emirati art",
+        "Repetition and labour",
+        "Material practice"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Local catalogue identifier",
+        "value": "MOO-CAT-008"
+      },
+      "dateModified": "2026-11-04",
+      "isBasedOn": [
+        {
+          "@id": "https://zenodo.org/records/21241866"
+        },
+        {
+          "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
+        },
+        {
+          "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.museumofone.art/research-witness-material-memory/"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/hassan-sharif.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/shopping-bags.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/plastic-funnel-and-aluminium-foil.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "name": "Dorian Vale",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0004-7737-5094"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/#publisher",
+      "name": "Museum of One",
+      "url": "https://www.museumofone.art/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.21241865",
+      "name": "Hassan Sharif's Objects: The Ascetic of the Everyday — version family",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Zenodo concept DOI",
+        "value": "10.5281/zenodo.21241865"
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.21241866"
+      }
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/items/21241866.html#file-1",
+      "contentUrl": "https://zenodo.org/api/records/21241866/files/Hassan%20Sharif%E2%80%99s%20Objects-%20The%20Ascetic%20of%20the%20Everyday%20.pdf/content",
+      "name": "Hassan Sharif’s Objects- The Ascetic of the Everyday .pdf",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.21241866"
+      },
+      "encodingFormat": "application/pdf",
+      "contentSize": "1077820 bytes",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source checksum",
+        "value": "md5:3e92afe450b57ddd845ec65ec3e2ab1b"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/research-witness-material-memory/",
+      "url": "https://www.museumofone.art/research-witness-material-memory/",
+      "name": "Witness, Material Presence, and Cultural Memory",
+      "description": "Related field essay on material presence, the visibility of labour and the responsibilities of preserving fragile work.",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "PIRR project ID",
+          "value": "pir-prj-dd7kt5rw",
+          "url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://archive.museumofone.art/items/21241866.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Digital Archive Library",
+          "item": "https://archive.museumofone.art/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Catalogue",
+          "item": "https://archive.museumofone.art/catalogue.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MOO-CAT-008",
+          "item": "https://archive.museumofone.art/items/21241866.html"
+        }
+      ]
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/assets/documents/21241866.pdf",
+      "contentUrl": "https://archive.museumofone.art/assets/documents/21241866.pdf",
+      "name": "Verified reading copy of Hassan Sharif's Objects: The Ascetic of the Everyday",
+      "encodingFormat": "application/pdf",
+      "contentSize": "1077820 bytes",
+      "description": "7 PDF file pages, including covers and unnumbered pages. Byte-identical local access copy; source checksum matched 2026-11-04.",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.21241866"
+      },
+      "isBasedOn": {
+        "@id": "https://archive.museumofone.art/items/21241866.html#file-1"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256 of local reading copy",
+        "value": "f3ada77ced8d8a82c11d99f6c5c9409176b81c45f11adcd3f959107b31567923"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5281/zenodo.21241866",
+      "name": "Hassan Sharif's Objects: The Ascetic of the Everyday",
+      "mainEntityOfPage": {
+        "@id": "https://zenodo.org/records/21241866"
+      },
+      "url": "https://zenodo.org/records/21241866",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.21241866"
+      },
+      "datePublished": "2026-07-07",
+      "keywords": [
+        "Post-Interpretive Criticism",
+        "Stillmark Theory",
+        "Message-Transfer Theory",
+        "Displacement",
+        "Misplacement",
+        "Aesthetic Displacement Theory",
+        "Theory of Misplacement",
+        "Absential Aesthetics",
+        "Witness Aesthetics",
+        "Hauntmark Theory",
+        "Presence-Based Criticism",
+        "Custodianship of Art",
+        "Art as Ontology",
+        "Aesthetic Recursion Theory",
+        "Aesthetic Recursion",
+        "Viewer as Evidence Theory",
+        "Interpretive Load Index (ILI)",
+        "Viewer Displacement Ratio (VDR)",
+        "Ethical Proximity Score (EPS)",
+        "Institutional Alignment Indicator (IAI)",
+        "Epoché Fidelity Index (EFI)",
+        "Phenomenological Phase Alignment Score (PPAS)",
+        "Residue Engagement Restraint Ratio (RERR)",
+        "Quasi-Subject Agency Recognition Index (QSARI)",
+        "Dialectical Circulation Index (DCI)",
+        "Restraint in front of art",
+        "Moral proximity",
+        "Interpretive silence",
+        "Temporal scarcity",
+        "Erasure as ethics",
+        "Silence as method",
+        "Ontology of beauty",
+        "Aesthetic mercy",
+        "Art encounter ethics",
+        "Language as violence",
+        "Epistemology of witness",
+        "Philosophy of Art",
+        "Aesthetics",
+        "Art Theory",
+        "Contemporary Aesthetics",
+        "Comparative Aesthetics",
+        "Phenomenology and Art",
+        "Phenomenology",
+        "Aesthetic Phenomenology",
+        "Phenomenology of Aesthetic",
+        "post-hermeneutics phenomenology",
+        "Ethics in Art Criticism",
+        "Interpretation and Meaning",
+        "Criticism and Reception Theory",
+        "Epistemology of Art",
+        "Visual Culture Studies",
+        "Dorian Vale",
+        "Founder of Post-Interpretive Criticism",
+        "Post-Aesthetic Critic",
+        "Independent Philosopher of Art",
+        "Museum of One",
+        "Art Writer and Theorist",
+        "Aesthetic Philosopher",
+        "Custodian of Witness Aesthetics",
+        "Post-Interpretive Lexicon",
+        "Museum of One Manifesto",
+        "Erasure as Afterlife",
+        "Language as Custody",
+        "Interpretation vs. Witnessing",
+        "The Viewer as Evidence",
+        "Art as Presence",
+        "Art as Truth",
+        "The Canon of Witnesses",
+        "The Custodian's Oath",
+        "The Doctrine of Post-Interpretive Criticism",
+        "Interpretive Restraint",
+        "Witness over interpretation",
+        "Radical art restraint",
+        "Quiet philosophy of art",
+        "Slow looking philosophy",
+        "Ethical art theory",
+        "Criticism beyond interpretationNew art criticism movement",
+        "Alternative art criticism",
+        "Hassan Sharif",
+        "Middle Eastern Modernism",
+        "Conceptual Art",
+        "Ethical Repetition",
+        "Theology of the Banal",
+        "Asceticism",
+        "Anti-monumentality"
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0004-7737-5094"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/#publisher"
+      },
+      "alternateName": [],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "exampleOfWork": {
+        "@id": "https://doi.org/10.5281/zenodo.21241865"
+      },
+      "encoding": [
+        {
+          "@id": "https://archive.museumofone.art/items/21241866.html#file-1"
+        },
+        {
+          "@id": "https://archive.museumofone.art/assets/documents/21241866.pdf"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://archive.museumofone.art/entities/hassan-sharif.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/shopping-bags.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/plastic-funnel-and-aluminium-foil.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zenodo.org/records/21241866",
+      "name": "Zenodo deposited-version record",
+      "mainEntity": {
+        "@id": "https://doi.org/10.5281/zenodo.21241866"
+      },
+      "publisher": {
+        "@id": "https://zenodo.org/#repository"
+      },
+      "dateCreated": "2026-07-07T13:45:10.371458+00:00",
+      "dateModified": "2026-07-07T13:45:10.791243+00:00"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zenodo.org/#repository",
+      "name": "Zenodo",
+      "url": "https://zenodo.org/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/",
+      "name": "Museum of One institutional publication context",
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.21241866"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/21241866.html#relationship-dorian-vale-author",
+      "name": "author",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
+      },
+      "description": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/21241866.html#relationship-museum-of-one-publisher",
+      "name": "publisher",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
+      },
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/21241866.html#relationship-hassan-sharif-artist-discussed",
+      "name": "artist discussed",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/hassan-sharif.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
+      },
+      "description": "The essay studies Sharif’s Objects and captions Shopping Bags and Plastic Funnel and Aluminium Foil."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/21241866.html#relationship-shopping-bags-artwork-discussed",
+      "name": "artwork discussed",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/shopping-bags.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
+      },
+      "description": "Named in the image caption as a work by Hassan Sharif."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/21241866.html#relationship-plastic-funnel-and-aluminium-foil-artwork-discussed",
+      "name": "artwork discussed",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/plastic-funnel-and-aluminium-foil.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/"
+      },
+      "description": "Named in the image caption as a work by Hassan Sharif."
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://archive.museumofone.art/vocabulary.html",
+      "name": "Museum of One local editorial discovery vocabulary",
+      "url": "https://archive.museumofone.art/vocabulary.html",
+      "description": "Published preferred labels, definitions, alternative labels and qualified external mappings."
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#hassan-sharif",
+      "name": "Hassan Sharif",
+      "termCode": "hassan-sharif",
+      "description": "Named-subject access point for publications discussing the artist Hassan Sharif.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#emirati-art",
+      "name": "Emirati art",
+      "termCode": "emirati-art",
+      "description": "Art discussed in relation to the United Arab Emirates.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#repetition-and-labour",
+      "name": "Repetition and labour",
+      "termCode": "repetition-and-labour",
+      "description": "Repeated making and the work involved in artistic production.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#material-practice",
+      "name": "Material practice",
+      "termCode": "material-practice",
+      "description": "Artistic working with materials and their properties, histories, or uses.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "created": "2026-05-09T19:04:52.528705+00:00",
+  "modified": "2026-05-09T19:04:52.862725+00:00",
+  "id": 20100136,
+  "conceptrecid": "20099594",
+  "doi": "10.5281/zenodo.20100136",
+  "conceptdoi": "10.5281/zenodo.20099594",
+  "doi_url": "https://doi.org/10.5281/zenodo.20100136",
+  "metadata": {
+    "title": "Diagnostics Without Possession: An Operational Manual for Post-Interpretive Criticism (Operational reference for inter-rater reliability)",
+    "doi": "10.5281/zenodo.20100136",
+    "publication_date": "2026-02-09",
+    "description": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">This manual operationalises the ten diagnostic indices of Post-Interpretive Criticism (PIC) for consistent application across coders, supporting inter-rater reliability work, comparative corpus studies, and self-audit by individual critics. It is an operational reference rather than a theoretical exposition; the foundational arguments are set out in the published v.2 specifications and are not rehearsed here except where required for procedural clarity.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">The framework is structured in two layers. Layer A &mdash; Ethical / Postural Indices (RD, ILI, VDR, EPS, IAI) &mdash; diagnoses how much force a critical text applies and where it lands. Layer B &mdash; Phenomenological Fidelity Indices (EFI, PPAS, RERR, QSARI, DCI) &mdash; diagnoses which phenomenological operations the text honours or violates, grounded in Husserl's epoch&eacute; and Dufrenne's three-phase model of aesthetic experience (presence, representation, reflection / feeling) together with his three-layer architecture of work, aesthetic object, and residue.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Part I establishes general coding principles, including coding units, the Direction of Force matrices (MAC/EBS, RM/CA), exclusion rules, the zero-denominator convention, genre awareness, and the PIC Constraint, which forbids single-index posture diagnoses. Parts II and III specify each index &mdash; definition, coding unit, calculation, criteria, disambiguation rules, and behavioural bands &mdash; and define Layer A postures (Forensic, Colonising, Poetic, Institutionalist) and Layer B postures (Witness-Aligned, Extractive, Institutionally Overdetermined, Unstable). Part IV addresses composite profiles and reporting protocols; Part V addresses methodological considerations including reliability targets (Cohen's &kappa; &ge; 0.80; ICC &ge; 0.85), context sensitivity, and cultural specificity. Three appendices cover operational terminology, reliability calculation, and a standard coding workflow.</p>\n<div class=\"el-p\">\n<p>This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and&nbsp;<em>Art as Truth: A Treatise</em>&nbsp;(Q136329071),&nbsp;<em>Aesthetic Recursion Theory</em>&nbsp;(Q136339843), The Journal of Post-Interpretive Criticism (Q136530009), Canon of Witnesses (Q136565881),Interpretive Load Index (ILI)&nbsp;(Q137709526), Viewer Displacement Ratio (VDR)&nbsp;(Q137709583)&nbsp;, Ethical Proximity Score (EPS)&nbsp;(Q137709600)&nbsp;, Institutional Alignment Indicator (IAI)&nbsp;(Q137709608), Post-Hermeneutic Phenomenology&nbsp;(Q137711946)</p>\n</div>\n<div class=\"el-p\">\n<div class=\"el-p\">\n<p><strong>Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen.</strong></p>\n</div>\n<div class=\"el-h2\">\n<h2>&nbsp;</h2>\n</div>\n</div>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": "Museum of One",
+        "orcid": "0009-0004-7737-5094"
+      },
+      {
+        "name": "Museum of One",
+        "affiliation": null
+      }
+    ],
+    "keywords": [
+      "Post-Interpretive Criticism",
+      "Stillmark Theory",
+      "Message-Transfer Theory",
+      "Aesthetic Displacement Theory",
+      "Theory of Misplacement",
+      "Absential Aesthetics",
+      "Witness Aesthetics",
+      "Hauntmark Theory",
+      "Presence-Based Criticism",
+      "Custodianship of Art",
+      "Art as Ontology",
+      "Aesthetic Recursion Theory",
+      "Aesthetic Recursion",
+      "Viewer as Evidence Theory",
+      "Interpretive Load Index (ILI)",
+      "Viewer Displacement Ratio (VDR)",
+      "Ethical Proximity Score (EPS)",
+      "Institutional Alignment Indicator (IAI)",
+      "Epoché Fidelity Index (EFI)",
+      "Phenomenological Phase Alignment Score (PPAS)",
+      "Residue Engagement Restraint Ratio (RERR)",
+      "Quasi-Subject Agency Recognition Index (QSARI)",
+      "Dialectical Circulation Index (DCI)",
+      "Restraint in front of art",
+      "Moral proximity",
+      "Interpretive silence",
+      "Erasure as ethics",
+      "Temporal scarcity",
+      "Silence as method",
+      "Ontology of beauty",
+      "Aesthetic mercy",
+      "Language as violence",
+      "Art encounter ethics",
+      "Epistemology of witness",
+      "Philosophy of Art",
+      "Aesthetics",
+      "Art TheoryContemporary Aesthetics",
+      "Comparative Aesthetics",
+      "Phenomenology and Art",
+      "Aesthetic Phenomenology",
+      "Phenomenology",
+      "Phenomenology of Aesthetic",
+      "post-hermeneutics phenomenology",
+      "Ethics in Art Criticism",
+      "Interpretation and Meaning",
+      "Criticism and Reception Theory",
+      "Epistemology of Art",
+      "Visual Culture Studies",
+      "Dorian Vale",
+      "Founder of Post-Interpretive Criticism",
+      "Post-Aesthetic Critic",
+      "Independent Philosopher of Art",
+      "Museum of One",
+      "Art Writer and Theorist",
+      "Aesthetic Philosopher",
+      "Custodian of Witness Aesthetics",
+      "The Doctrine of Post-Interpretive Criticism",
+      "The Custodian's Oath",
+      "The Canon of Witnesses",
+      "Art as Truth",
+      "Art as Presence",
+      "The Viewer as Evidence",
+      "Interpretation vs. Witnessing",
+      "Language as Custody",
+      "Erasure as Afterlife",
+      "Museum of One Manifesto",
+      "Post-Interpretive Lexicon",
+      "Alternative art criticism",
+      "New art criticism movement",
+      "Ethical art theory",
+      "Criticism beyond interpretation",
+      "\\Slow looking philosophy",
+      "Quiet philosophy of art",
+      "Radical art restraint",
+      "Interpretive Restraint"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://www.museumofone.art",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://zenodo.org/communities/post-interpretive-criticism",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://osf.io/zhnre/",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://works.hcommons.org/records/xv2j2-g6927",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://philpapers.org/rec/VALPCF-2",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.researchcatalogue.net/profile",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://archive.org/details/the-journal-of-post-interpretive-criticism-vi",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://scholar.google.com/citations?user=15tvhjAAAAAJ",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://independent.academia.edu/DorianVale",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.zotero.org/groups/6279725/post-interpretive-criticism",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://core.ac.uk/search/?q=post-interpretive+criticism+dorian+vale",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.base-search.net/Search/Results?lookfor=Post-Interpretive+Criticism",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://commons.datacite.org/?query=Post-Interpretive+Criticism",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://openalex.org/works?filter=title_and_abstract.search:Post-Interpretive+Criticism+Dorian+Vale",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art",
+        "relation": "isDescribedBy",
+        "scheme": "url"
+      }
+    ],
+    "references": [
+      "https://www.museumofone.art",
+      "https://zenodo.org/communities/post-interpretive-criticism",
+      "https://osf.io/zhnre/",
+      "https://works.hcommons.org/records/xv2j2-g6927",
+      "https://philpapers.org/rec/VALPCF-2",
+      "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
+      "https://www.researchcatalogue.net/profile",
+      "https://archive.org/details/the-journal-of-post-interpretive-criticism-vi",
+      "https://scholar.google.com/citations?user=15tvhjAAAAAJ",
+      "https://independent.academia.edu/DorianVale",
+      "https://www.zotero.org/groups/6279725/post-interpretive-criticism",
+      "https://core.ac.uk/search/?q=post-interpretive+criticism+dorian+vale",
+      "https://www.base-search.net/Search/Results?lookfor=Post-Interpretive+Criticism",
+      "https://openalex.org/works?filter=title_and_abstract.search:Post-Interpretive+Criticism+Dorian+Vale",
+      "https://commons.datacite.org/?query=Post-Interpretive+Criticism",
+      "https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "title": "Journal of Post-Interpretive Criticism",
+      "volume": "4"
+    },
+    "meeting": {
+      "url": "https://www.museumofone.art/"
+    },
+    "alternate_identifiers": [
+      {
+        "identifier": "2819-7232"
+      },
+      {
+        "identifier": "978-1-06-982030-3"
+      },
+      {
+        "identifier": "978-1-06-982031-0"
+      },
+      {
+        "identifier": "978-1-06-982032-7"
+      },
+      {
+        "identifier": "0000000528819728"
+      },
+      {
+        "identifier": "0000000528819787"
+      },
+      {
+        "identifier": "0000000528819744"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "20099594"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Diagnostics Without Possession: An Operational Manual for Post-Interpretive Criticism (Operational reference for inter-rater reliability)",
+  "links": {
+    "self": "https://zenodo.org/api/records/20100136",
+    "self_html": "https://zenodo.org/records/20100136",
+    "preview_html": "https://zenodo.org/records/20100136?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.20100136",
+    "self_doi": "https://doi.org/10.5281/zenodo.20100136",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.20100136",
+    "reserve_doi": "https://zenodo.org/api/records/20100136/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/20099594",
+    "parent_html": "https://zenodo.org/records/20099594",
+    "parent_doi": "https://doi.org/10.5281/zenodo.20099594",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.20099594",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:20100136/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:20100136/sequence/default",
+    "files": "https://zenodo.org/api/records/20100136/files",
+    "media_files": "https://zenodo.org/api/records/20100136/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:20100136:Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:20100136:Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:20100136:Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:20100136:Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:20100136:Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:20100136:Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "latest": "https://zenodo.org/api/records/20100136/versions/latest",
+    "latest_html": "https://zenodo.org/records/20100136/latest",
+    "versions": "https://zenodo.org/api/records/20100136/versions",
+    "draft": "https://zenodo.org/api/records/20100136/draft",
+    "access_links": "https://zenodo.org/api/records/20100136/access/links",
+    "access_grants": "https://zenodo.org/api/records/20100136/access/grants",
+    "access_users": "https://zenodo.org/api/records/20100136/access/users",
+    "access_request": "https://zenodo.org/api/records/20100136/access/request",
+    "access": "https://zenodo.org/api/records/20100136/access",
+    "communities": "https://zenodo.org/api/records/20100136/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/20100136/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/20100136/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/20100136/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/20100136/quota-increase",
+    "requests": "https://zenodo.org/api/records/20100136/requests"
+  },
+  "updated": "2026-05-09T19:04:52.862725+00:00",
+  "recid": "20100136",
+  "revision": 4,
+  "files": [
+    {
+      "id": "b5f301da-e9d9-4340-97fc-e2f96087cbd7",
+      "key": "Diagnostics Without Possession - An Operational Manual for Post-Interpretive Criticism.pdf",
+      "size": 525965,
+      "checksum": "md5:2dc93b7125bb645e67fba4b0f54696e5",
+      "links": {
+        "self": "https://zenodo.org/api/records/20100136/files/Diagnostics%20Without%20Possession%20-%20An%20Operational%20Manual%20for%20Post-Interpretive%20Criticism.pdf/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1392900"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 34,
+    "unique_downloads": 30,
+    "views": 137,
+    "unique_views": 129,
+    "version_downloads": 20,
+    "version_unique_downloads": 20,
+    "version_unique_views": 102,
+    "version_views": 107
+  },
+  "state": "done",
+  "submitted": true
+}

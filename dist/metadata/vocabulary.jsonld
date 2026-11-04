@@ -1,0 +1,2309 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html",
+      "@type": "skos:ConceptScheme",
+      "dct:title": "Museum of One Local Discovery Vocabulary",
+      "dct:description": "A maintained local vocabulary for consistent access to this selected Museum of One corpus. Definitions describe how terms are used here; they do not replace source wording or claim external authority endorsement.",
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "owl:versionInfo": "4",
+      "skos:hasTopConcept": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#aesthetics"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#architecture"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#art-criticism"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#art-writing"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#assemblage"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#authorship"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#conservation-ethics"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#contemporary-art"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#critical-language"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#curatorial-practice"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#custodianship"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#displacement"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#documentary-evidence"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#documentation"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#el-anatsui"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#emirati-art"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#ethics-of-witnessing"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#exhibition-histories"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#foundational-writings"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#hassan-sharif"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#historical-evidence"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#impermanence"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#institutional-critique"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#interpretation"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#material-deterioration"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#material-practice"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#memory"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#moral-proximity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#museum-cataloguing"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#pedagogy"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#postwar-japanese-art"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#power-and-institutions"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#repetition-and-labour"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#research-methods"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#spatial-experience"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#sudanese-art"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#viewer-response"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#witnessing"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#genre-book"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#genre-journal-article"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#genre-working-paper"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#genre-dataset"
+        }
+      ]
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#aesthetic-theory",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:aesthetic-theory",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Aesthetic theory",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Theoretical propositions about how art is encountered, understood, or valued.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for explicit theoretical argument; distinguish the wider field of Aesthetics.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/21786998"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:broader": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#aesthetics"
+        }
+      ]
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#aesthetics",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:aesthetics",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Aesthetics",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Philosophical inquiry into art, perception, and aesthetic experience.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Used as a broad disciplinary access term; no external vocabulary equivalence is asserted.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19864099"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:narrower": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#aesthetic-theory"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#architecture",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:architecture",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Architecture",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Buildings and the built environment as subjects of critical study.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for the subject of a publication, not to classify the deposited document as a building.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/20383926"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#power-and-institutions"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#spatial-experience"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#art-criticism",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:art-criticism",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Art criticism",
+        "@language": "en"
+      },
+      "skos:altLabel": [
+        {
+          "@value": "Art Criticism",
+          "@language": "en"
+        }
+      ],
+      "skos:definition": {
+        "@value": "Critical examination and discussion of artworks and encounters with art.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for publications addressing criticism as a practice, method, or ethical responsibility.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19864099"
+        },
+        {
+          "@id": "https://zenodo.org/records/19864115"
+        },
+        {
+          "@id": "https://zenodo.org/records/20100139"
+        },
+        {
+          "@id": "https://zenodo.org/records/19863790"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#art-writing"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#interpretation"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#art-writing",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:art-writing",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Art writing",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Writing about art as a literary and critical practice.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use when the act and responsibility of writing are central; related to but distinct from Art criticism.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19863851"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#art-criticism"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#critical-language"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#assemblage",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:assemblage",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Assemblage",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Artistic practice involving the combination of existing objects or materials.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "In this catalogue, used for discussion of El Anatsui’s material constructions; does not classify the deposited PDF as an artwork.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/20593003"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#material-practice"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#authorship",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:authorship",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Authorship",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "The attribution and exercise of creative or intellectual agency.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for discussion of curatorial or critical authorship; named creators belong in agent authority records.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19963428"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#coding-procedures",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:coding-procedures",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Coding procedures",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Documented rules for assigning analytical codes to research material.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for methodological instructions, not as evidence that their reliability has been established.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/20100136"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:broader": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#research-methods"
+        }
+      ]
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#conservation-ethics",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:conservation-ethics",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Conservation ethics",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Ethical questions about caring for, stabilising, or allowing change in artworks.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for discussion of conservation decisions and their relation to artistic impermanence.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/21715085"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#impermanence"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#contemporary-art",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:contemporary-art",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Contemporary art",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Art discussed within contemporary artistic and critical contexts.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "A broad local subject heading; specific chronology must be supplied in the item description.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/21715085"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#critical-language",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:critical-language",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Critical language",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "The terms and linguistic choices through which critical claims are made.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for publications examining wording, descriptive authority, restraint, or the circulation of interpretation.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/23430200"
+        },
+        {
+          "@id": "https://zenodo.org/records/20100136"
+        },
+        {
+          "@id": "https://zenodo.org/records/20100139"
+        },
+        {
+          "@id": "https://zenodo.org/records/21786998"
+        },
+        {
+          "@id": "https://zenodo.org/records/19863851"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#art-writing"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#museum-cataloguing"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#curatorial-practice",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:curatorial-practice",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Curatorial practice",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "The selection, organisation, and presentation of art in exhibitions.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for inquiry into curatorial decisions and their effects on an encounter with art.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19963428"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:narrower": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#exhibition-design"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#institutional-critique"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#custodianship",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:custodianship",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Custodianship",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "A responsibility of care toward artworks within the author’s critical framework.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Local PIC concept. This intellectual use is distinct from legal custody, repository ownership, or archival transfer.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19863851"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#displacement",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:displacement",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Displacement",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Dislocation from place or context as a subject of art and critical writing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "In the current assignment, refers to displacement in the Sudanese art study; do not merge with the author’s named Aesthetic Displacement Theory.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/23395654"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#documentary-evidence",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:documentary-evidence",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Documentary evidence",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Documents considered as support for an interpretive or historical claim.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use when the evidentiary function of records is central, rather than the production of documentation alone.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/23430200"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#documentation"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#historical-evidence"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#documentation",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:documentation",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Documentation",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "The recording and preservation of information about art, events, or practices.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for discussion of documentary processes and their limitations; related to Documentary evidence.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/23428974"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#documentary-evidence"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#exhibition-histories"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#el-anatsui",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:el-anatsui",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "El Anatsui",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Named-subject access point for publications discussing the artist El Anatsui.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "This local heading supports subject discovery. Identity and external authority assertions belong in the separate entity register.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/20593003"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#emirati-art",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:emirati-art",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Emirati art",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Art discussed in relation to the United Arab Emirates.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "A contextual subject heading, not a statement of any individual’s citizenship or an external geographic authority assignment.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/21241866"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#ethics-of-witnessing",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:ethics-of-witnessing",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Ethics of witnessing",
+        "@language": "en"
+      },
+      "skos:altLabel": [
+        {
+          "@value": "ethics of witnessing",
+          "@language": "en"
+        }
+      ],
+      "skos:definition": {
+        "@value": "Ethical responsibility in attending to artworks and the histories they engage.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Local access term used for the Museum of One corpus. Preserve the author’s framework attribution; no equivalence with an external philosophical school is asserted.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/23395654"
+        },
+        {
+          "@id": "https://zenodo.org/records/20383926"
+        },
+        {
+          "@id": "https://zenodo.org/records/19863790"
+        },
+        {
+          "@id": "https://zenodo.org/records/19863836"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#witnessing"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#exhibition-design",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:exhibition-design",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Exhibition design",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "The spatial and material arrangements through which exhibitions present works.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for analysis of sequence, lighting, distance, and other presentation decisions.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19963428"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:broader": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#curatorial-practice"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#spatial-experience"
+        }
+      ]
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#exhibition-histories",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:exhibition-histories",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Exhibition histories",
+        "@language": "en"
+      },
+      "skos:altLabel": [
+        {
+          "@value": "Exhibition history",
+          "@language": "en"
+        }
+      ],
+      "skos:definition": {
+        "@value": "Historical study of exhibitions, their events, and their documentary traces.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for publications examining what exhibition records allow a historical account to claim.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/23428974"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#documentation"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#foundational-writings",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:foundational-writings",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Foundational writings",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Writings presented within the corpus as introducing its foundational propositions.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Local editorial grouping for discovery; does not confer institutional canonisation or external recognition.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19864099"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#hassan-sharif",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:hassan-sharif",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Hassan Sharif",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Named-subject access point for publications discussing the artist Hassan Sharif.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "This local heading supports subject discovery. Identity and external authority assertions belong in the separate entity register.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/21241866"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#historical-evidence",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:historical-evidence",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Historical evidence",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Evidence used to support or constrain accounts of past artistic activity.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for methodological discussion of what an art-historical claim can substantiate.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/23428974"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#documentary-evidence"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#historical-memory",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:historical-memory",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Historical memory",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "The retention and mediation of the past through art and its material histories.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Used for studies linking an artwork’s materials or practices to remembered histories; related to the broader subject Memory.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/20593003"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:broader": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#memory"
+        }
+      ]
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#impermanence",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:impermanence",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Impermanence",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "The condition of change, transience, or non-endurance as an artistic concern.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for critical discussion of impermanence; material deterioration identifies a particular physical process.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/21715085"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#conservation-ethics"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#material-deterioration"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#institutional-critique",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:institutional-critique",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Institutional critique",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Critical examination of the authority and practices of art institutions.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use as a subject heading for inquiry into institutional framing; it does not classify a deposited essay as an artwork in that tradition.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19963428"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#curatorial-practice"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#inter-rater-reliability",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:inter-rater-reliability",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Inter-rater reliability",
+        "@language": "en"
+      },
+      "skos:altLabel": [
+        {
+          "@value": "Interrater reliability",
+          "@language": "en"
+        },
+        {
+          "@value": "Inter rater reliability",
+          "@language": "en"
+        }
+      ],
+      "skos:definition": {
+        "@value": "Agreement between independent coders applying a shared analytical procedure.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for research methods addressing such agreement. Assignment does not state that independent testing or successful validation has occurred.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/20100136"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:broader": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#research-methods"
+        }
+      ]
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#interpretation",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:interpretation",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Interpretation",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "The production and negotiation of meaning in encounters with art.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for discussion of interpretive activity and its limits; separate from the specific local Post-Interpretive Criticism framework.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/21786998"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#art-criticism"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#material-deterioration",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:material-deterioration",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Material deterioration",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Physical alteration or weakening of materials over time.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for discussion of material fatigue and decay in artworks; no condition assessment of a held object is implied.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/21715085"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#impermanence"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#material-practice",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:material-practice",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Material practice",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Artistic working with materials and their properties, histories, or uses.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use as a broad subject for material processes; techniques such as Assemblage may be assigned separately.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/21241866"
+        },
+        {
+          "@id": "https://zenodo.org/records/20593003"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#assemblage"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#repetition-and-labour"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#memory",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:memory",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Memory",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "The retention and continuing effects of experiences or histories.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for work addressing remembered encounters with art; Historical memory provides a narrower local access term.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19863836"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:narrower": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#historical-memory"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#viewer-response"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#moral-proximity",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:moral-proximity",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Moral proximity",
+        "@language": "en"
+      },
+      "skos:altLabel": [
+        {
+          "@value": "Moral Proximity",
+          "@language": "en"
+        }
+      ],
+      "skos:definition": {
+        "@value": "The author’s term for ethical responsibility through closeness and restraint in criticism.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Local PIC concept. Attribute claims to the author’s framework; no standard measurement or external theoretical equivalence is implied.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19863790"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#museum-cataloguing",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:museum-cataloguing",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Museum cataloguing",
+        "@language": "en"
+      },
+      "skos:altLabel": [
+        {
+          "@value": "Museum cataloging",
+          "@language": "en"
+        }
+      ],
+      "skos:definition": {
+        "@value": "The creation, revision, and circulation of descriptive records for museum objects.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use when catalogue titles, descriptions, or metadata are subjects of research; distinguish this from the archive’s own cataloguing activity.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/23430200"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:narrower": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#title-correction"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#critical-language"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#pedagogy",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:pedagogy",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Pedagogy",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Teaching and learning practices related to viewing, thinking, and writing about art.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for works containing exercises or explicit discussion of learning; does not imply an accredited course.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19864115"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#pilot-study",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:pilot-study",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Pilot study",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "An exploratory study used to investigate a research approach on a limited sample.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "For this corpus, retain the source qualification that the quantitative study is a single-coder pilot; do not imply independent validation.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/20100139"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:broader": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#research-methods"
+        }
+      ]
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#post-interpretive-criticism",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:post-interpretive-criticism",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Post-Interpretive Criticism",
+        "@language": "en"
+      },
+      "skos:altLabel": [
+        {
+          "@value": "PIC",
+          "@language": "en"
+        },
+        {
+          "@value": "Post Interpretive Criticism",
+          "@language": "en"
+        }
+      ],
+      "skos:definition": {
+        "@value": "The critical framework named and developed in the Museum of One publications.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Local named intellectual framework. Used for records explicitly concerned with it; no Getty, Library of Congress, or other external equivalence is asserted.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19864099"
+        },
+        {
+          "@id": "https://zenodo.org/records/19864115"
+        },
+        {
+          "@id": "https://zenodo.org/records/23395654"
+        },
+        {
+          "@id": "https://zenodo.org/records/21786998"
+        },
+        {
+          "@id": "https://zenodo.org/records/19863790"
+        },
+        {
+          "@id": "https://zenodo.org/records/19863836"
+        },
+        {
+          "@id": "https://zenodo.org/records/19863851"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#custodianship"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#ethics-of-witnessing"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#foundational-writings"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#moral-proximity"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#postwar-japanese-art",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:postwar-japanese-art",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Postwar Japanese art",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Art in Japan considered in relation to the period after the Second World War.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "A contextual historical access point. The item description identifies the practices and dates actually discussed.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/23428974"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#power-and-institutions",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:power-and-institutions",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Power and institutions",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Relations of authority as exercised through institutional structures and spaces.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for inquiry into access, surveillance, ordering, and authority; not an institutional affiliation field.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/20383926"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#architecture"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#repetition-and-labour",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:repetition-and-labour",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Repetition and labour",
+        "@language": "en"
+      },
+      "skos:altLabel": [
+        {
+          "@value": "Repetition and labor",
+          "@language": "en"
+        }
+      ],
+      "skos:definition": {
+        "@value": "Repeated making and the work involved in artistic production.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use when repetition and labour are discussed together, particularly in the Hassan Sharif essay; not a universal synonym for either concept alone.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/21241866"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#material-practice"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#research-methods",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:research-methods",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Research methods",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Procedures for conducting, documenting, or evaluating an inquiry.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for methodological discussion; narrower local terms distinguish coding, agreement, and exploratory study.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/20100136"
+        },
+        {
+          "@id": "https://zenodo.org/records/20100139"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:narrower": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#coding-procedures"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#inter-rater-reliability"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#pilot-study"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#spatial-experience",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:spatial-experience",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Spatial experience",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Bodily and perceptual experience of built or arranged space.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for critical study of scale, light, thresholds, and access; related to Architecture and Exhibition design.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/20383926"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#architecture"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#exhibition-design"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#sudanese-art",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:sudanese-art",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Sudanese art",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Art discussed in relation to Sudan and Sudanese histories or experiences.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "A contextual subject heading, not a statement about any individual’s citizenship or an external geographic authority assignment.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/23395654"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#title-correction",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:title-correction",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Title correction",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Revision of an object title or identification in a descriptive record.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for research on corrections and their subsequent circulation; assignment does not state that every cited institution has adopted a correction.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/23430200"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:broader": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#museum-cataloguing"
+        }
+      ]
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#viewer-response",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:viewer-response",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Viewer response",
+        "@language": "en"
+      },
+      "skos:altLabel": [
+        {
+          "@value": "Viewer responses",
+          "@language": "en"
+        }
+      ],
+      "skos:definition": {
+        "@value": "The effects of encountering art on its viewer.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for response, lasting experience, and the viewer’s role within a critical account; not a claim of empirical audience research.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19863836"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#memory"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#witnessing",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:witnessing",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Witnessing",
+        "@language": "en"
+      },
+      "skos:altLabel": [],
+      "skos:definition": {
+        "@value": "Attentive encounter with artworks and their effects within the corpus.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Use for discussion of witnessing as a critical practice. Ethics of witnessing identifies an explicitly ethical focus.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local controlled term. No external equivalent has been verified or assigned.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19864115"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:related": [
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#ethics-of-witnessing"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#genre-book",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:genre-book",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Book",
+        "@language": "en"
+      },
+      "skos:altLabel": [
+        {
+          "@value": "Books",
+          "@language": "en"
+        },
+        {
+          "@value": "Digital book",
+          "@language": "en"
+        }
+      ],
+      "skos:definition": {
+        "@value": "Book-length publication represented by a deposited digital edition.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Describes publication genre. The local PDF is not being described as a physical bound volume.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "External mapping is explicitly qualified by relationship and scope.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/19864099"
+        },
+        {
+          "@id": "https://zenodo.org/records/19864115"
+        },
+        {
+          "@id": "https://zenodo.org/records/23395654"
+        },
+        {
+          "@id": "https://zenodo.org/records/20383926"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:relatedMatch": [
+        {
+          "@id": "http://vocab.getty.edu/aat/300028051"
+        }
+      ]
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#genre-journal-article",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:genre-journal-article",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Journal article",
+        "@language": "en"
+      },
+      "skos:altLabel": [
+        {
+          "@value": "Journal articles",
+          "@language": "en"
+        }
+      ],
+      "skos:definition": {
+        "@value": "A contribution issued as part of a journal or periodical.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Describes publication genre based on the catalogued source record; peer-review status is a separate question.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "External mapping is explicitly qualified by relationship and scope.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/21715085"
+        },
+        {
+          "@id": "https://zenodo.org/records/21241866"
+        },
+        {
+          "@id": "https://zenodo.org/records/20593003"
+        },
+        {
+          "@id": "https://zenodo.org/records/19963428"
+        },
+        {
+          "@id": "https://zenodo.org/records/21786998"
+        },
+        {
+          "@id": "https://zenodo.org/records/19863790"
+        },
+        {
+          "@id": "https://zenodo.org/records/19863836"
+        },
+        {
+          "@id": "https://zenodo.org/records/19863851"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:broadMatch": [
+        {
+          "@id": "http://vocab.getty.edu/aat/300048715"
+        }
+      ]
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#genre-working-paper",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:genre-working-paper",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Working paper",
+        "@language": "en"
+      },
+      "skos:altLabel": [
+        {
+          "@value": "Working papers",
+          "@language": "en"
+        }
+      ],
+      "skos:definition": {
+        "@value": "A research publication presented as a working or operational paper.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Preserve source version and programme stage. This genre does not imply peer review or final publication status.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local genre; no external equivalent is asserted.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/23430200"
+        },
+        {
+          "@id": "https://zenodo.org/records/23428974"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@id": "https://archive.museumofone.art/vocabulary.html#genre-dataset",
+      "@type": "skos:Concept",
+      "dct:identifier": "urn:museum-of-one:vocabulary:genre-dataset",
+      "skos:inScheme": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      },
+      "skos:prefLabel": {
+        "@value": "Dataset",
+        "@language": "en"
+      },
+      "skos:altLabel": [
+        {
+          "@value": "Datasets",
+          "@language": "en"
+        }
+      ],
+      "skos:definition": {
+        "@value": "A deposited body of research data, potentially accompanied by a report.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Describes the resource genre. This selected deposit includes a PDF report; the label does not promise machine-readable tabular files.",
+        "@language": "en"
+      },
+      "skos:editorialNote": "Local genre; no external equivalent is asserted.",
+      "dct:source": [
+        {
+          "@id": "https://zenodo.org/records/20100136"
+        },
+        {
+          "@id": "https://zenodo.org/records/20100139"
+        }
+      ],
+      "dct:modified": {
+        "@value": "2026-11-04",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": "Museum of One Digital Archive Library",
+      "skos:topConceptOf": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    }
+  ]
+}

@@ -1,0 +1,475 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://archive.museumofone.art/#website",
+      "name": "Museum of One Digital Archive Library",
+      "url": "https://archive.museumofone.art/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://archive.museumofone.art/items/19963428.html#webpage",
+      "url": "https://archive.museumofone.art/items/19963428.html",
+      "name": "The Curator's Shadow: The Unspoken Authorship Behind Neutrality.",
+      "isPartOf": {
+        "@id": "https://archive.museumofone.art/#website"
+      },
+      "mainEntity": {
+        "@id": "https://archive.museumofone.art/items/19963428.html#catalogue-record"
+      },
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.19963428"
+      },
+      "breadcrumb": {
+        "@id": "https://archive.museumofone.art/items/19963428.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19963428.html#catalogue-record",
+      "name": "The Curator's Shadow: The Unspoken Authorship Behind Neutrality.",
+      "url": "https://archive.museumofone.art/items/19963428.html",
+      "mainEntityOfPage": {
+        "@id": "https://archive.museumofone.art/items/19963428.html#webpage"
+      },
+      "about": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.19963428"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#curatorial-practice"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#exhibition-design"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#institutional-critique"
+        },
+        {
+          "@id": "https://archive.museumofone.art/vocabulary.html#authorship"
+        }
+      ],
+      "disambiguatingDescription": "Local catalogue record describing a deposited publication version.",
+      "description": "A study of curatorial authorship and the claim of neutrality. It attends to the choices of sequence, lighting, distance, and omission through which exhibitions structure an encounter.",
+      "keywords": [
+        "Curatorial practice",
+        "Exhibition design",
+        "Institutional critique",
+        "Authorship"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Local catalogue identifier",
+        "value": "MOO-CAT-010"
+      },
+      "dateModified": "2026-11-04",
+      "isBasedOn": [
+        {
+          "@id": "https://zenodo.org/records/19963428"
+        },
+        {
+          "@id": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/"
+        },
+        {
+          "@id": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.museumofone.art/research-witness-material-memory/"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/harald-szeemann.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/okwui-enwezor.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/when-attitudes-become-form.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/documenta-11.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0004-7737-5094",
+      "name": "Dorian Vale",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0004-7737-5094"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://archive.museumofone.art/#publisher",
+      "name": "Museum of One",
+      "url": "https://www.museumofone.art/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.19957859",
+      "name": "The Curator's Shadow: The Unspoken Authorship Behind Neutrality. — version family",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Zenodo concept DOI",
+        "value": "10.5281/zenodo.19957859"
+      },
+      "workExample": {
+        "@id": "https://doi.org/10.5281/zenodo.19963428"
+      }
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/items/19963428.html#file-1",
+      "contentUrl": "https://zenodo.org/api/records/19963428/files/The%20Curator%E2%80%99s%20Shadow%20%E2%80%93%20the%20unspoken%20authorship%20behind%20neutrality.pdf/content",
+      "name": "The Curator’s Shadow – the unspoken authorship behind neutrality.pdf",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19963428"
+      },
+      "encodingFormat": "application/pdf",
+      "contentSize": "400025 bytes",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Source checksum",
+        "value": "md5:60e68ced54424e21fcd7d42f6f3c8bf5"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/research-witness-material-memory/",
+      "url": "https://www.museumofone.art/research-witness-material-memory/",
+      "name": "Witness, Material Presence, and Cultural Memory",
+      "description": "Related field essay on how exhibition arrangements shape the conditions and responsibilities of witnessing.",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "PIRR project ID",
+          "value": "pir-prj-dd7kt5rw",
+          "url": "https://www.museumofone.art/research-witness-material-memory/#programme-record"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://archive.museumofone.art/items/19963428.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Digital Archive Library",
+          "item": "https://archive.museumofone.art/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Catalogue",
+          "item": "https://archive.museumofone.art/catalogue.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MOO-CAT-010",
+          "item": "https://archive.museumofone.art/items/19963428.html"
+        }
+      ]
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://archive.museumofone.art/assets/documents/19963428.pdf",
+      "contentUrl": "https://archive.museumofone.art/assets/documents/19963428.pdf",
+      "name": "Verified reading copy of The Curator's Shadow: The Unspoken Authorship Behind Neutrality.",
+      "encodingFormat": "application/pdf",
+      "contentSize": "400025 bytes",
+      "description": "6 PDF file pages, including covers and unnumbered pages. Byte-identical local access copy; source checksum matched 2026-11-04.",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19963428"
+      },
+      "isBasedOn": {
+        "@id": "https://archive.museumofone.art/items/19963428.html#file-1"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256 of local reading copy",
+        "value": "020a9a33056674df08b8ac699ff0976cda380ede6e5b9684368ce8dc53c6be7c"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5281/zenodo.19963428",
+      "name": "The Curator's Shadow: The Unspoken Authorship Behind Neutrality.",
+      "mainEntityOfPage": {
+        "@id": "https://zenodo.org/records/19963428"
+      },
+      "url": "https://zenodo.org/records/19963428",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.19963428"
+      },
+      "datePublished": "2025-05-01",
+      "keywords": [
+        "Post-Interpretive Criticism",
+        "Stillmark Theory",
+        "Message-Transfer Theory",
+        "MTT",
+        "Misplacement",
+        "Displacement",
+        "Aesthetic Displacement Theory",
+        "Theory of Misplacement",
+        "Absential Aesthetics",
+        "Witness Aesthetics",
+        "Hauntmark Theory",
+        "Presence-Based Criticism",
+        "Custodianship of Art",
+        "Art as Ontology",
+        "Aesthetic Recursion Theory",
+        "Aesthetic Recursion",
+        "Viewer as Evidence Theory",
+        "Interpretive Load Index (ILI)",
+        "Viewer Displacement Ratio (VDR)",
+        "Ethical Proximity Score (EPS)",
+        "Institutional Alignment Indicator (IAI)",
+        "Epoché Fidelity Index (EFI)",
+        "Phenomenological Phase Alignment Score (PPAS)",
+        "Residue Engagement Restraint Ratio (RERR)",
+        "Quasi-Subject Agency Recognition Index (QSARI)",
+        "Dialectical Circulation Index (DCI)",
+        "Restraint in front of art",
+        "Moral proximity",
+        "Interpretive silence",
+        "Erasure as ethics",
+        "Temporal scarcity",
+        "Silence as method",
+        "Ontology of beauty",
+        "Aesthetic mercy",
+        "Language as violence",
+        "Art encounter ethics",
+        "Epistemology of witness",
+        "Philosophy of Art",
+        "Aesthetics",
+        "Art Theory",
+        "Contemporary Aesthetics",
+        "Comparative Aesthetics",
+        "Phenomenology and Art",
+        "Phenomenology",
+        "Aesthetic Phenomenology",
+        "'Phenomenology of Aesthetic",
+        "post-hermeneutics phenomenology",
+        "Ethics in Art Criticism",
+        "Interpretation and Meaning",
+        "Criticism and Reception Theory",
+        "Epistemology of Art",
+        "Visual Culture Studies",
+        "Dorian Vale",
+        "Founder of Post-Interpretive Criticism",
+        "Independent Philosopher of Art",
+        "Post-Aesthetic Critic",
+        "Museum of One",
+        "Art Writer and Theorist",
+        "Aesthetic Philosopher",
+        "Custodian of Witness Aesthetics",
+        "The Doctrine of Post-Interpretive Criticism",
+        "The Custodian's Oath",
+        "The Canon of Witnesses",
+        "Art as TruthArt as Presence",
+        "The Viewer as Evidence",
+        "Interpretation vs. Witnessing",
+        "Erasure as Afterlife",
+        "Language as Custody",
+        "Museum of One Manifesto",
+        "Post-Interpretive Lexicon",
+        "New art criticism movement",
+        "Alternative art criticism",
+        "Ethical art theory",
+        "Criticism beyond interpretation",
+        "Slow looking philosophy",
+        "Quiet philosophy of art",
+        "Radical art restraint",
+        "Witness over interpretationInterpretive Restraint"
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0004-7737-5094"
+      },
+      "publisher": {
+        "@id": "https://archive.museumofone.art/#publisher"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "exampleOfWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19957859"
+      },
+      "encoding": [
+        {
+          "@id": "https://archive.museumofone.art/items/19963428.html#file-1"
+        },
+        {
+          "@id": "https://archive.museumofone.art/assets/documents/19963428.pdf"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://archive.museumofone.art/entities/when-attitudes-become-form.html#entity"
+        },
+        {
+          "@id": "https://archive.museumofone.art/entities/documenta-11.html#entity"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zenodo.org/records/19963428",
+      "name": "Zenodo deposited-version record",
+      "mainEntity": {
+        "@id": "https://doi.org/10.5281/zenodo.19963428"
+      },
+      "publisher": {
+        "@id": "https://zenodo.org/#repository"
+      },
+      "dateCreated": "2026-05-02T00:09:25.313806+00:00",
+      "dateModified": "2026-05-02T00:09:25.743533+00:00"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zenodo.org/#repository",
+      "name": "Zenodo",
+      "url": "https://zenodo.org/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+      "name": "Museum of One institutional publication context",
+      "about": {
+        "@id": "https://doi.org/10.5281/zenodo.19963428"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19963428.html#relationship-dorian-vale-author",
+      "name": "author",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/dorian-vale.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/"
+      },
+      "description": "The matching institutional publication record credits Dorian Vale as author."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19963428.html#relationship-museum-of-one-publisher",
+      "name": "publisher",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/museum-of-one.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/"
+      },
+      "description": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19963428.html#relationship-harald-szeemann-curator-discussed",
+      "name": "curator discussed",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/harald-szeemann.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/"
+      },
+      "description": "The essay connects Szeemann with When Attitudes Become Form; this is critical discussion, not an institutional affiliation."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19963428.html#relationship-okwui-enwezor-curator-discussed",
+      "name": "curator discussed",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/okwui-enwezor.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/"
+      },
+      "description": "The essay connects Enwezor with Documenta 11; this is critical discussion, not an institutional affiliation."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19963428.html#relationship-when-attitudes-become-form-exhibition-discussed",
+      "name": "exhibition discussed",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/when-attitudes-become-form.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/"
+      },
+      "description": "The essay names this exhibition in its discussion of Harald Szeemann and curatorial authorship."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://archive.museumofone.art/items/19963428.html#relationship-documenta-11-exhibition-discussed",
+      "name": "exhibition discussed",
+      "about": {
+        "@id": "https://archive.museumofone.art/entities/documenta-11.html#entity"
+      },
+      "isBasedOn": {
+        "@id": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/"
+      },
+      "description": "The essay names this exhibition in its discussion of Okwui Enwezor and curatorial context."
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://archive.museumofone.art/vocabulary.html",
+      "name": "Museum of One local editorial discovery vocabulary",
+      "url": "https://archive.museumofone.art/vocabulary.html",
+      "description": "Published preferred labels, definitions, alternative labels and qualified external mappings."
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#curatorial-practice",
+      "name": "Curatorial practice",
+      "termCode": "curatorial-practice",
+      "description": "The selection, organisation, and presentation of art in exhibitions.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#exhibition-design",
+      "name": "Exhibition design",
+      "termCode": "exhibition-design",
+      "description": "The spatial and material arrangements through which exhibitions present works.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#institutional-critique",
+      "name": "Institutional critique",
+      "termCode": "institutional-critique",
+      "description": "Critical examination of the authority and practices of art institutions.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://archive.museumofone.art/vocabulary.html#authorship",
+      "name": "Authorship",
+      "termCode": "authorship",
+      "description": "The attribution and exercise of creative or intellectual agency.",
+      "inDefinedTermSet": {
+        "@id": "https://archive.museumofone.art/vocabulary.html"
+      }
+    }
+  ]
+}
