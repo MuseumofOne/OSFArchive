@@ -1,5 +1,6 @@
 """Generate a portable, source-qualified static archive. Python catalogue with verified PDF text extraction."""
 from metadata import build_graph, build_dc, build_assertions
+from osf_editions import attach_osf_editions
 from experience import enhance_page, discovery_payload
 from enrich import enrich_record
 from finding_aid import build_finding_aid
@@ -34,6 +35,7 @@ if ineligible:raise ValueError('Catalogue contains records not eligible for publ
 from metadata_profile import PROFILE, prepare_metadata_records, build_quality_report, require_valid_report, combine_graphs, validate_metadata_profile
 AUTHORITIES=json.loads((DATA/'authorities.json').read_text())
 RECORDS=apply_reading_metadata([enrich_record(r,AUTHORITIES) for r in RECORDS],ROOT)
+RECORDS=attach_osf_editions(RECORDS,ROOT)
 ENTITIES=json.loads((DATA/'entities.json').read_text())
 CONTENTS=json.loads((DATA/'contents.json').read_text())
 VOCABULARY=json.loads((DATA/'vocabulary.json').read_text())
@@ -182,6 +184,9 @@ for r in RECORDS:
   body+=f'<div class="file-record"><a href="{E(f.get("url"))}">{E(f.get("name"))} ↗</a><p>{E(f.get("size_label") or str(f.get("size", ""))+" bytes")}</p>'
   if f.get('checksum'):body+=f'<code>{E(f["checksum"])}</code>'
   body+='</div>'
+ if r.get('osf_copy'):
+  o=r['osf_copy']
+  body+=f'<div class="file-record"><a href="{E(o["osf_url"])}">OSF · Exact edition PDF ↗</a><p>Byte-identical access copy of this DOI edition · {E(o["bytes"])} bytes · Verified {E(o["verified_at"])}.</p><code>SHA-256: {E(o["sha256"])}</code></div>'
  body+='<dl class="metadata">'+field('Repository record created',E(r.get('source_created')))+field('Repository metadata modified',E(r.get('source_modified')),'This timestamp describes the repository record, not necessarily a change to the work.')+'</dl>'
  rels=r.get('related_identifiers',[])
  if rels:
@@ -202,6 +207,7 @@ for r in RECORDS:
  aside=f'<div class="access-card"><h2>Read & retrieve</h2><p>The published files remain with the repository.</p><a class="button" href="{E(r["zenodo_url"])}">Open Zenodo record ↗</a><a class="button outline" href="{E(doiurl)}">Resolve edition DOI ↗</a>'
  for f in r.get('files',[])[:4]:
   if f.get('url'):aside+=f'<p><a href="{E(f["url"])}">{E(f.get("name") or "Repository file")} ↗</a>'+ (f'<br>{E(f.get("size_label", ""))}' if f.get('size_label') else '')+'</p>'
+ if r.get('osf_copy'):aside+=f'<p><a href="{E(r["osf_copy"]["osf_url"])}">OSF · Exact edition PDF ↗</a></p>'
  aside+='</div><div class="access-card"><h2>Record downloads</h2><p>Source-qualified metadata for research and reuse.</p>'
  for ext,label in [('json','Catalogue metadata · JSON'),('jsonld','Structured data · JSON-LD'),('xml','Qualified Dublin Core · XML'),('bib','Citation · BibTeX'),('ris','Citation · RIS'),('csl.json','Citation · CSL-JSON')]:aside+=f'<p><a href="../metadata/{rid}.{ext}" download>{label} ↓</a></p>'
  aside+=f'<p><a href="../metadata/source/{rid}.json" download>Original Zenodo metadata snapshot ↓</a></p></div><div class="access-card"><h2>Wider discovery</h2><p>Authority identifiers and external catalogue context are documented separately.</p><a class="text-link" href="../sources.html">Catalogue & authority links ↗</a></div>'
@@ -254,6 +260,7 @@ for subject in sorted({s for r in RECORDS for s in r['subjects']}):
 subject_content+='</div>'
 subject_content=subject_content.replace('<div class="directory-grid">','<p class="vocabulary-register-link"><a href="vocabulary.html">Open the controlled vocabulary: preferred terms, definitions and synonyms ↗</a></p><div class="directory-grid">')
 write('subjects.html',layout('Subject index','Browse editorial subjects across Museum of One books, treatises and critical research.',subject_content,'subjects.html'))
+write('metadata/osf-editions.json',json.dumps([r['osf_copy'] for r in RECORDS if r.get('osf_copy')],ensure_ascii=False,indent=2))
 write('metadata/catalogue.json',json.dumps({'title':'Museum of One Digital Archive Library','canonical_origin':ORIGIN,'reviewed':TODAY,'scope':'Selected corpus; not a complete recovery of the previous catalogue','records':[{**r,'field_assertions':build_assertions(r)} for r in RECORDS]},ensure_ascii=False,indent=2))
 write('assets/favicon.svg','<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#f3f0e8"/><circle cx="32" cy="32" r="27" fill="none" stroke="#713e3e"/><text x="32" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="36" fill="#713e3e">M</text></svg>')
 build_finding_aid(RECORDS,PROGRAMMES,write,layout)

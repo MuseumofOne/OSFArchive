@@ -40,8 +40,8 @@
     },
     {
       "path": "data/description-events.json",
-      "bytes": 2745,
-      "sha256": "5086163739093c237de10d2bca866dbdabed6edb53810d569dc01c39d5d6753f",
+      "bytes": 3950,
+      "sha256": "bb7d20c6534bf3efc3146b184ae5b4a5b5c18e70082687d860d41e85a21173f0",
       "role": "editorial_dataset"
     },
     {
@@ -60,6 +60,12 @@
       "path": "data/metadata-profile.json",
       "bytes": 2299,
       "sha256": "8258469f1c2d443857143ba2d002f5151c5b1d29f1ed933c325acdc31a705152",
+      "role": "editorial_dataset"
+    },
+    {
+      "path": "data/osf-editions.json",
+      "bytes": 15837,
+      "sha256": "b9926b49aaa278185fd94e43ba8dcb02c2a0068cf698b2243d7ebec87e62be54",
       "role": "editorial_dataset"
     },
     {
@@ -523,6 +529,81 @@
       "added": [],
       "changed": [],
       "inventory_sha256": "f2dce120de464c3e17bd3d2b50b515b4db324e32d9a79741e7692baff2474e31"
+    },
+    {
+      "at": "2026-11-04T22:53:58Z",
+      "event": "fixity_check",
+      "status": "failed",
+      "algorithm": "SHA-256",
+      "file_count": 49,
+      "checked_files": 49,
+      "missing": [],
+      "added": [
+        "data/osf-editions.json"
+      ],
+      "changed": [
+        "data/description-events.json"
+      ],
+      "inventory_sha256": "f2dce120de464c3e17bd3d2b50b515b4db324e32d9a79741e7692baff2474e31"
+    },
+    {
+      "at": "2026-11-04T22:54:33Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 50,
+      "inventory_sha256": "2594d98d709e8d209cf5cddc63d61b8be0fbe813f635e9149269a331b146f057"
+    },
+    {
+      "at": "2026-11-04T22:54:33Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 50,
+      "checked_files": 50,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "2594d98d709e8d209cf5cddc63d61b8be0fbe813f635e9149269a331b146f057"
+    },
+    {
+      "at": "2026-11-04T22:54:33Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 50,
+      "checked_files": 50,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "2594d98d709e8d209cf5cddc63d61b8be0fbe813f635e9149269a331b146f057"
+    },
+    {
+      "at": "2026-11-04T22:54:35Z",
+      "event": "backup_and_restoration_test",
+      "status": "passed",
+      "package_filename": "archive-reviewed-content.tar.gz",
+      "package_bytes": 12438595,
+      "package_sha256": "5840466648d1373f5d7c126ede1be644707ec59900956566e0026b81235a956a",
+      "inventory_sha256": "2594d98d709e8d209cf5cddc63d61b8be0fbe813f635e9149269a331b146f057",
+      "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
+      "restoration": {
+        "status": "passed",
+        "files_restored": 50,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      }
+    },
+    {
+      "at": "2026-11-04T22:56:31Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 50,
+      "checked_files": 50,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "2594d98d709e8d209cf5cddc63d61b8be0fbe813f635e9149269a331b146f057"
     }
   ],
   "scope": "Repository source snapshots, editorial JSON datasets, and original PDF access copies.",
@@ -535,32 +616,32 @@
     "upstream_sources": "Original deposits remain at Zenodo; website source is held by the site platform.",
     "offsite_backup_status": "Private Google Drive package uploaded, downloaded again, checksum matched and all restored content verified."
   },
-  "inventory_sha256": "f2dce120de464c3e17bd3d2b50b515b4db324e32d9a79741e7692baff2474e31",
-  "baseline_created_at": "2026-11-04T20:27:05Z",
+  "inventory_sha256": "2594d98d709e8d209cf5cddc63d61b8be0fbe813f635e9149269a331b146f057",
+  "baseline_created_at": "2026-11-04T22:54:33Z",
   "last_check": {
-    "at": "2026-11-04T20:34:09Z",
+    "at": "2026-11-04T22:56:31Z",
     "event": "fixity_check",
     "status": "passed",
     "algorithm": "SHA-256",
-    "file_count": 49,
-    "checked_files": 49,
+    "file_count": 50,
+    "checked_files": 50,
     "missing": [],
     "added": [],
     "changed": [],
-    "inventory_sha256": "f2dce120de464c3e17bd3d2b50b515b4db324e32d9a79741e7692baff2474e31"
+    "inventory_sha256": "2594d98d709e8d209cf5cddc63d61b8be0fbe813f635e9149269a331b146f057"
   },
   "backup": {
-    "at": "2026-11-04T20:27:06Z",
+    "at": "2026-11-04T22:54:35Z",
     "event": "backup_and_restoration_test",
     "status": "passed",
-    "package_filename": "archive-preservation-current.tar.gz",
-    "package_bytes": 12434376,
-    "package_sha256": "d0c3b237e878de427c4d1025f46678f6843a764af7afb2391395d79bdc22b5c1",
-    "inventory_sha256": "f2dce120de464c3e17bd3d2b50b515b4db324e32d9a79741e7692baff2474e31",
+    "package_filename": "archive-reviewed-content.tar.gz",
+    "package_bytes": 12438595,
+    "package_sha256": "5840466648d1373f5d7c126ede1be644707ec59900956566e0026b81235a956a",
+    "inventory_sha256": "2594d98d709e8d209cf5cddc63d61b8be0fbe813f635e9149269a331b146f057",
     "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
     "restoration": {
       "status": "passed",
-      "files_restored": 49,
+      "files_restored": 50,
       "algorithm": "SHA-256",
       "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
     }

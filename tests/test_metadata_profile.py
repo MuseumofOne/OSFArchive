@@ -120,7 +120,10 @@ class MetadataProfileTests(unittest.TestCase):
             self.assertFalse(record.get('record_created'))
             events = [e for e in record['description_history'] if e.get('event_id') == 'metadata-profile-3.0-2026-11-04']
             self.assertEqual(len(events), 1)
-            self.assertIn(events[0]['event_id'], record['record_modified_provenance']['event_ids'])
+            latest = max(e['date'] for e in record['description_history'] if e.get('date'))
+            expected = {e['event_id'] for e in record['description_history'] if e.get('date') == latest}
+            self.assertEqual(record['record_modified'], latest)
+            self.assertEqual(set(record['record_modified_provenance']['event_ids']), expected)
 
     def test_combined_graph_preserves_vocabulary_context_and_statement_union(self):
         graphs = self.all_graphs()

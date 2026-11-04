@@ -64,7 +64,7 @@
         "propertyID": "Local catalogue identifier",
         "value": "MOO-CAT-005"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-05",
       "isBasedOn": [
         {
           "@id": "https://zenodo.org/records/23430200"
@@ -229,6 +229,24 @@
       "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
     },
     {
+      "@type": "MediaObject",
+      "@id": "https://osf.io/zhnre/files/6jnp5#file",
+      "url": "https://osf.io/zhnre/files/6jnp5",
+      "contentUrl": "https://osf.io/download/6jnp5/",
+      "encodingFormat": "application/pdf",
+      "name": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles — exact edition PDF on OSF",
+      "contentSize": "180105 bytes",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.23430200"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256",
+        "value": "272b077f00db6a02d04c03b87608a0ab8cc34972b11759e51b7ece3890228716"
+      },
+      "description": "Byte-identical access copy verified 2026-11-05. Deposit timestamps are not publication dates; consult the file's rights notices."
+    },
+    {
       "@type": "CreativeWork",
       "@id": "https://doi.org/10.5281/zenodo.23430200",
       "name": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles",
@@ -338,6 +356,9 @@
         },
         {
           "@id": "https://archive.museumofone.art/assets/documents/23430200.pdf"
+        },
+        {
+          "@id": "https://osf.io/zhnre/files/6jnp5#file"
         }
       ]
     },

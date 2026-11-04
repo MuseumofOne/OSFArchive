@@ -64,7 +64,7 @@
         "propertyID": "Local catalogue identifier",
         "value": "MOO-CAT-015"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-05",
       "isBasedOn": [
         {
           "@id": "https://zenodo.org/records/19863836"
@@ -311,6 +311,24 @@
       "license": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
+      "@type": "MediaObject",
+      "@id": "https://osf.io/zhnre/files/w4f98#file",
+      "url": "https://osf.io/zhnre/files/w4f98",
+      "contentUrl": "https://osf.io/download/w4f98/",
+      "encodingFormat": "application/pdf",
+      "name": "The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism — exact edition PDF on OSF",
+      "contentSize": "253546 bytes",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19863836"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256",
+        "value": "a9b72a9f10cce025300b1019d8bd84d19833404c33dc7c0f195b370ce702aa89"
+      },
+      "description": "Byte-identical access copy verified 2026-11-05. Deposit timestamps are not publication dates; consult the file's rights notices."
+    },
+    {
       "@type": "ScholarlyArticle",
       "@id": "https://doi.org/10.5281/zenodo.19863836",
       "name": "The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism",
@@ -409,6 +427,9 @@
         },
         {
           "@id": "https://archive.museumofone.art/assets/documents/19863836.pdf"
+        },
+        {
+          "@id": "https://osf.io/zhnre/files/w4f98#file"
         }
       ],
       "contributor": [

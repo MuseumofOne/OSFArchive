@@ -64,7 +64,7 @@
         "propertyID": "Local catalogue identifier",
         "value": "MOO-CAT-014"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-05",
       "isBasedOn": [
         {
           "@id": "https://zenodo.org/records/19863790"
@@ -212,6 +212,24 @@
       "license": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
+      "@type": "MediaObject",
+      "@id": "https://osf.io/zhnre/files/49xt3#file",
+      "url": "https://osf.io/zhnre/files/49xt3",
+      "contentUrl": "https://osf.io/download/49xt3/",
+      "encodingFormat": "application/pdf",
+      "name": "Moral Proximity: Ethics as Method in Post-Interpretive Criticism — exact edition PDF on OSF",
+      "contentSize": "224701 bytes",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19863790"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256",
+        "value": "01dd4f6727c08692c5df59af23ef817535a15a57ca4551b930827ee8dac917fa"
+      },
+      "description": "Byte-identical access copy verified 2026-11-05. Deposit timestamps are not publication dates; consult the file's rights notices."
+    },
+    {
       "@type": "ScholarlyArticle",
       "@id": "https://doi.org/10.5281/zenodo.19863790",
       "name": "Moral Proximity: Ethics as Method in Post-Interpretive Criticism",
@@ -313,6 +331,9 @@
         },
         {
           "@id": "https://archive.museumofone.art/assets/documents/19863790.pdf"
+        },
+        {
+          "@id": "https://osf.io/zhnre/files/49xt3#file"
         }
       ],
       "contributor": [

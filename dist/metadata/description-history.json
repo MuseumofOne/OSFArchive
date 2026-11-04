@@ -93,6 +93,23 @@
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
         ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
+        ]
       }
     ],
     "archival_context": {
@@ -240,6 +257,23 @@
         "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+        ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
         ]
       }
     ],
@@ -389,6 +423,23 @@
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
         ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
+        ]
       }
     ],
     "archival_context": {
@@ -536,6 +587,23 @@
         "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+        ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
         ]
       }
     ],
@@ -685,6 +753,23 @@
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
         ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
+        ]
       }
     ],
     "archival_context": {
@@ -832,6 +917,23 @@
         "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+        ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
         ]
       }
     ],
@@ -981,6 +1083,23 @@
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
         ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
+        ]
       }
     ],
     "archival_context": {
@@ -1128,6 +1247,23 @@
         "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+        ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
         ]
       }
     ],
@@ -1277,6 +1413,23 @@
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
         ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
+        ]
       }
     ],
     "archival_context": {
@@ -1424,6 +1577,23 @@
         "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+        ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
         ]
       }
     ],
@@ -1573,6 +1743,23 @@
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
         ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
+        ]
       }
     ],
     "archival_context": {
@@ -1720,6 +1907,23 @@
         "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+        ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
         ]
       }
     ],
@@ -1869,6 +2073,23 @@
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
         ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
+        ]
       }
     ],
     "archival_context": {
@@ -2016,6 +2237,23 @@
         "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+        ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
         ]
       }
     ],
@@ -2165,6 +2403,23 @@
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
         ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
+        ]
       }
     ],
     "archival_context": {
@@ -2312,6 +2567,23 @@
         "date_kind": "Local authority review and catalogue description event; not a publication or original creation date",
         "sources": [
           "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
+        ]
+      },
+      {
+        "event_id": "osf-exact-edition-access-2026-11-05",
+        "date": "2026-11-05",
+        "action": "Link byte-verified OSF access copies of selected editions",
+        "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+        "fields": [
+          "osf_copy",
+          "encoding",
+          "access_links"
+        ],
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Edition DOI reconciliation and anonymous file hash verification",
+        "date_kind": "Catalogue description event; not a publication or acquisition date",
+        "sources": [
+          "metadata/osf-editions.json"
         ]
       }
     ],

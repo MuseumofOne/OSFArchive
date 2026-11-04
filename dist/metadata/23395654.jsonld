@@ -64,7 +64,7 @@
         "propertyID": "Local catalogue identifier",
         "value": "MOO-CAT-003"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-05",
       "isBasedOn": [
         {
           "@id": "https://zenodo.org/records/23395654"
@@ -266,6 +266,24 @@
       "license": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
+      "@type": "MediaObject",
+      "@id": "https://osf.io/zhnre/files/b5dpa#file",
+      "url": "https://osf.io/zhnre/files/b5dpa",
+      "contentUrl": "https://osf.io/download/b5dpa/",
+      "encodingFormat": "application/pdf",
+      "name": "Threads of Sand, Scar & Scripture: Sudanese Art and the Ethics of Witnessing (A Post-Interpretive Study) — exact edition PDF on OSF",
+      "contentSize": "1285819 bytes",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.23395654"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256",
+        "value": "314714912e2fef212ea2960c105309c422b13a7d14a2ff2ec350c938c13a31c6"
+      },
+      "description": "Byte-identical access copy verified 2026-11-05. Deposit timestamps are not publication dates; consult the file's rights notices."
+    },
+    {
       "@type": "Book",
       "@id": "https://doi.org/10.5281/zenodo.23395654",
       "name": "Threads of Sand, Scar & Scripture: Sudanese Art and the Ethics of Witnessing (A Post-Interpretive Study)",
@@ -305,6 +323,9 @@
         },
         {
           "@id": "https://archive.museumofone.art/assets/documents/23395654.pdf"
+        },
+        {
+          "@id": "https://osf.io/zhnre/files/b5dpa#file"
         }
       ],
       "contributor": [

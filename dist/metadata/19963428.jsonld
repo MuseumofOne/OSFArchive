@@ -64,7 +64,7 @@
         "propertyID": "Local catalogue identifier",
         "value": "MOO-CAT-010"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-05",
       "isBasedOn": [
         {
           "@id": "https://zenodo.org/records/19963428"
@@ -238,6 +238,24 @@
       "license": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
+      "@type": "MediaObject",
+      "@id": "https://osf.io/zhnre/files/7nq5w#file",
+      "url": "https://osf.io/zhnre/files/7nq5w",
+      "contentUrl": "https://osf.io/download/7nq5w/",
+      "encodingFormat": "application/pdf",
+      "name": "The Curator's Shadow: The Unspoken Authorship Behind Neutrality. — exact edition PDF on OSF",
+      "contentSize": "400025 bytes",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19963428"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256",
+        "value": "020a9a33056674df08b8ac699ff0976cda380ede6e5b9684368ce8dc53c6be7c"
+      },
+      "description": "Byte-identical access copy verified 2026-11-05. Deposit timestamps are not publication dates; consult the file's rights notices."
+    },
+    {
       "@type": "ScholarlyArticle",
       "@id": "https://doi.org/10.5281/zenodo.19963428",
       "name": "The Curator's Shadow: The Unspoken Authorship Behind Neutrality.",
@@ -347,6 +365,9 @@
         },
         {
           "@id": "https://archive.museumofone.art/assets/documents/19963428.pdf"
+        },
+        {
+          "@id": "https://osf.io/zhnre/files/7nq5w#file"
         }
       ]
     },

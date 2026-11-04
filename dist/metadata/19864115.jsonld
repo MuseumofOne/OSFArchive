@@ -64,7 +64,7 @@
         "propertyID": "Local catalogue identifier",
         "value": "MOO-CAT-002"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-05",
       "isBasedOn": [
         {
           "@id": "https://zenodo.org/records/19864115"
@@ -251,6 +251,24 @@
       "license": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
+      "@type": "MediaObject",
+      "@id": "https://osf.io/zhnre/files/ue48g#file",
+      "url": "https://osf.io/zhnre/files/ue48g",
+      "contentUrl": "https://osf.io/download/ue48g/",
+      "encodingFormat": "application/pdf",
+      "name": "Post-Interpretive Criticism: Volume II — Essays from the Field — exact edition PDF on OSF",
+      "contentSize": "2610097 bytes",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19864115"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256",
+        "value": "1ab810a867166d02b30a284db253b32e2794338a59695858385ec85a982e04ac"
+      },
+      "description": "Byte-identical access copy verified 2026-11-05. Deposit timestamps are not publication dates; consult the file's rights notices."
+    },
+    {
       "@type": "Book",
       "@id": "https://doi.org/10.5281/zenodo.19864115",
       "name": "Post-Interpretive Criticism: Volume II — Essays from the Field",
@@ -293,6 +311,9 @@
         },
         {
           "@id": "https://archive.museumofone.art/assets/documents/19864115.pdf"
+        },
+        {
+          "@id": "https://osf.io/zhnre/files/ue48g#file"
         }
       ],
       "isPartOf": [

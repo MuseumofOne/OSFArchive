@@ -555,7 +555,7 @@
     },
     {
       "field": "record_modified",
-      "value": "2026-11-04",
+      "value": "2026-11-05",
       "status": "derived_from_description_history",
       "note": "Latest documented local description event; not a publication, repository or source-review date.",
       "reviewed": "2026-11-04"
@@ -1247,6 +1247,23 @@
           "sources": [
             "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
           ]
+        },
+        {
+          "event_id": "osf-exact-edition-access-2026-11-05",
+          "date": "2026-11-05",
+          "action": "Link byte-verified OSF access copies of selected editions",
+          "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+          "fields": [
+            "osf_copy",
+            "encoding",
+            "access_links"
+          ],
+          "responsible_service": "Museum of One Digital Archive Library",
+          "method": "Edition DOI reconciliation and anonymous file hash verification",
+          "date_kind": "Catalogue description event; not a publication or acquisition date",
+          "sources": [
+            "metadata/osf-editions.json"
+          ]
         }
       ],
       "source_url": "https://archive.museumofone.art/policies.html",
@@ -1441,8 +1458,41 @@
       "status": "derived_file_inspection",
       "reviewed": "2026-11-04",
       "note": "Total PDF file pages measured from the deposited file, including cover and unnumbered pages. Not a claim about printed pagination."
+    },
+    {
+      "field": "osf_copy",
+      "value": {
+        "archive_id": "23430200",
+        "edition_doi": "10.5281/zenodo.23430200",
+        "osf_file_id": "6aebb34c85c6e32eaaca340e",
+        "osf_guid": "6jnp5",
+        "osf_url": "https://osf.io/zhnre/files/6jnp5",
+        "osf_download_url": "https://osf.io/download/6jnp5/",
+        "osf_version": 1,
+        "sha256": "272b077f00db6a02d04c03b87608a0ab8cc34972b11759e51b7ece3890228716",
+        "bytes": 180105,
+        "verified_at": "2026-11-05",
+        "public_project": "zhnre"
+      },
+      "source_url": "https://api.osf.io/v2/files/6aebb34c85c6e32eaaca340e/",
+      "status": "derived_file_inspection",
+      "reviewed": "2026-11-05",
+      "note": "Anonymous OSF download SHA-256 and byte count matched the selected DOI edition reading copy. OSF is an access location, not a new edition or rights grant."
     }
   ],
+  "osf_copy": {
+    "archive_id": "23430200",
+    "edition_doi": "10.5281/zenodo.23430200",
+    "osf_file_id": "6aebb34c85c6e32eaaca340e",
+    "osf_guid": "6jnp5",
+    "osf_url": "https://osf.io/zhnre/files/6jnp5",
+    "osf_download_url": "https://osf.io/download/6jnp5/",
+    "osf_version": 1,
+    "sha256": "272b077f00db6a02d04c03b87608a0ab8cc34972b11759e51b7ece3890228716",
+    "bytes": 180105,
+    "verified_at": "2026-11-05",
+    "public_project": "zhnre"
+  },
   "entity_links": [
     {
       "id": "dorian-vale",
@@ -1735,18 +1785,30 @@
       "sources": [
         "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
       ]
+    },
+    {
+      "event_id": "osf-exact-edition-access-2026-11-05",
+      "date": "2026-11-05",
+      "action": "Link byte-verified OSF access copies of selected editions",
+      "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+      "fields": [
+        "osf_copy",
+        "encoding",
+        "access_links"
+      ],
+      "responsible_service": "Museum of One Digital Archive Library",
+      "method": "Edition DOI reconciliation and anonymous file hash verification",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "sources": [
+        "metadata/osf-editions.json"
+      ]
     }
   ],
-  "record_modified": "2026-11-04",
+  "record_modified": "2026-11-05",
   "record_modified_provenance": {
     "status": "derived_from_description_history",
     "event_ids": [
-      "public-source-description-2026-11-04",
-      "qualified-description-2026-11-04",
-      "access-copy-verification-2026-11-04",
-      "description-policy-1.0-2026-11-04",
-      "metadata-profile-3.0-2026-11-04",
-      "orcid-public-profile-review-2026-11-04"
+      "osf-exact-edition-access-2026-11-05"
     ],
     "note": "Latest documented local description event; not a publication, repository or source-review date."
   },

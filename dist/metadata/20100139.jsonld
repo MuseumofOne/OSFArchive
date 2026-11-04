@@ -64,7 +64,7 @@
         "propertyID": "Local catalogue identifier",
         "value": "MOO-CAT-012"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-05",
       "isBasedOn": [
         {
           "@id": "https://zenodo.org/records/20100139"
@@ -191,6 +191,24 @@
       "license": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
+      "@type": "MediaObject",
+      "@id": "https://osf.io/zhnre/files/683cn#file",
+      "url": "https://osf.io/zhnre/files/683cn",
+      "contentUrl": "https://osf.io/download/683cn/",
+      "encodingFormat": "application/pdf",
+      "name": "A Quantitative Analysis of Critical Posture in Art Writing, 1980-2025 (Dataset - 20 Critical Texts 1980–2025) v.2 — exact edition PDF on OSF",
+      "contentSize": "506516 bytes",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.20100139"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256",
+        "value": "223c4cf7b6d70c207c37d38df3165b553eb589743cc5ad6d658c7a1c49412c92"
+      },
+      "description": "Byte-identical access copy verified 2026-11-05. Deposit timestamps are not publication dates; consult the file's rights notices."
+    },
+    {
       "@type": "Dataset",
       "@id": "https://doi.org/10.5281/zenodo.20100139",
       "name": "A Quantitative Analysis of Critical Posture in Art Writing, 1980-2025 (Dataset - 20 Critical Texts 1980–2025) v.2",
@@ -295,6 +313,9 @@
         },
         {
           "@id": "https://archive.museumofone.art/assets/documents/20100139.pdf"
+        },
+        {
+          "@id": "https://osf.io/zhnre/files/683cn#file"
         }
       ]
     },

@@ -64,7 +64,7 @@
         "propertyID": "Local catalogue identifier",
         "value": "MOO-CAT-013"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-05",
       "isBasedOn": [
         {
           "@id": "https://zenodo.org/records/21786998"
@@ -211,6 +211,24 @@
       "license": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
+      "@type": "MediaObject",
+      "@id": "https://osf.io/zhnre/files/8v5gm#file",
+      "url": "https://osf.io/zhnre/files/8v5gm",
+      "contentUrl": "https://osf.io/download/8v5gm/",
+      "encodingFormat": "application/pdf",
+      "name": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century — exact edition PDF on OSF",
+      "contentSize": "229568 bytes",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.21786998"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256",
+        "value": "925b0b72d3349f32d6dbbc595baea96390439e36275d576a6d33fa4ce1fe3ff8"
+      },
+      "description": "Byte-identical access copy verified 2026-11-05. Deposit timestamps are not publication dates; consult the file's rights notices."
+    },
+    {
       "@type": "ScholarlyArticle",
       "@id": "https://doi.org/10.5281/zenodo.21786998",
       "name": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century",
@@ -248,6 +266,9 @@
         },
         {
           "@id": "https://archive.museumofone.art/assets/documents/21786998.pdf"
+        },
+        {
+          "@id": "https://osf.io/zhnre/files/8v5gm#file"
         }
       ],
       "isPartOf": [

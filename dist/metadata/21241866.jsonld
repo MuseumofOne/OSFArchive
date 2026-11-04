@@ -64,7 +64,7 @@
         "propertyID": "Local catalogue identifier",
         "value": "MOO-CAT-008"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-05",
       "isBasedOn": [
         {
           "@id": "https://zenodo.org/records/21241866"
@@ -232,6 +232,24 @@
       "license": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
+      "@type": "MediaObject",
+      "@id": "https://osf.io/zhnre/files/p6xrf#file",
+      "url": "https://osf.io/zhnre/files/p6xrf",
+      "contentUrl": "https://osf.io/download/p6xrf/",
+      "encodingFormat": "application/pdf",
+      "name": "Hassan Sharif's Objects: The Ascetic of the Everyday — exact edition PDF on OSF",
+      "contentSize": "1077820 bytes",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.21241866"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256",
+        "value": "f3ada77ced8d8a82c11d99f6c5c9409176b81c45f11adcd3f959107b31567923"
+      },
+      "description": "Byte-identical access copy verified 2026-11-05. Deposit timestamps are not publication dates; consult the file's rights notices."
+    },
+    {
       "@type": "ScholarlyArticle",
       "@id": "https://doi.org/10.5281/zenodo.21241866",
       "name": "Hassan Sharif's Objects: The Ascetic of the Everyday",
@@ -349,6 +367,9 @@
         },
         {
           "@id": "https://archive.museumofone.art/assets/documents/21241866.pdf"
+        },
+        {
+          "@id": "https://osf.io/zhnre/files/p6xrf#file"
         }
       ]
     },

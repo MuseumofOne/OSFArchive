@@ -64,7 +64,7 @@
         "propertyID": "Local catalogue identifier",
         "value": "MOO-CAT-016"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-05",
       "isBasedOn": [
         {
           "@id": "https://zenodo.org/records/19863851"
@@ -217,6 +217,24 @@
       "license": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
+      "@type": "MediaObject",
+      "@id": "https://osf.io/zhnre/files/b6kw3#file",
+      "url": "https://osf.io/zhnre/files/b6kw3",
+      "contentUrl": "https://osf.io/download/b6kw3/",
+      "encodingFormat": "application/pdf",
+      "name": "Language as Custody — Writing Without Harm in Post-Interpretive Criticism — exact edition PDF on OSF",
+      "contentSize": "253299 bytes",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19863851"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256",
+        "value": "19c917b77900de0fc1602c77d0ebd293a2b926a68e052ea36aca75623ed217c5"
+      },
+      "description": "Byte-identical access copy verified 2026-11-05. Deposit timestamps are not publication dates; consult the file's rights notices."
+    },
+    {
       "@type": "ScholarlyArticle",
       "@id": "https://doi.org/10.5281/zenodo.19863851",
       "name": "Language as Custody — Writing Without Harm in Post-Interpretive Criticism",
@@ -312,6 +330,9 @@
         },
         {
           "@id": "https://archive.museumofone.art/assets/documents/19863851.pdf"
+        },
+        {
+          "@id": "https://osf.io/zhnre/files/b6kw3#file"
         }
       ],
       "contributor": [

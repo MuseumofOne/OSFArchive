@@ -114,6 +114,10 @@ def build_research_discovery(records, entities, vocab, programmes, origin, *, ro
                    identifiers=_texts([rid, record.get('accession'), record.get('doi'), record.get('conceptdoi'), record.get('isbn')]),
                    sources=[_source(record['zenodo_url'], 'Repository edition', reviewed=record.get('source_review', ''))],
                    search_text=searchable_text(discovery_record))
+        if record.get('osf_copy'):
+            o = record['osf_copy']
+            row['sources'].append(_source(o['osf_url'], 'OSF exact edition PDF', reviewed=o['verified_at']))
+            row['identifiers'].append(o['osf_url'])
         row['identifier_scopes'] = {record['doi']: 'Deposited edition DOI'}
         if record.get('conceptdoi'):
             row['identifier_scopes'][record['conceptdoi']] = 'Concept DOI; groups repository versions'

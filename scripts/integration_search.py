@@ -236,6 +236,9 @@ def build_search_index(records, origin, source_snapshots):
         accessions.add(accession)
         reviewed = _text(record.get('source_review'))
         sources = [{'role': 'repository', 'url': record['zenodo_url'], 'reviewed': reviewed}]
+        if record.get('osf_copy'):
+            o = record['osf_copy']
+            sources.append({'role': 'verified_exact_edition_copy', 'url': o['osf_url'], 'reviewed': o['verified_at']})
         institution = _public_url(record.get('institutional_url'))
         if institution:
             citation = {'role': 'institutional', 'url': institution}

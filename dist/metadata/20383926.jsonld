@@ -64,7 +64,7 @@
         "propertyID": "Local catalogue identifier",
         "value": "MOO-CAT-004"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-05",
       "isBasedOn": [
         {
           "@id": "https://zenodo.org/records/20383926"
@@ -231,6 +231,24 @@
       "license": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
+      "@type": "MediaObject",
+      "@id": "https://osf.io/zhnre/files/a53cb#file",
+      "url": "https://osf.io/zhnre/files/a53cb",
+      "contentUrl": "https://osf.io/download/a53cb/",
+      "encodingFormat": "application/pdf",
+      "name": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study) — exact edition PDF on OSF",
+      "contentSize": "2713642 bytes",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.20383926"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256",
+        "value": "49a76d86a81fc40c6baec3429cfb21c47582a35414f4715504d2c239b5fca5f7"
+      },
+      "description": "Byte-identical access copy verified 2026-11-05. Deposit timestamps are not publication dates; consult the file's rights notices."
+    },
+    {
       "@type": "Book",
       "@id": "https://doi.org/10.5281/zenodo.20383926",
       "name": "The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
@@ -270,6 +288,9 @@
         },
         {
           "@id": "https://archive.museumofone.art/assets/documents/20383926.pdf"
+        },
+        {
+          "@id": "https://osf.io/zhnre/files/a53cb#file"
         }
       ],
       "contributor": [

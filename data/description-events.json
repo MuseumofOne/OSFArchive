@@ -70,6 +70,41 @@
       "sources": [
         "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person"
       ]
+    },
+    {
+      "event_id": "osf-exact-edition-access-2026-11-05",
+      "date": "2026-11-05",
+      "record_ids": [
+        "19864099",
+        "19864115",
+        "23395654",
+        "20383926",
+        "23430200",
+        "23428974",
+        "21715085",
+        "21241866",
+        "20593003",
+        "19963428",
+        "20100136",
+        "20100139",
+        "21786998",
+        "19863790",
+        "19863836",
+        "19863851"
+      ],
+      "action": "Link byte-verified OSF access copies of selected editions",
+      "note": "Each OSF PDF was retrieved anonymously and matched by SHA-256 and byte count against the selected archive reading copy. Earlier OSF editions remain separate. DOI, publication dates, original PDFs and rights notices are unchanged; no private OSF material is included.",
+      "fields": [
+        "osf_copy",
+        "encoding",
+        "access_links"
+      ],
+      "responsible_service": "Museum of One Digital Archive Library",
+      "method": "Edition DOI reconciliation and anonymous file hash verification",
+      "date_kind": "Catalogue description event; not a publication or acquisition date",
+      "sources": [
+        "metadata/osf-editions.json"
+      ]
     }
   ]
 }

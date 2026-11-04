@@ -320,6 +320,17 @@ def build_graph(r: dict, itemurl: str, origin: str) -> dict:
         access={"@type":"MediaObject","@id":access_id,"contentUrl":access_id,"name":"Verified reading copy of "+str(r.get("title")),"encodingFormat":"application/pdf","contentSize":str(reading["bytes"])+" bytes","description":str(reading["page_count"])+" PDF file pages, including covers and unnumbered pages. Byte-identical local access copy; source checksum matched "+reading["verified_at"]+".","encodesCreativeWork":{"@id":edition_id},"isBasedOn":{"@id":itemurl+"#file-1"},"identifier":{"@type":"PropertyValue","propertyID":"SHA-256 of local reading copy","value":reading["sha256"]}}
         if isinstance(r.get("license"),dict) and r["license"].get("url"):access["license"]=r["license"]["url"]
         graph.append(access);edition.setdefault("encoding",[]).append({"@id":access_id})
+    if r.get("osf_copy"):
+        o = r["osf_copy"]
+        osf_id = o["osf_url"] + "#file"
+        graph.append({"@type": "MediaObject", "@id": osf_id, "url": o["osf_url"],
+                      "contentUrl": o["osf_download_url"], "encodingFormat": "application/pdf",
+                      "name": r["title"] + " — exact edition PDF on OSF",
+                      "contentSize": str(o["bytes"]) + " bytes",
+                      "encodesCreativeWork": {"@id": edition_id},
+                      "identifier": {"@type": "PropertyValue", "propertyID": "SHA-256", "value": o["sha256"]},
+                      "description": "Byte-identical access copy verified " + o["verified_at"] + ". Deposit timestamps are not publication dates; consult the file's rights notices."})
+        edition.setdefault("encoding", []).append({"@id": osf_id})
     graph.append(edition)
     if source_url:
         source = {"@type": "WebPage", "@id": source_url,
@@ -377,6 +388,8 @@ def build_dc(r: dict) -> str:
         add("titleLevelISBN", r["isbn"], namespace=CAT, origin="source_reported_title_identifier_format_unresolved")
     add("source", r.get("zenodo_url"), origin="repository_record")
     add("references", r.get("institutional_url"), origin="institutional_corroboration")
+    if r.get("osf_copy"):
+        add("hasFormat", r["osf_copy"]["osf_url"], origin="sha256_verified_exact_edition_access_copy")
     add("isVersionOf", _doi(r.get("conceptdoi")), origin="repository_version_family")
     add("type", r.get("type"), origin="catalogue_resource_type")
     add("language", r.get("language"), origin="repository_metadata")

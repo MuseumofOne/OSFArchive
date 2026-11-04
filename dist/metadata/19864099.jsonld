@@ -64,7 +64,7 @@
         "propertyID": "Local catalogue identifier",
         "value": "MOO-CAT-001"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-05",
       "isBasedOn": [
         {
           "@id": "https://zenodo.org/records/19864099"
@@ -252,6 +252,24 @@
       "license": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
+      "@type": "MediaObject",
+      "@id": "https://osf.io/zhnre/files/2abjp#file",
+      "url": "https://osf.io/zhnre/files/2abjp",
+      "contentUrl": "https://osf.io/download/2abjp/",
+      "encodingFormat": "application/pdf",
+      "name": "Post-Interpretive Criticism: Volume I - The Foundational Essays — exact edition PDF on OSF",
+      "contentSize": "1044796 bytes",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.19864099"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256",
+        "value": "cff270ffc96c98812c0ab708cd159c2c34cbd43f13f378696802a7f2a939ac3d"
+      },
+      "description": "Byte-identical access copy verified 2026-11-05. Deposit timestamps are not publication dates; consult the file's rights notices."
+    },
+    {
       "@type": "Book",
       "@id": "https://doi.org/10.5281/zenodo.19864099",
       "name": "Post-Interpretive Criticism: Volume I - The Foundational Essays",
@@ -368,6 +386,9 @@
         },
         {
           "@id": "https://archive.museumofone.art/assets/documents/19864099.pdf"
+        },
+        {
+          "@id": "https://osf.io/zhnre/files/2abjp#file"
         }
       ],
       "contributor": [

@@ -64,7 +64,7 @@
         "propertyID": "Local catalogue identifier",
         "value": "MOO-CAT-009"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-05",
       "isBasedOn": [
         {
           "@id": "https://zenodo.org/records/20593003"
@@ -226,6 +226,24 @@
       "license": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
+      "@type": "MediaObject",
+      "@id": "https://osf.io/zhnre/files/w6cht#file",
+      "url": "https://osf.io/zhnre/files/w6cht",
+      "contentUrl": "https://osf.io/download/w6cht/",
+      "encodingFormat": "application/pdf",
+      "name": "El Anatsui's Man's Cloth Series: Redemption of Waste as Modern Eucharist — exact edition PDF on OSF",
+      "contentSize": "360669 bytes",
+      "encodesCreativeWork": {
+        "@id": "https://doi.org/10.5281/zenodo.20593003"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256",
+        "value": "2d042e0c2cdc2e8db76802fc763618a76ac27aa7898b9f5049ff1d862be76c85"
+      },
+      "description": "Byte-identical access copy verified 2026-11-05. Deposit timestamps are not publication dates; consult the file's rights notices."
+    },
+    {
       "@type": "ScholarlyArticle",
       "@id": "https://doi.org/10.5281/zenodo.20593003",
       "name": "El Anatsui's Man's Cloth Series: Redemption of Waste as Modern Eucharist",
@@ -338,6 +356,9 @@
         },
         {
           "@id": "https://archive.museumofone.art/assets/documents/20593003.pdf"
+        },
+        {
+          "@id": "https://osf.io/zhnre/files/w6cht#file"
         }
       ]
     },
