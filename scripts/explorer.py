@@ -6,6 +6,7 @@ catalogue; Ghost consumes the generated partial rather than a parallel design.
 from html import escape
 from urllib.parse import quote
 import json
+from integration_search import searchable_text
 
 
 def e(value):
@@ -29,7 +30,7 @@ def render_explorer(records, programmes, origin, *, standalone=False):
     def card(r):
         rid=str(r['id']);title=r.get('short_title') or r['title']
         image=(f'<img src="{asset(r["cover"])}" alt="{e(r.get("cover_alt") or "Published cover of "+r["title"])}" loading="lazy" decoding="async">' if r.get('cover') else f'<div class="ax-type-cover"><span>Museum of One<br>Archival Library</span><strong>{e(title)}</strong><small>{e(r["author"])}</small></div>')
-        search=' '.join(str(r.get(k) or '') for k in ['title','short_title','author','summary','doi','conceptdoi','accession'])+' '+' '.join(r.get('subjects',[]))
+        search=searchable_text(r)
         read=f'<a data-ax-handoff href="{e(dest("read/"+rid+".html"))}">Read · {r["page_count"]} pp. ↗</a>' if r.get('reading_copy') else ''
         return f'''<article class="ax-card" data-ax-record="{rid}" data-search="{e(search)}" data-collection="{e(r['collection'])}" data-type="{e(r['type'])}" data-year="{e(r['date'][:4])}" data-title="{e(r['title'])}" data-date="{e(r['date'])}"><div class="ax-reference"><span>{e(r['accession'])}</span><span>Item / PDF</span></div><a class="ax-cover" data-ax-handoff href="{e(dest('items/'+rid+'.html'))}">{image}</a><div class="ax-card-copy"><p class="ax-label">{e(r['type'])} · {e(r['date'])}</p><h3><a data-ax-handoff href="{e(dest('items/'+rid+'.html'))}">{e(title)}</a></h3><p class="ax-card-author">{e(r['author'])}</p><p class="ax-card-summary">{e(r['summary'])}</p><div class="ax-card-actions">{read}<button type="button" data-ax-save="{rid}" aria-pressed="false" aria-label="Save {e(title)} to reading list">＋ Save</button></div></div></article>'''
     def nav(label,view,path,extra=''):

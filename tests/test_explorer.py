@@ -3,6 +3,7 @@ from pathlib import Path
 from html.parser import HTMLParser
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from explorer import render_explorer
+from integration_search import searchable_text
 
 class Inspect(HTMLParser):
  def __init__(self,text):
@@ -25,6 +26,21 @@ class ExplorerContract(unittest.TestCase):
   self.assertIn('items/123.html',a.links)
   self.assertIn('https://archive.museumofone.art/items/123.html',g.links)
   self.assertNotIn('{{unsafe}}',ghost);self.assertNotIn('<script> &',ghost)
+ def test_catalogue_filter_uses_shared_identifier_and_context_scope(self):
+  record=self.fixture()[0]
+  record.update(isbn='978-1-06-982034-1',keywords=['Source keyword'],alternate_titles=[{'title':'Source title variant'}],entity_links=[{'id':'artist','label':'A discussed artist'}])
+  html=render_explorer([record],[],'https://archive.museumofone.art')
+  class SearchAttributes(HTMLParser):
+   def __init__(self,text):
+    super().__init__();self.search=[];self.feed(text)
+   def handle_starttag(self,tag,attrs):
+    a=dict(attrs)
+    if tag=='article' and 'data-ax-record' in a:self.search.append(a['data-search'])
+  searches=SearchAttributes(html).search
+  self.assertTrue(searches)
+  self.assertTrue(all(value==searchable_text(record) for value in searches))
+  for term in ['978-1-06-982034-1','Source keyword','Source title variant','A discussed artist']:
+   self.assertTrue(all(term in value for value in searches))
  def test_generated_partial_and_current_homepage_have_same_catalogue(self):
   fragment=(ROOT/'dist/integration/archive-explorer.hbs').read_text()
   page=(ROOT/'dist/index.html').read_text()
