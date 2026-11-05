@@ -61,6 +61,13 @@ test('remote refresh replaces snapshot and both failures reject to native fallba
  await assert.rejects(api.loadIndexes(config,()=>{},async()=>{throw new Error('Offline');}));
  await assert.rejects(api.loadIndexes({...config,snapshot:'https://evil.example/index.json'},()=>{},async()=>response(fixture())));
 });
+test('native explorer and global search configurations refresh website captures without an explicit remote field',async()=>{
+ const fresh=fixture();fresh.content_version='c'.repeat(64);fresh.records.push({...fresh.records[0],id:'website:'+'1'.repeat(24),kind:'website',title:'Encounter Differential',url:'https://www.museumofone.art/encounter-differential/',search_text:'Encounter Differential public tool guide',relationships:[{relation:'Stored website capture',target_id:'capture:tool',url:origin+'/website/web-'+'1'.repeat(24)+'.html'}]});
+ const seen=[],calls=[];
+ const got=await api.loadIndexes({origin,pageURL:'https://www.museumofone.art/digital-archive-library/',snapshot:'/assets/archive/research-discovery.v2.json'},(p,s)=>seen.push(s),async u=>{calls.push(u);return response(u.includes('/assets/')?fixture():fresh);});
+ assert.deepEqual(seen,['snapshot','remote']);assert.equal(calls[1],origin+'/metadata/research-discovery.v2.json');assert.equal(api.rankRecords(got.records,'Encounter Differential')[0].kind,'website');
+ const localCalls=[];await api.loadIndexes({origin,pageURL:origin+'/',snapshot:'/metadata/research-discovery.v2.json'},()=>{},async u=>{localCalls.push(u);return response(fresh);});assert.equal(localCalls.length,1);
+});
 test('malformed or oversized index does not replace valid snapshot',async()=>{
  const seen=[];const config={origin,pageURL:'https://www.museumofone.art/',snapshot:'/assets/index.json',remote:origin+'/metadata/research-discovery.v2.json'};
  await api.loadIndexes(config,(p,s)=>seen.push(s),async url=>url.includes('/assets/')?response(fixture()):{ok:true,headers:{get:()=>9000000},text:async()=>''});
