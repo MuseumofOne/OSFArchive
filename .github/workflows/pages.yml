@@ -35,7 +35,9 @@ jobs:
         if: github.event_name != 'pull_request'
         env:
           MOO_ASSET_CACHE_KEY: ${{ secrets.MOO_ASSET_CACHE_KEY }}
-        run: python scripts/website_sync.py
+        run: |
+          python scripts/website_sync.py
+          python scripts/check_website_sync.py
       - name: Save encrypted revisions and stable mappings
         if: always() && github.event_name != 'pull_request'
         run: python scripts/website_state.py push
