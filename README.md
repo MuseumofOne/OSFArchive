@@ -1,6 +1,6 @@
 # Museum of One Digital Archive Library
 
-Live at [archive.museumofone.art](https://archive.museumofone.art/), with a [native Ghost entrance](https://www.museumofone.art/digital-archive-library/). See [current deployment and verification](DEPLOYMENT-STATUS.md).
+Live at [archive.museumofone.art](https://archive.museumofone.art/), with a [native Ghost entrance](https://www.museumofone.art/digital-archive-library/). See [current deployment and verification](DEPLOYMENT-STATUS.md). The current theme is 1.12.8; the [5 November comprehensive audit](docs/RELEASE-AUDIT-2026-11-05.md) records live metadata, preservation, discovery, visual and PageSpeed verification.
 
 A portable static digital catalogue generated with Python with static HTML item pages, a searchable catalogue, provenance-qualified metadata and JSON-LD. Zenodo remains the publication source of record for curated editions; public Ghost content is the source for automatically captured website records. Verified reading copies are included. No subscription, database or application backend is required.
 

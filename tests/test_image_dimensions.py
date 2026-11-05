@@ -1,5 +1,5 @@
 from pathlib import Path
-import json, struct, sys, tempfile, unittest
+import struct, sys, tempfile, unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))

@@ -23,3 +23,7 @@ Primary guidance consulted:
 - https://developers.google.com/search/docs/appearance/structured-data/dataset
 - https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
 - https://scholar.google.com/intl/en/scholar/inclusion.html
+
+## Comprehensive audit additions — 5 November 2026
+
+Current capture records expose source-qualified file encodings with MIME types, byte sizes, SHA-256 and measured image dimensions. Source authorship remains on the source page; unknown embedded-file roles, licences, dates and media duration remain qualified. Raw original content is delivered as inert text, separately from the readable archival record. The archive publishes a truthful root `llms.txt` guide linked from its HTML pages. Its homepage scored 100 accessibility/SEO/Best Practices/performance and 3/3 Agentic Browsing in both PageSpeed device modes; full coverage and measured limitations are in [the comprehensive audit](RELEASE-AUDIT-2026-11-05.md).

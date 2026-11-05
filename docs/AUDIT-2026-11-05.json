@@ -1,0 +1,170 @@
+{
+  "release_date": "2026-11-05",
+  "theme_version": "1.12.8",
+  "theme_zip_sha256": "00234fb6c3a06e7acb171afbe3352e72d739156fe5169ea737a203343f49aefc",
+  "theme_source_files": 733,
+  "archive_implementation_commit": "6a51735632c7fcf077db704cb00c1f6f6cfe1242",
+  "verified_implementation_run": 41958970049,
+  "coverage": {
+    "sitemap_endpoints": 388,
+    "html_pages": 387,
+    "source_routes": {
+      "website": 125,
+      "archive": 263
+    },
+    "metadata_structural_issues": 0,
+    "first_party_destinations": 1000,
+    "first_party_all_http_200": true,
+    "http_404_destinations": 0,
+    "unconfirmed_external_destinations": 94,
+    "retired_host_in_public_html": [],
+    "retired_host_link_destinations": [],
+    "rendered_page_views": 774,
+    "rendered_widths": [
+      390,
+      1280
+    ],
+    "rendered_overflow_or_duplicate_or_broken_complete_image_flags": 0,
+    "generated_fragment_targets_verified": 14
+  },
+  "preservation": {
+    "original_pdf_files_unchanged": 16,
+    "original_zenodo_snapshots_unchanged": 16,
+    "website_records_verified": 118,
+    "readable_page_hashes_verified": 118,
+    "original_html_download_hashes_verified": 118,
+    "preserved_upload_destinations": 132,
+    "source_upload_urls": 154,
+    "audio_files": 22,
+    "failed_attachments": 0
+  },
+  "checks": {
+    "python_tests": 126,
+    "javascript_tests": 30,
+    "theme_gate": "unit-only checks passed",
+    "gscan_errors": 0,
+    "gscan_warnings": 0,
+    "live_theme_assets_sha256_verified": 23,
+    "legacy_automated_browser_suite_executed": false
+  },
+  "pagespeed_homepage_lab_results": {
+    "website_mobile": {
+      "performance": 87,
+      "accessibility": 100,
+      "best_practices": 96,
+      "seo": 100,
+      "agentic_passed": 3,
+      "agentic_total": 3,
+      "url": "https://pagespeed.web.dev/analysis/https-www-museumofone-art/vejda7pek2?form_factor=mobile",
+      "fcp_ms": 1237.0,
+      "lcp_ms": 3758.0,
+      "tbt_ms": 30.0,
+      "cls": 0.083,
+      "speed_index_ms": 1488.0
+    },
+    "website_desktop": {
+      "performance": 100,
+      "accessibility": 100,
+      "best_practices": 96,
+      "seo": 100,
+      "agentic_passed": 3,
+      "agentic_total": 3,
+      "url": "https://pagespeed.web.dev/analysis/https-www-museumofone-art/vejda7pek2?form_factor=desktop",
+      "fcp_ms": 321.0,
+      "lcp_ms": 762.0,
+      "tbt_ms": 40.0,
+      "cls": 0.0,
+      "speed_index_ms": 450.0
+    },
+    "archive_mobile": {
+      "performance": 100,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "agentic_passed": 3,
+      "agentic_total": 3,
+      "url": "https://pagespeed.web.dev/analysis/https-archive-museumofone-art/kseodwvuyr?form_factor=mobile",
+      "fcp_ms": 1051.0,
+      "lcp_ms": 1051.0,
+      "tbt_ms": 2.0,
+      "cls": 0.0,
+      "speed_index_ms": 2397.0
+    },
+    "archive_desktop": {
+      "performance": 100,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "agentic_passed": 3,
+      "agentic_total": 3,
+      "url": "https://pagespeed.web.dev/analysis/https-archive-museumofone-art/kseodwvuyr?form_factor=desktop",
+      "fcp_ms": 284.0,
+      "lcp_ms": 284.0,
+      "tbt_ms": 16.0,
+      "cls": 0.051,
+      "speed_index_ms": 313.0
+    }
+  },
+  "website_final_repeat_runs": [
+    {
+      "mobile": {
+        "performance": 88,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 100,
+        "agentic_passed": 3,
+        "agentic_total": 3,
+        "url": "https://pagespeed.web.dev/analysis/https-www-museumofone-art/nivv7gqc2p?form_factor=mobile",
+        "fcp_ms": 1244.0,
+        "lcp_ms": 3676.0,
+        "tbt_ms": 73.0,
+        "cls": 0.083,
+        "speed_index_ms": 1581.0
+      },
+      "desktop": {
+        "performance": 100,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 100,
+        "agentic_passed": 3,
+        "agentic_total": 3,
+        "url": "https://pagespeed.web.dev/analysis/https-www-museumofone-art/nivv7gqc2p?form_factor=desktop",
+        "fcp_ms": 321.0,
+        "lcp_ms": 765.0,
+        "tbt_ms": 15.0,
+        "cls": 0.03,
+        "speed_index_ms": 713.0
+      }
+    },
+    {
+      "mobile": {
+        "performance": 87,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 100,
+        "agentic_passed": 3,
+        "agentic_total": 3,
+        "url": "https://pagespeed.web.dev/analysis/https-www-museumofone-art/vejda7pek2?form_factor=mobile",
+        "fcp_ms": 1237.0,
+        "lcp_ms": 3758.0,
+        "tbt_ms": 30.0,
+        "cls": 0.083,
+        "speed_index_ms": 1488.0
+      },
+      "desktop": {
+        "performance": 100,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 100,
+        "agentic_passed": 3,
+        "agentic_total": 3,
+        "url": "https://pagespeed.web.dev/analysis/https-www-museumofone-art/vejda7pek2?form_factor=desktop",
+        "fcp_ms": 321.0,
+        "lcp_ms": 762.0,
+        "tbt_ms": 40.0,
+        "cls": 0.0,
+        "speed_index_ms": 450.0
+      }
+    }
+  ]
+}
