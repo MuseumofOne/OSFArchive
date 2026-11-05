@@ -12,6 +12,8 @@ The importer checks explicit `visibility=public`, publication status, source ori
 
 The archive stores readable content HTML, an inert original content-HTML download, source metadata and permitted uploaded assets. Site-uploaded documents, pictures, audio/video and other supported files are captured under the site owner's archive instruction, retaining original credits and rights exceptions. External services and embeds remain explicitly labelled source links. A public source does not become archive ownership or a new licence. Unsupported/oversized/broken files remain links with an exact reason; they are not counted as locally preserved. Interactive code is preserved in the original source download where public; continued executable behavior or private software access is not claimed.
 
+An uploaded citation JSON containing obsolete archive destinations receives a labelled public access derivative only when the citation's exact DOI and title match a curated item. Its original bytes remain unchanged in encrypted recovery. Source and access-copy checksums are recorded separately; the public report counts replacements. An unresolved obsolete reference withholds that public uploaded file for review instead of inventing an item equivalence or publishing a retired link.
+
 Current resource limits: 5,000 source records, 8 MB per API response, 64 MB per file and 768 MB newly downloaded assets per run. The GitHub Pages platform has its own site/build limits. Large future audiovisual collections require reviewing these limits and existing hosting capacity; no paid storage is silently purchased.
 
 ## Metadata and ownership

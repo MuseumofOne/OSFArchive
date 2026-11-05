@@ -5,7 +5,7 @@ from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.primitives import serialization
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from website_sync import reconcile,projection,Readable,FetchFailure,seal,unseal,fetch_collection,digest,encoded
-from website_pages import build_website_pages
+from website_pages import build_website_pages,access_asset
 AT='2026-11-05T12:00:00Z';RID='a'*24
 class Fetch:
  def __init__(self,content=b'file'):self.content=content;self.cache={};self.asset_bytes=0
@@ -63,6 +63,15 @@ class Sync(unittest.TestCase):
   def layout(title,description,body,*args,**kw):return body
   paths=build_website_pages(self.work,out,write,layout,'https://archive.museumofone.art');self.assertTrue((out/'website'/('web-'+RID+'.html')).exists())
   self.run_sync([],state=s);build_website_pages(self.work,out,write,layout,'https://archive.museumofone.art');self.assertFalse((out/'website'/('web-'+RID+'.html')).exists());self.assertEqual(curated.read_bytes(),before)
+ def test_obsolete_uploaded_citations_have_qualified_access_derivative(self):
+  raw=encoded([{'title':'Exact title','DOI':'10.1234/exact','custom':{'related-records':['https://museumofone.omeka.net/items/show/81']}}]);file=self.root/'citations.json';file.write_bytes(raw);out=self.root/'out'
+  a,n=access_asset({'archive_path':'assets/website-captures/'+digest(raw)+'.json','sha256':digest(raw),'bytes':len(raw)},file,out,'https://archive.museumofone.art',[{'id':'123','title':'Exact title','doi':'10.1234/exact'}])
+  self.assertEqual(n,1);self.assertEqual(file.read_bytes(),raw);self.assertEqual(a['source_sha256'],digest(raw));self.assertTrue(a['access_derivative']);self.assertNotEqual(a['sha256'],a['source_sha256'])
+  public=(out/a['archive_path']).read_bytes();self.assertEqual(digest(public),a['sha256']);self.assertNotIn(b'museumofone.omeka.net',public);self.assertIn(b'https://archive.museumofone.art/items/123.html',public)
+ def test_unmapped_obsolete_uploaded_links_are_not_published(self):
+  raw=encoded([{'title':'Unknown work','DOI':'10.1234/unknown','url':'https://museumofone.omeka.net/items/show/999'}]);file=self.root/'citations.json';file.write_bytes(raw);out=self.root/'out'
+  a,n=access_asset({'archive_path':'assets/website-captures/'+digest(raw)+'.json','sha256':digest(raw),'bytes':len(raw)},file,out,'https://archive.museumofone.art',[])
+  self.assertEqual(a['storage'],'encrypted_recovery_only');self.assertNotIn('archive_path',a);self.assertFalse(out.exists());self.assertEqual(file.read_bytes(),raw)
  def test_cipher_authentication_and_wrong_key(self):
   b=seal({'text':'آرشيف'},self.public);self.assertEqual(unseal(b,self.private,None),{'text':'آرشيف'});j=json.loads(b);j['ciphertext']=j['ciphertext'][:-4]+'AAAA'
   with self.assertRaises(Exception):unseal(encoded(j),self.private,None)
