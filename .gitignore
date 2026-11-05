@@ -1,3 +1,8 @@
 __pycache__/
 *.tar.gz
 .DS_Store
+.sync-work/
+dist/website/
+dist/metadata/website-sync.json
+dist/metadata/website-captures.json
+dist/assets/website-captures/

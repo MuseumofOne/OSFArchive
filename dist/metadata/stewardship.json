@@ -196,8 +196,8 @@
     },
     {
       "path": "data/source/ghost-discovery.json",
-      "bytes": 1467256,
-      "sha256": "5a3f1951424d6d91ebaa3d4626bf02f54e8c06455bf7c06a60cabeaeed3a5c71",
+      "bytes": 275,
+      "sha256": "95afd236635229c135f3f766fdf4c64ffb6886a82c4c480afe8270806786bd60",
       "role": "repository_source_snapshot"
     },
     {
@@ -661,6 +661,37 @@
       "added": [],
       "changed": [],
       "inventory_sha256": "7d754b5f828c64c8f0a0d1975ba699484941bf210c1b379c5dedba59c5aeb9ee"
+    },
+    {
+      "at": "2026-11-04T23:46:56Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 50,
+      "checked_files": 50,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "7d754b5f828c64c8f0a0d1975ba699484941bf210c1b379c5dedba59c5aeb9ee"
+    },
+    {
+      "at": "2026-11-05T00:23:11Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 50,
+      "inventory_sha256": "ec92a6ab90ee63cbe2f19e24526d29093247d40539769ce5e23ae40644f5e1ac"
+    },
+    {
+      "at": "2026-11-05T00:23:11Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 50,
+      "checked_files": 50,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "ec92a6ab90ee63cbe2f19e24526d29093247d40539769ce5e23ae40644f5e1ac"
     }
   ],
   "scope": "Repository source snapshots, editorial JSON datasets, and original PDF access copies.",
@@ -673,10 +704,10 @@
     "upstream_sources": "Original deposits remain at Zenodo; website source is held by the site platform.",
     "offsite_backup_status": "Private Google Drive package uploaded, downloaded again, checksum matched and all restored content verified."
   },
-  "inventory_sha256": "7d754b5f828c64c8f0a0d1975ba699484941bf210c1b379c5dedba59c5aeb9ee",
-  "baseline_created_at": "2026-11-04T23:25:35Z",
+  "inventory_sha256": "ec92a6ab90ee63cbe2f19e24526d29093247d40539769ce5e23ae40644f5e1ac",
+  "baseline_created_at": "2026-11-05T00:23:11Z",
   "last_check": {
-    "at": "2026-11-04T23:25:35Z",
+    "at": "2026-11-05T00:23:11Z",
     "event": "fixity_check",
     "status": "passed",
     "algorithm": "SHA-256",
@@ -685,7 +716,7 @@
     "missing": [],
     "added": [],
     "changed": [],
-    "inventory_sha256": "7d754b5f828c64c8f0a0d1975ba699484941bf210c1b379c5dedba59c5aeb9ee"
+    "inventory_sha256": "ec92a6ab90ee63cbe2f19e24526d29093247d40539769ce5e23ae40644f5e1ac"
   },
   "backup": {
     "at": "2026-11-04T22:54:35Z",

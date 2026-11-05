@@ -23,6 +23,11 @@ def sync(theme):
         target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source,target)
         assert source.read_bytes()==target.read_bytes()
         receipt.append({'source':str(source.relative_to(ROOT)),'target':str(target.relative_to(theme)),'sha256':hashlib.sha256(source.read_bytes()).hexdigest()})
+    from website_cache import apply
+    cache=apply(theme,out/'metadata/research-discovery.v2.json')
+    for item in receipt:
+        item['target_sha256']=hashlib.sha256((theme/item['target']).read_bytes()).hexdigest()
+    (theme/'docs/WEBSITE-SYNC-CACHE.json').write_text(json.dumps(cache,indent=2)+'\n')
     (theme/'docs/SHARED-EXPLORER-SYNC.json').write_text(json.dumps({'generator':'scripts/sync_ghost_explorer.py','files':receipt},indent=2)+'\n')
     print('Synchronized',len(pairs),'shared files; no deployment')
 

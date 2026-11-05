@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "source_origin": "https://www.museumofone.art",
+  "archive_origin": "https://archive.museumofone.art",
+  "state_branch": "website-sync-state",
+  "schedule_minutes": 30,
+  "public_key": "config/website-recovery-public.pem",
+  "max_records": 5000,
+  "max_content_bytes": 8000000,
+  "max_attachment_bytes": 64000000,
+  "asset_policy": "Copy site-uploaded public files/images/media under the site owner\u2019s archive authorization, retaining all source rights and credits. External embeds remain links. Unknown rights are not upgraded to ownership or a new licence.",
+  "field_ownership": {
+    "source": [
+      "title",
+      "html",
+      "authors",
+      "tags",
+      "custom_excerpt",
+      "published_at",
+      "updated_at",
+      "canonical_url",
+      "source_declared_metadata"
+    ],
+    "archive": [
+      "archive_id",
+      "discovery_id",
+      "first_captured_at",
+      "revisions",
+      "capture_checksums",
+      "access_status"
+    ],
+    "curated": "Existing data/catalogue.json, authorities, subjects, programmes, identifiers, original files and source snapshots are never rewritten by synchronization."
+  },
+  "max_total_asset_bytes": 768000000,
+  "content_api_origin": "https://the-museum-of-one.ghost.io",
+  "ghost_storage_prefix": "https://storage.ghost.io/c/b5/1f/b51fbd98-6416-4011-90f9-a06bf0b40d7c"
+}

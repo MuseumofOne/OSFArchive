@@ -203,13 +203,18 @@ def build_research_discovery(records, entities, vocab, programmes, origin, *, ro
                 or page.get('source_url') != address or not page.get('reviewed')
                 or not re.fullmatch(r'[a-f0-9]{64}', str(page.get('source_sha256', '')))):
             raise ValueError('Website discovery record lacks checked public-source evidence: ' + str(page.get('url')))
-        page_id = 'website:' + sha256(address.encode()).hexdigest()[:24]
+        page_id = page.get('discovery_id') or 'website:' + sha256(address.encode()).hexdigest()[:24]
+        if not re.fullmatch('website:[a-f0-9]{24}',page_id):raise ValueError('Invalid stable website discovery ID')
         row = _record(page_id, 'website', page['title'], address, page.get('summary') or page.get('excerpt') or '')
         row.update(identity=address, date=page.get('date', ''), date_role=page.get('date_role', ''),
                    resource_type=page.get('record_type', 'Public website page'),
                    sources=[_source(address, 'Public Ghost page', reviewed=page['reviewed'], sha256=page['source_sha256'])],
                    search_text=' '.join(_texts([page['title'], row['summary'], page.get('text'), page.get('author')])),
                    source_sha256=page['source_sha256'])
+        if page.get('archive_url'):
+            capture_url=page['archive_url']
+            if not re.fullmatch(re.escape(origin)+r'/website/web-[a-f0-9]{24}\.html',capture_url):raise ValueError('Invalid web capture route')
+            row['relationships'].append(_edge('Stored website capture',page_id,capture_url,address,'Readable archival copy of this public web record; not a new publication edition.'))
         for rid, record in by_id.items():
             if str(record.get('institutional_url', '')).rstrip('/') == address.rstrip('/'):
                 scope = record.get('institutional_match_scope') or institutional_scope(record)

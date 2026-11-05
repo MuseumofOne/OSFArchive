@@ -1,0 +1,8 @@
+/* Website capture presentation reuses the archive's existing type and paper. */
+.website-record,.website-captured-content{min-width:0;overflow-wrap:anywhere}
+.website-record .metadata dd{min-width:0;overflow-wrap:anywhere}
+.website-record code{white-space:normal;overflow-wrap:anywhere}
+.website-captured-content table{display:block;max-width:100%;overflow-x:auto}
+.website-captured-content img,.website-record video,.website-record audio{max-width:100%;height:auto}
+.website-captured-content pre{white-space:pre-wrap;overflow-wrap:anywhere}
+.website-record .source-list img{display:block;max-width:100%;height:auto;margin-block:1rem}

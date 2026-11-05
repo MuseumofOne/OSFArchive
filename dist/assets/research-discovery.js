@@ -66,8 +66,8 @@
   const origin=baseURL(config.origin),page=new URL(config.pageURL),snapshot=new URL(config.snapshot,page);
   if(snapshot.origin!==page.origin||!/^https?:$/.test(snapshot.protocol)||snapshot.username||snapshot.password)throw new Error('Research snapshot must be same-origin');
   let latest;
-  try{latest=await fetchIndex(snapshot.href,origin,fetcher,{maxBytes:4*1024*1024});if(latest.index_kind!=='discovery')throw new Error('Expected discovery index');onIndex(latest,'snapshot');}catch{latest=undefined;}
-  if(config.remote){const remote=new URL(config.remote);if(remote.href!==origin+'/metadata/research-discovery.v2.json')throw new Error('Unexpected discovery refresh URL');try{const fresh=await fetchIndex(remote.href,origin,fetcher,{maxBytes:4*1024*1024});if(fresh.index_kind!=='discovery')throw new Error('Expected discovery index');if(!latest||fresh.content_version!==latest.content_version){latest=fresh;onIndex(latest,'remote');}}catch{/* A verified bundled index remains usable. */}}
+  try{latest=await fetchIndex(snapshot.href,origin,fetcher,{maxBytes:24*1024*1024});if(latest.index_kind!=='discovery')throw new Error('Expected discovery index');onIndex(latest,'snapshot');}catch{latest=undefined;}
+  if(config.remote){const remote=new URL(config.remote);if(remote.href!==origin+'/metadata/research-discovery.v2.json')throw new Error('Unexpected discovery refresh URL');try{const fresh=await fetchIndex(remote.href,origin,fetcher,{maxBytes:24*1024*1024});if(fresh.index_kind!=='discovery')throw new Error('Expected discovery index');if(!latest||fresh.content_version!==latest.content_version){latest=fresh;onIndex(latest,'remote');}}catch{/* A verified bundled index remains usable. */}}
   if(!latest)throw new Error('Research discovery unavailable');return latest;
  }
  function mount(container){
