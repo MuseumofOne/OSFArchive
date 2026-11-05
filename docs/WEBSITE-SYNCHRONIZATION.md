@@ -14,7 +14,7 @@ The archive stores readable content HTML, an inert original content-HTML downloa
 
 An uploaded citation JSON containing obsolete archive destinations receives a labelled public access derivative only when the citation's exact DOI and title match a curated item. Its original bytes remain unchanged in encrypted recovery. Source and access-copy checksums are recorded separately; the public report counts replacements. An unresolved obsolete reference withholds that public uploaded file for review instead of inventing an item equivalence or publishing a retired link.
 
-Current resource limits: 5,000 source records, 8 MB per API response, 64 MB per file and 768 MB newly downloaded assets per run. The GitHub Pages platform has its own site/build limits. Large future audiovisual collections require reviewing these limits and existing hosting capacity; no paid storage is silently purchased.
+Current resource limits: 5,000 source records, 8 MB per API response, 64 MB per file and 768 MB captured upload bytes per run, including reused cached assets. The GitHub Pages platform has its own site/build limits. Large future audiovisual collections require reviewing these limits and existing hosting capacity; no paid storage is silently purchased. Media types use a fixed extension map so Mac and Linux MIME databases cannot create spurious revisions; this classification is separate from the verified byte checksum.
 
 ## Metadata and ownership
 

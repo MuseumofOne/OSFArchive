@@ -125,4 +125,9 @@ class Sync(unittest.TestCase):
   self.row['record']['html']='<a href="/content/files/data.hdf5">Data</a>'
   s,p,r=self.run_sync(fetcher=Fetch(b'original binary'));self.assertTrue(p[0]['attachments'][0]['archive_path'].endswith('.bin'));self.assertEqual(p[0]['attachments'][0]['bytes'],15)
   self.policy['max_total_asset_bytes']=1;s,p,r=self.run_sync(fetcher=Fetch(b'original binary'));self.assertEqual(p[0]['attachments'][0]['availability'],'deferred');self.assertNotIn('archive_path',p[0]['attachments'][0])
+ def test_host_mime_database_cannot_create_duplicate_revisions(self):
+  self.row['record']['html']='<img src="/content/images/favicon.ico">'
+  with patch('mimetypes.guess_type',return_value=('image/x-icon',None)):s,p,r=self.run_sync(fetcher=Fetch(b'icon bytes'))
+  with patch('mimetypes.guess_type',return_value=('application/octet-stream',None)):s2,p2,r2=self.run_sync(state=s,fetcher=Fetch(b'icon bytes'))
+  self.assertEqual(p[0]['attachments'][0]['mime_type'],'image/vnd.microsoft.icon');self.assertEqual(s['records'][RID]['revisions'],s2['records'][RID]['revisions'])
 if __name__=='__main__':unittest.main()

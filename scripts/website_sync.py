@@ -3,7 +3,7 @@ Runtime content is ignored by Git. Historical captures are AES-GCM/RSA-OAEP
 sealed to an offline recovery key; the runner only needs the public key.
 """
 from __future__ import annotations
-import argparse,base64,copy,fcntl,gzip,hashlib,json,os,re,shutil,tempfile,time,mimetypes
+import argparse,base64,copy,fcntl,gzip,hashlib,json,os,re,shutil,tempfile,time
 from datetime import datetime,timezone
 from html import escape,unescape
 from html.parser import HTMLParser
@@ -15,6 +15,7 @@ from website_metadata import describe
 ROOT=Path(__file__).resolve().parents[1]
 ORIGIN='https://www.museumofone.art'
 STORAGE='https://storage.ghost.io/c/b5/1f/b51fbd98-6416-4011-90f9-a06bf0b40d7c'
+ASSET_MIMES={'.ico':'image/vnd.microsoft.icon','.tif':'image/tiff','.tiff':'image/tiff','.pdf':'application/pdf','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.gif':'image/gif','.avif':'image/avif','.mp3':'audio/mpeg','.mp4':'video/mp4','.m4a':'audio/mp4','.wav':'audio/wav','.ogg':'audio/ogg','.webm':'video/webm','.mov':'video/quicktime','.csv':'text/csv','.json':'application/json','.txt':'text/plain','.zip':'application/zip','.docx':'application/vnd.openxmlformats-officedocument.wordprocessingml.document','.xlsx':'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}
 def is_upload(u):
  p=urlsplit(u)
  if u.startswith(STORAGE+'/'):return p.path[len(urlsplit(STORAGE).path):].startswith(('/content/files/','/content/images/','/content/media/'))
@@ -226,7 +227,7 @@ def attachment_records(parser,root,fetcher,policy,work):
       path='assets/website-captures/'+h+suffix
       atomic(work/'public'/path,b)
       fetcher.asset_bytes=getattr(fetcher,'asset_bytes',0)+len(b)
-      item.update(storage='local_archival_file',archive_path=path,sha256=h,bytes=len(b),mime_type=mimetypes.guess_type(p.path)[0] or 'application/octet-stream',availability='available',reason='Public site-uploaded asset captured under the site owner’s archive instruction. Original rights, credits and third-party exceptions remain applicable; no new licence is granted.')
+      item.update(storage='local_archival_file',archive_path=path,sha256=h,bytes=len(b),mime_type=ASSET_MIMES[suffix],availability='available',reason='Public site-uploaded asset captured under the site owner’s archive instruction. Original rights, credits and third-party exceptions remain applicable; no new licence is granted.')
     cache[u]={k:v for k,v in item.items() if k not in ('url','role','label')};fetcher.cache=cache
     if item.get('sha256') and item['storage']=='local_archival_file':
      etag=(prior or {}).get('etag') if reused else getattr(fetcher,'response_headers',{}).get(u,{}).get('ETag')
