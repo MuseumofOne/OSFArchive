@@ -310,9 +310,9 @@ def main():
    state,public,report=reconcile(rows,state,ROOT,work,policy,fetcher,dry=args.dry_run,previous_projection=old)
   except (FetchFailure,ValueError,KeyError) as e:
    # Fail closed for runtime website copies on a source-wide verification failure.
-   report={'mode':'suspended','checked_at':now(),'source_records':None,'eligible_records':0,'error':type(e).__name__,'message':'Source collection could not be completely verified. No current web content is served; encrypted state retained.'}
+   report={'mode':'suspended','checked_at':now(),'source_records':None,'eligible_records':0,'error':type(e).__name__,'safe_reason':str(e),'message':'Source collection could not be completely verified. No current web content is served; encrypted state retained.'}
    if not (work/'state.json').exists():atomic(work/'state.json',encoded(state or {'schema_version':1,'records':{}}))
    atomic(work/'public/current.json',b'[]');atomic(work/'report.json',encoded(report));public=[]
   if not args.dry_run:atomic(work/'public/discovery.json',encoded(projection(public)))
-  print(json.dumps({k:report.get(k) for k in ('mode','source_records','eligible_records','failed_attachments','error')}))
+  print(json.dumps({k:report.get(k) for k in ('mode','source_records','eligible_records','failed_attachments','error','safe_reason')}))
 if __name__=='__main__':main()
