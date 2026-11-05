@@ -1,5 +1,8 @@
 # Ghost integration: prepared native entrance
 
+**Current 5 November 2026:** Ghost theme 1.12.2 and automatic public website preservation are deployed. Both native and global discovery refresh from the live reconciled archive, with a curated-only fallback. See [current release verification](RELEASE-WEBSITE-SYNC-2026-11-05.md) and [synchronization operations](WEBSITE-SYNCHRONIZATION.md). Earlier dated preparation, staging and snapshot descriptions below are historical context, not a current deployment hold or configuration instruction.
+
+
 **Published 4 November 2026:** the native 1.12.0 entrance is active on the existing Ghost server. Public HTTPS, CORS and live discovery/reader behavior are verified. See [current deployment status](../DEPLOYMENT-STATUS.md) for exact scope and remaining migration limits. Earlier preparation and fixture descriptions below document how the implementation was developed.
 
 The actual Desktop theme and T7 working copy are now available locally. The verified 1.11.10 theme ZIP is the baseline for the prepared 1.12.0 revision. The prepared source includes the native entrance, shared typed retrieval, bundled discovery/passages, public archive destinations and the current website shell. This is local preparation; it does not establish installation or public hosting.

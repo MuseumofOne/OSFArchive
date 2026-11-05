@@ -2,13 +2,13 @@
 
 Live at [archive.museumofone.art](https://archive.museumofone.art/), with a [native Ghost entrance](https://www.museumofone.art/digital-archive-library/). See [current deployment and verification](DEPLOYMENT-STATUS.md).
 
-A portable static digital catalogue generated with Python with static HTML item pages, a searchable catalogue, provenance-qualified metadata and JSON-LD. Zenodo remains the publication source of record; verified reading copies are included. No subscription, database or application backend is required.
+A portable static digital catalogue generated with Python with static HTML item pages, a searchable catalogue, provenance-qualified metadata and JSON-LD. Zenodo remains the publication source of record for curated editions; public Ghost content is the source for automatically captured website records. Verified reading copies are included. No subscription, database or application backend is required.
 
 This is a custom static implementation, not an installed CollectionBuilder or Wax instance. It can be hosted on GitHub Pages using the included workflow.
 
 ## Rebuild
 
-Use Python 3.12 (the CI version) with the pinned dependencies from `requirements-test.txt`: `python -m pip install -r requirements-test.txt`, then run `python scripts/build.py`. The current full build requires PyMuPDF for source-PDF text extraction as well as verification; the requirements filename is retained from the earlier test-only setup. The site lives in `dist/`. Relative internal links support GitHub Pages project sites. Set `SITE_ORIGIN` to your eventual public origin (including a project path when applicable) before rebuilding to update canonical URLs, JSON-LD and the sitemap.
+Use Python 3.12 (the CI version) with the pinned dependencies: `python -m pip install -r requirements-test.txt -r requirements-sync.txt`. For a current website-inclusive build, run `python scripts/website_state.py pull`, `python scripts/website_sync.py`, then `python scripts/build.py`. A build without a reconciled runtime checkpoint includes the independently curated catalogue and an empty website register. The current full build requires PyMuPDF for source-PDF text extraction as well as verification; the requirements filename is retained from the earlier test-only setup. The site lives in `dist/`. Relative internal links support GitHub Pages project sites. Set `SITE_ORIGIN` to your eventual public origin (including a project path when applicable) before rebuilding to update canonical URLs, JSON-LD and the sitemap.
 
 ## Source and editorial metadata
 
@@ -18,7 +18,7 @@ The first edition is a selected corpus, not an export or complete reconstruction
 
 ## Updating
 
-Update the records in `data/catalogue.json`, add source evidence and rebuild. No live account access or automatic Zenodo synchronization is configured. Do not store Zenodo tokens in the website.
+Curated editions remain editorially maintained in `data/catalogue.json`; add source evidence and rebuild when changing them. Public Ghost posts/pages and uploaded assets synchronize automatically through the existing Pages workflow every half-hour, on main-branch publication, or on manual Run workflow. Stable IDs, encrypted revision recovery, withdrawal behavior, metadata ownership and resource limits are described in [website synchronization](docs/WEBSITE-SYNCHRONIZATION.md). No automatic Zenodo account synchronization is configured. Do not store Zenodo or Ghost admin tokens in the website.
 
 ## Free GitHub Pages hosting
 
@@ -54,18 +54,18 @@ Policies, description responsibility/history, source acquisition context, resear
 
 ## Hosting target
 
-Target repository: MuseumofOne/OSFArchive. Hosting: public GitHub Pages. Custom hostname: archive.museumofone.art. The generated CNAME file and canonical URLs use that hostname. Add the DNS CNAME described in DOMAIN_SETUP.md and enable Pages with GitHub Actions. This source package excludes the old Sites deployment identity.
+Current repository: MuseumofOne/OSFArchive. Hosting: public GitHub Pages, with HTTPS at archive.museumofone.art. The generated CNAME file and canonical URLs use that hostname. DOMAIN_SETUP.md documents reconfiguration if a hosting migration becomes necessary. This source package excludes the old Sites deployment identity.
 
 
 ## Consolidation branch and Ghost integration
 
-The `integration/ghost-archive-consolidation` branch prepares the independent archive and its public integration contract. See [architecture](docs/ARCHITECTURE.md), [Ghost integration](docs/GHOST_INTEGRATION.md), [metadata validation](docs/METADATA_VALIDATION.md), [legacy migration](docs/MIGRATION.md), [deployment and rollback](docs/DEPLOYMENT.md), and [maintenance](docs/MAINTENANCE.md).
+The deployed `main` branch holds the independent archive and its public integration contract. The local consolidation working branch and its existing history are retained. See [architecture](docs/ARCHITECTURE.md), [Ghost integration](docs/GHOST_INTEGRATION.md), [metadata validation](docs/METADATA_VALIDATION.md), [legacy migration](docs/MIGRATION.md), [deployment and rollback](docs/DEPLOYMENT.md), and [maintenance](docs/MAINTENANCE.md).
 
-The current archive working copy is directly in `/Volumes/T7-Shield/Digital Archive Library` on the mounted T7. Version 1.12.0 is now active in Ghost, based on the verified 1.11.10 theme. It supplies the native entrance at the existing `/digital-archive-library/` address. The source, ZIP, checksums and current evidence remain together in the existing Desktop theme folder; full Ghost backups and rollback evidence remain separately outside this public repository. See the current deployment status for the exact publication scope and browser checks.
+The current archive working copy is directly in `/Volumes/T7-Shield/Digital Archive Library` on the mounted T7. Theme 1.12.2 is active in Ghost, with the verified automatic-archive discovery configuration. It supplies the native entrance at the existing `/digital-archive-library/` address. The source, ZIP, checksums and current evidence remain together in the existing Desktop theme folder; full Ghost backups and rollback evidence remain separately outside this public repository. See the current deployment status for the exact publication scope and browser checks.
 
-The existing `metadata/discovery.json` reading-list feed and `metadata/search-index.v1.json` integration feed remain compatible. The current shared retrieval contract is `metadata/research-discovery.v2.json`, covering publications, described chapters, entities, concepts, programmes and a reviewed snapshot of published public Ghost records. `metadata/research-passages.v2.json` separately provides literal PDF text-layer passages and source-page links. Both are generated from reviewed inputs and include deterministic content versions. Ghost bundles reviewed snapshots. Public HTTPS/CORS are verified; remote refresh remains disabled in the current theme, so synchronize the bundled feeds for later releases. See [connected discovery](docs/DISCOVERY.md) and the [metadata profile](docs/METADATA_PROFILE.md).
+The existing `metadata/discovery.json` reading-list feed and `metadata/search-index.v1.json` integration feed remain compatible. The current shared retrieval contract is `metadata/research-discovery.v2.json`, covering publications, described chapters, entities, concepts, programmes and a live reconciled projection of current published public Ghost records. `metadata/research-passages.v2.json` separately provides literal PDF text-layer passages and source-page links. Both are generated from reviewed inputs and include deterministic content versions. Ghost bundles a curated-only fallback and refreshes from the verified public HTTPS archive feed. Website text is not frozen into new theme packages; it is served from the currently reconciled archive index. See [connected discovery](docs/DISCOVERY.md) and the [metadata profile](docs/METADATA_PROFILE.md).
 
-This repository accepts public, source-evidenced catalogue items only. The build stops before writing artifacts if a future item is marked private, draft or hidden, or lacks the required public Zenodo snapshot. Keep unpublished institutional material outside this public catalogue. Other repositories and descriptive levels need an explicit publication policy before export.
+This repository accepts public, source-evidenced catalogue items only. The build stops before writing artifacts if a future item is marked private, draft or hidden, or lacks the required public Zenodo snapshot. Keep unpublished institutional material outside this public catalogue. Website records use the separate documented public-source policy and never overwrite curated edition identities. Other repositories and descriptive levels need an explicit publication policy before export.
 
 The repository was made public and Pages enabled on 4 November 2026 under explicit publication authorization. DNS, certificate, HTTPS enforcement, deployment and live integration were verified separately from the local build. The current deployment status records that evidence and remaining migration limits.
 
@@ -73,4 +73,4 @@ The repository was made public and Pages enabled on 4 November 2026 under explic
 
 The build applies the local metadata application profile before publication and validates the generated outputs again. Item CSL-JSON, BibTeX, RIS, visible citations, applicable Scholar tags, qualified Dublin Core and JSON-LD derive from shared models. Typed relationship assertions, the relation register, combined graph, profile and machine-readable quality report are generated under `dist/metadata/`; the visible quality report is `metadata-quality.html`. Passing local gates establish the stated consistency and source checks, not external standards certification or guaranteed indexing.
 
-Current local update: [shared native explorer 1.12.1](docs/RELEASE-1.12.1.md). The matching Desktop candidate is prepared; public deployment remains 1.12.0.
+Current deployed update: [automatic website preservation and native discovery](docs/RELEASE-WEBSITE-SYNC-2026-11-05.md), using theme 1.12.2. The Desktop source, one current ZIP, checksums and evidence match the installed configuration. See [current synchronization checkpoint](docs/WEBSITE-SYNC-CHECKPOINT.md).

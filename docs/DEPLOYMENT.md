@@ -1,5 +1,8 @@
 # Deployment, installation and rollback
 
+**Current 5 November 2026:** Ghost theme 1.12.2 and automatic public website preservation are deployed. Both native and global discovery refresh from the live reconciled archive, with a curated-only fallback. See [current release verification](RELEASE-WEBSITE-SYNC-2026-11-05.md) and [synchronization operations](WEBSITE-SYNCHRONIZATION.md). Earlier dated preparation, staging and snapshot descriptions below are historical context, not a current deployment hold or configuration instruction.
+
+
 **Current publication:** the archive and native Ghost 1.12.0 entrance were published on 4 November 2026 after explicit authorization. See [current deployment status](../DEPLOYMENT-STATUS.md) for live addresses, HTTPS evidence, tests and the exact CMS scope. The staging authorization notes below record the earlier preparation phase; they are not a current deployment hold.
 
 ## Staging status and authorization

@@ -1,5 +1,8 @@
 # Connected research discovery
 
+**Current 5 November 2026:** Ghost theme 1.12.2 and automatic public website preservation are deployed. Both native and global discovery refresh from the live reconciled archive, with a curated-only fallback. See [current release verification](RELEASE-WEBSITE-SYNC-2026-11-05.md) and [synchronization operations](WEBSITE-SYNCHRONIZATION.md). Earlier dated preparation, staging and snapshot descriptions below are historical context, not a current deployment hold or configuration instruction.
+
+
 The archive exposes publications, described chapters, contextual entities,
 local vocabulary concepts, research programmes, and reviewed public website
 pages through one versioned search contract. It keeps the existing v1 archive
