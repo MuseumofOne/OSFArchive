@@ -105,7 +105,8 @@ def entity_graph(entities, origin):
             node['creator'] = [{'@type': 'Person', '@id': entity_uri(r['id'], origin),
                                 'name': by_id[r['id']]['label']} for r in creators]
         node['subjectOf'] = [{'@type': 'CreativeWork', '@id': origin.rstrip('/')+'/items/'+str(link['record_id'])+'.html#work'}
-                             for link in entity.get('record_links', []) if link['relation'] not in {'author', 'publisher'}]
+                             for link in entity.get('record_links', []) if link['relation'] in {'artist discussed', 'artwork discussed', 'exhibition discussed', 'scholar discussed', 'curator discussed'}]
+        node['subjectOf'] += [{'@type': 'WebPage', '@id': link['url'], 'url': link['url'], 'description': link['note']} for link in entity.get('web_links', [])]
         nodes.append(node)
     return {'@context': 'https://schema.org', '@graph': nodes}
 
@@ -181,7 +182,9 @@ def build_entity_pages(records, entities, write, layout, origin):
                          f'<small>{_e(relationship["relation"])} · '
                          f'<a href="{_e(relationship["source_url"])}">source evidence ↗</a></small></li>')
             body += '</ul></section>'
-        body += '<section class="item-section"><h2>Linked publications</h2>'
+        body += '<section class="item-section">'
+        if entity.get('record_links'):
+            body += '<h2>Linked publications</h2>'
         for link in entity.get('record_links', []):
             record = by_record[str(link['record_id'])]
             body += (f'<div class="entity-publication"><a class="record-row" href="../items/{_e(record["id"])}.html">'
@@ -191,11 +194,17 @@ def build_entity_pages(records, entities, write, layout, origin):
                      '<span aria-hidden="true">↗</span></a>'
                      f'<p class="entity-evidence">{_e(link.get("note", ""))} '
                      f'<a href="{_e(link["source_url"])}">Read the source ↗</a></p></div>')
+        if entity.get('web_links'):
+            body += '<section class="item-section"><h2>Exchanges and research context</h2><ul class="source-list">'
+            for link in entity['web_links']:
+                body += (f'<li><a href="{_e(link["url"])}">{_e(link["relation"])} ↗</a>'
+                         f'<p>{_e(link["note"])}</p><small>Status: {_e(link["status"])} · reviewed {_e(link["reviewed"])}</small></li>')
+            body += '</ul></section>'
         body += '</section><section class="item-section"><h2>Sources &amp; record control</h2><ul class="source-list">'
         for source in entity.get('sources', []):
             body += (f'<li><a href="{_e(source["url"])}">{_e(source["label"])} ↗</a>'
                      f'<small>{_e(source.get("note", ""))}</small></li>')
-        body += ('</ul><p>Compiled from the linked publication records. Source review: 4 November 2026. '
+        body += ('</ul><p>Compiled from the linked publication records. Description review: 5 November 2026. Individual evidence dates are recorded in the downloadable data. '
                  'No external authority identifier is assigned where one has not been established.</p>'
                  f'<p><a href="../metadata/entities.json" download>Download contextual authority data ↓</a></p></section>')
         node = authority_nodes[entity_uri(entity['id'], origin)]

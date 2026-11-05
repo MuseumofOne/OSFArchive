@@ -692,6 +692,54 @@
       "added": [],
       "changed": [],
       "inventory_sha256": "ec92a6ab90ee63cbe2f19e24526d29093247d40539769ce5e23ae40644f5e1ac"
+    },
+    {
+      "at": "2026-11-05T01:56:37Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 50,
+      "checked_files": 50,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "ec92a6ab90ee63cbe2f19e24526d29093247d40539769ce5e23ae40644f5e1ac"
+    },
+    {
+      "at": "2026-11-05T03:07:48Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 50,
+      "checked_files": 50,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "ec92a6ab90ee63cbe2f19e24526d29093247d40539769ce5e23ae40644f5e1ac"
+    },
+    {
+      "at": "2026-11-05T03:12:55Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 50,
+      "checked_files": 50,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "ec92a6ab90ee63cbe2f19e24526d29093247d40539769ce5e23ae40644f5e1ac"
+    },
+    {
+      "at": "2026-11-05T04:10:31Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 50,
+      "checked_files": 50,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "ec92a6ab90ee63cbe2f19e24526d29093247d40539769ce5e23ae40644f5e1ac"
     }
   ],
   "scope": "Repository source snapshots, editorial JSON datasets, and original PDF access copies.",
@@ -707,7 +755,7 @@
   "inventory_sha256": "ec92a6ab90ee63cbe2f19e24526d29093247d40539769ce5e23ae40644f5e1ac",
   "baseline_created_at": "2026-11-05T00:23:11Z",
   "last_check": {
-    "at": "2026-11-05T00:23:11Z",
+    "at": "2026-11-05T04:10:31Z",
     "event": "fixity_check",
     "status": "passed",
     "algorithm": "SHA-256",

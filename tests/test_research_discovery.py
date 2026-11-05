@@ -39,7 +39,7 @@ class ResearchDiscovery(unittest.TestCase):
         return build_research_discovery(**values)
 
     def test_all_described_levels_are_search_destinations(self):
-        self.assertEqual(self.feed['counts'], {'publication': 16, 'chapter': 57, 'entity': 36, 'concept': 50, 'programme': 10})
+        self.assertEqual(self.feed['counts'], {'publication': 16, 'chapter': 57, 'entity': 38, 'concept': 50, 'programme': 10})
         ids = {r['id'] for r in self.feed['records']}
         for row in self.feed['records']:
             self.assertTrue(row['sources'], row['id'])

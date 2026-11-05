@@ -4,7 +4,8 @@
     "label": "Dorian Vale",
     "type": "Person",
     "variants": [
-      "Vale, Dorian"
+      "Vale, Dorian",
+      "Tarique"
     ],
     "identifiers": [
       {
@@ -17,7 +18,7 @@
         "status": "public_registry_profile_inspected"
       }
     ],
-    "summary": "Author of the selected publications in this catalogue.",
+    "summary": "Dorian Vale, the publishing name of Tarique, writes on Post-Interpretive Criticism, aesthetic experience and the ethics of art writing. This archive connects his books, field essays, methods and research working papers published by Museum of One.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -111,99 +112,212 @@
         "record_id": "19864099",
         "relation": "author",
         "source_url": "https://www.museumofone.art/publication-foundational-essays/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/publication-foundational-essays/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "19864115",
         "relation": "author",
         "source_url": "https://www.museumofone.art/publication-essays-from-field/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/publication-essays-from-field/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "23395654",
         "relation": "author",
         "source_url": "https://www.museumofone.art/publication-threads-of-sand/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/publication-threads-of-sand/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "20383926",
         "relation": "author",
         "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "23430200",
         "relation": "author",
         "source_url": "https://www.museumofone.art/after-the-interpretation-changes/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/after-the-interpretation-changes/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "23428974",
         "relation": "author",
         "source_url": "https://www.museumofone.art/answerability/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/answerability/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "21715085",
         "relation": "author",
         "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "21241866",
         "relation": "author",
         "source_url": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "20593003",
         "relation": "author",
         "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "19963428",
         "relation": "author",
         "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "20100136",
         "relation": "author",
         "source_url": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "20100139",
         "relation": "author",
         "source_url": "https://www.museumofone.art/a-quantitative-analysis-of-critical-posture-in-art-writing-1980-2025-dataset-20-critical-texts-1980-2025/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/a-quantitative-analysis-of-critical-posture-in-art-writing-1980-2025-dataset-20-critical-texts-1980-2025/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "21786998",
         "relation": "author",
         "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "19863790",
         "relation": "author",
         "source_url": "https://www.museumofone.art/moral-proximity-ethics-as-method-in-post-interpretive-criticism/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/moral-proximity-ethics-as-method-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "19863836",
         "relation": "author",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "19863851",
         "relation": "author",
         "source_url": "https://www.museumofone.art/language-as-custody-writing-without-harm-in-post-interpretive-criticism/",
-        "note": "The matching institutional publication record credits Dorian Vale as author."
+        "note": "The matching institutional publication record credits Dorian Vale as author.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/language-as-custody-writing-without-harm-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Dorian Vale"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "museum-of-one",
@@ -221,7 +335,7 @@
         "source_url": "https://www.museumofone.art/"
       }
     ],
-    "summary": "Publishing institution and source of contextual publication records for this selected archive.",
+    "summary": "Museum of One publishes the books, essays and research working papers described here and maintains their catalogue and contextual research records. Its Digital Archive Library connects public editions with their sources, subjects and research programmes.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -310,99 +424,212 @@
         "record_id": "19864099",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/publication-foundational-essays/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/publication-foundational-essays/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "19864115",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/publication-essays-from-field/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/publication-essays-from-field/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "23395654",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/publication-threads-of-sand/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/publication-threads-of-sand/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "20383926",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/publication-moral-evidence-of-space/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "23430200",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/after-the-interpretation-changes/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/after-the-interpretation-changes/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "23428974",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/answerability/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/answerability/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "21715085",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "21241866",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "20593003",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "19963428",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "20100136",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "20100139",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/a-quantitative-analysis-of-critical-posture-in-art-writing-1980-2025-dataset-20-critical-texts-1980-2025/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/a-quantitative-analysis-of-critical-posture-in-art-writing-1980-2025-dataset-20-critical-texts-1980-2025/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "21786998",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "19863790",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/moral-proximity-ethics-as-method-in-post-interpretive-criticism/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/moral-proximity-ethics-as-method-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "19863836",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "19863851",
         "relation": "publisher",
         "source_url": "https://www.museumofone.art/language-as-custody-writing-without-harm-in-post-interpretive-criticism/",
-        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+        "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/language-as-custody-writing-without-harm-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Museum of One"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "hassan-sharif",
@@ -410,7 +637,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay studies Sharif’s Objects and captions Shopping Bags and Plastic Funnel and Aluminium Foil.",
+    "summary": "Hassan Sharif’s accumulations of ordinary materials are examined in Hassan Sharif’s Objects through repetition, labour, consumption and material fragility. Shopping Bags and Plastic Funnel and Aluminium Foil provide specific points of reference.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -424,9 +651,17 @@
         "record_id": "21241866",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/",
-        "note": "The essay studies Sharif’s Objects and captions Shopping Bags and Plastic Funnel and Aluminium Foil."
+        "note": "The essay studies Sharif’s Objects and captions Shopping Bags and Plastic Funnel and Aluminium Foil.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/",
+          "precision": "named occurrence",
+          "text_quote": "Hassan Sharif"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "el-anatsui",
@@ -434,7 +669,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay studies the Man’s Cloth series and captions Old Man’s Cloth.",
+    "summary": "El Anatsui’s Man’s Cloth series brings discarded bottle caps, collective labour and historical memory into an inquiry about critical witnessing and reparation. Old Man’s Cloth is the named work reproduced in the essay.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -448,9 +683,17 @@
         "record_id": "20593003",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
-        "note": "The essay studies the Man’s Cloth series and captions Old Man’s Cloth."
+        "note": "The essay studies the Man’s Cloth series and captions Old Man’s Cloth.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
+          "precision": "named occurrence",
+          "text_quote": "El Anatsui"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "doris-salcedo",
@@ -458,7 +701,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay discusses Atrabiliarios as a case of the continuing effect of an encounter.",
+    "summary": "Doris Salcedo’s Atrabiliarios appears in The Afterlife of the Work, where Dorian Vale examines how an encounter with art continues through memory and responsibility.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -472,9 +715,17 @@
         "record_id": "19863836",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay discusses Atrabiliarios as a case of the continuing effect of an encounter."
+        "note": "The essay discusses Atrabiliarios as a case of the continuing effect of an encounter.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Doris Salcedo"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "zarina-hashmi",
@@ -482,7 +733,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay discusses Home Is a Foreign Place.",
+    "summary": "Zarina Hashmi’s Home Is a Foreign Place is discussed in The Afterlife of the Work, where Dorian Vale examines how an encounter with art persists through memory, response and continuing responsibility.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -496,9 +747,17 @@
         "record_id": "19863836",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay discusses Home Is a Foreign Place."
+        "note": "The essay discusses Home Is a Foreign Place.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Zarina Hashmi"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "teresa-margolles",
@@ -506,7 +765,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay discusses En el aire.",
+    "summary": "Teresa Margolles appears in The Afterlife of the Work through En el aire. The essay considers the lasting effects of the viewer’s encounter and responsibility.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -520,9 +779,17 @@
         "record_id": "19863836",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay discusses En el aire."
+        "note": "The essay discusses En el aire.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Teresa Margolles"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "marina-abramovic",
@@ -530,7 +797,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay discusses the performance The Artist Is Present.",
+    "summary": "Marina Abramović appears in The Afterlife of the Work through The Artist Is Present. The essay considers the lasting effects of the viewer’s encounter and responsibility.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -549,15 +816,30 @@
         "record_id": "19863836",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay discusses the performance The Artist Is Present."
+        "note": "The essay discusses the performance The Artist Is Present.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Marina Abramović"
+        },
+        "reviewed": "2026-11-05"
       },
       {
         "record_id": "19863790",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/moral-proximity-ethics-as-method-in-post-interpretive-criticism/",
-        "note": "The essay discusses The Artist Is Present in its argument about moral proximity."
+        "note": "The essay discusses The Artist Is Present in its argument about moral proximity.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/moral-proximity-ethics-as-method-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Marina Abramović"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "christian-boltanski",
@@ -565,7 +847,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay discusses Reserve of Dead Swiss.",
+    "summary": "Christian Boltanski appears in The Afterlife of the Work through Reserve of Dead Swiss. The essay considers the lasting effects of the viewer’s encounter and responsibility.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -579,9 +861,17 @@
         "record_id": "19863836",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay discusses Reserve of Dead Swiss."
+        "note": "The essay discusses Reserve of Dead Swiss.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Christian Boltanski"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "araya-rasdjarmrearnsook",
@@ -589,7 +879,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay discusses The Class.",
+    "summary": "Araya Rasdjarmrearnsook appears in The Afterlife of the Work through The Class. The essay considers the lasting effects of the viewer’s encounter and responsibility.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -603,9 +893,17 @@
         "record_id": "19863836",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay discusses The Class."
+        "note": "The essay discusses The Class.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Araya Rasdjarmrearnsook"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "ana-mendieta",
@@ -613,7 +911,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay discusses the Silueta Series.",
+    "summary": "Ana Mendieta appears in The Afterlife of the Work through Silueta Series. The essay considers the lasting effects of the viewer’s encounter and responsibility.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -627,9 +925,17 @@
         "record_id": "19863836",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay discusses the Silueta Series."
+        "note": "The essay discusses the Silueta Series.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Ana Mendieta"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "eva-hesse",
@@ -637,7 +943,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay explicitly names Expanded Expansion and its materials.",
+    "summary": "Eva Hesse appears in Art That Falls Apart through Expanded Expansion. The essay considers material instability and the ethics of witnessing.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -651,9 +957,17 @@
         "record_id": "21715085",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-        "note": "The essay explicitly names Expanded Expansion and its materials."
+        "note": "The essay explicitly names Expanded Expansion and its materials.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "precision": "named occurrence",
+          "text_quote": "Eva Hesse"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "felix-gonzalez-torres",
@@ -661,7 +975,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay discusses “Untitled” (Portrait of Ross in L.A.).",
+    "summary": "Felix Gonzalez-Torres appears in Art That Falls Apart through “Untitled” (Portrait of Ross in L.A.). The essay considers material instability and the ethics of witnessing.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -675,9 +989,17 @@
         "record_id": "21715085",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-        "note": "The essay discusses “Untitled” (Portrait of Ross in L.A.)."
+        "note": "The essay discusses “Untitled” (Portrait of Ross in L.A.).",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "precision": "named occurrence",
+          "text_quote": "Felix Gonzalez-Torres"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "simon-maris",
@@ -685,7 +1007,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The abstract identifies Simon Maris as the artist of the portrait now titled Isabella.",
+    "summary": "Dorian Vale’s After the Interpretation Changes examines the circulation of descriptions of Simon Maris’s portrait Isabella, distinguishing title correction, later identification and historical evidence.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -699,9 +1021,17 @@
         "record_id": "23430200",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/after-the-interpretation-changes/",
-        "note": "The abstract identifies Simon Maris as the artist of the portrait now titled Isabella."
+        "note": "The abstract identifies Simon Maris as the artist of the portrait now titled Isabella.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/after-the-interpretation-changes/",
+          "precision": "named occurrence",
+          "text_quote": "Simon Maris"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "shiraga-kazuo",
@@ -711,13 +1041,18 @@
       "Kazuo Shiraga"
     ],
     "identifiers": [],
-    "summary": "The abstract identifies Shiraga Kazuo’s Challenging Mud as the principal case.",
+    "summary": "Dorian Vale’s Answerability examines Shiraga Kazuo’s Challenging Mud through artistic preparation, exhibition and documentary evidence, engaging the scholarship of Reiko Tomii and Namiko Kunimoto.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
         "url": "https://www.museumofone.art/answerability/",
         "label": "Answerability",
         "note": "The abstract identifies Shiraga Kazuo’s Challenging Mud as the principal case."
+      },
+      {
+        "url": "https://www.moma.org/artists/38972-kazuo-shiraga",
+        "label": "MoMA — Kazuo Shiraga",
+        "note": "Museum source corroborates the artist name and attribution of Challenging Mud; no equivalence of executions is inferred."
       }
     ],
     "record_links": [
@@ -725,9 +1060,17 @@
         "record_id": "23428974",
         "relation": "artist discussed",
         "source_url": "https://www.museumofone.art/answerability/",
-        "note": "The abstract identifies Shiraga Kazuo’s Challenging Mud as the principal case."
+        "note": "The abstract identifies Shiraga Kazuo’s Challenging Mud as the principal case.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/answerability/",
+          "precision": "named occurrence",
+          "text_quote": "Shiraga Kazuo"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "reiko-tomii",
@@ -735,7 +1078,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The paper engages Tomii’s scholarship and records discussion and feedback. The source explicitly states that Tomii is not a coauthor and that no blanket endorsement or formal peer review is implied.",
+    "summary": "Reiko Tomii’s scholarship on operation in postwar Japanese art informs Answerability, Dorian Vale’s independently authored study of exhibition and historical evidence. Documented discussion and feedback are acknowledged separately from authorship, endorsement and formal peer review.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -749,9 +1092,17 @@
         "record_id": "23428974",
         "relation": "scholar discussed",
         "source_url": "https://www.museumofone.art/answerability/",
-        "note": "The paper engages Tomii’s scholarship and records discussion and feedback. The source explicitly states that Tomii is not a coauthor and that no blanket endorsement or formal peer review is implied."
+        "note": "The paper engages Tomii’s scholarship and records discussion and feedback. The source explicitly states that Tomii is not a coauthor and that no blanket endorsement or formal peer review is implied.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/answerability/",
+          "precision": "named occurrence",
+          "text_quote": "Reiko Tomii"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "namiko-kunimoto",
@@ -759,7 +1110,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The abstract identifies Kunimoto’s analysis as scholarship read alongside Tomii’s work; no coauthorship is asserted.",
+    "summary": "Answerability reads Namiko Kunimoto’s analysis of action, object, agency and selfhood alongside Reiko Tomii’s scholarship in its examination of Shiraga Kazuo’s Challenging Mud.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -773,9 +1124,17 @@
         "record_id": "23428974",
         "relation": "scholar discussed",
         "source_url": "https://www.museumofone.art/answerability/",
-        "note": "The abstract identifies Kunimoto’s analysis as scholarship read alongside Tomii’s work; no coauthorship is asserted."
+        "note": "The abstract identifies Kunimoto’s analysis as scholarship read alongside Tomii’s work; no coauthorship is asserted.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/answerability/",
+          "precision": "named occurrence",
+          "text_quote": "Namiko Kunimoto"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "alexander-viktorovich-markov",
@@ -785,7 +1144,7 @@
       "Alexander V. Markov"
     ],
     "identifiers": [],
-    "summary": "The source records scholarly correspondence and a critical response. It explicitly states that Markov is not a coauthor and that this is not formal peer review or agreement with every proposal.",
+    "summary": "Alexander Viktorovich Markov’s scholarly correspondence and critical response are acknowledged in the research context of Dorian Vale’s After the Interpretation Changes. The paper distinguishes discussion and feedback from coauthorship, formal peer review and agreement with every proposal.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -799,9 +1158,17 @@
         "record_id": "23430200",
         "relation": "scholarly correspondent",
         "source_url": "https://www.museumofone.art/after-the-interpretation-changes/",
-        "note": "The source records scholarly correspondence and a critical response. It explicitly states that Markov is not a coauthor and that this is not formal peer review or agreement with every proposal."
+        "note": "The source records scholarly correspondence and a critical response. It explicitly states that Markov is not a coauthor and that this is not formal peer review or agreement with every proposal.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/after-the-interpretation-changes/",
+          "precision": "named occurrence",
+          "text_quote": "Alexander Viktorovich Markov"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "harald-szeemann",
@@ -809,7 +1176,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay connects Szeemann with When Attitudes Become Form; this is critical discussion, not an institutional affiliation.",
+    "summary": "The Curator’s Shadow examines Harald Szeemann in connection with When Attitudes Become Form, asking how curatorial decisions shape the encounter with art and claims of neutrality.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -823,9 +1190,17 @@
         "record_id": "19963428",
         "relation": "curator discussed",
         "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-        "note": "The essay connects Szeemann with When Attitudes Become Form; this is critical discussion, not an institutional affiliation."
+        "note": "The essay connects Szeemann with When Attitudes Become Form; this is critical discussion, not an institutional affiliation.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "precision": "named occurrence",
+          "text_quote": "Harald Szeemann"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "okwui-enwezor",
@@ -833,7 +1208,7 @@
     "type": "Person",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay connects Enwezor with Documenta 11; this is critical discussion, not an institutional affiliation.",
+    "summary": "The Curator’s Shadow discusses Okwui Enwezor and Documenta 11 as part of its examination of curatorial authorship, exhibition context and the limits of neutrality.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -847,9 +1222,17 @@
         "record_id": "19963428",
         "relation": "curator discussed",
         "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-        "note": "The essay connects Enwezor with Documenta 11; this is critical discussion, not an institutional affiliation."
+        "note": "The essay connects Enwezor with Documenta 11; this is critical discussion, not an institutional affiliation.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "precision": "named occurrence",
+          "text_quote": "Okwui Enwezor"
+        },
+        "reviewed": "2026-11-05"
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "shopping-bags",
@@ -857,7 +1240,7 @@
     "type": "Artwork",
     "variants": [],
     "identifiers": [],
-    "summary": "Named in the image caption as a work by Hassan Sharif.",
+    "summary": "Shopping Bags, by Hassan Sharif, is discussed in Hassan Sharif’s Objects. The essay examines the work through ordinary materials, repetition and labour.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -881,7 +1264,8 @@
         "source_url": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/",
         "note": "Creator attribution stated in the linked essay or image caption."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "plastic-funnel-and-aluminium-foil",
@@ -889,7 +1273,7 @@
     "type": "Artwork",
     "variants": [],
     "identifiers": [],
-    "summary": "Named in the image caption as a work by Hassan Sharif.",
+    "summary": "Plastic Funnel and Aluminium Foil, by Hassan Sharif, is discussed in Hassan Sharif’s Objects. The essay examines the work through ordinary materials, repetition and labour.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -903,7 +1287,14 @@
         "record_id": "21241866",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/",
-        "note": "Named in the image caption as a work by Hassan Sharif."
+        "note": "Named in the image caption as a work by Hassan Sharif.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/",
+          "precision": "named occurrence",
+          "text_quote": "Plastic Funnel and Aluminium Foil"
+        },
+        "reviewed": "2026-11-05"
       }
     ],
     "relationships": [
@@ -913,7 +1304,8 @@
         "source_url": "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/",
         "note": "Creator attribution stated in the linked essay or image caption."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "old-mans-cloth",
@@ -921,7 +1313,7 @@
     "type": "Artwork",
     "variants": [],
     "identifiers": [],
-    "summary": "Named in the image caption as a work by El Anatsui.",
+    "summary": "Old Man’s Cloth, by El Anatsui, is discussed in El Anatsui’s Man’s Cloth Series. The essay examines the work through discarded materials, historical memory and reparation.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -945,7 +1337,8 @@
         "source_url": "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/",
         "note": "Creator attribution stated in the linked essay or image caption."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "atrabiliarios",
@@ -953,7 +1346,7 @@
     "type": "Artwork",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay explicitly attributes the installation to Doris Salcedo.",
+    "summary": "Atrabiliarios, by Doris Salcedo, is discussed in The Afterlife of the Work. The essay examines the work through the continuing effects of an encounter on the viewer.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -967,7 +1360,14 @@
         "record_id": "19863836",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay explicitly attributes the installation to Doris Salcedo."
+        "note": "The essay explicitly attributes the installation to Doris Salcedo.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Atrabiliarios"
+        },
+        "reviewed": "2026-11-05"
       }
     ],
     "relationships": [
@@ -977,7 +1377,8 @@
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
         "note": "Creator attribution stated in the linked essay or image caption."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "home-is-a-foreign-place",
@@ -985,7 +1386,7 @@
     "type": "Artwork",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay explicitly attributes the woodcut portfolio to Zarina Hashmi.",
+    "summary": "Home Is a Foreign Place, by Zarina Hashmi, is discussed in The Afterlife of the Work. The essay examines the work through the continuing effects of an encounter on the viewer.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -999,7 +1400,14 @@
         "record_id": "19863836",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay explicitly attributes the woodcut portfolio to Zarina Hashmi."
+        "note": "The essay explicitly attributes the woodcut portfolio to Zarina Hashmi.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Home Is a Foreign Place"
+        },
+        "reviewed": "2026-11-05"
       }
     ],
     "relationships": [
@@ -1009,7 +1417,8 @@
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
         "note": "Creator attribution stated in the linked essay or image caption."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "en-el-aire",
@@ -1017,7 +1426,7 @@
     "type": "Artwork",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay explicitly attributes the installation to Teresa Margolles.",
+    "summary": "En el aire, by Teresa Margolles, is discussed in The Afterlife of the Work. The essay examines the work through the continuing effects of an encounter on the viewer.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -1031,7 +1440,14 @@
         "record_id": "19863836",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay explicitly attributes the installation to Teresa Margolles."
+        "note": "The essay explicitly attributes the installation to Teresa Margolles.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "En el aire"
+        },
+        "reviewed": "2026-11-05"
       }
     ],
     "relationships": [
@@ -1041,7 +1457,8 @@
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
         "note": "Creator attribution stated in the linked essay or image caption."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "the-artist-is-present",
@@ -1049,7 +1466,7 @@
     "type": "Artwork",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay explicitly attributes the performance to Marina Abramović.",
+    "summary": "The Artist Is Present, by Marina Abramović, is discussed in The Afterlife of the Work. The essay examines the work through the continuing effects of an encounter on the viewer.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -1063,7 +1480,14 @@
         "record_id": "19863836",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay explicitly attributes the performance to Marina Abramović."
+        "note": "The essay explicitly attributes the performance to Marina Abramović.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "The Artist Is Present"
+        },
+        "reviewed": "2026-11-05"
       }
     ],
     "relationships": [
@@ -1073,7 +1497,8 @@
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
         "note": "Creator attribution stated in the linked essay or image caption."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "reserve-of-dead-swiss",
@@ -1081,7 +1506,7 @@
     "type": "Artwork",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay explicitly attributes the work to Christian Boltanski.",
+    "summary": "Reserve of Dead Swiss, by Christian Boltanski, is discussed in The Afterlife of the Work. The essay examines the work through the continuing effects of an encounter on the viewer.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -1095,7 +1520,14 @@
         "record_id": "19863836",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay explicitly attributes the work to Christian Boltanski."
+        "note": "The essay explicitly attributes the work to Christian Boltanski.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Reserve of Dead Swiss"
+        },
+        "reviewed": "2026-11-05"
       }
     ],
     "relationships": [
@@ -1105,7 +1537,8 @@
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
         "note": "Creator attribution stated in the linked essay or image caption."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "the-class",
@@ -1113,7 +1546,7 @@
     "type": "Artwork",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay explicitly attributes the work to Araya Rasdjarmrearnsook.",
+    "summary": "The Class, by Araya Rasdjarmrearnsook, is discussed in The Afterlife of the Work. The essay examines the work through the continuing effects of an encounter on the viewer.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -1127,7 +1560,14 @@
         "record_id": "19863836",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay explicitly attributes the work to Araya Rasdjarmrearnsook."
+        "note": "The essay explicitly attributes the work to Araya Rasdjarmrearnsook.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "The Class"
+        },
+        "reviewed": "2026-11-05"
       }
     ],
     "relationships": [
@@ -1137,7 +1577,8 @@
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
         "note": "Creator attribution stated in the linked essay or image caption."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "silueta-series",
@@ -1145,7 +1586,7 @@
     "type": "Artwork",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay explicitly attributes this series to Ana Mendieta. This is a series-level contextual record.",
+    "summary": "Silueta Series, by Ana Mendieta, is discussed in The Afterlife of the Work. The essay examines the work through the continuing effects of an encounter on the viewer.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -1159,7 +1600,14 @@
         "record_id": "19863836",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
-        "note": "The essay explicitly attributes this series to Ana Mendieta. This is a series-level contextual record."
+        "note": "The essay explicitly attributes this series to Ana Mendieta. This is a series-level contextual record.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
+          "precision": "named occurrence",
+          "text_quote": "Silueta Series"
+        },
+        "reviewed": "2026-11-05"
       }
     ],
     "relationships": [
@@ -1169,7 +1617,8 @@
         "source_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
         "note": "Creator attribution stated in the linked essay or image caption."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "expanded-expansion",
@@ -1177,7 +1626,7 @@
     "type": "Artwork",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay explicitly attributes the work to Eva Hesse.",
+    "summary": "Expanded Expansion, by Eva Hesse, is discussed in Art That Falls Apart. The essay examines the work through material change and the responsibilities of witnessing.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -1191,7 +1640,14 @@
         "record_id": "21715085",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
-        "note": "The essay explicitly attributes the work to Eva Hesse."
+        "note": "The essay explicitly attributes the work to Eva Hesse.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
+          "precision": "named occurrence",
+          "text_quote": "Expanded Expansion"
+        },
+        "reviewed": "2026-11-05"
       }
     ],
     "relationships": [
@@ -1201,7 +1657,8 @@
         "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
         "note": "Creator attribution stated in the linked essay or image caption."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "untitled-portrait-of-ross-in-la",
@@ -1209,7 +1666,7 @@
     "type": "Artwork",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay explicitly attributes the work to Felix Gonzalez-Torres.",
+    "summary": "“Untitled” (Portrait of Ross in L.A.), by Felix Gonzalez-Torres, is discussed in Art That Falls Apart. The essay examines the work through material change and the responsibilities of witnessing.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -1233,7 +1690,8 @@
         "source_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
         "note": "Creator attribution stated in the linked essay or image caption."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "isabella",
@@ -1241,7 +1699,7 @@
     "type": "Artwork",
     "variants": [],
     "identifiers": [],
-    "summary": "The abstract identifies the current title and artist. The changing catalogue title is the subject of the paper; historic terminology is not adopted as the preferred label.",
+    "summary": "Simon Maris’s portrait Isabella is the central case in After the Interpretation Changes, which traces title correction and later identification across catalogue descriptions and repository records.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -1255,7 +1713,14 @@
         "record_id": "23430200",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/after-the-interpretation-changes/",
-        "note": "The abstract identifies the current title and artist. The changing catalogue title is the subject of the paper; historic terminology is not adopted as the preferred label."
+        "note": "The abstract identifies the current title and artist. The changing catalogue title is the subject of the paper; historic terminology is not adopted as the preferred label.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/after-the-interpretation-changes/",
+          "precision": "named occurrence",
+          "text_quote": "Isabella"
+        },
+        "reviewed": "2026-11-05"
       }
     ],
     "relationships": [
@@ -1265,7 +1730,8 @@
         "source_url": "https://www.museumofone.art/after-the-interpretation-changes/",
         "note": "Creator attribution stated in the linked essay or image caption."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "challenging-mud",
@@ -1273,7 +1739,7 @@
     "type": "Artwork",
     "variants": [],
     "identifiers": [],
-    "summary": "The abstract identifies the title and artist. Different executions and the relationship between action and displayed result are examined in the paper; this record does not merge those events into a single documented object.",
+    "summary": "Shiraga Kazuo’s Challenging Mud is the principal case in Answerability. The paper examines preparation, action and anticipated display while distinguishing different executions and the evidence supporting each historical claim.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -1287,7 +1753,14 @@
         "record_id": "23428974",
         "relation": "artwork discussed",
         "source_url": "https://www.museumofone.art/answerability/",
-        "note": "The abstract identifies the title and artist. Different executions and the relationship between action and displayed result are examined in the paper; this record does not merge those events into a single documented object."
+        "note": "The abstract identifies the title and artist. Different executions and the relationship between action and displayed result are examined in the paper; this record does not merge those events into a single documented object.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/answerability/",
+          "precision": "named occurrence",
+          "text_quote": "Challenging Mud"
+        },
+        "reviewed": "2026-11-05"
       }
     ],
     "relationships": [
@@ -1297,7 +1770,8 @@
         "source_url": "https://www.museumofone.art/answerability/",
         "note": "Creator attribution stated in the linked essay or image caption."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "when-attitudes-become-form",
@@ -1305,7 +1779,7 @@
     "type": "Exhibition",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay names this exhibition in its discussion of Harald Szeemann and curatorial authorship.",
+    "summary": "When Attitudes Become Form provides a case for examining Harald Szeemann’s curatorial authorship in The Curator’s Shadow, an essay on how exhibition decisions condition encounters with art.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -1319,7 +1793,14 @@
         "record_id": "19963428",
         "relation": "exhibition discussed",
         "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-        "note": "The essay names this exhibition in its discussion of Harald Szeemann and curatorial authorship."
+        "note": "The essay names this exhibition in its discussion of Harald Szeemann and curatorial authorship.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "precision": "named occurrence",
+          "text_quote": "When Attitudes Become Form"
+        },
+        "reviewed": "2026-11-05"
       }
     ],
     "relationships": [
@@ -1329,7 +1810,8 @@
         "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
         "note": "The essay names this exhibition in its discussion of Harald Szeemann and curatorial authorship."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
   },
   {
     "id": "documenta-11",
@@ -1337,7 +1819,7 @@
     "type": "Exhibition",
     "variants": [],
     "identifiers": [],
-    "summary": "The essay names this exhibition in its discussion of Okwui Enwezor and curatorial context.",
+    "summary": "Documenta 11 appears in The Curator’s Shadow through its discussion of Okwui Enwezor, exhibition context and curatorial authorship.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
@@ -1351,7 +1833,14 @@
         "record_id": "19963428",
         "relation": "exhibition discussed",
         "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
-        "note": "The essay names this exhibition in its discussion of Okwui Enwezor and curatorial context."
+        "note": "The essay names this exhibition in its discussion of Okwui Enwezor and curatorial context.",
+        "source_location": {
+          "kind": "web_page",
+          "url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+          "precision": "named occurrence",
+          "text_quote": "Documenta 11"
+        },
+        "reviewed": "2026-11-05"
       }
     ],
     "relationships": [
@@ -1361,6 +1850,76 @@
         "source_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
         "note": "The essay names this exhibition in its discussion of Okwui Enwezor and curatorial context."
       }
-    ]
+    ],
+    "description_reviewed": "2026-11-05"
+  },
+  {
+    "id": "dong-yeon-koh",
+    "label": "Dong-Yeon Koh",
+    "type": "Person",
+    "variants": [
+      "Koh Dongyeon",
+      "Koh, Dong-Yeon"
+    ],
+    "identifiers": [],
+    "summary": "Dong-Yeon Koh and Dorian Vale discuss interpretation, aesthetic experience, anonymity and the critical subject in The Conversation, originally hosted on Koh’s website. Their developing book, Between Image and Interpretation: On Restraint, is recorded separately from the published exchange.",
+    "authority_status": "Locally maintained, source-qualified contextual record",
+    "sources": [
+      {
+        "url": "https://www.museumofone.art/dong-yeon-koh/",
+        "label": "Public exchange and programme record",
+        "note": "Public status and contribution scope reviewed 5 November 2026."
+      },
+      {
+        "url": "https://www.dongyeonkoh.com/conversation",
+        "label": "The Conversation — original host",
+        "note": "Original conversation host; contributions remain attributed individually."
+      }
+    ],
+    "record_links": [],
+    "web_links": [
+      {
+        "url": "https://www.museumofone.art/dong-yeon-koh/",
+        "relation": "dialogue participant",
+        "source_url": "https://www.museumofone.art/dong-yeon-koh/",
+        "note": "Dong-Yeon Koh and Dorian Vale discuss interpretation, aesthetic experience, anonymity and the critical subject in The Conversation, originally hosted on Koh’s website. Their developing book, Between Image and Interpretation: On Restraint, is recorded separately from the published exchange.",
+        "reviewed": "2026-11-05",
+        "status": "published conversation; book in development"
+      }
+    ],
+    "description_reviewed": "2026-11-05"
+  },
+  {
+    "id": "paul-gladston",
+    "label": "Paul Gladston",
+    "type": "Person",
+    "variants": [],
+    "identifiers": [],
+    "summary": "Paul Gladston and Dorian Vale are developing a written dialogue on witnessing, Chinese aesthetics, critical polylogue and curatorial afterlives. The public programme records returned responses and a planned follow-up; the conversation manuscript remains unpublished.",
+    "authority_status": "Locally maintained, source-qualified contextual record",
+    "sources": [
+      {
+        "url": "https://www.museumofone.art/paul-gladston/",
+        "label": "Public exchange and programme record",
+        "note": "Public status and contribution scope reviewed 5 November 2026."
+      },
+      {
+        "url": "https://www.unsw.edu.au/staff/paul-gladston",
+        "label": "UNSW — Paul Gladston",
+        "note": "Identity source only. The Museum of One exchange is an individual scholarly dialogue."
+      }
+    ],
+    "record_links": [],
+    "web_links": [
+      {
+        "url": "https://www.museumofone.art/paul-gladston/",
+        "relation": "dialogue participant",
+        "source_url": "https://www.museumofone.art/paul-gladston/",
+        "note": "Paul Gladston and Dorian Vale are developing a written dialogue on witnessing, Chinese aesthetics, critical polylogue and curatorial afterlives. The public programme records returned responses and a planned follow-up; the conversation manuscript remains unpublished.",
+        "reviewed": "2026-11-05",
+        "status": "in development"
+      }
+    ],
+    "description_reviewed": "2026-11-05"
   }
 ]

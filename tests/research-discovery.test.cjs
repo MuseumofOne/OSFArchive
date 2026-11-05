@@ -79,3 +79,22 @@ test('forty real corpus retrieval cases meet the declared target ranks',()=>{
  const benchmark=load('data/discovery-benchmark.json');assert.equal(benchmark.queries.length,40);
  for(const example of benchmark.queries){const pool=example.fulltext?api.mergeIndexes([feed,passages]):feed.records;const results=api.rankRecords(pool,example.query,example.filters||{});const rank=results.findIndex(r=>r.id===example.expected_id)+1;assert.ok(rank>0&&rank<=example.max_rank,`${example.label}: expected ${example.expected_id} in top ${example.max_rank}, got ${results.slice(0,5).map(r=>r.id).join(', ')}`);}
 });
+
+
+test('contextual name variants retrieve the person while dialogue status stays explicit',()=>{
+ const feed=load('dist/metadata/research-discovery.v2.json');
+ for(const [query,id] of [['Kazuo Shiraga','shiraga-kazuo'],['Shiraga Kazuo','shiraga-kazuo'],['Dong-Yeon Koh','dong-yeon-koh'],['Koh Dongyeon','dong-yeon-koh'],['Reiko Tomii','reiko-tomii'],['Paul Gladston','paul-gladston']]){
+  assert.equal(api.rankRecords(feed.records,query,{kind:'entity'})[0].id,'entity:'+id);
+ }
+ const gladston=feed.records.find(r=>r.id==='entity:paul-gladston');
+ assert.match(gladston.summary,/unpublished/);
+ assert.ok(gladston.relationships.some(r=>r.relation==='dialogue participation documented in'));
+ assert.ok(!gladston.relationships.some(r=>/author|employee|member|publisher/.test(r.relation)));
+});
+
+
+test('localhost preview retains the staged feed without replacing it from production',async()=>{
+ const calls=[];
+ await api.loadIndexes({origin,pageURL:'http://127.0.0.1:8846/research-discovery.html',snapshot:'/metadata/research-discovery.v2.json'},()=>{},async u=>{calls.push(u);return response(fixture());});
+ assert.deepEqual(calls,['http://127.0.0.1:8846/metadata/research-discovery.v2.json']);
+});

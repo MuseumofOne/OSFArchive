@@ -1,0 +1,5 @@
+# Exact local dependency graph; universal pins, platform-specific wheels resolved per Mac.
+PyMuPDF==1.26.6
+cryptography==46.0.6
+cffi==2.0.0
+pycparser==2.23

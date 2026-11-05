@@ -127,6 +127,6 @@ def build_content_pages(records, contents, write, layout, origin):
                 following = parts[index+1]
                 content += f'<a href="{_e(following["url"].split("/")[-1])}">{_e(following["title"])} →</a>'
             content += '</nav>'
-            write(part["url"], layout(part["title"], f'{part["type"]} in {record["short_title"] if record.get("short_title") else record["title"]}. Printed pages {_printed(part)}; PDF file pages {_pdf(part)}.', content, part["url"], "../", schema=component_schema(record, part, origin)))
+            write(part["url"], layout(part["title"] + " — " + record.get("short_title", record["title"]), f'{part["type"]} in {record["short_title"] if record.get("short_title") else record["title"]}. Printed pages {_printed(part)}; PDF file pages {_pdf(part)}.', content, part["url"], "../", schema=component_schema(record, part, origin)))
             paths.append(part["url"])
     return paths

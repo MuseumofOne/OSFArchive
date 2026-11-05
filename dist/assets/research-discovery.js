@@ -67,7 +67,8 @@
   if(snapshot.origin!==page.origin||!/^https?:$/.test(snapshot.protocol)||snapshot.username||snapshot.password)throw new Error('Research snapshot must be same-origin');
   let latest;
   try{latest=await fetchIndex(snapshot.href,origin,fetcher,{maxBytes:24*1024*1024});if(latest.index_kind!=='discovery')throw new Error('Expected discovery index');onIndex(latest,'snapshot');}catch{latest=undefined;}
-  const refresh=config.remote||(page.origin!==origin?origin+'/metadata/research-discovery.v2.json':null);
+  const localPreview=['localhost','127.0.0.1','[::1]'].includes(page.hostname);
+  const refresh=config.remote||(!localPreview&&page.origin!==origin?origin+'/metadata/research-discovery.v2.json':null);
   if(refresh){const remote=new URL(refresh);if(remote.href!==origin+'/metadata/research-discovery.v2.json')throw new Error('Unexpected discovery refresh URL');try{const fresh=await fetchIndex(remote.href,origin,fetcher,{maxBytes:24*1024*1024});if(fresh.index_kind!=='discovery')throw new Error('Expected discovery index');if(!latest||fresh.content_version!==latest.content_version){latest=fresh;onIndex(latest,'remote');}}catch{/* A verified bundled index remains usable. */}}
   if(!latest)throw new Error('Research discovery unavailable');return latest;
  }

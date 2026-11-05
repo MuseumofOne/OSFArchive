@@ -4,49 +4,56 @@
     "url": "https://www.museumofone.art/research-aesthetics-experience/",
     "status": "In development",
     "source_url": "https://www.museumofone.art/research-programmes/",
-    "reviewed": "2026-11-04"
+    "reviewed": "2026-11-04",
+    "description": "How can criticism remain accountable to aesthetic experience and the history that makes a work intelligible?"
   },
   {
     "title": "Alexander Viktorovich Markov: Critical Language and Lasting Correction",
     "url": "https://www.museumofone.art/research-critical-language/",
     "status": "In development",
     "source_url": "https://www.museumofone.art/research-programmes/",
-    "reviewed": "2026-11-04"
+    "reviewed": "2026-11-04",
+    "description": "What makes a correction to an interpretation remain effective over time?"
   },
   {
     "title": "Oindrilla Maity Surai: Curatorial Context and Interpretation",
     "url": "https://www.museumofone.art/oindrilla-maity-surai/",
     "status": "In development",
     "source_url": "https://www.museumofone.art/research-programmes/",
-    "reviewed": "2026-11-04"
+    "reviewed": "2026-11-04",
+    "description": "How can curatorial context make a work accessible without prescribing the account a viewer gives of it?"
   },
   {
     "title": "Paul Gladston: Witnessing, Chinese Aesthetics, and Curatorial Afterlives",
     "url": "https://www.museumofone.art/paul-gladston/",
     "status": "In development",
     "source_url": "https://www.museumofone.art/research-programmes/",
-    "reviewed": "2026-11-04"
+    "reviewed": "2026-11-04",
+    "description": "A developing dialogue between Paul Gladston and Dorian Vale on witnessing, Chinese aesthetics, critical polylogue, and curatorial afterlives."
   },
   {
     "title": "Phenomenological Methods and Diagnostic Reading",
     "url": "https://www.museumofone.art/research-methods/",
     "status": "Continuing research",
     "source_url": "https://www.museumofone.art/research-programmes/",
-    "reviewed": "2026-11-04"
+    "reviewed": "2026-11-04",
+    "description": "How can observation, inference, and critical decisions be made available for comparison and revision?"
   },
   {
     "title": "Reiko Tomii: Operation and Historical Answerability",
     "url": "https://www.museumofone.art/reiko-tomii/",
     "status": "In development",
     "source_url": "https://www.museumofone.art/research-programmes/",
-    "reviewed": "2026-11-04"
+    "reviewed": "2026-11-04",
+    "description": "How should an art-historical account change when evidence of artistic labour, organization, and access changes its grounds?"
   },
   {
     "title": "Sudanese Art and Aesthetics",
     "url": "https://www.museumofone.art/sudanese-art-and-aesthetics/",
     "status": "Continuing research",
     "source_url": "https://www.museumofone.art/research-programmes/",
-    "reviewed": "2026-11-04"
+    "reviewed": "2026-11-04",
+    "description": "Continuing research into Sudanese art and aesthetics, with studies of artistic practice, cultural memory and the ethics of criticism."
   },
   {
     "title": "Witness, Material Presence, and Cultural Memory",
@@ -54,7 +61,8 @@
     "status": "Continuing research",
     "source_url": "https://www.museumofone.art/research-witness-material-memory/",
     "reviewed": "2026-11-04",
-    "directory_scope": "Additional public programme linked from work records; not a claim of membership in the current seven-card directory"
+    "directory_scope": "Additional public programme linked from work records; not a claim of membership in the current seven-card directory",
+    "description": "What can a critical account responsibly say about material presence, cultural memory, and the experience of a work?"
   },
   {
     "title": "Intellectual History and Conceptual Development",
@@ -62,7 +70,8 @@
     "status": "Continuing research",
     "source_url": "https://www.museumofone.art/research-intellectual-history/",
     "reviewed": "2026-11-04",
-    "directory_scope": "Additional public programme linked from work records; not a claim of membership in the current seven-card directory"
+    "directory_scope": "Additional public programme linked from work records; not a claim of membership in the current seven-card directory",
+    "description": "How do the distinctions and vocabulary of Post-Interpretive Criticism develop through its published corpus?"
   },
   {
     "title": "Threads of Sand: Arabic Translation",
@@ -70,6 +79,7 @@
     "status": "In development",
     "source_url": "https://www.museumofone.art/arabic-translation-threads-of-sand/",
     "reviewed": "2026-11-04",
-    "directory_scope": "Additional public programme linked from work records; not a claim of membership in the current seven-card directory"
+    "directory_scope": "Additional public programme linked from work records; not a claim of membership in the current seven-card directory",
+    "description": "How can a critical study of Sudanese art address war, displacement and cultural memory through the ethics of witnessing?"
   }
 ]

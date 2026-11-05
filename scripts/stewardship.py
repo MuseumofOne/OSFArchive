@@ -250,7 +250,7 @@ def main(argv=None):
     parser.add_argument('--root', type=Path, default=ROOT)
     parser.add_argument('--inventory', '--refresh', action='store_true', help='Explicitly establish or refresh a reviewed baseline')
     parser.add_argument('--verify', action='store_true', help='Compare bytes with the existing baseline; never rebaseline silently')
-    parser.add_argument('--backup', nargs='?', const='/workspace/museum-of-one-preservation-backup.tar.gz', type=Path)
+    parser.add_argument('--backup', type=Path, help='Explicit private destination outside the project (required with --backup)')
     parser.add_argument('--workflow', action='store_true', help='Print a suggested scheduled GitHub Actions workflow')
     args = parser.parse_args(argv)
     if args.workflow:

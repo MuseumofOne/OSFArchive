@@ -348,10 +348,17 @@ def build_website_pages(work, out, write, layout, origin):
                 + "".join("<li>" + e(v) + "</li>" for v in p["validation_issues"])
                 + "</ul>"
             )
+        entities = json.loads((Path(__file__).resolve().parents[1] / 'data/entities.json').read_text())
+        linked = [(entity, link) for entity in entities for link in entity.get('web_links', []) if link['url'] == r['url']]
+        if linked:
+            content += '<section class="item-section"><h2>People in this exchange</h2><ul class="source-list">'
+            for entity, link in linked:
+                content += ('<li><a href="../entities/' + e(entity['id']) + '.html">' + e(entity['label']) + '</a><p>' + e(link['note']) + '</p><small>' + e(link['relation']) + ' · ' + e(link['status']) + '</small></li>')
+            content += '</ul></section>'
         content += "</div></div>"
         schema = capture_schema(p, assets, capture_files[1], url, origin)
         html = layout(
-            r["title"],
+            r["title"] + " — Website capture (" + (r.get("published_at") or "undated")[:10] + ")",
             p["summary"] or "Stored public website record and its source metadata.",
             content,
             page,

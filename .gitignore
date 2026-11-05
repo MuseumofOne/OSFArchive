@@ -7,3 +7,6 @@ dist/metadata/website-sync.json
 dist/metadata/website-captures.json
 dist/assets/website-captures/
 audit/current/
+
+.venv/
+.local/

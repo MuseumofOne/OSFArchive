@@ -74,3 +74,7 @@ The repository was made public and Pages enabled on 4 November 2026 under explic
 The build applies the local metadata application profile before publication and validates the generated outputs again. Item CSL-JSON, BibTeX, RIS, visible citations, applicable Scholar tags, qualified Dublin Core and JSON-LD derive from shared models. Typed relationship assertions, the relation register, combined graph, profile and machine-readable quality report are generated under `dist/metadata/`; the visible quality report is `metadata-quality.html`. Passing local gates establish the stated consistency and source checks, not external standards certification or guaranteed indexing.
 
 Current deployed update: [automatic website preservation and native discovery](docs/RELEASE-WEBSITE-SYNC-2026-11-05.md), using theme 1.12.2. The Desktop source, one current ZIP, checksums and evidence match the installed configuration. See [current synchronization checkpoint](docs/WEBSITE-SYNC-CHECKPOINT.md).
+
+## Local portability (no deployment)
+
+See [Open on either Mac](docs/OPEN-ON-EITHER-MAC.md) for explicit root selection, independently verified mirrors, recreated environments and verified Desktop theme recovery. Current machine paths in historical release notes are evidence, not required locations.

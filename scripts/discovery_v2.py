@@ -94,7 +94,7 @@ def _record(id, kind, title, url, summary='', **extra):
 def build_research_discovery(records, entities, vocab, programmes, origin, *, root=ROOT, ghost_records=()):
     origin = _origin(origin)
     by_id = _eligible(records, root)
-    public_entities = {e['id']: e for e in entities if _public(e) and e.get('sources') and any(str(link.get('record_id')) in by_id and _url(link.get('source_url')) for link in e.get('record_links', []))}
+    public_entities = {e['id']: e for e in entities if _public(e) and e.get('sources') and (any(str(link.get('record_id')) in by_id and _url(link.get('source_url')) for link in e.get('record_links', [])) or any(_url(link.get('url')) and link.get('source_url') == link.get('url') and link.get('reviewed') and link.get('note') and link.get('relation') == 'dialogue participant' for link in e.get('web_links', [])))}
     terms = {t['id']: t for t in vocab.get('terms', []) if _public(t) and t.get('editorial_owner') and t.get('modified') and any(str(rid) in by_id for rid in t.get('provenance', {}).get('record_ids', []))}
     public_programmes = [p for p in programmes if _public(p) and _url(p.get('source_url')) and p.get('reviewed')]
     programme_urls = {p['url'] for p in public_programmes}
@@ -227,6 +227,12 @@ def build_research_discovery(records, entities, vocab, programmes, origin, *, ro
                     raise ValueError('Unsupported institutional match scope: ' + str(scope))
                 row['relationships'].append(_edge('website description linked to catalogue publication', 'publication:' + rid, origin + '/items/' + rid + '.html', address, scope_notes[scope], institutional_match_scope=scope, evidence_scope=scope))
                 next(r for r in rows if r['id'] == 'publication:' + rid)['relationships'].append(_edge('institutional web description', page_id, address, address, scope_notes[scope], institutional_match_scope=scope, evidence_scope=scope))
+        for eid, entity in public_entities.items():
+            for link in entity.get('web_links', []):
+                if link['url'] == address:
+                    row['relationships'].append(_edge('describes dialogue participation', 'entity:' + eid, origin + '/entities/' + eid + '.html', link['source_url'], link['note'], evidence_scope='public programme record'))
+                    target = next(r for r in rows if r['id'] == 'entity:' + eid)
+                    target['relationships'].append(_edge('dialogue participation documented in', page_id, address, link['source_url'], link['note'], evidence_scope='public programme record'))
         rows.append(row)
 
     # Relationships only target exported records. This also prevents private
@@ -308,6 +314,6 @@ def build_discovery_page(write, layout, feed, origin):
     body += '<details class="discovery-fallback"><summary>Browse every described record</summary><ul>' + fallback + '</ul></details>'
     body += '<noscript><p>The search controls need JavaScript. All described records remain available in the browse list above.</p></noscript>'
     html = layout('Research discovery', 'Search publications, chapters, people, artworks, concepts and verified source passages.', body, 'research-discovery.html')
-    html = html.replace('</head>', '<script defer src="assets/research-discovery.js"></script></head>')
+    html = html.replace('</head>', '<script defer src="assets/research-discovery.js?v=' + feed['content_version'][:12] + '"></script></head>')
     write('research-discovery.html', html)
     return ['research-discovery.html']

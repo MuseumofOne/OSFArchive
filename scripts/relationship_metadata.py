@@ -24,6 +24,8 @@ def extend_graph(graph, r, itemurl, origin):
         subject = edition if assertion['scope'] == 'exact_edition' else work
         if role in ('artist_discussed', 'artwork_discussed', 'exhibition_discussed', 'scholar_discussed', 'curator_discussed'):
             subject.setdefault('about', []).append({'@id': identity})
+        if role == 'scholarly_correspondent':
+            subject.setdefault('mentions', []).append({'@id': identity})
         if role in ('author', 'publisher'):
             work[role] = {'@id': identity}
         nodes.append({
