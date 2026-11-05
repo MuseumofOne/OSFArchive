@@ -23,7 +23,8 @@ def render_explorer(records, programmes, origin, *, standalone=False):
     index='metadata/research-discovery.v2.json' if standalone else "{{asset 'archive/research-discovery.v2.json'}}"
     passages='metadata/research-passages.v2.json' if standalone else "{{asset 'archive/research-passages.v2.json'}}"
     groups=list(dict.fromkeys(r['collection'] for r in records))
-    entities=len({x['id'] for r in records for x in r.get('entity_links',[])})
+    # The contextual register also includes people linked through exchanges/programmes.
+    entities=len(json.loads((Path(__file__).resolve().parents[1]/'data/entities.json').read_text()))
     chapters=sum(len(r.get('contents',[])) for r in records)
     heading='h1' if standalone else 'h2'
     model=[]
