@@ -2,7 +2,7 @@
 
 ## Working location and authority
 
-Work from the verified checkout directly at `/Volumes/T7-Shield/Digital Archive Library`. The T7 is mounted at `/Volumes/T7-Shield`; the extracted transfer was byte-verified and the project was moved into this direct root. Keep current Ghost source, release ZIP, checksums and evidence together in `/Users/tariqelamin/Desktop/Ghost Theme - 2026-11-03 17.11`; keep full Ghost backups separately in `/Volumes/T7-Shield/Ghost Backups`. Follow `AGENTS.md` for future folder maintenance. Preserve the verified 1.11.10 rollback package outside the active theme's current release set before promoting a replacement.
+Work from the verified checkout directly at `/Volumes/T7-Shield/Digital Archive Library`. The T7 is mounted at `/Volumes/T7-Shield`; the extracted transfer was byte-verified and the project was moved into this direct root. Keep current Ghost source, release ZIP, checksums and evidence together in `/Users/tariqelamin/Desktop/Ghost Theme - 2026-11-05`; keep full Ghost backups separately in `/Volumes/T7-Shield/Ghost Backups`. Follow `AGENTS.md` for future folder maintenance. Preserve the verified 1.11.10 rollback package outside the active theme's current release set before promoting a replacement.
 
 No further Google Drive updates are part of this workflow. Earlier backup evidence remains historical evidence of that earlier copy, not proof that later changes or the T7 are backed up. A T7 working copy is not, by itself, an independent backup.
 
