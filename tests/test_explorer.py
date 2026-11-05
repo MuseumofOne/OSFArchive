@@ -26,6 +26,12 @@ class ExplorerContract(unittest.TestCase):
   self.assertIn('items/123.html',a.links)
   self.assertIn('https://archive.museumofone.art/items/123.html',g.links)
   self.assertNotIn('{{unsafe}}',ghost);self.assertNotIn('<script> &',ghost)
+ def test_initial_mobile_tree_and_standalone_headings_are_stable(self):
+  archive=render_explorer(self.fixture(),[],"https://archive.museumofone.art",standalone=True)
+  native=render_explorer(self.fixture(),[],"https://archive.museumofone.art")
+  self.assertIn("<details><summary>Browse the archive",archive);self.assertIn("<details><summary>Browse the archive",native)
+  self.assertIn("<h2>The collection register</h2>",archive);self.assertIn("<h3>The collection register</h3>",native)
+  self.assertNotIn("<details open><summary>Browse the archive",archive)
  def test_catalogue_filter_uses_shared_identifier_and_context_scope(self):
   record=self.fixture()[0]
   record.update(isbn='978-1-06-982034-1',keywords=['Source keyword'],alternate_titles=[{'title':'Source title variant'}],entity_links=[{'id':'artist','label':'A discussed artist'}])

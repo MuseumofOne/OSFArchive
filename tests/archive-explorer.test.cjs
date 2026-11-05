@@ -13,4 +13,5 @@ test('explorer state round-trips combined filters without taking over the host p
  assert.deepEqual(explorer.readState(explorer.stateHash(state)),state);
  assert.equal(explorer.readState('#ax:view=javascript:alert(1)').view,'overview');
  assert.equal(explorer.readState('#page=182').view,'overview');
+ assert.equal(explorer.readState('#public-catalogue').view,'catalogue');
 });

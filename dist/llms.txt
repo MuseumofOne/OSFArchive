@@ -1,0 +1,34 @@
+# Museum of One Digital Archive Library
+
+> Public, source-linked publication records and preserved website content from Museum of One. Curated deposited editions and captured website records are distinct descriptive levels.
+
+Canonical archive: https://archive.museumofone.art/
+Institutional website: https://www.museumofone.art/
+
+## Find and read material
+
+- [Shared discovery](https://archive.museumofone.art/research-discovery.html): Search titles, people, artworks, concepts, programmes, website records and verified PDF passages.
+- [Curated catalogue](https://archive.museumofone.art/catalogue.html): Deposited publication editions and original PDF reading copies.
+- [Website captures](https://archive.museumofone.art/website-records.html): Current eligible public Ghost posts/pages, readable copies, inert original content HTML and preserved uploads.
+- [Finding aid](https://archive.museumofone.art/finding-aid.html): Scope, editorial arrangement, access conditions and item inventory.
+- [Rights and policies](https://archive.museumofone.art/policies.html): Work-specific rights, third-party exclusions, description responsibility and limits.
+
+## Machine-readable descriptions
+
+- [Connected discovery index](https://archive.museumofone.art/metadata/research-discovery.v2.json): Typed records with stable IDs, identifiers, evidence-qualified relationships and source URLs.
+- [Verified PDF passages](https://archive.museumofone.art/metadata/research-passages.v2.json): Literal extracted text with publication and file-page references; consult the PDF for layout and wording.
+- [Curated catalogue metadata](https://archive.museumofone.art/metadata/catalogue.json): Source metadata, local enrichment, field assertions and edition identity.
+- [Current website capture metadata](https://archive.museumofone.art/metadata/website-captures.json): Source/capture dates, source declarations, file checksums, rights qualifications and access derivatives.
+- [Synchronization report](https://archive.museumofone.art/metadata/website-sync.json): Current reconciliation status, exclusions, attachment failures and verification time.
+- [Knowledge graph](https://archive.museumofone.art/metadata/knowledge-graph.jsonld): Combined public JSON-LD descriptions.
+- [Metadata profile](https://archive.museumofone.art/metadata/metadata-profile.json): Local application profile and identifier/relationship rules.
+- [Quality report](https://archive.museumofone.art/metadata/quality-report.json): Measured validation results and explicit qualifications.
+- [Sitemap](https://archive.museumofone.art/sitemap.xml): Current public HTML addresses.
+
+## Interpretation and reuse
+
+Publication dates, source modification, capture and review dates have different roles. Unknown values are not inferred. A website update does not create a book edition; contextual relationships do not establish coauthorship or endorsement. The catalogue is not a complete reconstruction of all previous holdings or a claim of certified archival custody.
+
+Original source rights, image credits, citations, licences and third-party exclusions remain applicable. Public access and this summary grant no new licence or training permission. Interactive software may be retained as inert source; a working runtime is not guaranteed. External services can remain source links rather than locally preserved files.
+
+Website records are reconciled from the current public source. Private/member/draft/future material is excluded. Withdrawn readable copies are removed on the next successful publication; encrypted recovery history is not publicly readable. Always consult the current synchronization report rather than a previously downloaded index.

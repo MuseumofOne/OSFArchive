@@ -47,7 +47,7 @@
 .archive-explorer .ax-tabs a{padding:12px 17px;font-size:12px;border-bottom:2px solid transparent}
 .archive-explorer .ax-tabs a[aria-current=page]{border-color:var(--ax-accent);font-weight:700}
 .archive-explorer .ax-section-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:13px 0;margin-top:20px}
-.archive-explorer .ax-section-head h3{font:11px/1.7 var(--ax-mono);text-transform:uppercase;letter-spacing:.08em;margin:0}
+.archive-explorer .ax-section-head :is(h2,h3){font:11px/1.7 var(--ax-mono);text-transform:uppercase;letter-spacing:.08em;margin:0}
 .archive-explorer .ax-section-head>a{font-size:12px}
 .archive-explorer .ax-collection-row{display:grid;grid-template-columns:27px minmax(0,1fr) 115px;align-items:center;gap:18px;padding:22px 0;border-block-start:1px solid var(--ax-line)}
 .archive-explorer .ax-collection-row:last-of-type{border-bottom:1px solid var(--ax-line)}

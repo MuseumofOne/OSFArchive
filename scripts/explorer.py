@@ -6,6 +6,9 @@ catalogue; Ghost consumes the generated partial rather than a parallel design.
 from html import escape
 from urllib.parse import quote
 import json
+import re
+from pathlib import Path
+from image_dimensions import attributes
 from integration_search import searchable_text
 
 
@@ -29,7 +32,7 @@ def render_explorer(records, programmes, origin, *, standalone=False):
         row['id']=str(r['id']);model.append(row)
     def card(r):
         rid=str(r['id']);title=r.get('short_title') or r['title']
-        image=(f'<img src="{asset(r["cover"])}" alt="{e(r.get("cover_alt") or "Published cover of "+r["title"])}" loading="lazy" decoding="async">' if r.get('cover') else f'<div class="ax-type-cover"><span>Museum of One<br>Archival Library</span><strong>{e(title)}</strong><small>{e(r["author"])}</small></div>')
+        image=(f'<img src="{asset(r["cover"])}" alt="{e(r.get("cover_alt") or "Published cover of "+r["title"])}" loading="lazy" decoding="async"{attributes(Path(__file__).resolve().parents[1]/"dist"/r["cover"])}>' if r.get('cover') else f'<div class="ax-type-cover"><span>Museum of One<br>Archival Library</span><strong>{e(title)}</strong><small>{e(r["author"])}</small></div>')
         search=searchable_text(r)
         read=f'<a data-ax-handoff href="{e(dest("read/"+rid+".html"))}">Read · {r["page_count"]} pp. ↗</a>' if r.get('reading_copy') else ''
         return f'''<article class="ax-card" data-ax-record="{rid}" data-search="{e(search)}" data-collection="{e(r['collection'])}" data-type="{e(r['type'])}" data-year="{e(r['date'][:4])}" data-title="{e(r['title'])}" data-date="{e(r['date'])}"><div class="ax-reference"><span>{e(r['accession'])}</span><span>Item / PDF</span></div><a class="ax-cover" data-ax-handoff href="{e(dest('items/'+rid+'.html'))}">{image}</a><div class="ax-card-copy"><p class="ax-label">{e(r['type'])} · {e(r['date'])}</p><h3><a data-ax-handoff href="{e(dest('items/'+rid+'.html'))}">{e(title)}</a></h3><p class="ax-card-author">{e(r['author'])}</p><p class="ax-card-summary">{e(r['summary'])}</p><div class="ax-card-actions">{read}<button type="button" data-ax-save="{rid}" aria-pressed="false" aria-label="Save {e(title)} to reading list">＋ Save</button></div></div></article>'''
@@ -37,7 +40,7 @@ def render_explorer(records, programmes, origin, *, standalone=False):
         return f'<a href="{e(dest(path))}" data-ax-view="{view}"{extra}>{label}</a>'
     html=f'''<section class="archive-explorer" id="archive-explorer" data-archive-explorer data-standalone="{str(standalone).lower()}" data-origin="{e(origin)}" aria-label="Interactive archive explorer">
 <div class="ax-topline"><span>Archive registry / Item-level records</span><a data-ax-handoff href="{e(origin+'/')}">Open full archive ↗</a><button type="button" data-ax-expand aria-pressed="false" hidden>Expand explorer</button></div>
-<div class="ax-workspace"><aside class="ax-tree" aria-label="Explorer collection tree"><details open><summary>Browse the archive<small>{len(records)} items · {chapters} analytic parts</small></summary><nav aria-label="Explorer pathways"><a class="ax-tree-root" href="{e(dest('finding-aid.html'))}">Museum of One<br>Digital Archive Library</a>{nav('Overview','overview','index.html')}{nav('Item register <small>'+str(len(records))+'</small>','catalogue','catalogue.html')}'''
+<div class="ax-workspace"><aside class="ax-tree" aria-label="Explorer collection tree"><details><summary>Browse the archive<small>{len(records)} items · {chapters} analytic parts</small></summary><nav aria-label="Explorer pathways"><a class="ax-tree-root" href="{e(dest('finding-aid.html'))}">Museum of One<br>Digital Archive Library</a>{nav('Overview','overview','index.html')}{nav('Item register <small>'+str(len(records))+'</small>','catalogue','catalogue.html')}'''
     for group in groups:
         rs=[r for r in records if r['collection']==group]
         html+=f'<details class="ax-tree-group"><summary>{e(group)}<small>{len(rs):02d}</small></summary><a href="{e(dest("catalogue.html?collection="+quote(group)))}" data-ax-collection="{e(group)}">Browse this collection →</a><ul>'+''.join(f'<li><a data-ax-handoff href="{e(dest("items/"+str(r["id"])+".html"))}"><small>{e(r["accession"])}</small>{e(r.get("short_title") or r["title"])}</a></li>' for r in rs)+'</ul></details>'
@@ -60,4 +63,6 @@ def render_explorer(records, programmes, origin, *, standalone=False):
     # JSON remains inert in HTML and in the generated Handlebars partial.
     raw=json.dumps(model,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c').replace('{{','\\u007b\\u007b')
     html+='<script type="application/json" data-ax-records>'+raw+'</script></section>'
+    if standalone:
+        html=re.sub(r'(\<div class="ax-section-head"\>)<h3([^>]*)>(.*?)</h3>',r'\1<h2\2>\3</h2>',html)
     return html

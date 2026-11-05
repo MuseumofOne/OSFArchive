@@ -154,3 +154,6 @@ body.archive-registry { background: var(--paper); font-size: 16px; }
   body.archive-registry { background: white; color: black; }
   .archive-registry .shell { padding: 0; }
 }
+
+/* Keep the existing paper palette; make small register labels readable. */
+.archive-registry :is(.shelf-label,.jacket-reference,.jacket-reference small,.archive-note .eyebrow){color:#535c54}
