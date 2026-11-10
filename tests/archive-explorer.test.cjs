@@ -15,3 +15,8 @@ test('explorer state round-trips combined filters without taking over the host p
  assert.equal(explorer.readState('#page=182').view,'overview');
  assert.equal(explorer.readState('#public-catalogue').view,'catalogue');
 });
+test('catalogue defaults to the latest publication and preserves explicit reference order',()=>{
+ assert.equal(explorer.readState('#ax:view=catalogue&collection=Essays').sort,'newest');
+ assert.equal(explorer.readState('#public-catalogue').sort,'newest');
+ assert.equal(explorer.readState(explorer.stateHash({view:'catalogue',sort:'reference'})).sort,'reference');
+});

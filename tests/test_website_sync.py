@@ -57,6 +57,18 @@ class Sync(unittest.TestCase):
  def test_active_code_inert_reading_copy_original_retained(self):
   self.row['record']['html']='<p>Before</p><script>alert("unsafe")</script><iframe src="https://external.example/"></iframe><a href="javascript:alert(1)">Link</a><p>After</p>'
   s,p,r=self.run_sync();self.assertNotIn('<script',p[0]['readable_html']);self.assertNotIn('javascript:',p[0]['readable_html']);self.assertIn('After',p[0]['readable_html']);self.assertIn('<script',p[0]['source']['html'])
+ def test_latest_capture_uses_original_publication_date(self):
+  newer=copy.deepcopy(self.row)
+  newer['record'].update(id='f'*24,title='Newly published research',url='https://www.museumofone.art/new/',published_at='2026-10-01T00:00:00Z')
+  state,_,_=self.run_sync()
+  self.row['record'].update(html='<p>Recent edit to the older work</p>',updated_at='2026-11-05T11:00:00Z')
+  self.run_sync([self.row,newer],state=state)
+  out=self.root/'dist';out.mkdir()
+  def write(path,text):
+   file=out/path;file.parent.mkdir(parents=True,exist_ok=True);file.write_text(text)
+  build_website_pages(self.work,out,write,lambda title,description,content,*args,**kwargs:content,'https://archive.museumofone.art')
+  listing=(out/'website-records.html').read_text()
+  self.assertLess(listing.index('Newly published research'),listing.index('تجربة — 考察'))
  def test_curated_files_never_mutated_and_withdrawn_render_paths_removed(self):
   (self.root/'data').mkdir();curated=self.root/'data/catalogue.json';curated.write_text('{"manual":"retain"}');before=curated.read_bytes();s,p,_=self.run_sync();out=self.root/'dist';out.mkdir()
   def write(path,text):f=out/path;f.parent.mkdir(parents=True,exist_ok=True);f.write_text(text)

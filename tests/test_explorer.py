@@ -32,6 +32,14 @@ class ExplorerContract(unittest.TestCase):
   self.assertIn("<details><summary>Browse the archive",archive);self.assertIn("<details><summary>Browse the archive",native)
   self.assertIn("<h2>The collection register</h2>",archive);self.assertIn("<h3>The collection register</h3>",native)
   self.assertNotIn("<details open><summary>Browse the archive",archive)
+ def test_latest_catalogue_and_reading_desk_use_publication_date(self):
+  old=self.fixture()[0]
+  recent=dict(old,id='124',date='2026-11-10')
+  html=render_explorer([old,recent],[],'https://archive.museumofone.art',standalone=True)
+  for marker in ['ax-featured">','data-ax-cards>']:
+   cards=html.split(marker,1)[1]
+   self.assertLess(cards.index('data-ax-record="124"'),cards.index('data-ax-record="123"'))
+  self.assertIn('href="website-records.html">Latest website captures',html)
  def test_catalogue_filter_uses_shared_identifier_and_context_scope(self):
   record=self.fixture()[0]
   record.update(isbn='978-1-06-982034-1',keywords=['Source keyword'],alternate_titles=[{'title':'Source title variant'}],entity_links=[{'id':'artist','label':'A discussed artist'}])

@@ -1,5 +1,6 @@
 """Render source web records separately from the curated publication catalogue."""
 
+from datetime import datetime, timezone
 from pathlib import Path
 from html import escape, unescape
 import json, shutil, re
@@ -89,6 +90,14 @@ def access_asset(asset, file, out, origin, catalogue):
     return a, len(changes)
 
 
+def capture_publication_date(capture):
+    try:
+        date = datetime.fromisoformat(capture["original_published_at"].replace("Z", "+00:00"))
+    except (AttributeError, ValueError):
+        return datetime.min.replace(tzinfo=timezone.utc)
+    return date if date.tzinfo else date.replace(tzinfo=timezone.utc)
+
+
 def build_website_pages(work, out, write, layout, origin):
     work = Path(work)
     out = Path(out)
@@ -128,13 +137,11 @@ def build_website_pages(work, out, write, layout, origin):
         + e(report.get("checked_at", "Not yet run"))
         + " · "
         + e(len(current))
-        + ' current readable web captures. Earlier revisions are retained as encrypted recovery objects, not overwritten.</p><p><a href="metadata/website-sync.json">Reconciliation report</a> · <a href="metadata/website-captures.json">Capture metadata</a></p><ul class="source-list">'
+        + ' current readable web captures. Earlier revisions are retained as encrypted recovery objects, not overwritten.</p><p><a href="metadata/website-sync.json">Reconciliation report</a> · <a href="metadata/website-captures.json">Capture metadata</a></p><h2>Latest website publications</h2><ul class="source-list">'
     )
-    for p in current:
+    for p in sorted(current, key=capture_publication_date, reverse=True):
         r = p["source"]
-        rid = p["archive_id"]
-        page = "website/" + rid + ".html"
-        url = origin + "/" + page
+        page = "website/" + p["archive_id"] + ".html"
         intro += (
             '<li><a href="'
             + page
@@ -146,6 +153,11 @@ def build_website_pages(work, out, write, layout, origin):
             + e(p["original_published_at"])
             + "</small></li>"
         )
+    for p in current:
+        r = p["source"]
+        rid = p["archive_id"]
+        page = "website/" + rid + ".html"
+        url = origin + "/" + page
         assets = []
         replacements = {}
         for a in p["attachments"]:
