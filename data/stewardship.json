@@ -207,6 +207,12 @@
       "role": "editorial_dataset"
     },
     {
+      "path": "data/wdw-evidence.json",
+      "bytes": 48464,
+      "sha256": "5af12c3ed981d277971e4939d952a0f8f2aa33380306f6faf939bec509c3f4ac",
+      "role": "editorial_dataset"
+    },
+    {
       "path": "dist/assets/documents/19863790.pdf",
       "bytes": 224701,
       "sha256": "01dd4f6727c08692c5df59af23ef817535a15a57ca4551b930827ee8dac917fa",
@@ -300,6 +306,12 @@
       "path": "dist/assets/documents/23430200.pdf",
       "bytes": 180105,
       "sha256": "272b077f00db6a02d04c03b87608a0ab8cc34972b11759e51b7ece3890228716",
+      "role": "original_pdf_access_copy"
+    },
+    {
+      "path": "dist/assets/documents/Wielocha_2021_Art_Objects_as_Documents.pdf",
+      "bytes": 1374976,
+      "sha256": "bc21b23584c81a6aa7175524405c4446ebaa1c6a60c163fd58e2234f3d62894e",
       "role": "original_pdf_access_copy"
     }
   ],
@@ -800,6 +812,68 @@
         "algorithm": "SHA-256",
         "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
       }
+    },
+    {
+      "at": "2026-11-10T00:37:51Z",
+      "event": "fixity_check",
+      "status": "failed",
+      "algorithm": "SHA-256",
+      "file_count": 50,
+      "checked_files": 50,
+      "missing": [],
+      "added": [
+        "data/wdw-evidence.json",
+        "dist/assets/documents/Wielocha_2021_Art_Objects_as_Documents.pdf"
+      ],
+      "changed": [],
+      "inventory_sha256": "190aa3429c504b2eb0a9d135ab30b003478ad9c7647537e99066759df4153a1d"
+    },
+    {
+      "at": "2026-11-10T00:39:02Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 52,
+      "inventory_sha256": "af1bffd1e43b2b62fee2141423dd2e72a79dc3c90d1d7088e1eb4f7654ae617b"
+    },
+    {
+      "at": "2026-11-10T00:39:02Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 52,
+      "checked_files": 52,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "af1bffd1e43b2b62fee2141423dd2e72a79dc3c90d1d7088e1eb4f7654ae617b"
+    },
+    {
+      "at": "2026-11-10T00:39:02Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 52,
+      "checked_files": 52,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "af1bffd1e43b2b62fee2141423dd2e72a79dc3c90d1d7088e1eb4f7654ae617b"
+    },
+    {
+      "at": "2026-11-10T00:39:04Z",
+      "event": "backup_and_restoration_test",
+      "status": "passed",
+      "package_filename": "wdw-archive-preservation.tar.gz",
+      "package_bytes": 13324367,
+      "package_sha256": "e03a162765477c8e19c9912424f7754da3ecabcf63a215e04f3600f0df679b61",
+      "inventory_sha256": "af1bffd1e43b2b62fee2141423dd2e72a79dc3c90d1d7088e1eb4f7654ae617b",
+      "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
+      "restoration": {
+        "status": "passed",
+        "files_restored": 52,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      }
     }
   ],
   "scope": "Repository source snapshots, editorial JSON datasets, and original PDF access copies.",
@@ -812,32 +886,32 @@
     "upstream_sources": "Original deposits remain at Zenodo; website source is held by the site platform.",
     "offsite_backup_status": "Private Google Drive package uploaded, downloaded again, checksum matched and all restored content verified."
   },
-  "inventory_sha256": "190aa3429c504b2eb0a9d135ab30b003478ad9c7647537e99066759df4153a1d",
-  "baseline_created_at": "2026-11-05T11:47:31Z",
+  "inventory_sha256": "af1bffd1e43b2b62fee2141423dd2e72a79dc3c90d1d7088e1eb4f7654ae617b",
+  "baseline_created_at": "2026-11-10T00:39:02Z",
   "last_check": {
-    "at": "2026-11-05T11:47:31Z",
+    "at": "2026-11-10T00:39:02Z",
     "event": "fixity_check",
     "status": "passed",
     "algorithm": "SHA-256",
-    "file_count": 50,
-    "checked_files": 50,
+    "file_count": 52,
+    "checked_files": 52,
     "missing": [],
     "added": [],
     "changed": [],
-    "inventory_sha256": "190aa3429c504b2eb0a9d135ab30b003478ad9c7647537e99066759df4153a1d"
+    "inventory_sha256": "af1bffd1e43b2b62fee2141423dd2e72a79dc3c90d1d7088e1eb4f7654ae617b"
   },
   "backup": {
-    "at": "2026-11-05T11:47:31Z",
+    "at": "2026-11-10T00:39:04Z",
     "event": "backup_and_restoration_test",
     "status": "passed",
-    "package_filename": "archive-preservation-release.tar.gz",
-    "package_bytes": 11987122,
-    "package_sha256": "4ef15845eeb73ed890e1484bca69a75345ff63e445e86330c851e73ce289827d",
-    "inventory_sha256": "190aa3429c504b2eb0a9d135ab30b003478ad9c7647537e99066759df4153a1d",
+    "package_filename": "wdw-archive-preservation.tar.gz",
+    "package_bytes": 13324367,
+    "package_sha256": "e03a162765477c8e19c9912424f7754da3ecabcf63a215e04f3600f0df679b61",
+    "inventory_sha256": "af1bffd1e43b2b62fee2141423dd2e72a79dc3c90d1d7088e1eb4f7654ae617b",
     "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
     "restoration": {
       "status": "passed",
-      "files_restored": 50,
+      "files_restored": 52,
       "algorithm": "SHA-256",
       "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
     }

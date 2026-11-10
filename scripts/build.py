@@ -19,6 +19,7 @@ from relationship_assertions import relation_register, typed_entity_relationship
 from quality_page import collect_graphs, build_quality_page
 from citations import build_citation_model, visible_citation, csl_json, bibtex, ris, scholar_meta
 from discovery_v2 import build_research_discovery, build_fulltext_index, build_discovery_page, encode_index
+from wdw_sources import build_wdw_sources, source_collection_link
 from pathlib import Path
 from html import escape
 import json, os, re, shutil, urllib.parse, xml.etree.ElementTree as ET
@@ -242,6 +243,7 @@ about+='''<div class="reading"><h2>The scope of this catalogue</h2><p>This first
 write('about.html',layout('About & metadata policy','The scope, source policy and editorial metadata practices of Museum of One’s archival catalogue.',about,'about.html',active='about'))
 
 sourcepage=pagehead('Sources & authority records','Follow the evidence.','Repository records, institutional context, and external identifiers—each linked according to what it establishes.')
+sourcepage+=source_collection_link()
 sourcepage+='''<div class="reading"><h2>Publication sources</h2><p><a href="https://www.museumofone.art/publications/">Museum of One publication register ↗</a> provides institutional work and edition records. Each catalogue item links to its corresponding page and the selected Zenodo edition. Original repository metadata is available from the item’s download panel.</p><h2>Library and Archives Canada</h2><p><a href="https://library-archives.canada.ca/eng">Library and Archives Canada ↗</a> provides national library, archival, and publication infrastructure. This catalogue does not assert that every included edition has a verified LAC holding.</p><p><a href="https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art">Search LAC web-archive captures of Museum of One ↗</a>. This is a web-capture lookup, not evidence of a deposited book or a verified capture for a particular date.</p><h2>Identity and serial authority</h2><ul class="source-list"><li><a href="https://orcid.org/0009-0004-7737-5094">Dorian Vale · ORCID 0009-0004-7737-5094 ↗</a><small>Public ORCID profile inspected on 4 November 2026: its credit name and Museum of One link match. This does not verify affiliations or other biographical claims.</small></li><li><a href="https://portal.issn.org/resource/ISSN/2819-7232">ISSN Portal · 2819-7232 ↗</a><small>Key title: Post-interpretive criticism. Serial identity is distinct from the individual volume or edition.</small></li></ul><h2>Additional catalogue context</h2>'''
 authfile=DATA/'authorities.json'
 if authfile.exists():
@@ -277,6 +279,7 @@ write('metadata/catalogue.json',json.dumps({'title':'Museum of One Digital Archi
 write('assets/favicon.svg','<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#f3f0e8"/><circle cx="32" cy="32" r="27" fill="none" stroke="#713e3e"/><text x="32" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="36" fill="#713e3e">M</text></svg>')
 build_finding_aid(RECORDS,PROGRAMMES,write,layout)
 paths=['finding-aid.html','index.html','catalogue.html','collections.html','about.html','sources.html','programmes.html','subjects.html']+[f'items/{r["id"]}.html' for r in RECORDS]
+paths+=build_wdw_sources(write,layout,ORIGIN)
 paths+=build_reader_pages(RECORDS,write,layout,ORIGIN)
 paths+=build_entity_pages(RECORDS,ENTITIES,write,layout,ORIGIN)
 paths+=build_content_pages(RECORDS,CONTENTS,write,layout,ORIGIN)
