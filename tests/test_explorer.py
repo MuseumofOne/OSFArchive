@@ -1,4 +1,5 @@
 import json,sys,unittest
+from hashlib import sha256
 from pathlib import Path
 from html.parser import HTMLParser
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
@@ -59,6 +60,8 @@ class ExplorerContract(unittest.TestCase):
   fragment=(ROOT/'dist/integration/archive-explorer.hbs').read_text()
   page=(ROOT/'dist/index.html').read_text()
   self.assertEqual(page.count('data-archive-explorer'),1)
+  version=sha256((ROOT/'dist/assets/archive-explorer.js').read_bytes()).hexdigest()[:12]
+  self.assertIn('src="assets/archive-explorer.js?v='+version+'"',page)
   self.assertEqual(fragment.count('data-ax-record='),4+len(json.loads((ROOT/'data/catalogue.json').read_text())))
   # Four featured descriptions plus every current catalogue record.
   for row in json.loads((ROOT/'data/catalogue.json').read_text()):
