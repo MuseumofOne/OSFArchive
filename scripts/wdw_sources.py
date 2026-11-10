@@ -89,8 +89,9 @@ def build_wdw_sources(write, layout, origin, root=None):
     body += '<p>Evidence and source access</p></div><div class="wdw-intro">'
     body += f'<p>{e(data["description"])}</p><p>{e(data["facsimilePolicy"])}</p>'
     body += '<p>These annotations identify what each consulted source can establish and what remains open. '
-    body += 'The collection supplements the <a href="https://www.museumofone.art/when-documentation-becomes-the-work/">published working paper</a>; '
-    body += 'it does not replace its deposited version or indicate journal acceptance.</p></div>'
+    body += f'The collection supplements <a href="https://doi.org/{e(data["publication"]["relatedPaperDoi"])}">version {e(data["publication"]["relatedPaperVersion"])} of the published working paper</a> '
+    body += f'and preserves access to <a href="https://doi.org/{e(data["publication"]["previousPaperDoi"])}">version 1.0</a>; '
+    body += 'it does not replace either deposited edition or indicate journal acceptance.</p></div>'
     groups = [('rim-dong-sik', 'Rim Dong Sik'), ('kim-kulim', 'Kim Kulim'), ('sung-neung-kyung', 'Sung Neung Kyung'), ('comparative-scholarship', 'Comparative scholarship')]
     body += '<nav class="wdw-nav" aria-label="Source collection sections">'
     for anchor, name in groups + [('access-gaps', 'Articles consulted by abstract'), ('related-research', 'Working paper and RAI')]:
@@ -127,7 +128,7 @@ def build_wdw_sources(write, layout, origin, root=None):
     graph = {'@context': 'https://schema.org', '@graph': [
         {'@type': 'CollectionPage', '@id': page_url, 'url': page_url, 'name': data['title'],
          'description': data['description'], 'datePublished': data['preparedDate'], 'inLanguage': 'en',
-         'about': {'@id': 'https://doi.org/10.5281/zenodo.24093529'},
+         'about': {'@id': 'https://doi.org/' + data['publication']['relatedPaperDoi']},
          'keywords': ['Korean experimental art', 'Korean art history', 'performance documentation', 'photography', 'provenance'],
          'hasPart': [{'@id': n['@id']} for n in nodes],
          'isPartOf': {'@type': 'WebSite', '@id': origin + '/#website', 'name': 'Museum of One Digital Archive Library', 'url': origin + '/'}},

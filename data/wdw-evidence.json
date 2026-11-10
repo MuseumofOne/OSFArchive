@@ -673,6 +673,16 @@
   ],
   "relatedPublications": [
     {
+      "title": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+      "creator": "Dorian Vale",
+      "type": "Working paper",
+      "id": "working-paper-v2",
+      "date": "2026-11-10",
+      "version": "2.0",
+      "sourceUrl": "https://doi.org/10.5281/zenodo.24095308",
+      "relation": "Current working-paper edition. Adds SeMA’s transfer chronology, KADA’s classification and digitization account, the Guggenheim reperformance-video checklist and Korean conservation scholarship, while retaining the unresolved provenance and access limits."
+    },
+    {
       "id": "prior-working-paper",
       "title": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
       "creator": "Dorian Vale",
@@ -680,7 +690,7 @@
       "version": "1.0",
       "type": "Working paper",
       "sourceUrl": "https://doi.org/10.5281/zenodo.24093529",
-      "relation": "Earlier publicly issued version of the revised article. The journal revision adds evidence and retains the unresolved provenance and access limits."
+      "relation": "Original working-paper edition, preserved under its version-specific DOI. Version 2.0 adds evidence and scholarship while retaining the unresolved provenance and access limits."
     },
     {
       "id": "rai-main",
@@ -723,14 +733,16 @@
   "counts": {
     "mainRecords": 26,
     "abstractOnly": 3,
-    "relatedPublications": 4
+    "relatedPublications": 5
   },
   "publication": {
     "status": "Published source-access collection",
     "curator": "Museum of One",
     "date": "2026-11-10",
     "relatedPaperUrl": "https://www.museumofone.art/when-documentation-becomes-the-work/",
-    "relatedPaperDoi": "10.5281/zenodo.24093529",
-    "scope": "Source-access annotations supplement the published working paper; this is not a new edition of that paper or a claim of journal acceptance."
+    "relatedPaperDoi": "10.5281/zenodo.24095308",
+    "scope": "Source-access annotations supplement version 2.0 of the published working paper and preserve the link to version 1.0. The catalogue is not a new edition of its source documents or a claim of journal acceptance.",
+    "relatedPaperVersion": "2.0",
+    "previousPaperDoi": "10.5281/zenodo.24093529"
   }
 }
