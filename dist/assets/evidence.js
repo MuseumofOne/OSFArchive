@@ -1,0 +1,2 @@
+/* Query links identify the same permanent document, page and reading anchors. */
+(function(){'use strict';const q=new URLSearchParams(location.search),id=q.get('passage')||q.get('page')||decodeURIComponent(location.hash.slice(1));if(!id||!/^[A-Za-z0-9][A-Za-z0-9_-]*$/.test(id))return;const target=document.getElementById(id);if(!target)return;let parent=target.parentElement;while(parent){if(parent.tagName==='DETAILS')parent.open=true;parent=parent.parentElement;}requestAnimationFrame(()=>{target.scrollIntoView({block:'start'});target.focus({preventScroll:true});});})();

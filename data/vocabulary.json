@@ -2,8 +2,8 @@
   "scheme": {
     "id": "museum-of-one-discovery-vocabulary",
     "title": "Museum of One Local Discovery Vocabulary",
-    "version": 4,
-    "modified": "2026-11-04",
+    "version": 5,
+    "modified": "2026-11-10",
     "language": "en",
     "base_uri": "https://archive.museumofone.art/vocabulary.html",
     "editorial_owner": "Museum of One Digital Archive Library",
@@ -1760,6 +1760,432 @@
       "editorial_owner": "Museum of One Digital Archive Library",
       "version": 4,
       "modified": "2026-11-04"
+    },
+    {
+      "id": "art-archives",
+      "persistent_id": "urn:museum-of-one:vocabulary:art-archives",
+      "preferred_label": "Art Archives",
+      "alternative_labels": [],
+      "alternative_label_languages": {},
+      "kind": "subject",
+      "definition": "Archival records used to investigate art, its documentation and institutional description.",
+      "scope_note": "Local discovery term assigned to the published RAI documents; source terminology and repository metadata remain distinct.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "No external controlled-vocabulary equivalence is asserted.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Art Archives"
+        ],
+        "record_ids": [
+          "24088563",
+          "24088574",
+          "24088573"
+        ],
+        "source_urls": [
+          "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+          "https://www.museumofone.art/rai-documentary-supplement/",
+          "https://www.museumofone.art/rai-extended-case-studies/"
+        ],
+        "note": "Term taken from the public institutional publication tags or repository resource type; scope defined for this catalogue."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 5,
+      "modified": "2026-11-10"
+    },
+    {
+      "id": "art-historiography",
+      "persistent_id": "urn:museum-of-one:vocabulary:art-historiography",
+      "preferred_label": "Art Historiography",
+      "alternative_labels": [],
+      "alternative_label_languages": {},
+      "kind": "subject",
+      "definition": "Research on the construction and revision of art-historical accounts.",
+      "scope_note": "Local discovery term assigned to the published RAI documents; source terminology and repository metadata remain distinct.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "No external controlled-vocabulary equivalence is asserted.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Art Historiography"
+        ],
+        "record_ids": [
+          "24088563"
+        ],
+        "source_urls": [
+          "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/"
+        ],
+        "note": "Term taken from the public institutional publication tags or repository resource type; scope defined for this catalogue."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 5,
+      "modified": "2026-11-10"
+    },
+    {
+      "id": "documentary-photography",
+      "persistent_id": "urn:museum-of-one:vocabulary:documentary-photography",
+      "preferred_label": "Documentary Photography",
+      "alternative_labels": [],
+      "alternative_label_languages": {},
+      "kind": "subject",
+      "definition": "Photographs considered as documents with their own circumstances of production.",
+      "scope_note": "Local discovery term assigned to the published RAI documents; source terminology and repository metadata remain distinct.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "No external controlled-vocabulary equivalence is asserted.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Documentary Photography"
+        ],
+        "record_ids": [
+          "24088573"
+        ],
+        "source_urls": [
+          "https://www.museumofone.art/rai-extended-case-studies/"
+        ],
+        "note": "Term taken from the public institutional publication tags or repository resource type; scope defined for this catalogue."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 5,
+      "modified": "2026-11-10"
+    },
+    {
+      "id": "korean-art-history",
+      "persistent_id": "urn:museum-of-one:vocabulary:korean-art-history",
+      "preferred_label": "Korean Art History",
+      "alternative_labels": [
+        "한국미술사"
+      ],
+      "alternative_label_languages": {
+        "한국미술사": "ko"
+      },
+      "kind": "subject",
+      "definition": "Research on the histories and documentation of Korean art.",
+      "scope_note": "Local discovery term assigned to the published RAI documents; source terminology and repository metadata remain distinct.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "No external controlled-vocabulary equivalence is asserted.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Korean Art History"
+        ],
+        "record_ids": [
+          "24088563",
+          "24088574",
+          "24088573"
+        ],
+        "source_urls": [
+          "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+          "https://www.museumofone.art/rai-documentary-supplement/",
+          "https://www.museumofone.art/rai-extended-case-studies/"
+        ],
+        "note": "Term taken from the public institutional publication tags or repository resource type; scope defined for this catalogue."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 5,
+      "modified": "2026-11-10"
+    },
+    {
+      "id": "korean-experimental-art",
+      "persistent_id": "urn:museum-of-one:vocabulary:korean-experimental-art",
+      "preferred_label": "Korean Experimental Art",
+      "alternative_labels": [],
+      "alternative_label_languages": {},
+      "kind": "subject",
+      "definition": "Research on Korean experimental artistic practices and their documentary records.",
+      "scope_note": "Local discovery term assigned to the published RAI documents; source terminology and repository metadata remain distinct.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "No external controlled-vocabulary equivalence is asserted.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Korean Experimental Art"
+        ],
+        "record_ids": [
+          "24088563",
+          "24088574",
+          "24088573"
+        ],
+        "source_urls": [
+          "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+          "https://www.museumofone.art/rai-documentary-supplement/",
+          "https://www.museumofone.art/rai-extended-case-studies/"
+        ],
+        "note": "Term taken from the public institutional publication tags or repository resource type; scope defined for this catalogue."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 5,
+      "modified": "2026-11-10"
+    },
+    {
+      "id": "methodology",
+      "persistent_id": "urn:museum-of-one:vocabulary:methodology",
+      "preferred_label": "Methodology",
+      "alternative_labels": [],
+      "alternative_label_languages": {},
+      "kind": "subject",
+      "definition": "Explicit research procedures, evidence requirements and limits.",
+      "scope_note": "Local discovery term assigned to the published RAI documents; source terminology and repository metadata remain distinct.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "No external controlled-vocabulary equivalence is asserted.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Methodology"
+        ],
+        "record_ids": [
+          "24088563",
+          "24088574",
+          "24088573"
+        ],
+        "source_urls": [
+          "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+          "https://www.museumofone.art/rai-documentary-supplement/",
+          "https://www.museumofone.art/rai-extended-case-studies/"
+        ],
+        "note": "Term taken from the public institutional publication tags or repository resource type; scope defined for this catalogue."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 5,
+      "modified": "2026-11-10"
+    },
+    {
+      "id": "museum-collection-records",
+      "persistent_id": "urn:museum-of-one:vocabulary:museum-collection-records",
+      "preferred_label": "Museum Collection Records",
+      "alternative_labels": [],
+      "alternative_label_languages": {},
+      "kind": "subject",
+      "definition": "Institutional descriptions of collected objects and associated acquisition or catalogue information.",
+      "scope_note": "Local discovery term assigned to the published RAI documents; source terminology and repository metadata remain distinct.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "No external controlled-vocabulary equivalence is asserted.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Museum Collection Records"
+        ],
+        "record_ids": [
+          "24088574"
+        ],
+        "source_urls": [
+          "https://www.museumofone.art/rai-documentary-supplement/"
+        ],
+        "note": "Term taken from the public institutional publication tags or repository resource type; scope defined for this catalogue."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 5,
+      "modified": "2026-11-10"
+    },
+    {
+      "id": "performance-documentation",
+      "persistent_id": "urn:museum-of-one:vocabulary:performance-documentation",
+      "preferred_label": "Performance Documentation",
+      "alternative_labels": [],
+      "alternative_label_languages": {},
+      "kind": "subject",
+      "definition": "Records associated with performance and its subsequent description or display.",
+      "scope_note": "Local discovery term assigned to the published RAI documents; source terminology and repository metadata remain distinct.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "No external controlled-vocabulary equivalence is asserted.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Performance Documentation"
+        ],
+        "record_ids": [
+          "24088573"
+        ],
+        "source_urls": [
+          "https://www.museumofone.art/rai-extended-case-studies/"
+        ],
+        "note": "Term taken from the public institutional publication tags or repository resource type; scope defined for this catalogue."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 5,
+      "modified": "2026-11-10"
+    },
+    {
+      "id": "relational-archival-investigation",
+      "persistent_id": "urn:museum-of-one:vocabulary:relational-archival-investigation",
+      "preferred_label": "Relational Archival Investigation",
+      "alternative_labels": [
+        "RAI"
+      ],
+      "alternative_label_languages": {},
+      "kind": "subject",
+      "definition": "Dorian Vale’s published method for testing relations among documents before drawing historical conclusions.",
+      "scope_note": "Local discovery term assigned to the published RAI documents; source terminology and repository metadata remain distinct.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "No external controlled-vocabulary equivalence is asserted.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Relational Archival Investigation"
+        ],
+        "record_ids": [
+          "24088563",
+          "24088574",
+          "24088573"
+        ],
+        "source_urls": [
+          "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+          "https://www.museumofone.art/rai-documentary-supplement/",
+          "https://www.museumofone.art/rai-extended-case-studies/"
+        ],
+        "note": "Term taken from the public institutional publication tags or repository resource type; scope defined for this catalogue."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 5,
+      "modified": "2026-11-10"
+    },
+    {
+      "id": "source-criticism",
+      "persistent_id": "urn:museum-of-one:vocabulary:source-criticism",
+      "preferred_label": "Source Criticism",
+      "alternative_labels": [],
+      "alternative_label_languages": {},
+      "kind": "subject",
+      "definition": "Assessment of a source’s identity, scope and evidentiary relation to a historical claim.",
+      "scope_note": "Local discovery term assigned to the published RAI documents; source terminology and repository metadata remain distinct.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "No external controlled-vocabulary equivalence is asserted.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Source Criticism"
+        ],
+        "record_ids": [
+          "24088563",
+          "24088574"
+        ],
+        "source_urls": [
+          "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+          "https://www.museumofone.art/rai-documentary-supplement/"
+        ],
+        "note": "Term taken from the public institutional publication tags or repository resource type; scope defined for this catalogue."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 5,
+      "modified": "2026-11-10"
+    },
+    {
+      "id": "genre-technical-note",
+      "persistent_id": "urn:museum-of-one:vocabulary:genre-technical-note",
+      "preferred_label": "Technical note",
+      "alternative_labels": [],
+      "alternative_label_languages": {},
+      "kind": "genre",
+      "definition": "A deposited methodological or documentary supplement described as a technical note by its repository.",
+      "scope_note": "Local discovery term assigned to the published RAI documents; source terminology and repository metadata remain distinct.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "No external controlled-vocabulary equivalence is asserted.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "type",
+        "source_keyword_labels": [
+          "Technical note"
+        ],
+        "record_ids": [
+          "24088574",
+          "24088573"
+        ],
+        "source_urls": [
+          "https://zenodo.org/records/24088574",
+          "https://zenodo.org/records/24088573"
+        ],
+        "note": "Term taken from the public institutional publication tags or repository resource type; scope defined for this catalogue."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 5,
+      "modified": "2026-11-10"
+    },
+    {
+      "id": "video-installation",
+      "persistent_id": "urn:museum-of-one:vocabulary:video-installation",
+      "preferred_label": "Video Installation",
+      "alternative_labels": [],
+      "alternative_label_languages": {},
+      "kind": "subject",
+      "definition": "Time-based installation work and records of its presentation.",
+      "scope_note": "Local discovery term assigned to the published RAI documents; source terminology and repository metadata remain distinct.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "No external controlled-vocabulary equivalence is asserted.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "subjects",
+        "source_keyword_labels": [
+          "Video Installation"
+        ],
+        "record_ids": [
+          "24088573"
+        ],
+        "source_urls": [
+          "https://www.museumofone.art/rai-extended-case-studies/"
+        ],
+        "note": "Term taken from the public institutional publication tags or repository resource type; scope defined for this catalogue."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 5,
+      "modified": "2026-11-10"
     }
   ]
 }

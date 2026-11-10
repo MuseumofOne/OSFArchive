@@ -85,7 +85,7 @@ def build_citation_model(record, *, catalogue_url=None, pdf_url=None):
     """
     resource_type = _text(record.get("type"))
     kind = {"book": "book", "journal article": "article-journal",
-            "working paper": "report", "dataset": "dataset"}.get(resource_type.casefold(), "document")
+            "working paper": "report", "technical note": "report", "dataset": "dataset"}.get(resource_type.casefold(), "document")
     issued = _text(record.get("date"))
     parts = _date_parts(issued)
     doi = _doi(record.get("doi"))

@@ -240,7 +240,7 @@ def main():
                 if ref.get("@id") == edition_id:
                     continue
                 term = lookup.get(ref.get("@id"), {})
-                require(term.get("@type") == "DefinedTerm" and term.get("name") in (r.get("subjects") or []), f"Unqualified additional about relation for {rid}: {ref.get('@id')}")
+                require(term.get("@type") == "DefinedTerm" and str(term.get("name", "")).casefold() in {str(s).casefold() for s in (r.get("subjects") or [])}, f"Unqualified additional about relation for {rid}: {ref.get('@id')}")
                 termset = lookup.get(term.get("inDefinedTermSet", {}).get("@id"), {})
                 require(termset.get("@type") == "DefinedTermSet" and "local editorial" in termset.get("name", "").lower(), f"Discovery term lacks its local vocabulary scope for {rid}")
             programmes = r.get("research_programmes") or []

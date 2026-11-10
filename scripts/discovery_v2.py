@@ -91,7 +91,7 @@ def _record(id, kind, title, url, summary='', **extra):
     return row
 
 
-def build_research_discovery(records, entities, vocab, programmes, origin, *, root=ROOT, ghost_records=()):
+def build_research_discovery(records, entities, vocab, programmes, origin, *, root=ROOT, ghost_records=(), evidence_payload=None):
     origin = _origin(origin)
     by_id = _eligible(records, root)
     public_entities = {e['id']: e for e in entities if _public(e) and e.get('sources') and (any(str(link.get('record_id')) in by_id and _url(link.get('source_url')) for link in e.get('record_links', [])) or any(_url(link.get('url')) and link.get('source_url') == link.get('url') and link.get('reviewed') and link.get('note') and link.get('relation') == 'dialogue participant' for link in e.get('web_links', [])))}
@@ -243,6 +243,8 @@ def build_research_discovery(records, entities, vocab, programmes, origin, *, ro
         row['relationships'] = [e for e in row['relationships'] if e['target_id'] in exported]
         for edge in row['relationships']:
             edge['target_title'] = titles[edge['target_id']]
+    from evidence import evidence_discovery
+    rows.extend(evidence_discovery(evidence_payload,origin))
     return _finish(rows, origin, counts=dict(Counter(r['kind'] for r in rows)))
 
 
@@ -306,11 +308,16 @@ def build_fulltext_index(records, root, origin):
 
 def build_discovery_page(write, layout, feed, origin):
     e = lambda x: escape(str(x), quote=True)
-    kinds = [('publication', 'Publications'), ('chapter', 'Chapters & essays'), ('entity', 'People, artworks & events'), ('concept', 'Concepts & subjects'), ('programme', 'Research programmes'), ('website', 'Writing & website pages'), ('passage', 'Source passages only')]
+    kinds = [('publication', 'Publications'), ('chapter', 'Chapters & essays'), ('entity', 'People, artworks & events'), ('concept', 'Concepts & subjects'), ('programme', 'Research programmes'), ('website', 'Writing & website pages'), ('evidence', 'Evidence records & dossiers'), ('passage', 'Source passages only')]
     choices = ''.join('<option value="' + k + '">' + label + '</option>' for k, label in kinds)
     fallback = ''.join('<li><a href="' + e(row['url'][len(origin) + 1:] if row['url'].startswith(origin + '/') else row['url']) + '">' + e(row['title']) + '</a><small>' + e(row['kind']) + '</small></li>' for row in feed['records'])
     body = '''<div class="page-head"><div class="eyebrow">Connected research discovery</div><h1>Follow an idea through the archive.</h1><p>Find a publication, a chapter, a person, an artwork or a concept. Each connection leads back to its source.</p></div>'''
-    body += '''<section class="research-discovery" data-research-discovery data-sync-url="true" data-local-results="true" data-archive-origin="''' + e(origin) + '''" data-index-snapshot="metadata/research-discovery.v2.json" data-passages-url="metadata/research-passages.v2.json"><form class="discovery-form" data-discovery-form method="get" action="research-discovery.html"><label for="research-query">Search titles, names, identifiers and concepts</label><input id="research-query" type="search" name="q" autocomplete="off"><div class="discovery-controls"><label for="research-kind">Look in</label><select id="research-kind" name="kind"><option value="">All records</option>''' + choices + '''</select><label><input type="checkbox" name="fulltext"> Also search passages in the publications</label><button type="submit">Search</button></div></form><p class="discovery-status" data-discovery-status role="status" aria-live="polite">Browse the linked records below or search the catalogue.</p><ol class="discovery-results" data-discovery-results></ol><button class="discovery-more" type="button" data-discovery-more hidden>Show more results</button><p class="discovery-evidence">Passages come from the original PDF text layer and link to the exact file page. Extraction order may differ from the printed layout. Publication licences and attribution remain attached to the originals.</p><p><a href="catalogue.html">Browse publication records</a> · <a href="contents.html">Browse chapters</a> · <a href="vocabulary.html">Explore concepts</a> · <a href="https://www.museumofone.art/">Search writing on Museum of One</a></p></section>'''
+    body += '''<section class="research-discovery" data-research-discovery data-sync-url="true" data-local-results="true" data-archive-origin="''' + e(origin) + '''" data-index-snapshot="metadata/research-discovery.v2.json" data-passages-url="metadata/research-passages.v2.json"><form class="discovery-form" data-discovery-form method="get" action="research-discovery.html"><label for="research-query">Search titles, names, identifiers and concepts</label><input id="research-query" type="search" name="q" autocomplete="off"><div class="discovery-controls"><label for="research-kind">Look in</label><select id="research-kind" name="kind"><option value="">All records</option>''' + choices + '''</select><label><input type="checkbox" name="fulltext"> Also search passages in the publications</label><button type="submit">Search</button></div></form><p class="discovery-status" data-discovery-status role="status" aria-live="polite">Browse the linked records below or search the catalogue.</p><ol class="discovery-results" data-discovery-results></ol><button class="discovery-more" type="button" data-discovery-more hidden>Show more results</button><p class="discovery-evidence">Passages come from the original PDF text layer and link to the exact file page. Extraction order may differ from the printed layout. Publication licences and attribution remain attached to the originals.</p><p><a href="evidence.html">Browse evidence records</a> · <a href="catalogue.html">Browse publication records</a> · <a href="contents.html">Browse chapters</a> · <a href="vocabulary.html">Explore concepts</a> · <a href="https://www.museumofone.art/">Search writing on Museum of One</a></p></section>'''
+    facets=''
+    for key,label in [('material_type','Material type'),('period','Period as described'),('languages','Language'),('transcription_status','Reading status'),('source_layer','Source layer')]:
+        values=sorted({str(v) for r in feed['records'] for v in (r.get(key,[]) if isinstance(r.get(key),list) else [r.get(key,'')]) if v})
+        if values:facets+='<label>'+label+'<select name="'+key+'"><option value="">All</option>'+''.join('<option value="'+e(v)+'">'+e(v)+'</option>' for v in values)+'</select></label>'
+    body=body.replace('</form>','<details class="discovery-facets"><summary>Refine by material and source</summary><div class="discovery-controls">'+facets+'</div></details></form>',1)
     body += '<details class="discovery-fallback"><summary>Browse every described record</summary><ul>' + fallback + '</ul></details>'
     body += '<noscript><p>The search controls need JavaScript. All described records remain available in the browse list above.</p></noscript>'
     html = layout('Research discovery', 'Search publications, chapters, people, artworks, concepts and verified source passages.', body, 'research-discovery.html')

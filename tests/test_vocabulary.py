@@ -25,7 +25,8 @@ class ControlledVocabulary(unittest.TestCase):
             self.assertEqual(original['keywords'], result['keywords'])
             self.assertEqual(original['subjects'], result['subjects'])
             self.assertEqual(original['type'], result['type'])
-            self.assertEqual([t['label'] for t in result['controlled_subjects']], original['subjects'])
+            self.assertTrue(all(any(label.casefold() in {x.casefold() for x in [t['label']]+t['alternative_labels']} for t in result['controlled_subjects']) for label in original['subjects']))
+            self.assertEqual(len({t['id'] for t in result['controlled_subjects']}), len(result['controlled_subjects']))
             self.assertEqual(result['genre_terms'][0]['label'], original['type'])
             for assigned in result['controlled_subjects'] + result['genre_terms']:
                 self.assertIn(assigned['id'], self.terms)
@@ -40,7 +41,8 @@ class ControlledVocabulary(unittest.TestCase):
             with self.subTest(term=term['id']):
                 for field in ('definition', 'scope_note', 'editorial_owner', 'modified', 'mapping_note'):
                     self.assertTrue(term[field])
-                self.assertEqual(term['version'], 4)
+                self.assertGreaterEqual(term['version'], 4)
+                self.assertLessEqual(term['version'], self.vocab['scheme']['version'])
                 self.assertTrue(term['provenance']['source_urls'])
                 for broader in term['broader']:
                     self.assertIn(term['id'], self.terms[broader]['narrower'])

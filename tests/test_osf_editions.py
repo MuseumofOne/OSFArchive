@@ -18,9 +18,11 @@ class ExactEditionAccess(unittest.TestCase):
 
     def test_every_selected_edition_has_one_exact_copy(self):
         result = attach_osf_editions(self.catalogue, ROOT)
-        self.assertEqual(len(result), 16)
-        self.assertEqual(len({r['osf_copy']['osf_guid'] for r in result}), 16)
-        for r in result:
+        self.assertEqual(len(result), len(self.catalogue))
+        mapped = [r for r in result if r.get('osf_copy')]
+        self.assertEqual({r['id'] for r in mapped}, {r['archive_id'] for r in self.rows})
+        self.assertEqual(len({r['osf_copy']['osf_guid'] for r in mapped}), len(self.rows))
+        for r in mapped:
             self.assertEqual(r['doi'], r['osf_copy']['edition_doi'])
             self.assertTrue(any(a['field'] == 'osf_copy' for a in r['field_assertions']))
 
@@ -46,6 +48,7 @@ class ExactEditionAccess(unittest.TestCase):
 
     def test_graph_relates_osf_to_the_edition_without_sameas(self):
         for r in json.loads((ROOT / 'dist/metadata/catalogue.json').read_text())['records']:
+            if not r.get('osf_copy'):continue  # No new OSF mapping inferred from a Zenodo accession.
             graph = json.loads((ROOT / 'dist/metadata' / (r['id'] + '.jsonld')).read_text())['@graph']
             media = next(n for n in graph if n.get('@id') == r['osf_copy']['osf_url'] + '#file')
             self.assertEqual(media['encodesCreativeWork']['@id'], 'https://doi.org/' + r['doi'])

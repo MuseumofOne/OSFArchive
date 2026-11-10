@@ -1,7 +1,7 @@
 /* Shared, deterministic research retrieval. No HTML from index data is executed. */
 (function(root,factory){'use strict';const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else{root.MuseumResearchDiscovery=api;const start=()=>root.document.querySelectorAll('[data-research-discovery]').forEach(el=>api.mount(el));if(root.document.readyState==='loading')root.document.addEventListener('DOMContentLoaded',start,{once:true});else start();}})(typeof globalThis!=='undefined'?globalThis:this,function(){
  'use strict';
- const KINDS=new Set(['publication','chapter','entity','concept','programme','passage','website']);
+ const KINDS=new Set(['publication','chapter','entity','concept','programme','passage','website','evidence']);
  const normalize=value=>String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[‘’]/g,"'").replace(/[–—]/g,'-').toLowerCase().replace(/\s+/g,' ').trim();
  const words=value=>normalize(value).replace(/["“”]/g,'').split(/\s+/).filter(Boolean);
  function baseURL(value){const base=String(value||'').replace(/\/$/,''),u=new URL(base);if(u.protocol!=='https:'||u.username||u.password||u.search||u.hash||u.href.replace(/\/$/,'')!==base||u.pathname.split('/').some(p=>p==='.'||p==='..'))throw new Error('Invalid discovery origin');return base;}
@@ -13,7 +13,9 @@
    if(!r||typeof r.id!=='string'||ids.has(r.id)||!KINDS.has(r.kind)||!r.id.startsWith(r.kind+':')||typeof r.title!=='string'||typeof r.url!=='string'||typeof r.summary!=='string'||!Array.isArray(r.aliases)||!r.aliases.every(v=>typeof v==='string')||!Array.isArray(r.identifiers)||!r.identifiers.every(v=>typeof v==='string')||!Array.isArray(r.relationships)||!Array.isArray(r.sources))throw new Error('Invalid research record');
    const url=new URL(r.url);if(url.username||url.password||url.search||url.protocol!=='https:')throw new Error('Invalid research destination');
    if(r.kind==='website'){if(url.origin!=='https://www.museumofone.art'||url.hash||!/^website:[a-f0-9]{24}$/.test(r.id))throw new Error('Invalid public website destination');}
-   else if(!r.url.startsWith(origin+'/')||!/^\/(?:[A-Za-z0-9._~-]+\/)*(?:items\/\d+\.html|parts\/\d+-[A-Za-z0-9_-]+\.html|entities\/[A-Za-z0-9_-]+\.html|read\/\d+\.html|vocabulary\.html|programmes\.html)$/.test(url.pathname))throw new Error('Invalid research destination');
+   else if(!r.url.startsWith(origin+'/')||!/^\/(?:[A-Za-z0-9._~-]+\/)*(?:items\/\d+\.html|parts\/\d+-[A-Za-z0-9_-]+\.html|entities\/[A-Za-z0-9_-]+\.html|(?:evidence|dossiers)\/[A-Za-z0-9_-]+\.html|read\/\d+\.html|vocabulary\.html|programmes\.html)$/.test(url.pathname))throw new Error('Invalid research destination');
+   for(const field of ['material_type','period','transcription_status','source_layer','record_level'])if(r[field]!==undefined&&typeof r[field]!=='string')throw new Error('Invalid evidence facet');
+   if(r.languages!==undefined&&(!Array.isArray(r.languages)||!r.languages.every(v=>typeof v==='string')))throw new Error('Invalid evidence languages');
    if(r.reader_url&&(typeof r.reader_url!=='string'||!r.reader_url.startsWith(origin+'/read/')||!/^\d+\.html#page=[1-9][0-9]*$/.test(r.reader_url.slice((origin+'/read/').length))))throw new Error('Invalid reader destination');
    if(r.kind==='passage'&&typeof r.text!=='string')throw new Error('Missing source passage');
    if(r.kind!=='passage'&&typeof r.search_text!=='string')throw new Error('Missing discovery text');
@@ -24,7 +26,7 @@
   }
   return payload;
  }
- function matches(record,filters={}){const passageMatches=filters.includePassages===true&&record.kind==='passage'&&((filters.kind==='publication'&&record.parent_id?.startsWith('publication:'))||(filters.kind==='chapter'&&record.chapter_id?.startsWith('chapter:')));return(!filters.kind||record.kind===filters.kind||passageMatches)&&(!filters.collection||record.collection===filters.collection)&&(!filters.year||String(record.date||'').slice(0,4)===filters.year)&&(!filters.subject||(record.subjects||[]).includes(filters.subject));}
+ function matches(record,filters={}){const passageMatches=filters.includePassages===true&&record.kind==='passage'&&((filters.kind==='publication'&&record.parent_id?.startsWith('publication:'))||(filters.kind==='chapter'&&record.chapter_id?.startsWith('chapter:')));return(!filters.kind||record.kind===filters.kind||passageMatches)&&(!filters.collection||record.collection===filters.collection)&&(!filters.year||String(record.date||'').slice(0,4)===filters.year)&&(!filters.subject||(record.subjects||[]).includes(filters.subject))&&['material_type','period','transcription_status','source_layer'].every(k=>!filters[k]||record[k]===filters[k])&&(!filters.languages||(record.languages||[]).includes(filters.languages));}
  function resultURL(value,{origin,pageURL,localResults=false}={}){
   const canonical=String(value||'');if(!localResults)return canonical;
   const base=baseURL(origin);if(!canonical.startsWith(base+'/'))return canonical;
@@ -50,6 +52,7 @@
     else if(terms.every(t=>title.includes(t))){score=800;reason='All search terms in title or name';}
     else if(aliases.some(a=>terms.every(t=>a.includes(t)))){score=700;reason='Alternative name matches';}
     else if(summary.includes(phrase)){score=500;reason='Description matches';}
+    else if(record.record_level==='Page'&&record.text){score=350;reason='Released page text · '+(record.transcription_status||'Check reading status');}
     else if(record.kind==='passage'){score=300+(text.includes(phrase)?100:0);reason='Source text · PDF page '+record.page;}
     else{score=200;reason='Subjects, identifiers or connected record metadata match';}
     score+=terms.filter(t=>title.includes(t)).length*4;
@@ -78,7 +81,7 @@
   if(!form||!results||!status||!container.dataset.indexSnapshot)return;
   const doc=container.ownerDocument,input=form.elements.namedItem('q'),kind=form.elements.namedItem('kind'),fulltext=form.elements.namedItem('fulltext');if(!input)return;
   container.dataset.researchDiscoveryMounted='true';let payload,passages,passagesPromise,passageFailure=false,shown=30;
-  const params=new URLSearchParams(doc.location.search);if(params.has('q'))input.value=params.get('q');if(kind&&params.has('kind'))kind.value=params.get('kind');if(fulltext&&params.has('fulltext'))fulltext.checked=params.get('fulltext')==='1';
+  const params=new URLSearchParams(doc.location.search);if(params.has('q'))input.value=params.get('q');['kind','collection','year','subject','material_type','period','languages','transcription_status','source_layer'].forEach(k=>{const control=form.elements.namedItem(k);if(control&&params.has(k))control.value=params.get(k);});if(fulltext&&params.has('fulltext'))fulltext.checked=params.get('fulltext')==='1';
   const el=(tag,cls,text)=>{const node=doc.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node;};
   const destination=value=>resultURL(value,{origin:container.dataset.archiveOrigin||'https://archive.museumofone.art',pageURL:doc.location.href,localResults:container.dataset.localResults==='true'});
   const passageType=()=>!kind?.value||['publication','chapter','passage'].includes(kind.value);
@@ -87,13 +90,14 @@
   syncPassageControls();
   function render(){
    if(!payload)return;
-   const filters={};['kind','collection','year','subject'].forEach(k=>{filters[k]=form.elements.namedItem(k)?.value||'';});
+   const filters={};['kind','collection','year','subject','material_type','period','languages','transcription_status','source_layer'].forEach(k=>{filters[k]=form.elements.namedItem(k)?.value||'';});
    if(container.dataset.searchOnly==='true'&&!normalize(input.value)&&!Object.values(filters).some(Boolean)){results.replaceChildren();status.textContent='Search a title, name, concept or identifier across the archive.';if(more)more.hidden=true;return;}
    filters.includePassages=wantsPassages();
    let pool=payload.records;if(wantsPassages()&&passages)pool=mergeIndexes([pool,passages]);
    const found=rankRecords(pool,input.value,filters);results.replaceChildren();
    found.slice(0,shown).forEach(record=>{
-    const item=el('li','discovery-result'),label=el('p','discovery-result-kind',record.kind==='entity'?(record.entity_type||'Entity'):record.kind),heading=el('h3'),link=el('a',null,record.title);link.href=destination(record.url);heading.append(link);item.append(label,heading,el('p','discovery-match-reason',record.match_reason));
+    const item=el('li','discovery-result'),label=el('p','discovery-result-kind',record.kind==='entity'?(record.entity_type||'Entity'):(record.record_level||record.kind)),heading=el('h3'),link=el('a',null,record.title);link.href=destination(record.url);heading.append(link);item.append(label,heading,el('p','discovery-match-reason',record.match_reason));
+    if(record.source_layer)item.append(el('p','discovery-evidence','Source layer: '+(record.source_layer_label||{"research-document":"Published research document","institutional-metadata":"Institutional source metadata","primary-source":"Original archival source"}[record.source_layer]||record.source_layer)+(record.material_type?' · '+record.material_type:'')));
     if(record.summary)item.append(el('p','discovery-summary',record.summary));
     if(record.snippet)item.append(el('blockquote','discovery-snippet',record.snippet));
     if(record.reader_url){const read=el('a','discovery-reader','Read this chapter · PDF page '+record.pdf_start);read.href=destination(record.reader_url);item.append(read);}
@@ -103,7 +107,7 @@
    });
    status.textContent=found.length+' '+(found.length===1?'result':'results')+(found.length>shown?' · Showing '+shown+'.':'')+(wantsPassages()&&!passages?(passageFailure?' Passage search could not load; described records remain searchable.':' Loading source passages…'):'')+(fulltext?.checked&&!passageType()?' Source passages are outside this record type. Choose All records, Publications, Chapters or Source passages to search them.':'')+(!found.length?' Try a title, name, identifier or fewer words.':'');
    if(more)more.hidden=found.length<=shown;
-   if(container.dataset.syncUrl==='true'){const next=new URLSearchParams();if(input.value)next.set('q',input.value);if(kind?.value)next.set('kind',kind.value);if(fulltext?.checked)next.set('fulltext','1');doc.defaultView.history.replaceState(null,'',doc.location.pathname+(next.size?'?'+next:''));}
+   if(container.dataset.syncUrl==='true'){const next=new URLSearchParams();if(input.value)next.set('q',input.value);Object.entries(filters).forEach(([k,v])=>{if(k!=='includePassages'&&v)next.set(k,v);});if(fulltext?.checked)next.set('fulltext','1');doc.defaultView.history.replaceState(null,'',doc.location.pathname+(next.size?'?'+next:''));}
   }
   function loadPassages(){
    if(!wantsPassages()||passages||passagesPromise||!container.dataset.passagesUrl)return;

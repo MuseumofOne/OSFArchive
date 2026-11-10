@@ -18,6 +18,7 @@ from descriptions import repository_description_html
 from relationship_assertions import relation_register, typed_entity_relationship_assertions
 from quality_page import collect_graphs, build_quality_page
 from citations import build_citation_model, visible_citation, csl_json, bibtex, ris, scholar_meta
+from evidence import load_evidence, build_evidence_pages, copy_evidence_assets
 from discovery_v2 import build_research_discovery, build_fulltext_index, build_discovery_page, encode_index
 from wdw_sources import build_wdw_sources, source_collection_link
 from pathlib import Path
@@ -69,7 +70,7 @@ def href(path,base):return base+path
 def header(base,active=''):
  return f'''<a class="skip" href="#main">Skip to content</a><div class="shell"><div class="utility"><a href="https://www.museumofone.art/">Museum of One / Research, criticism & preservation ↗</a><span>A source-linked digital catalogue · Selected works</span></div><header class="header"><a class="brand" href="{base}index.html"><img class="brand-seal" src="{base}assets/institution-seal.webp" alt="" loading="lazy"><span><strong>Museum of One</strong><small>Digital Archive Library</small></span></a><nav class="nav" aria-label="Main navigation">'''+''.join(f'<a href="{base}{p}"'+(' aria-current="page"' if active==key else '')+f'>{label}</a>' for key,p,label in [('discovery','research-discovery.html','Discover'),('catalogue','catalogue.html','Catalogue'),('collections','collections.html','Collections'),('programmes','programmes.html','Research'),('about','about.html','About the archive')])+f'<a class="nav-search" href="{base}research-discovery.html">{SEARCH_ICON}<span>Search</span></a></nav></header></div>'
 def footer(base):
- return f'''<div class="shell"><footer class="footer"><div class="footer-main"><div><h2>Museum of One</h2><p>An archival reading room for published work in aesthetics, art criticism, and the ethics of witnessing.</p></div><div class="footer-links"><div><a href="{base}catalogue.html">Browse the catalogue</a><a href="{base}collections.html">Explore collections</a><a href="{base}programmes.html">Research programmes</a><a href="{base}subjects.html">Subject index</a><a href="{base}about.html">About & metadata policy</a></div><div><a href="https://www.museumofone.art/">Museum of One ↗</a><a href="{base}sources.html">Sources & authority records</a><a href="{base}metadata-quality.html">Catalogue quality</a><a href="{base}website-records.html">Website captures</a><a href="{base}metadata/catalogue.json" download>Download catalogue JSON ↓</a></div></div></div><div class="footer-bottom"><span>© Museum of One · Individual works retain their own rights.</span><span>Selected catalogue · Source review {TODAY} · Persistent catalogue records</span></div></footer></div>'''
+ return f'''<div class="shell"><footer class="footer"><div class="footer-main"><div><h2>Museum of One</h2><p>An archival reading room for published work in aesthetics, art criticism, and the ethics of witnessing.</p></div><div class="footer-links"><div><a href="{base}catalogue.html">Browse the catalogue</a><a href="{base}collections.html">Explore collections</a><a href="{base}programmes.html">Research programmes</a><a href="{base}subjects.html">Subject index</a><a href="{base}about.html">About & metadata policy</a></div><div><a href="https://www.museumofone.art/">Museum of One ↗</a><a href="{base}sources.html">Sources & authority records</a><a href="{base}evidence.html">Evidence records</a><a href="{base}metadata-quality.html">Catalogue quality</a><a href="{base}website-records.html">Website captures</a><a href="{base}metadata/catalogue.json" download>Download catalogue JSON ↓</a></div></div></div><div class="footer-bottom"><span>© Museum of One · Individual works retain their own rights.</span><span>Selected catalogue · Source-review dates in each record</span></div></footer></div>'''
 def description_excerpt(value, limit):
  text=' '.join(str(value).split())
  if len(text)<=limit:return text
@@ -162,7 +163,7 @@ for r in RECORDS:
  meta+=field('Language',E(r.get('language') or 'Not supplied'))
  if r.get('orcid'):meta+=field('Creator identifier',f'<a href="https://orcid.org/{E(r["orcid"].replace("https://orcid.org/",""))}">ORCID {E(r["orcid"].replace("https://orcid.org/",""))} ↗</a>')
  meta+=field('Record status',E(r.get('record_status')))
- meta+=field('Source review',TODAY,'Static source snapshot; no live repository synchronization.')
+ meta+=field('Source review',r.get('source_review') or TODAY,'Dated source snapshot for this record; website captures reconcile separately.')
  body=repository_description_html(r)+f'<section class="item-section" id="bibliographic-record"><h2>Bibliographic record</h2><dl class="metadata">{meta}</dl></section>'
  body+='<section class="item-section" id="research-context"><h2>Research context</h2>'
  if programmes_for(r):
@@ -171,6 +172,8 @@ for r in RECORDS:
    body+=f'<p><strong>{E(prog["title"])}</strong><br>{E(prog.get("relation_label") or prog.get("relation") or "Related research")}. <a href="{E(prog["url"])}">View programme on Museum of One ↗</a></p>'
  else:body+='<p>No work-specific programme badge was verified for this item in the reviewed source. Explore the institutional directory for the wider research context.</p>'
  body+='<div class="institution-links"><a href="https://www.museumofone.art/research-programmes/">Research programmes ↗</a><a href="https://www.museumofone.art/publications/">Publication register ↗</a><a href="https://www.museumofone.art/the-journal-of-post-interpretive-criticism/">The Journal ↗</a></div></section>'
+ if r.get('methodology'):
+  body+='<section class="item-section" id="methodology"><h2>Methodology</h2><p><a class="pill" href="'+E(r['methodology']['url'])+'">'+E(r['methodology']['badge'])+'</a></p><p><a href="../evidence.html">Published RAI pages and source records ↗</a></p></section>'
  body+='<section class="item-section"><h2>Subjects & discovery</h2><span class="source-label">Editorial subjects · Local discovery vocabulary</span>'+''.join(f'<a class="pill" href="../catalogue.html?subject={urllib.parse.quote(s)}">{E(s)}</a>' for s in r['subjects'])
  if r.get('keywords'):body+='<h3>Repository keywords</h3><p>'+E(' · '.join(r['keywords']))+'</p>'
  body+='</section>'
@@ -294,7 +297,10 @@ SYNC_WORK=Path(os.environ.get('WEBSITE_SYNC_DIR') or ROOT/'.sync-work')
 from website_pages import build_website_pages
 paths+=build_website_pages(SYNC_WORK,OUT,write,layout,ORIGIN)
 GHOST_DISCOVERY=json.loads((SYNC_WORK/'public/discovery.json').read_text())['records'] if (SYNC_WORK/'public/discovery.json').exists() else []
-DISCOVERY_V2=build_research_discovery(RECORDS,ENTITIES,VOCABULARY,PROGRAMMES,ORIGIN,root=ROOT,ghost_records=GHOST_DISCOVERY)
+EVIDENCE=load_evidence(ROOT,ORIGIN)
+copy_evidence_assets(EVIDENCE,ROOT,OUT)
+paths+=build_evidence_pages(EVIDENCE,write,layout,ORIGIN)
+DISCOVERY_V2=build_research_discovery(RECORDS,ENTITIES,VOCABULARY,PROGRAMMES,ORIGIN,root=ROOT,ghost_records=GHOST_DISCOVERY,evidence_payload=EVIDENCE)
 PASSAGES_V2=build_fulltext_index(RECORDS,ROOT,ORIGIN)
 write('metadata/research-discovery.v2.json',encode_index(DISCOVERY_V2))
 write('metadata/research-passages.v2.json',encode_index(PASSAGES_V2))

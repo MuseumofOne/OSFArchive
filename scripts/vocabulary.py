@@ -90,7 +90,7 @@ def vocabulary_graph(vocab, origin):
             'dct:identifier': term['persistent_id'],
             'skos:inScheme': {'@id': scheme_uri},
             'skos:prefLabel': {'@value': term['preferred_label'], '@language': 'en'},
-            'skos:altLabel': [{'@value': label, '@language': 'en'} for label in term['alternative_labels']],
+            'skos:altLabel': [{'@value': label, '@language': term.get('alternative_label_languages',{}).get(label,'en')} for label in term['alternative_labels']],
             'skos:definition': {'@value': term['definition'], '@language': 'en'},
             'skos:scopeNote': {'@value': term['scope_note'], '@language': 'en'},
             'skos:editorialNote': term['mapping_note'],

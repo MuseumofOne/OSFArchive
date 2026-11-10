@@ -98,3 +98,12 @@ test('localhost preview retains the staged feed without replacing it from produc
  await api.loadIndexes({origin,pageURL:'http://127.0.0.1:8846/research-discovery.html',snapshot:'/metadata/research-discovery.v2.json'},()=>{},async u=>{calls.push(u);return response(fixture());});
  assert.deepEqual(calls,['http://127.0.0.1:8846/metadata/research-discovery.v2.json']);
 });
+
+test('evidence facets combine without hiding the distinction between source and research',()=>{
+ const feed=load('dist/metadata/research-discovery.v2.json');api.validateIndex(feed,origin);
+ const results=api.rankRecords(feed.records,'Park',{kind:'evidence',source_layer:'research-document',material_type:'published-paper',languages:'ko'});
+ assert.ok(results.length>=1);assert.ok(results.every(r=>r.source_layer==='research-document'&&r.languages.includes('ko')));
+ const sources=api.rankRecords(feed.records,'1974',{kind:'evidence',source_layer:'institutional-source',transcription_status:'not-reproduced'});
+ assert.ok(sources.some(r=>r.id==='evidence:mmca-2016-report-entry-76'));
+ for(const field of ['material_type','period','source_layer']){const bad=structuredClone(feed);bad.records[0][field]={value:'invalid'};assert.throws(()=>api.validateIndex(bad,origin));}
+});

@@ -1,0 +1,899 @@
+{
+  "schema": 1,
+  "collections": [
+    {
+      "id": "rai-published-research",
+      "title": "Published RAI research: Korean art comparisons",
+      "holdingInstitution": "Museum of One",
+      "introduction": "Published research documents and linked institutional source descriptions for the Park Suk-won chronology comparison. The page images reproduce Dorian Vale’s published analysis; they are not original institutional manuscripts or artwork photographs.",
+      "scope": "A selected documentary dossier from the published RAI main paper and Supplement 1, with source locators for the institutional descriptions on which the comparison depends.",
+      "selection": "Main paper PDF file page 9 and Supplement 1 PDF file pages 4 and 6. Full selected pages are retained; adjacent published text remains visible.",
+      "omissions": "The other pages of the published editions remain available through their DOI and complete PDFs. No unpublished manuscripts, private research files, institutional images or correspondence are reproduced.",
+      "arrangement": "Publication → original PDF file page. Printed page numbers are also retained. Dossier references connect descriptions, assertions and qualified findings without making the published research documents independent institutional witnesses.",
+      "relatedResearch": [
+        {
+          "title": "Relational Archival Investigation — methodology",
+          "url": "https://www.museumofone.art/relational-archival-investigation/"
+        }
+      ],
+      "publication": {
+        "approved": true,
+        "approvedBy": "Museum of One account holder — explicit instruction to use published pages and source links",
+        "approvedAt": "2026-11-10",
+        "privacyReviewed": true
+      }
+    }
+  ],
+  "documents": [
+    {
+      "id": "rai-main-paper-v1",
+      "collectionId": "rai-published-research",
+      "title": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+      "creator": "Dorian Vale",
+      "date": "9 November 2026 · version 1.0",
+      "documentType": "Published research document — selected pages",
+      "holdingInstitution": "Museum of One",
+      "reference": "10.5281/zenodo.24088563",
+      "sourceUrl": "https://www.museumofone.art/content/files/2026/11/01_RAI_Main_Paper_Dorian_Vale.pdf",
+      "description": "The published main paper distinguishes the supported 1972/1974 documentary difference from an unwarranted transfer of a separately numbered 1973 work into the same individual chronology. This is Dorian Vale’s research argument, not an institutional record or independent verification of the correct production year.",
+      "coverage": "Selected PDF file page 9 of 16 (printed page 8), section 6: Park Suk-won: a genuine pair and an unwarranted third date.",
+      "firstReleased": "2026-11-10",
+      "revisions": [
+        {
+          "date": "2026-11-10",
+          "by": "Museum of One",
+          "description": "First public dossier selection from the already published version 1.0 PDF. Original page images, PDF page numbers and publication identity retained; no change to the deposited edition."
+        }
+      ],
+      "rights": {
+        "metadataApproved": true,
+        "imagesApproved": true,
+        "transcriptionApproved": true,
+        "translationApproved": false,
+        "commentaryApproved": false,
+        "credit": "© 2026 Dorian Vale · Museum of One. In Copyright.",
+        "statement": "Author-owned published research pages reproduced under the account holder’s explicit publication instruction. Existing copyright is preserved. Third-party passages retain their attributed sources; this permission does not authorize redistribution of institutional images, manuscripts or private correspondence."
+      },
+      "pages": [
+        {
+          "id": "pdf-page-09",
+          "label": "PDF page 9 · printed page 8",
+          "locator": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art, version 1.0, PDF file page 9 of 16; printed page 8.",
+          "image": {
+            "src": "/assets/rai-archive/rai-main-paper-v1-p09.png",
+            "alt": "Unaltered rendered page from Dorian Vale’s published RAI research: PDF file page 9, printed page 8.",
+            "width": 1323,
+            "height": 1871,
+            "sha256": "7ade98d313ce7806790d1e3bdadf154942590f3f37ecaaa755d95222c22f0c00",
+            "privacyReviewed": true,
+            "metadataReviewed": true
+          },
+          "transcription": {
+            "text": "RELATIONAL ARCHIVAL INVESTIGATION\nMUSEUM OF ONE\nRelational Archival Investigation · Research paper\n8\nThese cases matter to the procedure because they prevent the inquiry from equating productivity \nwith discrepancy. The same comparison can establish compatible dates, distinguish presentations, \nretain a material question, or identify a production-year difference. An adequate account reports \nwhat each relation supports rather than counting every difference as a discovery.\n6. Park Suk-won: a genuine pair and an unwarranted third date\nThe Jeok–Eungnyeok case yields a different result. Acquisition entry 76 gives 1974; collection \nrecord 7925 gives 1972 and identifies remaking of the wooden elements in 2016. The record also \nassociates the work with the First Seoul Biennale in 1974. Artist, Korean title, cloth-and-wood \nmaterials, cloth dimensions of 332 × 358 cm, and four closely corresponding wooden elements \nsupport comparison of the descriptions as accounts of one work (MMCA, 2016 Annual Report, 40; \nrecord 7925).\nThe final dimension of the fourth wooden element differs by 0.1 cm, and the variation is retained. \nA small measurement difference alone does not outweigh the conjunction of identifying details, but \nneither is it silently normalized. An accession cross-reference would strengthen the identification; \nevidence of separately identified realizations could alter its scope. The claim concerns the \ndescribed work and its acknowledged remaking, not unchanged materials throughout its history.\nSeparating the 2016 intervention leaves the leading 1972/1974 contrast intact. The public \ncomparison establishes different production-year assignments. It does not determine which year is \nhistorically correct, whether one published description directly replaced another, or why either year \nwas assigned. An exhibition-associated convention, a correction, or different information available \nto the compilers remain possible explanations.\nThe historical stake is specific. MMCA describes wooden elements surrounding a cloth surface \nwith painted shadows, producing an implausible relation between the objects and their \nrepresentations. A 1972 production date would place this arrangement two years before its reported \nSeoul exhibition; 1974 would locate production within the exhibition year. The question is whether \nthe exhibition presented an existing experiment or a more recently made work. The artist’s \ndocumented Myeongdong Gallery exhibition in 1974 identifies another body of contemporary \nmaterial worth examining, but its existence does not establish that this installation appeared there \n(Arts Council Korea, artist record 1172).\nThe same institutional artist record lists Jeok–Eungnyeok 2, dated 1973, in wood and measuring \n240 × 40 × 25 cm. The numbered title, materials, and dimensions do not identify MMCA’s cloth-\nand-four-wood arrangement. Adding 1973 to the paired dates would therefore turn a plausible \nrelation among works into an unsupported identity of one work.\nThat exclusion is one of the investigation’s completed judgments. The 1973 record is relevant to \nthe artist’s practice, but it does not supply a third production year for the MMCA installation. The \nestablished date difference and the rejected third-date extension have different grounds. One \nremains historically open because the needed explanation is missing; the other is withheld because \nthe evidence does not establish the proposed individual identity.\nFurther documentation could revise either judgment. A contemporary photograph could support an \nearlier production date. An accession file could identify the basis of the museum’s assignment. A \nsource linking the separately titled work to the installation could explain their relationship. Each \nwould answer a particular question. None should be made to settle all aspects of the case merely \nbecause it concerns the same artist or series.\n",
+            "by": "PDF text extraction, checked against the rendered published page",
+            "date": "2026-11-10",
+            "status": "Reviewed extraction; original language retained",
+            "note": "This is an extracted text layer of the published research page, not a new transcription of an institutional manuscript. Line breaks and text-layer ordering may differ from the visual page. No new translation has been supplied.",
+            "passages": [
+              {
+                "id": "p09-passage-1",
+                "label": "Separating the 2016 intervention",
+                "text": "Separating the 2016 intervention leaves the leading 1972/1974 contrast intact. The public comparison establishes different production-year assignments. It does not determine which year is historically correct, whether one published description directly replaced another, or why either year was assigned. An exhibition-associated convention, a correction, or different information available to the compilers remain possible explanations.",
+                "bbox": [
+                  0.114479,
+                  0.393168,
+                  0.772925,
+                  0.08734
+                ],
+                "uncertainty": ""
+              },
+              {
+                "id": "p09-passage-2",
+                "label": "The same institutional artist record lists",
+                "text": "The same institutional artist record lists Jeok–Eungnyeok 2, dated 1973, in wood and measuring 240 × 40 × 25 cm. The numbered title, materials, and dimensions do not identify MMCA’s cloth- and-four-wood arrangement. Adding 1973 to the paired dates would therefore turn a plausible relation among works into an unsupported identity of one work.",
+                "bbox": [
+                  0.114479,
+                  0.642132,
+                  0.75216,
+                  0.069285
+                ],
+                "uncertainty": ""
+              }
+            ],
+            "kind": "extracted-text"
+          },
+          "translation": null,
+          "commentary": null,
+          "recordUrl": "https://archive.museumofone.art/evidence/rai-main-paper-v1.html?page=pdf-page-09#pdf-page-09"
+        }
+      ],
+      "relatedResearch": [
+        {
+          "title": "Published reading page",
+          "url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/"
+        },
+        {
+          "title": "Version 1.0 DOI",
+          "url": "https://doi.org/10.5281/zenodo.24088563"
+        },
+        {
+          "title": "RAI methodology",
+          "url": "https://www.museumofone.art/relational-archival-investigation/"
+        }
+      ],
+      "publication": {
+        "approved": true,
+        "approvedBy": "Museum of One account holder — explicit instruction to use published pages and source links",
+        "approvedAt": "2026-11-10",
+        "privacyReviewed": true
+      },
+      "seriesId": "rai-korean-art-comparisons",
+      "sourceLayer": "research-document",
+      "materialType": "published-paper",
+      "period": "2026",
+      "language": [
+        "en",
+        "ko"
+      ],
+      "transcriptionStatus": "reviewed-pdf-text",
+      "recordUrl": "https://archive.museumofone.art/evidence/rai-main-paper-v1.html",
+      "provenance": {
+        "publicationDate": "2026-11-09",
+        "version": "1.0",
+        "authorORCID": "https://orcid.org/0009-0004-7737-5094",
+        "sourceFileSHA256": "44df66915879ff3ee3127b17d98d960baf47d9d71685a1c0c3c89b2a1c4e6661",
+        "sourceFileMD5": "0147a4299fc5404e2762d3ceb23d4cc1",
+        "rendering": "Entire selected PDF page rendered at 160 DPI with no crop, retouching or colour alteration.",
+        "releaseBasis": "User explicitly instructed: Use my published pages and source links for now."
+      },
+      "sourceLayerLabel": "Published research document",
+      "dossierIds": [
+        "park-suk-won-chronology"
+      ],
+      "publicationId": "24088563"
+    },
+    {
+      "id": "rai-documentary-supplement-v1",
+      "collectionId": "rai-published-research",
+      "title": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+      "creator": "Dorian Vale",
+      "date": "9 November 2026 · version 1.0",
+      "documentType": "Published research document — selected pages",
+      "holdingInstitution": "Museum of One",
+      "reference": "10.5281/zenodo.24088574",
+      "sourceUrl": "https://www.museumofone.art/content/files/2026/11/02_RAI_Documentary_Supplement_Dorian_Vale.pdf",
+      "description": "The published supplement records the matched descriptive features, preserved differences, open explanations and rejection of a third-date extension. These selected pages document the author’s reasoning; source quotations remain attributed to the institutions cited in the publication.",
+      "coverage": "Selected PDF file pages 4 and 6 of 11 (printed pages 3 and 5). The complete published PDF retains the continuation of section C.3.",
+      "firstReleased": "2026-11-10",
+      "revisions": [
+        {
+          "date": "2026-11-10",
+          "by": "Museum of One",
+          "description": "First public dossier selection from the already published version 1.0 PDF. Original page images, PDF page numbers and publication identity retained; no change to the deposited edition."
+        }
+      ],
+      "rights": {
+        "metadataApproved": true,
+        "imagesApproved": true,
+        "transcriptionApproved": true,
+        "translationApproved": false,
+        "commentaryApproved": false,
+        "credit": "© 2026 Dorian Vale · Museum of One. In Copyright.",
+        "statement": "Author-owned published research pages reproduced under the account holder’s explicit publication instruction. Existing copyright is preserved. Third-party passages retain their attributed sources; this permission does not authorize redistribution of institutional images, manuscripts or private correspondence."
+      },
+      "pages": [
+        {
+          "id": "pdf-page-04",
+          "label": "PDF page 4 · printed page 3",
+          "locator": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation, version 1.0, PDF file page 4 of 11; printed page 3.",
+          "image": {
+            "src": "/assets/rai-archive/rai-documentary-supplement-v1-p04.png",
+            "alt": "Unaltered rendered page from Dorian Vale’s published RAI research: PDF file page 4, printed page 3.",
+            "width": 1323,
+            "height": 1871,
+            "sha256": "a45b26e536e132b5e3f3982913a7e8b7f48de94c0dc14ab5feb7d311af16408c",
+            "privacyReviewed": true,
+            "metadataReviewed": true
+          },
+          "transcription": {
+            "text": "RAI · DOCUMENTARY EVIDENCE\nMUSEUM OF ONE\nRelational Archival Investigation · Supplement 1\n3\nEvidence that could extend the account. Dated installation photographs, original negatives, or a \nmaterial history could specify how the exhibited ensemble relates to the action and its later \nrealization. Such evidence would enlarge the account of particular components rather than \nautomatically alter the leading year.\nB.4. C-75 — Lee Kang-so, Painting–78–1\nSources. S-M01, entry 75; S-M75, web record 7924, management number 07911. Korean title: \n“페인팅-78-1.” Additional source S-T01 is the published conversation dated 14 October 2018 (Lee \n2018).\nRelevant statements. The report gives 1978 for a silent, single-channel colour video lasting 29 \nminutes 25 seconds. The collection entry gives 1977 and 30 minutes, associating its first \npresentation with the fourth Daegu Contemporary Art Festival in 1978.\nIdentification. Artist, distinctive title, medium, and the description of painting on glass before a \ncamera support the match. The differing durations are retained. They do not establish whether one \nentry is rounded or whether different transfers are described.\nTestimonial explanation. S-T01 identifies production in 1977 and presentation in 1978. The \nrelevant exchange begins with Cho Su-jin’s question about painting on a monitor screen; Lee \ndistinguishes the two dates and calls for correction of confusion in the record. The conversation is \ndated internally to 14 October 2018. A “2021” designation in the hosted filename is not substituted \nfor the conversation date.\nJudgment. An attributed production–presentation chronology is supported. The reason for the \nannual report’s assignment and the history of an institutional amendment remain separate \nquestions. Artist recollection is not treated as an acquisition-file record. The duration question \nremains unadjudicated because the recordings were not timed or compared.\nB.5. C-76 — Park Suk-won, Jeok–Eungnyeok\nSources. S-M01, entry 76; S-M76, web record 7925, management number 07912. Korean title: \n“적-응력.”\nRelevant statements. The report assigns 1974 in the production-year column. The collection date \nreads “1972(나무: 2016 재제작),” identifying 1972 and remaking of the wood in 2016. Its \nnarrative associates the work with the First Seoul Biennale in 1974.\nIdentification. The artist, Korean title, oil-on-cloth and wood, cloth dimensions of 332 × 358 cm, \nand four wooden elements provide substantial descriptive correspondence. No common \nmanagement number is printed in both witnesses. The comparison identifies the described work \nrather than certifying the uninterrupted identity of every material component.\nMeasurements. The report gives wooden elements of 64 × 25 × 26; 65.5 × 25.5 × 27; 61.5 × 25.4 \n× 25.4; and 63.5 × 25 × 25.1 cm. The collection entry gives the same cloth and first three \ncomponent measurements, with 63.5 × 25 × 25 cm for the last. The 0.1 cm difference is preserved.\nJudgment. The leading production-year assignments differ after remaking has been distinguished. \nThe identification is supported at the work-description level. Neither source establishes the correct \nproduction year independently, the cause of the difference, or the date of a catalogue amendment. \nSection C records the alternatives.\n",
+            "by": "PDF text extraction, checked against the rendered published page",
+            "date": "2026-11-10",
+            "status": "Reviewed extraction; original language retained",
+            "note": "This is an extracted text layer of the published research page, not a new transcription of an institutional manuscript. Line breaks and text-layer ordering may differ from the visual page. No new translation has been supplied.",
+            "passages": [
+              {
+                "id": "p04-passage-1",
+                "label": "Relevant statements. The report assigns 1974",
+                "text": "Relevant statements. The report assigns 1974 in the production-year column. The collection date reads “1972(나무: 2016 재제작),” identifying 1972 and remaking of the wood in 2016. Its narrative associates the work with the First Seoul Biennale in 1974.",
+                "bbox": [
+                  0.114479,
+                  0.622771,
+                  0.756824,
+                  0.059842
+                ],
+                "uncertainty": ""
+              }
+            ],
+            "kind": "extracted-text"
+          },
+          "translation": null,
+          "commentary": null,
+          "recordUrl": "https://archive.museumofone.art/evidence/rai-documentary-supplement-v1.html?page=pdf-page-04#pdf-page-04"
+        },
+        {
+          "id": "pdf-page-06",
+          "label": "PDF page 6 · printed page 5",
+          "locator": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation, version 1.0, PDF file page 6 of 11; printed page 5.",
+          "image": {
+            "src": "/assets/rai-archive/rai-documentary-supplement-v1-p06.png",
+            "alt": "Unaltered rendered page from Dorian Vale’s published RAI research: PDF file page 6, printed page 5.",
+            "width": 1323,
+            "height": 1871,
+            "sha256": "c30b31bfcbf59aa7cbb9ba68fcbae1f6f0f93ab63e44e6a3718f81a727a0587c",
+            "privacyReviewed": true,
+            "metadataReviewed": true
+          },
+          "transcription": {
+            "text": "RAI · DOCUMENTARY EVIDENCE\nMUSEUM OF ONE\nRelational Archival Investigation · Supplement 1\n5\nC. The Jeok–Eungnyeok inquiry\nC.1. A comparison that remains warranted\nJ-P01 — identification. Retain the pairing in C-76 as a supported comparison of descriptions of \none work. Its grounds are the conjunction of artist, title, material arrangement, and dimensions. The \nremaking statement limits what the identification says about physical continuity.\nJ-P02 — documentary difference. Retain 1974 and 1972 as different leading production-year \nassignments. The separate 2016 date explains the later materials but leaves that contrast intact. The \nresult concerns the published descriptions, not yet the historical truth of either production year.\nHistorical consequence. A 1972 production date places the installation two years before its \nreported 1974 Seoul presentation. A 1974 date places production in the exhibition year. This is a \nconditional difference in the work’s chronology. No subsequent critical argument has been shown \nto have changed because of either institutional assignment.\nC.2. Alternative explanations\nH-P01 — different conventions. One description may use an exhibition-associated year and the \nother an earlier production year. The collection narrative supplies a relevant 1974 exhibition. The \nreport’s production-year heading means that an editorial convention or object-specific explanation \nis still required.\nH-P02 — correction. One assignment may correct a mistake. A dated worksheet, annotation, \ncuratorial account, or explicit testimony connecting the assignments would support that \nexplanation. No responsible person or motive is inferred from the differing years.\nH-P03 — different historical information. The compilers may have drawn on different testimony \nor documents. The relevant source and its connection to the assignment would have to be \nestablished. Later consultation is not evidence of better historical knowledge.\nH-P04 — related but distinct realizations. The records may concern differently identified \nrealizations despite their correspondences. That alternative is less persuasive at the level of the \nwork descriptions, but photographs or accession documentation could require reconsideration. The \nsmall measurement variation alone does not establish it.\nJ-P03 — explanation. Retain H-P01–H-P03 as open explanations of the assignments and H-P04 \nas a possible challenge to the scope of identification. The observed difference is not rewritten as a \ndocumented administrative amendment.\nC.3. The separately numbered 1973 work\nS-P03. Arts Council Korea, DA-Arts artist record 1172, work list and exhibition chronology. The \nwork list records “積(적)-응력2,” 1973, wood, 240 × 40 × 25 cm. The chronology also lists a 1974 \nMyeongdong Gallery solo exhibition without identifying the MMCA installation among its \nexhibits.\nJ-P04 — exclusion from the individual chronology. The numbered title, medium, and \ndimensions do not identify MMCA’s cloth-and-four-wood arrangement. The entry is relevant to a \nrelated series or practice, but it does not presently supply a third date for the same individual work.\nEvidence that could alter the account. A source explicitly connecting the 1973 work with the \nMMCA installation could establish a relation between them. That relation would need to be \nspecified before the year was transferred. A Myeongdong checklist or installation photograph could \n",
+            "by": "PDF text extraction, checked against the rendered published page",
+            "date": "2026-11-10",
+            "status": "Reviewed extraction; original language retained",
+            "note": "This is an extracted text layer of the published research page, not a new transcription of an institutional manuscript. Line breaks and text-layer ordering may differ from the visual page. No new translation has been supplied.",
+            "passages": [
+              {
+                "id": "p06-passage-1",
+                "label": "J-P02 — documentary difference",
+                "text": "J-P02 — documentary difference. Retain 1974 and 1972 as different leading production-year assignments. The separate 2016 date explains the later materials but leaves that contrast intact. The result concerns the published descriptions, not yet the historical truth of either production year.",
+                "bbox": [
+                  0.114479,
+                  0.181561,
+                  0.768638,
+                  0.051231
+                ],
+                "uncertainty": ""
+              },
+              {
+                "id": "p06-passage-2",
+                "label": "S-P03. Arts Council Korea",
+                "text": "S-P03. Arts Council Korea, DA-Arts artist record 1172, work list and exhibition chronology. The work list records “積(적)-응력2,” 1973, wood, 240 × 40 × 25 cm. The chronology also lists a 1974 Myeongdong Gallery solo exhibition without identifying the MMCA installation among its exhibits.",
+                "bbox": [
+                  0.114479,
+                  0.715241,
+                  0.76645,
+                  0.077897
+                ],
+                "uncertainty": ""
+              },
+              {
+                "id": "p06-passage-3",
+                "label": "J-P04 — exclusion",
+                "text": "J-P04 — exclusion from the individual chronology. The numbered title, medium, and dimensions do not identify MMCA’s cloth-and-four-wood arrangement. The entry is relevant to a related series or practice, but it does not presently supply a third date for the same individual work.",
+                "bbox": [
+                  0.114479,
+                  0.803198,
+                  0.763442,
+                  0.051231
+                ],
+                "uncertainty": ""
+              }
+            ],
+            "kind": "extracted-text"
+          },
+          "translation": null,
+          "commentary": null,
+          "recordUrl": "https://archive.museumofone.art/evidence/rai-documentary-supplement-v1.html?page=pdf-page-06#pdf-page-06"
+        }
+      ],
+      "relatedResearch": [
+        {
+          "title": "Published reading page",
+          "url": "https://www.museumofone.art/rai-documentary-supplement/"
+        },
+        {
+          "title": "Version 1.0 DOI",
+          "url": "https://doi.org/10.5281/zenodo.24088574"
+        },
+        {
+          "title": "RAI methodology",
+          "url": "https://www.museumofone.art/relational-archival-investigation/"
+        }
+      ],
+      "publication": {
+        "approved": true,
+        "approvedBy": "Museum of One account holder — explicit instruction to use published pages and source links",
+        "approvedAt": "2026-11-10",
+        "privacyReviewed": true
+      },
+      "seriesId": "rai-korean-art-comparisons",
+      "sourceLayer": "research-document",
+      "materialType": "published-paper",
+      "period": "2026",
+      "language": [
+        "en",
+        "ko"
+      ],
+      "transcriptionStatus": "reviewed-pdf-text",
+      "recordUrl": "https://archive.museumofone.art/evidence/rai-documentary-supplement-v1.html",
+      "provenance": {
+        "publicationDate": "2026-11-09",
+        "version": "1.0",
+        "authorORCID": "https://orcid.org/0009-0004-7737-5094",
+        "sourceFileSHA256": "c4358a5f6f736700bfdd298cb4bbaac372b954929723bad4c1eb06bb28c15a46",
+        "sourceFileMD5": "1d066f2c77de147bc382928cf42eca56",
+        "rendering": "Entire selected PDF page rendered at 160 DPI with no crop, retouching or colour alteration.",
+        "releaseBasis": "User explicitly instructed: Use my published pages and source links for now."
+      },
+      "sourceLayerLabel": "Published research document",
+      "dossierIds": [
+        "park-suk-won-chronology"
+      ],
+      "publicationId": "24088574"
+    },
+    {
+      "id": "mmca-2016-report-entry-76",
+      "collectionId": "rai-published-research",
+      "seriesId": "rai-korean-art-comparisons",
+      "title": "MMCA 2016 Annual Report — acquisition entry 76",
+      "creator": "National Museum of Modern and Contemporary Art, Korea",
+      "date": "2016 reporting year; exact publication date not established here",
+      "documentType": "Institutional annual report — external source locator",
+      "holdingInstitution": "National Museum of Modern and Contemporary Art, Korea",
+      "reference": "2016 Annual Report, printed page 40, acquisition entry 76",
+      "sourceUrl": "https://www.mmca.go.kr/upload/artInfo/2017/09/2017092003532066115519.pdf#page=40",
+      "description": "The cited acquisition-list row gives 1974 for Park Suk-won’s 적-응력 and describes oil on cloth and wood. This record links to the institutional PDF; the institutional page image is not reproduced locally.",
+      "coverage": "PDF file page 40 of 372, printed page 40, row 76; production-year column headed 제작연도.",
+      "firstReleased": "2026-11-10",
+      "revisions": [
+        {
+          "date": "2026-11-10",
+          "by": "Museum of One",
+          "description": "First locator-only reference added to the published research dossier. No institutional image released."
+        }
+      ],
+      "rights": {
+        "metadataApproved": true,
+        "imagesApproved": false,
+        "transcriptionApproved": false,
+        "translationApproved": false,
+        "commentaryApproved": false,
+        "credit": "National Museum of Modern and Contemporary Art, Korea. Original source and any images remain with their respective rights holders.",
+        "statement": "Locator, bibliographic description and limited factual field readings only. Original institutional images, complete descriptions and scans are not redistributed. Follow the source link for the institutional record and its reuse terms."
+      },
+      "pages": [
+        {
+          "id": "pdf-page-040-entry-76",
+          "label": "Printed page 40 · entry 76",
+          "locator": "PDF file page 40 of 372, printed page 40, row 76; production-year column headed 제작연도.",
+          "image": null,
+          "transcription": null,
+          "translation": null,
+          "commentary": null,
+          "recordUrl": "https://archive.museumofone.art/evidence/mmca-2016-report-entry-76.html?page=pdf-page-040-entry-76#pdf-page-040-entry-76"
+        }
+      ],
+      "relatedResearch": [
+        {
+          "title": "Published comparison — Supplement 1",
+          "url": "https://www.museumofone.art/rai-documentary-supplement/"
+        },
+        {
+          "title": "Main paper, section 6",
+          "url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/"
+        }
+      ],
+      "publication": {
+        "approved": true,
+        "approvedBy": "Museum of One account holder — explicit instruction to use published pages and source links",
+        "approvedAt": "2026-11-10",
+        "privacyReviewed": true
+      },
+      "sourceLayer": "institutional-source",
+      "sourceLayerLabel": "Institutional source · external record",
+      "materialType": "source-locator",
+      "period": "2016",
+      "language": [
+        "ko"
+      ],
+      "transcriptionStatus": "not-reproduced",
+      "recordUrl": "https://archive.museumofone.art/evidence/mmca-2016-report-entry-76.html",
+      "dossierIds": [
+        "park-suk-won-chronology"
+      ],
+      "provenance": {
+        "sourceURL": "https://www.mmca.go.kr/upload/artInfo/2017/09/2017092003532066115519.pdf",
+        "retrievedAtUTC": "2026-11-09T23:50:25.378860+00:00",
+        "sourceFileSHA256": "d8120100a06f46cae7426442145cdbae9035547698627079bf28ef872c107aef",
+        "verification": "The report cover and page 40 were inspected visually from the retrieved PDF. The PDF has no extractable text layer; this is a limited field reading, not a full transcription or translation.",
+        "limits": "A reporting-year label and a production-year field do not independently establish the historical production year or the date of publication. No local image redistribution is authorized.",
+        "access": "Public institutional source; locator-only local record",
+        "sourceDateRole": "Reporting year or undated catalogue state, not a verified amendment date"
+      },
+      "sourceReadings": {
+        "artist": "박석원",
+        "title": "적-응력",
+        "productionYearHeading": "제작연도",
+        "productionYear": "1974",
+        "clothDimensions": "332×358",
+        "woodDimensions": [
+          "64×25×26",
+          "65.5×25.5×27",
+          "61.5×25.4×25.4",
+          "63.5×25×25.1"
+        ]
+      }
+    },
+    {
+      "id": "mmca-collection-07912",
+      "collectionId": "rai-published-research",
+      "seriesId": "rai-korean-art-comparisons",
+      "title": "MMCA collection record 07912 / online record 7925 — 적-응력",
+      "creator": "National Museum of Modern and Contemporary Art, Korea",
+      "date": "Undated online collection description; retrieved 10 November 2026 local time",
+      "documentType": "Institutional collection description — external source locator",
+      "holdingInstitution": "National Museum of Modern and Contemporary Art, Korea",
+      "reference": "Management number 07912; online record 7925",
+      "sourceUrl": "https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7925",
+      "description": "The current collection description records 1972, separately identifies remaking of the wood in 2016, and names a 1974 exhibition. This is a source-field reference, not a reproduced artwork photograph or accession file.",
+      "coverage": "MMCA collection record 7925: 제작연도, 재료, 규격 and 관리번호 fields; description of the 1974 Seoul Biennale.",
+      "firstReleased": "2026-11-10",
+      "revisions": [
+        {
+          "date": "2026-11-10",
+          "by": "Museum of One",
+          "description": "First locator-only reference added to the published research dossier. No institutional image released."
+        }
+      ],
+      "rights": {
+        "metadataApproved": true,
+        "imagesApproved": false,
+        "transcriptionApproved": false,
+        "translationApproved": false,
+        "commentaryApproved": false,
+        "credit": "National Museum of Modern and Contemporary Art, Korea. Original source and any images remain with their respective rights holders.",
+        "statement": "Locator, bibliographic description and limited factual field readings only. Original institutional images, complete descriptions and scans are not redistributed. Follow the source link for the institutional record and its reuse terms."
+      },
+      "pages": [
+        {
+          "id": "catalogue-fields",
+          "label": "Production year, materials and dimensions",
+          "locator": "MMCA collection record 7925: 제작연도, 재료, 규격 and 관리번호 fields; description of the 1974 Seoul Biennale.",
+          "image": null,
+          "transcription": null,
+          "translation": null,
+          "commentary": null,
+          "recordUrl": "https://archive.museumofone.art/evidence/mmca-collection-07912.html?page=catalogue-fields#catalogue-fields"
+        }
+      ],
+      "relatedResearch": [
+        {
+          "title": "Published comparison — Supplement 1",
+          "url": "https://www.museumofone.art/rai-documentary-supplement/"
+        },
+        {
+          "title": "Main paper, section 6",
+          "url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/"
+        }
+      ],
+      "publication": {
+        "approved": true,
+        "approvedBy": "Museum of One account holder — explicit instruction to use published pages and source links",
+        "approvedAt": "2026-11-10",
+        "privacyReviewed": true
+      },
+      "sourceLayer": "institutional-source",
+      "sourceLayerLabel": "Institutional source · external record",
+      "materialType": "source-locator",
+      "period": "Undated record",
+      "language": [
+        "ko"
+      ],
+      "transcriptionStatus": "not-reproduced",
+      "recordUrl": "https://archive.museumofone.art/evidence/mmca-collection-07912.html",
+      "dossierIds": [
+        "park-suk-won-chronology"
+      ],
+      "provenance": {
+        "sourceURL": "https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7925",
+        "retrievedAtUTC": "2026-11-09T23:42:52.331972+00:00",
+        "sourceFileSHA256": "c28fa11d35b199606bea1e0feb3e16d112366c5809445c4fc921abc1929a9cc1",
+        "verification": "Values checked in the retrieved institutional HTML. The article’s historical 9 November consultation and this new retrieval are distinct events.",
+        "limits": "The public description does not establish the amendment history, authorship of a particular field, or unchanged physical identity of all components. Its image notice does not permit unauthorized redistribution.",
+        "access": "Public institutional source; locator-only local record",
+        "sourceDateRole": "Reporting year or undated catalogue state, not a verified amendment date"
+      },
+      "sourceReadings": {
+        "artist": "박석원 PARK Suk-won",
+        "title": "적-응력",
+        "productionYear": "1972(나무: 2016 재제작)",
+        "managementNumber": "07912",
+        "clothDimensions": "332×358",
+        "woodDimensions": [
+          "64×25×26",
+          "65.5×25.5×27",
+          "61.5×25.4×25.4",
+          "63.5×25×25"
+        ]
+      }
+    },
+    {
+      "id": "daarts-park-suk-won-1172",
+      "collectionId": "rai-published-research",
+      "seriesId": "rai-korean-art-comparisons",
+      "title": "DA-Arts artist record 1172 — Park Suk won / 박석원",
+      "creator": "Arts Council Korea, Arko Arts Archive",
+      "date": "Undated online artist record; retrieved 10 November 2026 local time",
+      "documentType": "Institutional artist/work list — external source locator",
+      "holdingInstitution": "Arts Council Korea, Arko Arts Archive",
+      "reference": "DA-Arts visual artist record 1172; work-list entry 積(적)-응력2",
+      "sourceUrl": "https://www.daarts.or.kr/visual/artist/1172",
+      "description": "The work list identifies a separately numbered 1973 wooden work with different dimensions. Its relation to MMCA’s cloth-and-four-wood installation is not established by shared artist or similar series wording.",
+      "coverage": "Work-list entry 積(적)-응력2, 1973년, 나무(wood), 240x40x25cm; artist chronology separately lists the 1974 Myeongdong Gallery exhibition.",
+      "firstReleased": "2026-11-10",
+      "revisions": [
+        {
+          "date": "2026-11-10",
+          "by": "Museum of One",
+          "description": "First locator-only reference added to the published research dossier. No institutional image released."
+        }
+      ],
+      "rights": {
+        "metadataApproved": true,
+        "imagesApproved": false,
+        "transcriptionApproved": false,
+        "translationApproved": false,
+        "commentaryApproved": false,
+        "credit": "Arts Council Korea, Arko Arts Archive. Original source and any images remain with their respective rights holders.",
+        "statement": "Locator, bibliographic description and limited factual field readings only. Original institutional images, complete descriptions and scans are not redistributed. Follow the source link for the institutional record and its reuse terms."
+      },
+      "pages": [
+        {
+          "id": "work-list-entry-1973",
+          "label": "Work list · separately numbered 1973 work",
+          "locator": "Work-list entry 積(적)-응력2, 1973년, 나무(wood), 240x40x25cm; artist chronology separately lists the 1974 Myeongdong Gallery exhibition.",
+          "image": null,
+          "transcription": null,
+          "translation": null,
+          "commentary": null,
+          "recordUrl": "https://archive.museumofone.art/evidence/daarts-park-suk-won-1172.html?page=work-list-entry-1973#work-list-entry-1973"
+        }
+      ],
+      "relatedResearch": [
+        {
+          "title": "Published comparison — Supplement 1",
+          "url": "https://www.museumofone.art/rai-documentary-supplement/"
+        },
+        {
+          "title": "Main paper, section 6",
+          "url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/"
+        }
+      ],
+      "publication": {
+        "approved": true,
+        "approvedBy": "Museum of One account holder — explicit instruction to use published pages and source links",
+        "approvedAt": "2026-11-10",
+        "privacyReviewed": true
+      },
+      "sourceLayer": "institutional-source",
+      "sourceLayerLabel": "Institutional source · external record",
+      "materialType": "source-locator",
+      "period": "Undated record",
+      "language": [
+        "ko"
+      ],
+      "transcriptionStatus": "not-reproduced",
+      "recordUrl": "https://archive.museumofone.art/evidence/daarts-park-suk-won-1172.html",
+      "dossierIds": [
+        "park-suk-won-chronology"
+      ],
+      "provenance": {
+        "sourceURL": "https://www.daarts.or.kr/visual/artist/1172",
+        "retrievedAtUTC": "2026-11-09T23:42:51.245942+00:00",
+        "sourceFileSHA256": "787708c001e7195142f5dd05884f5f5ba00ed4b8cb9dd799f5681b3794f316c3",
+        "verification": "The named work, year, material and dimensions were checked in the retrieved public HTML. No artwork image is reproduced.",
+        "limits": "This work-list entry is not an accession cross-reference for MMCA management number 07912. No external identifier or shared individual-work identity is inferred.",
+        "access": "Public institutional source; locator-only local record",
+        "sourceDateRole": "Reporting year or undated catalogue state, not a verified amendment date"
+      },
+      "sourceReadings": {
+        "title": "積(적)-응력2",
+        "year": "1973년",
+        "material": "나무(wood)",
+        "dimensions": "240x40x25cm"
+      }
+    }
+  ],
+  "series": [
+    {
+      "id": "rai-korean-art-comparisons",
+      "collectionId": "rai-published-research",
+      "title": "Korean art: identity and chronology",
+      "description": "Published comparisons of work descriptions, dates and the limits of historical inference.",
+      "sourceUrl": "https://www.museumofone.art/relational-archival-investigation/",
+      "note": "Local research grouping, not an institutional archival fonds or series."
+    }
+  ],
+  "dossiers": [
+    {
+      "id": "park-suk-won-chronology",
+      "title": "Park Suk-won (박석원): a documentary date difference and the limit of a third date",
+      "collectionId": "rai-published-research",
+      "seriesId": "rai-korean-art-comparisons",
+      "status": "Published research dossier",
+      "question": "What does the comparison of the 1972 and 1974 assignments establish, and why does the separately numbered 1973 work not supply a third date for the same installation?",
+      "documentIds": [
+        "rai-main-paper-v1",
+        "rai-documentary-supplement-v1",
+        "mmca-2016-report-entry-76",
+        "mmca-collection-07912",
+        "daarts-park-suk-won-1172"
+      ],
+      "sourceIds": [
+        "mmca-2016-report-entry-76",
+        "mmca-collection-07912",
+        "daarts-park-suk-won-1172"
+      ],
+      "claimIds": [
+        "park-year-difference",
+        "park-work-description-match",
+        "park-third-date-withheld",
+        "park-historical-year-open"
+      ],
+      "summary": "Two institutional descriptions support a qualified work-description comparison and a production-year difference. The correct historical year and cause remain open. A separately numbered 1973 work is not established as the same individual installation.",
+      "limitations": "Images are authentic pages of the author’s published research, not original institutional manuscripts. The main paper and supplement belong to one research programme and are not independent corroborating witnesses. Original-source records are linked separately. No physical examination, unseen administrative history or new translation is claimed.",
+      "recordUrl": "https://archive.museumofone.art/dossiers/park-suk-won-chronology.html",
+      "updated": "2026-11-10",
+      "version": "1.0",
+      "publishedResearch": [
+        {
+          "title": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+          "url": "https://archive.museumofone.art/evidence/rai-main-paper-v1.html",
+          "doi": "10.5281/zenodo.24088563"
+        },
+        {
+          "title": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+          "url": "https://archive.museumofone.art/evidence/rai-documentary-supplement-v1.html",
+          "doi": "10.5281/zenodo.24088574"
+        }
+      ]
+    }
+  ],
+  "publication": {
+    "approved": true,
+    "approvedBy": "Museum of One account holder — explicit instruction to use published pages and source links",
+    "approvedAt": "2026-11-10",
+    "privacyReviewed": true
+  },
+  "sources": [
+    {
+      "id": "mmca-2016-report-entry-76",
+      "documentId": "mmca-2016-report-entry-76",
+      "title": "MMCA 2016 Annual Report — acquisition entry 76",
+      "url": "https://www.mmca.go.kr/upload/artInfo/2017/09/2017092003532066115519.pdf#page=40",
+      "recordUrl": "https://archive.museumofone.art/evidence/mmca-2016-report-entry-76.html",
+      "locator": "PDF file page 40 of 372, printed page 40, row 76; production-year column headed 제작연도.",
+      "readings": {
+        "artist": "박석원",
+        "title": "적-응력",
+        "productionYearHeading": "제작연도",
+        "productionYear": "1974",
+        "clothDimensions": "332×358",
+        "woodDimensions": [
+          "64×25×26",
+          "65.5×25.5×27",
+          "61.5×25.4×25.4",
+          "63.5×25×25.1"
+        ]
+      },
+      "verification": "The report cover and page 40 were inspected visually from the retrieved PDF. The PDF has no extractable text layer; this is a limited field reading, not a full transcription or translation.",
+      "limitations": "A reporting-year label and a production-year field do not independently establish the historical production year or the date of publication. No local image redistribution is authorized.",
+      "sourceSHA256": "d8120100a06f46cae7426442145cdbae9035547698627079bf28ef872c107aef",
+      "retrievedAtUTC": "2026-11-09T23:50:25.378860+00:00",
+      "imageReproduced": false
+    },
+    {
+      "id": "mmca-collection-07912",
+      "documentId": "mmca-collection-07912",
+      "title": "MMCA collection record 07912 / online record 7925 — 적-응력",
+      "url": "https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7925",
+      "recordUrl": "https://archive.museumofone.art/evidence/mmca-collection-07912.html",
+      "locator": "MMCA collection record 7925: 제작연도, 재료, 규격 and 관리번호 fields; description of the 1974 Seoul Biennale.",
+      "readings": {
+        "artist": "박석원 PARK Suk-won",
+        "title": "적-응력",
+        "productionYear": "1972(나무: 2016 재제작)",
+        "managementNumber": "07912",
+        "clothDimensions": "332×358",
+        "woodDimensions": [
+          "64×25×26",
+          "65.5×25.5×27",
+          "61.5×25.4×25.4",
+          "63.5×25×25"
+        ]
+      },
+      "verification": "Values checked in the retrieved institutional HTML. The article’s historical 9 November consultation and this new retrieval are distinct events.",
+      "limitations": "The public description does not establish the amendment history, authorship of a particular field, or unchanged physical identity of all components. Its image notice does not permit unauthorized redistribution.",
+      "sourceSHA256": "c28fa11d35b199606bea1e0feb3e16d112366c5809445c4fc921abc1929a9cc1",
+      "retrievedAtUTC": "2026-11-09T23:42:52.331972+00:00",
+      "imageReproduced": false
+    },
+    {
+      "id": "daarts-park-suk-won-1172",
+      "documentId": "daarts-park-suk-won-1172",
+      "title": "DA-Arts artist record 1172 — Park Suk won / 박석원",
+      "url": "https://www.daarts.or.kr/visual/artist/1172",
+      "recordUrl": "https://archive.museumofone.art/evidence/daarts-park-suk-won-1172.html",
+      "locator": "Work-list entry 積(적)-응력2, 1973년, 나무(wood), 240x40x25cm; artist chronology separately lists the 1974 Myeongdong Gallery exhibition.",
+      "readings": {
+        "title": "積(적)-응력2",
+        "year": "1973년",
+        "material": "나무(wood)",
+        "dimensions": "240x40x25cm"
+      },
+      "verification": "The named work, year, material and dimensions were checked in the retrieved public HTML. No artwork image is reproduced.",
+      "limitations": "This work-list entry is not an accession cross-reference for MMCA management number 07912. No external identifier or shared individual-work identity is inferred.",
+      "sourceSHA256": "787708c001e7195142f5dd05884f5f5ba00ed4b8cb9dd799f5681b3794f316c3",
+      "retrievedAtUTC": "2026-11-09T23:42:51.245942+00:00",
+      "imageReproduced": false
+    }
+  ],
+  "claims": [
+    {
+      "id": "park-year-difference",
+      "level": "documentary",
+      "status": "supported",
+      "text": "The cited annual-report row assigns 1974, while the collection production-year field assigns 1972 and separately records the wood’s 2016 remaking.",
+      "sourceIds": [
+        "mmca-2016-report-entry-76",
+        "mmca-collection-07912"
+      ],
+      "support": [
+        {
+          "sourceId": "mmca-2016-report-entry-76",
+          "documentId": "mmca-2016-report-entry-76",
+          "pageId": "pdf-page-040-entry-76",
+          "url": "https://www.mmca.go.kr/upload/artInfo/2017/09/2017092003532066115519.pdf#page=40"
+        },
+        {
+          "sourceId": "mmca-collection-07912",
+          "documentId": "mmca-collection-07912",
+          "pageId": "catalogue-fields",
+          "url": "https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7925"
+        }
+      ],
+      "publishedDiscussion": [
+        {
+          "documentId": "rai-main-paper-v1",
+          "pageId": "pdf-page-09",
+          "url": "https://archive.museumofone.art/evidence/rai-main-paper-v1.html?page=pdf-page-09#pdf-page-09"
+        },
+        {
+          "documentId": "rai-documentary-supplement-v1",
+          "pageId": "pdf-page-06",
+          "url": "https://archive.museumofone.art/evidence/rai-documentary-supplement-v1.html?page=pdf-page-06#pdf-page-06"
+        }
+      ],
+      "limitation": "This establishes a difference between the published assignments, not which year is historically correct.",
+      "reopening": "A source identifying a different report row, a changed collection state, or a dated explanation could require revision.",
+      "responsibility": "Dorian Vale’s published comparison; source-field check performed for this public dossier. The published paper and supplement are not independent witnesses."
+    },
+    {
+      "id": "park-work-description-match",
+      "level": "relational",
+      "status": "qualified",
+      "text": "Artist, Korean title, cloth-and-wood arrangement and the closely corresponding dimensions support a comparison at the level of the described work.",
+      "sourceIds": [
+        "mmca-2016-report-entry-76",
+        "mmca-collection-07912"
+      ],
+      "support": [
+        {
+          "sourceId": "mmca-2016-report-entry-76",
+          "documentId": "mmca-2016-report-entry-76",
+          "pageId": "pdf-page-040-entry-76",
+          "url": "https://www.mmca.go.kr/upload/artInfo/2017/09/2017092003532066115519.pdf#page=40"
+        },
+        {
+          "sourceId": "mmca-collection-07912",
+          "documentId": "mmca-collection-07912",
+          "pageId": "catalogue-fields",
+          "url": "https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7925"
+        }
+      ],
+      "publishedDiscussion": [
+        {
+          "documentId": "rai-main-paper-v1",
+          "pageId": "pdf-page-09",
+          "url": "https://archive.museumofone.art/evidence/rai-main-paper-v1.html?page=pdf-page-09#pdf-page-09"
+        },
+        {
+          "documentId": "rai-documentary-supplement-v1",
+          "pageId": "pdf-page-06",
+          "url": "https://archive.museumofone.art/evidence/rai-documentary-supplement-v1.html?page=pdf-page-06#pdf-page-06"
+        }
+      ],
+      "limitation": "No shared management number is printed in both witnesses; the fourth wood measurement differs by 0.1 cm, and remaking limits claims of unchanged material continuity.",
+      "reopening": "Accession documentation or photographs demonstrating separately identified realizations could alter the scope of the match.",
+      "responsibility": "Dorian Vale’s published comparison; source-field check performed for this public dossier. The published paper and supplement are not independent witnesses."
+    },
+    {
+      "id": "park-third-date-withheld",
+      "level": "relational",
+      "status": "supported",
+      "text": "The separately numbered 1973 wooden work is not established as the same individual installation and does not presently supply it with a third production year.",
+      "sourceIds": [
+        "mmca-collection-07912",
+        "daarts-park-suk-won-1172"
+      ],
+      "support": [
+        {
+          "sourceId": "mmca-collection-07912",
+          "documentId": "mmca-collection-07912",
+          "pageId": "catalogue-fields",
+          "url": "https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7925"
+        },
+        {
+          "sourceId": "daarts-park-suk-won-1172",
+          "documentId": "daarts-park-suk-won-1172",
+          "pageId": "work-list-entry-1973",
+          "url": "https://www.daarts.or.kr/visual/artist/1172"
+        }
+      ],
+      "publishedDiscussion": [
+        {
+          "documentId": "rai-main-paper-v1",
+          "pageId": "pdf-page-09",
+          "url": "https://archive.museumofone.art/evidence/rai-main-paper-v1.html?page=pdf-page-09#pdf-page-09"
+        },
+        {
+          "documentId": "rai-documentary-supplement-v1",
+          "pageId": "pdf-page-06",
+          "url": "https://archive.museumofone.art/evidence/rai-documentary-supplement-v1.html?page=pdf-page-06#pdf-page-06"
+        }
+      ],
+      "limitation": "This withholds a proposed individual-work match; it does not deny a relation within the artist’s practice or prove that no future linkage exists.",
+      "reopening": "An explicit documentary link between the 1973 work and MMCA 07912 could justify a more precise relationship.",
+      "responsibility": "Dorian Vale’s published comparison; source-field check performed for this public dossier. The published paper and supplement are not independent witnesses."
+    },
+    {
+      "id": "park-historical-year-open",
+      "level": "explanatory",
+      "status": "open",
+      "text": "The correct historical production year and the reason for the differing assignments remain unresolved.",
+      "sourceIds": [
+        "mmca-2016-report-entry-76",
+        "mmca-collection-07912"
+      ],
+      "support": [
+        {
+          "sourceId": "mmca-2016-report-entry-76",
+          "documentId": "mmca-2016-report-entry-76",
+          "pageId": "pdf-page-040-entry-76",
+          "url": "https://www.mmca.go.kr/upload/artInfo/2017/09/2017092003532066115519.pdf#page=40"
+        },
+        {
+          "sourceId": "mmca-collection-07912",
+          "documentId": "mmca-collection-07912",
+          "pageId": "catalogue-fields",
+          "url": "https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7925"
+        }
+      ],
+      "publishedDiscussion": [
+        {
+          "documentId": "rai-main-paper-v1",
+          "pageId": "pdf-page-09",
+          "url": "https://archive.museumofone.art/evidence/rai-main-paper-v1.html?page=pdf-page-09#pdf-page-09"
+        },
+        {
+          "documentId": "rai-documentary-supplement-v1",
+          "pageId": "pdf-page-06",
+          "url": "https://archive.museumofone.art/evidence/rai-documentary-supplement-v1.html?page=pdf-page-06#pdf-page-06"
+        }
+      ],
+      "limitation": "Different conventions, correction or different information remain possibilities. Neither document supplies a dated administrative history.",
+      "reopening": "A dated acquisition worksheet, contemporary work record or explicit account linking the assignments could discriminate among the explanations.",
+      "responsibility": "Dorian Vale’s published comparison; source-field check performed for this public dossier. The published paper and supplement are not independent witnesses."
+    }
+  ],
+  "scope": "Selected published RAI research pages and externally linked institutional source records. Authored research, source metadata and historical claims remain distinct; no private manuscripts or institutional scans are reproduced."
+}

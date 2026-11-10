@@ -318,5 +318,65 @@
       "url": "https://creativecommons.org/licenses/by/4.0/"
     },
     "role": "Local reading copy; original repository file retained unchanged"
+  },
+  {
+    "id": "24088563",
+    "title": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+    "accession": "MOO-CAT-017",
+    "pdf_url": "../assets/documents/24088563.pdf",
+    "source_url": "https://zenodo.org/api/records/24088563/files/01_RAI_Main_Paper_Dorian_Vale.pdf/content",
+    "zenodo_url": "https://zenodo.org/records/24088563",
+    "source_filename": "01_RAI_Main_Paper_Dorian_Vale.pdf",
+    "checksum": "md5:0147a4299fc5404e2762d3ceb23d4cc1",
+    "sha256": "44df66915879ff3ee3127b17d98d960baf47d9d71685a1c0c3c89b2a1c4e6661",
+    "bytes": 361169,
+    "page_count": 16,
+    "verified_at": "2026-11-10",
+    "checksum_match": true,
+    "rights": {
+      "label": "In Copyright. © 2026 Dorian Vale · Museum of One.",
+      "url": "https://rightsstatements.org/vocab/InC/1.0/"
+    },
+    "role": "Local reading copy; original repository file retained unchanged"
+  },
+  {
+    "id": "24088574",
+    "title": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+    "accession": "MOO-CAT-018",
+    "pdf_url": "../assets/documents/24088574.pdf",
+    "source_url": "https://zenodo.org/api/records/24088574/files/02_RAI_Documentary_Supplement_Dorian_Vale.pdf/content",
+    "zenodo_url": "https://zenodo.org/records/24088574",
+    "source_filename": "02_RAI_Documentary_Supplement_Dorian_Vale.pdf",
+    "checksum": "md5:1d066f2c77de147bc382928cf42eca56",
+    "sha256": "c4358a5f6f736700bfdd298cb4bbaac372b954929723bad4c1eb06bb28c15a46",
+    "bytes": 334348,
+    "page_count": 11,
+    "verified_at": "2026-11-10",
+    "checksum_match": true,
+    "rights": {
+      "label": "In Copyright. © 2026 Dorian Vale · Museum of One.",
+      "url": "https://rightsstatements.org/vocab/InC/1.0/"
+    },
+    "role": "Local reading copy; original repository file retained unchanged"
+  },
+  {
+    "id": "24088573",
+    "title": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+    "accession": "MOO-CAT-019",
+    "pdf_url": "../assets/documents/24088573.pdf",
+    "source_url": "https://zenodo.org/api/records/24088573/files/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf/content",
+    "zenodo_url": "https://zenodo.org/records/24088573",
+    "source_filename": "03_RAI_Extended_Case_Studies_Dorian_Vale.pdf",
+    "checksum": "md5:9f12074e3983e4eb75f78b89108d9c23",
+    "sha256": "1f9f7018a3f023afc5ab7cba6851c15a4b96f394ebcdad6e16f9c734ffbb264c",
+    "bytes": 219814,
+    "page_count": 9,
+    "verified_at": "2026-11-10",
+    "checksum_match": true,
+    "rights": {
+      "label": "In Copyright. © 2026 Dorian Vale · Museum of One.",
+      "url": "https://rightsstatements.org/vocab/InC/1.0/"
+    },
+    "role": "Local reading copy; original repository file retained unchanged"
   }
 ]

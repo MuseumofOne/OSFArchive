@@ -30,7 +30,7 @@ class IntegrationSearchTest(unittest.TestCase):
     def test_all_current_items_are_source_verified_public_entries(self):
         before = encode_search_index([self.records, self.sources])
         payload = build_search_index(self.records, 'https://archive.museumofone.art/', self.sources)
-        self.assertEqual(len(payload['records']), 16)
+        self.assertEqual(len(payload['records']), len(self.records))
         self.assertEqual(payload['schema_version'], 1)
         for entry in payload['records']:
             self.assertEqual(entry['url'], 'https://archive.museumofone.art/items/' + entry['id'] + '.html')

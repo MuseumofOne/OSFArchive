@@ -105,6 +105,21 @@
         "url": "https://pub.orcid.org/v3.0/0009-0004-7737-5094/person",
         "label": "ORCID public person record",
         "note": "Credit name and Museum of One website URL inspected on 4 November 2026; minimal observation retained in the authority review receipt."
+      },
+      {
+        "url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+        "label": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+        "note": "Published institutional record credits Dorian Vale and Museum of One."
+      },
+      {
+        "url": "https://www.museumofone.art/rai-documentary-supplement/",
+        "label": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+        "note": "Published institutional record credits Dorian Vale and Museum of One."
+      },
+      {
+        "url": "https://www.museumofone.art/rai-extended-case-studies/",
+        "label": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+        "note": "Published institutional record credits Dorian Vale and Museum of One."
       }
     ],
     "record_links": [
@@ -315,6 +330,30 @@
           "text_quote": "Dorian Vale"
         },
         "reviewed": "2026-11-05"
+      },
+      {
+        "record_id": "24088563",
+        "relation": "author",
+        "source_url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+        "note": "Published institutional record links the selected edition DOI.",
+        "evidence_scope": "exact_edition",
+        "reviewed": "2026-11-10"
+      },
+      {
+        "record_id": "24088574",
+        "relation": "author",
+        "source_url": "https://www.museumofone.art/rai-documentary-supplement/",
+        "note": "Published institutional record links the selected edition DOI.",
+        "evidence_scope": "exact_edition",
+        "reviewed": "2026-11-10"
+      },
+      {
+        "record_id": "24088573",
+        "relation": "author",
+        "source_url": "https://www.museumofone.art/rai-extended-case-studies/",
+        "note": "Published institutional record links the selected edition DOI.",
+        "evidence_scope": "exact_edition",
+        "reviewed": "2026-11-10"
       }
     ],
     "description_reviewed": "2026-11-05"
@@ -417,6 +456,21 @@
         "url": "https://www.museumofone.art/language-as-custody-writing-without-harm-in-post-interpretive-criticism/",
         "label": "Language as Custody",
         "note": "The institutional work page identifies Museum of One as publisher of the web publication; repository edition details remain in the item record."
+      },
+      {
+        "url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+        "label": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+        "note": "Published institutional record credits Dorian Vale and Museum of One."
+      },
+      {
+        "url": "https://www.museumofone.art/rai-documentary-supplement/",
+        "label": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+        "note": "Published institutional record credits Dorian Vale and Museum of One."
+      },
+      {
+        "url": "https://www.museumofone.art/rai-extended-case-studies/",
+        "label": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+        "note": "Published institutional record credits Dorian Vale and Museum of One."
       }
     ],
     "record_links": [
@@ -627,6 +681,30 @@
           "text_quote": "Museum of One"
         },
         "reviewed": "2026-11-05"
+      },
+      {
+        "record_id": "24088563",
+        "relation": "publisher",
+        "source_url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+        "note": "Published institutional record links the selected edition DOI.",
+        "evidence_scope": "exact_edition",
+        "reviewed": "2026-11-10"
+      },
+      {
+        "record_id": "24088574",
+        "relation": "publisher",
+        "source_url": "https://www.museumofone.art/rai-documentary-supplement/",
+        "note": "Published institutional record links the selected edition DOI.",
+        "evidence_scope": "exact_edition",
+        "reviewed": "2026-11-10"
+      },
+      {
+        "record_id": "24088573",
+        "relation": "publisher",
+        "source_url": "https://www.museumofone.art/rai-extended-case-studies/",
+        "note": "Published institutional record links the selected edition DOI.",
+        "evidence_scope": "exact_edition",
+        "reviewed": "2026-11-10"
       }
     ],
     "description_reviewed": "2026-11-05"
@@ -1921,5 +1999,481 @@
       }
     ],
     "description_reviewed": "2026-11-05"
+  },
+  {
+    "id": "lee-kang-so",
+    "label": "Lee Kang-so",
+    "type": "Person",
+    "variants": [
+      "이강소"
+    ],
+    "identifiers": [],
+    "summary": "Artist discussed in the published RAI research documents. ",
+    "authority_status": "Local contextual authority; no unverified external identifier assigned",
+    "sources": [
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/01_RAI_Main_Paper_Dorian_Vale.pdf#page=7",
+        "label": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+        "note": "PDF file pages 7, 11, 12, 15, 16. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      },
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/02_RAI_Documentary_Supplement_Dorian_Vale.pdf#page=2",
+        "label": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+        "note": "PDF file pages 2, 3, 4, 8, 9, 10, 11. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      }
+    ],
+    "record_links": [
+      {
+        "record_id": "24088563",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/01_RAI_Main_Paper_Dorian_Vale.pdf#page=7",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            7,
+            11,
+            12,
+            15,
+            16
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      },
+      {
+        "record_id": "24088574",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/02_RAI_Documentary_Supplement_Dorian_Vale.pdf#page=2",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            2,
+            3,
+            4,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      }
+    ],
+    "relationships": [],
+    "name_source": "English/Hangul pairing retained from the previously verified public RAI artist indexes; PDF locators independently checked for the English label."
+  },
+  {
+    "id": "park-suk-won",
+    "label": "Park Suk-won",
+    "type": "Person",
+    "variants": [
+      "박석원"
+    ],
+    "identifiers": [],
+    "summary": "Artist discussed in the published RAI research documents. ",
+    "authority_status": "Local contextual authority; no unverified external identifier assigned",
+    "sources": [
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/01_RAI_Main_Paper_Dorian_Vale.pdf#page=7",
+        "label": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+        "note": "PDF file pages 7, 9, 15. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      },
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/02_RAI_Documentary_Supplement_Dorian_Vale.pdf#page=3",
+        "label": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+        "note": "PDF file pages 3, 4, 10. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      }
+    ],
+    "record_links": [
+      {
+        "record_id": "24088563",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/01_RAI_Main_Paper_Dorian_Vale.pdf#page=7",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            7,
+            9,
+            15
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      },
+      {
+        "record_id": "24088574",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/02_RAI_Documentary_Supplement_Dorian_Vale.pdf#page=3",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            3,
+            4,
+            10
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      }
+    ],
+    "relationships": [],
+    "name_source": "English/Hangul pairing retained from the previously verified public RAI artist indexes; PDF locators independently checked for the English label."
+  },
+  {
+    "id": "sung-neung-kyung",
+    "label": "Sung Neung Kyung",
+    "type": "Person",
+    "variants": [
+      "성능경"
+    ],
+    "identifiers": [],
+    "summary": "Artist discussed in the published RAI research documents. ",
+    "authority_status": "Local contextual authority; no unverified external identifier assigned",
+    "sources": [
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/01_RAI_Main_Paper_Dorian_Vale.pdf#page=6",
+        "label": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+        "note": "PDF file pages 6, 7, 8, 11, 14, 15, 16. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      },
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/02_RAI_Documentary_Supplement_Dorian_Vale.pdf#page=3",
+        "label": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+        "note": "PDF file pages 3, 5, 8, 10, 11. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      },
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf#page=5",
+        "label": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+        "note": "PDF file pages 5, 6, 7, 9. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      }
+    ],
+    "record_links": [
+      {
+        "record_id": "24088563",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/01_RAI_Main_Paper_Dorian_Vale.pdf#page=6",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            6,
+            7,
+            8,
+            11,
+            14,
+            15,
+            16
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      },
+      {
+        "record_id": "24088574",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/02_RAI_Documentary_Supplement_Dorian_Vale.pdf#page=3",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            3,
+            5,
+            8,
+            10,
+            11
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      },
+      {
+        "record_id": "24088573",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf#page=5",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            5,
+            6,
+            7,
+            9
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      }
+    ],
+    "relationships": [],
+    "name_source": "English/Hangul pairing retained from the previously verified public RAI artist indexes; PDF locators independently checked for the English label."
+  },
+  {
+    "id": "kim-youngjin",
+    "label": "Kim Youngjin",
+    "type": "Person",
+    "variants": [
+      "김영진"
+    ],
+    "identifiers": [],
+    "summary": "Artist discussed in the published RAI research documents. MMCA explicitly identifies this artist as KIM Youngjin b / 김영진 b; do not merge other people sharing this name.",
+    "authority_status": "Local contextual authority; no unverified external identifier assigned",
+    "sources": [
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/01_RAI_Main_Paper_Dorian_Vale.pdf#page=2",
+        "label": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+        "note": "PDF file pages 2, 7, 8, 15, 16. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      },
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/02_RAI_Documentary_Supplement_Dorian_Vale.pdf#page=3",
+        "label": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+        "note": "PDF file pages 3, 5, 10. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      },
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf#page=7",
+        "label": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+        "note": "PDF file pages 7, 8, 9. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      }
+    ],
+    "record_links": [
+      {
+        "record_id": "24088563",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/01_RAI_Main_Paper_Dorian_Vale.pdf#page=2",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            2,
+            7,
+            8,
+            15,
+            16
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      },
+      {
+        "record_id": "24088574",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/02_RAI_Documentary_Supplement_Dorian_Vale.pdf#page=3",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            3,
+            5,
+            10
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      },
+      {
+        "record_id": "24088573",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf#page=7",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            7,
+            8,
+            9
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      }
+    ],
+    "relationships": [],
+    "name_source": "English/Hangul pairing retained from the previously verified public RAI artist indexes; PDF locators independently checked for the English label."
+  },
+  {
+    "id": "kim-yong-ik",
+    "label": "Kim Yong-Ik",
+    "type": "Person",
+    "variants": [
+      "김용익"
+    ],
+    "identifiers": [],
+    "summary": "Artist discussed in the published RAI research documents. ",
+    "authority_status": "Local contextual authority; no unverified external identifier assigned",
+    "sources": [
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/01_RAI_Main_Paper_Dorian_Vale.pdf#page=3",
+        "label": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+        "note": "PDF file pages 3, 6, 10, 14, 16. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      },
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/02_RAI_Documentary_Supplement_Dorian_Vale.pdf#page=7",
+        "label": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+        "note": "PDF file pages 7, 11. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      },
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf#page=2",
+        "label": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+        "note": "PDF file pages 2, 3, 7, 9. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      }
+    ],
+    "record_links": [
+      {
+        "record_id": "24088563",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/01_RAI_Main_Paper_Dorian_Vale.pdf#page=3",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            3,
+            6,
+            10,
+            14,
+            16
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      },
+      {
+        "record_id": "24088574",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/02_RAI_Documentary_Supplement_Dorian_Vale.pdf#page=7",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            7,
+            11
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      },
+      {
+        "record_id": "24088573",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf#page=2",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            2,
+            3,
+            7,
+            9
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      }
+    ],
+    "relationships": [],
+    "name_source": "English/Hangul pairing retained from the previously verified public RAI artist indexes; PDF locators independently checked for the English label."
+  },
+  {
+    "id": "rim-dong-sik",
+    "label": "Rim Dong Sik",
+    "type": "Person",
+    "variants": [
+      "임동식"
+    ],
+    "identifiers": [],
+    "summary": "Artist discussed in the published RAI research documents. ",
+    "authority_status": "Local contextual authority; no unverified external identifier assigned",
+    "sources": [
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/01_RAI_Main_Paper_Dorian_Vale.pdf#page=3",
+        "label": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+        "note": "PDF file pages 3, 6, 10, 11, 13, 14, 16. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      },
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/02_RAI_Documentary_Supplement_Dorian_Vale.pdf#page=7",
+        "label": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+        "note": "PDF file pages 7, 11. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      },
+      {
+        "url": "https://www.museumofone.art/content/files/2026/11/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf#page=4",
+        "label": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+        "note": "PDF file pages 4, 5, 6, 7, 9. Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim."
+      }
+    ],
+    "record_links": [
+      {
+        "record_id": "24088563",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/01_RAI_Main_Paper_Dorian_Vale.pdf#page=3",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            3,
+            6,
+            10,
+            11,
+            13,
+            14,
+            16
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      },
+      {
+        "record_id": "24088574",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/02_RAI_Documentary_Supplement_Dorian_Vale.pdf#page=7",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            7,
+            11
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      },
+      {
+        "record_id": "24088573",
+        "relation": "artist discussed",
+        "source_url": "https://www.museumofone.art/content/files/2026/11/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf#page=4",
+        "note": "Name occurrence in the published PDF; association is topical, not an authorship, endorsement or collaboration claim.",
+        "evidence_scope": "exact_edition",
+        "source_location": {
+          "kind": "pdf_page",
+          "pages": [
+            4,
+            5,
+            6,
+            7,
+            9
+          ]
+        },
+        "reviewed": "2026-11-10",
+        "reviewer": "Museum of One"
+      }
+    ],
+    "relationships": [],
+    "name_source": "English/Hangul pairing retained from the previously verified public RAI artist indexes; PDF locators independently checked for the English label."
   }
 ]

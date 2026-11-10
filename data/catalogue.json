@@ -6625,5 +6625,558 @@
         ]
       }
     ]
+  },
+  {
+    "id": "24088563",
+    "accession": "MOO-CAT-017",
+    "title": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+    "source_title": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+    "short_title": "Relational Archival Investigation",
+    "author": "Dorian Vale",
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": "Museum of One",
+        "orcid": "0009-0004-7737-5094"
+      }
+    ],
+    "doi": "10.5281/zenodo.24088563",
+    "conceptdoi": "10.5281/zenodo.24088562",
+    "zenodo_url": "https://zenodo.org/records/24088563",
+    "date": "2026-11-09",
+    "type": "Working paper",
+    "source_resource_type": {
+      "title": "Working paper",
+      "type": "publication",
+      "subtype": "workingpaper"
+    },
+    "version": "1.0",
+    "collection": "Essays & research",
+    "summary": "A documentary study of Korean experimental art: how collection records, artist testimony and archives support claims about artwork identity, chronology, naming, performance and display. Main paper with two separately citable supplements.",
+    "subjects": [
+      "Relational Archival Investigation",
+      "Korean Art History",
+      "Korean Experimental Art",
+      "Art Archives",
+      "Art Historiography",
+      "Source Criticism",
+      "Post-Interpretive Criticism",
+      "한국미술사",
+      "Methodology"
+    ],
+    "keywords": [
+      "Relational Archival Investigation",
+      "art historiography",
+      "Korean experimental art",
+      "source criticism",
+      "historical identification",
+      "chronology",
+      "performance documentation",
+      "Post-Interpretive Criticism",
+      "한국 실험미술",
+      "Korean art",
+      "Korean art history",
+      "Art archives",
+      "Exhibition history",
+      "Museum collection records",
+      "한국미술",
+      "한국미술사",
+      "미술 아카이브",
+      "국립현대미술관",
+      "서울시립 미술아카이브",
+      "Lee Kang-so",
+      "이강소",
+      "Park Suk-won",
+      "박석원",
+      "Sung Neung Kyung",
+      "성능경",
+      "Kim Youngjin",
+      "김영진",
+      "Kim Yong-Ik",
+      "김용익",
+      "Rim Dong Sik",
+      "임동식"
+    ],
+    "license": {
+      "label": "In Copyright. © 2026 Dorian Vale · Museum of One.",
+      "url": "https://rightsstatements.org/vocab/InC/1.0/"
+    },
+    "files": [
+      {
+        "name": "01_RAI_Main_Paper_Dorian_Vale.pdf",
+        "url": "https://zenodo.org/api/records/24088563/files/01_RAI_Main_Paper_Dorian_Vale.pdf/content",
+        "size": 361169,
+        "size_label": "361,169 bytes",
+        "checksum": "md5:0147a4299fc5404e2762d3ceb23d4cc1",
+        "mimetype": "application/pdf"
+      }
+    ],
+    "institutional_url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+    "corroboration": "The public Museum of One record reproduces the title, names Dorian Vale as author and links this edition DOI and PDF. The local PDF matches the public Zenodo source checksum. The institutional page dates remain separate from the repository publication date.",
+    "discrepancies": [],
+    "orcid": "0009-0004-7737-5094",
+    "publisher": "Museum of One",
+    "language": "eng",
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.24088574",
+        "relation": "isSupplementedBy",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.24088573",
+        "relation": "isSupplementedBy",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      }
+    ],
+    "alternate_identifiers": [],
+    "source_references": [],
+    "source_journal": null,
+    "source_imprint": null,
+    "source_contributors": [],
+    "source_created": "2026-11-09T16:22:48.002580+00:00",
+    "source_modified": "2026-11-09T17:02:08.465350+00:00",
+    "source_description_html": "<p>This study in Korean art history examines how museum collections and art archives support claims about Korean experimental art. Relational Archival Investigation (RAI) compares seven consecutive acquisition entries from the National Museum of Modern and Contemporary Art, Korea (MMCA), 2016 Annual Report with collection records 7922&ndash;7928. Two leading production-year assignments differ. Lee Kang-so&rsquo;s published account distinguishes production from presentation for Painting&ndash;78&ndash;1. The discrepancy for Park Suk-won&rsquo;s Jeok&ndash;Eungnyeok remains open. Further cases examine Sung Neung Kyung&rsquo;s Reading Newspaper, Kim Youngjin&rsquo;s 1978&ndash;2, Kim Yong-Ik&rsquo;s Flat Object title history and Rim Dong Sik&rsquo;s later repair of a performance photograph. The study separates what records identify from what they establish about a work&rsquo;s production, naming, performance, exhibition and documentation. The seven-entry comparison is bounded and was selected retrospectively. Post-Interpretive Criticism provides the philosophical background.</p>\n<p>한국어 초록<br>한국 실험미술의 작품 식별과 연대, 전시 및 기록의 관계를 살핀 연구다. 국립현대미술관(MMCA)의 2016년 연보 소장품 수집 목록 73&ndash;79번과 소장품 기록 7922&ndash;7928을 대조한다. 두 사례에서 제작연도가 다르게 제시된다. 이강소의 공개된 대담은 〈페인팅-78-1〉의 제작과 발표를 구분하는 근거를 제공하며, 박석원의 〈적-응력〉 연대 차이는 미해결로 남는다. 성능경, 김영진, 김용익, 임동식의 사례에서는 작품명과 전시, 퍼포먼스, 사진 기록이 가리키는 서로 다른 사건을 살핀다.</p>\n<p>Artists in this study<br>Lee Kang-so (이강소; Lee Kangso, Lee Kang So) &middot; Park Suk-won (박석원; Park Suk Won) &middot; Sung Neung Kyung (성능경; Sung Neungkyung) &middot; Kim Youngjin (김영진; KIM Youngjin b, 김영진 b) &middot; Kim Yong-Ik (김용익; Kim Yong Ik) &middot; Rim Dong Sik (임동식; Rim Dongsik)</p>\n<p>Works discussed<br>Painting&ndash;78&ndash;1 (페인팅-78-1) &middot; Jeok&ndash;Eungnyeok (적-응력) &middot; Untitled 75031 (무제 75031) &middot; Reading Newspaper (신문 읽기) &middot; 1978&ndash;2 &middot; Flat Object (평면 오브제) &middot; Tying Reeds and Beard (갈대와 수염 묶기)</p>\n<p>Dorian Vale, Museum of One, 2026. ORCID 0009-0004-7737-5094. Version 1.0. &copy; 2026 Dorian Vale &middot; Museum of One.</p>\n<p>Author and publisher authority records<br>Dorian Vale | ORCID 0009-0004-7737-5094 | Wikidata Q136308916 | ISNI 0000000528819744 (publisher-attested)<br>Museum of One | Wikidata Q136308879 | ISNI 0000000528819728 (publisher-attested)</p>\n<p>Related Museum of One and Post-Interpretive Criticism research vocabulary<br>Post-Interpretive Criticism; Stillmark Theory; Message-Transfer Theory; MTT; Misplacement; Displacement; Aesthetic Displacement Theory; Theory of Misplacement; Absential Aesthetics; Witness Aesthetics; Adab for Art; Hauntmark Theory; Spiritual Criticism; Presence-Based Criticism; Custodianship of Art; Art as Ontology; Aesthetic Recursion Theory; Aesthetic Recursion; Viewer as Evidence Theory; Restraint in front of art; Moral proximity; Interpretive silence; Erasure as ethics; Temporal scarcity; Silence as method; Ontology of beauty; Aesthetic mercy; Language as violence; Art encounter ethics; Epistemology of witness; Philosophy of Art; Aesthetics; Art Theory; Contemporary Aesthetics; Comparative Aesthetics; Phenomenology and Art; Ethics in Art Criticism; Interpretation and Meaning; Criticism and Reception Theory; Epistemology of Art; Visual Culture Studies; Dorian Vale; Founder of Post-Interpretive Criticism; Post-Aesthetic Critic; Independent Philosopher of Art; Museum of One; Art Writer and Theorist; Aesthetic Philosopher; Custodian of Witness Aesthetics; Spiritual Aesthetics Movement; The Doctrine of Post-Interpretive Criticism; The Custodian&rsquo;s Oath; The Canon of Witnesses; Art as Truth; Art as Presence; The Viewer as Evidence; Interpretation vs. Witnessing; Language as Custody; Erasure as Afterlife; Museum of One Manifesto; Alternative art criticism; New art criticism movement; Ethical art theory; Criticism beyond interpretation; Slow looking philosophy; Contemporary sacred aesthetics; Quiet philosophy of art; Radical art restraint; Witness over interpretation; Interpretive Restraint</p>",
+    "source_review": "2026-11-10",
+    "record_level": "Item",
+    "record_status": "Published source; selected catalogue record",
+    "institutional_metadata": {
+      "title": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+      "author": "Dorian Vale",
+      "web_publication": "2026-11-09T20:00:44.000+00:00",
+      "web_updated": "2026-11-09T20:40:54.000+00:00",
+      "linked_zenodo_dois": [
+        "10.5281/zenodo.24088563"
+      ],
+      "reviewed": "2026-11-10",
+      "source_url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+      "publication_title": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+      "publication_status": "Published working paper",
+      "publication_date": "2026-11-09",
+      "edition": "Version 1.0"
+    },
+    "provenance": {
+      "repository": "Zenodo public REST API response",
+      "retrieved": "2026-11-10",
+      "editorial_fields": [
+        "summary",
+        "subjects",
+        "collection",
+        "short_title",
+        "accession"
+      ],
+      "source_snapshot": "source/24088563.json",
+      "institutional_review": "Public native Ghost record and linked DOI inspected; summary and subjects follow the publication record."
+    },
+    "field_assertions": [
+      {
+        "field": "license",
+        "value": {
+          "label": "In Copyright. © 2026 Dorian Vale · Museum of One.",
+          "url": "https://rightsstatements.org/vocab/InC/1.0/"
+        },
+        "source_url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+        "status": "institutional_rights_statement",
+        "reviewed": "2026-11-10",
+        "note": "In Copyright is retained from the publication and its PDF. Public file access does not grant a Creative Commons licence."
+      }
+    ],
+    "description_history": [
+      {
+        "event_id": "rai-accession-2026-11-10",
+        "date": "2026-11-10",
+        "action": "Accessioned published RAI edition and checksum-verified reading copy",
+        "responsible_service": "Museum of One",
+        "method": "Public repository metadata, matching public institutional record and local PDF fixity verification",
+        "date_kind": "Local catalogue description event; not a publication date",
+        "sources": [
+          "https://zenodo.org/records/24088563",
+          "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/"
+        ]
+      }
+    ],
+    "research_programmes": [],
+    "relations": [
+      {
+        "identifier": "10.5281/zenodo.24088574",
+        "relation": "isSupplementedBy",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.24088573",
+        "relation": "isSupplementedBy",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      }
+    ],
+    "methodology": {
+      "title": "Relational Archival Investigation",
+      "url": "https://www.museumofone.art/relational-archival-investigation/",
+      "badge": "Methodology · RAI",
+      "source_url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/"
+    }
+  },
+  {
+    "id": "24088574",
+    "accession": "MOO-CAT-018",
+    "title": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+    "source_title": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+    "short_title": "RAI: Documentary Evidence and Source Comparisons",
+    "author": "Dorian Vale",
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": "Museum of One",
+        "orcid": "0009-0004-7737-5094"
+      }
+    ],
+    "doi": "10.5281/zenodo.24088574",
+    "conceptdoi": "10.5281/zenodo.24088572",
+    "zenodo_url": "https://zenodo.org/records/24088574",
+    "date": "2026-11-09",
+    "type": "Technical note",
+    "source_resource_type": {
+      "title": "Technical note",
+      "type": "publication",
+      "subtype": "technicalnote"
+    },
+    "version": "1.0",
+    "collection": "Essays & research",
+    "summary": "The documentary record supporting RAI: seven MMCA acquisition entries compared with collection records, with SeMA sources, artist testimony, institutional identifiers and the limits of each comparison.",
+    "subjects": [
+      "Relational Archival Investigation",
+      "Korean Art History",
+      "Korean Experimental Art",
+      "Art Archives",
+      "Documentary Evidence",
+      "Museum Collection Records",
+      "Source Criticism",
+      "한국미술사",
+      "Methodology"
+    ],
+    "keywords": [
+      "Relational Archival Investigation",
+      "Korean experimental art",
+      "documentary evidence",
+      "source criticism",
+      "museum acquisition records",
+      "collection cataloguing",
+      "historical chronology",
+      "Lee Kang-so",
+      "Jeok–Eungnyeok",
+      "Korean art",
+      "Korean art history",
+      "Art archives",
+      "Museum collection cataloguing",
+      "Artwork dating",
+      "1975 Paris Biennale",
+      "한국미술",
+      "한국미술사",
+      "한국 실험미술",
+      "미술 아카이브",
+      "국립현대미술관",
+      "서울시립 미술아카이브",
+      "이강소",
+      "Park Suk-won",
+      "박석원",
+      "Sung Neung Kyung",
+      "성능경",
+      "Kim Youngjin",
+      "김영진",
+      "Kim Yong-Ik",
+      "김용익",
+      "Rim Dong Sik",
+      "임동식"
+    ],
+    "license": {
+      "label": "In Copyright. © 2026 Dorian Vale · Museum of One.",
+      "url": "https://rightsstatements.org/vocab/InC/1.0/"
+    },
+    "files": [
+      {
+        "name": "02_RAI_Documentary_Supplement_Dorian_Vale.pdf",
+        "url": "https://zenodo.org/api/records/24088574/files/02_RAI_Documentary_Supplement_Dorian_Vale.pdf/content",
+        "size": 334348,
+        "size_label": "334,348 bytes",
+        "checksum": "md5:1d066f2c77de147bc382928cf42eca56",
+        "mimetype": "application/pdf"
+      }
+    ],
+    "institutional_url": "https://www.museumofone.art/rai-documentary-supplement/",
+    "corroboration": "The public Museum of One record reproduces the title, names Dorian Vale as author and links this edition DOI and PDF. The local PDF matches the public Zenodo source checksum. The institutional page dates remain separate from the repository publication date.",
+    "discrepancies": [],
+    "orcid": "0009-0004-7737-5094",
+    "publisher": "Museum of One",
+    "language": "eng",
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.24088563",
+        "relation": "isSupplementTo",
+        "resource_type": "publication-workingpaper",
+        "scheme": "doi"
+      }
+    ],
+    "alternate_identifiers": [],
+    "source_references": [],
+    "source_journal": null,
+    "source_imprint": null,
+    "source_contributors": [],
+    "source_created": "2026-11-09T16:22:55.741666+00:00",
+    "source_modified": "2026-11-09T17:02:09.093395+00:00",
+    "source_description_html": "<p>The documentary supplement makes the evidence behind Relational Archival Investigation traceable for Korean art history and art archive research. It pairs acquisition entries 73&ndash;79 on printed pages 39&ndash;40 of the National Museum of Modern and Contemporary Art, Korea (MMCA), 2016 Annual Report with collection records 7922&ndash;7928, management numbers 07909&ndash;07915. It records agreements, discrepancies and unresolved comparisons. It documents Lee Kang-so&rsquo;s Untitled 75031 and its 1975 Paris Biennale chronology, Park Suk-won&rsquo;s Jeok&ndash;Eungnyeok, Sung Neung Kyung&rsquo;s newspaper works and Kim Youngjin&rsquo;s video and installation records. Additional sections identify Seoul Museum of Art Archives records for Kim Yong-Ik and Rim Dong Sik. Record IDs, selected excerpts, paraphrases and attribution make the judgments auditable. The seven-entry block was selected retrospectively and is a bounded comparison.</p>\n<p>한국어 초록<br>한국 실험미술의 사료 대조를 위한 자료편이다. 국립현대미술관의 2016년 연보 수집 목록 73&ndash;79번과 소장품 기록 7922&ndash;7928(관리번호 07909&ndash;07915)을 항목별로 대조한다. 이강소의 〈무제 75031〉과 파리비엔날레, 박석원의 〈적-응력〉, 성능경의 신문 작업, 김영진의 비디오 설치를 다룬다. 서울시립 미술아카이브의 김용익&middot;임동식 자료도 기록 번호와 출처를 밝혀 제시한다.</p>\n<p>Artists in this study<br>Lee Kang-so (이강소; Lee Kangso, Lee Kang So) &middot; Park Suk-won (박석원; Park Suk Won) &middot; Sung Neung Kyung (성능경; Sung Neungkyung) &middot; Kim Youngjin (김영진; KIM Youngjin b, 김영진 b) &middot; Kim Yong-Ik (김용익; Kim Yong Ik) &middot; Rim Dong Sik (임동식; Rim Dongsik)</p>\n<p>Works discussed<br>Untitled 75031 (무제 75031) &middot; Painting (Event 77&ndash;2) (페인팅 (이벤트 77-2)) &middot; Painting&ndash;78&ndash;1 (페인팅-78-1) &middot; Jeok&ndash;Eungnyeok (적-응력) &middot; Eight Pages of Newspaper (8면의 신문) &middot; Reading Newspaper (신문 읽기) &middot; 1978&ndash;10&ndash;2 &middot; 1978&ndash;2 &middot; Flat Object (평면 오브제) &middot; Tying Reeds and Beard (갈대와 수염 묶기)</p>\n<p>Dorian Vale, Museum of One, 2026. ORCID 0009-0004-7737-5094. Version 1.0. &copy; 2026 Dorian Vale &middot; Museum of One.</p>\n<p>Author and publisher authority records<br>Dorian Vale | ORCID 0009-0004-7737-5094 | Wikidata Q136308916 | ISNI 0000000528819744 (publisher-attested)<br>Museum of One | Wikidata Q136308879 | ISNI 0000000528819728 (publisher-attested)</p>",
+    "source_review": "2026-11-10",
+    "record_level": "Item",
+    "record_status": "Published source; selected catalogue record",
+    "institutional_metadata": {
+      "title": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+      "author": "Dorian Vale",
+      "web_publication": "2026-11-09T20:04:03.000+00:00",
+      "web_updated": "2026-11-09T20:41:38.000+00:00",
+      "linked_zenodo_dois": [
+        "10.5281/zenodo.24088574"
+      ],
+      "reviewed": "2026-11-10",
+      "source_url": "https://www.museumofone.art/rai-documentary-supplement/",
+      "publication_title": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+      "publication_status": "Published methodological supplement",
+      "publication_date": "2026-11-09",
+      "edition": "Version 1.0"
+    },
+    "provenance": {
+      "repository": "Zenodo public REST API response",
+      "retrieved": "2026-11-10",
+      "editorial_fields": [
+        "summary",
+        "subjects",
+        "collection",
+        "short_title",
+        "accession"
+      ],
+      "source_snapshot": "source/24088574.json",
+      "institutional_review": "Public native Ghost record and linked DOI inspected; summary and subjects follow the publication record."
+    },
+    "field_assertions": [
+      {
+        "field": "license",
+        "value": {
+          "label": "In Copyright. © 2026 Dorian Vale · Museum of One.",
+          "url": "https://rightsstatements.org/vocab/InC/1.0/"
+        },
+        "source_url": "https://www.museumofone.art/rai-documentary-supplement/",
+        "status": "institutional_rights_statement",
+        "reviewed": "2026-11-10",
+        "note": "In Copyright is retained from the publication and its PDF. Public file access does not grant a Creative Commons licence."
+      }
+    ],
+    "description_history": [
+      {
+        "event_id": "rai-accession-2026-11-10",
+        "date": "2026-11-10",
+        "action": "Accessioned published RAI edition and checksum-verified reading copy",
+        "responsible_service": "Museum of One",
+        "method": "Public repository metadata, matching public institutional record and local PDF fixity verification",
+        "date_kind": "Local catalogue description event; not a publication date",
+        "sources": [
+          "https://zenodo.org/records/24088574",
+          "https://www.museumofone.art/rai-documentary-supplement/"
+        ]
+      }
+    ],
+    "research_programmes": [],
+    "relations": [
+      {
+        "identifier": "10.5281/zenodo.24088563",
+        "relation": "isSupplementTo",
+        "resource_type": "publication-workingpaper",
+        "scheme": "doi"
+      }
+    ],
+    "methodology": {
+      "title": "Relational Archival Investigation",
+      "url": "https://www.museumofone.art/relational-archival-investigation/",
+      "badge": "Methodology · RAI",
+      "source_url": "https://www.museumofone.art/rai-documentary-supplement/"
+    }
+  },
+  {
+    "id": "24088573",
+    "accession": "MOO-CAT-019",
+    "title": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+    "source_title": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+    "short_title": "RAI: Extended Case Studies",
+    "author": "Dorian Vale",
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": "Museum of One",
+        "orcid": "0009-0004-7737-5094"
+      }
+    ],
+    "doi": "10.5281/zenodo.24088573",
+    "conceptdoi": "10.5281/zenodo.24088571",
+    "zenodo_url": "https://zenodo.org/records/24088573",
+    "date": "2026-11-09",
+    "type": "Technical note",
+    "source_resource_type": {
+      "title": "Technical note",
+      "type": "publication",
+      "subtype": "technicalnote"
+    },
+    "version": "1.0",
+    "collection": "Essays & research",
+    "summary": "Four studies of Kim Yong-Ik, Rim Dong Sik, Sung Neung Kyung and Kim Youngjin distinguish the work from the histories of its title, photographs, performance and display.",
+    "subjects": [
+      "Relational Archival Investigation",
+      "Korean Art History",
+      "Korean Experimental Art",
+      "Performance Documentation",
+      "Documentary Photography",
+      "Video Installation",
+      "Art Archives",
+      "한국미술사",
+      "Methodology"
+    ],
+    "keywords": [
+      "Relational Archival Investigation",
+      "Korean experimental art",
+      "art historiography",
+      "source criticism",
+      "documentary photography",
+      "exhibition history",
+      "video installation",
+      "Kim Yong-Ik",
+      "Rim Dong Sik",
+      "Sung Neung Kyung",
+      "Kim Youngjin",
+      "Korean art",
+      "Korean art history",
+      "Art archives",
+      "Artwork titles",
+      "Performance documentation",
+      "Busan Biennale",
+      "한국미술",
+      "한국미술사",
+      "한국 실험미술",
+      "미술 아카이브",
+      "퍼포먼스 기록",
+      "비디오 설치",
+      "부산비엔날레",
+      "김용익",
+      "임동식",
+      "성능경",
+      "김영진"
+    ],
+    "license": {
+      "label": "In Copyright. © 2026 Dorian Vale · Museum of One.",
+      "url": "https://rightsstatements.org/vocab/InC/1.0/"
+    },
+    "files": [
+      {
+        "name": "03_RAI_Extended_Case_Studies_Dorian_Vale.pdf",
+        "url": "https://zenodo.org/api/records/24088573/files/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf/content",
+        "size": 219814,
+        "size_label": "219,814 bytes",
+        "checksum": "md5:9f12074e3983e4eb75f78b89108d9c23",
+        "mimetype": "application/pdf"
+      }
+    ],
+    "institutional_url": "https://www.museumofone.art/rai-extended-case-studies/",
+    "corroboration": "The public Museum of One record reproduces the title, names Dorian Vale as author and links this edition DOI and PDF. The local PDF matches the public Zenodo source checksum. The institutional page dates remain separate from the repository publication date.",
+    "discrepancies": [],
+    "orcid": "0009-0004-7737-5094",
+    "publisher": "Museum of One",
+    "language": "eng",
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.24088563",
+        "relation": "isSupplementTo",
+        "resource_type": "publication-workingpaper",
+        "scheme": "doi"
+      }
+    ],
+    "alternate_identifiers": [],
+    "source_references": [],
+    "source_journal": null,
+    "source_imprint": null,
+    "source_contributors": [],
+    "source_created": "2026-11-09T16:22:56.278445+00:00",
+    "source_modified": "2026-11-09T17:02:09.853773+00:00",
+    "source_description_html": "<p>Four case studies in Korean experimental art examine how museum collections and art archives document titles, performances, photographs and installations. Seoul Museum of Art Archives records trace Kim Yong-Ik&rsquo;s Flat Object title variants and distinguish Rim Dong Sik&rsquo;s Tying Reeds and Beard action from later interventions in the photographic print. National Museum of Modern and Contemporary Art, Korea (MMCA), records place the photographic presentation of Sung Neung Kyung&rsquo;s Reading Newspaper in the work&rsquo;s early exhibition history. They also distinguish Kim Youngjin&rsquo;s early single-monitor presentation of 1978&ndash;2 from the twelve-monitor arrangement at the 2016 Busan Biennale. The selected cases demonstrate how Relational Archival Investigation links artworks to specific occasions without merging their distinct documentary histories.</p>\n<p>한국어 초록<br>한국 실험미술의 작품명, 퍼포먼스, 사진 기록, 비디오 설치를 네 사례로 살핀다. 서울시립 미술아카이브 자료를 통해 김용익의 〈평면 오브제〉 명칭 변이와 임동식의 〈갈대와 수염 묶기〉 사진에 가해진 후대의 개입을 검토한다. 국립현대미술관 소장품 기록은 성능경의 〈신문 읽기〉가 초기부터 사진으로 전시되었음을 보여 주며, 김영진의 〈1978&ndash;2〉 초기 단일 모니터 발표와 2016년 부산비엔날레의 열두 모니터 설치를 구분한다.</p>\n<p>Artists in this study<br>Kim Yong-Ik (김용익; Kim Yong Ik) &middot; Rim Dong Sik (임동식; Rim Dongsik) &middot; Sung Neung Kyung (성능경; Sung Neungkyung) &middot; Kim Youngjin (김영진; KIM Youngjin b, 김영진 b)</p>\n<p>Works discussed<br>Flat Object (평면 오브제) &middot; Tying Reeds and Beard (갈대와 수염 묶기) &middot; Reading Newspaper (신문 읽기) &middot; 1978&ndash;2</p>\n<p>Dorian Vale, Museum of One, 2026. ORCID 0009-0004-7737-5094. Version 1.0. &copy; 2026 Dorian Vale &middot; Museum of One.</p>\n<p>Author and publisher authority records<br>Dorian Vale | ORCID 0009-0004-7737-5094 | Wikidata Q136308916 | ISNI 0000000528819744 (publisher-attested)<br>Museum of One | Wikidata Q136308879 | ISNI 0000000528819728 (publisher-attested)</p>",
+    "source_review": "2026-11-10",
+    "record_level": "Item",
+    "record_status": "Published source; selected catalogue record",
+    "institutional_metadata": {
+      "title": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+      "author": "Dorian Vale",
+      "web_publication": "2026-11-09T20:05:43.000+00:00",
+      "web_updated": "2026-11-09T20:41:59.000+00:00",
+      "linked_zenodo_dois": [
+        "10.5281/zenodo.24088573"
+      ],
+      "reviewed": "2026-11-10",
+      "source_url": "https://www.museumofone.art/rai-extended-case-studies/",
+      "publication_title": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+      "publication_status": "Published methodological supplement",
+      "publication_date": "2026-11-09",
+      "edition": "Version 1.0"
+    },
+    "provenance": {
+      "repository": "Zenodo public REST API response",
+      "retrieved": "2026-11-10",
+      "editorial_fields": [
+        "summary",
+        "subjects",
+        "collection",
+        "short_title",
+        "accession"
+      ],
+      "source_snapshot": "source/24088573.json",
+      "institutional_review": "Public native Ghost record and linked DOI inspected; summary and subjects follow the publication record."
+    },
+    "field_assertions": [
+      {
+        "field": "license",
+        "value": {
+          "label": "In Copyright. © 2026 Dorian Vale · Museum of One.",
+          "url": "https://rightsstatements.org/vocab/InC/1.0/"
+        },
+        "source_url": "https://www.museumofone.art/rai-extended-case-studies/",
+        "status": "institutional_rights_statement",
+        "reviewed": "2026-11-10",
+        "note": "In Copyright is retained from the publication and its PDF. Public file access does not grant a Creative Commons licence."
+      }
+    ],
+    "description_history": [
+      {
+        "event_id": "rai-accession-2026-11-10",
+        "date": "2026-11-10",
+        "action": "Accessioned published RAI edition and checksum-verified reading copy",
+        "responsible_service": "Museum of One",
+        "method": "Public repository metadata, matching public institutional record and local PDF fixity verification",
+        "date_kind": "Local catalogue description event; not a publication date",
+        "sources": [
+          "https://zenodo.org/records/24088573",
+          "https://www.museumofone.art/rai-extended-case-studies/"
+        ]
+      }
+    ],
+    "research_programmes": [],
+    "relations": [
+      {
+        "identifier": "10.5281/zenodo.24088563",
+        "relation": "isSupplementTo",
+        "resource_type": "publication-workingpaper",
+        "scheme": "doi"
+      }
+    ],
+    "methodology": {
+      "title": "Relational Archival Investigation",
+      "url": "https://www.museumofone.art/relational-archival-investigation/",
+      "badge": "Methodology · RAI",
+      "source_url": "https://www.museumofone.art/rai-extended-case-studies/"
+    }
   }
 ]

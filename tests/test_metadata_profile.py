@@ -15,6 +15,7 @@ from metadata_profile import (prepare_metadata_records, validate_metadata_profil
                               build_quality_report, require_valid_report, combine_graphs, validate_export_agreement)
 from relationship_assertions import typed_relationship_assertions
 from enrich import enrich_record
+from readers import apply_reading_metadata
 from entities import attach_entities, entity_graph
 from contents import attach_contents, component_schema
 from vocabulary import attach_vocabulary, vocabulary_graph
@@ -33,7 +34,7 @@ class MetadataProfileTests(unittest.TestCase):
         cls.vocabulary = json.loads((ROOT / 'data/vocabulary.json').read_text())
         cls.vocabulary['scheme']['base_uri'] = ORIGIN + '/vocabulary.html'
         contents = json.loads((ROOT / 'data/contents.json').read_text())
-        rows = attach_entities([enrich_record(r, authorities) for r in raw], cls.entities)
+        rows = attach_entities(apply_reading_metadata([enrich_record(r, authorities) for r in raw], ROOT), cls.entities)
         rows = attach_catalogue_history(attach_vocabulary(attach_contents(rows, contents), cls.vocabulary))
         cls.records = prepare_metadata_records(rows, ORIGIN)
         cls.by_id = {r['id']: r for r in cls.records}
@@ -118,7 +119,8 @@ class MetadataProfileTests(unittest.TestCase):
         self.assertEqual(self.records, prepare_metadata_records(self.records, ORIGIN))
         for record in self.records:
             self.assertFalse(record.get('record_created'))
-            events = [e for e in record['description_history'] if e.get('event_id') == 'metadata-profile-3.0-2026-11-04']
+            expected_event = 'rai-accession-2026-11-10' if record['id'] in {'24088563','24088574','24088573'} else 'metadata-profile-3.0-2026-11-04'
+            events = [e for e in record['description_history'] if e.get('event_id') == expected_event]
             self.assertEqual(len(events), 1)
             latest = max(e['date'] for e in record['description_history'] if e.get('date'))
             expected = {e['event_id'] for e in record['description_history'] if e.get('date') == latest}
@@ -136,7 +138,7 @@ class MetadataProfileTests(unittest.TestCase):
     def test_export_agreement_catches_changed_citation_and_scope(self):
         record = self.by_id['19863790']
         rid = record['id']
-        model = build_citation_model(record, catalogue_url=ORIGIN + '/items/' + rid + '.html')
+        model = build_citation_model(record, catalogue_url=ORIGIN + '/items/' + rid + '.html', pdf_url=ORIGIN + '/items/' + rid + '.pdf')
         with tempfile.TemporaryDirectory() as directory:
             out = Path(directory)
             (out / 'metadata').mkdir()
@@ -156,7 +158,7 @@ class MetadataProfileTests(unittest.TestCase):
     def test_quality_is_dimensional_and_missing_checks_are_explicit(self):
         report = build_quality_report(self.records, self.all_graphs(), origin=ORIGIN)
         require_valid_report(report)
-        self.assertEqual(len(report['dimensions']['local_creation_date_unknown']), 16)
+        self.assertEqual(len(report['dimensions']['local_creation_date_unknown']), len(self.records))
         self.assertEqual(len(report['dimensions']['title_level_isbn_format_unresolved']), 4)
         self.assertFalse(report['checks']['citation_exports']['executed'])
         self.assertNotIn('completeness_score', report)

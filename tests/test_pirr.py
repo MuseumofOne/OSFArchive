@@ -61,7 +61,7 @@ class PirrCrosswalkTest(unittest.TestCase):
         self.assertIn('data-registry-entry', page['body'])
         self.assertIn('URLSearchParams', page['body'])
         exported = json.loads(output['data/research-crosswalk.json'])
-        self.assertEqual(len(exported['publications']), 16)
+        self.assertEqual(len(exported['publications']), len(records))
         self.assertEqual(sum(len(r['components']) for r in exported['publications']), 57)
         rows = list(csv.DictReader(StringIO(output['data/research-crosswalk.csv'])))
         methods = [r for r in rows if r['identifier'] == 'pir-prj-pyp5yx3w']

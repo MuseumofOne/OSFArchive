@@ -51,8 +51,8 @@ class ExplorerContract(unittest.TestCase):
   fragment=(ROOT/'dist/integration/archive-explorer.hbs').read_text()
   page=(ROOT/'dist/index.html').read_text()
   self.assertEqual(page.count('data-archive-explorer'),1)
-  self.assertEqual(fragment.count('data-ax-record='),20)
-  # Four featured descriptions plus every one of the sixteen catalogue records.
+  self.assertEqual(fragment.count('data-ax-record='),4+len(json.loads((ROOT/'data/catalogue.json').read_text())))
+  # Four featured descriptions plus every current catalogue record.
   for row in json.loads((ROOT/'data/catalogue.json').read_text()):
    self.assertIn('data-ax-record="'+row['id']+'"',fragment)
    self.assertIn('data-ax-record="'+row['id']+'"',page)
