@@ -107,3 +107,29 @@ test('evidence facets combine without hiding the distinction between source and 
  assert.ok(sources.some(r=>r.id==='evidence:mmca-2016-report-entry-76'));
  for(const field of ['material_type','period','source_layer']){const bad=structuredClone(feed);bad.records[0][field]={value:'invalid'};assert.throws(()=>api.validateIndex(bad,origin));}
 });
+
+test('released text reasons exclude metadata-only and mixed-field matches',()=>{
+ for(const kind of ['evidence','passage']){
+  const record={...fixture().records[0],id:kind+':scope-check',kind,record_level:'Page',title:'Park documentary record',aliases:['acquisition'],identifiers:[],summary:'A described research source',text:'The released wording describes wood.',page:4,transcription_status:'Reviewed extraction'};
+  for(const query of ['Park acquisition','Park wood']){
+   const result=api.rankRecords([record],query);assert.equal(result.length,1);
+   assert.equal(result[0].match_reason,'Subjects, identifiers or connected record metadata match');
+  }
+ }
+});
+
+test('released text reasons require every unquoted term in the actual text',()=>{
+ for(const [kind,record_level,expected] of [['evidence','Page','Released page text'],['passage',undefined,'Source text']]){
+  const record={...fixture().records[0],id:kind+':text-check',kind,record_level,title:'Documentary record',aliases:[],identifiers:[],summary:'A described research source',text:'Wood is described before the acquisition entry.',page:4,transcription_status:'Reviewed extraction'};
+  const result=api.rankRecords([record],'wood acquisition');assert.equal(result.length,1);assert.ok(result[0].match_reason.startsWith(expected));
+ }
+});
+
+test('quoted released text requires a contiguous normalized phrase',()=>{
+ for(const [kind,record_level,expected] of [['evidence','Page','Released page text'],['passage',undefined,'Source text']]){
+  const record={...fixture().records[0],id:kind+':phrase-check',kind,record_level,title:'Documentary record',aliases:[],identifiers:[],summary:'A described research source',text:'Wood and acquisition are separately described.',page:4,transcription_status:'Reviewed extraction'};
+  assert.equal(api.rankRecords([record],'"wood acquisition"').length,0);
+  const exact=api.rankRecords([{...record,text:'The WOOD   acquisition is described.'}],'"wood acquisition"');assert.equal(exact.length,1);assert.ok(exact[0].match_reason.startsWith(expected));
+  const alias=api.rankRecords([{...record,aliases:['wood acquisition']}],'"wood acquisition"');assert.equal(alias.length,1);assert.equal(alias[0].match_reason,'Known alternative title or name');
+ }
+});

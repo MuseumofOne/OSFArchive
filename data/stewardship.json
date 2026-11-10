@@ -16,8 +16,8 @@
     },
     {
       "path": "data/catalogue.json",
-      "bytes": 307559,
-      "sha256": "5ff4c534b238d8c61712efdfa7b3a4b3fbbf2aa0511feb89e89114e425b24234",
+      "bytes": 337862,
+      "sha256": "60f9d9af087e450c397af4591ec9365bb3627a118f8658d1f392611366e495ee",
       "role": "editorial_dataset"
     },
     {
@@ -52,14 +52,20 @@
     },
     {
       "path": "data/entities.json",
-      "bytes": 87740,
-      "sha256": "16943f429c74af9d04f7b38d6971297ef78c4d1eb85e090a67bc91648028876a",
+      "bytes": 111937,
+      "sha256": "39d033037ce27461f0da56e647562630e392990c7a5ec52cb505735e81c2ea1a",
+      "role": "editorial_dataset"
+    },
+    {
+      "path": "data/evidence.json",
+      "bytes": 57977,
+      "sha256": "62f37aa99983ddcef730c63ce2b9bb50a7f049b2ba76101f8e5eb763bc183eeb",
       "role": "editorial_dataset"
     },
     {
       "path": "data/metadata-profile.json",
-      "bytes": 2299,
-      "sha256": "8258469f1c2d443857143ba2d002f5151c5b1d29f1ed933c325acdc31a705152",
+      "bytes": 2325,
+      "sha256": "48dd20d6707e3b35a5ad6c2e2ed1a5d11a768ca03e563f9b92aad5ef88f03bc6",
       "role": "editorial_dataset"
     },
     {
@@ -88,8 +94,8 @@
     },
     {
       "path": "data/readers.json",
-      "bytes": 16011,
-      "sha256": "b2a48e0c075a746d54900f35bb97b3fb94634c41f24d393a1e125d934250d934",
+      "bytes": 18851,
+      "sha256": "8d7a87f9b6c16f47c6606c8a92f1a0daa1c39f04a452491f74e4cbf36134a09d",
       "role": "editorial_dataset"
     },
     {
@@ -189,6 +195,24 @@
       "role": "repository_source_snapshot"
     },
     {
+      "path": "data/source/24088563.json",
+      "bytes": 10640,
+      "sha256": "7c65da10c150a1794b907232d70bcd205a538574462eec5754443c88c880a841",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24088573.json",
+      "bytes": 8225,
+      "sha256": "a4a60480f54bf74aef291ffdcf2ddf45fecbac93efe0b95b241df122a0200b4c",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24088574.json",
+      "bytes": 8670,
+      "sha256": "89bf91856547ad77df0b6984423f864e96f17d6c838cc929015a532dfe26cc10",
+      "role": "repository_source_snapshot"
+    },
+    {
       "path": "data/source/authority-review-2026-11-04.json",
       "bytes": 1712,
       "sha256": "4e9beffbf368f874398a8f0328ef6b1c043a49895cd07187a4ab28acacf9e969",
@@ -202,8 +226,8 @@
     },
     {
       "path": "data/vocabulary.json",
-      "bytes": 70544,
-      "sha256": "c6d89826bb297d685801823a792f39727a6adaddef5433447e546b25132d0189",
+      "bytes": 88037,
+      "sha256": "14d1f0fa22da0b7c9da18b3e63d08e95d6800534a4b7dcd79b3d8de26b733d34",
       "role": "editorial_dataset"
     },
     {
@@ -306,6 +330,24 @@
       "path": "dist/assets/documents/23430200.pdf",
       "bytes": 180105,
       "sha256": "272b077f00db6a02d04c03b87608a0ab8cc34972b11759e51b7ece3890228716",
+      "role": "original_pdf_access_copy"
+    },
+    {
+      "path": "dist/assets/documents/24088563.pdf",
+      "bytes": 361169,
+      "sha256": "44df66915879ff3ee3127b17d98d960baf47d9d71685a1c0c3c89b2a1c4e6661",
+      "role": "original_pdf_access_copy"
+    },
+    {
+      "path": "dist/assets/documents/24088573.pdf",
+      "bytes": 219814,
+      "sha256": "1f9f7018a3f023afc5ab7cba6851c15a4b96f394ebcdad6e16f9c734ffbb264c",
+      "role": "original_pdf_access_copy"
+    },
+    {
+      "path": "dist/assets/documents/24088574.pdf",
+      "bytes": 334348,
+      "sha256": "c4358a5f6f736700bfdd298cb4bbaac372b954929723bad4c1eb06bb28c15a46",
       "role": "original_pdf_access_copy"
     },
     {
@@ -921,6 +963,25 @@
         "algorithm": "SHA-256",
         "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
       }
+    },
+    {
+      "at": "2026-11-10T01:22:14Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 59,
+      "inventory_sha256": "ad3c0a3c767488a77b2256af604ddfc081a383f3a167d731301d679bd8514b7f"
+    },
+    {
+      "at": "2026-11-10T01:22:14Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 59,
+      "checked_files": 59,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "ad3c0a3c767488a77b2256af604ddfc081a383f3a167d731301d679bd8514b7f"
     }
   ],
   "scope": "Repository source snapshots, editorial JSON datasets, and original PDF access copies.",
@@ -933,19 +994,19 @@
     "upstream_sources": "Original deposits remain at Zenodo; website source is held by the site platform.",
     "offsite_backup_status": "Private Google Drive package uploaded, downloaded again, checksum matched and all restored content verified."
   },
-  "inventory_sha256": "d577b543e0408afc4a0c12961f7274e8b6fb22e0662a3db004f984118781109c",
-  "baseline_created_at": "2026-11-10T01:06:40Z",
+  "inventory_sha256": "ad3c0a3c767488a77b2256af604ddfc081a383f3a167d731301d679bd8514b7f",
+  "baseline_created_at": "2026-11-10T01:22:14Z",
   "last_check": {
-    "at": "2026-11-10T01:06:40Z",
+    "at": "2026-11-10T01:22:14Z",
     "event": "fixity_check",
     "status": "passed",
     "algorithm": "SHA-256",
-    "file_count": 52,
-    "checked_files": 52,
+    "file_count": 59,
+    "checked_files": 59,
     "missing": [],
     "added": [],
     "changed": [],
-    "inventory_sha256": "d577b543e0408afc4a0c12961f7274e8b6fb22e0662a3db004f984118781109c"
+    "inventory_sha256": "ad3c0a3c767488a77b2256af604ddfc081a383f3a167d731301d679bd8514b7f"
   },
   "backup": {
     "at": "2026-11-10T01:06:46Z",

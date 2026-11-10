@@ -43,6 +43,7 @@
   return records.filter(r=>matches(r,filters)).map(record=>{
    const title=normalize(record.title),aliases=(record.aliases||[]).map(normalize),ids=(record.identifiers||[]).map(normalize),summary=normalize(record.summary),text=normalize(record.text||record.search_text||record.searchIndex||''),all=[title,...aliases,...ids,summary,text].join(' ');
    if(phrase&&!ids.includes(identifier)&&(quoted?![title,...aliases,...ids,summary,text].some(field=>field.includes(phrase)):!terms.every(term=>all.includes(term))))return null;
+   const releasedText=normalize(record.text||''),textMatches=Boolean(releasedText)&&(quoted?releasedText.includes(phrase):terms.every(term=>releasedText.includes(term)));
    let score=0,reason='Browse record';
    if(phrase){
     if(ids.includes(identifier)){score=2000;const original=(record.identifiers||[]).find(value=>normalize(value)===identifier),scope=record.identifier_scopes?.[original];reason='Exact identifier'+(scope?' · '+scope:'');}
@@ -52,8 +53,8 @@
     else if(terms.every(t=>title.includes(t))){score=800;reason='All search terms in title or name';}
     else if(aliases.some(a=>terms.every(t=>a.includes(t)))){score=700;reason='Alternative name matches';}
     else if(summary.includes(phrase)){score=500;reason='Description matches';}
-    else if(record.record_level==='Page'&&record.text){score=350;reason='Released page text · '+(record.transcription_status||'Check reading status');}
-    else if(record.kind==='passage'){score=300+(text.includes(phrase)?100:0);reason='Source text · PDF page '+record.page;}
+    else if(record.record_level==='Page'&&textMatches){score=350;reason='Released page text · '+(record.transcription_status||'Check reading status');}
+    else if(record.kind==='passage'&&textMatches){score=300+(text.includes(phrase)?100:0);reason='Source text · PDF page '+record.page;}
     else{score=200;reason='Subjects, identifiers or connected record metadata match';}
     score+=terms.filter(t=>title.includes(t)).length*4;
    }
