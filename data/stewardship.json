@@ -16,8 +16,8 @@
     },
     {
       "path": "data/catalogue.json",
-      "bytes": 397513,
-      "sha256": "7a2393d4db30ee9fc802a26ab1d6f2ad31584be39b90fe648347b750343fd051",
+      "bytes": 409592,
+      "sha256": "78ad4e66031918cc69e9d694bcb31ace477229e00b520a53ef49e481406de475",
       "role": "editorial_dataset"
     },
     {
@@ -237,9 +237,21 @@
       "role": "repository_source_snapshot"
     },
     {
+      "path": "data/source/24130993-2026-11-11.json",
+      "bytes": 9871,
+      "sha256": "97ba2be288f12ab081eab140e53b04e9eff0e805fd59ff0f2dbe2ceb25a311f3",
+      "role": "repository_source_snapshot"
+    },
+    {
       "path": "data/source/24130993-datacite-2026-11-11.json",
       "bytes": 9658,
       "sha256": "2f907bfdcf577b686f37ba312cf04ebfffe4064df3db4a4a2cdf5533ce5d4df9",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24130993-datacite-refresh-2026-11-11.json",
+      "bytes": 17998,
+      "sha256": "1c1306c9d9540aab77775719d4abc4b45010b02688bd3baeac9ba7013db60d5d",
       "role": "repository_source_snapshot"
     },
     {
@@ -258,6 +270,12 @@
       "path": "data/source/dialogue-accession-24130993-2026-11-11.json",
       "bytes": 9743,
       "sha256": "b155b03588000efada1f5ec70474fa52bc447dff6dc4c8949dcbef905b7cbc80",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/dialogue-metadata-review-2026-11-11.json",
+      "bytes": 7373,
+      "sha256": "d966758101add6c1213008cbef1095ade1f14b5c15966636fafb24bbc72fa50a",
       "role": "repository_source_snapshot"
     },
     {
@@ -1430,6 +1448,140 @@
         "algorithm": "SHA-256",
         "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
       }
+    },
+    {
+      "at": "2026-11-11T12:42:05Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 70,
+      "checked_files": 70,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "df9bb3147ad0ef68215d2faa8470dc3bdc6cdaf4de323ab877f819680ac425a2"
+    },
+    {
+      "at": "2026-11-11T12:42:05Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 70,
+      "checked_files": 70,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "df9bb3147ad0ef68215d2faa8470dc3bdc6cdaf4de323ab877f819680ac425a2"
+    },
+    {
+      "at": "2026-11-11T12:42:05Z",
+      "event": "backup_and_restoration_test",
+      "status": "passed",
+      "package_filename": "restored-committed-head-before-refresh.tar.gz",
+      "package_bytes": 14606171,
+      "package_sha256": "b3ade32e063fedf6b3ef66ae650266fcab2bd56f9a56e2ec6b8fc27d07d254d9",
+      "inventory_sha256": "df9bb3147ad0ef68215d2faa8470dc3bdc6cdaf4de323ab877f819680ac425a2",
+      "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
+      "restoration": {
+        "status": "passed",
+        "files_restored": 70,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      }
+    },
+    {
+      "at": "2026-11-11T12:42:36Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 73,
+      "inventory_sha256": "1fe1fff64e99e3e6ad5c9cbd4e9a4ed30c0ea328c1fd52b8f01fea19c3888214"
+    },
+    {
+      "at": "2026-11-11T12:42:36Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 73,
+      "checked_files": 73,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "1fe1fff64e99e3e6ad5c9cbd4e9a4ed30c0ea328c1fd52b8f01fea19c3888214"
+    },
+    {
+      "at": "2026-11-11T12:42:36Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 73,
+      "checked_files": 73,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "1fe1fff64e99e3e6ad5c9cbd4e9a4ed30c0ea328c1fd52b8f01fea19c3888214"
+    },
+    {
+      "at": "2026-11-11T12:42:37Z",
+      "event": "backup_and_restoration_test",
+      "status": "passed",
+      "package_filename": "museum-of-one-preservation-backup-2026-11-11-final.tar.gz",
+      "package_bytes": 14612972,
+      "package_sha256": "b9880d194cda64e516ba7a2fa72a7d537165702caf7b8667910fb5f235575c86",
+      "inventory_sha256": "1fe1fff64e99e3e6ad5c9cbd4e9a4ed30c0ea328c1fd52b8f01fea19c3888214",
+      "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
+      "restoration": {
+        "status": "passed",
+        "files_restored": 73,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      }
+    },
+    {
+      "at": "2026-11-11T12:50:01Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 73,
+      "inventory_sha256": "da7ebe4c4b22a03f31c05b2b5ffca71d1e3926f1949f1ccc7c516b58cb6f8b99"
+    },
+    {
+      "at": "2026-11-11T12:50:01Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 73,
+      "checked_files": 73,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "da7ebe4c4b22a03f31c05b2b5ffca71d1e3926f1949f1ccc7c516b58cb6f8b99"
+    },
+    {
+      "at": "2026-11-11T12:50:01Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 73,
+      "checked_files": 73,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "da7ebe4c4b22a03f31c05b2b5ffca71d1e3926f1949f1ccc7c516b58cb6f8b99"
+    },
+    {
+      "at": "2026-11-11T12:50:01Z",
+      "event": "backup_and_restoration_test",
+      "status": "passed",
+      "package_filename": "museum-of-one-preservation-backup-2026-11-11-final.tar.gz",
+      "package_bytes": 14613003,
+      "package_sha256": "039d9be77a3c22f6743073de41f77586d379fb8703290c6f78d656291838cbdc",
+      "inventory_sha256": "da7ebe4c4b22a03f31c05b2b5ffca71d1e3926f1949f1ccc7c516b58cb6f8b99",
+      "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
+      "restoration": {
+        "status": "passed",
+        "files_restored": 73,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      }
     }
   ],
   "scope": "Repository source snapshots, editorial JSON datasets, and original PDF access copies.",
@@ -1442,32 +1594,32 @@
     "upstream_sources": "Original deposits remain at Zenodo; website source is held by the site platform.",
     "offsite_backup_status": "Private Google Drive package uploaded, downloaded again, checksum matched and all restored content verified."
   },
-  "inventory_sha256": "df9bb3147ad0ef68215d2faa8470dc3bdc6cdaf4de323ab877f819680ac425a2",
-  "baseline_created_at": "2026-11-11T10:16:20Z",
+  "inventory_sha256": "da7ebe4c4b22a03f31c05b2b5ffca71d1e3926f1949f1ccc7c516b58cb6f8b99",
+  "baseline_created_at": "2026-11-11T12:50:01Z",
   "last_check": {
-    "at": "2026-11-11T10:16:20Z",
+    "at": "2026-11-11T12:50:01Z",
     "event": "fixity_check",
     "status": "passed",
     "algorithm": "SHA-256",
-    "file_count": 70,
-    "checked_files": 70,
+    "file_count": 73,
+    "checked_files": 73,
     "missing": [],
     "added": [],
     "changed": [],
-    "inventory_sha256": "df9bb3147ad0ef68215d2faa8470dc3bdc6cdaf4de323ab877f819680ac425a2"
+    "inventory_sha256": "da7ebe4c4b22a03f31c05b2b5ffca71d1e3926f1949f1ccc7c516b58cb6f8b99"
   },
   "backup": {
-    "at": "2026-11-11T10:16:21Z",
+    "at": "2026-11-11T12:50:01Z",
     "event": "backup_and_restoration_test",
     "status": "passed",
-    "package_filename": "after-dialogue-final-2026-11-11.tar.gz",
-    "package_bytes": 14606463,
-    "package_sha256": "9d39a8be0185942dbdfa68dc66330186af43710a7bbc12a070db49f9454d81e4",
-    "inventory_sha256": "df9bb3147ad0ef68215d2faa8470dc3bdc6cdaf4de323ab877f819680ac425a2",
+    "package_filename": "museum-of-one-preservation-backup-2026-11-11-final.tar.gz",
+    "package_bytes": 14613003,
+    "package_sha256": "039d9be77a3c22f6743073de41f77586d379fb8703290c6f78d656291838cbdc",
+    "inventory_sha256": "da7ebe4c4b22a03f31c05b2b5ffca71d1e3926f1949f1ccc7c516b58cb6f8b99",
     "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
     "restoration": {
       "status": "passed",
-      "files_restored": 70,
+      "files_restored": 73,
       "algorithm": "SHA-256",
       "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
     }

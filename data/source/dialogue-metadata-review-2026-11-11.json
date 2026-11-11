@@ -1,0 +1,214 @@
+{
+  "reviewed": "2026-11-11",
+  "record_id": "24130993",
+  "doi": "10.5281/zenodo.24130993",
+  "scope": "Metadata-only reconciliation of the existing version 1.0 and the final publisher/archive crosslink.",
+  "source_modified": "2026-11-11T10:36:26.932800+00:00",
+  "datacite_updated": "2026-11-11T10:36:27.000Z",
+  "same_edition_checks": {
+    "title": true,
+    "doi": true,
+    "publication_date": true,
+    "version": true,
+    "resource_type": true,
+    "conceptdoi": true,
+    "file_identity_size_checksum": true,
+    "reading_copy_sha256": true
+  },
+  "original_snapshots_preserved": [
+    {
+      "path": "data/source/24130993.json",
+      "sha256": "20ce4128464958e88d7d2fcad7d9987b9c0bbeeeb6da884bd784f5921c6146df"
+    },
+    {
+      "path": "data/source/24130993-datacite-2026-11-11.json",
+      "sha256": "2f907bfdcf577b686f37ba312cf04ebfffe4064df3db4a4a2cdf5533ce5d4df9"
+    },
+    {
+      "path": "data/source/dialogue-accession-24130993-2026-11-11.json",
+      "sha256": "b155b03588000efada1f5ec70474fa52bc447dff6dc4c8949dcbef905b7cbc80"
+    }
+  ],
+  "current_sources": [
+    {
+      "url": "https://zenodo.org/api/records/24130993",
+      "snapshot": "data/source/24130993-2026-11-11.json",
+      "sha256": "97ba2be288f12ab081eab140e53b04e9eff0e805fd59ff0f2dbe2ceb25a311f3"
+    },
+    {
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.24130993",
+      "snapshot": "data/source/24130993-datacite-refresh-2026-11-11.json",
+      "sha256": "1c1306c9d9540aab77775719d4abc4b45010b02688bd3baeac9ba7013db60d5d"
+    }
+  ],
+  "publisher_review": {
+    "url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+    "sha256": "bdb9497be2db770ecfdff5aae0685bae15f892e106e931cd81c69e71361d799f",
+    "published": "2026-11-11T10:05:12.000Z",
+    "modified": "2026-11-11T12:49:19.000Z",
+    "body_archive_backlink": true,
+    "schema_archive_backlink": true,
+    "subjectOf": [
+      {
+        "@type": "WebPage",
+        "name": "Alexander Viktorovich Markov: Critical Language and Lasting Correction",
+        "url": "https://www.museumofone.art/research-critical-language/"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://hal.science/hal-05860223",
+        "url": "https://hal.science/hal-05860223",
+        "name": "HAL bibliographic notice hal-05860223"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://archive.museumofone.art/items/24130993.html",
+        "url": "https://archive.museumofone.art/items/24130993.html",
+        "name": "Museum of One Archive catalogue record MOO-CAT-022"
+      }
+    ]
+  },
+  "changed_catalogue_fields": [
+    "creators",
+    "keywords",
+    "discrepancies",
+    "related_identifiers",
+    "source_modified",
+    "source_description_html",
+    "institutional_metadata",
+    "relations",
+    "field_assertions",
+    "source_datacite_titles",
+    "subtitle",
+    "source_datacite_rights"
+  ],
+  "current_creators": [
+    {
+      "name": "Vale, Dorian",
+      "affiliation": "Museum of One",
+      "orcid": "0009-0004-7737-5094"
+    }
+  ],
+  "current_contributors": [
+    {
+      "name": "Markov, Alexander Viktorovich",
+      "affiliation": null,
+      "type": "Other"
+    }
+  ],
+  "current_keywords": [
+    "Alexander Viktorovich Markov",
+    "Александр Викторович Марков",
+    "Alexander V. Markov",
+    "Dorian Vale",
+    "Post-Interpretive Criticism",
+    "Semiotics of Non-intentional Ephemerality",
+    "Semantic protocol",
+    "Successional authority",
+    "Deactivation gap",
+    "Recognition closure",
+    "Interpretive authority",
+    "Museum cataloguing",
+    "Art criticism",
+    "Museum studies",
+    "Rijksmuseum",
+    "Simon Maris",
+    "Museum of One",
+    "Institutional responsibility",
+    "Contestability",
+    "Reauthorization"
+  ],
+  "current_related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23430200",
+      "relation": "cites",
+      "resource_type": "publication-workingpaper",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://www.southernsemioticreview.net/protocol-and-the-unstable-sign-a-revision-of-asignifying-semiotics-for-the-algorithmic-age/",
+      "relation": "cites",
+      "resource_type": "publication-article",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.museumofone.art/research-critical-language/#programme-outputs",
+      "relation": "isReferencedBy",
+      "resource_type": "other",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://hal.science/hal-05860223",
+      "relation": "isDescribedBy",
+      "resource_type": "other",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://archive.org/details/when-interpretation-becomes-authority-dialogue-v-1.0",
+      "relation": "isIdenticalTo",
+      "resource_type": "publication-other",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+      "relation": "isDescribedBy",
+      "resource_type": "other",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.museumofone.art/the-dialogues/",
+      "relation": "isReferencedBy",
+      "resource_type": "other",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://archive.museumofone.art/items/24130993.html",
+      "relation": "isDescribedBy",
+      "resource_type": "other",
+      "scheme": "url"
+    }
+  ],
+  "current_datacite_titles": [
+    {
+      "title": "When Interpretation Becomes Authority"
+    },
+    {
+      "lang": "eng",
+      "title": "A research dialogue between Post-Interpretive Criticism and the Semiotics of Non-intentional Ephemerality",
+      "titleType": "Subtitle"
+    }
+  ],
+  "current_datacite_rights": [
+    {
+      "rights": "In Copyright",
+      "rightsUri": "https://rightsstatements.org/page/InC/1.0/"
+    },
+    {
+      "rights": "© 2026 Dorian Vale · Museum of One. Editorial text by Dorian Vale. Alexander V. Markov's intellectual contributions are attributed throughout; rights in the original correspondence remain with its respective authors.",
+      "rightsUri": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  ],
+  "additional_contextual_series_relation": {
+    "identifier": "https://www.museumofone.art/the-dialogues/",
+    "relation": "isPartOf",
+    "resource_type": "other",
+    "scheme": "url",
+    "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+    "note": "Publisher-supported series relationship. The current repository separately supplies an isReferencedBy relationship to this series page; the two predicates retain their distinct meanings."
+  },
+  "resolved_discrepancy": "Zenodo and DataCite now supply Museum of One as Vale’s affiliation.",
+  "preserved_reading_copy": {
+    "path": "dist/assets/documents/24130993.pdf",
+    "bytes": 139737,
+    "md5": "f1644531d21747cac4acfca984a3d074",
+    "sha256": "f632ab874dc2a2fbd12d3410135f0656ed15bbc4f21204cca17ebdf0943b9aa4"
+  },
+  "constraints": [
+    "No new deposit, DOI, version, file or catalogue accession",
+    "Keep established short title separate from registered subtitle",
+    "Preserve sole editorial author and source-listed Other contributor role",
+    "Do not assign an affiliation to Markov or infer one from research subjects",
+    "Distinguish October edition and November repository release",
+    "Preserve all initial source snapshots byte-for-byte"
+  ]
+}
