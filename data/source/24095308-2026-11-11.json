@@ -1,0 +1,193 @@
+{
+  "created": "2026-11-10T01:07:17.849473+00:00",
+  "modified": "2026-11-10T10:25:58.851387+00:00",
+  "id": 24095308,
+  "conceptrecid": "24093528",
+  "doi": "10.5281/zenodo.24095308",
+  "conceptdoi": "10.5281/zenodo.24093528",
+  "doi_url": "https://doi.org/10.5281/zenodo.24095308",
+  "metadata": {
+    "title": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+    "doi": "10.5281/zenodo.24095308",
+    "publication_date": "2026-11-10",
+    "description": "<p><strong>Museum of One working paper &middot; Version 2.0 &middot; 10 November 2026 &middot; 16 pages &middot; 42 references</strong></p>\n<p>Dorian Vale compares how photographs acquired artistic and institutional standing through copying, repair, printing, exhibition, collection, and reperformance in Korean experimental art. The three cases concern Rim Dong Sik (임동식), Kim Kulim (김구림), and Sung Neung Kyung (성능경). Version 2.0 adds the Seoul Museum of Art collection-transfer chronology, the Korean Senior Artist Digital Archive&rsquo;s classification and digitization account, an exhibition checklist identifying video of Kim&rsquo;s reperformance, and Kim Eunjin&rsquo;s study of authenticity in contemporary art conservation.</p>\n<p><strong>Scope and limits.</strong> SeMA describes the copying and repair of Rim&rsquo;s photographs. Item-level repair dates and transfer documentation remain unresolved. The source negative, print edition and authorization, purchase year, and recording lineage remain open for Kim&rsquo;s work. MMCA identifies Sung&rsquo;s collected twelve-print panel with the panel shown in 1976. The dates of manufacture and mounting of individual sheets remain unresolved. Three Korean journal articles are consulted through their published abstracts.</p>\n<p><strong>Relationship to Relational Archival Investigation.</strong> This paper and the RAI working paper and supplements share earlier analyses of Rim&rsquo;s photographic repair and Sung&rsquo;s photographic exhibition. The revision extends the comparison through Kim&rsquo;s print and reperformance history, the new institutional records, and Korean conservation scholarship.</p>\n<p>한국 실험미술에서 사진이 복제, 보수, 인화, 전시, 수집을 거치며 작품으로 인정되는 과정을 임동식, 김구림, 성능경의 사례를 통해 비교한다. 개별 사진의 제작과 처리 이력에는 미해결 문제가 남는다.</p>\n<p><a href=\"https://archive.museumofone.art/evidence/when-documentation-becomes-the-work.html\">Annotated evidence and source access</a> &middot; <a href=\"https://doi.org/10.5281/zenodo.24093529\">Version 1.0 (9 November 2026)</a> &middot; <a href=\"https://www.museumofone.art/when-documentation-becomes-the-work/\">Museum of One</a></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": "Museum of One",
+        "orcid": "0009-0004-7737-5094"
+      }
+    ],
+    "keywords": [
+      "Korean art history",
+      "Korean art",
+      "Korean experimental art",
+      "Modern Korean art",
+      "Postwar Korean art",
+      "Korean performance art",
+      "Korean photography",
+      "Performance documentation",
+      "Art archives",
+      "Exhibition history",
+      "Art conservation",
+      "Reperformance",
+      "Material continuity",
+      "Relational Archival Investigation",
+      "Rim Dong Sik",
+      "Kim Kulim",
+      "Sung Neung Kyung",
+      "한국미술",
+      "한국미술사",
+      "한국 실험미술",
+      "한국 현대미술",
+      "퍼포먼스 기록",
+      "미술 아카이브",
+      "전시사",
+      "재연",
+      "임동식",
+      "김구림",
+      "성능경"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.24088563",
+        "relation": "cites",
+        "resource_type": "publication-workingpaper",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.24088574",
+        "relation": "cites",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.24088573",
+        "relation": "cites",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://www.museumofone.art/when-documentation-becomes-the-work/",
+        "relation": "isDescribedBy",
+        "resource_type": "publication-other",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://hal.science/hal-05858316",
+        "relation": "isDescribedBy",
+        "resource_type": "publication-other",
+        "scheme": "url"
+      }
+    ],
+    "version": "2.0",
+    "references": [
+      "Philip Auslander (2006). The Performativity of Performance Documentation. https://doi.org/10.1162/pajj.2006.28.3.1",
+      "Amy Brost (2022). Reconciling Authenticity and Reenactment. https://doi.org/10.37050/ci-21_19",
+      "Sooran Choi (2020). Manifestations of a Zombie Avant-garde: South Korean Performance and Conceptual Art in the 1970s. re•bus 9, 74–108.",
+      "Seo Yeon Chung and Yeon Shim Chung (2024). A Study of Sung Neung Kyung's Photography in 1975–1976. https://doi.org/10.17057/kahoma.2024..56.006",
+      "Douglas Gabriel and Nancy P. Lin (2025). Action and Its Afterlives: Performance Art in East Asia. https://doi.org/10.1080/17561310.2025.2593044",
+      "Hanna Yoonwoo Lee (2019). Caught in the Act: Korean Experimental Performance of the 1960s and the 1970s. https://escholarship.org/uc/item/2n7133b6",
+      "Lee Eunjoo (2025). 1960-1970년대 한국 실험미술과 사진예술의 교차적 실천과 비평 담론. https://kahoma.or.kr/homepage/boardMedia/192403",
+      "Ryu Hanseung (2015). 1970년대 중·후반의 이벤트. https://www.mmca.go.kr/upload/artInfo/2016/02/2016021504205671016137.pdf",
+      "MMCA. Kim Kulim, From Phenomenon to Traces, collection object 04616. https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=4616",
+      "MMCA. Sung Neung Kyung, Reading Newspaper, collection object 08033. https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=8194",
+      "MMCA Research Lab. Event-Logical. https://mmcaresearch.kr/terms/view.do?fid=2208",
+      "SeMA Art Archives. Rim Dong Sik, Tying Reeds and Beard, MA-03-00006485. https://sema.seoul.go.kr/semaaa/front/archive/view.do?iId=23414",
+      "Aga Wielocha (2021). Art Objects as Documents and the Distributed Identity of Contemporary Artworks. https://doi.org/10.64655/AM.si21ca.m1963"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Working paper",
+      "type": "publication",
+      "subtype": "workingpaper"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "24093528"
+          }
+        }
+      ]
+    }
+  },
+  "title": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+  "links": {
+    "self": "https://zenodo.org/api/records/24095308",
+    "self_html": "https://zenodo.org/records/24095308",
+    "preview_html": "https://zenodo.org/records/24095308?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.24095308",
+    "self_doi": "https://doi.org/10.5281/zenodo.24095308",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.24095308",
+    "reserve_doi": "https://zenodo.org/api/records/24095308/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/24093528",
+    "parent_html": "https://zenodo.org/records/24093528",
+    "parent_doi": "https://doi.org/10.5281/zenodo.24093528",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.24093528",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:24095308/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:24095308/sequence/default",
+    "files": "https://zenodo.org/api/records/24095308/files",
+    "media_files": "https://zenodo.org/api/records/24095308/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:24095308:When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:24095308:When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:24095308:When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:24095308:When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:24095308:When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:24095308:When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "latest": "https://zenodo.org/api/records/24095308/versions/latest",
+    "latest_html": "https://zenodo.org/records/24095308/latest",
+    "versions": "https://zenodo.org/api/records/24095308/versions",
+    "draft": "https://zenodo.org/api/records/24095308/draft",
+    "access_links": "https://zenodo.org/api/records/24095308/access/links",
+    "access_grants": "https://zenodo.org/api/records/24095308/access/grants",
+    "access_users": "https://zenodo.org/api/records/24095308/access/users",
+    "access_request": "https://zenodo.org/api/records/24095308/access/request",
+    "access": "https://zenodo.org/api/records/24095308/access",
+    "communities": "https://zenodo.org/api/records/24095308/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/24095308/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/24095308/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/24095308/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/24095308/quota-increase",
+    "requests": "https://zenodo.org/api/records/24095308/requests"
+  },
+  "updated": "2026-11-10T10:25:58.851387+00:00",
+  "recid": "24095308",
+  "revision": 6,
+  "files": [
+    {
+      "id": "08294a9a-e5ae-4457-9021-4f236e7e6088",
+      "key": "When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf",
+      "size": 336198,
+      "checksum": "md5:51391d1910c17f1041f82484d61d7e54",
+      "links": {
+        "self": "https://zenodo.org/api/records/24095308/files/When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1392900"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 18,
+    "unique_downloads": 16,
+    "views": 55,
+    "unique_views": 50,
+    "version_downloads": 11,
+    "version_unique_downloads": 9,
+    "version_unique_views": 26,
+    "version_views": 29
+  },
+  "state": "done",
+  "submitted": true
+}

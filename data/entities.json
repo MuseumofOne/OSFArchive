@@ -120,6 +120,16 @@
         "url": "https://www.museumofone.art/rai-extended-case-studies/",
         "label": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
         "note": "Published institutional record credits Dorian Vale and Museum of One."
+      },
+      {
+        "url": "https://www.museumofone.art/when-documentation-becomes-the-work/",
+        "label": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+        "note": "Public institutional record identifies the publication author, publisher and selected edition DOI."
+      },
+      {
+        "url": "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
+        "label": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
+        "note": "Public institutional record identifies the publication author, publisher and selected edition DOI."
       }
     ],
     "record_links": [
@@ -354,6 +364,22 @@
         "note": "Published institutional record links the selected edition DOI.",
         "evidence_scope": "exact_edition",
         "reviewed": "2026-11-10"
+      },
+      {
+        "record_id": "24095308",
+        "relation": "author",
+        "source_url": "https://www.museumofone.art/when-documentation-becomes-the-work/",
+        "note": "The public Museum of One publication record identifies Dorian Vale as author and links the selected edition DOI. Research subjects and holding institutions are not publication affiliations.",
+        "evidence_scope": "exact_edition",
+        "reviewed": "2026-11-11"
+      },
+      {
+        "record_id": "24095953",
+        "relation": "author",
+        "source_url": "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
+        "note": "The public Museum of One publication record identifies Dorian Vale as author and links the selected edition DOI. Research subjects and holding institutions are not publication affiliations.",
+        "evidence_scope": "exact_edition",
+        "reviewed": "2026-11-11"
       }
     ],
     "description_reviewed": "2026-11-05"
@@ -471,6 +497,16 @@
         "url": "https://www.museumofone.art/rai-extended-case-studies/",
         "label": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
         "note": "Published institutional record credits Dorian Vale and Museum of One."
+      },
+      {
+        "url": "https://www.museumofone.art/when-documentation-becomes-the-work/",
+        "label": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+        "note": "Public institutional record identifies the publication author, publisher and selected edition DOI."
+      },
+      {
+        "url": "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
+        "label": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
+        "note": "Public institutional record identifies the publication author, publisher and selected edition DOI."
       }
     ],
     "record_links": [
@@ -705,6 +741,22 @@
         "note": "Published institutional record links the selected edition DOI.",
         "evidence_scope": "exact_edition",
         "reviewed": "2026-11-10"
+      },
+      {
+        "record_id": "24095308",
+        "relation": "publisher",
+        "source_url": "https://www.museumofone.art/when-documentation-becomes-the-work/",
+        "note": "The public Museum of One publication record identifies Museum of One as publisher and links the selected edition DOI. Research subjects and holding institutions are not publication affiliations.",
+        "evidence_scope": "exact_edition",
+        "reviewed": "2026-11-11"
+      },
+      {
+        "record_id": "24095953",
+        "relation": "publisher",
+        "source_url": "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
+        "note": "The public Museum of One publication record identifies Museum of One as publisher and links the selected edition DOI. Research subjects and holding institutions are not publication affiliations.",
+        "evidence_scope": "exact_edition",
+        "reviewed": "2026-11-11"
       }
     ],
     "description_reviewed": "2026-11-05"

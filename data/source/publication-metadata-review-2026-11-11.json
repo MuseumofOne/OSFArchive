@@ -1,0 +1,182 @@
+{
+  "reviewed": "2026-11-11",
+  "scope": "Metadata-only reconciliation of two existing deposited editions and the five source-linked RAI programme outputs.",
+  "programme": {
+    "title": "Relational Archival Investigation",
+    "url": "https://www.museumofone.art/relational-archival-investigation/",
+    "status": "Method in development",
+    "record_ids": [
+      "24088563",
+      "24088574",
+      "24088573",
+      "24095308",
+      "24095953"
+    ],
+    "sources": [
+      {
+        "url": "https://www.museumofone.art/research-working-papers/",
+        "source_location": "Korean experimental art and postwar Japanese art",
+        "text_quote": "The Relational Archival Investigation programme brings the method, its two supplements, and the two applications together."
+      },
+      {
+        "url": "https://www.museumofone.art/relational-archival-investigation/",
+        "source_location": "Research status",
+        "text_quote": "Method in development"
+      },
+      {
+        "url": "https://www.museumofone.art/relational-archival-investigation/",
+        "source_location": "Publication and citation; Applications in Korean experimental art",
+        "note": "The public overview names the three separately citable publications and both applications with version-specific DOI links."
+      }
+    ]
+  },
+  "repository_metadata_reviews": [
+    {
+      "record_id": "24095308",
+      "doi": "10.5281/zenodo.24095308",
+      "version": "2.0",
+      "api_url": "https://zenodo.org/api/records/24095308",
+      "source_modified": "2026-11-10T10:25:58.851387+00:00",
+      "changed_metadata_fields": [
+        "related_identifiers"
+      ],
+      "original_snapshot": "data/source/24095308.json",
+      "original_snapshot_sha256": "4ebcba01a49eeffaf7ccfedfd767ef880f112d2e781f1f9f45cd49fbf0d7a278",
+      "current_snapshot": "data/source/24095308-2026-11-11.json",
+      "current_snapshot_sha256": "864a2394a81417277004157195be49dda80c336d0b5de755b6a5c5d753e2d96a",
+      "same_edition_checks": {
+        "doi": true,
+        "concept_doi": true,
+        "version": true,
+        "publication_date": true,
+        "title": true,
+        "file_identifiers_sizes_and_checksums": true
+      },
+      "current_creators": [
+        {
+          "name": "Vale, Dorian",
+          "affiliation": "Museum of One",
+          "orcid": "0009-0004-7737-5094"
+        }
+      ],
+      "current_related_identifiers": [
+        {
+          "identifier": "10.5281/zenodo.24088563",
+          "relation": "cites",
+          "resource_type": "publication-workingpaper",
+          "scheme": "doi"
+        },
+        {
+          "identifier": "10.5281/zenodo.24088574",
+          "relation": "cites",
+          "resource_type": "publication-technicalnote",
+          "scheme": "doi"
+        },
+        {
+          "identifier": "10.5281/zenodo.24088573",
+          "relation": "cites",
+          "resource_type": "publication-technicalnote",
+          "scheme": "doi"
+        },
+        {
+          "identifier": "https://www.museumofone.art/when-documentation-becomes-the-work/",
+          "relation": "isDescribedBy",
+          "resource_type": "publication-other",
+          "scheme": "url"
+        },
+        {
+          "identifier": "https://hal.science/hal-05858316",
+          "relation": "isDescribedBy",
+          "resource_type": "publication-other",
+          "scheme": "url"
+        }
+      ]
+    },
+    {
+      "record_id": "24095953",
+      "doi": "10.5281/zenodo.24095953",
+      "version": "1.0",
+      "api_url": "https://zenodo.org/api/records/24095953",
+      "source_modified": "2026-11-10T10:24:46.242181+00:00",
+      "changed_metadata_fields": [
+        "creators",
+        "related_identifiers"
+      ],
+      "original_snapshot": "data/source/24095953.json",
+      "original_snapshot_sha256": "198f9110e48bee98390db218dcfca2d38f41d56aef65821db2bc2ce7db0f9d89",
+      "current_snapshot": "data/source/24095953-2026-11-11.json",
+      "current_snapshot_sha256": "a29811e0903e6775adaa22edf40273bbdc40f9063728edd66d69644189b46c42",
+      "same_edition_checks": {
+        "doi": true,
+        "concept_doi": true,
+        "version": true,
+        "publication_date": true,
+        "title": true,
+        "file_identifiers_sizes_and_checksums": true
+      },
+      "current_creators": [
+        {
+          "name": "Vale, Dorian",
+          "affiliation": "Museum of One",
+          "orcid": "0009-0004-7737-5094"
+        }
+      ],
+      "current_related_identifiers": [
+        {
+          "identifier": "10.5281/zenodo.24088563",
+          "relation": "cites",
+          "resource_type": "publication-workingpaper",
+          "scheme": "doi"
+        },
+        {
+          "identifier": "10.5281/zenodo.24088574",
+          "relation": "cites",
+          "resource_type": "publication-technicalnote",
+          "scheme": "doi"
+        },
+        {
+          "identifier": "10.5281/zenodo.24088573",
+          "relation": "cites",
+          "resource_type": "publication-technicalnote",
+          "scheme": "doi"
+        },
+        {
+          "identifier": "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
+          "relation": "isDescribedBy",
+          "resource_type": "publication-other",
+          "scheme": "url"
+        },
+        {
+          "identifier": "https://hal.science/hal-05858731",
+          "relation": "isDescribedBy",
+          "resource_type": "publication-other",
+          "scheme": "url"
+        }
+      ]
+    }
+  ],
+  "authority_relationships": {
+    "new_record_ids": [
+      "24095308",
+      "24095953"
+    ],
+    "existing_record_ids_retained": [
+      "24088563",
+      "24088574",
+      "24088573"
+    ],
+    "roles": {
+      "dorian-vale": "author",
+      "museum-of-one": "publisher"
+    },
+    "sources": [
+      "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+      "https://www.museumofone.art/rai-documentary-supplement/",
+      "https://www.museumofone.art/rai-extended-case-studies/",
+      "https://www.museumofone.art/when-documentation-becomes-the-work/",
+      "https://www.museumofone.art/titles-dates-and-reconstructed-works/"
+    ],
+    "limits": "Research subjects, cited scholars and source-holding institutions are not asserted as coauthors, funders, partners or institutional affiliations."
+  },
+  "preserved": "Original repository snapshots and PDFs; edition and concept DOI identifiers; version labels; source publication dates; all existing accessions and routes."
+}

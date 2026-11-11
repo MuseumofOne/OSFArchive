@@ -1,0 +1,200 @@
+{
+  "created": "2026-11-10T02:27:01.397326+00:00",
+  "modified": "2026-11-10T10:24:46.242181+00:00",
+  "id": 24095953,
+  "conceptrecid": "24095952",
+  "doi": "10.5281/zenodo.24095953",
+  "conceptdoi": "10.5281/zenodo.24095952",
+  "doi_url": "https://doi.org/10.5281/zenodo.24095953",
+  "metadata": {
+    "title": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
+    "doi": "10.5281/zenodo.24095953",
+    "publication_date": "2026-11-10",
+    "description": "<p><strong>Museum of One working paper &middot; Version 1.0 &middot; 10 November 2026 &middot; 16 pages &middot; 21 references</strong></p>\n<p>A work can retain its title and historical date even when its materials, arrangement, or means of presentation have changed. This working paper examines four Korean archival and museum cases: Kim Yong-Ik&rsquo;s Plane Object photographs and the history of &ldquo;plain&rdquo; and &ldquo;place&rdquo;; the differing production years assigned to Park Suk-won&rsquo;s Jeok&ndash;Eungnyeok; the 1975 historical reference and 2016 materials of Lee Kang-so&rsquo;s Untitled 75031; and Kim Kulim&rsquo;s Mediator, used by the National Museum of Modern and Contemporary Art, Korea, to exemplify compound dating. MMCA&rsquo;s acquisition narrative and publication guidance acknowledge remaking as part of collecting an experimental past. The paper reads that institutional practice alongside scholarship on the relations among images, material traces, and artwork identity. Aga Wielocha&rsquo;s discussion of Danh Vo&rsquo;s chandeliers provides a particularly revealing comparison: a title can date an object&rsquo;s removal and transformation into art rather than its fabrication, just as a museum&rsquo;s leading year can identify an earlier work rather than the age of its present components. These different histories require the event dated by each title or caption to remain explicit. Neither artist authorisation nor institutional recognition settles every claim about an earlier condition. The paper credits the overlapping demonstrations in the author&rsquo;s Relational Archival Investigation papers and develops their implications for collecting, editorial preference, and historical inference. Its contribution is a comparative account of how names and dates sustain continuity without making the evidence for that continuity interchangeable.</p>\n<p><strong>Evidence limits.</strong> The source base is documentary. Physical artworks, original versos, complete printing proofs and object-specific acquisition and conservation dossiers remain unexamined. Park&rsquo;s two published dates establish a discrepancy without determining the original year or a sequence of database changes. A shared series title cannot identify an individual Kim Yong-Ik work. The eight- and ten-image accounts do not establish a sequence of additions to Lee&rsquo;s work. Jung Eun Young is cited through the published abstracts. The four selected cases establish no national rate of discrepancy. This working paper has not undergone independent peer review.</p>\n<p><strong>Relationship to Relational Archival Investigation.</strong> The <a href=\"https://doi.org/10.5281/zenodo.24088563\">RAI main paper</a>, <a href=\"https://doi.org/10.5281/zenodo.24088574\">Documentary Supplement</a> and <a href=\"https://doi.org/10.5281/zenodo.24088573\">Extended Case Studies</a> already report the shared naming and date comparisons, the limits of series-title identification, and the difference between Lee&rsquo;s photographic accounts. This paper extends that work through MMCA&rsquo;s acquisition narrative and compound dating of <em>Mediator</em>, a sustained comparison with Korean scholarship and conservation research, and analysis of what later objects and records establish about earlier works. Its bibliography points to the cited OSF file versions.</p>\n<p>김용익(평면 오브제), 박석원(적-응력), 이강소(무제 75031), 김구림(매개항)의 사례를 통해 한국 실험미술에서 작품의 제목과 연대, 재제작, 소장 기록이 어떤 역사적 주장을 뒷받침하는지 살핀다. 작품의 역사적 정체성과 현존 구성 요소의 제작 시기를 구분하며, 네 사례의 자료 범위와 기존 RAI 연구와의 관계를 명시한다.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": "Museum of One",
+        "orcid": "0009-0004-7737-5094"
+      }
+    ],
+    "keywords": [
+      "Korean art history",
+      "Korean art",
+      "Korean experimental art",
+      "Korean modern and contemporary art",
+      "Artwork identity",
+      "Museum collection records",
+      "Artwork reconstruction",
+      "Compound dating",
+      "Exhibition history",
+      "Archival research",
+      "Art conservation",
+      "Photographic documentation",
+      "Relational Archival Investigation",
+      "Post-Interpretive Criticism",
+      "Kim Yong-Ik",
+      "Park Suk-won",
+      "Lee Kang-so",
+      "Kim Kulim",
+      "한국미술",
+      "한국미술사",
+      "한국 실험미술",
+      "작품 정체성",
+      "작품 재제작",
+      "김용익",
+      "박석원",
+      "이강소",
+      "김구림"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.24088563",
+        "relation": "cites",
+        "resource_type": "publication-workingpaper",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.24088574",
+        "relation": "cites",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.24088573",
+        "relation": "cites",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
+        "relation": "isDescribedBy",
+        "resource_type": "publication-other",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://hal.science/hal-05858731",
+        "relation": "isDescribedBy",
+        "resource_type": "publication-other",
+        "scheme": "url"
+      }
+    ],
+    "version": "1.0",
+    "references": [
+      "Amy Brost (2022). Reconciling Authenticity and Reenactment: An Art Conservation Perspective. Cultural Inquiry 21, 183–92. https://doi.org/10.37050/ci-21_19",
+      "Getty Research Institute. Titles or Names. Categories for the Description of Works of Art, category 3. https://www.getty.edu/publications/categories-description-works-art/categories/object-architecture-group/3/",
+      "Getty Research Institute. Creation. Categories for the Description of Works of Art, category 4. https://www.getty.edu/publications/categories-description-works-art/categories/object-architecture-group/4/",
+      "Jung Eun Young (2024). \"Rational Logic and Natural Order\": Kim Yong-Ik's Conceptual Art and the \"Unverborgenheit\" of the Medium. Korean Bulletin of Art History 62, 7–36. Abstracts consulted. https://doi.org/10.15819/rah.2024..62.7",
+      "MMCA. 2016 Annual Report (2016 reporting year). §2-2, printed pp. 34–35; entries 73 and 76, pp. 39–40. https://www.mmca.go.kr/upload/artInfo/2017/09/2017092003532066115519.pdf",
+      "MMCA (2019). 국립현대미술관 출판 지침 [Guide to Publication], §3.74, pp. 132–33. https://www.mmca.go.kr/upload/research/MMCA%20Guide%20to%20Publication_last%20update%20August%202019.pdf",
+      "MMCA (2020). 국립현대미술관 출판 지침 [Guide to Publication], §3.74, pp. 134–35. https://www.mmca.go.kr/upload/research/MMCA%20Guide%20to%20Publication_20200806.pdf",
+      "MMCA. Park Suk-won, 적-응력 [Jeok–Eungnyeok]. Management number 07912, online record 7925. https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7925",
+      "MMCA. Lee Kang-so, 무제 75031 [Untitled 75031]. Management number 07909, online record 7922. https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7922",
+      "MMCA. Kim Kulim, 매개항 [Mediator]. Management number 04643, online record 4643. https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=4643",
+      "MMCA. Kim Yong-Ik, 평면 오브제 [Plane Object / Flat Object], 1977. Online record 7573. https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7573",
+      "Kaeun Park (2025, online 2026). Gestures of Suspicion: Lee Kang So's Performative Works in 1970s South Korea. Art in Translation 17(4), 348–70. https://doi.org/10.1080/17561310.2025.2593049",
+      "Ryu Ji-yeon (류지연) (2012). 이강소 회화의 특성: <무제> 시리즈를 중심으로. Journal of the National Museum of Contemporary Art, Korea 4, 7–23. https://www.mmca.go.kr/upload/m/data/artinfo/2013/01/25/20130125124036.pdf",
+      "SeMA Art Archives. Kim Yong-Ik solo exhibition at Gallery Te, Tokyo, 1978. Exhibition file 930. https://sema.seoul.go.kr/semaaa/front/class/view.do?cpId=930&menuId=8",
+      "SeMA Art Archives. Photographic Portfolio of Works from the 1970s and 1980s. Kim Yong-Ik Collection, MA-05-00049360, online item 89408. https://sema.seoul.go.kr/semaaa/front/archive/view.do?iId=89408&menuId=8",
+      "SeMA. Kim Yong-Ik, 평면 오브제 [Flat Object], 1977. Accession 2000-0160, online work WORK_0000000647. https://sema.seoul.go.kr/kr/knowledge_research/collection/collection_detail?artSeq=WORK_0000000647",
+      "SeMA Art Archives. Photographs of the Plane Object remake for the 1997 Kumho Museum exhibition. MA-03-00002265, online item 19167. https://sema.seoul.go.kr/semaaa/front/archive/view.do?iId=19167&menuId=13",
+      "Dorian Vale (2026a). Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art. Museum of One. OSF file version 1. https://osf.io/zhnre/files/osfstorage/6af1fbaf9a59a9f56db8c3a4?revision=1",
+      "Dorian Vale (2026b). Documentary Evidence and Source Comparisons. Supplement 1 to Relational Archival Investigation. Museum of One. OSF file version 1. https://osf.io/zhnre/files/osfstorage/6af1fbafa24596b11253bbf8?revision=1",
+      "Dorian Vale (2026c). Extended Case Studies and Methodological Demonstrations. Supplement 2 to Relational Archival Investigation. Museum of One. OSF file version 1. https://osf.io/zhnre/files/osfstorage/6af1fbaf5d50b310f653bbf6?revision=1",
+      "Aga Wielocha (2021). Art Objects as Documents and the Distributed Identity of Contemporary Artworks. ArtMatters, special issue 1, 106–13. https://doi.org/10.64655/AM.si21ca.m1963"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Working paper",
+      "type": "publication",
+      "subtype": "workingpaper"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "24095952"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
+  "links": {
+    "self": "https://zenodo.org/api/records/24095953",
+    "self_html": "https://zenodo.org/records/24095953",
+    "preview_html": "https://zenodo.org/records/24095953?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.24095953",
+    "self_doi": "https://doi.org/10.5281/zenodo.24095953",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.24095953",
+    "reserve_doi": "https://zenodo.org/api/records/24095953/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/24095952",
+    "parent_html": "https://zenodo.org/records/24095952",
+    "parent_doi": "https://doi.org/10.5281/zenodo.24095952",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.24095952",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:24095953/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:24095953/sequence/default",
+    "files": "https://zenodo.org/api/records/24095953/files",
+    "media_files": "https://zenodo.org/api/records/24095953/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:24095953:Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:24095953:Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:24095953:Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:24095953:Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:24095953:Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:24095953:Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "latest": "https://zenodo.org/api/records/24095953/versions/latest",
+    "latest_html": "https://zenodo.org/records/24095953/latest",
+    "versions": "https://zenodo.org/api/records/24095953/versions",
+    "draft": "https://zenodo.org/api/records/24095953/draft",
+    "access_links": "https://zenodo.org/api/records/24095953/access/links",
+    "access_grants": "https://zenodo.org/api/records/24095953/access/grants",
+    "access_users": "https://zenodo.org/api/records/24095953/access/users",
+    "access_request": "https://zenodo.org/api/records/24095953/access/request",
+    "access": "https://zenodo.org/api/records/24095953/access",
+    "communities": "https://zenodo.org/api/records/24095953/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/24095953/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/24095953/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/24095953/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/24095953/quota-increase",
+    "requests": "https://zenodo.org/api/records/24095953/requests"
+  },
+  "updated": "2026-11-10T10:24:46.242181+00:00",
+  "recid": "24095953",
+  "revision": 8,
+  "files": [
+    {
+      "id": "3d0cefbf-5355-4eb8-a1e1-b6381efda093",
+      "key": "Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf",
+      "size": 309812,
+      "checksum": "md5:20f2bad01e189225dc0c9cba9df093e9",
+      "links": {
+        "self": "https://zenodo.org/api/records/24095953/files/Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1392900"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 6,
+    "unique_downloads": 6,
+    "views": 17,
+    "unique_views": 13,
+    "version_downloads": 6,
+    "version_unique_downloads": 6,
+    "version_unique_views": 13,
+    "version_views": 17
+  },
+  "state": "done",
+  "submitted": true
+}

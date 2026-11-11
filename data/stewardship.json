@@ -16,8 +16,8 @@
     },
     {
       "path": "data/catalogue.json",
-      "bytes": 362898,
-      "sha256": "c338b56ca7f4d03f091aba05086dda6b30f039a3aa0469c5d30a99e8c310f44d",
+      "bytes": 378631,
+      "sha256": "c25040b247ec805cd8dd9b1e0de6b6547e19b271df9ad8b8e7a339897948afde",
       "role": "editorial_dataset"
     },
     {
@@ -52,8 +52,8 @@
     },
     {
       "path": "data/entities.json",
-      "bytes": 111937,
-      "sha256": "39d033037ce27461f0da56e647562630e392990c7a5ec52cb505735e81c2ea1a",
+      "bytes": 115143,
+      "sha256": "63ff8dd8ef17069e04097218a5162ac78129e83bfd2ddb8ffc613aceeacd243e",
       "role": "editorial_dataset"
     },
     {
@@ -88,8 +88,8 @@
     },
     {
       "path": "data/programmes.json",
-      "bytes": 4597,
-      "sha256": "e70163e3d3015f58cce54a2a0252261abbdbe7146fa43fe593bc8b916e9a65fc",
+      "bytes": 5623,
+      "sha256": "1f32d7dd01ced4c188072b122b2853370bd971bb6d2cc3a8fef84162d7e9e081",
       "role": "editorial_dataset"
     },
     {
@@ -213,9 +213,21 @@
       "role": "repository_source_snapshot"
     },
     {
+      "path": "data/source/24095308-2026-11-11.json",
+      "bytes": 11022,
+      "sha256": "864a2394a81417277004157195be49dda80c336d0b5de755b6a5c5d753e2d96a",
+      "role": "repository_source_snapshot"
+    },
+    {
       "path": "data/source/24095308.json",
       "bytes": 10175,
       "sha256": "4ebcba01a49eeffaf7ccfedfd767ef880f112d2e781f1f9f45cd49fbf0d7a278",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24095953-2026-11-11.json",
+      "bytes": 15025,
+      "sha256": "a29811e0903e6775adaa22edf40273bbdc40f9063728edd66d69644189b46c42",
       "role": "repository_source_snapshot"
     },
     {
@@ -234,6 +246,12 @@
       "path": "data/source/ghost-discovery.json",
       "bytes": 275,
       "sha256": "95afd236635229c135f3f766fdf4c64ffb6886a82c4c480afe8270806786bd60",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/publication-metadata-review-2026-11-11.json",
+      "bytes": 6488,
+      "sha256": "e9917103b9881b476fce8f4f66177e27388fbb1a5258e890768aaca445a4ae67",
       "role": "repository_source_snapshot"
     },
     {
@@ -1147,6 +1165,113 @@
         "algorithm": "SHA-256",
         "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
       }
+    },
+    {
+      "at": "2026-11-11T09:45:43Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 63,
+      "checked_files": 63,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "3472f7ae2f48b909d273b4faf4bfd119b072779c18159a31a2439e574f797e61"
+    },
+    {
+      "at": "2026-11-11T09:45:43Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 63,
+      "checked_files": 63,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "3472f7ae2f48b909d273b4faf4bfd119b072779c18159a31a2439e574f797e61"
+    },
+    {
+      "at": "2026-11-11T09:45:44Z",
+      "event": "backup_and_restoration_test",
+      "status": "passed",
+      "package_filename": "before-metadata-2026-11-11.tar.gz",
+      "package_bytes": 14484452,
+      "package_sha256": "f84c5c6c4a60da42dbea1849f6f2ac596ec4ace785d7b4d4a2ef0b45b764baae",
+      "inventory_sha256": "3472f7ae2f48b909d273b4faf4bfd119b072779c18159a31a2439e574f797e61",
+      "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
+      "restoration": {
+        "status": "passed",
+        "files_restored": 63,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      }
+    },
+    {
+      "at": "2026-11-11T09:46:41Z",
+      "event": "fixity_check",
+      "status": "failed",
+      "algorithm": "SHA-256",
+      "file_count": 63,
+      "checked_files": 63,
+      "missing": [],
+      "added": [
+        "data/source/24095308-2026-11-11.json",
+        "data/source/24095953-2026-11-11.json",
+        "data/source/publication-metadata-review-2026-11-11.json"
+      ],
+      "changed": [
+        "data/catalogue.json",
+        "data/entities.json",
+        "data/programmes.json"
+      ],
+      "inventory_sha256": "3472f7ae2f48b909d273b4faf4bfd119b072779c18159a31a2439e574f797e61"
+    },
+    {
+      "at": "2026-11-11T09:48:53Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 66,
+      "inventory_sha256": "3368f46eec900791b6eac0d3e8599b8001734060299bfa2696b608cb054289d0"
+    },
+    {
+      "at": "2026-11-11T09:48:53Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 66,
+      "checked_files": 66,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "3368f46eec900791b6eac0d3e8599b8001734060299bfa2696b608cb054289d0"
+    },
+    {
+      "at": "2026-11-11T09:48:53Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 66,
+      "checked_files": 66,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "3368f46eec900791b6eac0d3e8599b8001734060299bfa2696b608cb054289d0"
+    },
+    {
+      "at": "2026-11-11T09:48:54Z",
+      "event": "backup_and_restoration_test",
+      "status": "passed",
+      "package_filename": "after-metadata-2026-11-11.tar.gz",
+      "package_bytes": 14489965,
+      "package_sha256": "a726d7aa5543895a62e11a6d6e4c3465d50a5cee4a043a7552d7c90b1ad7e72d",
+      "inventory_sha256": "3368f46eec900791b6eac0d3e8599b8001734060299bfa2696b608cb054289d0",
+      "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
+      "restoration": {
+        "status": "passed",
+        "files_restored": 66,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      }
     }
   ],
   "scope": "Repository source snapshots, editorial JSON datasets, and original PDF access copies.",
@@ -1159,32 +1284,32 @@
     "upstream_sources": "Original deposits remain at Zenodo; website source is held by the site platform.",
     "offsite_backup_status": "Private Google Drive package uploaded, downloaded again, checksum matched and all restored content verified."
   },
-  "inventory_sha256": "3472f7ae2f48b909d273b4faf4bfd119b072779c18159a31a2439e574f797e61",
-  "baseline_created_at": "2026-11-11T00:04:57Z",
+  "inventory_sha256": "3368f46eec900791b6eac0d3e8599b8001734060299bfa2696b608cb054289d0",
+  "baseline_created_at": "2026-11-11T09:48:53Z",
   "last_check": {
-    "at": "2026-11-11T00:04:57Z",
+    "at": "2026-11-11T09:48:53Z",
     "event": "fixity_check",
     "status": "passed",
     "algorithm": "SHA-256",
-    "file_count": 63,
-    "checked_files": 63,
+    "file_count": 66,
+    "checked_files": 66,
     "missing": [],
     "added": [],
     "changed": [],
-    "inventory_sha256": "3472f7ae2f48b909d273b4faf4bfd119b072779c18159a31a2439e574f797e61"
+    "inventory_sha256": "3368f46eec900791b6eac0d3e8599b8001734060299bfa2696b608cb054289d0"
   },
   "backup": {
-    "at": "2026-11-11T00:04:58Z",
+    "at": "2026-11-11T09:48:54Z",
     "event": "backup_and_restoration_test",
     "status": "passed",
-    "package_filename": "preservation-backup",
-    "package_bytes": 14484636,
-    "package_sha256": "d00d159f8c4543277104206ed6a864a6425fad71652d685d76db79887f476e34",
-    "inventory_sha256": "3472f7ae2f48b909d273b4faf4bfd119b072779c18159a31a2439e574f797e61",
+    "package_filename": "after-metadata-2026-11-11.tar.gz",
+    "package_bytes": 14489965,
+    "package_sha256": "a726d7aa5543895a62e11a6d6e4c3465d50a5cee4a043a7552d7c90b1ad7e72d",
+    "inventory_sha256": "3368f46eec900791b6eac0d3e8599b8001734060299bfa2696b608cb054289d0",
     "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
     "restoration": {
       "status": "passed",
-      "files_restored": 63,
+      "files_restored": 66,
       "algorithm": "SHA-256",
       "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
     }

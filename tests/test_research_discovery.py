@@ -39,7 +39,7 @@ class ResearchDiscovery(unittest.TestCase):
         return build_research_discovery(**values)
 
     def test_all_described_levels_are_search_destinations(self):
-        self.assertEqual(self.feed['counts'], {'publication': 21, 'chapter': 57, 'entity': 44, 'concept': 62, 'programme': 10})
+        self.assertEqual(self.feed['counts'], {'publication': 21, 'chapter': 57, 'entity': 44, 'concept': 62, 'programme': 11})
         ids = {r['id'] for r in self.feed['records']}
         for row in self.feed['records']:
             self.assertTrue(row['sources'], row['id'])
@@ -85,7 +85,7 @@ class ResearchDiscovery(unittest.TestCase):
     def test_unsourced_programme_is_not_promoted(self):
         programmes = copy.deepcopy(self.programmes); programmes[0]['source_url'] = ''
         feed = self.build(programmes=programmes)
-        self.assertEqual(feed['counts']['programme'], 9)
+        self.assertEqual(feed['counts']['programme'], 10)
 
     def test_website_records_need_explicit_public_evidence_and_allowed_origin(self):
         page = dict(url='https://www.museumofone.art/example/', source_url='https://www.museumofone.art/example/', title='Example writing', public=True, reviewed='2026-11-04', source_sha256='a' * 64, text='Original public page text.')
