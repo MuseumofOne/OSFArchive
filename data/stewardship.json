@@ -1920,6 +1920,36 @@
         "algorithm": "SHA-256",
         "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
       }
+    },
+    {
+      "at": "2026-11-11T20:24:03.531582+02:00",
+      "event": "offsite_backup_round_trip_restoration",
+      "status": "passed",
+      "provider": "Google Drive",
+      "file_count": 101,
+      "package_bytes": 14793966,
+      "package_sha256": "cd494207061662998ad842786ee60f5f44828a8c466c408194df89db28c7d939",
+      "inventory_sha256": "ccf022c447798a5853dfc4e128e57c589accbcdb161642377ef81c26edfb193d",
+      "restoration": {
+        "status": "passed",
+        "files_restored": 101,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      },
+      "scope": "Fresh download of the replacement revision from the same private offsite file; every inventoried content hash verified after isolated extraction. Prior provider revision and November 4 backup preserved.",
+      "previous_offsite_inventory_sha256": "79f1671e0daba9df941761a5baff9e7aadf113f4c5a0400ca940766de9b79479"
+    },
+    {
+      "at": "2026-11-11T18:24:51Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 101,
+      "checked_files": 101,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "ccf022c447798a5853dfc4e128e57c589accbcdb161642377ef81c26edfb193d"
     }
   ],
   "scope": "Repository source snapshots, editorial JSON datasets, and original PDF access copies.",
@@ -1930,12 +1960,12 @@
   "storage": {
     "working_copy": "Current archive build environment",
     "upstream_sources": "Original deposits remain at Zenodo; website source is held by the site platform.",
-    "offsite_backup_status": "A private Google Drive copy of the prior 96-file preservation payload was independently downloaded and restored on 11 November 2026. That dated evidence is retained; the current 101-file payload has a passed local recovery test and awaits the offsite revision recorded separately."
+    "offsite_backup_status": "The current 101-file preservation payload was stored as a new revision of the existing private Google Drive backup, independently downloaded and fully restored on 11 November 2026. The prior 96-file revision and 4 November backup remain preserved."
   },
   "inventory_sha256": "ccf022c447798a5853dfc4e128e57c589accbcdb161642377ef81c26edfb193d",
   "baseline_created_at": "2026-11-11T18:12:07Z",
   "last_check": {
-    "at": "2026-11-11T18:12:07Z",
+    "at": "2026-11-11T18:24:51Z",
     "event": "fixity_check",
     "status": "passed",
     "algorithm": "SHA-256",
@@ -1963,20 +1993,21 @@
     }
   },
   "offsite_backup": {
-    "verified_at": "2026-11-11T15:12:44.231931+00:00",
-    "package_bytes": 14779532,
-    "package_sha256": "75ba1617629192b196c4a8afaab554e2ceae838f3a28dade0656ee35e0698536",
-    "inventory_sha256": "79f1671e0daba9df941761a5baff9e7aadf113f4c5a0400ca940766de9b79479",
+    "verified_at": "2026-11-11T20:24:03.531582+02:00",
+    "package_bytes": 14793966,
+    "package_sha256": "cd494207061662998ad842786ee60f5f44828a8c466c408194df89db28c7d939",
+    "inventory_sha256": "ccf022c447798a5853dfc4e128e57c589accbcdb161642377ef81c26edfb193d",
     "downloaded_package_checksum_match": true,
     "round_trip_restoration": {
       "status": "passed",
-      "files_restored": 96,
+      "files_restored": 101,
       "algorithm": "SHA-256",
       "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
     },
     "provider": "Google Drive",
     "access": "Private owner-controlled backup folder",
-    "scope": "Source snapshots, editorial JSON datasets and 22 original PDF access copies. Website code, dependencies, covers and the website capture vault are held separately. This dated evidence covers the prior 96-file preservation payload; the current inventory and repository deployment are recorded separately."
+    "scope": "Current 101-file preservation payload: source snapshots, editorial JSON datasets and 22 original PDF access copies. Website code, dependencies, covers and the website capture vault are held separately. The existing November 11 offsite file was updated in place; prior 96-file provider revision and November 4 backup were preserved.",
+    "provider_revision_history": "The previously verified 96-file package remains in provider revision history. The November 4 backup file was independently checked unchanged."
   },
   "previous_offsite_backups": [
     {
@@ -1994,6 +2025,22 @@
         "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
       },
       "scope": "Source snapshots, editorial JSON datasets and original PDF access copies. Website code, dependencies and cover images are held separately in the source repository."
+    },
+    {
+      "verified_at": "2026-11-11T15:12:44.231931+00:00",
+      "package_bytes": 14779532,
+      "package_sha256": "75ba1617629192b196c4a8afaab554e2ceae838f3a28dade0656ee35e0698536",
+      "inventory_sha256": "79f1671e0daba9df941761a5baff9e7aadf113f4c5a0400ca940766de9b79479",
+      "downloaded_package_checksum_match": true,
+      "round_trip_restoration": {
+        "status": "passed",
+        "files_restored": 96,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      },
+      "provider": "Google Drive",
+      "access": "Private owner-controlled backup folder",
+      "scope": "Source snapshots, editorial JSON datasets and 22 original PDF access copies. Website code, dependencies, covers and the website capture vault are held separately. This dated evidence covers the prior 96-file preservation payload; the current inventory and repository deployment are recorded separately."
     }
   ]
 }
