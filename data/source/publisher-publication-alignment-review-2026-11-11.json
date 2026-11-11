@@ -1,0 +1,2387 @@
+{
+  "reviewed": "2026-11-11",
+  "scope": "Current public publisher scholarly metadata and repository/archive access links for five separately citable Korean research publications, Answerability, After the Interpretation Changes and the editorial research dialogue When Interpretation Becomes Authority.",
+  "records": [
+    {
+      "record_id": "24088563",
+      "url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+      "http_status": 200,
+      "retrieved_at": "2026-11-11T14:09:59.102115+00:00",
+      "source_sha256": "eea2a796c654f11b8ca690ce3f1d3c9070e3c1c47a6dbd7b72d3e649f9dca914",
+      "article_timestamps": [
+        {
+          "property": "article:published_time",
+          "content": "2026-11-09T20:00:44.000Z"
+        },
+        {
+          "property": "article:modified_time",
+          "content": "2026-11-11T14:05:03.000Z"
+        }
+      ],
+      "citation_meta": {
+        "citation_title": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+        "citation_author": "Dorian Vale",
+        "citation_author_institution": "Museum of One",
+        "citation_publication_date": "2026/11/09",
+        "citation_publisher": "Museum of One",
+        "citation_doi": "10.5281/zenodo.24088563",
+        "citation_language": "en",
+        "citation_pdf_url": "https://www.museumofone.art/content/files/2026/11/01_RAI_Main_Paper_Dorian_Vale.pdf",
+        "citation_abstract_html_url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/"
+      },
+      "scholarly_schema": {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "@id": "https://doi.org/10.5281/zenodo.24088563",
+        "name": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+        "headline": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+        "url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+        "mainEntityOfPage": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.museumofone.art/#dorian-vale",
+          "name": "Dorian Vale",
+          "url": "https://www.museumofone.art/author/dorianvale/",
+          "sameAs": [
+            "https://orcid.org/0009-0004-7737-5094"
+          ],
+          "affiliation": {
+            "@id": "https://www.museumofone.art/#organization",
+            "@type": "Organization",
+            "name": "Museum of One",
+            "url": "https://www.museumofone.art/"
+          }
+        },
+        "publisher": {
+          "@id": "https://www.museumofone.art/#organization",
+          "@type": "Organization",
+          "name": "Museum of One",
+          "url": "https://www.museumofone.art/"
+        },
+        "datePublished": "2026-11-09",
+        "version": "1.0",
+        "inLanguage": "en",
+        "genre": "Working paper",
+        "abstract": "Relational Archival Investigation (RAI) is a source-critical method for determining what relationships among records can establish about the identity, chronology, explanation and historical consequences of artworks. This study compares seven consecutive acquisition entries in the 2016 Annual Report of the National Museum of Modern and Contemporary Art, Korea (MMCA), with their public collection descriptions. Two leading production-year assignments differ. Published artist testimony distinguishes production from presentation in one case, while the reason for the other difference remains open. Additional comparisons distinguish an early one-monitor presentation from a later twelve-monitor arrangement, a title’s accidental origin from its subsequent adoption, and a performance from the later repair of a photograph that records it. The study traces how accurately transcribed details can yield an unsupported historical claim when they are assigned to the same object or occasion. Post-Interpretive Criticism supplies a philosophical background. The findings rest on a bounded set of Korean experimental art cases and their documented sources.",
+        "description": "A documentary study of Korean experimental art: how collection records, artist testimony and archives support claims about artwork identity, chronology, naming, performance and display. Main paper with two separately citable supplements.",
+        "numberOfPages": 16,
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.5281/zenodo.24088563"
+        },
+        "keywords": [
+          "Korean art",
+          "Korean art history",
+          "Korean experimental art",
+          "Art archives",
+          "Relational Archival Investigation",
+          "Art historiography",
+          "Source criticism",
+          "Exhibition history",
+          "Performance documentation",
+          "Museum collection records",
+          "Post-Interpretive Criticism",
+          "한국미술",
+          "한국미술사",
+          "한국 실험미술",
+          "미술 아카이브",
+          "국립현대미술관",
+          "서울시립 미술아카이브",
+          "Lee Kang-so",
+          "이강소",
+          "Lee Kangso",
+          "Lee Kang So",
+          "Park Suk-won",
+          "박석원",
+          "Park Suk Won",
+          "Sung Neung Kyung",
+          "성능경",
+          "Sung Neungkyung",
+          "Kim Youngjin",
+          "김영진",
+          "KIM Youngjin b",
+          "김영진 b",
+          "Kim Yong-Ik",
+          "김용익",
+          "Kim Yong Ik",
+          "Rim Dong Sik",
+          "임동식",
+          "Rim Dongsik"
+        ],
+        "about": [
+          {
+            "@type": "CreativeWork",
+            "name": "Relational Archival Investigation",
+            "@id": "https://www.museumofone.art/relational-archival-investigation/#method"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Korean art history",
+            "alternateName": "한국미술사"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Korean experimental art",
+            "alternateName": "한국 실험미술"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Art archives",
+            "alternateName": "미술 아카이브"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Post-Interpretive Criticism",
+            "url": "https://www.museumofone.art/doctrine/"
+          }
+        ],
+        "mentions": [
+          {
+            "@type": "Person",
+            "name": "Lee Kang-so",
+            "alternateName": [
+              "이강소",
+              "Lee Kangso",
+              "Lee Kang So"
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "Park Suk-won",
+            "alternateName": [
+              "박석원",
+              "Park Suk Won"
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "Sung Neung Kyung",
+            "alternateName": [
+              "성능경",
+              "Sung Neungkyung"
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "Kim Youngjin",
+            "alternateName": [
+              "김영진"
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "Kim Yong-Ik",
+            "alternateName": [
+              "김용익",
+              "Kim Yong Ik"
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "Rim Dong Sik",
+            "alternateName": [
+              "임동식",
+              "Rim Dongsik"
+            ]
+          },
+          {
+            "@type": "Organization",
+            "name": "National Museum of Modern and Contemporary Art, Korea",
+            "alternateName": [
+              "MMCA",
+              "국립현대미술관"
+            ],
+            "url": "https://www.mmca.go.kr/"
+          }
+        ],
+        "encoding": {
+          "@type": "MediaObject",
+          "contentUrl": "https://www.museumofone.art/content/files/2026/11/01_RAI_Main_Paper_Dorian_Vale.pdf",
+          "encodingFormat": "application/pdf",
+          "contentSize": "361169 bytes"
+        },
+        "copyrightYear": 2026,
+        "copyrightNotice": "© 2026 Dorian Vale · Museum of One. In Copyright.",
+        "usageInfo": "https://rightsstatements.org/vocab/InC/1.0/",
+        "isPartOf": {
+          "@type": "CreativeWork",
+          "@id": "https://www.museumofone.art/relational-archival-investigation/#publication-set",
+          "name": "Relational Archival Investigation: main paper and companion documents",
+          "url": "https://www.museumofone.art/relational-archival-investigation/"
+        },
+        "sameAs": [
+          "https://doi.org/10.5281/zenodo.24088563",
+          "https://zenodo.org/records/24088563",
+          "https://works.hcommons.org/records/z8rjn-xcv08",
+          "https://hal.science/hal-05858135",
+          "https://osf.io/zhnre/files/wrbkx",
+          "https://www.academia.edu/180575730",
+          "https://philarchive.org/rec/VALRAI"
+        ],
+        "hasPart": [
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://doi.org/10.5281/zenodo.24088574",
+            "url": "https://www.museumofone.art/rai-documentary-supplement/"
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://doi.org/10.5281/zenodo.24088573",
+            "url": "https://www.museumofone.art/rai-extended-case-studies/"
+          }
+        ],
+        "citation": [
+          {
+            "@type": "CreativeWork",
+            "name": "National Museum of Modern and Contemporary Art, Korea, 2016 Annual Report",
+            "datePublished": "2017",
+            "url": "https://www.mmca.go.kr/upload/artInfo/2017/09/2017092003532066115519.pdf"
+          }
+        ],
+        "subjectOf": [
+          {
+            "@type": "WebPage",
+            "name": "Museum of One Archive catalogue MOO-CAT-017",
+            "url": "https://archive.museumofone.art/items/24088563.html"
+          },
+          {
+            "@type": "WebPage",
+            "name": "HAL bibliographic notice hal-05858135",
+            "url": "https://hal.science/hal-05858135"
+          },
+          {
+            "@type": "WebPage",
+            "name": "PhilArchive scholarly record VALRAI",
+            "url": "https://philarchive.org/rec/VALRAI"
+          }
+        ]
+      },
+      "checks": {
+        "author_institution": true,
+        "affiliation": true,
+        "no_journal_citation": true,
+        "style_blocks_unchanged": true,
+        "stylesheet_urls_unchanged": true,
+        "archive_subjectOf": true,
+        "all_other_scholarly_fields_unchanged": true
+      }
+    },
+    {
+      "record_id": "24088574",
+      "url": "https://www.museumofone.art/rai-documentary-supplement/",
+      "http_status": 200,
+      "retrieved_at": "2026-11-11T14:09:59.046728+00:00",
+      "source_sha256": "0e70c2f3f729dfa3f7c904f5b75f9aed69d0952dc97ba41a266f0e3fda357243",
+      "article_timestamps": [
+        {
+          "property": "article:published_time",
+          "content": "2026-11-09T20:04:03.000Z"
+        },
+        {
+          "property": "article:modified_time",
+          "content": "2026-11-11T14:08:05.000Z"
+        }
+      ],
+      "citation_meta": {
+        "citation_title": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+        "citation_author": "Dorian Vale",
+        "citation_author_institution": "Museum of One",
+        "citation_publication_date": "2026/11/09",
+        "citation_publisher": "Museum of One",
+        "citation_doi": "10.5281/zenodo.24088574",
+        "citation_language": "en",
+        "citation_pdf_url": "https://www.museumofone.art/content/files/2026/11/02_RAI_Documentary_Supplement_Dorian_Vale.pdf",
+        "citation_abstract_html_url": "https://www.museumofone.art/rai-documentary-supplement/"
+      },
+      "scholarly_schema": {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "@id": "https://doi.org/10.5281/zenodo.24088574",
+        "name": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+        "headline": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+        "url": "https://www.museumofone.art/rai-documentary-supplement/",
+        "mainEntityOfPage": "https://www.museumofone.art/rai-documentary-supplement/",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.museumofone.art/#dorian-vale",
+          "name": "Dorian Vale",
+          "url": "https://www.museumofone.art/author/dorianvale/",
+          "sameAs": [
+            "https://orcid.org/0009-0004-7737-5094"
+          ],
+          "affiliation": {
+            "@id": "https://www.museumofone.art/#organization",
+            "@type": "Organization",
+            "name": "Museum of One",
+            "url": "https://www.museumofone.art/"
+          }
+        },
+        "publisher": {
+          "@id": "https://www.museumofone.art/#organization",
+          "@type": "Organization",
+          "name": "Museum of One",
+          "url": "https://www.museumofone.art/"
+        },
+        "datePublished": "2026-11-09",
+        "version": "1.0",
+        "inLanguage": "en",
+        "genre": "Research supplement",
+        "abstract": "This documentary supplement records the sources, work identifications, comparisons and judgments supporting Relational Archival Investigation. It pairs all seven acquisition entries 73–79 on printed pages 39–40 of MMCA’s 2016 Annual Report with collection records 7922–7928 (management numbers 07909–07915) and retains agreements, discrepancies and unresolved cases. Additional sections document the Jeok–Eungnyeok inquiry, the evidence for the extended case studies and Lee Kang-so’s Paris sequence. Selected excerpts, paraphrases and institutional identifiers make the comparisons traceable. The seven-entry block was selected retrospectively. The supplement attributes descriptions and transcriptions to the institutions that published them and gives the consultation date separately from the dates of the historical events.",
+        "description": "The documentary record supporting RAI: seven MMCA acquisition entries compared with collection records, with SeMA sources, artist testimony, institutional identifiers and the limits of each comparison.",
+        "numberOfPages": 11,
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.5281/zenodo.24088574"
+        },
+        "keywords": [
+          "Korean art",
+          "Korean art history",
+          "Korean experimental art",
+          "Art archives",
+          "Museum acquisition records",
+          "Museum collection cataloguing",
+          "Documentary evidence",
+          "Artwork dating",
+          "Source criticism",
+          "1975 Paris Biennale",
+          "한국미술",
+          "한국미술사",
+          "한국 실험미술",
+          "미술 아카이브",
+          "국립현대미술관",
+          "서울시립 미술아카이브",
+          "Lee Kang-so",
+          "이강소",
+          "Lee Kangso",
+          "Lee Kang So",
+          "Park Suk-won",
+          "박석원",
+          "Park Suk Won",
+          "Sung Neung Kyung",
+          "성능경",
+          "Sung Neungkyung",
+          "Kim Youngjin",
+          "김영진",
+          "KIM Youngjin b",
+          "김영진 b",
+          "Kim Yong-Ik",
+          "김용익",
+          "Kim Yong Ik",
+          "Rim Dong Sik",
+          "임동식",
+          "Rim Dongsik"
+        ],
+        "about": [
+          {
+            "@type": "CreativeWork",
+            "name": "Relational Archival Investigation",
+            "@id": "https://www.museumofone.art/relational-archival-investigation/#method"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Korean art history",
+            "alternateName": "한국미술사"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Korean experimental art",
+            "alternateName": "한국 실험미술"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Art archives",
+            "alternateName": "미술 아카이브"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Post-Interpretive Criticism",
+            "url": "https://www.museumofone.art/doctrine/"
+          }
+        ],
+        "mentions": [
+          {
+            "@type": "Person",
+            "name": "Lee Kang-so",
+            "alternateName": [
+              "이강소",
+              "Lee Kangso",
+              "Lee Kang So"
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "Park Suk-won",
+            "alternateName": [
+              "박석원",
+              "Park Suk Won"
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "Sung Neung Kyung",
+            "alternateName": [
+              "성능경",
+              "Sung Neungkyung"
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "Kim Youngjin",
+            "alternateName": [
+              "김영진"
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "Kim Yong-Ik",
+            "alternateName": [
+              "김용익",
+              "Kim Yong Ik"
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "Rim Dong Sik",
+            "alternateName": [
+              "임동식",
+              "Rim Dongsik"
+            ]
+          },
+          {
+            "@type": "Organization",
+            "name": "National Museum of Modern and Contemporary Art, Korea",
+            "alternateName": [
+              "MMCA",
+              "국립현대미술관"
+            ],
+            "url": "https://www.mmca.go.kr/"
+          }
+        ],
+        "encoding": {
+          "@type": "MediaObject",
+          "contentUrl": "https://www.museumofone.art/content/files/2026/11/02_RAI_Documentary_Supplement_Dorian_Vale.pdf",
+          "encodingFormat": "application/pdf",
+          "contentSize": "334348 bytes"
+        },
+        "copyrightYear": 2026,
+        "copyrightNotice": "© 2026 Dorian Vale · Museum of One. In Copyright.",
+        "usageInfo": "https://rightsstatements.org/vocab/InC/1.0/",
+        "isPartOf": [
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://doi.org/10.5281/zenodo.24088563",
+            "url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/"
+          },
+          {
+            "@type": "CreativeWork",
+            "@id": "https://www.museumofone.art/relational-archival-investigation/#publication-set",
+            "name": "Relational Archival Investigation: main paper and companion documents",
+            "url": "https://www.museumofone.art/relational-archival-investigation/"
+          }
+        ],
+        "sameAs": [
+          "https://doi.org/10.5281/zenodo.24088574",
+          "https://zenodo.org/records/24088574",
+          "https://works.hcommons.org/records/dwt9e-d5p24",
+          "https://hal.science/hal-05858137",
+          "https://osf.io/zhnre/files/b86dp",
+          "https://www.academia.edu/180576629"
+        ],
+        "citation": [
+          {
+            "@type": "CreativeWork",
+            "name": "National Museum of Modern and Contemporary Art, Korea, 2016 Annual Report",
+            "datePublished": "2017",
+            "url": "https://www.mmca.go.kr/upload/artInfo/2017/09/2017092003532066115519.pdf"
+          }
+        ],
+        "subjectOf": [
+          {
+            "@type": "WebPage",
+            "name": "Museum of One Archive catalogue MOO-CAT-018",
+            "url": "https://archive.museumofone.art/items/24088574.html"
+          },
+          {
+            "@type": "WebPage",
+            "name": "HAL bibliographic notice hal-05858137",
+            "url": "https://hal.science/hal-05858137"
+          },
+          {
+            "@type": "WebPage",
+            "name": "PhilArchive scholarly record VALDEA-4",
+            "url": "https://philarchive.org/rec/VALDEA-4"
+          }
+        ]
+      },
+      "checks": {
+        "author_institution": true,
+        "affiliation": true,
+        "no_journal_citation": true,
+        "style_blocks_unchanged": true,
+        "stylesheet_urls_unchanged": true,
+        "archive_subjectOf": true,
+        "all_other_scholarly_fields_unchanged": true
+      }
+    },
+    {
+      "record_id": "24088573",
+      "url": "https://www.museumofone.art/rai-extended-case-studies/",
+      "http_status": 200,
+      "retrieved_at": "2026-11-11T14:09:59.186222+00:00",
+      "source_sha256": "ed52fc579dd568a42e0bbf260b7792ada1575ce0066bd831adffd2219252afe9",
+      "article_timestamps": [
+        {
+          "property": "article:published_time",
+          "content": "2026-11-09T20:05:43.000Z"
+        },
+        {
+          "property": "article:modified_time",
+          "content": "2026-11-11T14:08:53.000Z"
+        }
+      ],
+      "citation_meta": {
+        "citation_title": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+        "citation_author": "Dorian Vale",
+        "citation_author_institution": "Museum of One",
+        "citation_publication_date": "2026/11/09",
+        "citation_publisher": "Museum of One",
+        "citation_doi": "10.5281/zenodo.24088573",
+        "citation_language": "en",
+        "citation_pdf_url": "https://www.museumofone.art/content/files/2026/11/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf",
+        "citation_abstract_html_url": "https://www.museumofone.art/rai-extended-case-studies/"
+      },
+      "scholarly_schema": {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "@id": "https://doi.org/10.5281/zenodo.24088573",
+        "name": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+        "headline": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+        "url": "https://www.museumofone.art/rai-extended-case-studies/",
+        "mainEntityOfPage": "https://www.museumofone.art/rai-extended-case-studies/",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.museumofone.art/#dorian-vale",
+          "name": "Dorian Vale",
+          "url": "https://www.museumofone.art/author/dorianvale/",
+          "sameAs": [
+            "https://orcid.org/0009-0004-7737-5094"
+          ],
+          "affiliation": {
+            "@id": "https://www.museumofone.art/#organization",
+            "@type": "Organization",
+            "name": "Museum of One",
+            "url": "https://www.museumofone.art/"
+          }
+        },
+        "publisher": {
+          "@id": "https://www.museumofone.art/#organization",
+          "@type": "Organization",
+          "name": "Museum of One",
+          "url": "https://www.museumofone.art/"
+        },
+        "datePublished": "2026-11-09",
+        "version": "1.0",
+        "inLanguage": "en",
+        "genre": "Research supplement",
+        "abstract": "Four cases show how Relational Archival Investigation distinguishes artwork identity from the histories of naming, documentation and display. Kim Yong-Ik’s Flat Object materials distinguish the reported origin of a title variant from its later adoption. Rim Dong Sik’s Tying Reeds and Beard photograph records an action and bears evidence of the artist’s later repair. Sung Neung Kyung’s Reading Newspaper places photographic presentation within the work’s early public history. Kim Youngjin’s 1978–2 distinguishes a one-monitor presentation from a twelve-monitor arrangement at the 2016 Busan Biennale. The supplement attributes the institutional descriptions and retrospective testimony it uses and identifies the evidence needed to pursue unresolved questions. The cases are selected demonstrations developed within the same research programme.",
+        "description": "Four studies of Kim Yong-Ik, Rim Dong Sik, Sung Neung Kyung and Kim Youngjin distinguish the work from the histories of its title, photographs, performance and display.",
+        "numberOfPages": 9,
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.5281/zenodo.24088573"
+        },
+        "keywords": [
+          "Korean art",
+          "Korean art history",
+          "Korean experimental art",
+          "Art archives",
+          "Artwork titles",
+          "Exhibition history",
+          "Performance documentation",
+          "Documentary photography",
+          "Video installation",
+          "Busan Biennale",
+          "한국미술",
+          "한국미술사",
+          "한국 실험미술",
+          "미술 아카이브",
+          "퍼포먼스 기록",
+          "비디오 설치",
+          "부산비엔날레",
+          "Kim Yong-Ik",
+          "김용익",
+          "Kim Yong Ik",
+          "Rim Dong Sik",
+          "임동식",
+          "Rim Dongsik",
+          "Sung Neung Kyung",
+          "성능경",
+          "Sung Neungkyung",
+          "Kim Youngjin",
+          "김영진",
+          "KIM Youngjin b",
+          "김영진 b"
+        ],
+        "about": [
+          {
+            "@type": "CreativeWork",
+            "name": "Relational Archival Investigation",
+            "@id": "https://www.museumofone.art/relational-archival-investigation/#method"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Korean art history",
+            "alternateName": "한국미술사"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Korean experimental art",
+            "alternateName": "한국 실험미술"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Art archives",
+            "alternateName": "미술 아카이브"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Post-Interpretive Criticism",
+            "url": "https://www.museumofone.art/doctrine/"
+          }
+        ],
+        "mentions": [
+          {
+            "@type": "Person",
+            "name": "Kim Yong-Ik",
+            "alternateName": [
+              "김용익",
+              "Kim Yong Ik"
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "Rim Dong Sik",
+            "alternateName": [
+              "임동식",
+              "Rim Dongsik"
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "Sung Neung Kyung",
+            "alternateName": [
+              "성능경",
+              "Sung Neungkyung"
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "Kim Youngjin",
+            "alternateName": [
+              "김영진"
+            ]
+          }
+        ],
+        "encoding": {
+          "@type": "MediaObject",
+          "contentUrl": "https://www.museumofone.art/content/files/2026/11/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf",
+          "encodingFormat": "application/pdf",
+          "contentSize": "219814 bytes"
+        },
+        "copyrightYear": 2026,
+        "copyrightNotice": "© 2026 Dorian Vale · Museum of One. In Copyright.",
+        "usageInfo": "https://rightsstatements.org/vocab/InC/1.0/",
+        "isPartOf": [
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://doi.org/10.5281/zenodo.24088563",
+            "url": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/"
+          },
+          {
+            "@type": "CreativeWork",
+            "@id": "https://www.museumofone.art/relational-archival-investigation/#publication-set",
+            "name": "Relational Archival Investigation: main paper and companion documents",
+            "url": "https://www.museumofone.art/relational-archival-investigation/"
+          }
+        ],
+        "sameAs": [
+          "https://doi.org/10.5281/zenodo.24088573",
+          "https://zenodo.org/records/24088573",
+          "https://works.hcommons.org/records/mr1rm-yh789",
+          "https://hal.science/hal-05858139",
+          "https://osf.io/zhnre/files/x8tpa",
+          "https://www.academia.edu/180577070"
+        ],
+        "subjectOf": [
+          {
+            "@type": "WebPage",
+            "name": "Museum of One Archive catalogue MOO-CAT-019",
+            "url": "https://archive.museumofone.art/items/24088573.html"
+          },
+          {
+            "@type": "WebPage",
+            "name": "HAL bibliographic notice hal-05858139",
+            "url": "https://hal.science/hal-05858139"
+          },
+          {
+            "@type": "WebPage",
+            "name": "PhilArchive scholarly record VALECS-3",
+            "url": "https://philarchive.org/rec/VALECS-3"
+          }
+        ]
+      },
+      "checks": {
+        "author_institution": true,
+        "affiliation": true,
+        "no_journal_citation": true,
+        "style_blocks_unchanged": true,
+        "stylesheet_urls_unchanged": true,
+        "archive_subjectOf": true,
+        "all_other_scholarly_fields_unchanged": true
+      }
+    },
+    {
+      "record_id": "24130993",
+      "url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+      "http_status": 200,
+      "retrieved_at": "2026-11-11T14:25:42.564007+00:00",
+      "source_sha256": "3a566157255c7a764baf28056fcfb0ced6cc301b6468e2e384c6d7ae26e04800",
+      "article_timestamps": [
+        {
+          "property": "article:published_time",
+          "content": "2026-11-11T10:05:12.000Z"
+        },
+        {
+          "property": "article:modified_time",
+          "content": "2026-11-11T14:24:29.000Z"
+        }
+      ],
+      "citation_meta": {
+        "citation_title": "When Interpretation Becomes Authority",
+        "citation_author": "Dorian Vale",
+        "citation_author_institution": "Museum of One",
+        "citation_author_orcid": "https://orcid.org/0009-0004-7737-5094",
+        "citation_publisher": "Museum of One",
+        "citation_publication_date": "2026/11/11",
+        "citation_doi": "10.5281/zenodo.24130993",
+        "citation_language": "en",
+        "citation_firstpage": "1",
+        "citation_lastpage": "9",
+        "citation_pdf_url": "https://www.museumofone.art/content/files/2026/11/When_Interpretation_Becomes_Authority_Dialogue_v1.0.pdf",
+        "citation_abstract_html_url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+        "citation_keywords": "Post-Interpretive Criticism; Semiotics of Non-intentional Ephemerality; interpretive authority; semantic protocol; institutional responsibility; museum documentation; art criticism; aesthetics; semiotics; contestability; deactivation; reauthorization; warrant migration; correction and completion; museum titles; archival evidence; Alexander V. Markov; Dorian Vale; Museum of One"
+      },
+      "scholarly_schema": {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "@id": "https://doi.org/10.5281/zenodo.24130993",
+        "name": "When Interpretation Becomes Authority",
+        "headline": "When Interpretation Becomes Authority",
+        "alternativeHeadline": "Alexander V. Markov × Dorian Vale — A research dialogue between Post-Interpretive Criticism and the Semiotics of Non-intentional Ephemerality",
+        "url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+        "mainEntityOfPage": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+        "description": "Dorian Vale’s editorial account of scholarly correspondence with Alexander V. Markov. Research dialogue, version 1.0, October 2026 edition; public repository release 11 November 2026.",
+        "abstract": "This research dialogue is Dorian Vale’s editorial account of written correspondence with Alexander V. Markov in September and October 2026. It examines how interpretations acquire authority through their reuse in catalogues, labels, archives, teaching, and institutional procedures. Bringing Post-Interpretive Criticism into exchange with the Semiotics of Non-intentional Ephemerality, the discussion distinguishes the preservation of a text from its continuing jurisdiction, verification from warrant migration and reauthorization, and an effective correction from the maintenance of its effects. Markov’s semantic protocol and hypothetical history of correction and lapse are considered alongside Vale’s proposals concerning contestability, distributed responsibility, and the continuity of justificatory burden. The accompanying study, After the Interpretation Changes, supplies a separately authored documentary case concerning Simon Maris’s Isabella; its evidence limits the stronger theoretical claims. The dialogue asks how time, place, and role affect the authority of records, and what would distinguish a changed answer from a change in the conditions governing it. The exchanges are condensed thematic paraphrases. Selection, framing, and wording are Vale’s responsibility; this is neither a transcript nor a jointly authored statement. Disagreement and proposals not accepted by both correspondents remain explicit.",
+        "datePublished": "2026-11-11",
+        "version": "1.0",
+        "inLanguage": "en",
+        "pagination": "1–9",
+        "pageStart": "1",
+        "pageEnd": "9",
+        "genre": [
+          "Research dialogue",
+          "Editorial account"
+        ],
+        "creativeWorkStatus": "Published",
+        "isAccessibleForFree": true,
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.museumofone.art/#dorian-vale",
+          "name": "Dorian Vale",
+          "givenName": "Dorian",
+          "familyName": "Vale",
+          "url": "https://www.museumofone.art/author/dorianvale/",
+          "sameAs": "https://orcid.org/0009-0004-7737-5094",
+          "affiliation": {
+            "@type": "Organization",
+            "@id": "https://www.museumofone.art/#organization",
+            "name": "Museum of One",
+            "url": "https://www.museumofone.art/"
+          }
+        },
+        "contributor": {
+          "@type": "Person",
+          "name": "Alexander Viktorovich Markov",
+          "alternateName": "Alexander V. Markov",
+          "description": "Scholarly interlocutor and intellectual contributor whose positions are paraphrased in Dorian Vale’s editorial account. Markov is not a coauthor or editor of this publication."
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://www.museumofone.art/#organization",
+          "name": "Museum of One",
+          "url": "https://www.museumofone.art/"
+        },
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "@id": "https://www.museumofone.art/the-dialogues/#series",
+          "name": "The Dialogues",
+          "url": "https://www.museumofone.art/the-dialogues/"
+        },
+        "about": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://www.museumofone.art/doctrine/#post-interpretive-criticism",
+            "name": "Post-Interpretive Criticism",
+            "alternateName": "PIC",
+            "url": "https://www.museumofone.art/doctrine/"
+          },
+          {
+            "@type": "Thing",
+            "name": "Semiotics of Non-intentional Ephemerality"
+          },
+          {
+            "@type": "Thing",
+            "name": "Interpretive authority"
+          },
+          {
+            "@type": "Thing",
+            "name": "Institutional responsibility"
+          }
+        ],
+        "subjectOf": [
+          {
+            "@type": "WebPage",
+            "name": "Alexander Viktorovich Markov: Critical Language and Lasting Correction",
+            "url": "https://www.museumofone.art/research-critical-language/"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://hal.science/hal-05860223",
+            "url": "https://hal.science/hal-05860223",
+            "name": "HAL bibliographic notice hal-05860223"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://archive.museumofone.art/items/24130993.html",
+            "url": "https://archive.museumofone.art/items/24130993.html",
+            "name": "Museum of One Archive catalogue record MOO-CAT-022"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://philarchive.org/rec/VALWIB",
+            "url": "https://philarchive.org/rec/VALWIB",
+            "name": "PhilArchive full-text record VALWIB"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.academia.edu/180717928/When_Interpretation_Becomes_Authority",
+            "url": "https://www.academia.edu/180717928/When_Interpretation_Becomes_Authority",
+            "name": "Academia.edu full-text access copy"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://doi.org/10.22501/rc.5058205",
+            "url": "https://www.researchcatalogue.net/view/5058205/5058204",
+            "name": "Corrected Research Catalogue full-text HTML presentation",
+            "description": "Complete HTML transcription of the nine-page source, with an external link to the canonical PDF. Supersedes incomplete RC presentation 5056088; the source paper remains version 1.0."
+          }
+        ],
+        "keywords": [
+          "Post-Interpretive Criticism",
+          "Semiotics of Non-intentional Ephemerality",
+          "interpretive authority",
+          "semantic protocol",
+          "institutional responsibility",
+          "museum documentation",
+          "art criticism",
+          "aesthetics",
+          "semiotics",
+          "contestability",
+          "deactivation",
+          "reauthorization",
+          "warrant migration",
+          "correction and completion",
+          "museum titles",
+          "archival evidence",
+          "Alexander V. Markov",
+          "Dorian Vale",
+          "Museum of One"
+        ],
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.5281/zenodo.24130993"
+        },
+        "sameAs": [
+          "https://zenodo.org/records/24130993",
+          "https://archive.org/details/when-interpretation-becomes-authority-dialogue-v-1.0",
+          "https://osf.io/zhnre/files/3zk8h"
+        ],
+        "encoding": {
+          "@type": "MediaObject",
+          "encodingFormat": "application/pdf",
+          "contentUrl": "https://www.museumofone.art/content/files/2026/11/When_Interpretation_Becomes_Authority_Dialogue_v1.0.pdf",
+          "contentSize": "139737 bytes"
+        },
+        "citation": [
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://doi.org/10.5281/zenodo.23430200",
+            "name": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles",
+            "author": {
+              "@id": "https://www.museumofone.art/#dorian-vale"
+            },
+            "url": "https://www.museumofone.art/after-the-interpretation-changes/"
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "name": "Protocol and the Unstable Sign: A Revision of Asignifying Semiotics for the Algorithmic Age",
+            "author": [
+              {
+                "@type": "Person",
+                "name": "Alexander Markov"
+              },
+              {
+                "@type": "Person",
+                "name": "Oksana Shtayn"
+              }
+            ],
+            "url": "https://www.southernsemioticreview.net/protocol-and-the-unstable-sign-a-revision-of-asignifying-semiotics-for-the-algorithmic-age/"
+          }
+        ],
+        "copyrightYear": 2026,
+        "copyrightNotice": "© 2026 Dorian Vale · Museum of One. Editorial text by Dorian Vale. Alexander V. Markov’s intellectual contributions are attributed throughout; rights in the original correspondence remain with its respective authors.",
+        "usageInfo": "https://rightsstatements.org/vocab/InC/1.0/",
+        "creditText": "Editorial account by Dorian Vale. Alexander V. Markov’s intellectual contributions are attributed throughout. The exchanges are condensed thematic paraphrases, not verbatim speech or a jointly authored statement."
+      },
+      "verified_repository_links": [
+        "https://osf.io/zhnre/files/3zk8h",
+        "https://philarchive.org/rec/VALWIB",
+        "https://www.academia.edu/180717928/When_Interpretation_Becomes_Authority",
+        "https://www.researchcatalogue.net/view/5058205/5058204",
+        "https://doi.org/10.22501/rc.5058205",
+        "https://archive.museumofone.art/items/24130993.html"
+      ],
+      "checks": {
+        "sole_citation_author": true,
+        "canonical_doi": true,
+        "museum_affiliation": true,
+        "museum_publisher": true,
+        "all_new_access_links_in_body": true,
+        "no_journal_citation": true
+      }
+    },
+    {
+      "record_id": "24095308",
+      "url": "https://www.museumofone.art/when-documentation-becomes-the-work/",
+      "http_status": 200,
+      "retrieved_at": "2026-11-11T14:31:59.706676+00:00",
+      "source_sha256": "12895d00d9a72d51facfadbf6a75d418f77f65369862a81525eb6981e04105c2",
+      "article_timestamps": [
+        {
+          "property": "article:published_time",
+          "content": "2026-11-09T23:38:16.000Z"
+        },
+        {
+          "property": "article:modified_time",
+          "content": "2026-11-11T09:59:31.000Z"
+        }
+      ],
+      "citation_meta": {
+        "citation_title": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+        "citation_author": "Dorian Vale",
+        "citation_author_institution": "Museum of One",
+        "citation_publication_date": "2026/11/10",
+        "citation_publisher": "Museum of One",
+        "citation_doi": "10.5281/zenodo.24095308",
+        "citation_language": "en",
+        "citation_pdf_url": "https://www.museumofone.art/content/files/2026/11/When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf",
+        "citation_abstract_html_url": "https://www.museumofone.art/when-documentation-becomes-the-work/"
+      },
+      "scholarly_schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ScholarlyArticle",
+          "@id": "https://doi.org/10.5281/zenodo.24095308",
+          "name": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+          "headline": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+          "description": "Korean art history working paper on photography, archives and reperformance in Rim Dong Sik, Kim Kulim and Sung Neung Kyung, with sources and limits.",
+          "abstract": "Photographs give Korean experimental art continuing public forms through copying, repair, printing, exhibition and collection. This article compares three documentary histories. Seoul Museum of Art describes Rim Dong Sik’s interventions in photographic records. The National Museum of Modern and Contemporary Art, Korea, holds a print made in 2000 of Kim Kulim’s 1970 From Phenomenon to Traces and documents a reperformance in 2016, later represented by a video in an international exhibition checklist. Sung Neung Kyung’s Reading Newspaper circulated photographically in 1976, while the present twelve-print object entered the museum’s collection in 2017. In the Korean Senior Artist Digital Archive, the researchers’ account of Sung distinguishes artworks from other performance records through exhibition, publication and artist selection. Read alongside Korean conservation scholarship, these records show how artistic recognition can be documented without establishing unchanged material survival. The comparison separates material continuity, exhibition history and institutional identification, and asks what evidence each relation requires. Collection transfer dates, classification rules and loan descriptions clarify the public histories of the objects. The dates of individual repairs, print manufacture and mounting remain bounded questions, rather than assumed links in an uninterrupted provenance.",
+          "url": "https://www.museumofone.art/when-documentation-becomes-the-work/",
+          "mainEntityOfPage": "https://www.museumofone.art/when-documentation-becomes-the-work/",
+          "sameAs": [
+            "https://zenodo.org/records/24095308",
+            "https://works.hcommons.org/records/g063c-mdq94",
+            "https://doi.org/10.5281/zenodo.24095308",
+            "https://osf.io/zhnre/files/mdtq3",
+            "https://www.researchcatalogue.net/view/5047316/5047317",
+            "https://philarchive.org/rec/VALWDB",
+            "https://www.academia.edu/180588843"
+          ],
+          "inLanguage": "en",
+          "datePublished": "2026-11-10",
+          "dateModified": "2026-11-10",
+          "version": "2.0",
+          "genre": "Working paper",
+          "pagination": "16 pages including cover",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.5281/zenodo.24095308"
+          },
+          "isAccessibleForFree": true,
+          "usageInfo": "https://rightsstatements.org/vocab/InC/1.0/",
+          "author": {
+            "@type": "Person",
+            "name": "Dorian Vale",
+            "url": "https://www.museumofone.art/author/dorianvale/",
+            "sameAs": "https://orcid.org/0009-0004-7737-5094",
+            "affiliation": {
+              "@type": "Organization",
+              "name": "Museum of One",
+              "@id": "https://www.museumofone.art/#organization"
+            },
+            "@id": "https://www.museumofone.art/#dorian-vale"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Museum of One",
+            "url": "https://www.museumofone.art/",
+            "@id": "https://www.museumofone.art/#organization"
+          },
+          "encoding": {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "contentUrl": "https://www.museumofone.art/content/files/2026/11/When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf"
+          },
+          "keywords": [
+            "Korean art",
+            "Korean art history",
+            "Korean experimental art",
+            "Modern Korean art",
+            "Postwar Korean art",
+            "Korean performance art",
+            "Korean photography",
+            "Performance documentation",
+            "Documentary photography",
+            "Art archives",
+            "Exhibition history",
+            "Museum collection records",
+            "Art conservation",
+            "Reperformance",
+            "Material continuity",
+            "Art historiography",
+            "Relational Archival Investigation",
+            "Rim Dong Sik",
+            "Kim Kulim",
+            "Sung Neung Kyung",
+            "Seoul Museum of Art",
+            "National Museum of Modern and Contemporary Art, Korea",
+            "한국미술",
+            "한국미술사",
+            "한국 실험미술",
+            "한국 현대미술",
+            "퍼포먼스 기록",
+            "사진 기록",
+            "미술 아카이브",
+            "전시사",
+            "재연",
+            "임동식",
+            "김구림",
+            "성능경"
+          ],
+          "about": [
+            {
+              "@type": "Person",
+              "name": "Rim Dong Sik",
+              "alternateName": [
+                "임동식",
+                "Rim Dongsik"
+              ]
+            },
+            {
+              "@type": "Person",
+              "name": "Kim Kulim",
+              "alternateName": [
+                "김구림",
+                "Kim Ku-lim"
+              ]
+            },
+            {
+              "@type": "Person",
+              "name": "Sung Neung Kyung",
+              "alternateName": [
+                "성능경",
+                "Sung Neungkyung",
+                "Sung Neung-Kyung"
+              ]
+            }
+          ],
+          "citation": [
+            "https://doi.org/10.5281/zenodo.24088563",
+            "https://doi.org/10.5281/zenodo.24088574",
+            "https://doi.org/10.5281/zenodo.24088573"
+          ],
+          "isBasedOn": {
+            "@type": "ScholarlyArticle",
+            "@id": "https://doi.org/10.5281/zenodo.24093529",
+            "name": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+            "version": "1.0",
+            "datePublished": "2026-11-09"
+          },
+          "exampleOfWork": {
+            "@type": "CreativeWork",
+            "@id": "https://doi.org/10.5281/zenodo.24093528",
+            "name": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art"
+          },
+          "subjectOf": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://archive.museumofone.art/evidence/when-documentation-becomes-the-work.html",
+              "url": "https://archive.museumofone.art/evidence/when-documentation-becomes-the-work.html",
+              "name": "Evidence and source access: When Documentation Becomes the Work"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://hal.science/hal-05858316",
+              "url": "https://hal.science/hal-05858316",
+              "name": "HAL bibliographic notice hal-05858316"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://archive.museumofone.art/items/24095308.html",
+              "url": "https://archive.museumofone.art/items/24095308.html",
+              "name": "Museum of One Archive catalogue record MOO-CAT-020"
+            }
+          ],
+          "mentions": [
+            {
+              "@type": "DefinedTerm",
+              "@id": "https://www.museumofone.art/doctrine/#post-interpretive-criticism",
+              "name": "Post-Interpretive Criticism",
+              "alternateName": "PIC",
+              "url": "https://www.museumofone.art/doctrine/"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.museumofone.art/relational-archival-investigation/",
+              "name": "Relational Archival Investigation research programme",
+              "url": "https://www.museumofone.art/relational-archival-investigation/"
+            }
+          ]
+        }
+      ],
+      "verified_repository_links": [
+        "https://doi.org/10.5281/zenodo.24095308",
+        "https://doi.org/10.5281/zenodo.24088563",
+        "https://doi.org/10.5281/zenodo.24088574",
+        "https://doi.org/10.5281/zenodo.24088573",
+        "https://doi.org/10.5281/zenodo.24095308",
+        "https://doi.org/10.5281/zenodo.24095308",
+        "https://doi.org/10.5281/zenodo.24093529",
+        "https://doi.org/10.5281/zenodo.24093528",
+        "https://works.hcommons.org/records/g063c-mdq94",
+        "https://osf.io/zhnre/files/mdtq3",
+        "https://www.researchcatalogue.net/view/5047316/5047317",
+        "https://philarchive.org/rec/VALWDB",
+        "https://www.academia.edu/180588843",
+        "https://archive.org/download/when-documentation-becomes-the-work-working-paper-dorian-vale/When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf",
+        "https://hal.science/hal-05858316",
+        "https://archive.museumofone.art/items/24095308.html"
+      ],
+      "checks": {
+        "canonical_work_doi": true,
+        "working_paper_genre": true,
+        "sole_author_dorian_vale": true,
+        "museum_author_affiliation": true,
+        "museum_publisher": true,
+        "same_scholarly_date": true,
+        "no_work_journal_citation_or_issn": true,
+        "current_version": true
+      }
+    },
+    {
+      "record_id": "24095953",
+      "url": "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
+      "http_status": 200,
+      "retrieved_at": "2026-11-11T14:31:59.793303+00:00",
+      "source_sha256": "bf1b43c9ead73f113020337dd220fc98700e76ea1caadc82b3a2c0529c84af17",
+      "article_timestamps": [
+        {
+          "property": "article:published_time",
+          "content": "2026-11-10T02:44:38.000Z"
+        },
+        {
+          "property": "article:modified_time",
+          "content": "2026-11-11T09:51:26.000Z"
+        }
+      ],
+      "citation_meta": {
+        "citation_title": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
+        "citation_author": "Dorian Vale",
+        "citation_author_institution": "Museum of One",
+        "citation_publisher": "Museum of One",
+        "citation_publication_date": "2026/11/10",
+        "citation_date": "2026/11/10",
+        "citation_doi": "10.5281/zenodo.24095953",
+        "citation_language": "en",
+        "citation_pdf_url": "https://www.museumofone.art/content/files/2026/11/Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale-1.pdf",
+        "citation_abstract_html_url": "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
+        "citation_keywords": "Korean art; Korean art history; Korean experimental art; South Korean contemporary art; Korean conceptual art; 1970s Korean art; Korean avant-garde; 한국미술; 한국미술사; 한국현대미술; 한국 실험미술; 미술 아카이브; 작품 재제작; 작품 동일성; 박석원; 김용익; 이강소; 김구림; museum archives; art historiography; documentary evidence; collection cataloguing; provenance research; exhibition history; work identity; artwork reconstruction; art conservation; conceptual art; performance documentation; archival photography; production dates; compound dating; National Museum of Modern and Contemporary Art Korea; Seoul Museum of Art Archives; MMCA; SeMA; Relational Archival Investigation; Park Suk-won; Kim Yong-Ik; Lee Kang-so; Kim Kulim"
+      },
+      "scholarly_schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ScholarlyArticle",
+          "@id": "https://www.museumofone.art/titles-dates-and-reconstructed-works/#working-paper",
+          "url": "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
+          "mainEntityOfPage": "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
+          "headline": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
+          "name": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
+          "alternativeHeadline": "Four Documentary Histories of Korean Experimental Art",
+          "author": {
+            "@type": "Person",
+            "name": "Dorian Vale",
+            "url": "https://www.museumofone.art/author/dorianvale/",
+            "affiliation": {
+              "@type": "Organization",
+              "name": "Museum of One",
+              "url": "https://www.museumofone.art/",
+              "@id": "https://www.museumofone.art/#organization"
+            },
+            "@id": "https://www.museumofone.art/#dorian-vale",
+            "sameAs": [
+              "https://orcid.org/0009-0004-7737-5094"
+            ]
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Museum of One",
+            "url": "https://www.museumofone.art/",
+            "@id": "https://www.museumofone.art/#organization"
+          },
+          "datePublished": "2026-11-10",
+          "version": "1.0",
+          "genre": "Working paper",
+          "creativeWorkStatus": "Working paper",
+          "inLanguage": "en",
+          "abstract": "A work can retain its title and historical date even when its materials, arrangement, or means of presentation have changed. This working paper examines four Korean archival and museum cases: Kim Yong-Ik’s Plane Object photographs and the history of “plain” and “place”; the differing production years assigned to Park Suk-won’s Jeok–Eungnyeok; the 1975 historical reference and 2016 materials of Lee Kang-so’s Untitled 75031; and Kim Kulim’s Mediator, used by the National Museum of Modern and Contemporary Art, Korea, to exemplify compound dating. MMCA’s acquisition narrative and publication guidance acknowledge remaking as part of collecting an experimental past. The paper reads that institutional practice alongside scholarship on the relations among images, material traces, and artwork identity. Aga Wielocha’s discussion of Danh Vo’s chandeliers provides a particularly revealing comparison: a title can date an object’s removal and transformation into art rather than its fabrication, just as a museum’s leading year can identify an earlier work rather than the age of its present components. These different histories require the event dated by each title or caption to remain explicit. Neither artist authorisation nor institutional recognition settles every claim about an earlier condition. The paper credits the overlapping demonstrations in the author’s Relational Archival Investigation papers and develops their implications for collecting, editorial preference, and historical inference. Its contribution is a comparative account of how names and dates sustain continuity without making the evidence for that continuity interchangeable.",
+          "description": "Four case studies in Korean art history trace how titles, dates and later reconstructions shape artwork identity in the records for Kim Yong-Ik, Park Suk-won, Lee Kang-so and Kim Kulim.",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.5281/zenodo.24095953"
+          },
+          "isPartOf": {
+            "@type": "CreativeWorkSeries",
+            "name": "Museum of One Research Working Papers",
+            "url": "https://www.museumofone.art/research-working-papers/"
+          },
+          "isAccessibleForFree": true,
+          "usageInfo": "https://rightsstatements.org/vocab/InC/1.0/",
+          "copyrightHolder": {
+            "@type": "Person",
+            "name": "Dorian Vale",
+            "url": "https://www.museumofone.art/author/dorianvale/"
+          },
+          "copyrightYear": 2026,
+          "keywords": [
+            "Korean art",
+            "Korean art history",
+            "Korean experimental art",
+            "South Korean contemporary art",
+            "Korean conceptual art",
+            "1970s Korean art",
+            "Korean avant-garde",
+            "한국미술",
+            "한국미술사",
+            "한국현대미술",
+            "한국 실험미술",
+            "미술 아카이브",
+            "작품 재제작",
+            "작품 동일성",
+            "박석원",
+            "김용익",
+            "이강소",
+            "김구림",
+            "museum archives",
+            "art historiography",
+            "documentary evidence",
+            "collection cataloguing",
+            "provenance research",
+            "exhibition history",
+            "work identity",
+            "artwork reconstruction",
+            "art conservation",
+            "conceptual art",
+            "performance documentation",
+            "archival photography",
+            "production dates",
+            "compound dating",
+            "National Museum of Modern and Contemporary Art Korea",
+            "Seoul Museum of Art Archives",
+            "MMCA",
+            "SeMA",
+            "Relational Archival Investigation",
+            "Park Suk-won",
+            "Kim Yong-Ik",
+            "Lee Kang-so",
+            "Kim Kulim"
+          ],
+          "about": [
+            {
+              "@type": "DefinedTerm",
+              "name": "Korean art history",
+              "alternateName": "한국미술사"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Korean experimental art",
+              "alternateName": "한국 실험미술"
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Relational Archival Investigation",
+              "alternateName": "RAI",
+              "url": "https://www.museumofone.art/relational-archival-investigation/"
+            },
+            {
+              "@type": "Person",
+              "name": "Kim Yong-Ik",
+              "alternateName": "김용익"
+            },
+            {
+              "@type": "VisualArtwork",
+              "name": "Plane Object / Flat Object",
+              "alternateName": "평면 오브제",
+              "url": "https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7573",
+              "creator": {
+                "@type": "Person",
+                "name": "Kim Yong-Ik",
+                "alternateName": "김용익"
+              }
+            },
+            {
+              "@type": "Person",
+              "name": "Park Suk-won",
+              "alternateName": "박석원"
+            },
+            {
+              "@type": "VisualArtwork",
+              "name": "Jeok–Eungnyeok",
+              "alternateName": "적-응력",
+              "url": "https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7925",
+              "creator": {
+                "@type": "Person",
+                "name": "Park Suk-won",
+                "alternateName": "박석원"
+              }
+            },
+            {
+              "@type": "Person",
+              "name": "Lee Kang-so",
+              "alternateName": "이강소"
+            },
+            {
+              "@type": "VisualArtwork",
+              "name": "Untitled 75031",
+              "alternateName": "무제 75031",
+              "url": "https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7922",
+              "creator": {
+                "@type": "Person",
+                "name": "Lee Kang-so",
+                "alternateName": "이강소"
+              }
+            },
+            {
+              "@type": "Person",
+              "name": "Kim Kulim",
+              "alternateName": "김구림"
+            },
+            {
+              "@type": "VisualArtwork",
+              "name": "Mediator",
+              "alternateName": "매개항",
+              "url": "https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=4643",
+              "creator": {
+                "@type": "Person",
+                "name": "Kim Kulim",
+                "alternateName": "김구림"
+              }
+            }
+          ],
+          "mentions": [
+            {
+              "@type": "Organization",
+              "name": "National Museum of Modern and Contemporary Art, Korea",
+              "alternateName": [
+                "MMCA",
+                "국립현대미술관"
+              ],
+              "url": "https://www.mmca.go.kr/"
+            },
+            {
+              "@type": "Organization",
+              "name": "Seoul Museum of Art Archives",
+              "alternateName": [
+                "SeMA Archives",
+                "서울시립 미술아카이브"
+              ],
+              "url": "https://sema.seoul.go.kr/semaaa/"
+            },
+            {
+              "@type": "DefinedTerm",
+              "@id": "https://www.museumofone.art/doctrine/#post-interpretive-criticism",
+              "name": "Post-Interpretive Criticism",
+              "alternateName": "PIC",
+              "url": "https://www.museumofone.art/doctrine/"
+            },
+            {
+              "@type": "WebPage",
+              "name": "Relational Archival Investigation programme",
+              "url": "https://www.museumofone.art/relational-archival-investigation/"
+            }
+          ],
+          "citation": [
+            {
+              "@type": "CreativeWork",
+              "name": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+              "url": "https://doi.org/10.5281/zenodo.24088563"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Documentary Evidence and Source Comparisons",
+              "url": "https://doi.org/10.5281/zenodo.24088574"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Extended Case Studies and Methodological Demonstrations",
+              "url": "https://doi.org/10.5281/zenodo.24088573"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "SeMA photographic portfolio, MA-05-00049360",
+              "url": "https://sema.seoul.go.kr/semaaa/front/archive/view.do?iId=89408&menuId=8"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "SeMA Gallery Te exhibition file, 1978",
+              "url": "https://sema.seoul.go.kr/semaaa/front/class/view.do?cpId=930&menuId=8"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "SeMA 1997 remake photographs, MA-03-00002265",
+              "url": "https://sema.seoul.go.kr/semaaa/front/archive/view.do?iId=19167&menuId=13"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "MMCA 2016 Annual Report",
+              "url": "https://www.mmca.go.kr/upload/artInfo/2017/09/2017092003532066115519.pdf"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "MMCA Guide to Publication, 2020 edition",
+              "url": "https://www.mmca.go.kr/upload/research/MMCA%20Guide%20to%20Publication_20200806.pdf"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Ryu Ji-yeon’s Korean-language study",
+              "url": "https://www.mmca.go.kr/upload/m/data/artinfo/2013/01/25/20130125124036.pdf"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Jung Eun Young’s article record",
+              "url": "https://doi.org/10.15819/rah.2024..62.7"
+            }
+          ],
+          "sameAs": [
+            "https://doi.org/10.5281/zenodo.24095953",
+            "https://zenodo.org/records/24095953",
+            "https://works.hcommons.org/records/t9j11-4s168",
+            "https://osf.io/zhnre/files/g9zru",
+            "https://archive.org/details/titles-dates-and-reconstructed-works-working-paper-dorian-vale",
+            "https://www.researchcatalogue.net/view/5047700/5047701",
+            "https://philarchive.org/rec/VALTDA-2",
+            "https://www.academia.edu/180614856/Titles_Dates_and_Reconstructed_Works_Four_Documentary_Histories_of_Korean_Experimental_Art"
+          ],
+          "encoding": [
+            {
+              "@type": "MediaObject",
+              "contentUrl": "https://www.museumofone.art/content/files/2026/11/Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale-1.pdf",
+              "encodingFormat": "application/pdf",
+              "contentSize": "309812 bytes",
+              "sha256": "69ee1b25702685db6ffd43557e40b66d1ab28757c41690455d601d2cd2131b60"
+            },
+            {
+              "@type": "MediaObject",
+              "contentUrl": "https://zenodo.org/api/records/24095953/files/Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf/content",
+              "encodingFormat": "application/pdf",
+              "contentSize": "309812 bytes",
+              "sha256": "69ee1b25702685db6ffd43557e40b66d1ab28757c41690455d601d2cd2131b60"
+            }
+          ],
+          "subjectOf": [
+            {
+              "@type": "WebPage",
+              "@id": "https://hal.science/hal-05858731",
+              "url": "https://hal.science/hal-05858731",
+              "name": "HAL bibliographic notice hal-05858731"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://archive.museumofone.art/items/24095953.html",
+              "url": "https://archive.museumofone.art/items/24095953.html",
+              "name": "Museum of One catalogue record MOO-CAT-021"
+            }
+          ]
+        }
+      ],
+      "verified_repository_links": [
+        "https://doi.org/10.5281/zenodo.24095953",
+        "https://doi.org/10.5281/zenodo.24088563",
+        "https://doi.org/10.5281/zenodo.24088574",
+        "https://doi.org/10.5281/zenodo.24088573",
+        "https://doi.org/10.15819/rah.2024..62.7",
+        "https://doi.org/10.5281/zenodo.24095953",
+        "https://works.hcommons.org/records/t9j11-4s168",
+        "https://osf.io/zhnre/files/g9zru",
+        "https://archive.org/details/titles-dates-and-reconstructed-works-working-paper-dorian-vale",
+        "https://www.researchcatalogue.net/view/5047700/5047701",
+        "https://philarchive.org/rec/VALTDA-2",
+        "https://www.academia.edu/180614856/Titles_Dates_and_Reconstructed_Works_Four_Documentary_Histories_of_Korean_Experimental_Art",
+        "https://hal.science/hal-05858731",
+        "https://archive.museumofone.art/items/24095953.html"
+      ],
+      "checks": {
+        "canonical_work_doi": true,
+        "working_paper_genre": true,
+        "sole_author_dorian_vale": true,
+        "museum_author_affiliation": true,
+        "museum_publisher": true,
+        "same_scholarly_date": true,
+        "no_work_journal_citation_or_issn": true,
+        "current_version": true
+      }
+    },
+    {
+      "record_id": "23430200",
+      "url": "https://www.museumofone.art/after-the-interpretation-changes/",
+      "http_status": 200,
+      "retrieved_at": "2026-11-11T14:49:23.271313+00:00",
+      "source_sha256": "090283a3b7b37427829ab7c67979c1a9eeb586dc49e658f6a6297a25d7b2acfd",
+      "article_timestamps": [
+        {
+          "property": "article:published_time",
+          "content": "2026-10-17T05:28:12.000Z"
+        },
+        {
+          "property": "article:modified_time",
+          "content": "2026-11-11T14:49:02.000Z"
+        }
+      ],
+      "citation_meta": {
+        "citation_title": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles",
+        "citation_author": "Dorian Vale",
+        "citation_author_institution": "Museum of One",
+        "citation_author_orcid": "https://orcid.org/0009-0004-7737-5094",
+        "citation_publication_date": "2026/10/17",
+        "citation_doi": "10.5281/zenodo.23430200",
+        "citation_technical_report_institution": "Museum of One",
+        "citation_technical_report_number": "2",
+        "citation_language": "en",
+        "citation_publisher": "Museum of One",
+        "citation_pdf_url": "https://www.museumofone.art/content/files/2026/10/After_the_Interpretation_Changes_Working_Paper_2_v1.0.pdf",
+        "citation_firstpage": "1",
+        "citation_lastpage": "10"
+      },
+      "scholarly_schema": {
+        "@context": "https://schema.org",
+        "@type": "Report",
+        "@id": "https://doi.org/10.5281/zenodo.23430200",
+        "name": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles",
+        "headline": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles",
+        "url": "https://www.museumofone.art/after-the-interpretation-changes/",
+        "mainEntityOfPage": "https://www.museumofone.art/after-the-interpretation-changes/",
+        "abstract": "This study distinguishes two changes in the Rijksmuseum’s presentation of Simon Maris’s portrait now titled Isabella: the withdrawal of a racialized catalogue title in 2015, and the fulfilment in 2020 of an announced intention to adopt a name when one became known. The second change does not, by itself, demonstrate revision of the rule governing the first. The records examined at Europeana and Wikimedia Commons reveal different afterlives of the later decision. Europeana retains the descriptive title and an account in which identification remains unfinished. Commons preserves the older wording in the name of its image file while identifying the work as Isabella in the accompanying description. Drawing on my correspondence with Alexander V. Markov, the study follows what these descriptions do, rather than treating their survival as evidence of continuing authority. It finds uneven presentation of the later naming decision, not a demonstrated restoration of the rejected title. Its contribution to Post-Interpretive Criticism is a documentary distinction among correction, completion and circulation.",
+        "genre": "Working paper",
+        "reportNumber": "2",
+        "version": "1.0",
+        "datePublished": "2026-10-17",
+        "inLanguage": "en",
+        "isAccessibleForFree": true,
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.museumofone.art/#dorian-vale",
+          "name": "Dorian Vale",
+          "givenName": "Dorian",
+          "familyName": "Vale",
+          "sameAs": "https://orcid.org/0009-0004-7737-5094",
+          "url": "https://www.museumofone.art/author/dorianvale/",
+          "affiliation": {
+            "@type": "Organization",
+            "@id": "https://www.museumofone.art/#organization",
+            "name": "Museum of One",
+            "url": "https://www.museumofone.art/"
+          }
+        },
+        "contributor": {
+          "@type": "Person",
+          "name": "Alexander Viktorovich Markov",
+          "alternateName": "Alexander V. Markov",
+          "description": "Scholarly correspondent and intellectual contributor through correspondence and subsequent critical response; not a coauthor or formal peer reviewer."
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://www.museumofone.art/#organization",
+          "name": "Museum of One",
+          "url": "https://www.museumofone.art/"
+        },
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "Museum of One Research Working Papers",
+          "url": "https://www.museumofone.art/research-working-papers/"
+        },
+        "about": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Post-Interpretive Criticism",
+            "url": "https://www.museumofone.art/doctrine/"
+          },
+          {
+            "@type": "Thing",
+            "name": "Museum title correction and institutional responsibility"
+          },
+          {
+            "@type": "VisualArtwork",
+            "name": "Isabella",
+            "creator": {
+              "@type": "Person",
+              "name": "Simon Maris"
+            },
+            "url": "https://id.rijksmuseum.nl/200109696"
+          }
+        ],
+        "mentions": [
+          {
+            "@type": "Organization",
+            "name": "Rijksmuseum",
+            "description": "Museum whose collection records are studied; not an author affiliation or sponsor."
+          },
+          {
+            "@type": "Thing",
+            "name": "Europeana",
+            "description": "Documentary platform examined as a research source."
+          },
+          {
+            "@type": "Thing",
+            "name": "Wikimedia Commons",
+            "description": "Documentary platform examined as a research source."
+          }
+        ],
+        "subjectOf": [
+          {
+            "@type": "WebPage",
+            "name": "Alexander Viktorovich Markov: Critical Language and Lasting Correction",
+            "url": "https://www.museumofone.art/research-critical-language/"
+          },
+          {
+            "@type": "WebPage",
+            "name": "Museum of One Archive record MOO-CAT-005",
+            "url": "https://archive.museumofone.art/items/23430200.html"
+          },
+          {
+            "@type": "WebPage",
+            "name": "HAL bibliographic notice hal-05803957",
+            "url": "https://hal.science/hal-05803957"
+          },
+          {
+            "@type": "WebPage",
+            "name": "PhilArchive record VALATI-7",
+            "url": "https://philarchive.org/rec/VALATI-7"
+          },
+          {
+            "@type": "WebPage",
+            "name": "Research Catalogue exposition and PDF",
+            "url": "https://www.researchcatalogue.net/view/4965790/4965789"
+          },
+          {
+            "@type": "WebPage",
+            "name": "Academia.edu full-text access record",
+            "url": "https://www.academia.edu/179106531/After_the_Interpretation_Changes_Correction_Completion_and_the_Circulation_of_Museum_Titles"
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://doi.org/10.5281/zenodo.24130993",
+            "name": "When Interpretation Becomes Authority",
+            "url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+            "description": "Separately published editorial research dialogue that cites this working paper."
+          }
+        ],
+        "sameAs": [
+          "https://zenodo.org/records/23430200",
+          "https://osf.io/zhnre/files/6jnp5",
+          "https://works.hcommons.org/records/8cgp5-p1p74"
+        ],
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.5281/zenodo.23430200"
+        },
+        "encoding": {
+          "@type": "MediaObject",
+          "contentUrl": "https://www.museumofone.art/content/files/2026/10/After_the_Interpretation_Changes_Working_Paper_2_v1.0.pdf",
+          "encodingFormat": "application/pdf",
+          "contentSize": "180105 bytes"
+        },
+        "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "copyrightNotice": "CC BY-NC-ND 4.0 applies to Dorian Vale’s original contribution. Rights in third-party material and original correspondence remain with their respective holders. Permission for selected correspondence material does not extend to the full exchange.",
+        "keywords": [
+          "Post-Interpretive Criticism",
+          "museum titles",
+          "correction",
+          "completion",
+          "interpretive authority",
+          "archival circulation",
+          "Rijksmuseum",
+          "Simon Maris",
+          "Alexander Viktorovich Markov",
+          "Dorian Vale",
+          "Museum of One"
+        ],
+        "pagination": "1–10",
+        "pageStart": "1",
+        "pageEnd": "10"
+      },
+      "verified_repository_links": {
+        "Zenodo": {
+          "expected": "https://zenodo.org/records/23430200",
+          "observed": "https://zenodo.org/records/23430200"
+        },
+        "OSF": {
+          "expected": "https://osf.io/zhnre/files/6jnp5",
+          "observed": "https://osf.io/zhnre/files/6jnp5"
+        },
+        "Internet Archive": {
+          "expected": "https://archive.org/details/after-the-interpretation-changes-working-paper-2-v-1.0",
+          "observed": "https://archive.org/details/after-the-interpretation-changes-working-paper-2-v-1.0"
+        },
+        "KCWorks": {
+          "expected": "https://works.hcommons.org/records/8cgp5-p1p74",
+          "observed": "https://works.hcommons.org/records/8cgp5-p1p74"
+        },
+        "HAL bibliographic notice": {
+          "expected": "https://hal.science/hal-05803957",
+          "observed": "https://hal.science/hal-05803957"
+        },
+        "PhilArchive record": {
+          "expected": "https://philarchive.org/rec/VALATI-7",
+          "observed": "https://philarchive.org/rec/VALATI-7"
+        },
+        "Research Catalogue presentation": {
+          "expected": "https://doi.org/10.22501/rc.4965790",
+          "observed": "https://www.researchcatalogue.net/view/4965790/4965789"
+        },
+        "Academia.edu": {
+          "expected": "https://www.academia.edu/179106531/After_the_Interpretation_Changes_Correction_Completion_and_the_Circulation_of_Museum_Titles",
+          "observed": "https://www.academia.edu/179106531/After_the_Interpretation_Changes_Correction_Completion_and_the_Circulation_of_Museum_Titles"
+        },
+        "Museum of One Archive": {
+          "expected": "https://archive.museumofone.art/items/23430200.html",
+          "observed": "https://archive.museumofone.art/items/23430200.html"
+        }
+      },
+      "checks": {
+        "one_canonical_work_schema": true,
+        "working_paper_genre": true,
+        "sole_author_dorian_vale": true,
+        "museum_author_affiliation": true,
+        "museum_publisher": true,
+        "canonical_doi": true,
+        "original_scholarly_date": true,
+        "same_version": true,
+        "supported_article_pagination": true,
+        "correct_pdf_citation": true,
+        "all_nine_repository_archive_links": true,
+        "original_citation_metadata_preserved": true,
+        "original_body_paragraphs_preserved": true,
+        "style_blocks_unchanged": true,
+        "stylesheet_references_unchanged": true,
+        "no_work_journal_citation_or_issn": true,
+        "previous_injected_jsonld_blocks_preserved": true,
+        "generated_ghost_article_changed_only_modification_time": true,
+        "related_dialogue_distinct_doi": true,
+        "markov_contributor_not_author": true
+      },
+      "original_paragraph_count": 9,
+      "current_paragraph_count": 11
+    },
+    {
+      "record_id": "23428974",
+      "url": "https://www.museumofone.art/answerability/",
+      "http_status": 200,
+      "retrieved_at": "2026-11-11T14:49:23.319136+00:00",
+      "source_sha256": "ec75a409dd82cb5f79c68de6bdbf3bfef32e774c0b7da6889c5a90f84878b53a",
+      "article_timestamps": [
+        {
+          "property": "article:published_time",
+          "content": "2026-10-17T05:27:38.000Z"
+        },
+        {
+          "property": "article:modified_time",
+          "content": "2026-11-11T14:48:40.000Z"
+        }
+      ],
+      "citation_meta": {
+        "citation_title": "Answerability: Exhibition, Documentation, and Historical Evidence in Postwar Japanese Art",
+        "citation_author": "Dorian Vale",
+        "citation_author_institution": "Museum of One",
+        "citation_author_orcid": "https://orcid.org/0009-0004-7737-5094",
+        "citation_publication_date": "2026/10/17",
+        "citation_doi": "10.5281/zenodo.23428974",
+        "citation_technical_report_institution": "Museum of One",
+        "citation_technical_report_number": "1",
+        "citation_language": "en",
+        "citation_pdf_url": "https://www.museumofone.art/content/files/2026/10/Answerability_Working_Paper_01_v1_0-1.pdf",
+        "citation_publisher": "Museum of One",
+        "citation_firstpage": "1",
+        "citation_lastpage": "10"
+      },
+      "scholarly_schema": {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "@id": "https://doi.org/10.5281/zenodo.23428974",
+        "name": "Answerability: Exhibition, Documentation, and Historical Evidence in Postwar Japanese Art",
+        "headline": "Answerability: Exhibition, Documentation, and Historical Evidence in Postwar Japanese Art",
+        "genre": "Working paper",
+        "version": "1.0",
+        "datePublished": "2026-10-17",
+        "inLanguage": "en",
+        "abstract": "This working paper develops a claim-specific criterion of historical answerability through engagement with Reiko Tomii’s scholarship on operation in postwar Japanese art. It asks when evidence concerning exhibition, documentation, and artistic organization requires an art-historical account to reconsider the boundary of the work it claims to explain.\n\nThe principal case is Shiraga Kazuo’s Challenging Mud. Tomii’s accounts of material preparation and anticipated display are read beside Namiko Kunimoto’s analysis of action, object, agency, and selfhood. Further investigations address press presentation and photographic selection, Hi Red Center and GUN, conditions of authorization, and the differentiation of events and photographic records in museum cataloguing. The comparison does not presume a disagreement between Tomii and Kunimoto or equate evidence of preparation with complete predetermination.\n\nThe method distinguishes attribution, justification, and historical accuracy. Before evaluating a challenge, it fixes a proposition’s referent, meaning, scope, certainty, and evidential basis. Retention, limitation, revision, and suspension identify possible consequences of evidence without becoming compulsory stages or an aesthetic scoring system. The analysis separates a supported preparation-display relation from stronger claims about intention and distinguishes documentation’s original public operation from the reach of its later historical testimony.\n\nThe contribution is a disciplined account of inferential reach within the historical problems Tomii’s research makes visible. It also refines the application of restraint in Post-Interpretive Criticism: the amount of explanation cannot be prescribed before its evidential function is examined. This is a source-critical study of published arguments, not an independently inspected archival reconstruction or an empirical study of museum audiences. The criterion remains open to further cases and scholarly revision.",
+        "description": "Independent study of postwar Japanese art, exhibition and photographic documentation, developed following discussion and feedback from art historian Reiko Tomii. Sole author: Dorian Vale.",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.museumofone.art/#dorian-vale",
+          "name": "Dorian Vale",
+          "url": "https://www.museumofone.art/author/dorianvale/",
+          "sameAs": [
+            "https://orcid.org/0009-0004-7737-5094"
+          ],
+          "affiliation": {
+            "@type": "Organization",
+            "@id": "https://www.museumofone.art/#organization",
+            "name": "Museum of One",
+            "url": "https://www.museumofone.art/",
+            "identifier": {
+              "@type": "PropertyValue",
+              "propertyID": "ISNI",
+              "value": "0000000528819728"
+            }
+          }
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://www.museumofone.art/#organization",
+          "name": "Museum of One",
+          "url": "https://www.museumofone.art/",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "ISNI",
+            "value": "0000000528819728"
+          }
+        },
+        "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "isAccessibleForFree": true,
+        "url": "https://www.museumofone.art/answerability/",
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.5281/zenodo.23428974"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "HAL",
+            "value": "hal-05803897"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "PhilPapers",
+            "value": "VALAED-3",
+            "url": "https://philpapers.org/rec/VALAED-3"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "PhilArchive",
+            "value": "VALAED-3",
+            "url": "https://philarchive.org/rec/VALAED-3"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "Research Catalogue DOI",
+            "value": "10.22501/rc.4965738",
+            "url": "https://doi.org/10.22501/rc.4965738"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "Previous catalogue record",
+            "value": "80"
+          }
+        ],
+        "keywords": [
+          "Historical answerability",
+          "Art historiography",
+          "Postwar Japanese art",
+          "Exhibition history",
+          "Documentation",
+          "Historical evidence",
+          "Artistic operation",
+          "Interpretation",
+          "Post-Interpretive Criticism",
+          "Shiraga Kazuo",
+          "Challenging Mud",
+          "Reiko Tomii",
+          "Namiko Kunimoto",
+          "Hi Red Center",
+          "GUN",
+          "Aesthetics",
+          "Museum of One",
+          "Dorian Vale",
+          "Philosophy of Art",
+          "Art Criticism",
+          "Art Theory",
+          "Visual Culture Studies",
+          "Ethics in Art Criticism",
+          "Interpretation and Meaning",
+          "Interpretive Restraint",
+          "Criticism and Reception Theory",
+          "Epistemology of Art",
+          "Gutai",
+          "Japanese avant-garde art",
+          "Postwar Japanese art history",
+          "Art collectives in Japan",
+          "Performance art in Japan",
+          "Photographic documentation",
+          "Art-historical methodology"
+        ],
+        "spatialCoverage": {
+          "@type": "Place",
+          "name": "Japan"
+        },
+        "about": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://www.museumofone.art/doctrine/#post-interpretive-criticism",
+            "name": "Post-Interpretive Criticism",
+            "url": "https://www.museumofone.art/doctrine/",
+            "sameAs": "https://www.wikidata.org/wiki/Q136308909"
+          },
+          {
+            "@type": "Person",
+            "name": "Reiko Tomii",
+            "jobTitle": "Art historian and curator"
+          },
+          {
+            "@type": "Thing",
+            "name": "Art historiography"
+          },
+          {
+            "@type": "Thing",
+            "name": "Exhibition history"
+          },
+          {
+            "@type": "Thing",
+            "name": "Photographic documentation"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Postwar Japanese art",
+            "alternateName": "戦後日本美術"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Japanese art history",
+            "alternateName": "日本美術史"
+          }
+        ],
+        "citation": [
+          {
+            "@type": "WebPage",
+            "@id": "https://www.historians.org/resource/statement-on-standards-of-professional-conduct/",
+            "name": "Statement on Standards of Professional Conduct",
+            "url": "https://www.historians.org/resource/statement-on-standards-of-professional-conduct/",
+            "description": "American Historical Association. Statement on Standards of Professional Conduct. Revised 2005; amended January 2023. Sections 2–3. Accessed 17 October 2026.",
+            "author": {
+              "@type": "Organization",
+              "name": "American Historical Association"
+            },
+            "datePublished": "2023"
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://doi.org/10.1111/j.1467-8365.2012.00951.x",
+            "name": "Shiraga Kazuo: The Hero and Concrete Violence",
+            "url": "https://doi.org/10.1111/j.1467-8365.2012.00951.x",
+            "description": "Kunimoto, Namiko. 2013. Shiraga Kazuo: The Hero and Concrete Violence. Art History 36(1): 154–179. https://doi.org/10.1111/j.1467-8365.2012.00951.x",
+            "author": {
+              "@type": "Person",
+              "name": "Namiko Kunimoto",
+              "givenName": "Namiko",
+              "familyName": "Kunimoto"
+            },
+            "identifier": {
+              "@type": "PropertyValue",
+              "propertyID": "DOI",
+              "value": "10.1111/j.1467-8365.2012.00951.x"
+            },
+            "datePublished": "2013",
+            "isPartOf": {
+              "@type": "PublicationIssue",
+              "issueNumber": "1",
+              "isPartOf": {
+                "@type": "PublicationVolume",
+                "volumeNumber": "36",
+                "isPartOf": {
+                  "@type": "Periodical",
+                  "name": "Art History"
+                }
+              }
+            },
+            "pageStart": "154",
+            "pageEnd": "179",
+            "sameAs": [
+              "https://academic.oup.com/arthistory/article/36/1/154-179/7278381"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.moma.org/collection/works/127373",
+            "name": "Street Cleaning Event (1964), performed during Fluxfest Presents Hi Red Center Street Cleaning Event, Grand Army Plaza, New York, June 11, 1966",
+            "url": "https://www.moma.org/collection/works/127373",
+            "description": "Museum of Modern Art. Street Cleaning Event (1964), performed during Fluxfest Presents Hi Red Center Street Cleaning Event, Grand Army Plaza, New York, June 11, 1966. Hi Red Center. Gelatin silver print, 1966. Collection record 2224.2008.1x1–x4. Accessed 17 October 2026.",
+            "author": {
+              "@type": "Organization",
+              "name": "Museum of Modern Art"
+            }
+          },
+          {
+            "@type": "CreativeWork",
+            "@id": "https://www.aaa-a.org/programs/conversation-with-reiko-tomii",
+            "name": "Conversation with Reiko Tomii",
+            "url": "https://www.aaa-a.org/programs/conversation-with-reiko-tomii",
+            "description": "Tomii, Reiko. 2011. Conversation with Reiko Tomii. Conversation with Jane DeBevoise. Asia Art Archive in America, 6 September 2011. Accessed 17 October 2026.",
+            "author": {
+              "@type": "Person",
+              "name": "Reiko Tomii",
+              "givenName": "Reiko",
+              "familyName": "Tomii"
+            },
+            "datePublished": "2011-09-06",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Asia Art Archive in America"
+            }
+          },
+          {
+            "@type": "CreativeWork",
+            "@id": "https://www.aaa-a.org/programs/i-challenged-mud-after",
+            "name": "I challenged mud, after…",
+            "url": "https://www.aaa-a.org/programs/i-challenged-mud-after",
+            "description": "Tomii, Reiko. 2011. I challenged mud, after… Asia Art Archive in America. Account of the historical investigation at the Museum of Modern Art on 23 July 2011. Accessed 17 October 2026.",
+            "author": {
+              "@type": "Person",
+              "name": "Reiko Tomii",
+              "givenName": "Reiko",
+              "familyName": "Tomii"
+            },
+            "datePublished": "2011",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Asia Art Archive in America"
+            }
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://field-journal.com/issue-7/localizing-socially-engaged-art-some-observations-on-collective-operations-in-prewar-and-postwar-japan/",
+            "name": "Localizing Socially Engaged Art: Some Observations on Collective Operations in Prewar and Postwar Japan",
+            "url": "https://field-journal.com/issue-7/localizing-socially-engaged-art-some-observations-on-collective-operations-in-prewar-and-postwar-japan/",
+            "description": "Tomii, Reiko. 2017. Localizing Socially Engaged Art: Some Observations on Collective Operations in Prewar and Postwar Japan. FIELD 7 (Spring). Accessed 17 October 2026.",
+            "author": {
+              "@type": "Person",
+              "name": "Reiko Tomii",
+              "givenName": "Reiko",
+              "familyName": "Tomii"
+            },
+            "datePublished": "2017",
+            "isPartOf": {
+              "@type": "PublicationIssue",
+              "issueNumber": "7",
+              "isPartOf": {
+                "@type": "Periodical",
+                "name": "FIELD"
+              }
+            }
+          },
+          {
+            "@type": "CreativeWork",
+            "@id": "https://doi.org/10.37050/wpc-co-01_05",
+            "name": "Thinking Operationally: Collectivism in Modern Japan and Its Contemporary Evolution",
+            "url": "https://doi.org/10.37050/wpc-co-01_05",
+            "description": "Tomii, Reiko. 2025. Thinking Operationally: Collectivism in Modern Japan and Its Contemporary Evolution. In Thinking Collectives / Collective Thinking, edited by Eva Bentcheva, Annie Jael Kwan, and Ming Tiampo, 59–76. Berlin: ICI Berlin Press. https://doi.org/10.37050/wpc-co-01_05",
+            "author": {
+              "@type": "Person",
+              "name": "Reiko Tomii",
+              "givenName": "Reiko",
+              "familyName": "Tomii"
+            },
+            "identifier": {
+              "@type": "PropertyValue",
+              "propertyID": "DOI",
+              "value": "10.37050/wpc-co-01_05"
+            },
+            "datePublished": "2025",
+            "publisher": {
+              "@type": "Organization",
+              "name": "ICI Berlin Press"
+            },
+            "isPartOf": {
+              "@type": "Book",
+              "name": "Thinking Collectives / Collective Thinking",
+              "editor": [
+                {
+                  "@type": "Person",
+                  "name": "Eva Bentcheva",
+                  "givenName": "Eva",
+                  "familyName": "Bentcheva"
+                },
+                {
+                  "@type": "Person",
+                  "name": "Annie Jael Kwan",
+                  "givenName": "Annie Jael",
+                  "familyName": "Kwan"
+                },
+                {
+                  "@type": "Person",
+                  "name": "Ming Tiampo",
+                  "givenName": "Ming",
+                  "familyName": "Tiampo"
+                }
+              ],
+              "publisher": {
+                "@type": "Organization",
+                "name": "ICI Berlin Press"
+              },
+              "datePublished": "2025"
+            },
+            "pageStart": "59",
+            "pageEnd": "76",
+            "sameAs": [
+              "https://press.ici-berlin.org/doi/10.37050/wpc-co-01/tomii_thinking-operationally.html"
+            ]
+          },
+          {
+            "@type": "Book",
+            "@id": "https://doi.org/10.1017/CBO9780511498381",
+            "name": "Our Knowledge of the Past: A Philosophy of Historiography",
+            "url": "https://doi.org/10.1017/CBO9780511498381",
+            "description": "Tucker, Aviezer. 2004. Our Knowledge of the Past: A Philosophy of Historiography. Cambridge: Cambridge University Press. Introduction, 1–10. https://doi.org/10.1017/CBO9780511498381",
+            "author": {
+              "@type": "Person",
+              "name": "Aviezer Tucker",
+              "givenName": "Aviezer",
+              "familyName": "Tucker"
+            },
+            "identifier": {
+              "@type": "PropertyValue",
+              "propertyID": "DOI",
+              "value": "10.1017/CBO9780511498381"
+            },
+            "datePublished": "2004",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Cambridge University Press"
+            },
+            "isbn": "9780521834155",
+            "sameAs": [
+              "https://www.cambridge.org/core/books/our-knowledge-of-the-past/ADBB7892F410FD9DE22BE3F52378B99D"
+            ]
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://doi.org/10.5281/zenodo.18104019",
+            "name": "Interpretation at Risk: Post-Interpretive Criticism After the 20th Century",
+            "url": "https://doi.org/10.5281/zenodo.18104019",
+            "description": "Vale, Dorian. 2025. Interpretation at Risk: Post-Interpretive Criticism After the 20th Century. Museum of One. Six-page PDF edition. https://doi.org/10.5281/zenodo.18104019",
+            "author": {
+              "@type": "Person",
+              "@id": "https://www.museumofone.art/#dorian-vale",
+              "name": "Dorian Vale",
+              "url": "https://www.museumofone.art/author/dorianvale/",
+              "sameAs": [
+                "https://orcid.org/0009-0004-7737-5094"
+              ],
+              "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "ORCID",
+                "value": "0009-0004-7737-5094"
+              }
+            },
+            "identifier": {
+              "@type": "PropertyValue",
+              "propertyID": "DOI",
+              "value": "10.5281/zenodo.18104019"
+            },
+            "datePublished": "2025",
+            "publisher": {
+              "@type": "Organization",
+              "@id": "https://www.museumofone.art/#organization",
+              "name": "Museum of One",
+              "url": "https://www.museumofone.art/",
+              "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "ISNI",
+                "value": "0000000528819728"
+              }
+            },
+            "disambiguatingDescription": "The cited source is the six-page PDF edition. This is the stable work DOI printed in Answerability, not a claim that the DOI identifies a particular later version."
+          },
+          {
+            "@type": "Book",
+            "name": "Radicalism in the Wilderness: International Contemporaneity and 1960s Art in Japan",
+            "url": "https://mitpress.mit.edu/9780262034128/radicalism-in-the-wilderness/",
+            "author": {
+              "@type": "Person",
+              "name": "Reiko Tomii"
+            }
+          }
+        ],
+        "encoding": {
+          "@type": "MediaObject",
+          "contentUrl": "https://www.museumofone.art/content/files/2026/10/Answerability_Working_Paper_01_v1_0-1.pdf",
+          "encodingFormat": "application/pdf",
+          "name": "Answerability: Exhibition, Documentation, and Historical Evidence in Postwar Japanese Art"
+        },
+        "sameAs": [
+          "https://zenodo.org/records/23428974",
+          "https://works.hcommons.org/records/ft9g1-z8j46",
+          "https://hal.science/hal-05803897",
+          "https://archive.org/details/answerability-working-paper-01-v-1-0",
+          "https://www.academia.edu/179095266/Answerability_Exhibition_Documentation_and_Historical_Evidence_in_Postwar_Japanese_Art",
+          "https://philpapers.org/rec/VALAED-3",
+          "https://philarchive.org/rec/VALAED-3",
+          "https://www.researchcatalogue.net/researches/4965738",
+          "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=15tvhjAAAAAJ&citation_for_view=15tvhjAAAAAJ:t6usbXjVLHcC",
+          "https://osf.io/zhnre/files/pd958"
+        ],
+        "mainEntityOfPage": "https://www.museumofone.art/answerability/",
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "@id": "https://www.museumofone.art/research-working-papers/#series",
+          "name": "Museum of One Research Working Papers",
+          "url": "https://www.museumofone.art/research-working-papers/",
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://www.museumofone.art/#organization",
+            "name": "Museum of One",
+            "url": "https://www.museumofone.art/",
+            "identifier": {
+              "@type": "PropertyValue",
+              "propertyID": "ISNI",
+              "value": "0000000528819728"
+            }
+          },
+          "about": {
+            "@type": "DefinedTerm",
+            "@id": "https://www.museumofone.art/doctrine/#post-interpretive-criticism",
+            "name": "Post-Interpretive Criticism",
+            "url": "https://www.museumofone.art/doctrine/",
+            "sameAs": "https://www.wikidata.org/wiki/Q136308909"
+          },
+          "inLanguage": "en"
+        },
+        "creativeWorkStatus": "Published working paper",
+        "dateModified": "2026-10-17",
+        "creditText": "Independently authored by Dorian Vale following discussion and feedback from art historian Reiko Tomii. Tomii is not a coauthor; no blanket endorsement or formal peer review is implied.",
+        "subjectOf": [
+          {
+            "@type": "WebPage",
+            "name": "Reiko Tomii: Operation and Historical Answerability",
+            "url": "https://www.museumofone.art/reiko-tomii/"
+          },
+          {
+            "@type": "WebPage",
+            "name": "Museum of One Archive record MOO-CAT-006",
+            "url": "https://archive.museumofone.art/items/23428974.html"
+          }
+        ],
+        "copyrightNotice": "CC BY-NC-ND 4.0 applies to Dorian Vale’s original contribution. Rights in third-party material remain with their respective holders.",
+        "pagination": "1–10",
+        "pageStart": "1",
+        "pageEnd": "10"
+      },
+      "verified_repository_links": {
+        "Zenodo": {
+          "expected": "https://zenodo.org/records/23428974",
+          "observed": "https://zenodo.org/records/23428974"
+        },
+        "OSF": {
+          "expected": "https://osf.io/zhnre/files/pd958",
+          "observed": "https://osf.io/zhnre/files/pd958"
+        },
+        "Internet Archive": {
+          "expected": "https://archive.org/details/answerability-working-paper-01-v-1-0",
+          "observed": "https://archive.org/details/answerability-working-paper-01-v-1-0"
+        },
+        "KCWorks": {
+          "expected": "https://works.hcommons.org/records/ft9g1-z8j46",
+          "observed": "https://works.hcommons.org/records/ft9g1-z8j46"
+        },
+        "HAL bibliographic notice": {
+          "expected": "https://hal.science/hal-05803897",
+          "observed": "https://hal.science/hal-05803897"
+        },
+        "PhilArchive record": {
+          "expected": "https://philarchive.org/rec/VALAED-3",
+          "observed": "https://philarchive.org/rec/VALAED-3"
+        },
+        "Research Catalogue presentation": {
+          "expected": "https://doi.org/10.22501/rc.4965738",
+          "observed": "https://www.researchcatalogue.net/view/4965738/4965737"
+        },
+        "Academia.edu": {
+          "expected": "https://www.academia.edu/179095266/Answerability_Exhibition_Documentation_and_Historical_Evidence_in_Postwar_Japanese_Art",
+          "observed": "https://www.academia.edu/179095266/Answerability_Exhibition_Documentation_and_Historical_Evidence_in_Postwar_Japanese_Art"
+        },
+        "Museum of One Archive": {
+          "expected": "https://archive.museumofone.art/items/23428974.html",
+          "observed": "https://archive.museumofone.art/items/23428974.html"
+        }
+      },
+      "checks": {
+        "one_canonical_work_schema": true,
+        "working_paper_genre": true,
+        "sole_author_dorian_vale": true,
+        "museum_author_affiliation": true,
+        "museum_publisher": true,
+        "canonical_doi": true,
+        "original_scholarly_date": true,
+        "same_version": true,
+        "supported_article_pagination": true,
+        "correct_pdf_citation": true,
+        "all_nine_repository_archive_links": true,
+        "original_citation_metadata_preserved": true,
+        "original_body_paragraphs_preserved": true,
+        "style_blocks_unchanged": true,
+        "stylesheet_references_unchanged": true,
+        "no_work_journal_citation_or_issn": true,
+        "existing_work_fields_preserved": true,
+        "original_subject_paragraph_preserved": true
+      },
+      "original_paragraph_count": 14,
+      "current_paragraph_count": 15
+    }
+  ],
+  "qualification": "Work-specific genre distinguishes working papers, technical supplements and the editorial research dialogue. The generic ScholarlyArticle class does not assert journal publication or peer review. The separate sitewide journal graph does not assign its ISSN to these works. All observed original scholarly dates, DOIs, versions and PDF links are preserved; website modification times record metadata and access-link maintenance. Explicit comparisons for the three RAI publisher records and two older working-paper pages preserve original body content and stylesheet/style blocks."
+}

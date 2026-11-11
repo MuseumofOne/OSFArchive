@@ -1,0 +1,235 @@
+{
+  "record_id": "24130993",
+  "url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+  "http_status": 200,
+  "retrieved_at": "2026-11-11T18:06:36.905903+00:00",
+  "source_sha256": "d828b3562e2a5b015f4a260b8658591b2654ddcf27eb671e6bf8bde431441aa0",
+  "article_timestamps": [
+    {
+      "property": "article:published_time",
+      "content": "2026-11-11T10:05:12.000Z"
+    },
+    {
+      "property": "article:modified_time",
+      "content": "2026-11-11T18:01:47.000Z"
+    },
+    {
+      "property": "article:tag",
+      "content": "The Dialogues"
+    }
+  ],
+  "citation_meta": {
+    "citation_title": "When Interpretation Becomes Authority",
+    "citation_author": "Dorian Vale",
+    "citation_author_institution": "Museum of One",
+    "citation_author_orcid": "https://orcid.org/0009-0004-7737-5094",
+    "citation_publisher": "Museum of One",
+    "citation_publication_date": "2026/11/11",
+    "citation_doi": "10.5281/zenodo.24130993",
+    "citation_language": "en",
+    "citation_firstpage": "1",
+    "citation_lastpage": "9",
+    "citation_pdf_url": "https://www.museumofone.art/content/files/2026/11/When_Interpretation_Becomes_Authority_Dialogue_v1.0.pdf",
+    "citation_abstract_html_url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+    "citation_keywords": "Post-Interpretive Criticism; Semiotics of Non-intentional Ephemerality; interpretive authority; semantic protocol; institutional responsibility; museum documentation; art criticism; aesthetics; semiotics; contestability; deactivation; reauthorization; warrant migration; correction and completion; museum titles; archival evidence; Alexander V. Markov; Dorian Vale; Museum of One"
+  },
+  "scholarly_schema": {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "@id": "https://doi.org/10.5281/zenodo.24130993",
+    "name": "When Interpretation Becomes Authority",
+    "headline": "When Interpretation Becomes Authority",
+    "alternativeHeadline": "Alexander V. Markov × Dorian Vale — A research dialogue between Post-Interpretive Criticism and the Semiotics of Non-intentional Ephemerality",
+    "url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+    "mainEntityOfPage": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+    "description": "Dorian Vale’s editorial account of scholarly correspondence with Alexander V. Markov. Research dialogue, version 1.0, October 2026 edition; public repository release 11 November 2026.",
+    "abstract": "This research dialogue is Dorian Vale’s editorial account of written correspondence with Alexander V. Markov in September and October 2026. It examines how interpretations acquire authority through their reuse in catalogues, labels, archives, teaching, and institutional procedures. Bringing Post-Interpretive Criticism into exchange with the Semiotics of Non-intentional Ephemerality, the discussion distinguishes the preservation of a text from its continuing jurisdiction, verification from warrant migration and reauthorization, and an effective correction from the maintenance of its effects. Markov’s semantic protocol and hypothetical history of correction and lapse are considered alongside Vale’s proposals concerning contestability, distributed responsibility, and the continuity of justificatory burden. The accompanying study, After the Interpretation Changes, supplies a separately authored documentary case concerning Simon Maris’s Isabella; its evidence limits the stronger theoretical claims. The dialogue asks how time, place, and role affect the authority of records, and what would distinguish a changed answer from a change in the conditions governing it. The exchanges are condensed thematic paraphrases. Selection, framing, and wording are Vale’s responsibility; this is neither a transcript nor a jointly authored statement. Disagreement and proposals not accepted by both correspondents remain explicit.",
+    "datePublished": "2026-11-11",
+    "version": "1.0",
+    "inLanguage": "en",
+    "pagination": "1–9",
+    "pageStart": "1",
+    "pageEnd": "9",
+    "genre": [
+      "Research dialogue",
+      "Editorial account"
+    ],
+    "creativeWorkStatus": "Published",
+    "isAccessibleForFree": true,
+    "author": {
+      "@type": "Person",
+      "@id": "https://www.museumofone.art/#dorian-vale",
+      "name": "Dorian Vale",
+      "givenName": "Dorian",
+      "familyName": "Vale",
+      "url": "https://www.museumofone.art/author/dorianvale/",
+      "sameAs": "https://orcid.org/0009-0004-7737-5094",
+      "affiliation": {
+        "@type": "Organization",
+        "@id": "https://www.museumofone.art/#organization",
+        "name": "Museum of One",
+        "url": "https://www.museumofone.art/"
+      }
+    },
+    "contributor": {
+      "@type": "Person",
+      "name": "Alexander Viktorovich Markov",
+      "alternateName": "Alexander V. Markov",
+      "description": "Scholarly interlocutor and intellectual contributor whose positions are paraphrased in Dorian Vale’s editorial account. Markov is not a coauthor or editor of this publication."
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://www.museumofone.art/#organization",
+      "name": "Museum of One",
+      "url": "https://www.museumofone.art/"
+    },
+    "isPartOf": {
+      "@type": "CreativeWorkSeries",
+      "@id": "https://www.museumofone.art/the-dialogues/#series",
+      "name": "The Dialogues",
+      "url": "https://www.museumofone.art/the-dialogues/"
+    },
+    "about": [
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://www.museumofone.art/doctrine/#post-interpretive-criticism",
+        "name": "Post-Interpretive Criticism",
+        "alternateName": "PIC",
+        "url": "https://www.museumofone.art/doctrine/"
+      },
+      {
+        "@type": "Thing",
+        "name": "Semiotics of Non-intentional Ephemerality"
+      },
+      {
+        "@type": "Thing",
+        "name": "Interpretive authority"
+      },
+      {
+        "@type": "Thing",
+        "name": "Institutional responsibility"
+      }
+    ],
+    "subjectOf": [
+      {
+        "@type": "WebPage",
+        "name": "Alexander Viktorovich Markov: Critical Language and Lasting Correction",
+        "url": "https://www.museumofone.art/research-critical-language/"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://hal.science/hal-05860223",
+        "url": "https://hal.science/hal-05860223",
+        "name": "HAL bibliographic notice hal-05860223"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://archive.museumofone.art/items/24130993.html",
+        "url": "https://archive.museumofone.art/items/24130993.html",
+        "name": "Museum of One Archive catalogue record MOO-CAT-022"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://philarchive.org/rec/VALWIB",
+        "url": "https://philarchive.org/rec/VALWIB",
+        "name": "PhilArchive full-text record VALWIB"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.academia.edu/180717928/When_Interpretation_Becomes_Authority",
+        "url": "https://www.academia.edu/180717928/When_Interpretation_Becomes_Authority",
+        "name": "Academia.edu full-text access copy"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://doi.org/10.22501/rc.5058205",
+        "url": "https://www.researchcatalogue.net/view/5058205/5058204",
+        "name": "Corrected Research Catalogue full-text HTML presentation",
+        "description": "Complete HTML transcription of the nine-page source, with an external link to the canonical PDF. Supersedes incomplete RC presentation 5056088; the source paper remains version 1.0."
+      }
+    ],
+    "keywords": [
+      "Post-Interpretive Criticism",
+      "Semiotics of Non-intentional Ephemerality",
+      "interpretive authority",
+      "semantic protocol",
+      "institutional responsibility",
+      "museum documentation",
+      "art criticism",
+      "aesthetics",
+      "semiotics",
+      "contestability",
+      "deactivation",
+      "reauthorization",
+      "warrant migration",
+      "correction and completion",
+      "museum titles",
+      "archival evidence",
+      "Alexander V. Markov",
+      "Dorian Vale",
+      "Museum of One"
+    ],
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "DOI",
+      "value": "10.5281/zenodo.24130993"
+    },
+    "sameAs": [
+      "https://zenodo.org/records/24130993",
+      "https://archive.org/details/when-interpretation-becomes-authority-dialogue-v-1.0",
+      "https://osf.io/zhnre/files/3zk8h",
+      "https://works.hcommons.org/records/z0ptj-3rt53"
+    ],
+    "encoding": {
+      "@type": "MediaObject",
+      "encodingFormat": "application/pdf",
+      "contentUrl": "https://www.museumofone.art/content/files/2026/11/When_Interpretation_Becomes_Authority_Dialogue_v1.0.pdf",
+      "contentSize": "139737 bytes"
+    },
+    "citation": [
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://doi.org/10.5281/zenodo.23430200",
+        "name": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles",
+        "author": {
+          "@id": "https://www.museumofone.art/#dorian-vale"
+        },
+        "url": "https://www.museumofone.art/after-the-interpretation-changes/"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "name": "Protocol and the Unstable Sign: A Revision of Asignifying Semiotics for the Algorithmic Age",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Alexander Markov"
+          },
+          {
+            "@type": "Person",
+            "name": "Oksana Shtayn"
+          }
+        ],
+        "url": "https://www.southernsemioticreview.net/protocol-and-the-unstable-sign-a-revision-of-asignifying-semiotics-for-the-algorithmic-age/"
+      }
+    ],
+    "copyrightYear": 2026,
+    "copyrightNotice": "© 2026 Dorian Vale · Museum of One. Editorial text by Dorian Vale. Alexander V. Markov’s intellectual contributions are attributed throughout; rights in the original correspondence remain with its respective authors.",
+    "usageInfo": "https://rightsstatements.org/vocab/InC/1.0/",
+    "creditText": "Editorial account by Dorian Vale. Alexander V. Markov’s intellectual contributions are attributed throughout. The exchanges are condensed thematic paraphrases, not verbatim speech or a jointly authored statement."
+  },
+  "verified_kcworks_link": "https://works.hcommons.org/records/z0ptj-3rt53",
+  "checks": {
+    "one_canonical_work_schema": true,
+    "kc_visible_public_link": true,
+    "kc_work_identity_link": true,
+    "exactly_one_new_sameas": true,
+    "all_other_work_schema_fields_unchanged": true,
+    "citation_metadata_unchanged": true,
+    "original_body_paragraphs_preserved": true,
+    "original_links_preserved": true,
+    "style_blocks_unchanged": true,
+    "stylesheet_references_unchanged": true
+  },
+  "prior_review_evidence": "https://github.com/MuseumofOne/OSFArchive/blob/main/data/source/publisher-publication-alignment-review-2026-11-11.json",
+  "qualification": "The publisher added a KCWorks access link and the verified copy URL in sameAs. Original body paragraphs, other scholarly fields, citation metadata and all style/stylesheet blocks are unchanged."
+}

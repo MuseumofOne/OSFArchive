@@ -1,0 +1,2333 @@
+{
+  "reviewed": "2026-11-11",
+  "scope": "Seven pre-existing public KCWorks copies and the newly completed dialogue access copy. Repository metadata and actual file identity are independently verified; earlier snapshots and correction evidence remain dated history.",
+  "initial_review": {
+    "checked_at": "2026-11-11T14:26:48.434114+00:00",
+    "scope": "Seven existing KCWorks copies, read-only public API and file downloads; no deposits or mutations",
+    "all_seven_pdf_copies_match_canonical": true,
+    "records": [
+      {
+        "canonical_zenodo_id": "24088563",
+        "canonical_doi": "10.5281/zenodo.24088563",
+        "kc_id": "z8rjn-xcv08",
+        "url": "https://works.hcommons.org/records/z8rjn-xcv08",
+        "api": "https://works.hcommons.org/api/records/z8rjn-xcv08",
+        "doi_provider": "external",
+        "title": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+        "publisher": "Knowledge Commons",
+        "creators": [
+          {
+            "person_or_org": {
+              "type": "personal",
+              "name": "Dorian Vale",
+              "given_name": "Dorian",
+              "family_name": "Vale",
+              "identifiers": [
+                {
+                  "identifier": "0009-0004-7737-5094",
+                  "scheme": "orcid"
+                }
+              ]
+            },
+            "role": {
+              "id": "author",
+              "title": {
+                "en": "Author"
+              }
+            },
+            "affiliations": [
+              {
+                "name": "Museum of One"
+              }
+            ]
+          }
+        ],
+        "publication_date": "2026-11-09",
+        "edition": null,
+        "checked_at": "2026-11-11T14:24:34.478799+00:00",
+        "copy_verification": [
+          {
+            "file_download_url": "https://works.hcommons.org/api/records/z8rjn-xcv08/files/01_RAI_Main_Paper_Dorian_Vale.pdf/content",
+            "http_status": 200,
+            "bytes": 361169,
+            "md5": "0147a4299fc5404e2762d3ceb23d4cc1",
+            "sha256": "44df66915879ff3ee3127b17d98d960baf47d9d71685a1c0c3c89b2a1c4e6661",
+            "pdf_signature": true,
+            "download_matches_canonical": true
+          }
+        ],
+        "source_metadata_sha256": "af68935b154d3fafdc93fe0e23c9fbce1e7548051fdc69db90aa5242707c3ca8"
+      },
+      {
+        "canonical_zenodo_id": "24088574",
+        "canonical_doi": "10.5281/zenodo.24088574",
+        "kc_id": "dwt9e-d5p24",
+        "url": "https://works.hcommons.org/records/dwt9e-d5p24",
+        "api": "https://works.hcommons.org/api/records/dwt9e-d5p24",
+        "doi_provider": "external",
+        "title": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+        "publisher": "Knowledge Commons",
+        "creators": [
+          {
+            "person_or_org": {
+              "type": "personal",
+              "name": "Dorian Vale",
+              "given_name": "Dorian",
+              "family_name": "Vale",
+              "identifiers": [
+                {
+                  "identifier": "0009-0004-7737-5094",
+                  "scheme": "orcid"
+                }
+              ]
+            },
+            "role": {
+              "id": "author",
+              "title": {
+                "en": "Author"
+              }
+            },
+            "affiliations": [
+              {
+                "name": "Museum of One"
+              },
+              {
+                "id": "041q8j747",
+                "name": "\"Celio\" Military Hospital",
+                "identifiers": [
+                  {
+                    "identifier": "041q8j747",
+                    "scheme": "ror"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "publication_date": "2026-11-09",
+        "edition": null,
+        "checked_at": "2026-11-11T14:24:34.905700+00:00",
+        "copy_verification": [
+          {
+            "file_download_url": "https://works.hcommons.org/api/records/dwt9e-d5p24/files/02_RAI_Documentary_Supplement_Dorian_Vale.pdf/content",
+            "http_status": 200,
+            "bytes": 334348,
+            "md5": "1d066f2c77de147bc382928cf42eca56",
+            "sha256": "c4358a5f6f736700bfdd298cb4bbaac372b954929723bad4c1eb06bb28c15a46",
+            "pdf_signature": true,
+            "download_matches_canonical": true
+          }
+        ],
+        "source_metadata_sha256": "ed239f7bd358518b02a90d8d4b9a9cfc7be2065b9528e70e6ea5a963d78587ff"
+      },
+      {
+        "canonical_zenodo_id": "24088573",
+        "canonical_doi": "10.5281/zenodo.24088573",
+        "kc_id": "mr1rm-yh789",
+        "url": "https://works.hcommons.org/records/mr1rm-yh789",
+        "api": "https://works.hcommons.org/api/records/mr1rm-yh789",
+        "doi_provider": "external",
+        "title": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+        "publisher": "Knowledge Commons",
+        "creators": [
+          {
+            "person_or_org": {
+              "type": "personal",
+              "name": "Dorian Vale",
+              "given_name": "Dorian",
+              "family_name": "Vale",
+              "identifiers": [
+                {
+                  "identifier": "0009-0004-7737-5094",
+                  "scheme": "orcid"
+                }
+              ]
+            },
+            "role": {
+              "id": "author",
+              "title": {
+                "en": "Author"
+              }
+            },
+            "affiliations": [
+              {
+                "name": "Museum of One"
+              },
+              {
+                "id": "041q8j747",
+                "name": "\"Celio\" Military Hospital",
+                "identifiers": [
+                  {
+                    "identifier": "041q8j747",
+                    "scheme": "ror"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "publication_date": "2026-11-09",
+        "edition": null,
+        "checked_at": "2026-11-11T14:24:34.731260+00:00",
+        "copy_verification": [
+          {
+            "file_download_url": "https://works.hcommons.org/api/records/mr1rm-yh789/files/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf/content",
+            "http_status": 200,
+            "bytes": 219814,
+            "md5": "9f12074e3983e4eb75f78b89108d9c23",
+            "sha256": "1f9f7018a3f023afc5ab7cba6851c15a4b96f394ebcdad6e16f9c734ffbb264c",
+            "pdf_signature": true,
+            "download_matches_canonical": true
+          }
+        ],
+        "source_metadata_sha256": "320394e2303471daf5d959d2572cbc616288a4e057806e75606abb6e7f62db74"
+      },
+      {
+        "canonical_zenodo_id": "24095308",
+        "canonical_doi": "10.5281/zenodo.24095308",
+        "kc_id": "g063c-mdq94",
+        "url": "https://works.hcommons.org/records/g063c-mdq94",
+        "api": "https://works.hcommons.org/api/records/g063c-mdq94",
+        "doi_provider": "external",
+        "title": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+        "publisher": "Museum of One",
+        "creators": [
+          {
+            "person_or_org": {
+              "type": "personal",
+              "name": "Vale, Dorian",
+              "given_name": "Dorian",
+              "family_name": "Vale",
+              "identifiers": [
+                {
+                  "identifier": "0009-0004-7737-5094",
+                  "scheme": "orcid"
+                }
+              ]
+            },
+            "role": {
+              "id": "author",
+              "title": {
+                "en": "Author"
+              }
+            },
+            "affiliations": [
+              {
+                "name": "Museum of One"
+              }
+            ]
+          }
+        ],
+        "publication_date": "2026-11-10",
+        "edition": null,
+        "checked_at": "2026-11-11T14:24:34.688962+00:00",
+        "copy_verification": [
+          {
+            "file_download_url": "https://works.hcommons.org/api/records/g063c-mdq94/files/When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf/content",
+            "http_status": 200,
+            "bytes": 336198,
+            "md5": "51391d1910c17f1041f82484d61d7e54",
+            "sha256": "5d15719fd4b14ee14cf36d699b729b36a4cab19e2b4fbb19ca7147621f366497",
+            "pdf_signature": true,
+            "download_matches_canonical": true
+          }
+        ],
+        "source_metadata_sha256": "05effccf11dcb44a007f1887c63214636b10bb913327742dc0c47b832c5a0a4b"
+      },
+      {
+        "canonical_zenodo_id": "24095953",
+        "canonical_doi": "10.5281/zenodo.24095953",
+        "kc_id": "t9j11-4s168",
+        "url": "https://works.hcommons.org/records/t9j11-4s168",
+        "api": "https://works.hcommons.org/api/records/t9j11-4s168",
+        "doi_provider": "external",
+        "title": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
+        "publisher": "Museum of One",
+        "creators": [
+          {
+            "person_or_org": {
+              "type": "personal",
+              "name": "Dorian Vale",
+              "given_name": "Dorian",
+              "family_name": "Vale",
+              "identifiers": [
+                {
+                  "identifier": "MuseumofOne",
+                  "scheme": "kc_username"
+                },
+                {
+                  "identifier": "0009-0004-7737-5094",
+                  "scheme": "orcid"
+                }
+              ]
+            },
+            "role": {
+              "id": "author",
+              "title": {
+                "en": "Author"
+              }
+            },
+            "affiliations": [
+              {
+                "name": "Museum of One"
+              },
+              {
+                "id": "041q8j747",
+                "name": "\"Celio\" Military Hospital",
+                "identifiers": [
+                  {
+                    "identifier": "041q8j747",
+                    "scheme": "ror"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "publication_date": "2026-11-10",
+        "edition": null,
+        "checked_at": "2026-11-11T14:24:34.419865+00:00",
+        "copy_verification": [
+          {
+            "file_download_url": "https://works.hcommons.org/api/records/t9j11-4s168/files/Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf/content",
+            "http_status": 200,
+            "bytes": 309812,
+            "md5": "20f2bad01e189225dc0c9cba9df093e9",
+            "sha256": "69ee1b25702685db6ffd43557e40b66d1ab28757c41690455d601d2cd2131b60",
+            "pdf_signature": true,
+            "download_matches_canonical": true
+          }
+        ],
+        "source_metadata_sha256": "812325382047a8a9c20c2d3c4508732ac09525ec36e0157b8bec0e19d0a39c06"
+      },
+      {
+        "canonical_zenodo_id": "23428974",
+        "canonical_doi": "10.5281/zenodo.23428974",
+        "kc_id": "ft9g1-z8j46",
+        "url": "https://works.hcommons.org/records/ft9g1-z8j46",
+        "api": "https://works.hcommons.org/api/records/ft9g1-z8j46",
+        "doi_provider": "external",
+        "title": "Answerability: Exhibition, Documentation, and Historical Evidence in Postwar Japanese Art",
+        "publisher": "Museum of One",
+        "creators": [
+          {
+            "person_or_org": {
+              "type": "personal",
+              "name": "Vale, Dorian",
+              "given_name": "Dorian",
+              "family_name": "Vale",
+              "identifiers": [
+                {
+                  "identifier": "dorianvale",
+                  "scheme": "kc_username"
+                },
+                {
+                  "identifier": "0009-0004-7737-5094",
+                  "scheme": "orcid"
+                }
+              ]
+            },
+            "role": {
+              "id": "author",
+              "title": {
+                "en": "Author"
+              }
+            },
+            "affiliations": [
+              {
+                "name": "Museum of One"
+              }
+            ]
+          }
+        ],
+        "publication_date": "2026-10-17",
+        "edition": "1.0",
+        "checked_at": "2026-11-11T14:25:35.044229+00:00",
+        "copy_verification": [
+          {
+            "file_download_url": "https://works.hcommons.org/api/records/ft9g1-z8j46/files/Answerability_Working_Paper_01_v1_0.pdf/content",
+            "status": 200,
+            "bytes": 208809,
+            "md5": "908dc7989ef983324ddcba78684aee12",
+            "sha256": "079dcc91558e146ca7f9c204d5441c3fe6f9958ca4668700bcc0016766c75ad9",
+            "pdf_signature": true,
+            "download_matches_canonical": true
+          }
+        ],
+        "source_metadata_sha256": "1741a070ef790cf43c07d94c749054f2404817e69cc7a7d9b4a7e8d4ba766a87"
+      },
+      {
+        "canonical_zenodo_id": "23430200",
+        "canonical_doi": "10.5281/zenodo.23430200",
+        "kc_id": "8cgp5-p1p74",
+        "url": "https://works.hcommons.org/records/8cgp5-p1p74",
+        "api": "https://works.hcommons.org/api/records/8cgp5-p1p74",
+        "doi_provider": "external",
+        "title": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles",
+        "publisher": "Museum of One",
+        "creators": [
+          {
+            "person_or_org": {
+              "type": "personal",
+              "name": "Vale, Dorian",
+              "given_name": "Dorian",
+              "family_name": "Vale",
+              "identifiers": [
+                {
+                  "identifier": "dorianvale",
+                  "scheme": "kc_username"
+                },
+                {
+                  "identifier": "0009-0004-7737-5094",
+                  "scheme": "orcid"
+                }
+              ]
+            },
+            "role": {
+              "id": "author",
+              "title": {
+                "en": "Author"
+              }
+            },
+            "affiliations": [
+              {
+                "name": "Museum of One"
+              }
+            ]
+          }
+        ],
+        "publication_date": "2026-10-17",
+        "edition": "1.0",
+        "checked_at": "2026-11-11T14:25:35.044993+00:00",
+        "copy_verification": [
+          {
+            "file_download_url": "https://works.hcommons.org/api/records/8cgp5-p1p74/files/After_the_Interpretation_Changes_Working_Paper_2_v1.0.pdf/content",
+            "status": 200,
+            "bytes": 180105,
+            "md5": "aa7d5753758bf6e178342117ef9ad3db",
+            "sha256": "272b077f00db6a02d04c03b87608a0ab8cc34972b11759e51b7ece3890228716",
+            "pdf_signature": true,
+            "download_matches_canonical": true
+          }
+        ],
+        "source_metadata_sha256": "91ea07543935922314048c55bd9593782f69de3e12df18c20444c2a28a197f8a"
+      }
+    ],
+    "findings": [
+      {
+        "severity": "incorrect affiliation",
+        "records": [
+          "dwt9e-d5p24",
+          "mr1rm-yh789",
+          "t9j11-4s168"
+        ],
+        "field": "metadata.creators[0].affiliations",
+        "unsupported_value": "\"Celio\" Military Hospital; ROR041q8j747",
+        "correct_value": "Museum of One only",
+        "recommendation": "Remove unsupported extra institution via existing-record metadata update; preserve DOI and file."
+      },
+      {
+        "severity": "publisher default",
+        "records": [
+          "z8rjn-xcv08",
+          "dwt9e-d5p24",
+          "mr1rm-yh789"
+        ],
+        "field": "metadata.publisher",
+        "current": "Knowledge Commons",
+        "source_publisher": "Museum of One",
+        "recommendation": "If editable in the normal form, set Museum of One to match the publication; KCWorks remains repository. Knowledge Commons is the documented application default, not evidence of source sponsorship.",
+        "documentation": "https://mesh-research.github.io/knowledge-commons-works/changelog.html"
+      },
+      {
+        "severity": "publication-container field",
+        "records": [
+          "g063c-mdq94"
+        ],
+        "field": "custom_fields.kcr:publication_url",
+        "current": "https://doi.org/10.5281/zenodo.24093529",
+        "meaning": "KC documentation defines this as the whole containing publication, not the individual work URL.",
+        "recommendation": "Use Museum of One Research Working Papers series URL if this field is retained; preserve prior-version DOI separately as provenance/related identifier. Current canonical PID and PDF already correctly identify v2.0.",
+        "documentation": "https://mesh-research.github.io/knowledge-commons-works/reference/metadata.html#kcr-publication-url"
+      },
+      {
+        "severity": "indexing omission",
+        "records": [
+          "t9j11-4s168"
+        ],
+        "field": "custom_fields.kcr:user_defined_tags",
+        "recommendation": "Add primary case artist Kim Kulim / 김구림. Existing Kim Youngjin keyword is broad but source-supported by two mentions and need not be removed."
+      }
+    ],
+    "not_checked": "New dialogue draft is handled separately by source_handoff_audit."
+  },
+  "normalization_policy": "The source-verified author affiliation and scholarly publisher in the catalogue remain Museum of One. Unsupported affiliations and a repository default publisher reported in the initial upstream metadata are not imported into the normalized catalogue. Exact-copy identity is established independently by the downloaded PDF bytes. Later metadata corrections, if completed, are retained as a separate review.",
+  "current_metadata_alignment_status": {
+    "status": "verified",
+    "existing_public_pdf_records": 7,
+    "corrected_existing_metadata_records": 5,
+    "all_current_creator_affiliations": "Museum of One only",
+    "all_current_publishers": "Museum of One",
+    "wrong_hospital_affiliation": "Removed from the three affected current public records; retained only in dated initial-source evidence as the documented pre-correction state. Never imported into normalized archive creator metadata.",
+    "new_dialogue_kcworks_public_record": "https://works.hcommons.org/records/z0ptj-3rt53",
+    "dialogue_status": "The existing draft now contains the independently checksum-verified canonical PDF and is public. It reuses the canonical Zenodo DOI as an external DOI, preserves the source edition and PDF, and makes the sole editorial author, Museum of One affiliation/publisher and separate Markov contributor role explicit.",
+    "checked_at": "2026-11-11T17:58:21.685304+00:00",
+    "total_current_public_pdf_records": 8,
+    "metadata_only_existing_seven_records": true
+  },
+  "final_metadata_review": [
+    {
+      "canonical_zenodo_id": "24088563",
+      "canonical_doi": "10.5281/zenodo.24088563",
+      "kc_id": "z8rjn-xcv08",
+      "url": "https://works.hcommons.org/records/z8rjn-xcv08",
+      "api": "https://works.hcommons.org/api/records/z8rjn-xcv08",
+      "http_status": 200,
+      "checked_at": "2026-11-11T14:33:06.179265+00:00",
+      "source_response_sha256": "24010f8f0422ad89a25b01da2abab983b5b5d22ed1ab1c24eaf00c608aaf8000",
+      "upstream_modified": "2026-11-11T14:30:58.550601+00:00",
+      "metadata_change_fields": [
+        "publisher"
+      ],
+      "custom_metadata_change_fields": [],
+      "verification": {
+        "sole_dorian_vale_author": true,
+        "sole_museum_affiliation": true,
+        "museum_publisher": true,
+        "same_canonical_external_doi": true,
+        "same_original_file_manifest": true,
+        "same_record_version": true,
+        "same_source_publication_date": true,
+        "same_title_and_description": true
+      },
+      "public_source_projection": {
+        "id": "z8rjn-xcv08",
+        "created": "2026-11-09T17:09:18.753049+00:00",
+        "updated": "2026-11-11T14:30:58.550601+00:00",
+        "metadata": {
+          "resource_type": {
+            "id": "textDocument-workingPaper",
+            "title": {
+              "cs": "Pracovní dokument",
+              "de": "Arbeitspapier",
+              "en": "Working paper",
+              "sv": "Arbetsdokument"
+            }
+          },
+          "creators": [
+            {
+              "person_or_org": {
+                "type": "personal",
+                "name": "Dorian Vale",
+                "given_name": "Dorian",
+                "family_name": "Vale",
+                "identifiers": [
+                  {
+                    "identifier": "0009-0004-7737-5094",
+                    "scheme": "orcid"
+                  }
+                ]
+              },
+              "role": {
+                "id": "author",
+                "title": {
+                  "en": "Author"
+                }
+              },
+              "affiliations": [
+                {
+                  "name": "Museum of One"
+                }
+              ]
+            }
+          ],
+          "title": "Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art",
+          "publisher": "Museum of One",
+          "publication_date": "2026-11-09",
+          "subjects": [
+            {
+              "id": "http://id.worldcat.org/fast/816514",
+              "subject": "Art, Korean",
+              "scheme": "FAST-topical"
+            },
+            {
+              "id": "http://id.worldcat.org/fast/816518",
+              "subject": "Art, Korean--History and criticism",
+              "scheme": "FAST-topical"
+            },
+            {
+              "id": "http://id.worldcat.org/fast/816516",
+              "subject": "Art, Korean--Exhibitions",
+              "scheme": "FAST-topical"
+            }
+          ],
+          "related_identifiers": [
+            {
+              "identifier": "10.5281/zenodo.24088574",
+              "scheme": "doi",
+              "relation_type": {
+                "id": "issupplementedby",
+                "title": {
+                  "de": "Wird ergänzt durch",
+                  "en": "Is supplemented by",
+                  "sv": "Supplementerad av"
+                }
+              }
+            },
+            {
+              "identifier": "10.5281/zenodo.24088573",
+              "scheme": "doi",
+              "relation_type": {
+                "id": "issupplementedby",
+                "title": {
+                  "de": "Wird ergänzt durch",
+                  "en": "Is supplemented by",
+                  "sv": "Supplementerad av"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+              "scheme": "url",
+              "relation_type": {
+                "id": "isdescribedby",
+                "title": {
+                  "de": "Wird beschrieben von",
+                  "en": "Is described by",
+                  "sv": "Beskrivs av"
+                }
+              }
+            },
+            {
+              "identifier": "https://hal.science/hal-05858135",
+              "scheme": "url",
+              "relation_type": {
+                "id": "isdescribedby",
+                "title": {
+                  "de": "Wird beschrieben von",
+                  "en": "Is described by",
+                  "sv": "Beskrivs av"
+                }
+              }
+            }
+          ],
+          "rights": [
+            {
+              "title": {
+                "en": "In Copyright"
+              },
+              "description": {
+                "en": "© 2026 Dorian Vale · Museum of One. Public access is provided. Reuse is subject to applicable law and permissions from the rights holder."
+              }
+            }
+          ],
+          "copyright": "© 2026 Dorian Vale · Museum of One",
+          "description": "<p>This study in Korean art history examines how museum collections and art archives support claims about Korean experimental art. Relational Archival Investigation (RAI) compares seven consecutive acquisition entries from the National Museum of Modern and Contemporary Art, Korea (MMCA), 2016 Annual Report with collection records 7922&ndash;7928. Two leading production-year assignments differ. Lee Kang-so&rsquo;s published account distinguishes production from presentation for Painting&ndash;78&ndash;1. The discrepancy for Park Suk-won&rsquo;s Jeok&ndash;Eungnyeok remains open. Further cases examine Sung Neung Kyung&rsquo;s Reading Newspaper, Kim Youngjin&rsquo;s 1978&ndash;2, Kim Yong-Ik&rsquo;s Flat Object title history and Rim Dong Sik&rsquo;s later repair of a performance photograph. The study separates what records identify from what they establish about a work&rsquo;s production, naming, performance, exhibition and documentation. The seven-entry comparison is bounded and was selected retrospectively. Post-Interpretive Criticism provides the philosophical background.</p>\n<p>한국어 초록<br>한국 실험미술의 작품 식별과 연대, 전시 및 기록의 관계를 살핀 연구다. 국립현대미술관(MMCA)의 2016년 연보 소장품 수집 목록 73&ndash;79번과 소장품 기록 7922&ndash;7928을 대조한다. 두 사례에서 제작연도가 다르게 제시된다. 이강소의 공개된 대담은 〈페인팅-78-1〉의 제작과 발표를 구분하는 근거를 제공하며, 박석원의 〈적-응력〉 연대 차이는 미해결로 남는다. 성능경, 김영진, 김용익, 임동식의 사례에서는 작품명과 전시, 퍼포먼스, 사진 기록이 가리키는 서로 다른 사건을 살핀다.</p>\n<p>Artists in this study<br>Lee Kang-so (이강소; Lee Kangso, Lee Kang So) &middot; Park Suk-won (박석원; Park Suk Won) &middot; Sung Neung Kyung (성능경; Sung Neungkyung) &middot; Kim Youngjin (김영진; KIM Youngjin b, 김영진 b) &middot; Kim Yong-Ik (김용익; Kim Yong Ik) &middot; Rim Dong Sik (임동식; Rim Dongsik)</p>\n<p>Works discussed<br>Painting&ndash;78&ndash;1 (페인팅-78-1) &middot; Jeok&ndash;Eungnyeok (적-응력) &middot; Untitled 75031 (무제 75031) &middot; Reading Newspaper (신문 읽기) &middot; 1978&ndash;2 &middot; Flat Object (평면 오브제) &middot; Tying Reeds and Beard (갈대와 수염 묶기)</p>\n<p>Dorian Vale, Museum of One, 2026. ORCID 0009-0004-7737-5094. Version 1.0. &copy; 2026 Dorian Vale &middot; Museum of One.</p>\n<p>Companion studies https://doi.org/10.5281/zenodo.24088574 and https://doi.org/10.5281/zenodo.24088573</p>"
+        },
+        "custom_fields": {
+          "kcr:user_defined_tags": [
+            "Korean art",
+            "Korean art history",
+            "Korean experimental art",
+            "Art archives",
+            "Relational Archival Investigation",
+            "Art historiography",
+            "Source criticism",
+            "Exhibition history",
+            "Performance documentation",
+            "Museum collection records",
+            "Post-Interpretive Criticism",
+            "한국미술",
+            "한국미술사",
+            "한국 실험미술",
+            "미술 아카이브",
+            "국립현대미술관",
+            "서울시립 미술아카이브",
+            "Lee Kang-so",
+            "이강소",
+            "Park Suk-won",
+            "박석원",
+            "Sung Neung Kyung",
+            "성능경",
+            "Kim Youngjin",
+            "김영진",
+            "Kim Yong-Ik",
+            "김용익",
+            "Rim Dong Sik",
+            "임동식"
+          ]
+        },
+        "pids": {
+          "doi": {
+            "identifier": "10.5281/zenodo.24088563",
+            "provider": "external"
+          },
+          "oai": {
+            "identifier": "oai:https://works.hcommons.org:z8rjn-xcv08",
+            "provider": "oai"
+          }
+        },
+        "files": {
+          "enabled": true,
+          "order": [],
+          "count": 1,
+          "total_bytes": 361169,
+          "entries": {
+            "01_RAI_Main_Paper_Dorian_Vale.pdf": {
+              "id": "b4ea5769-897e-4b78-9d6b-3a8e98608077",
+              "checksum": "md5:0147a4299fc5404e2762d3ceb23d4cc1",
+              "ext": "pdf",
+              "size": 361169,
+              "mimetype": "application/pdf",
+              "storage_class": "L",
+              "key": "01_RAI_Main_Paper_Dorian_Vale.pdf",
+              "metadata": {},
+              "access": {
+                "hidden": false
+              },
+              "links": {
+                "self": "https://works.hcommons.org/api/records/z8rjn-xcv08/files/01_RAI_Main_Paper_Dorian_Vale.pdf",
+                "content": "https://works.hcommons.org/api/records/z8rjn-xcv08/files/01_RAI_Main_Paper_Dorian_Vale.pdf/content",
+                "iiif_canvas": "https://works.hcommons.org/api/iiif/record:z8rjn-xcv08/canvas/01_RAI_Main_Paper_Dorian_Vale.pdf",
+                "iiif_base": "https://works.hcommons.org/api/iiif/record:z8rjn-xcv08:01_RAI_Main_Paper_Dorian_Vale.pdf",
+                "iiif_info": "https://works.hcommons.org/api/iiif/record:z8rjn-xcv08:01_RAI_Main_Paper_Dorian_Vale.pdf/info.json",
+                "iiif_api": "https://works.hcommons.org/api/iiif/record:z8rjn-xcv08:01_RAI_Main_Paper_Dorian_Vale.pdf/full/full/0/default.png"
+              }
+            }
+          }
+        },
+        "versions": {
+          "is_latest": true,
+          "index": 1
+        }
+      },
+      "note": "Public API source projection omits account ownership and administrative fields. The unchanged file manifest ties these corrections to the independently verified canonical PDF; no repeated download, new file, new DOI or new version was needed."
+    },
+    {
+      "canonical_zenodo_id": "24088574",
+      "canonical_doi": "10.5281/zenodo.24088574",
+      "kc_id": "dwt9e-d5p24",
+      "url": "https://works.hcommons.org/records/dwt9e-d5p24",
+      "api": "https://works.hcommons.org/api/records/dwt9e-d5p24",
+      "http_status": 200,
+      "checked_at": "2026-11-11T14:43:16.663466+00:00",
+      "source_response_sha256": "8b9284dfb180c2ed72696843af51ed6ff7ed1e13be78c3833e4f557b94e01fe9",
+      "upstream_modified": "2026-11-11T14:30:48.217886+00:00",
+      "metadata_change_fields": [
+        "creators",
+        "publisher"
+      ],
+      "custom_metadata_change_fields": [],
+      "verification": {
+        "sole_dorian_vale_author": true,
+        "sole_museum_affiliation": true,
+        "museum_publisher": true,
+        "same_canonical_external_doi": true,
+        "same_original_file_manifest": true,
+        "same_record_version": true,
+        "same_source_publication_date": true,
+        "same_title_and_description": true,
+        "creator_identity_and_orcid_unchanged": true
+      },
+      "public_source_projection": {
+        "id": "dwt9e-d5p24",
+        "created": "2026-11-09T17:09:19.327698+00:00",
+        "updated": "2026-11-11T14:30:48.217886+00:00",
+        "metadata": {
+          "resource_type": {
+            "id": "textDocument-report",
+            "title": {
+              "cs": "Zpráva",
+              "de": "Bericht",
+              "en": "Report",
+              "sv": "Rapport"
+            }
+          },
+          "creators": [
+            {
+              "person_or_org": {
+                "type": "personal",
+                "name": "Dorian Vale",
+                "given_name": "Dorian",
+                "family_name": "Vale",
+                "identifiers": [
+                  {
+                    "identifier": "0009-0004-7737-5094",
+                    "scheme": "orcid"
+                  }
+                ]
+              },
+              "role": {
+                "id": "author",
+                "title": {
+                  "en": "Author"
+                }
+              },
+              "affiliations": [
+                {
+                  "name": "Museum of One"
+                }
+              ]
+            }
+          ],
+          "title": "Documentary Evidence and Source Comparisons: Supplement 1 to Relational Archival Investigation",
+          "publisher": "Museum of One",
+          "publication_date": "2026-11-09",
+          "subjects": [
+            {
+              "id": "http://id.worldcat.org/fast/816514",
+              "subject": "Art, Korean",
+              "scheme": "FAST-topical"
+            },
+            {
+              "id": "http://id.worldcat.org/fast/816518",
+              "subject": "Art, Korean--History and criticism",
+              "scheme": "FAST-topical"
+            },
+            {
+              "id": "http://id.worldcat.org/fast/816516",
+              "subject": "Art, Korean--Exhibitions",
+              "scheme": "FAST-topical"
+            }
+          ],
+          "related_identifiers": [
+            {
+              "identifier": "10.5281/zenodo.24088563",
+              "scheme": "doi",
+              "relation_type": {
+                "id": "issupplementto",
+                "title": {
+                  "de": "Ergänzt",
+                  "en": "Is supplement to",
+                  "sv": "Är supplement till"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.museumofone.art/rai-documentary-supplement/",
+              "scheme": "url",
+              "relation_type": {
+                "id": "isdescribedby",
+                "title": {
+                  "de": "Wird beschrieben von",
+                  "en": "Is described by",
+                  "sv": "Beskrivs av"
+                }
+              }
+            },
+            {
+              "identifier": "https://hal.science/hal-05858137",
+              "scheme": "url",
+              "relation_type": {
+                "id": "isdescribedby",
+                "title": {
+                  "de": "Wird beschrieben von",
+                  "en": "Is described by",
+                  "sv": "Beskrivs av"
+                }
+              }
+            }
+          ],
+          "rights": [
+            {
+              "title": {
+                "en": "In Copyright"
+              },
+              "description": {
+                "en": "© 2026 Dorian Vale · Museum of One. Public access is provided. Reuse is subject to applicable law and permissions from the rights holder."
+              }
+            }
+          ],
+          "copyright": "© 2026 Dorian Vale · Museum of One",
+          "description": "<p>The documentary supplement makes the evidence behind Relational Archival Investigation traceable for Korean art history and art archive research. It pairs acquisition entries 73&ndash;79 on printed pages 39&ndash;40 of the National Museum of Modern and Contemporary Art, Korea (MMCA), 2016 Annual Report with collection records 7922&ndash;7928, management numbers 07909&ndash;07915. It records agreements, discrepancies and unresolved comparisons. It documents Lee Kang-so&rsquo;s Untitled 75031 and its 1975 Paris Biennale chronology, Park Suk-won&rsquo;s Jeok&ndash;Eungnyeok, Sung Neung Kyung&rsquo;s newspaper works and Kim Youngjin&rsquo;s video and installation records. Additional sections identify Seoul Museum of Art Archives records for Kim Yong-Ik and Rim Dong Sik. Record IDs, selected excerpts, paraphrases and attribution make the judgments auditable. The seven-entry block was selected retrospectively and is a bounded comparison.</p>\n<p>한국어 초록<br>한국 실험미술의 사료 대조를 위한 자료편이다. 국립현대미술관의 2016년 연보 수집 목록 73&ndash;79번과 소장품 기록 7922&ndash;7928(관리번호 07909&ndash;07915)을 항목별로 대조한다. 이강소의 〈무제 75031〉과 파리비엔날레, 박석원의 〈적-응력〉, 성능경의 신문 작업, 김영진의 비디오 설치를 다룬다. 서울시립 미술아카이브의 김용익&middot;임동식 자료도 기록 번호와 출처를 밝혀 제시한다.</p>\n<p>Artists in this study<br>Lee Kang-so (이강소; Lee Kangso, Lee Kang So) &middot; Park Suk-won (박석원; Park Suk Won) &middot; Sung Neung Kyung (성능경; Sung Neungkyung) &middot; Kim Youngjin (김영진; KIM Youngjin b, 김영진 b) &middot; Kim Yong-Ik (김용익; Kim Yong Ik) &middot; Rim Dong Sik (임동식; Rim Dongsik)</p>\n<p>Works discussed<br>Untitled 75031 (무제 75031) &middot; Painting (Event 77&ndash;2) (페인팅 (이벤트 77-2)) &middot; Painting&ndash;78&ndash;1 (페인팅-78-1) &middot; Jeok&ndash;Eungnyeok (적-응력) &middot; Eight Pages of Newspaper (8면의 신문) &middot; Reading Newspaper (신문 읽기) &middot; 1978&ndash;10&ndash;2 &middot; 1978&ndash;2 &middot; Flat Object (평면 오브제) &middot; Tying Reeds and Beard (갈대와 수염 묶기)</p>\n<p>Dorian Vale, Museum of One, 2026. ORCID 0009-0004-7737-5094. Version 1.0. &copy; 2026 Dorian Vale &middot; Museum of One.</p>\n<p>Main working paper https://doi.org/10.5281/zenodo.24088563</p>"
+        },
+        "custom_fields": {
+          "kcr:user_defined_tags": [
+            "Korean art",
+            "Korean art history",
+            "Korean experimental art",
+            "Art archives",
+            "Museum acquisition records",
+            "Museum collection cataloguing",
+            "Documentary evidence",
+            "Artwork dating",
+            "Source criticism",
+            "1975 Paris Biennale",
+            "한국미술",
+            "한국미술사",
+            "한국 실험미술",
+            "미술 아카이브",
+            "국립현대미술관",
+            "서울시립 미술아카이브",
+            "Lee Kang-so",
+            "이강소",
+            "Park Suk-won",
+            "박석원",
+            "Sung Neung Kyung",
+            "성능경",
+            "Kim Youngjin",
+            "김영진",
+            "Kim Yong-Ik",
+            "김용익",
+            "Rim Dong Sik",
+            "임동식"
+          ]
+        },
+        "pids": {
+          "doi": {
+            "identifier": "10.5281/zenodo.24088574",
+            "provider": "external"
+          },
+          "oai": {
+            "identifier": "oai:https://works.hcommons.org:dwt9e-d5p24",
+            "provider": "oai"
+          }
+        },
+        "files": {
+          "enabled": true,
+          "order": [],
+          "count": 1,
+          "total_bytes": 334348,
+          "entries": {
+            "02_RAI_Documentary_Supplement_Dorian_Vale.pdf": {
+              "id": "b4934f95-82a9-424b-9c52-25d1e6a8200d",
+              "checksum": "md5:1d066f2c77de147bc382928cf42eca56",
+              "ext": "pdf",
+              "size": 334348,
+              "mimetype": "application/pdf",
+              "storage_class": "L",
+              "key": "02_RAI_Documentary_Supplement_Dorian_Vale.pdf",
+              "metadata": {},
+              "access": {
+                "hidden": false
+              },
+              "links": {
+                "self": "https://works.hcommons.org/api/records/dwt9e-d5p24/files/02_RAI_Documentary_Supplement_Dorian_Vale.pdf",
+                "content": "https://works.hcommons.org/api/records/dwt9e-d5p24/files/02_RAI_Documentary_Supplement_Dorian_Vale.pdf/content",
+                "iiif_canvas": "https://works.hcommons.org/api/iiif/record:dwt9e-d5p24/canvas/02_RAI_Documentary_Supplement_Dorian_Vale.pdf",
+                "iiif_base": "https://works.hcommons.org/api/iiif/record:dwt9e-d5p24:02_RAI_Documentary_Supplement_Dorian_Vale.pdf",
+                "iiif_info": "https://works.hcommons.org/api/iiif/record:dwt9e-d5p24:02_RAI_Documentary_Supplement_Dorian_Vale.pdf/info.json",
+                "iiif_api": "https://works.hcommons.org/api/iiif/record:dwt9e-d5p24:02_RAI_Documentary_Supplement_Dorian_Vale.pdf/full/full/0/default.png"
+              }
+            }
+          }
+        },
+        "versions": {
+          "is_latest": true,
+          "index": 1
+        }
+      },
+      "note": "Public API source projection omits account ownership and administrative fields. The unchanged file manifest ties these corrections to the independently verified canonical PDF; no repeated download, new file, new DOI or new version was needed."
+    },
+    {
+      "canonical_zenodo_id": "24088573",
+      "canonical_doi": "10.5281/zenodo.24088573",
+      "kc_id": "mr1rm-yh789",
+      "url": "https://works.hcommons.org/records/mr1rm-yh789",
+      "api": "https://works.hcommons.org/api/records/mr1rm-yh789",
+      "http_status": 200,
+      "checked_at": "2026-11-11T14:49:19.071528+00:00",
+      "source_response_sha256": "463ea562c6f8deb32affd2be451a762fe9fd6d0964529d056c96dac20a66486f",
+      "upstream_modified": "2026-11-11T14:45:46.239426+00:00",
+      "metadata_change_fields": [
+        "creators",
+        "publisher"
+      ],
+      "custom_metadata_change_fields": [],
+      "verification": {
+        "sole_dorian_vale_author": true,
+        "sole_museum_affiliation": true,
+        "museum_publisher": true,
+        "same_canonical_external_doi": true,
+        "same_original_file_manifest": true,
+        "same_record_version": true,
+        "same_source_publication_date": true,
+        "same_title_and_description": true,
+        "creator_identity_and_orcid_unchanged": true
+      },
+      "public_source_projection": {
+        "id": "mr1rm-yh789",
+        "created": "2026-11-09T17:09:20.884405+00:00",
+        "updated": "2026-11-11T14:45:46.239426+00:00",
+        "metadata": {
+          "resource_type": {
+            "id": "textDocument-report",
+            "title": {
+              "cs": "Zpráva",
+              "de": "Bericht",
+              "en": "Report",
+              "sv": "Rapport"
+            }
+          },
+          "creators": [
+            {
+              "person_or_org": {
+                "type": "personal",
+                "name": "Dorian Vale",
+                "given_name": "Dorian",
+                "family_name": "Vale",
+                "identifiers": [
+                  {
+                    "identifier": "0009-0004-7737-5094",
+                    "scheme": "orcid"
+                  }
+                ]
+              },
+              "role": {
+                "id": "author",
+                "title": {
+                  "en": "Author"
+                }
+              },
+              "affiliations": [
+                {
+                  "name": "Museum of One"
+                }
+              ]
+            }
+          ],
+          "title": "Extended Case Studies and Methodological Demonstrations: Supplement 2 to Relational Archival Investigation",
+          "publisher": "Museum of One",
+          "publication_date": "2026-11-09",
+          "subjects": [
+            {
+              "id": "http://id.worldcat.org/fast/816514",
+              "subject": "Art, Korean",
+              "scheme": "FAST-topical"
+            },
+            {
+              "id": "http://id.worldcat.org/fast/816518",
+              "subject": "Art, Korean--History and criticism",
+              "scheme": "FAST-topical"
+            },
+            {
+              "id": "http://id.worldcat.org/fast/816516",
+              "subject": "Art, Korean--Exhibitions",
+              "scheme": "FAST-topical"
+            }
+          ],
+          "related_identifiers": [
+            {
+              "identifier": "10.5281/zenodo.24088563",
+              "scheme": "doi",
+              "relation_type": {
+                "id": "issupplementto",
+                "title": {
+                  "de": "Ergänzt",
+                  "en": "Is supplement to",
+                  "sv": "Är supplement till"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.museumofone.art/rai-extended-case-studies/",
+              "scheme": "url",
+              "relation_type": {
+                "id": "isdescribedby",
+                "title": {
+                  "de": "Wird beschrieben von",
+                  "en": "Is described by",
+                  "sv": "Beskrivs av"
+                }
+              }
+            },
+            {
+              "identifier": "https://hal.science/hal-05858139",
+              "scheme": "url",
+              "relation_type": {
+                "id": "isdescribedby",
+                "title": {
+                  "de": "Wird beschrieben von",
+                  "en": "Is described by",
+                  "sv": "Beskrivs av"
+                }
+              }
+            }
+          ],
+          "rights": [
+            {
+              "title": {
+                "en": "In Copyright"
+              },
+              "description": {
+                "en": "© 2026 Dorian Vale · Museum of One. Public access is provided. Reuse is subject to applicable law and permissions from the rights holder."
+              }
+            }
+          ],
+          "copyright": "© 2026 Dorian Vale · Museum of One",
+          "description": "<p>Four case studies in Korean experimental art examine how museum collections and art archives document titles, performances, photographs and installations. Seoul Museum of Art Archives records trace Kim Yong-Ik&rsquo;s Flat Object title variants and distinguish Rim Dong Sik&rsquo;s Tying Reeds and Beard action from later interventions in the photographic print. National Museum of Modern and Contemporary Art, Korea (MMCA), records place the photographic presentation of Sung Neung Kyung&rsquo;s Reading Newspaper in the work&rsquo;s early exhibition history. They also distinguish Kim Youngjin&rsquo;s early single-monitor presentation of 1978&ndash;2 from the twelve-monitor arrangement at the 2016 Busan Biennale. The selected cases demonstrate how Relational Archival Investigation links artworks to specific occasions without merging their distinct documentary histories.</p>\n<p>한국어 초록<br>한국 실험미술의 작품명, 퍼포먼스, 사진 기록, 비디오 설치를 네 사례로 살핀다. 서울시립 미술아카이브 자료를 통해 김용익의 〈평면 오브제〉 명칭 변이와 임동식의 〈갈대와 수염 묶기〉 사진에 가해진 후대의 개입을 검토한다. 국립현대미술관 소장품 기록은 성능경의 〈신문 읽기〉가 초기부터 사진으로 전시되었음을 보여 주며, 김영진의 〈1978&ndash;2〉 초기 단일 모니터 발표와 2016년 부산비엔날레의 열두 모니터 설치를 구분한다.</p>\n<p>Artists in this study<br>Kim Yong-Ik (김용익; Kim Yong Ik) &middot; Rim Dong Sik (임동식; Rim Dongsik) &middot; Sung Neung Kyung (성능경; Sung Neungkyung) &middot; Kim Youngjin (김영진; KIM Youngjin b, 김영진 b)</p>\n<p>Works discussed<br>Flat Object (평면 오브제) &middot; Tying Reeds and Beard (갈대와 수염 묶기) &middot; Reading Newspaper (신문 읽기) &middot; 1978&ndash;2</p>\n<p>Dorian Vale, Museum of One, 2026. ORCID 0009-0004-7737-5094. Version 1.0. &copy; 2026 Dorian Vale &middot; Museum of One.</p>\n<p>Main working paper https://doi.org/10.5281/zenodo.24088563</p>"
+        },
+        "custom_fields": {
+          "kcr:user_defined_tags": [
+            "Korean art",
+            "Korean art history",
+            "Korean experimental art",
+            "Art archives",
+            "Artwork titles",
+            "Exhibition history",
+            "Performance documentation",
+            "Documentary photography",
+            "Video installation",
+            "Busan Biennale",
+            "한국미술",
+            "한국미술사",
+            "한국 실험미술",
+            "미술 아카이브",
+            "퍼포먼스 기록",
+            "비디오 설치",
+            "부산비엔날레",
+            "Kim Yong-Ik",
+            "김용익",
+            "Rim Dong Sik",
+            "임동식",
+            "Sung Neung Kyung",
+            "성능경",
+            "Kim Youngjin",
+            "김영진"
+          ]
+        },
+        "pids": {
+          "doi": {
+            "identifier": "10.5281/zenodo.24088573",
+            "provider": "external"
+          },
+          "oai": {
+            "identifier": "oai:https://works.hcommons.org:mr1rm-yh789",
+            "provider": "oai"
+          }
+        },
+        "files": {
+          "enabled": true,
+          "order": [],
+          "count": 1,
+          "total_bytes": 219814,
+          "entries": {
+            "03_RAI_Extended_Case_Studies_Dorian_Vale.pdf": {
+              "id": "9c53964e-965a-41df-913c-d914e559bf1f",
+              "checksum": "md5:9f12074e3983e4eb75f78b89108d9c23",
+              "ext": "pdf",
+              "size": 219814,
+              "mimetype": "application/pdf",
+              "storage_class": "L",
+              "key": "03_RAI_Extended_Case_Studies_Dorian_Vale.pdf",
+              "metadata": {},
+              "access": {
+                "hidden": false
+              },
+              "links": {
+                "self": "https://works.hcommons.org/api/records/mr1rm-yh789/files/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf",
+                "content": "https://works.hcommons.org/api/records/mr1rm-yh789/files/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf/content",
+                "iiif_canvas": "https://works.hcommons.org/api/iiif/record:mr1rm-yh789/canvas/03_RAI_Extended_Case_Studies_Dorian_Vale.pdf",
+                "iiif_base": "https://works.hcommons.org/api/iiif/record:mr1rm-yh789:03_RAI_Extended_Case_Studies_Dorian_Vale.pdf",
+                "iiif_info": "https://works.hcommons.org/api/iiif/record:mr1rm-yh789:03_RAI_Extended_Case_Studies_Dorian_Vale.pdf/info.json",
+                "iiif_api": "https://works.hcommons.org/api/iiif/record:mr1rm-yh789:03_RAI_Extended_Case_Studies_Dorian_Vale.pdf/full/full/0/default.png"
+              }
+            }
+          }
+        },
+        "versions": {
+          "is_latest": true,
+          "index": 1
+        }
+      },
+      "note": "Public API source projection omits account ownership and administrative fields. The unchanged file manifest ties these corrections to the independently verified canonical PDF; no repeated download, new file, new DOI or new version was needed."
+    },
+    {
+      "canonical_zenodo_id": "24095308",
+      "canonical_doi": "10.5281/zenodo.24095308",
+      "kc_id": "g063c-mdq94",
+      "url": "https://works.hcommons.org/records/g063c-mdq94",
+      "api": "https://works.hcommons.org/api/records/g063c-mdq94",
+      "http_status": 200,
+      "checked_at": "2026-11-11T14:33:06.117705+00:00",
+      "source_response_sha256": "fa980add3fa2f32b5f50994fcffd3eafe573a1e5c4119404a50a65954d3966f4",
+      "upstream_modified": "2026-11-11T14:32:33.051336+00:00",
+      "metadata_change_fields": [],
+      "custom_metadata_change_fields": [
+        "kcr:publication_url"
+      ],
+      "verification": {
+        "sole_dorian_vale_author": true,
+        "sole_museum_affiliation": true,
+        "museum_publisher": true,
+        "same_canonical_external_doi": true,
+        "same_original_file_manifest": true,
+        "same_record_version": true,
+        "same_source_publication_date": true,
+        "same_title_and_description": true,
+        "correct_working_paper_collection_url": true
+      },
+      "public_source_projection": {
+        "id": "g063c-mdq94",
+        "created": "2026-11-10T01:13:29.769180+00:00",
+        "updated": "2026-11-11T14:32:33.051336+00:00",
+        "metadata": {
+          "resource_type": {
+            "id": "textDocument-workingPaper",
+            "title": {
+              "cs": "Pracovní dokument",
+              "de": "Arbeitspapier",
+              "en": "Working paper",
+              "sv": "Arbetsdokument"
+            }
+          },
+          "creators": [
+            {
+              "person_or_org": {
+                "type": "personal",
+                "name": "Vale, Dorian",
+                "given_name": "Dorian",
+                "family_name": "Vale",
+                "identifiers": [
+                  {
+                    "identifier": "0009-0004-7737-5094",
+                    "scheme": "orcid"
+                  }
+                ]
+              },
+              "role": {
+                "id": "author",
+                "title": {
+                  "en": "Author"
+                }
+              },
+              "affiliations": [
+                {
+                  "name": "Museum of One"
+                }
+              ]
+            }
+          ],
+          "title": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+          "publisher": "Museum of One",
+          "publication_date": "2026-11-10",
+          "related_identifiers": [
+            {
+              "identifier": "10.5281/zenodo.24088563",
+              "scheme": "doi",
+              "relation_type": {
+                "id": "cites",
+                "title": {
+                  "de": "Zitiert",
+                  "en": "Cites",
+                  "sv": "Citerar"
+                }
+              }
+            },
+            {
+              "identifier": "10.5281/zenodo.24088574",
+              "scheme": "doi",
+              "relation_type": {
+                "id": "cites",
+                "title": {
+                  "de": "Zitiert",
+                  "en": "Cites",
+                  "sv": "Citerar"
+                }
+              }
+            },
+            {
+              "identifier": "10.5281/zenodo.24088573",
+              "scheme": "doi",
+              "relation_type": {
+                "id": "cites",
+                "title": {
+                  "de": "Zitiert",
+                  "en": "Cites",
+                  "sv": "Citerar"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.museumofone.art/when-documentation-becomes-the-work/",
+              "scheme": "url",
+              "relation_type": {
+                "id": "isdescribedby",
+                "title": {
+                  "de": "Wird beschrieben von",
+                  "en": "Is described by",
+                  "sv": "Beskrivs av"
+                }
+              }
+            },
+            {
+              "identifier": "https://hal.science/hal-05858316",
+              "scheme": "url",
+              "relation_type": {
+                "id": "isdescribedby",
+                "title": {
+                  "de": "Wird beschrieben von",
+                  "en": "Is described by",
+                  "sv": "Beskrivs av"
+                }
+              }
+            }
+          ],
+          "rights": [
+            {
+              "title": {
+                "en": "In Copyright"
+              },
+              "description": {
+                "en": "© 2026 Dorian Vale · Museum of One"
+              },
+              "link": "https://rightsstatements.org/vocab/InC/1.0/"
+            }
+          ],
+          "copyright": "© 2026 Dorian Vale · Museum of One",
+          "description": "<p><strong>Museum of One working paper &middot; Version 2.0 &middot; 10 November 2026 &middot; 16 pages &middot; 42 references</strong></p>\n<p>Dorian Vale compares how photographs acquired artistic and institutional standing through copying, repair, printing, exhibition, collection, and reperformance in Korean experimental art. The three cases concern Rim Dong Sik (임동식), Kim Kulim (김구림), and Sung Neung Kyung (성능경). Version 2.0 adds the Seoul Museum of Art collection-transfer chronology, the Korean Senior Artist Digital Archive&rsquo;s classification and digitization account, an exhibition checklist identifying video of Kim&rsquo;s reperformance, and Kim Eunjin&rsquo;s study of authenticity in contemporary art conservation.</p>\n<p><strong>Scope and limits.</strong> SeMA describes the copying and repair of Rim&rsquo;s photographs. Item-level repair dates and transfer documentation remain unresolved. The source negative, print edition and authorization, purchase year, and recording lineage remain open for Kim&rsquo;s work. MMCA identifies Sung&rsquo;s collected twelve-print panel with the panel shown in 1976. The dates of manufacture and mounting of individual sheets remain unresolved. Three Korean journal articles are consulted through their published abstracts.</p>\n<p><strong>Relationship to Relational Archival Investigation.</strong> This paper and the RAI working paper and supplements share earlier analyses of Rim&rsquo;s photographic repair and Sung&rsquo;s photographic exhibition. The revision extends the comparison through Kim&rsquo;s print and reperformance history, the new institutional records, and Korean conservation scholarship.</p>\n<p>한국 실험미술에서 사진이 복제, 보수, 인화, 전시, 수집을 거치며 작품으로 인정되는 과정을 임동식, 김구림, 성능경의 사례를 통해 비교한다. 개별 사진의 제작과 처리 이력에는 미해결 문제가 남는다.</p>\n<p><a href=\"https://archive.museumofone.art/evidence/when-documentation-becomes-the-work.html\">Annotated evidence and source access</a> &middot; <a href=\"https://doi.org/10.5281/zenodo.24093529\">Version 1.0 (9 November 2026)</a> &middot; <a href=\"https://www.museumofone.art/when-documentation-becomes-the-work/\">Museum of One</a></p>"
+        },
+        "custom_fields": {
+          "kcr:publication_url": "https://www.museumofone.art/research-working-papers/",
+          "kcr:user_defined_tags": [
+            "Korean art",
+            "Korean art history",
+            "Korean experimental art",
+            "Modern Korean art",
+            "Postwar Korean art",
+            "Korean performance art",
+            "Korean photography",
+            "Performance documentation",
+            "Documentary photography",
+            "Art archives",
+            "Exhibition history",
+            "Museum collection records",
+            "Art conservation",
+            "Reperformance",
+            "Material continuity",
+            "Art historiography",
+            "Relational Archival Investigation",
+            "Rim Dong Sik",
+            "Kim Kulim",
+            "Sung Neung Kyung",
+            "한국미술",
+            "한국미술사",
+            "한국 실험미술",
+            "한국 현대미술",
+            "퍼포먼스 기록",
+            "사진 기록",
+            "미술 아카이브",
+            "전시사",
+            "재연",
+            "임동식",
+            "김구림",
+            "성능경"
+          ],
+          "kcr:ai_usage": {
+            "ai_used": true,
+            "ai_description": "ChatGPT and Codex assisted with source verification, citation auditing, manuscript revision, and document formatting. The working paper is authored by Dorian Vale."
+          }
+        },
+        "pids": {
+          "doi": {
+            "identifier": "10.5281/zenodo.24095308",
+            "provider": "external"
+          },
+          "oai": {
+            "identifier": "oai:https://works.hcommons.org:g063c-mdq94",
+            "provider": "oai"
+          }
+        },
+        "files": {
+          "enabled": true,
+          "order": [],
+          "count": 1,
+          "total_bytes": 336198,
+          "entries": {
+            "When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf": {
+              "id": "df338f41-d9bd-4e12-afa9-25d69340a66e",
+              "checksum": "md5:51391d1910c17f1041f82484d61d7e54",
+              "ext": "pdf",
+              "size": 336198,
+              "mimetype": "application/pdf",
+              "storage_class": "L",
+              "key": "When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf",
+              "metadata": null,
+              "access": {
+                "hidden": false
+              },
+              "links": {
+                "self": "https://works.hcommons.org/api/records/g063c-mdq94/files/When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf",
+                "content": "https://works.hcommons.org/api/records/g063c-mdq94/files/When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf/content",
+                "iiif_canvas": "https://works.hcommons.org/api/iiif/record:g063c-mdq94/canvas/When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf",
+                "iiif_base": "https://works.hcommons.org/api/iiif/record:g063c-mdq94:When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf",
+                "iiif_info": "https://works.hcommons.org/api/iiif/record:g063c-mdq94:When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf/info.json",
+                "iiif_api": "https://works.hcommons.org/api/iiif/record:g063c-mdq94:When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf/full/full/0/default.png"
+              }
+            }
+          }
+        },
+        "versions": {
+          "is_latest": true,
+          "index": 2
+        }
+      },
+      "note": "Public API source projection omits account ownership and administrative fields. The unchanged file manifest ties these corrections to the independently verified canonical PDF; no repeated download, new file, new DOI or new version was needed."
+    },
+    {
+      "canonical_zenodo_id": "24095953",
+      "canonical_doi": "10.5281/zenodo.24095953",
+      "kc_id": "t9j11-4s168",
+      "url": "https://works.hcommons.org/records/t9j11-4s168",
+      "api": "https://works.hcommons.org/api/records/t9j11-4s168",
+      "http_status": 200,
+      "checked_at": "2026-11-11T14:49:19.051823+00:00",
+      "source_response_sha256": "f71c55241bd69d3e57c74b0a8f96b547b47f589c96b7521b9dd61360369a923b",
+      "upstream_modified": "2026-11-11T14:48:01.438309+00:00",
+      "metadata_change_fields": [
+        "creators"
+      ],
+      "custom_metadata_change_fields": [
+        "kcr:user_defined_tags"
+      ],
+      "verification": {
+        "sole_dorian_vale_author": true,
+        "sole_museum_affiliation": true,
+        "museum_publisher": true,
+        "same_canonical_external_doi": true,
+        "same_original_file_manifest": true,
+        "same_record_version": true,
+        "same_source_publication_date": true,
+        "same_title_and_description": true,
+        "creator_identity_and_orcid_unchanged": true,
+        "only_two_source_supported_subject_tags_added": true
+      },
+      "public_source_projection": {
+        "id": "t9j11-4s168",
+        "created": "2026-11-10T02:34:49.043736+00:00",
+        "updated": "2026-11-11T14:48:01.438309+00:00",
+        "metadata": {
+          "resource_type": {
+            "id": "textDocument-workingPaper",
+            "title": {
+              "cs": "Pracovní dokument",
+              "de": "Arbeitspapier",
+              "en": "Working paper",
+              "sv": "Arbetsdokument"
+            }
+          },
+          "creators": [
+            {
+              "person_or_org": {
+                "type": "personal",
+                "name": "Dorian Vale",
+                "given_name": "Dorian",
+                "family_name": "Vale",
+                "identifiers": [
+                  {
+                    "identifier": "MuseumofOne",
+                    "scheme": "kc_username"
+                  },
+                  {
+                    "identifier": "0009-0004-7737-5094",
+                    "scheme": "orcid"
+                  }
+                ]
+              },
+              "role": {
+                "id": "author",
+                "title": {
+                  "en": "Author"
+                }
+              },
+              "affiliations": [
+                {
+                  "name": "Museum of One"
+                }
+              ]
+            }
+          ],
+          "title": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
+          "publisher": "Museum of One",
+          "publication_date": "2026-11-10",
+          "languages": [
+            {
+              "id": "eng",
+              "title": {
+                "en": "English"
+              }
+            }
+          ],
+          "related_identifiers": [
+            {
+              "identifier": "10.5281/zenodo.24088563",
+              "scheme": "doi",
+              "relation_type": {
+                "id": "cites",
+                "title": {
+                  "de": "Zitiert",
+                  "en": "Cites",
+                  "sv": "Citerar"
+                }
+              }
+            },
+            {
+              "identifier": "10.5281/zenodo.24088574",
+              "scheme": "doi",
+              "relation_type": {
+                "id": "cites",
+                "title": {
+                  "de": "Zitiert",
+                  "en": "Cites",
+                  "sv": "Citerar"
+                }
+              }
+            },
+            {
+              "identifier": "10.5281/zenodo.24088573",
+              "scheme": "doi",
+              "relation_type": {
+                "id": "cites",
+                "title": {
+                  "de": "Zitiert",
+                  "en": "Cites",
+                  "sv": "Citerar"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
+              "scheme": "url",
+              "relation_type": {
+                "id": "isdescribedby",
+                "title": {
+                  "de": "Wird beschrieben von",
+                  "en": "Is described by",
+                  "sv": "Beskrivs av"
+                }
+              }
+            },
+            {
+              "identifier": "https://hal.science/hal-05858731",
+              "scheme": "url",
+              "relation_type": {
+                "id": "isdescribedby",
+                "title": {
+                  "de": "Wird beschrieben von",
+                  "en": "Is described by",
+                  "sv": "Beskrivs av"
+                }
+              }
+            }
+          ],
+          "copyright": "© 2026 Dorian Vale · Museum of One",
+          "description": "<p>A work can retain its title and historical date even when its materials, arrangement, or means of presentation have changed. This working paper examines four Korean archival and museum cases: Kim Yong-Ik&rsquo;s Plane Object photographs and the history of &ldquo;plain&rdquo; and &ldquo;place&rdquo;; the differing production years assigned to Park Suk-won&rsquo;s Jeok&ndash;Eungnyeok; the 1975 historical reference and 2016 materials of Lee Kang-so&rsquo;s Untitled 75031; and Kim Kulim&rsquo;s Mediator, used by the National Museum of Modern and Contemporary Art, Korea, to exemplify compound dating. MMCA&rsquo;s acquisition narrative and publication guidance acknowledge remaking as part of collecting an experimental past. The paper reads that institutional practice alongside scholarship on the relations among images, material traces, and artwork identity. Aga Wielocha&rsquo;s discussion of Danh Vo&rsquo;s chandeliers provides a particularly revealing comparison: a title can date an object&rsquo;s removal and transformation into art rather than its fabrication, just as a museum&rsquo;s leading year can identify an earlier work rather than the age of its present components. These different histories require the event dated by each title or caption to remain explicit. Neither artist authorisation nor institutional recognition settles every claim about an earlier condition. The paper credits the overlapping demonstrations in the author&rsquo;s Relational Archival Investigation papers and develops their implications for collecting, editorial preference, and historical inference. Its contribution is a comparative account of how names and dates sustain continuity without making the evidence for that continuity interchangeable.</p>\n<p>Museum of One working paper &middot; Version 1.0 &middot; 10 November 2026 &middot; 16 pages &middot; 21 references. Canonical DOI: https://doi.org/10.5281/zenodo.24095953</p>\n<p>The case studies compare museum records, contemporaneous criticism, exhibition documentation and artist testimony. Object-specific acquisition and conservation files and the original artworks remain unexamined. Jung Eun Young is cited through the published abstracts. The three cited Relational Archival Investigation (RAI) releases contain overlapping source comparisons and already establish the limitations of shared series titles and conflicting eight- and ten-photograph accounts. This paper adds sustained comparative histories and expanded sources. RAI DOI links: https://doi.org/10.5281/zenodo.24088563, https://doi.org/10.5281/zenodo.24088574, https://doi.org/10.5281/zenodo.24088573.</p>"
+        },
+        "custom_fields": {
+          "kcr:user_defined_tags": [
+            "Korean art",
+            "Korean art history",
+            "Korean experimental art",
+            "South Korean art",
+            "현대미술",
+            "한국미술",
+            "한국미술사",
+            "한국 실험미술",
+            "museum archives",
+            "art historiography",
+            "provenance research",
+            "exhibition history",
+            "collection cataloguing",
+            "reconstruction",
+            "archival evidence",
+            "Relational Archival Investigation",
+            "RAI",
+            "MMCA",
+            "SeMA",
+            "Park Suk-won",
+            "박석원",
+            "Kim Yong-Ik",
+            "김용익",
+            "Kim Youngjin",
+            "김영진",
+            "Lee Kang-so",
+            "이강소",
+            "Kim Kulim",
+            "김구림"
+          ]
+        },
+        "pids": {
+          "doi": {
+            "identifier": "10.5281/zenodo.24095953",
+            "provider": "external"
+          },
+          "oai": {
+            "identifier": "oai:https://works.hcommons.org:t9j11-4s168",
+            "provider": "oai"
+          }
+        },
+        "files": {
+          "enabled": true,
+          "order": [],
+          "count": 1,
+          "total_bytes": 309812,
+          "entries": {
+            "Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf": {
+              "id": "c6e77726-8d2c-41e2-8e23-fd6183c56971",
+              "checksum": "md5:20f2bad01e189225dc0c9cba9df093e9",
+              "ext": "pdf",
+              "size": 309812,
+              "mimetype": "application/pdf",
+              "storage_class": "L",
+              "key": "Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf",
+              "metadata": {},
+              "access": {
+                "hidden": false
+              },
+              "links": {
+                "self": "https://works.hcommons.org/api/records/t9j11-4s168/files/Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf",
+                "content": "https://works.hcommons.org/api/records/t9j11-4s168/files/Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf/content",
+                "iiif_canvas": "https://works.hcommons.org/api/iiif/record:t9j11-4s168/canvas/Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf",
+                "iiif_base": "https://works.hcommons.org/api/iiif/record:t9j11-4s168:Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf",
+                "iiif_info": "https://works.hcommons.org/api/iiif/record:t9j11-4s168:Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf/info.json",
+                "iiif_api": "https://works.hcommons.org/api/iiif/record:t9j11-4s168:Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf/full/full/0/default.png"
+              }
+            }
+          }
+        },
+        "versions": {
+          "is_latest": true,
+          "index": 1
+        }
+      },
+      "note": "Public API source projection omits account ownership and administrative fields. The unchanged file manifest ties these corrections to the independently verified canonical PDF; no repeated download, new file, new DOI or new version was needed."
+    },
+    {
+      "canonical_zenodo_id": "23428974",
+      "canonical_doi": "10.5281/zenodo.23428974",
+      "kc_id": "ft9g1-z8j46",
+      "url": "https://works.hcommons.org/records/ft9g1-z8j46",
+      "api": "https://works.hcommons.org/api/records/ft9g1-z8j46",
+      "http_status": 200,
+      "checked_at": "2026-11-11T14:25:35.044229+00:00",
+      "source_response_sha256": "1741a070ef790cf43c07d94c749054f2404817e69cc7a7d9b4a7e8d4ba766a87",
+      "upstream_modified": "2026-10-17T06:44:33.409443+00:00",
+      "metadata_change_fields": [],
+      "custom_metadata_change_fields": [],
+      "verification": {
+        "sole_dorian_vale_author": true,
+        "sole_museum_affiliation": true,
+        "museum_publisher": true,
+        "same_canonical_external_doi": true,
+        "same_original_file_manifest": true,
+        "same_record_version": true,
+        "same_source_publication_date": true,
+        "same_title_and_description": true
+      },
+      "public_source_projection": {
+        "id": "ft9g1-z8j46",
+        "created": "2026-10-17T02:24:46.775670+00:00",
+        "updated": "2026-10-17T06:44:33.409443+00:00",
+        "metadata": {
+          "resource_type": {
+            "id": "textDocument-workingPaper",
+            "title": {
+              "cs": "Pracovní dokument",
+              "de": "Arbeitspapier",
+              "en": "Working paper",
+              "sv": "Arbetsdokument"
+            }
+          },
+          "creators": [
+            {
+              "person_or_org": {
+                "type": "personal",
+                "name": "Vale, Dorian",
+                "given_name": "Dorian",
+                "family_name": "Vale",
+                "identifiers": [
+                  {
+                    "identifier": "dorianvale",
+                    "scheme": "kc_username"
+                  },
+                  {
+                    "identifier": "0009-0004-7737-5094",
+                    "scheme": "orcid"
+                  }
+                ]
+              },
+              "role": {
+                "id": "author",
+                "title": {
+                  "en": "Author"
+                }
+              },
+              "affiliations": [
+                {
+                  "name": "Museum of One"
+                }
+              ]
+            }
+          ],
+          "title": "Answerability: Exhibition, Documentation, and Historical Evidence in Postwar Japanese Art",
+          "publisher": "Museum of One",
+          "publication_date": "2026-10-17",
+          "languages": [
+            {
+              "id": "eng",
+              "title": {
+                "en": "English"
+              }
+            }
+          ],
+          "related_identifiers": [
+            {
+              "identifier": "https://www.museumofone.art/answerability/",
+              "scheme": "url",
+              "relation_type": {
+                "id": "isdescribedby",
+                "title": {
+                  "de": "Wird beschrieben von",
+                  "en": "Is described by",
+                  "sv": "Beskrivs av"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.museumofone.art/research-working-papers/",
+              "scheme": "url",
+              "relation_type": {
+                "id": "ispartof",
+                "title": {
+                  "de": "Ist Teil von",
+                  "en": "Is part of",
+                  "sv": "Är del av"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.museumofone.art/reiko-tomii/",
+              "scheme": "url",
+              "relation_type": {
+                "id": "isdescribedby",
+                "title": {
+                  "de": "Wird beschrieben von",
+                  "en": "Is described by",
+                  "sv": "Beskrivs av"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.historians.org/resource/statement-on-standards-of-professional-conduct/",
+              "scheme": "url",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "10.1111/j.1467-8365.2012.00951.x",
+              "scheme": "doi",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.moma.org/collection/works/127373",
+              "scheme": "url",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.aaa-a.org/programs/conversation-with-reiko-tomii",
+              "scheme": "url",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.aaa-a.org/programs/i-challenged-mud-after",
+              "scheme": "url",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "https://field-journal.com/issue-7/localizing-socially-engaged-art-some-observations-on-collective-operations-in-prewar-and-postwar-japan/",
+              "scheme": "url",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "10.37050/wpc-co-01_05",
+              "scheme": "doi",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "10.1017/CBO9780511498381",
+              "scheme": "doi",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "10.5281/zenodo.18104019",
+              "scheme": "doi",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            }
+          ],
+          "rights": [
+            {
+              "id": "cc-by-nc-nd-4.0",
+              "title": {
+                "en": "Creative Commons Attribution Non Commercial No Derivatives 4.0 International"
+              },
+              "description": {
+                "en": "Allows re-distribution of a licensed work on the condition that the creator is appropriately credited and that the re-distribution is not for commercial purposes. Does not allow distribution of derivative works or transformed versions of the licensed work"
+              },
+              "icon": "cc-by-nc-nd-icon",
+              "props": {
+                "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode",
+                "scheme": "spdx"
+              }
+            }
+          ],
+          "description": "This working paper develops a claim-specific criterion of historical answerability through engagement with Reiko Tomii's scholarship on operation in postwar Japanese art. It asks when evidence concerning exhibition, documentation, and artistic organization requires an art-historical account to reconsider the boundary of the work it claims to explain.\n\nThe principal case is Shiraga Kazuo's Challenging Mud. Tomii's accounts of material preparation and anticipated display are read beside Namiko Kunimoto's analysis of action, object, agency, and selfhood. Further investigations address press presentation and photographic selection, Hi Red Center and GUN, conditions of authorization, and the differentiation of events and photographic records in museum cataloguing. The comparison does not presume a disagreement between Tomii and Kunimoto or equate evidence of preparation with complete predetermination.\n\nThe method distinguishes attribution, justification, and historical accuracy. Before evaluating a challenge, it fixes a proposition's referent, meaning, scope, certainty, and evidential basis. Retention, limitation, revision, and suspension identify possible consequences of evidence without becoming compulsory stages or an aesthetic scoring system. The analysis separates a supported preparation-display relation from stronger claims about intention and distinguishes documentation's original public operation from the reach of its later historical testimony.\n\nThe contribution is a disciplined account of inferential reach within the historical problems Tomii's research makes visible. It also refines the application of restraint in Post-Interpretive Criticism: the amount of explanation cannot be prescribed before its evidential function is examined. This is a source-critical study of published arguments, not an independently inspected archival reconstruction or an empirical study of museum audiences. The criterion remains open to further cases and scholarly revision.\n\nResearch Working Paper No. 1. Version 1.0. 10 pages.\n\nIndependent working paper by Dorian Vale, developed following discussion and feedback from Reiko Tomii. Tomii is not a coauthor. Her feedback is not represented as endorsement or formal peer review. Private correspondence and meeting records are not reproduced.\n\nResearch programme and detailed study overview: https://www.museumofone.art/reiko-tomii/"
+        },
+        "custom_fields": {
+          "imprint:imprint": {
+            "pages": "10"
+          },
+          "kcr:edition": "1.0",
+          "kcr:project_title": "Exhibition, Operation and Art-Historical Mediation",
+          "kcr:publication_url": "https://www.museumofone.art/reiko-tomii/",
+          "kcr:user_defined_tags": [
+            "Historical answerability",
+            "Art historiography",
+            "Postwar Japanese art",
+            "Exhibition history",
+            "Documentation",
+            "Historical evidence",
+            "Artistic operation",
+            "Interpretation",
+            "Post-Interpretive Criticism",
+            "Shiraga Kazuo",
+            "Challenging Mud",
+            "Reiko Tomii",
+            "Namiko Kunimoto",
+            "Hi Red Center",
+            "GUN",
+            "Aesthetics",
+            "Museum of One",
+            "Dorian Vale",
+            "Philosophy of Art",
+            "Art Criticism",
+            "Art Theory",
+            "Visual Culture Studies",
+            "Ethics in Art Criticism",
+            "Interpretation and Meaning",
+            "Interpretive Restraint",
+            "Criticism and Reception Theory",
+            "Epistemology of Art",
+            "Gutai",
+            "Japanese avant-garde art",
+            "Postwar Japanese art history",
+            "Art collectives in Japan",
+            "Performance art in Japan",
+            "Photographic documentation",
+            "Art-historical methodology"
+          ]
+        },
+        "pids": {
+          "doi": {
+            "identifier": "10.5281/zenodo.23428974",
+            "provider": "external"
+          },
+          "oai": {
+            "identifier": "oai:https://works.hcommons.org:ft9g1-z8j46",
+            "provider": "oai"
+          }
+        },
+        "files": {
+          "enabled": true,
+          "order": [],
+          "count": 1,
+          "total_bytes": 208809,
+          "entries": {
+            "Answerability_Working_Paper_01_v1_0.pdf": {
+              "id": "143544cc-0b10-4ae0-9de5-777cbdee2ed8",
+              "checksum": "md5:908dc7989ef983324ddcba78684aee12",
+              "ext": "pdf",
+              "size": 208809,
+              "mimetype": "application/pdf",
+              "storage_class": "L",
+              "key": "Answerability_Working_Paper_01_v1_0.pdf",
+              "metadata": {},
+              "access": {
+                "hidden": false
+              },
+              "links": {
+                "self": "https://works.hcommons.org/api/records/ft9g1-z8j46/files/Answerability_Working_Paper_01_v1_0.pdf",
+                "content": "https://works.hcommons.org/api/records/ft9g1-z8j46/files/Answerability_Working_Paper_01_v1_0.pdf/content",
+                "iiif_canvas": "https://works.hcommons.org/api/iiif/record:ft9g1-z8j46/canvas/Answerability_Working_Paper_01_v1_0.pdf",
+                "iiif_base": "https://works.hcommons.org/api/iiif/record:ft9g1-z8j46:Answerability_Working_Paper_01_v1_0.pdf",
+                "iiif_info": "https://works.hcommons.org/api/iiif/record:ft9g1-z8j46:Answerability_Working_Paper_01_v1_0.pdf/info.json",
+                "iiif_api": "https://works.hcommons.org/api/iiif/record:ft9g1-z8j46:Answerability_Working_Paper_01_v1_0.pdf/full/full/0/default.png"
+              }
+            }
+          }
+        },
+        "versions": {
+          "is_latest": true,
+          "index": 1
+        }
+      },
+      "note": "Public API source projection omits account ownership and administrative fields. The unchanged file manifest ties these corrections to the independently verified canonical PDF; no repeated download, new file, new DOI or new version was needed."
+    },
+    {
+      "canonical_zenodo_id": "23430200",
+      "canonical_doi": "10.5281/zenodo.23430200",
+      "kc_id": "8cgp5-p1p74",
+      "url": "https://works.hcommons.org/records/8cgp5-p1p74",
+      "api": "https://works.hcommons.org/api/records/8cgp5-p1p74",
+      "http_status": 200,
+      "checked_at": "2026-11-11T14:25:35.044993+00:00",
+      "source_response_sha256": "91ea07543935922314048c55bd9593782f69de3e12df18c20444c2a28a197f8a",
+      "upstream_modified": "2026-10-17T06:47:02.815609+00:00",
+      "metadata_change_fields": [],
+      "custom_metadata_change_fields": [],
+      "verification": {
+        "sole_dorian_vale_author": true,
+        "sole_museum_affiliation": true,
+        "museum_publisher": true,
+        "same_canonical_external_doi": true,
+        "same_original_file_manifest": true,
+        "same_record_version": true,
+        "same_source_publication_date": true,
+        "same_title_and_description": true
+      },
+      "public_source_projection": {
+        "id": "8cgp5-p1p74",
+        "created": "2026-10-17T04:48:03.541364+00:00",
+        "updated": "2026-10-17T06:47:02.815609+00:00",
+        "metadata": {
+          "resource_type": {
+            "id": "textDocument-workingPaper",
+            "title": {
+              "cs": "Pracovní dokument",
+              "de": "Arbeitspapier",
+              "en": "Working paper",
+              "sv": "Arbetsdokument"
+            }
+          },
+          "creators": [
+            {
+              "person_or_org": {
+                "type": "personal",
+                "name": "Vale, Dorian",
+                "given_name": "Dorian",
+                "family_name": "Vale",
+                "identifiers": [
+                  {
+                    "identifier": "dorianvale",
+                    "scheme": "kc_username"
+                  },
+                  {
+                    "identifier": "0009-0004-7737-5094",
+                    "scheme": "orcid"
+                  }
+                ]
+              },
+              "role": {
+                "id": "author",
+                "title": {
+                  "en": "Author"
+                }
+              },
+              "affiliations": [
+                {
+                  "name": "Museum of One"
+                }
+              ]
+            }
+          ],
+          "title": "After the Interpretation Changes: Correction, Completion, and the Circulation of Museum Titles",
+          "publisher": "Museum of One",
+          "publication_date": "2026-10-17",
+          "languages": [
+            {
+              "id": "eng",
+              "title": {
+                "en": "English"
+              }
+            }
+          ],
+          "related_identifiers": [
+            {
+              "identifier": "https://www.museumofone.art/after-the-interpretation-changes/",
+              "scheme": "url",
+              "relation_type": {
+                "id": "isdescribedby",
+                "title": {
+                  "de": "Wird beschrieben von",
+                  "en": "Is described by",
+                  "sv": "Beskrivs av"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.museumofone.art/research-working-papers/",
+              "scheme": "url",
+              "relation_type": {
+                "id": "ispartof",
+                "title": {
+                  "de": "Ist Teil von",
+                  "en": "Is part of",
+                  "sv": "Är del av"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.museumofone.art/research-critical-language/",
+              "scheme": "url",
+              "relation_type": {
+                "id": "isdescribedby",
+                "title": {
+                  "de": "Wird beschrieben von",
+                  "en": "Is described by",
+                  "sv": "Beskrivs av"
+                }
+              }
+            },
+            {
+              "identifier": "https://id.rijksmuseum.nl/200109696",
+              "scheme": "url",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.rijksmuseum.nl/en/research/our-research/overarching/terminology",
+              "scheme": "url",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "10.52476/trb.9685",
+              "scheme": "doi",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "https://id.rijksmuseum.nl/300304730",
+              "scheme": "url",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "https://nltimes.nl/2015/12/09/rijksmuseum-stripping-insensitive-words-artwork-titles-descriptions",
+              "scheme": "url",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.theguardian.com/artanddesign/jonathanjonesblog/2015/dec/15/artworks-racist-titles-rijksmuseum-amsterdam",
+              "scheme": "url",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "https://id.rijksmuseum.nl/200839673",
+              "scheme": "url",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.leidenarthistoryblog.nl/articles/presenting-the-colonial-past-in-the-museum",
+              "scheme": "url",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "https://www.europeana.eu/nl/item/90402/SK_A_2931",
+              "scheme": "url",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            },
+            {
+              "identifier": "https://commons.wikimedia.org/wiki/File:Jonge_vrouw_met_waaier,_SK-A-2931.jpg",
+              "scheme": "url",
+              "relation_type": {
+                "id": "references",
+                "title": {
+                  "de": "Referenziert",
+                  "en": "References",
+                  "sv": "Hänvisar till"
+                }
+              }
+            }
+          ],
+          "rights": [
+            {
+              "id": "cc-by-nc-nd-4.0",
+              "title": {
+                "en": "Creative Commons Attribution Non Commercial No Derivatives 4.0 International"
+              },
+              "description": {
+                "en": "Allows re-distribution of a licensed work on the condition that the creator is appropriately credited and that the re-distribution is not for commercial purposes. Does not allow distribution of derivative works or transformed versions of the licensed work"
+              },
+              "icon": "cc-by-nc-nd-icon",
+              "props": {
+                "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode",
+                "scheme": "spdx"
+              }
+            }
+          ],
+          "description": "This study distinguishes two changes in the Rijksmuseum's presentation of Simon Maris's portrait now titled Isabella: the withdrawal of a racialized catalogue title in 2015, and the fulfilment in 2020 of an announced intention to adopt a name when one became known. The second change does not, by itself, demonstrate revision of the rule governing the first. The records examined at Europeana and Wikimedia Commons reveal different afterlives of the later decision. Europeana retains the descriptive title and an account in which identification remains unfinished. Commons preserves the older wording in the name of its image file while identifying the work as Isabella in the accompanying description. Drawing on my correspondence with Alexander V. Markov, the study follows what these descriptions do, rather than treating their survival as evidence of continuing authority. It finds uneven presentation of the later naming decision, not a demonstrated restoration of the rejected title. Its contribution to Post-Interpretive Criticism is a documentary distinction among correction, completion and circulation.\n\nIndependently authored by Dorian Vale and published by Museum of One as Research Working Paper No. 2, version 1.0. Developed through scholarly correspondence with Alexander Viktorovich Markov and his subsequent critical response to the documentary study. Selected passages and summaries are reproduced with his permission. Markov is not a coauthor, and the study is not a record of formal peer review or agreement with every proposal. The full private correspondence is not published.\n\n© 2026 Dorian Vale · Museum of One. CC BY-NC-ND 4.0 applies to the author's original contribution. Rights in third-party material and the original correspondence remain with their respective holders. Permission for selected correspondence material does not extend to reproduction of the full exchange.\n\nResearch programme: https://www.museumofone.art/research-critical-language/"
+        },
+        "custom_fields": {
+          "imprint:imprint": {
+            "pages": "10"
+          },
+          "kcr:edition": "1.0",
+          "kcr:project_title": "Museum of One: Critical Language and Lasting Correction",
+          "kcr:publication_url": "https://www.museumofone.art/research-critical-language/",
+          "kcr:user_defined_tags": [
+            "Post-Interpretive Criticism",
+            "Museum of One",
+            "Dorian Vale",
+            "Alexander Viktorovich Markov",
+            "Museum titles",
+            "Museum cataloguing",
+            "Correction",
+            "Completion",
+            "Circulation",
+            "Interpretive authority",
+            "Rijksmuseum",
+            "Simon Maris",
+            "Isabella",
+            "Europeana",
+            "Wikimedia Commons",
+            "Collection records",
+            "Cultural heritage metadata",
+            "Documentary research",
+            "Provenance",
+            "Historical evidence",
+            "Art historiography",
+            "Documentation",
+            "Deactivation",
+            "Contestability",
+            "Semantic persistence",
+            "Reauthorization",
+            "Successional authority",
+            "Museum terminology",
+            "Dutch art",
+            "Aesthetics",
+            "Philosophy of Art",
+            "Art Criticism",
+            "Art Theory",
+            "Visual Culture Studies",
+            "Ethics in Art Criticism",
+            "Interpretation and Meaning",
+            "Interpretive Restraint",
+            "Criticism and Reception Theory",
+            "Epistemology of Art"
+          ]
+        },
+        "pids": {
+          "doi": {
+            "identifier": "10.5281/zenodo.23430200",
+            "provider": "external"
+          },
+          "oai": {
+            "identifier": "oai:https://works.hcommons.org:8cgp5-p1p74",
+            "provider": "oai"
+          }
+        },
+        "files": {
+          "enabled": true,
+          "order": [],
+          "count": 1,
+          "total_bytes": 180105,
+          "entries": {
+            "After_the_Interpretation_Changes_Working_Paper_2_v1.0.pdf": {
+              "id": "969fd156-5ed2-4f97-bb7e-e6284a21c3ef",
+              "checksum": "md5:aa7d5753758bf6e178342117ef9ad3db",
+              "ext": "pdf",
+              "size": 180105,
+              "mimetype": "application/pdf",
+              "storage_class": "L",
+              "key": "After_the_Interpretation_Changes_Working_Paper_2_v1.0.pdf",
+              "metadata": {},
+              "access": {
+                "hidden": false
+              },
+              "links": {
+                "self": "https://works.hcommons.org/api/records/8cgp5-p1p74/files/After_the_Interpretation_Changes_Working_Paper_2_v1.0.pdf",
+                "content": "https://works.hcommons.org/api/records/8cgp5-p1p74/files/After_the_Interpretation_Changes_Working_Paper_2_v1.0.pdf/content",
+                "iiif_canvas": "https://works.hcommons.org/api/iiif/record:8cgp5-p1p74/canvas/After_the_Interpretation_Changes_Working_Paper_2_v1.0.pdf",
+                "iiif_base": "https://works.hcommons.org/api/iiif/record:8cgp5-p1p74:After_the_Interpretation_Changes_Working_Paper_2_v1.0.pdf",
+                "iiif_info": "https://works.hcommons.org/api/iiif/record:8cgp5-p1p74:After_the_Interpretation_Changes_Working_Paper_2_v1.0.pdf/info.json",
+                "iiif_api": "https://works.hcommons.org/api/iiif/record:8cgp5-p1p74:After_the_Interpretation_Changes_Working_Paper_2_v1.0.pdf/full/full/0/default.png"
+              }
+            }
+          }
+        },
+        "versions": {
+          "is_latest": true,
+          "index": 1
+        }
+      },
+      "note": "Public API source projection omits account ownership and administrative fields. The unchanged file manifest ties these corrections to the independently verified canonical PDF; no repeated download, new file, new DOI or new version was needed."
+    }
+  ],
+  "prior_metadata_alignment_status": {
+    "status": "verified",
+    "existing_public_pdf_records": 7,
+    "corrected_existing_metadata_records": 5,
+    "all_current_creator_affiliations": "Museum of One only",
+    "all_current_publishers": "Museum of One",
+    "wrong_hospital_affiliation": "Removed from the three affected current public records; retained only in dated initial-source evidence as the documented pre-correction state. Never imported into normalized archive creator metadata.",
+    "metadata_only": true,
+    "new_dialogue_kcworks_public_record": null,
+    "dialogue_status": "No public dialogue KCWorks record or uploaded file was created; the private draft and its upload blocker are distinct from the seven existing verified public copies."
+  },
+  "dialogue_publication_review": {
+    "record_id": "24130993",
+    "kc_id": "z0ptj-3rt53",
+    "url": "https://works.hcommons.org/records/z0ptj-3rt53",
+    "source_url": "https://works.hcommons.org/api/records/z0ptj-3rt53",
+    "checked_at": "2026-11-11T17:58:21.685304+00:00",
+    "source_modified": "2026-11-11T17:54:59.218393+00:00",
+    "raw_source_snapshot": "data/source/24130993-kcworks-2026-11-11T175821Z.json",
+    "raw_source_sha256": "b80e7276c5eb0b3563604e1aa58066dc703d1ac1fcb180d089211fb77a3b36d3",
+    "review_snapshot": "data/source/24130993-kcworks-copy-review-2026-11-11.json",
+    "file_copy": {
+      "download_url": "https://works.hcommons.org/api/records/z0ptj-3rt53/files/When_Interpretation_Becomes_Authority_Dialogue_v1.0.pdf/content",
+      "http_status": 200,
+      "bytes": 139737,
+      "md5": "f1644531d21747cac4acfca984a3d074",
+      "sha256": "f632ab874dc2a2fbd12d3410135f0656ed15bbc4f21204cca17ebdf0943b9aa4",
+      "canonical_pdf_identical": true
+    },
+    "checks": {
+      "public_api_http_200": true,
+      "record_access_public": true,
+      "principal_title_preserved": true,
+      "sole_editorial_author": true,
+      "author_orcid": true,
+      "sole_museum_affiliation": true,
+      "museum_publisher": true,
+      "reuses_canonical_doi": true,
+      "external_doi_provider": true,
+      "one_original_pdf": true,
+      "public_pdf_http_200": true,
+      "pdf_signature": true,
+      "canonical_size": true,
+      "canonical_md5": true,
+      "canonical_sha256": true,
+      "all12_typed_relations_match_prior_canonical_source": true,
+      "markov_other_contributor_not_author": true,
+      "no_invented_markov_affiliation": true,
+      "in_copyright_source_rights": true,
+      "full_text_access_description": true,
+      "english": true,
+      "deposit_date_not_backdated": true,
+      "original_october_edition_distinct": true
+    },
+    "prior_draft_outcome": "Previously empty draft completed successfully; no duplicate KCWorks record or canonical work was created."
+  }
+}

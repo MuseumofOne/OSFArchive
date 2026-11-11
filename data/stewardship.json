@@ -16,8 +16,8 @@
     },
     {
       "path": "data/catalogue.json",
-      "bytes": 409592,
-      "sha256": "78ad4e66031918cc69e9d694bcb31ace477229e00b520a53ef49e481406de475",
+      "bytes": 626356,
+      "sha256": "3d4f700a18f342d2465aaa7f4af14848a9dbf626b8a4217c1c5afec9536c7cdf",
       "role": "editorial_dataset"
     },
     {
@@ -70,8 +70,8 @@
     },
     {
       "path": "data/osf-editions.json",
-      "bytes": 15837,
-      "sha256": "b9926b49aaa278185fd94e43ba8dcb02c2a0068cf698b2243d7ebec87e62be54",
+      "bytes": 23048,
+      "sha256": "eb16fa81490e0f6e44e7bd03640e8845f2e7287c873c2537ee0a378fa6d5f820",
       "role": "editorial_dataset"
     },
     {
@@ -183,6 +183,12 @@
       "role": "repository_source_snapshot"
     },
     {
+      "path": "data/source/23428974-2026-11-11.json",
+      "bytes": 11453,
+      "sha256": "f5f001d984019fe1b709460c5a6a0f46ff66edebc4e9f97d764549e0a41c498a",
+      "role": "repository_source_snapshot"
+    },
+    {
       "path": "data/source/23428974.json",
       "bytes": 12763,
       "sha256": "79d02c6e5c7023798bb537b3218c0ae667c037330d593428a6c9751661b8eefe",
@@ -195,15 +201,69 @@
       "role": "repository_source_snapshot"
     },
     {
+      "path": "data/source/24088563-2026-11-11.json",
+      "bytes": 11220,
+      "sha256": "2ec35b624c5630c484611c76150f1bf6b94fa7844a23fe5a5ff0dce0df9af997",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24088563-2026-11-11T141725Z.json",
+      "bytes": 10856,
+      "sha256": "03e5fe8a12b4146020a260f477633f4ad8958223047eeda3af891eeccc5d9c61",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24088563-datacite-2026-11-11T141754Z.json",
+      "bytes": 19434,
+      "sha256": "a458c87d47caa772400620a86ec497416d048b85614be6e30c8d2fdec8740e78",
+      "role": "repository_source_snapshot"
+    },
+    {
       "path": "data/source/24088563.json",
       "bytes": 10640,
       "sha256": "7c65da10c150a1794b907232d70bcd205a538574462eec5754443c88c880a841",
       "role": "repository_source_snapshot"
     },
     {
+      "path": "data/source/24088573-2026-11-11.json",
+      "bytes": 8783,
+      "sha256": "ee6f704b8e2d57344c7e7367df39c07750f9e39e8bd2c0558cb241edfbce4600",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24088573-2026-11-11T141725Z.json",
+      "bytes": 9989,
+      "sha256": "e42c9e8c40e29ab61619c37755bb51c991d75faabd633f11b99474e4ede21b7b",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24088573-datacite-2026-11-11T141754Z.json",
+      "bytes": 17364,
+      "sha256": "04105efae66192b1a4ae613346a8e9a714e207321b9c94ee199619ebbfffb433",
+      "role": "repository_source_snapshot"
+    },
+    {
       "path": "data/source/24088573.json",
       "bytes": 8225,
       "sha256": "a4a60480f54bf74aef291ffdcf2ddf45fecbac93efe0b95b241df122a0200b4c",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24088574-2026-11-11.json",
+      "bytes": 9229,
+      "sha256": "2ced720a0ee2abd04127809e6de37a0351bec84e2916dfaac97d88efe97f5756",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24088574-2026-11-11T140627Z.json",
+      "bytes": 10435,
+      "sha256": "97b80644269cd1076c98d4060684a53d71f424b07d14deb068f3fbbde50cd17c",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24088574-datacite-2026-11-11T141753Z.json",
+      "bytes": 18371,
+      "sha256": "dcbdd5c7689d5d7baceb0576441511830b1286383c99bba6004336d225610225",
       "role": "repository_source_snapshot"
     },
     {
@@ -219,6 +279,18 @@
       "role": "repository_source_snapshot"
     },
     {
+      "path": "data/source/24095308-2026-11-11T142317Z.json",
+      "bytes": 11789,
+      "sha256": "92f095ebb4b1239fd8bafab151478128e692a6d26a6193dd459a2d19aa443113",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24095308-datacite-2026-11-11T142654Z.json",
+      "bytes": 17145,
+      "sha256": "ad64930d8f14e951c8743d37052bf29b47d6769c97b9d65631eca67f869f3e0e",
+      "role": "repository_source_snapshot"
+    },
+    {
       "path": "data/source/24095308.json",
       "bytes": 10175,
       "sha256": "4ebcba01a49eeffaf7ccfedfd767ef880f112d2e781f1f9f45cd49fbf0d7a278",
@@ -228,6 +300,18 @@
       "path": "data/source/24095953-2026-11-11.json",
       "bytes": 15025,
       "sha256": "a29811e0903e6775adaa22edf40273bbdc40f9063728edd66d69644189b46c42",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24095953-2026-11-11T143158Z.json",
+      "bytes": 15910,
+      "sha256": "d4293da4333525eebecfe47243d0e0a99f95ff624635ca39fd5e637fd46e8e40",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24095953-datacite-2026-11-11T143158Z.json",
+      "bytes": 20556,
+      "sha256": "b651d44f8d958b1747c013a07239f9f551fec9bb42bdd501fc5a1620abeeb17c",
       "role": "repository_source_snapshot"
     },
     {
@@ -243,15 +327,69 @@
       "role": "repository_source_snapshot"
     },
     {
+      "path": "data/source/24130993-2026-11-11T142748Z.json",
+      "bytes": 10792,
+      "sha256": "6c86ea50107a2b27e501698db625f6e0d7a12e59c4d8fbfee49715a7474ae858",
+      "role": "repository_source_snapshot"
+    },
+    {
       "path": "data/source/24130993-datacite-2026-11-11.json",
       "bytes": 9658,
       "sha256": "2f907bfdcf577b686f37ba312cf04ebfffe4064df3db4a4a2cdf5533ce5d4df9",
       "role": "repository_source_snapshot"
     },
     {
+      "path": "data/source/24130993-datacite-2026-11-11T142751Z.json",
+      "bytes": 20201,
+      "sha256": "9750dc897caef0f3be2fc2aad77a855112da62239bd3c1d7fb81b08d9c0f7ae7",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24130993-datacite-after-kc-2026-11-11T180637Z.json",
+      "bytes": 20594,
+      "sha256": "171fd1b8b64ec5ca6fc655239c13d554c82c658f84f166d2f90c0501800ed475",
+      "role": "repository_source_snapshot"
+    },
+    {
       "path": "data/source/24130993-datacite-refresh-2026-11-11.json",
       "bytes": 17998,
       "sha256": "1c1306c9d9540aab77775719d4abc4b45010b02688bd3baeac9ba7013db60d5d",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24130993-kcworks-2026-11-11T175821Z.json",
+      "bytes": 15718,
+      "sha256": "b80e7276c5eb0b3563604e1aa58066dc703d1ac1fcb180d089211fb77a3b36d3",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24130993-kcworks-copy-review-2026-11-11.json",
+      "bytes": 16123,
+      "sha256": "647f799575916b5db8ef6657a6ff0b02cf0048c0157e286a27b4b9183edea773",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24130993-osf-3zk8h-2026-11-11.json",
+      "bytes": 2515,
+      "sha256": "48972fb151d63d459db4ff13976aba08a06fccc805168f1b317a32ddf1dcc8ef",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24130993-osf-metadata-3zk8h-2026-11-11.json",
+      "bytes": 3669,
+      "sha256": "7f5215107d7c6975fc159ba86f27883a703bef57ba2aa650c5e036c22403504d",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24130993-publisher-kcworks-review-2026-11-11.json",
+      "bytes": 11333,
+      "sha256": "4500ed60215e8e4e974899176c2f38dba608ac41f97a40f90414dec797cebffb",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/24130993-zenodo-after-kc-2026-11-11T180635Z.json",
+      "bytes": 10945,
+      "sha256": "268be167904436df2951156a7a8b18ebad675fd322a6a7c0154b01de6b034fba",
       "role": "repository_source_snapshot"
     },
     {
@@ -285,9 +423,39 @@
       "role": "repository_source_snapshot"
     },
     {
+      "path": "data/source/kcworks-publication-copy-review-2026-11-11.json",
+      "bytes": 103268,
+      "sha256": "8563b208b539af5e33a5c022fbd8592e61a9e39556be1108f1b222b5bf16e7a9",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/osf-publication-item-metadata-review-2026-11-11.json",
+      "bytes": 77278,
+      "sha256": "4ac4484db066f9258dab3aad565799fbd7d94631eb93bcbf40cc339158aacd21",
+      "role": "repository_source_snapshot"
+    },
+    {
       "path": "data/source/publication-metadata-review-2026-11-11.json",
       "bytes": 6488,
       "sha256": "e9917103b9881b476fce8f4f66177e27388fbb1a5258e890768aaca445a4ae67",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/publication-repository-reconciliation-2026-11-11.json",
+      "bytes": 94809,
+      "sha256": "686f9025b180d2cefa201ec73c83fbb355e105c391f92823a10eab204cf71085",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/publisher-publication-alignment-review-2026-11-11.json",
+      "bytes": 108319,
+      "sha256": "b0924b727fb94ab311af83a11dc75d9f7408bd85e3e55d823168be9c9826cc6c",
+      "role": "repository_source_snapshot"
+    },
+    {
+      "path": "data/source/repository-access-representations-2026-11-11.json",
+      "bytes": 132024,
+      "sha256": "488007787a1991a473de94e226ce54dda1b242dd649eaa7623d83a268a9d16a0",
       "role": "repository_source_snapshot"
     },
     {
@@ -1582,6 +1750,176 @@
         "algorithm": "SHA-256",
         "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
       }
+    },
+    {
+      "at": "2026-11-11T14:51:07Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 96,
+      "inventory_sha256": "1ee03cbb234aea040c2798f5c952c4cfdfcd88ef628a04f779e3680476b3b250"
+    },
+    {
+      "at": "2026-11-11T14:51:07Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 96,
+      "checked_files": 96,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "1ee03cbb234aea040c2798f5c952c4cfdfcd88ef628a04f779e3680476b3b250"
+    },
+    {
+      "at": "2026-11-11T14:51:08Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 96,
+      "checked_files": 96,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "1ee03cbb234aea040c2798f5c952c4cfdfcd88ef628a04f779e3680476b3b250"
+    },
+    {
+      "at": "2026-11-11T14:51:08Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 96,
+      "checked_files": 96,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "1ee03cbb234aea040c2798f5c952c4cfdfcd88ef628a04f779e3680476b3b250"
+    },
+    {
+      "at": "2026-11-11T14:51:08Z",
+      "event": "backup_and_restoration_test",
+      "status": "passed",
+      "package_filename": "museum-of-one-preservation-backup-2026-11-11.tar.gz",
+      "package_bytes": 14778687,
+      "package_sha256": "b76105c1eddc1fab26ded89366a7348b105f99faf804d298ea8a62058b96eda7",
+      "inventory_sha256": "1ee03cbb234aea040c2798f5c952c4cfdfcd88ef628a04f779e3680476b3b250",
+      "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
+      "restoration": {
+        "status": "passed",
+        "files_restored": 96,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      }
+    },
+    {
+      "at": "2026-11-11T14:52:45Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 96,
+      "inventory_sha256": "79f1671e0daba9df941761a5baff9e7aadf113f4c5a0400ca940766de9b79479"
+    },
+    {
+      "at": "2026-11-11T14:52:45Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 96,
+      "checked_files": 96,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "79f1671e0daba9df941761a5baff9e7aadf113f4c5a0400ca940766de9b79479"
+    },
+    {
+      "at": "2026-11-11T14:52:45Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 96,
+      "checked_files": 96,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "79f1671e0daba9df941761a5baff9e7aadf113f4c5a0400ca940766de9b79479"
+    },
+    {
+      "at": "2026-11-11T14:52:45Z",
+      "event": "backup_and_restoration_test",
+      "status": "passed",
+      "package_filename": "museum-of-one-preservation-backup-2026-11-11.tar.gz",
+      "package_bytes": 14779532,
+      "package_sha256": "75ba1617629192b196c4a8afaab554e2ceae838f3a28dade0656ee35e0698536",
+      "inventory_sha256": "79f1671e0daba9df941761a5baff9e7aadf113f4c5a0400ca940766de9b79479",
+      "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
+      "restoration": {
+        "status": "passed",
+        "files_restored": 96,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      }
+    },
+    {
+      "at": "2026-11-11T15:12:44.231931+00:00",
+      "event": "offsite_backup_round_trip_restoration",
+      "status": "passed",
+      "provider": "Google Drive",
+      "file_count": 96,
+      "package_bytes": 14779532,
+      "package_sha256": "75ba1617629192b196c4a8afaab554e2ceae838f3a28dade0656ee35e0698536",
+      "inventory_sha256": "79f1671e0daba9df941761a5baff9e7aadf113f4c5a0400ca940766de9b79479",
+      "restoration": {
+        "status": "passed",
+        "files_restored": 96,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      },
+      "scope": "Fresh download from the private independent service; all inventoried content hashes verified after isolated extraction."
+    },
+    {
+      "at": "2026-11-11T18:12:07Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 101,
+      "inventory_sha256": "ccf022c447798a5853dfc4e128e57c589accbcdb161642377ef81c26edfb193d"
+    },
+    {
+      "at": "2026-11-11T18:12:07Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 101,
+      "checked_files": 101,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "ccf022c447798a5853dfc4e128e57c589accbcdb161642377ef81c26edfb193d"
+    },
+    {
+      "at": "2026-11-11T18:12:07Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 101,
+      "checked_files": 101,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "ccf022c447798a5853dfc4e128e57c589accbcdb161642377ef81c26edfb193d"
+    },
+    {
+      "at": "2026-11-11T18:12:09Z",
+      "event": "backup_and_restoration_test",
+      "status": "passed",
+      "package_filename": "museum-of-one-preservation-backup-2026-11-11-kcworks-complete.tar.gz",
+      "package_bytes": 14793966,
+      "package_sha256": "cd494207061662998ad842786ee60f5f44828a8c466c408194df89db28c7d939",
+      "inventory_sha256": "ccf022c447798a5853dfc4e128e57c589accbcdb161642377ef81c26edfb193d",
+      "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
+      "restoration": {
+        "status": "passed",
+        "files_restored": 101,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      }
     }
   ],
   "scope": "Repository source snapshots, editorial JSON datasets, and original PDF access copies.",
@@ -1592,52 +1930,70 @@
   "storage": {
     "working_copy": "Current archive build environment",
     "upstream_sources": "Original deposits remain at Zenodo; website source is held by the site platform.",
-    "offsite_backup_status": "Private Google Drive package uploaded, downloaded again, checksum matched and all restored content verified."
+    "offsite_backup_status": "A private Google Drive copy of the prior 96-file preservation payload was independently downloaded and restored on 11 November 2026. That dated evidence is retained; the current 101-file payload has a passed local recovery test and awaits the offsite revision recorded separately."
   },
-  "inventory_sha256": "da7ebe4c4b22a03f31c05b2b5ffca71d1e3926f1949f1ccc7c516b58cb6f8b99",
-  "baseline_created_at": "2026-11-11T12:50:01Z",
+  "inventory_sha256": "ccf022c447798a5853dfc4e128e57c589accbcdb161642377ef81c26edfb193d",
+  "baseline_created_at": "2026-11-11T18:12:07Z",
   "last_check": {
-    "at": "2026-11-11T12:50:01Z",
+    "at": "2026-11-11T18:12:07Z",
     "event": "fixity_check",
     "status": "passed",
     "algorithm": "SHA-256",
-    "file_count": 73,
-    "checked_files": 73,
+    "file_count": 101,
+    "checked_files": 101,
     "missing": [],
     "added": [],
     "changed": [],
-    "inventory_sha256": "da7ebe4c4b22a03f31c05b2b5ffca71d1e3926f1949f1ccc7c516b58cb6f8b99"
+    "inventory_sha256": "ccf022c447798a5853dfc4e128e57c589accbcdb161642377ef81c26edfb193d"
   },
   "backup": {
-    "at": "2026-11-11T12:50:01Z",
+    "at": "2026-11-11T18:12:09Z",
     "event": "backup_and_restoration_test",
     "status": "passed",
-    "package_filename": "museum-of-one-preservation-backup-2026-11-11-final.tar.gz",
-    "package_bytes": 14613003,
-    "package_sha256": "039d9be77a3c22f6743073de41f77586d379fb8703290c6f78d656291838cbdc",
-    "inventory_sha256": "da7ebe4c4b22a03f31c05b2b5ffca71d1e3926f1949f1ccc7c516b58cb6f8b99",
+    "package_filename": "museum-of-one-preservation-backup-2026-11-11-kcworks-complete.tar.gz",
+    "package_bytes": 14793966,
+    "package_sha256": "cd494207061662998ad842786ee60f5f44828a8c466c408194df89db28c7d939",
+    "inventory_sha256": "ccf022c447798a5853dfc4e128e57c589accbcdb161642377ef81c26edfb193d",
     "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
     "restoration": {
       "status": "passed",
-      "files_restored": 73,
+      "files_restored": 101,
       "algorithm": "SHA-256",
       "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
     }
   },
   "offsite_backup": {
-    "provider": "Google Drive",
-    "access": "Private owner-controlled backup folder",
-    "verified_at": "2026-11-04T19:06:17Z",
-    "package_bytes": 11974019,
-    "package_sha256": "ef6fd3763b737bd7dcc7558fe32020d02b7563f5f4760add98e570aa7a284b15",
-    "inventory_sha256": "531c077b972b008aff22a1f25c2109fdcc99976f1f8498acee551874d3576391",
+    "verified_at": "2026-11-11T15:12:44.231931+00:00",
+    "package_bytes": 14779532,
+    "package_sha256": "75ba1617629192b196c4a8afaab554e2ceae838f3a28dade0656ee35e0698536",
+    "inventory_sha256": "79f1671e0daba9df941761a5baff9e7aadf113f4c5a0400ca940766de9b79479",
     "downloaded_package_checksum_match": true,
     "round_trip_restoration": {
       "status": "passed",
-      "files_restored": 43,
+      "files_restored": 96,
       "algorithm": "SHA-256",
       "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
     },
-    "scope": "Source snapshots, editorial JSON datasets and original PDF access copies. Website code, dependencies and cover images are held separately in the source repository."
-  }
+    "provider": "Google Drive",
+    "access": "Private owner-controlled backup folder",
+    "scope": "Source snapshots, editorial JSON datasets and 22 original PDF access copies. Website code, dependencies, covers and the website capture vault are held separately. This dated evidence covers the prior 96-file preservation payload; the current inventory and repository deployment are recorded separately."
+  },
+  "previous_offsite_backups": [
+    {
+      "provider": "Google Drive",
+      "access": "Private owner-controlled backup folder",
+      "verified_at": "2026-11-04T19:06:17Z",
+      "package_bytes": 11974019,
+      "package_sha256": "ef6fd3763b737bd7dcc7558fe32020d02b7563f5f4760add98e570aa7a284b15",
+      "inventory_sha256": "531c077b972b008aff22a1f25c2109fdcc99976f1f8498acee551874d3576391",
+      "downloaded_package_checksum_match": true,
+      "round_trip_restoration": {
+        "status": "passed",
+        "files_restored": 43,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      },
+      "scope": "Source snapshots, editorial JSON datasets and original PDF access copies. Website code, dependencies and cover images are held separately in the source repository."
+    }
+  ]
 }
