@@ -39,7 +39,7 @@ class ResearchDiscovery(unittest.TestCase):
         return build_research_discovery(**values)
 
     def test_all_described_levels_are_search_destinations(self):
-        self.assertEqual(self.feed['counts'], {'publication': 19, 'chapter': 57, 'entity': 44, 'concept': 62, 'programme': 10})
+        self.assertEqual(self.feed['counts'], {'publication': 21, 'chapter': 57, 'entity': 44, 'concept': 62, 'programme': 10})
         ids = {r['id'] for r in self.feed['records']}
         for row in self.feed['records']:
             self.assertTrue(row['sources'], row['id'])
@@ -139,7 +139,7 @@ class ResearchDiscovery(unittest.TestCase):
     def test_fulltext_fixity_and_verbatim_page_evidence(self):
         import fitz
         feed = build_fulltext_index(self.records, ROOT, self.origin)
-        self.assertEqual(feed['counts'], {'documents': 19, 'pages': 779, 'searchable_pages': 765})
+        self.assertEqual(feed['counts'], {'documents': 21, 'pages': 811, 'searchable_pages': 797})
         documents = {d['id']: d for d in feed['documents']}
         for row in feed['records']:
             doc = documents[row['document_id']]

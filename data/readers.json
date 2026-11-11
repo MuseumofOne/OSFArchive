@@ -378,5 +378,45 @@
       "url": "https://rightsstatements.org/vocab/InC/1.0/"
     },
     "role": "Local reading copy; original repository file retained unchanged"
+  },
+  {
+    "id": "24095308",
+    "title": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+    "accession": "MOO-CAT-020",
+    "pdf_url": "../assets/documents/24095308.pdf",
+    "source_url": "https://zenodo.org/api/records/24095308/files/When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf/content",
+    "zenodo_url": "https://zenodo.org/records/24095308",
+    "source_filename": "When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf",
+    "checksum": "md5:51391d1910c17f1041f82484d61d7e54",
+    "sha256": "5d15719fd4b14ee14cf36d699b729b36a4cab19e2b4fbb19ca7147621f366497",
+    "bytes": 336198,
+    "page_count": 16,
+    "verified_at": "2026-11-11",
+    "checksum_match": true,
+    "rights": {
+      "label": "In Copyright. © 2026 Dorian Vale · Museum of One.",
+      "url": "https://rightsstatements.org/vocab/InC/1.0/"
+    },
+    "role": "Local reading copy; original repository file retained unchanged"
+  },
+  {
+    "id": "24095953",
+    "title": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
+    "accession": "MOO-CAT-021",
+    "pdf_url": "../assets/documents/24095953.pdf",
+    "source_url": "https://zenodo.org/api/records/24095953/files/Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf/content",
+    "zenodo_url": "https://zenodo.org/records/24095953",
+    "source_filename": "Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf",
+    "checksum": "md5:20f2bad01e189225dc0c9cba9df093e9",
+    "sha256": "69ee1b25702685db6ffd43557e40b66d1ab28757c41690455d601d2cd2131b60",
+    "bytes": 309812,
+    "page_count": 16,
+    "verified_at": "2026-11-11",
+    "checksum_match": true,
+    "rights": {
+      "label": "In Copyright. © 2026 Dorian Vale · Museum of One.",
+      "url": "https://rightsstatements.org/vocab/InC/1.0/"
+    },
+    "role": "Local reading copy; original repository file retained unchanged"
   }
 ]

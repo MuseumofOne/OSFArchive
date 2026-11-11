@@ -7178,5 +7178,403 @@
       "badge": "Methodology · RAI",
       "source_url": "https://www.museumofone.art/rai-extended-case-studies/"
     }
+  },
+  {
+    "id": "24095308",
+    "accession": "MOO-CAT-020",
+    "title": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+    "source_title": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+    "short_title": "When Documentation Becomes the Work",
+    "author": "Dorian Vale",
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": "Museum of One",
+        "orcid": "0009-0004-7737-5094"
+      }
+    ],
+    "doi": "10.5281/zenodo.24095308",
+    "conceptdoi": "10.5281/zenodo.24093528",
+    "zenodo_url": "https://zenodo.org/records/24095308",
+    "date": "2026-11-10",
+    "type": "Working paper",
+    "source_resource_type": {
+      "title": "Working paper",
+      "type": "publication",
+      "subtype": "workingpaper"
+    },
+    "version": "2.0",
+    "collection": "Essays & research",
+    "summary": "Examines how photographs, later interventions and reperformance shape the documentary histories of works by Sung Neung Kyung, Rim Dong Sik and Kim Kulim.",
+    "subjects": [
+      "Korean Art History",
+      "Korean Experimental Art",
+      "Art Archives",
+      "Relational Archival Investigation",
+      "한국미술사"
+    ],
+    "keywords": [
+      "Korean art history",
+      "Korean art",
+      "Korean experimental art",
+      "Modern Korean art",
+      "Postwar Korean art",
+      "Korean performance art",
+      "Korean photography",
+      "Performance documentation",
+      "Art archives",
+      "Exhibition history",
+      "Art conservation",
+      "Reperformance",
+      "Material continuity",
+      "Relational Archival Investigation",
+      "Rim Dong Sik",
+      "Kim Kulim",
+      "Sung Neung Kyung",
+      "한국미술",
+      "한국미술사",
+      "한국 실험미술",
+      "한국 현대미술",
+      "퍼포먼스 기록",
+      "미술 아카이브",
+      "전시사",
+      "재연",
+      "임동식",
+      "김구림",
+      "성능경"
+    ],
+    "license": {
+      "label": "In Copyright. © 2026 Dorian Vale · Museum of One.",
+      "url": "https://rightsstatements.org/vocab/InC/1.0/"
+    },
+    "files": [
+      {
+        "name": "When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf",
+        "url": "https://zenodo.org/api/records/24095308/files/When_Documentation_Becomes_the_Work_Version_2_Dorian_Vale.pdf/content",
+        "size": 336198,
+        "size_label": "336,198 bytes",
+        "checksum": "md5:51391d1910c17f1041f82484d61d7e54",
+        "mimetype": "application/pdf"
+      }
+    ],
+    "institutional_url": "https://www.museumofone.art/when-documentation-becomes-the-work/",
+    "corroboration": "The public Museum of One record links this version DOI. The reading copy matches the deposited file checksum.",
+    "discrepancies": [],
+    "orcid": "0009-0004-7737-5094",
+    "publisher": "Museum of One",
+    "language": "eng",
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.24088563",
+        "relation": "cites",
+        "resource_type": "publication-workingpaper",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.24088574",
+        "relation": "cites",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.24088573",
+        "relation": "cites",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      }
+    ],
+    "alternate_identifiers": [],
+    "source_references": [
+      "Philip Auslander (2006). The Performativity of Performance Documentation. https://doi.org/10.1162/pajj.2006.28.3.1",
+      "Amy Brost (2022). Reconciling Authenticity and Reenactment. https://doi.org/10.37050/ci-21_19",
+      "Sooran Choi (2020). Manifestations of a Zombie Avant-garde: South Korean Performance and Conceptual Art in the 1970s. re•bus 9, 74–108.",
+      "Seo Yeon Chung and Yeon Shim Chung (2024). A Study of Sung Neung Kyung's Photography in 1975–1976. https://doi.org/10.17057/kahoma.2024..56.006",
+      "Douglas Gabriel and Nancy P. Lin (2025). Action and Its Afterlives: Performance Art in East Asia. https://doi.org/10.1080/17561310.2025.2593044",
+      "Hanna Yoonwoo Lee (2019). Caught in the Act: Korean Experimental Performance of the 1960s and the 1970s. https://escholarship.org/uc/item/2n7133b6",
+      "Lee Eunjoo (2025). 1960-1970년대 한국 실험미술과 사진예술의 교차적 실천과 비평 담론. https://kahoma.or.kr/homepage/boardMedia/192403",
+      "Ryu Hanseung (2015). 1970년대 중·후반의 이벤트. https://www.mmca.go.kr/upload/artInfo/2016/02/2016021504205671016137.pdf",
+      "MMCA. Kim Kulim, From Phenomenon to Traces, collection object 04616. https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=4616",
+      "MMCA. Sung Neung Kyung, Reading Newspaper, collection object 08033. https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=8194",
+      "MMCA Research Lab. Event-Logical. https://mmcaresearch.kr/terms/view.do?fid=2208",
+      "SeMA Art Archives. Rim Dong Sik, Tying Reeds and Beard, MA-03-00006485. https://sema.seoul.go.kr/semaaa/front/archive/view.do?iId=23414",
+      "Aga Wielocha (2021). Art Objects as Documents and the Distributed Identity of Contemporary Artworks. https://doi.org/10.64655/AM.si21ca.m1963"
+    ],
+    "source_journal": null,
+    "source_imprint": null,
+    "source_contributors": [],
+    "source_created": "2026-11-10T01:07:17.849473+00:00",
+    "source_modified": "2026-11-10T01:07:18.102470+00:00",
+    "source_description_html": "<p><strong>Museum of One working paper &middot; Version 2.0 &middot; 10 November 2026 &middot; 16 pages &middot; 42 references</strong></p>\n<p>Dorian Vale compares how photographs acquired artistic and institutional standing through copying, repair, printing, exhibition, collection, and reperformance in Korean experimental art. The three cases concern Rim Dong Sik (임동식), Kim Kulim (김구림), and Sung Neung Kyung (성능경). Version 2.0 adds the Seoul Museum of Art collection-transfer chronology, the Korean Senior Artist Digital Archive&rsquo;s classification and digitization account, an exhibition checklist identifying video of Kim&rsquo;s reperformance, and Kim Eunjin&rsquo;s study of authenticity in contemporary art conservation.</p>\n<p><strong>Scope and limits.</strong> SeMA describes the copying and repair of Rim&rsquo;s photographs. Item-level repair dates and transfer documentation remain unresolved. The source negative, print edition and authorization, purchase year, and recording lineage remain open for Kim&rsquo;s work. MMCA identifies Sung&rsquo;s collected twelve-print panel with the panel shown in 1976. The dates of manufacture and mounting of individual sheets remain unresolved. Three Korean journal articles are consulted through their published abstracts.</p>\n<p><strong>Relationship to Relational Archival Investigation.</strong> This paper and the RAI working paper and supplements share earlier analyses of Rim&rsquo;s photographic repair and Sung&rsquo;s photographic exhibition. The revision extends the comparison through Kim&rsquo;s print and reperformance history, the new institutional records, and Korean conservation scholarship.</p>\n<p>한국 실험미술에서 사진이 복제, 보수, 인화, 전시, 수집을 거치며 작품으로 인정되는 과정을 임동식, 김구림, 성능경의 사례를 통해 비교한다. 개별 사진의 제작과 처리 이력에는 미해결 문제가 남는다.</p>\n<p><a href=\"https://archive.museumofone.art/evidence/when-documentation-becomes-the-work.html\">Annotated evidence and source access</a> &middot; <a href=\"https://doi.org/10.5281/zenodo.24093529\">Version 1.0 (9 November 2026)</a> &middot; <a href=\"https://www.museumofone.art/when-documentation-becomes-the-work/\">Museum of One</a></p>",
+    "source_review": "2026-11-11",
+    "record_level": "Item",
+    "record_status": "Published source; selected catalogue record",
+    "institutional_metadata": {
+      "title": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+      "author": "Dorian Vale",
+      "linked_zenodo_dois": [
+        "10.5281/zenodo.24095308"
+      ],
+      "reviewed": "2026-11-11",
+      "source_url": "https://www.museumofone.art/when-documentation-becomes-the-work/",
+      "publication_title": "When Documentation Becomes the Work: Photographs, Reperformance, and the Archival Lives of Korean Experimental Art",
+      "publication_status": "Published working paper",
+      "edition": "Version 2.0"
+    },
+    "provenance": {
+      "repository": "Zenodo public REST API response",
+      "retrieved": "2026-11-10",
+      "editorial_fields": [
+        "summary",
+        "subjects",
+        "collection",
+        "short_title",
+        "accession"
+      ],
+      "source_snapshot": "source/24095308.json",
+      "institutional_review": "Verified the public publisher record and matching edition DOI."
+    },
+    "research_programmes": [],
+    "relations": [
+      {
+        "identifier": "10.5281/zenodo.24088563",
+        "relation": "cites",
+        "resource_type": "publication-workingpaper",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.24088574",
+        "relation": "cites",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.24088573",
+        "relation": "cites",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      }
+    ],
+    "methodology": {
+      "title": "Relational Archival Investigation",
+      "url": "https://www.museumofone.art/relational-archival-investigation/",
+      "badge": "Methodology · RAI",
+      "source_url": "https://www.museumofone.art/when-documentation-becomes-the-work/"
+    },
+    "description_history": [
+      {
+        "event_id": "working-paper-accession-24095308",
+        "date": "2026-11-11",
+        "action": "Accessioned working paper and checksum-verified reading copy",
+        "responsible_service": "Museum of One",
+        "method": "Checked the publisher record, repository metadata and PDF checksum",
+        "date_kind": "Local catalogue description event",
+        "sources": [
+          "https://zenodo.org/records/24095308",
+          "https://www.museumofone.art/when-documentation-becomes-the-work/"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "24095953",
+    "accession": "MOO-CAT-021",
+    "title": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
+    "source_title": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
+    "short_title": "Titles, Dates, and Reconstructed Works",
+    "author": "Dorian Vale",
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": "Museum of One"
+      }
+    ],
+    "doi": "10.5281/zenodo.24095953",
+    "conceptdoi": "10.5281/zenodo.24095952",
+    "zenodo_url": "https://zenodo.org/records/24095953",
+    "date": "2026-11-10",
+    "type": "Working paper",
+    "source_resource_type": {
+      "title": "Working paper",
+      "type": "publication",
+      "subtype": "workingpaper"
+    },
+    "version": "1.0",
+    "collection": "Essays & research",
+    "summary": "Four studies of Kim Yong-Ik, Park Suk-won, Lee Kang-so and Kim Kulim compare how collection dates, titles and reconstructions bear on artwork identity and historical claims.",
+    "subjects": [
+      "Korean Art History",
+      "Korean Experimental Art",
+      "Art Archives",
+      "Relational Archival Investigation",
+      "한국미술사"
+    ],
+    "keywords": [
+      "Korean art history",
+      "Korean art",
+      "Korean experimental art",
+      "Korean modern and contemporary art",
+      "Artwork identity",
+      "Museum collection records",
+      "Artwork reconstruction",
+      "Compound dating",
+      "Exhibition history",
+      "Archival research",
+      "Art conservation",
+      "Photographic documentation",
+      "Relational Archival Investigation",
+      "Post-Interpretive Criticism",
+      "Kim Yong-Ik",
+      "Park Suk-won",
+      "Lee Kang-so",
+      "Kim Kulim",
+      "한국미술",
+      "한국미술사",
+      "한국 실험미술",
+      "작품 정체성",
+      "작품 재제작",
+      "김용익",
+      "박석원",
+      "이강소",
+      "김구림"
+    ],
+    "license": {
+      "label": "In Copyright. © 2026 Dorian Vale · Museum of One.",
+      "url": "https://rightsstatements.org/vocab/InC/1.0/"
+    },
+    "files": [
+      {
+        "name": "Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf",
+        "url": "https://zenodo.org/api/records/24095953/files/Titles_Dates_and_Reconstructed_Works_Working_Paper_Dorian_Vale.pdf/content",
+        "size": 309812,
+        "size_label": "309,812 bytes",
+        "checksum": "md5:20f2bad01e189225dc0c9cba9df093e9",
+        "mimetype": "application/pdf"
+      }
+    ],
+    "institutional_url": "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
+    "corroboration": "The public Museum of One record links this version DOI. The reading copy matches the deposited file checksum.",
+    "discrepancies": [],
+    "orcid": "0009-0004-7737-5094",
+    "publisher": "Museum of One",
+    "language": "eng",
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.24088563",
+        "relation": "cites",
+        "resource_type": "publication-workingpaper",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.24088574",
+        "relation": "cites",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.24088573",
+        "relation": "cites",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      }
+    ],
+    "alternate_identifiers": [],
+    "source_references": [
+      "Amy Brost (2022). Reconciling Authenticity and Reenactment: An Art Conservation Perspective. Cultural Inquiry 21, 183–92. https://doi.org/10.37050/ci-21_19",
+      "Getty Research Institute. Titles or Names. Categories for the Description of Works of Art, category 3. https://www.getty.edu/publications/categories-description-works-art/categories/object-architecture-group/3/",
+      "Getty Research Institute. Creation. Categories for the Description of Works of Art, category 4. https://www.getty.edu/publications/categories-description-works-art/categories/object-architecture-group/4/",
+      "Jung Eun Young (2024). \"Rational Logic and Natural Order\": Kim Yong-Ik's Conceptual Art and the \"Unverborgenheit\" of the Medium. Korean Bulletin of Art History 62, 7–36. Abstracts consulted. https://doi.org/10.15819/rah.2024..62.7",
+      "MMCA. 2016 Annual Report (2016 reporting year). §2-2, printed pp. 34–35; entries 73 and 76, pp. 39–40. https://www.mmca.go.kr/upload/artInfo/2017/09/2017092003532066115519.pdf",
+      "MMCA (2019). 국립현대미술관 출판 지침 [Guide to Publication], §3.74, pp. 132–33. https://www.mmca.go.kr/upload/research/MMCA%20Guide%20to%20Publication_last%20update%20August%202019.pdf",
+      "MMCA (2020). 국립현대미술관 출판 지침 [Guide to Publication], §3.74, pp. 134–35. https://www.mmca.go.kr/upload/research/MMCA%20Guide%20to%20Publication_20200806.pdf",
+      "MMCA. Park Suk-won, 적-응력 [Jeok–Eungnyeok]. Management number 07912, online record 7925. https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7925",
+      "MMCA. Lee Kang-so, 무제 75031 [Untitled 75031]. Management number 07909, online record 7922. https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7922",
+      "MMCA. Kim Kulim, 매개항 [Mediator]. Management number 04643, online record 4643. https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=4643",
+      "MMCA. Kim Yong-Ik, 평면 오브제 [Plane Object / Flat Object], 1977. Online record 7573. https://www.mmca.go.kr/collections/collectionsDetailPage.do?wrkinfoSeqno=7573",
+      "Kaeun Park (2025, online 2026). Gestures of Suspicion: Lee Kang So's Performative Works in 1970s South Korea. Art in Translation 17(4), 348–70. https://doi.org/10.1080/17561310.2025.2593049",
+      "Ryu Ji-yeon (류지연) (2012). 이강소 회화의 특성: <무제> 시리즈를 중심으로. Journal of the National Museum of Contemporary Art, Korea 4, 7–23. https://www.mmca.go.kr/upload/m/data/artinfo/2013/01/25/20130125124036.pdf",
+      "SeMA Art Archives. Kim Yong-Ik solo exhibition at Gallery Te, Tokyo, 1978. Exhibition file 930. https://sema.seoul.go.kr/semaaa/front/class/view.do?cpId=930&menuId=8",
+      "SeMA Art Archives. Photographic Portfolio of Works from the 1970s and 1980s. Kim Yong-Ik Collection, MA-05-00049360, online item 89408. https://sema.seoul.go.kr/semaaa/front/archive/view.do?iId=89408&menuId=8",
+      "SeMA. Kim Yong-Ik, 평면 오브제 [Flat Object], 1977. Accession 2000-0160, online work WORK_0000000647. https://sema.seoul.go.kr/kr/knowledge_research/collection/collection_detail?artSeq=WORK_0000000647",
+      "SeMA Art Archives. Photographs of the Plane Object remake for the 1997 Kumho Museum exhibition. MA-03-00002265, online item 19167. https://sema.seoul.go.kr/semaaa/front/archive/view.do?iId=19167&menuId=13",
+      "Dorian Vale (2026a). Relational Archival Investigation: Identity, Chronology, and Historical Judgment in Korean Experimental Art. Museum of One. OSF file version 1. https://osf.io/zhnre/files/osfstorage/6af1fbaf9a59a9f56db8c3a4?revision=1",
+      "Dorian Vale (2026b). Documentary Evidence and Source Comparisons. Supplement 1 to Relational Archival Investigation. Museum of One. OSF file version 1. https://osf.io/zhnre/files/osfstorage/6af1fbafa24596b11253bbf8?revision=1",
+      "Dorian Vale (2026c). Extended Case Studies and Methodological Demonstrations. Supplement 2 to Relational Archival Investigation. Museum of One. OSF file version 1. https://osf.io/zhnre/files/osfstorage/6af1fbaf5d50b310f653bbf6?revision=1",
+      "Aga Wielocha (2021). Art Objects as Documents and the Distributed Identity of Contemporary Artworks. ArtMatters, special issue 1, 106–13. https://doi.org/10.64655/AM.si21ca.m1963"
+    ],
+    "source_journal": null,
+    "source_imprint": null,
+    "source_contributors": [],
+    "source_created": "2026-11-10T02:27:01.397326+00:00",
+    "source_modified": "2026-11-10T02:27:01.664515+00:00",
+    "source_description_html": "<p><strong>Museum of One working paper &middot; Version 1.0 &middot; 10 November 2026 &middot; 16 pages &middot; 21 references</strong></p>\n<p>A work can retain its title and historical date even when its materials, arrangement, or means of presentation have changed. This working paper examines four Korean archival and museum cases: Kim Yong-Ik&rsquo;s Plane Object photographs and the history of &ldquo;plain&rdquo; and &ldquo;place&rdquo;; the differing production years assigned to Park Suk-won&rsquo;s Jeok&ndash;Eungnyeok; the 1975 historical reference and 2016 materials of Lee Kang-so&rsquo;s Untitled 75031; and Kim Kulim&rsquo;s Mediator, used by the National Museum of Modern and Contemporary Art, Korea, to exemplify compound dating. MMCA&rsquo;s acquisition narrative and publication guidance acknowledge remaking as part of collecting an experimental past. The paper reads that institutional practice alongside scholarship on the relations among images, material traces, and artwork identity. Aga Wielocha&rsquo;s discussion of Danh Vo&rsquo;s chandeliers provides a particularly revealing comparison: a title can date an object&rsquo;s removal and transformation into art rather than its fabrication, just as a museum&rsquo;s leading year can identify an earlier work rather than the age of its present components. These different histories require the event dated by each title or caption to remain explicit. Neither artist authorisation nor institutional recognition settles every claim about an earlier condition. The paper credits the overlapping demonstrations in the author&rsquo;s Relational Archival Investigation papers and develops their implications for collecting, editorial preference, and historical inference. Its contribution is a comparative account of how names and dates sustain continuity without making the evidence for that continuity interchangeable.</p>\n<p><strong>Evidence limits.</strong> The source base is documentary. Physical artworks, original versos, complete printing proofs and object-specific acquisition and conservation dossiers remain unexamined. Park&rsquo;s two published dates establish a discrepancy without determining the original year or a sequence of database changes. A shared series title cannot identify an individual Kim Yong-Ik work. The eight- and ten-image accounts do not establish a sequence of additions to Lee&rsquo;s work. Jung Eun Young is cited through the published abstracts. The four selected cases establish no national rate of discrepancy. This working paper has not undergone independent peer review.</p>\n<p><strong>Relationship to Relational Archival Investigation.</strong> The <a href=\"https://doi.org/10.5281/zenodo.24088563\">RAI main paper</a>, <a href=\"https://doi.org/10.5281/zenodo.24088574\">Documentary Supplement</a> and <a href=\"https://doi.org/10.5281/zenodo.24088573\">Extended Case Studies</a> already report the shared naming and date comparisons, the limits of series-title identification, and the difference between Lee&rsquo;s photographic accounts. This paper extends that work through MMCA&rsquo;s acquisition narrative and compound dating of <em>Mediator</em>, a sustained comparison with Korean scholarship and conservation research, and analysis of what later objects and records establish about earlier works. Its bibliography points to the cited OSF file versions.</p>\n<p>김용익(평면 오브제), 박석원(적-응력), 이강소(무제 75031), 김구림(매개항)의 사례를 통해 한국 실험미술에서 작품의 제목과 연대, 재제작, 소장 기록이 어떤 역사적 주장을 뒷받침하는지 살핀다. 작품의 역사적 정체성과 현존 구성 요소의 제작 시기를 구분하며, 네 사례의 자료 범위와 기존 RAI 연구와의 관계를 명시한다.</p>",
+    "source_review": "2026-11-11",
+    "record_level": "Item",
+    "record_status": "Published source; selected catalogue record",
+    "institutional_metadata": {
+      "title": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
+      "author": "Dorian Vale",
+      "linked_zenodo_dois": [
+        "10.5281/zenodo.24095953"
+      ],
+      "reviewed": "2026-11-11",
+      "source_url": "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
+      "publication_title": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
+      "publication_status": "Published working paper",
+      "edition": "Version 1.0"
+    },
+    "provenance": {
+      "repository": "Zenodo public REST API response",
+      "retrieved": "2026-11-10",
+      "editorial_fields": [
+        "summary",
+        "subjects",
+        "collection",
+        "short_title",
+        "accession"
+      ],
+      "source_snapshot": "source/24095953.json",
+      "institutional_review": "Verified the public publisher record and matching edition DOI."
+    },
+    "research_programmes": [],
+    "relations": [
+      {
+        "identifier": "10.5281/zenodo.24088563",
+        "relation": "cites",
+        "resource_type": "publication-workingpaper",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.24088574",
+        "relation": "cites",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.24088573",
+        "relation": "cites",
+        "resource_type": "publication-technicalnote",
+        "scheme": "doi"
+      }
+    ],
+    "methodology": {
+      "title": "Relational Archival Investigation",
+      "url": "https://www.museumofone.art/relational-archival-investigation/",
+      "badge": "Methodology · RAI",
+      "source_url": "https://www.museumofone.art/titles-dates-and-reconstructed-works/"
+    },
+    "description_history": [
+      {
+        "event_id": "working-paper-accession-24095953",
+        "date": "2026-11-11",
+        "action": "Accessioned working paper and checksum-verified reading copy",
+        "responsible_service": "Museum of One",
+        "method": "Checked the publisher record, repository metadata and PDF checksum",
+        "date_kind": "Local catalogue description event",
+        "sources": [
+          "https://zenodo.org/records/24095953",
+          "https://www.museumofone.art/titles-dates-and-reconstructed-works/"
+        ]
+      }
+    ]
   }
 ]
