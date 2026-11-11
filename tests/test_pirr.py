@@ -24,7 +24,7 @@ class PirrCrosswalkTest(unittest.TestCase):
         originals = json.dumps([self.records, self.programmes], sort_keys=True)
         records, programmes = attach_pirr(self.records, self.programmes, self.data)
         self.assertEqual(originals, json.dumps([self.records, self.programmes], sort_keys=True))
-        self.assertEqual(sum(bool(r['pirr_references']) for r in records), 12)
+        self.assertEqual(sum(bool(r['pirr_references']) for r in records), 13)
         self.assertEqual(sum(len(p['identifiers']) for p in self.data['programmes']), 7)
         methods = next(p for p in programmes if '/research-methods/' in p['url'])
         self.assertEqual(methods['pirr_project_id'], 'pir-prj-pyp5yx3w')

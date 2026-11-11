@@ -418,5 +418,25 @@
       "url": "https://rightsstatements.org/vocab/InC/1.0/"
     },
     "role": "Local reading copy; original repository file retained unchanged"
+  },
+  {
+    "id": "24130993",
+    "title": "When Interpretation Becomes Authority",
+    "accession": "MOO-CAT-022",
+    "pdf_url": "../assets/documents/24130993.pdf",
+    "source_url": "https://zenodo.org/api/records/24130993/files/When_Interpretation_Becomes_Authority_Dialogue_v1.0.pdf/content",
+    "zenodo_url": "https://zenodo.org/records/24130993",
+    "source_filename": "When_Interpretation_Becomes_Authority_Dialogue_v1.0.pdf",
+    "checksum": "md5:f1644531d21747cac4acfca984a3d074",
+    "sha256": "f632ab874dc2a2fbd12d3410135f0656ed15bbc4f21204cca17ebdf0943b9aa4",
+    "bytes": 139737,
+    "page_count": 9,
+    "verified_at": "2026-11-11",
+    "checksum_match": true,
+    "rights": {
+      "label": "In Copyright. © 2026 Dorian Vale · Museum of One. Editorial text by Dorian Vale. Alexander V. Markov’s intellectual contributions are attributed throughout; rights in the original correspondence remain with its respective authors.",
+      "url": "https://rightsstatements.org/vocab/InC/1.0/"
+    },
+    "role": "Local reading copy; original repository file retained unchanged"
   }
 ]

@@ -2,8 +2,8 @@
   "scheme": {
     "id": "museum-of-one-discovery-vocabulary",
     "title": "Museum of One Local Discovery Vocabulary",
-    "version": 5,
-    "modified": "2026-11-10",
+    "version": 6,
+    "modified": "2026-11-11",
     "language": "en",
     "base_uri": "https://archive.museumofone.art/vocabulary.html",
     "editorial_owner": "Museum of One Digital Archive Library",
@@ -2186,6 +2186,40 @@
       "editorial_owner": "Museum of One Digital Archive Library",
       "version": 5,
       "modified": "2026-11-10"
+    },
+    {
+      "id": "genre-research-dialogue",
+      "persistent_id": "urn:museum-of-one:vocabulary:genre-research-dialogue",
+      "preferred_label": "Research dialogue",
+      "alternative_labels": [],
+      "alternative_label_languages": {},
+      "kind": "genre",
+      "definition": "A published account of scholarly exchange, with the authorship of its editorial text and the attribution of interlocutors’ contributions kept explicit.",
+      "scope_note": "Used for When Interpretation Becomes Authority, described as a research dialogue on its PDF title page and publisher record. The term does not imply a verbatim transcript, joint authorship, formal peer review or a completed research programme. Zenodo publication/other remains the separate source classification.",
+      "broader": [],
+      "narrower": [],
+      "related": [],
+      "mapping_status": "not_asserted",
+      "mapping_note": "No external controlled-vocabulary equivalence is asserted.",
+      "external_mappings": [],
+      "provenance": {
+        "status": "local_editorial_description",
+        "input_field": "type",
+        "source_keyword_labels": [
+          "Research dialogue"
+        ],
+        "record_ids": [
+          "24130993"
+        ],
+        "source_urls": [
+          "https://www.museumofone.art/when-interpretation-becomes-authority/",
+          "https://zenodo.org/api/records/24130993/files/When_Interpretation_Becomes_Authority_Dialogue_v1.0.pdf/content"
+        ],
+        "note": "Genre transcribed from the published PDF and publisher page; definition and scope are local editorial descriptions. The deposited file remains publication/other in its original repository metadata."
+      },
+      "editorial_owner": "Museum of One Digital Archive Library",
+      "version": 6,
+      "modified": "2026-11-11"
     }
   ]
 }

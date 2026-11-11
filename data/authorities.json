@@ -196,6 +196,33 @@
           "status": "record_metadata_observed_in_search_index"
         }
       ]
+    },
+    {
+      "match_title": "When Interpretation Becomes Authority",
+      "institutional_url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+      "reviewed": "2026-11-11",
+      "records": [
+        {
+          "title": "HAL bibliographic notice hal-05860223",
+          "url": "https://hal.science/hal-05860223",
+          "kind": "bibliographic_notice",
+          "status": "public_api_record_verified",
+          "reviewed": "2026-11-11",
+          "evidence_url": "https://api.archives-ouvertes.fr/search/?q=halId_s%3A%22hal-05860223%22&fl=halId_s%2Ctitle_s%2CauthFullName_s%2CdoiId_s%2CdocType_s%2CsubmitType_s%2CfileMain_s%2Cfiles_s%2Cversion_i%2CproducedDate_s%2CpublicationDate_s%2CsubmittedDate_s%2CmodifiedDate_s&wt=json",
+          "evidence": "HAL notice names Dorian Vale, the selected title and DOI 10.5281/zenodo.24130993.",
+          "note": "Bibliographic notice only: HAL supplies no hosted file in the inspected API record."
+        },
+        {
+          "title": "Internet Archive full-text copy",
+          "url": "https://archive.org/details/when-interpretation-becomes-authority-dialogue-v-1.0",
+          "kind": "repository_copy",
+          "status": "public_file_manifest_checksum_verified",
+          "reviewed": "2026-11-11",
+          "evidence_url": "https://archive.org/metadata/when-interpretation-becomes-authority-dialogue-v-1.0",
+          "evidence": "The existing PDF manifest lists 139737 bytes and MD5 f1644531d21747cac4acfca984a3d074, matching the deposited version 1.0.",
+          "note": "An existing access copy of the same file; not a new publication version or independent DOI registration."
+        }
+      ]
     }
   ],
   "excluded_claims": [

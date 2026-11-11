@@ -130,6 +130,11 @@
         "url": "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
         "label": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
         "note": "Public institutional record identifies the publication author, publisher and selected edition DOI."
+      },
+      {
+        "url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+        "label": "When Interpretation Becomes Authority",
+        "note": "The PDF and publisher record identify Dorian Vale as the sole editorial author. Selection, arrangement, framing and wording are his responsibility."
       }
     ],
     "record_links": [
@@ -380,9 +385,17 @@
         "note": "The public Museum of One publication record identifies Dorian Vale as author and links the selected edition DOI. Research subjects and holding institutions are not publication affiliations.",
         "evidence_scope": "exact_edition",
         "reviewed": "2026-11-11"
+      },
+      {
+        "record_id": "24130993",
+        "relation": "author",
+        "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+        "note": "The PDF and publisher record identify Dorian Vale as the sole editorial author. Selection, arrangement, framing and wording are his responsibility.",
+        "evidence_scope": "exact_edition",
+        "reviewed": "2026-11-11"
       }
     ],
-    "description_reviewed": "2026-11-05"
+    "description_reviewed": "2026-11-11"
   },
   {
     "id": "museum-of-one",
@@ -507,6 +520,11 @@
         "url": "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
         "label": "Titles, Dates, and Reconstructed Works: Four Documentary Histories of Korean Experimental Art",
         "note": "Public institutional record identifies the publication author, publisher and selected edition DOI."
+      },
+      {
+        "url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+        "label": "When Interpretation Becomes Authority",
+        "note": "DataCite, the deposited PDF and the publisher page identify Museum of One as publisher. The publisher page also states Vale’s affiliation; no subject institution is assigned an affiliation role."
       }
     ],
     "record_links": [
@@ -757,9 +775,17 @@
         "note": "The public Museum of One publication record identifies Museum of One as publisher and links the selected edition DOI. Research subjects and holding institutions are not publication affiliations.",
         "evidence_scope": "exact_edition",
         "reviewed": "2026-11-11"
+      },
+      {
+        "record_id": "24130993",
+        "relation": "publisher",
+        "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+        "note": "DataCite, the deposited PDF and the publisher page identify Museum of One as publisher. The publisher page also states Vale’s affiliation; no subject institution is assigned an affiliation role.",
+        "evidence_scope": "exact_edition",
+        "reviewed": "2026-11-11"
       }
     ],
-    "description_reviewed": "2026-11-05"
+    "description_reviewed": "2026-11-11"
   },
   {
     "id": "hassan-sharif",
@@ -1271,16 +1297,22 @@
     "label": "Alexander Viktorovich Markov",
     "type": "Person",
     "variants": [
-      "Alexander V. Markov"
+      "Alexander V. Markov",
+      "Александр Викторович Марков"
     ],
     "identifiers": [],
-    "summary": "Alexander Viktorovich Markov’s scholarly correspondence and critical response are acknowledged in the research context of Dorian Vale’s After the Interpretation Changes. The paper distinguishes discussion and feedback from coauthorship, formal peer review and agreement with every proposal.",
+    "summary": "Alexander Viktorovich Markov is the scholarly correspondent and intellectual contributor in Dorian Vale’s editorial research dialogue When Interpretation Becomes Authority. His correspondence and critical response also inform the research context of Vale’s separately authored After the Interpretation Changes. The publication records distinguish these contributions from coauthorship, formal peer review and agreement with every proposal.",
     "authority_status": "Locally maintained, source-qualified contextual record",
     "sources": [
       {
         "url": "https://www.museumofone.art/after-the-interpretation-changes/",
         "label": "After the Interpretation Changes",
         "note": "The source records scholarly correspondence and a critical response. It explicitly states that Markov is not a coauthor and that this is not formal peer review or agreement with every proposal."
+      },
+      {
+        "url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+        "label": "When Interpretation Becomes Authority",
+        "note": "Alexander Viktorovich Markov is the scholarly interlocutor and intellectual contributor whose positions are paraphrased in Vale’s editorial account. The original repository metadata retains his contributor type Other. He is not a coauthor or editor of this publication."
       }
     ],
     "record_links": [
@@ -1296,9 +1328,17 @@
           "text_quote": "Alexander Viktorovich Markov"
         },
         "reviewed": "2026-11-05"
+      },
+      {
+        "record_id": "24130993",
+        "relation": "scholarly correspondent",
+        "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+        "note": "Alexander Viktorovich Markov is the scholarly interlocutor and intellectual contributor whose positions are paraphrased in Vale’s editorial account. The original repository metadata retains his contributor type Other. He is not a coauthor or editor of this publication.",
+        "evidence_scope": "exact_edition",
+        "reviewed": "2026-11-11"
       }
     ],
-    "description_reviewed": "2026-11-05"
+    "description_reviewed": "2026-11-11"
   },
   {
     "id": "harald-szeemann",

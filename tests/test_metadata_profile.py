@@ -122,6 +122,8 @@ class MetadataProfileTests(unittest.TestCase):
             expected_event = 'rai-accession-2026-11-10' if record['id'] in {'24088563','24088574','24088573'} else 'metadata-profile-3.0-2026-11-04'
             if record['id'] in {'24095308', '24095953'}:
                 expected_event = 'working-paper-accession-' + record['id']
+            if record['id'] == '24130993':
+                expected_event = 'research-dialogue-accession-24130993'
             events = [e for e in record['description_history'] if e.get('event_id') == expected_event]
             self.assertEqual(len(events), 1)
             latest = max(e['date'] for e in record['description_history'] if e.get('date'))

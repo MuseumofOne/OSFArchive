@@ -50,7 +50,8 @@
         "Journal article",
         "Working paper",
         "Dataset",
-        "Technical note"
+        "Technical note",
+        "Research dialogue"
       ]
     },
     "zenodo_url": {

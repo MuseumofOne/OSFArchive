@@ -7863,5 +7863,326 @@
         ]
       }
     ]
+  },
+  {
+    "id": "24130993",
+    "accession": "MOO-CAT-022",
+    "title": "When Interpretation Becomes Authority",
+    "source_title": "When Interpretation Becomes Authority",
+    "short_title": "When Interpretation Becomes Authority",
+    "author": "Dorian Vale",
+    "bibliographic_authors": [
+      "Dorian Vale"
+    ],
+    "creators": [
+      {
+        "name": "Vale, Dorian",
+        "affiliation": null,
+        "orcid": "0009-0004-7737-5094"
+      }
+    ],
+    "doi": "10.5281/zenodo.24130993",
+    "conceptdoi": "10.5281/zenodo.24130992",
+    "zenodo_url": "https://zenodo.org/records/24130993",
+    "date": "2026-11-11",
+    "type": "Research dialogue",
+    "source_resource_type": {
+      "title": "Other",
+      "type": "publication",
+      "subtype": "other"
+    },
+    "version": "1.0",
+    "edition_statement": "Research Dialogue · Version 1.0 · October 2026",
+    "collection": "Essays & research",
+    "summary": "Dorian Vale’s editorial account of correspondence with Alexander V. Markov examines how critical language acquires authority through museum labels, catalogues and institutional procedures. The exchange connects Post-Interpretive Criticism with the Semiotics of Non-intentional Ephemerality while preserving the attribution of proposals, disagreement and limits of documentary evidence.",
+    "subjects": [
+      "Post-Interpretive Criticism",
+      "Critical language",
+      "Interpretation",
+      "Museum cataloguing",
+      "Art criticism",
+      "Documentary evidence"
+    ],
+    "keywords": [
+      "Alexander Viktorovich Markov",
+      "Александр Викторович Марков",
+      "Alexander V. Markov",
+      "Dorian Vale",
+      "Post-Interpretive Criticism",
+      "Semiotics of Non-intentional Ephemerality",
+      "Semantic protocol",
+      "Successional authority",
+      "Deactivation gap",
+      "Recognition closure",
+      "Interpretive authority",
+      "Museum cataloguing",
+      "Art criticism",
+      "Museum studies",
+      "Rijksmuseum",
+      "Simon Maris"
+    ],
+    "license": {
+      "label": "In Copyright. © 2026 Dorian Vale · Museum of One. Editorial text by Dorian Vale. Alexander V. Markov’s intellectual contributions are attributed throughout; rights in the original correspondence remain with its respective authors.",
+      "url": "https://rightsstatements.org/vocab/InC/1.0/"
+    },
+    "files": [
+      {
+        "name": "When_Interpretation_Becomes_Authority_Dialogue_v1.0.pdf",
+        "url": "https://zenodo.org/api/records/24130993/files/When_Interpretation_Becomes_Authority_Dialogue_v1.0.pdf/content",
+        "size": 139737,
+        "size_label": "139,737 bytes",
+        "checksum": "md5:f1644531d21747cac4acfca984a3d074",
+        "mimetype": "application/pdf"
+      }
+    ],
+    "institutional_url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+    "corroboration": "The Museum of One publication record links the selected version DOI and distinguishes Vale’s sole editorial authorship from Markov’s intellectual contribution. The nine-page reading copy is byte-identical to the existing deposited PDF. The October 2026 edition statement is distinct from the 11 November 2026 repository release.",
+    "discrepancies": [
+      "The Zenodo creator field and DataCite creator affiliation list do not supply an affiliation. The Museum of One publication record explicitly identifies Museum of One as Vale’s affiliation; that statement is retained as qualified institutional context without overwriting the source creator fields.",
+      "Zenodo classifies the deposit as publication/other. Research dialogue is the source-backed local genre shown on the PDF title page and publisher record; it does not imply a journal article or peer review."
+    ],
+    "orcid": "0009-0004-7737-5094",
+    "publisher": "Museum of One",
+    "language": "eng",
+    "related_identifiers": [],
+    "alternate_identifiers": [],
+    "source_references": [],
+    "source_journal": null,
+    "source_imprint": null,
+    "source_contributors": [
+      {
+        "name": "Markov, Alexander Viktorovich",
+        "affiliation": null,
+        "type": "Other"
+      }
+    ],
+    "source_created": "2026-11-11T08:57:40.916961+00:00",
+    "source_modified": "2026-11-11T08:57:41.174231+00:00",
+    "source_description_html": "<p>A Museum of One research dialogue between Post-Interpretive Criticism (PIC) and the Semiotics of Non-intentional Ephemerality (SNE). Dorian Vale&rsquo;s editorial account follows his scholarly exchange with Alexander V. Markov (Alexander Viktorovich Markov; Александр Викторович Марков) on how interpretations acquire authority when they become museum labels, catalogue descriptions, teaching conventions, and search terms. It traces the semantic protocol, successional authority, the deactivation gap, recognition closure, and the responsibilities of contestability. The account distinguishes the persistence of wording from its reauthorization and connects the theoretical exchange to Vale&rsquo;s separately authored documentary study of the Rijksmuseum&rsquo;s retitling of Simon Maris&rsquo;s Isabella. Markov&rsquo;s intellectual contributions are attributed throughout. The text paraphrases correspondence and preserves the provenance of the proposals. Version 1.0, October 2026 edition, 9 pages. Museum of One programme: https://www.museumofone.art/research-critical-language/#programme-outputs. Related working paper: https://doi.org/10.5281/zenodo.23430200.</p>",
+    "source_review": "2026-11-11",
+    "record_level": "Item",
+    "record_status": "Published source; selected catalogue record",
+    "citation": "Vale, Dorian. (2026). When Interpretation Becomes Authority (Version 1.0, October 2026 edition) [Research dialogue; editorial account of correspondence with Alexander V. Markov]. Museum of One. https://doi.org/10.5281/zenodo.24130993.",
+    "institutional_metadata": {
+      "title": "When Interpretation Becomes Authority",
+      "publication_title": "When Interpretation Becomes Authority",
+      "author": "Dorian Vale",
+      "author_affiliation": "Museum of One",
+      "contributors": [
+        {
+          "name": "Alexander Viktorovich Markov",
+          "role": "Scholarly interlocutor and intellectual contributor; not a coauthor or editor of this publication"
+        }
+      ],
+      "linked_zenodo_dois": [
+        "10.5281/zenodo.24130993"
+      ],
+      "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+      "reviewed": "2026-11-11",
+      "publication_status": "Published research dialogue",
+      "edition": "Version 1.0, October 2026 edition",
+      "series": "The Dialogues",
+      "web_publication": "2026-11-11T10:05:12.000Z",
+      "web_updated": "2026-11-11T10:05:12.000Z",
+      "programme_status_statement": "Ongoing inquiry · Published editorial dialogue"
+    },
+    "provenance": {
+      "repository": "Zenodo public REST API response",
+      "retrieved": "2026-11-11",
+      "editorial_fields": [
+        "summary",
+        "subjects",
+        "collection",
+        "short_title",
+        "accession",
+        "type",
+        "relations"
+      ],
+      "source_snapshot": "source/24130993.json",
+      "source_snapshot_sha256": "20ce4128464958e88d7d2fcad7d9987b9c0bbeeeb6da884bd784f5921c6146df",
+      "datacite_snapshot": "source/24130993-datacite-2026-11-11.json",
+      "datacite_snapshot_sha256": "2f907bfdcf577b686f37ba312cf04ebfffe4064df3db4a4a2cdf5533ce5d4df9",
+      "institutional_review": "Reviewed the live publisher page, selected edition DOI, editorial and contributor roles, research programme and series. Checked the PDF title page and editorial-provenance statement on pages 2 and 9.",
+      "review_evidence": "https://github.com/MuseumofOne/OSFArchive/blob/main/data/source/dialogue-accession-24130993-2026-11-11.json",
+      "note": "Accession of an already published version. No new repository deposit, DOI or version was created. Original PDF and source API response are retained unchanged."
+    },
+    "research_programmes": [
+      {
+        "title": "Alexander Viktorovich Markov: Critical Language and Lasting Correction",
+        "url": "https://www.museumofone.art/research-critical-language/",
+        "status": "In development",
+        "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+        "reviewed": "2026-11-11",
+        "relation": "Published research dialogue within an ongoing inquiry",
+        "relation_label": "Ongoing inquiry · Published editorial dialogue",
+        "status_description": "Ongoing inquiry · Published editorial dialogue"
+      }
+    ],
+    "relations": [
+      {
+        "identifier": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+        "relation": "isDescribedBy",
+        "resource_type": "publication-other",
+        "scheme": "url",
+        "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/"
+      },
+      {
+        "identifier": "https://hal.science/hal-05860223",
+        "relation": "isDescribedBy",
+        "resource_type": "publication-other",
+        "scheme": "url",
+        "source_url": "https://api.archives-ouvertes.fr/search/?q=halId_s%3A%22hal-05860223%22&fl=halId_s%2Ctitle_s%2CauthFullName_s%2CdoiId_s%2CdocType_s%2CsubmitType_s%2CfileMain_s%2Cfiles_s%2Cversion_i%2CproducedDate_s%2CpublicationDate_s%2CsubmittedDate_s%2CmodifiedDate_s&wt=json"
+      },
+      {
+        "identifier": "10.5281/zenodo.23430200",
+        "relation": "cites",
+        "resource_type": "publication-workingpaper",
+        "scheme": "doi",
+        "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/"
+      },
+      {
+        "identifier": "https://www.museumofone.art/the-dialogues/",
+        "relation": "isPartOf",
+        "resource_type": "other",
+        "scheme": "url",
+        "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/"
+      },
+      {
+        "identifier": "https://www.southernsemioticreview.net/protocol-and-the-unstable-sign-a-revision-of-asignifying-semiotics-for-the-algorithmic-age/",
+        "relation": "cites",
+        "resource_type": "publication-article",
+        "scheme": "url",
+        "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+        "note": "Cited in source note 2 of the deposited PDF and linked by the publisher record. Shtayn is a cited author, not a participant in this correspondence."
+      },
+      {
+        "identifier": "https://archive.org/details/when-interpretation-becomes-authority-dialogue-v-1.0",
+        "relation": "isIdenticalTo",
+        "resource_type": "publication-other",
+        "scheme": "url",
+        "source_url": "https://archive.org/metadata/when-interpretation-becomes-authority-dialogue-v-1.0",
+        "evidence_scope": "exact_edition",
+        "note": "Same version 1.0 PDF: source filename, 139737-byte length and MD5 f1644531d21747cac4acfca984a3d074 match the deposited file. This identifies an access copy of the same edition, not equivalence of every descriptive metadata field."
+      }
+    ],
+    "field_assertions": [
+      {
+        "field": "type",
+        "value": "Research dialogue",
+        "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+        "status": "source_qualified_local_genre",
+        "reviewed": "2026-11-11",
+        "note": "The PDF and publisher record identify a research dialogue and editorial account. The repository resource type publication/other is retained separately."
+      },
+      {
+        "field": "publisher",
+        "value": "Museum of One",
+        "source_url": "https://api.datacite.org/dois/10.5281/zenodo.24130993",
+        "status": "registry_transcription",
+        "reviewed": "2026-11-11",
+        "note": "DataCite DOI metadata names Museum of One as publisher; the PDF and institutional record corroborate it."
+      },
+      {
+        "field": "author_affiliation",
+        "value": "Museum of One",
+        "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+        "status": "institutional_responsibility_statement",
+        "reviewed": "2026-11-11",
+        "note": "The publisher page explicitly identifies Museum of One as Vale’s affiliation. Unspecified affiliations in the original repository creator and contributor fields remain unchanged. Subject museums and Markov’s biographical institutions are not publication affiliations."
+      },
+      {
+        "field": "license",
+        "value": {
+          "label": "In Copyright. © 2026 Dorian Vale · Museum of One. Editorial text by Dorian Vale. Alexander V. Markov’s intellectual contributions are attributed throughout; rights in the original correspondence remain with its respective authors.",
+          "url": "https://rightsstatements.org/vocab/InC/1.0/"
+        },
+        "source_url": "https://api.datacite.org/dois/10.5281/zenodo.24130993",
+        "status": "source_qualified_rights_statement",
+        "reviewed": "2026-11-11",
+        "note": "DataCite records In Copyright. The full notice is transcribed from the deposited PDF, page 9, and publisher page. Open access is not an open reuse licence; correspondence rights remain with its respective authors."
+      },
+      {
+        "field": "edition_statement",
+        "value": "Research Dialogue · Version 1.0 · October 2026",
+        "source_url": "https://zenodo.org/api/records/24130993/files/When_Interpretation_Becomes_Authority_Dialogue_v1.0.pdf/content",
+        "status": "source_transcription",
+        "reviewed": "2026-11-11",
+        "note": "PDF title page and running footer. The repository release date remains 2026-11-11; no day within October is invented."
+      },
+      {
+        "field": "relations",
+        "value": [
+          {
+            "identifier": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+            "relation": "isDescribedBy",
+            "resource_type": "publication-other",
+            "scheme": "url",
+            "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/"
+          },
+          {
+            "identifier": "https://hal.science/hal-05860223",
+            "relation": "isDescribedBy",
+            "resource_type": "publication-other",
+            "scheme": "url",
+            "source_url": "https://api.archives-ouvertes.fr/search/?q=halId_s%3A%22hal-05860223%22&fl=halId_s%2Ctitle_s%2CauthFullName_s%2CdoiId_s%2CdocType_s%2CsubmitType_s%2CfileMain_s%2Cfiles_s%2Cversion_i%2CproducedDate_s%2CpublicationDate_s%2CsubmittedDate_s%2CmodifiedDate_s&wt=json"
+          },
+          {
+            "identifier": "10.5281/zenodo.23430200",
+            "relation": "cites",
+            "resource_type": "publication-workingpaper",
+            "scheme": "doi",
+            "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/"
+          },
+          {
+            "identifier": "https://www.museumofone.art/the-dialogues/",
+            "relation": "isPartOf",
+            "resource_type": "other",
+            "scheme": "url",
+            "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/"
+          },
+          {
+            "identifier": "https://www.southernsemioticreview.net/protocol-and-the-unstable-sign-a-revision-of-asignifying-semiotics-for-the-algorithmic-age/",
+            "relation": "cites",
+            "resource_type": "publication-article",
+            "scheme": "url",
+            "source_url": "https://www.museumofone.art/when-interpretation-becomes-authority/",
+            "note": "Cited in source note 2 of the deposited PDF and linked by the publisher record. Shtayn is a cited author, not a participant in this correspondence."
+          },
+          {
+            "identifier": "https://archive.org/details/when-interpretation-becomes-authority-dialogue-v-1.0",
+            "relation": "isIdenticalTo",
+            "resource_type": "publication-other",
+            "scheme": "url",
+            "source_url": "https://archive.org/metadata/when-interpretation-becomes-authority-dialogue-v-1.0",
+            "evidence_scope": "exact_edition",
+            "note": "Same version 1.0 PDF: source filename, 139737-byte length and MD5 f1644531d21747cac4acfca984a3d074 match the deposited file. This identifies an access copy of the same edition, not equivalence of every descriptive metadata field."
+          }
+        ],
+        "source_url": "https://github.com/MuseumofOne/OSFArchive/blob/main/data/source/dialogue-accession-24130993-2026-11-11.json",
+        "status": "source_qualified_bibliographic_context",
+        "reviewed": "2026-11-11",
+        "note": "Links are documented by the publisher record, deposited PDF, HAL notice and Internet Archive file manifest. They are distinct from the unchanged related_identifiers field in the original Zenodo response. The cited working paper remains separately authored and separately deposited. The Internet Archive relationship identifies the checksum-matched copy of this edition."
+      }
+    ],
+    "description_history": [
+      {
+        "event_id": "research-dialogue-accession-24130993",
+        "date": "2026-11-11",
+        "action": "Accession an existing published research dialogue and checksum-verified reading copy",
+        "responsible_service": "Museum of One Digital Archive Library",
+        "method": "Compared the live publisher page, Zenodo and DataCite metadata, HAL notice and Internet Archive file manifest; checked PDF authorship, edition statement, rights and hashes",
+        "date_kind": "Local catalogue description event; not a first-publication or acquisition date",
+        "sources": [
+          "https://zenodo.org/records/24130993",
+          "https://api.datacite.org/dois/10.5281/zenodo.24130993",
+          "https://www.museumofone.art/when-interpretation-becomes-authority/",
+          "https://www.museumofone.art/research-critical-language/",
+          "https://hal.science/hal-05860223",
+          "https://archive.org/details/when-interpretation-becomes-authority-dialogue-v-1.0",
+          "https://github.com/MuseumofOne/OSFArchive/blob/main/data/source/dialogue-accession-24130993-2026-11-11.json"
+        ],
+        "note": "Dorian Vale is the sole editorial author. Alexander Viktorovich Markov is a source-listed Other contributor and scholarly correspondent, not a coauthor. Museum of One is the publisher and source-qualified author affiliation. The October 2026 edition, November repository release, version 1.0 and existing DOI remain distinct. The programme retains its In development stage while its current body states Ongoing inquiry · Published editorial dialogue; the selected published output does not imply a completed joint publication."
+      }
+    ]
   }
 ]
