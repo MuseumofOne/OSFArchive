@@ -127,8 +127,15 @@ def capture_schema(record, assets, original_html, url, origin):
     }
     if source.get("updated_at"):
         based_on["dateModified"] = source["updated_at"]
+    document_language = (record.get("document_language") or {}).get("language")
+    if document_language:
+        based_on["inLanguage"] = document_language
     if record.get("language"):
-        based_on["inLanguage"] = record["language"]
+        based_on["mainEntity"] = {
+            "@type": "CreativeWork",
+            "name": source["title"],
+            "inLanguage": record["language"],
+        }
     if source["creators"]:
         based_on["author"] = [
             {
@@ -145,6 +152,7 @@ def capture_schema(record, assets, original_html, url, origin):
         "url": url,
         "name": source["title"],
         "description": record["summary"],
+        "inLanguage": "en",
         "dateCreated": record["first_captured_at"],
         "dateModified": record["capture"]["captured_at"],
         "isAccessibleForFree": True,

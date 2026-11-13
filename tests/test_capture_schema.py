@@ -18,6 +18,7 @@ class CaptureGraph(unittest.TestCase):
             },
             "summary": "Source summary",
             "language": ["en", "ja"],
+            "document_language": {"language": "en-GB", "checked_at": "2026-11-05"},
             "first_captured_at": "2026-11-05T00:00:00Z",
             "capture": {"captured_at": "2026-11-05T01:00:00Z"},
         }
@@ -43,7 +44,9 @@ class CaptureGraph(unittest.TestCase):
         self.assertEqual(graph["isBasedOn"]["author"][0]["name"], "Credited writer")
         self.assertNotIn("author", graph)
         self.assertNotIn("dateModified", graph["isBasedOn"])
-        self.assertEqual(graph["isBasedOn"]["inLanguage"], ["en", "ja"])
+        self.assertEqual(graph["inLanguage"], "en")
+        self.assertEqual(graph["isBasedOn"]["inLanguage"], "en-GB")
+        self.assertEqual(graph["isBasedOn"]["mainEntity"]["inLanguage"], ["en", "ja"])
         self.assertEqual(graph["encoding"]["sha256"], "b" * 64)
         media = graph["hasPart"][0]
         self.assertEqual(media["@type"], "ImageObject")
@@ -53,8 +56,10 @@ class CaptureGraph(unittest.TestCase):
             self.assertNotIn(field, media)
 
     def test_external_and_failed_files_do_not_receive_local_preservation_claims(self):
+        record = self.record()
+        record.pop("language")
         graph = capture_schema(
-            self.record(),
+            record,
             [
                 {
                     "url": "https://external.example/a.mp3",
@@ -67,6 +72,8 @@ class CaptureGraph(unittest.TestCase):
             "https://archive.museumofone.art",
         )
         self.assertNotIn("hasPart", graph)
+        self.assertEqual(graph["isBasedOn"]["inLanguage"], "en-GB")
+        self.assertNotIn("mainEntity", graph["isBasedOn"])
 
 
 if __name__ == "__main__":

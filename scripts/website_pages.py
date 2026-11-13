@@ -140,9 +140,14 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
     references = [row for row in inventory if row["collection"] is None]
     assert sum(map(len, arranged.values())) + len(references) == len(current)
     e = lambda x: escape(str(x or ""), quote=True)
-    intro = '<div class="page-head"><div class="eyebrow">Website captures</div><h1>Published website records</h1><p>Browse public Museum of One writing, research and tools by collection. Each card links to its preserved website capture and to a deposited edition where the source match is established.</p></div>'
+    standalone = sum(bool(row['collection']) and not row['edition_path'] for row in inventory)
+    linked = sum(bool(row['edition_path']) for row in inventory)
+    intro = '<div class="page-head"><div class="eyebrow">Website captures</div><h1>Published website records</h1><p>Browse captured Museum of One writing, research, tools and reference pages.</p></div>'
     intro += (
-        f'<p>{len(current)} public captures · Last reconciliation {e(report.get("checked_at", "Not yet run"))}</p>'
+        f'<p><strong><span data-capture-total="all">{len(current)}</span> public website captures</strong> · Last reconciliation {e(report.get("checked_at", "Not yet run"))}</p>'
+        f'<p><span data-capture-total="standalone">{standalone}</span> standalone catalogue {"record" if standalone == 1 else "records"}, '
+        f'<span data-capture-total="linked">{linked}</span> {"capture" if linked == 1 else "captures"} linked to deposited editions, and '
+        f'<span data-capture-total="reference">{len(references)}</span> website reference {"page" if len(references) == 1 else "pages"}.</p>'
         '<p><a href="metadata/website-sync.json">Reconciliation report</a> · '
         '<a href="metadata/publication-arrangement.json">Classification inventory</a></p>'
         '<nav aria-label="Website publication collections">'
@@ -152,16 +157,19 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
     captures_by_slug = {canonical_key(row["source_url"])[1].rsplit("/", 1)[-1]: row for row in inventory}
     for group, rows in arranged.items():
         anchor = collection_anchor(group)
-        intro += f'<section class="section" id="{anchor}"><div class="section-head"><h2>{e(group)}</h2><span>{len(rows)} website records</span></div>'
+        intro += f'<section class="section" id="{anchor}"><div class="section-head"><h2>{e(group)}</h2><span data-capture-count="{anchor}">{len(rows)} website {"capture" if len(rows) == 1 else "captures"}</span></div>'
         intro += publication_grid(rows) + "</section>"
-    intro += '<section class="section" id="website-reference"><h2>Website reference pages</h2><p>Programme pages, directories and institutional information.</p>'
+    intro += (f'<section class="section" id="website-reference"><div class="section-head"><h2>Website reference pages</h2>'
+              f'<span data-capture-count="website-reference">{len(references)} website {"capture" if len(references) == 1 else "captures"}</span></div>'
+              '<p>Programme pages, directories and institutional information.</p>')
     intro += publication_grid(references) + "</section>"
 
     if methodology is not None:
         methods = arranged[METHODOLOGY]
-        rai = [row for slug, row in captures_by_slug.items() if slug in RAI_SERIES and not row["edition_path"]]
+        rai = [row for row in methods if not row["edition_path"]
+               and canonical_key(row["source_url"])[1].rsplit("/", 1)[-1] in RAI_SERIES]
         papers = [row for row in methods if row not in rai and not row["edition_path"] and row["role"] != "Research tool or guide"]
-        tools = [row for row in methods if row not in rai and row["role"] == "Research tool or guide"]
+        tools = [row for row in methods if row not in rai and not row["edition_path"] and row["role"] == "Research tool or guide"]
         sections = '<section class="section"><h2>Website publications and research demonstrations</h2>' + publication_grid(papers) + "</section>"
         sections += '<section class="section"><h2>Research tools and guides</h2>' + publication_grid(tools) + "</section>"
         encounter = captures_by_slug.get("research-encounter-differential")
@@ -269,11 +277,13 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
             ("Subjects from public website tags", " · ".join(arrangement["source_subjects"]) or "None supplied"),
             ("Subjects added by the archive", " · ".join(arrangement["editorial_subjects"]) or "None added"),
         ])
+        if arrangement["document_language_checked"]:
+            fields.append(("Source HTML language checked", arrangement["document_language_checked"]))
         if arrangement["edition_path"]:
             fields.append(("Relationship to deposited edition", {
-                "exact_edition": "Source identifies the deposited edition",
-                "version_family": "Source identifies the version family",
-                "work": "Source describes the work",
+                "exact_edition": "The catalogue’s institutional metadata review records this deposited edition DOI.",
+                "version_family": "The catalogue’s institutional metadata review records the concept DOI for this version family.",
+                "work": "The catalogue links the source at work level.",
             }[arrangement["edition_relationship"]]))
         content = (
             '<div class="website-record"><div class="page-head"><div class="eyebrow">Website capture / '
@@ -310,8 +320,12 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
             content += "<h2>Source feature-image credit</h2>" + "".join(
                 Readable(r["feature_image_caption"]).parts
             )
+        content_language = (
+            ' lang="' + e(arrangement["source_document_language"]) + '"'
+            if arrangement["source_document_language"] else ""
+        )
         content += (
-            '<h2>Published content</h2><section class="website-captured-content">'
+            '<h2>Published content</h2><section class="website-captured-content"' + content_language + '>'
             + body
             + "</section>"
         )

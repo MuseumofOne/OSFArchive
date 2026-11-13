@@ -4,7 +4,7 @@ This is a derived access index, not a second descriptive catalogue. Publication
 eligibility is checked against repository snapshots. Other types need an
 explicit public, evidenced relationship to the reviewed catalogue/vocabulary.
 """
-from collections import Counter
+from collections import Counter, defaultdict
 from hashlib import sha256
 from html import escape
 import json
@@ -101,6 +101,7 @@ def build_research_discovery(records, entities, vocab, programmes, origin, *, ro
     programme_urls = {p['url'] for p in public_programmes}
     programme_ids = {urlsplit(u).path.rstrip('/').split('/')[-1] for u in programme_urls}
     inventory = {canonical_key(row["source_url"]): row for row in website_inventory}
+    publications_by_source = defaultdict(list)
     rows = []
     for rid, record in by_id.items():
         discovery_record = {**record,
@@ -117,9 +118,13 @@ def build_research_discovery(records, entities, vocab, programmes, origin, *, ro
                    sources=[_source(record['zenodo_url'], 'Repository edition', reviewed=record.get('source_review', ''))],
                    search_text=searchable_text(discovery_record))
         source = _url(record.get('institutional_url'))
-        if source and urlsplit(source).netloc == 'www.museumofone.art' and not (urlsplit(source).query or urlsplit(source).fragment):
-            row['original_url'] = source
-            row['aliases'] = _texts(row['aliases'] + TITLE_ALIASES.get(canonical_key(source)[1].rsplit('/', 1)[-1], []))
+        if source:
+            parsed_source = urlsplit(source)
+            source_key = canonical_key(source)
+            if source_key[0] == 'museumofone.art' and not (parsed_source.query or parsed_source.fragment):
+                row['original_url'] = source
+                row['aliases'] = _texts(row['aliases'] + TITLE_ALIASES.get(source_key[1].rsplit('/', 1)[-1], []))
+                publications_by_source[source_key].append((record, row))
         row['archive_url'] = row['url']
         if record.get('osf_copy'):
             o = record['osf_copy']
@@ -218,7 +223,8 @@ def build_research_discovery(records, entities, vocab, programmes, origin, *, ro
                    sources=[_source(address, 'Public Ghost page', reviewed=page['reviewed'], sha256=page['source_sha256'])],
                    search_text=' '.join(_texts([page['title'], row['summary'], page.get('text'), page.get('author')])),
                    source_sha256=page['source_sha256'])
-        entry = inventory.get(canonical_key(address))
+        source_key = canonical_key(address)
+        entry = inventory.get(source_key)
         if entry:
             row.update(collection=entry['collection'] or '', aliases=entry['aliases'],
                        subjects=entry['subjects'], date=(entry['date'] or '')[:10],
@@ -229,18 +235,18 @@ def build_research_discovery(records, entities, vocab, programmes, origin, *, ro
             if not re.fullmatch(re.escape(origin)+r'/website/web-[a-f0-9]{24}\.html',capture_url):raise ValueError('Invalid web capture route')
             row['archive_url'] = capture_url
             row['relationships'].append(_edge('Stored website capture',page_id,capture_url,address,'Readable archival copy of this public web record; not a new publication edition.'))
-        for rid, record in by_id.items():
-            if str(record.get('institutional_url', '')).rstrip('/') == address.rstrip('/'):
-                scope = record.get('institutional_match_scope') or institutional_scope(record)
-                scope_notes = {
-                    'exact_edition': 'The reviewed website metadata explicitly links this deposited edition DOI. Web and edition publication dates remain separate.',
-                    'version_family': 'The reviewed website metadata links the concept DOI for this version family; an exact deposited-edition match is not established.',
-                    'work': 'The catalogue links this website description at work level; a match to the particular deposited edition is not established.',
-                }
-                if scope not in scope_notes:
-                    raise ValueError('Unsupported institutional match scope: ' + str(scope))
-                row['relationships'].append(_edge('website description linked to catalogue publication', 'publication:' + rid, origin + '/items/' + rid + '.html', address, scope_notes[scope], institutional_match_scope=scope, evidence_scope=scope))
-                next(r for r in rows if r['id'] == 'publication:' + rid)['relationships'].append(_edge('institutional web description', page_id, address, address, scope_notes[scope], institutional_match_scope=scope, evidence_scope=scope))
+        for record, publication in publications_by_source.get(source_key, ()):
+            scope = record.get('institutional_match_scope') or institutional_scope(record)
+            scope_notes = {
+                'exact_edition': 'The catalogue’s institutional metadata review records this deposited edition DOI. Web and edition publication dates remain separate.',
+                'version_family': 'The catalogue’s institutional metadata review records the concept DOI for this version family.',
+                'work': 'The catalogue links this website description at work level.',
+            }
+            if scope not in scope_notes:
+                raise ValueError('Unsupported institutional match scope: ' + str(scope))
+            publication['original_url'] = address
+            row['relationships'].append(_edge('website description linked to catalogue publication', publication['id'], publication['url'], address, scope_notes[scope], institutional_match_scope=scope, evidence_scope=scope))
+            publication['relationships'].append(_edge('institutional web description', page_id, address, address, scope_notes[scope], institutional_match_scope=scope, evidence_scope=scope))
         for eid, entity in public_entities.items():
             for link in entity.get('web_links', []):
                 if link['url'] == address:

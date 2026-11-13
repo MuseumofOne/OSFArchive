@@ -166,7 +166,8 @@ write('collections.html',layout('Collections','Explore books, theoretical writin
 methodology_desc = collection_config['collections'][-1]['description']
 methodology = pagehead('Collections', METHODOLOGY, methodology_desc)
 methodology += '<section class="section" id="rai"><div class="section-head"><h2>Relational Archival Investigation</h2><a href="evidence.html">Explore RAI evidence ↗</a></div><div class="book-grid">'
-rai_records = [r for r in RECORDS if programme_id({"url": r.get("institutional_url") or ""}) in RAI_SERIES]
+rai_records = [r for r in RECORDS if r['collection'] == METHODOLOGY
+               and programme_id({"url": r.get("institutional_url") or ""}) in RAI_SERIES]
 methodology += ''.join(card(r, capture=CAPTURE_LINKS.get(f'items/{r["id"]}.html')) for r in rai_records)
 methodology += '</div><div data-methodology-rai></div></section>'
 methodology += '<section class="section"><div class="section-head"><h2>Other deposited editions</h2><a href="catalogue.html?collection=Methodology">Filter the item register ↗</a></div><div class="book-grid">'

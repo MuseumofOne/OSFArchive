@@ -15,6 +15,7 @@ import sys
 from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
 from archive_design import STYLES, THEME_COLOR, VIEWPORT, asset_url, source as style_source
+from publication_arrangement import collection_anchor, collection_link
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -42,8 +43,13 @@ class Page(HTMLParser):
         self.iframes = []
         self.stylesheets = []
         self.body_classes = []
-        self.catalogue_cards = Counter()
-        self.methodology_cards = Counter()
+        self.cards = Counter()
+        self.pending_card = None
+        self.capture_section = None
+        self.inventory_group = None
+        self.collection_href = None
+        self.collection_links = Counter()
+        self.edition_links = []
         self.explorer_counts = {}
         self.count_text = None
         self.feed(path.read_text(encoding="utf-8"))
@@ -51,15 +57,34 @@ class Page(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
-        if 'data-record' in attrs and attrs.get('data-format') in ('edition', 'website'):
-            self.catalogue_cards[attrs.get('data-group'), attrs['data-format']] += 1
-        if self.path.name == 'methodology.html':
-            classes = (attrs.get('class') or '').split()
+        classes = (attrs.get('class') or '').split()
+        name = self.path.name
+        if name == 'website-records.html' and tag == 'section' and 'section' in classes:
+            self.capture_section = attrs.get('id')
+        if name == 'finding-aid.html' and tag == 'table':
+            self.inventory_group = attrs.get('data-edition-group')
+        if name == 'catalogue.html' and 'data-record' in attrs:
+            self.pending_card = (attrs.get('data-group'), attrs.get('data-format'))
+        if name in ('methodology.html', 'website-records.html'):
             if 'book-card' in classes:
-                self.methodology_cards['edition'] += 1
-            if 'publication-card' in classes:
-                self.methodology_cards['website'] += 1
-        for key in ('data-ax-total', 'data-ax-deposit-count', 'data-ax-website-count', 'data-ax-full-count'):
+                self.pending_card = ('Methodology', 'edition')
+            elif 'publication-card' in classes:
+                self.pending_card = (self.capture_section or 'Methodology', 'website')
+        if tag == 'a':
+            href = attrs.get('href', '')
+            if self.pending_card:
+                self.cards[(*self.pending_card, href)] += 1
+                self.pending_card = None
+            if self.inventory_group and href.startswith('items/'):
+                self.cards[self.inventory_group, href] += 1
+            if 'ax-collection-row' in classes:
+                self.collection_href = href
+            if attrs.get('data-ax-view') == 'catalogue':
+                self.edition_links.append(href)
+        if 'data-ax-full-count' in attrs:
+            self.collection_links[attrs['data-ax-full-count'], attrs.get('data-count'), self.collection_href] += 1
+        for key in ('data-ax-total', 'data-ax-deposit-count', 'data-ax-website-count', 'data-ax-full-count',
+                    'data-capture-count', 'data-capture-total'):
             if key in attrs:
                 values = self.explorer_counts.setdefault((key, attrs[key]), [])
                 self.count_text = (tag, values, [])
@@ -93,6 +118,14 @@ class Page(HTMLParser):
             self.text.append(data)
 
     def handle_endtag(self, tag):
+        if tag == 'a':
+            self.collection_href = None
+        if tag == 'article':
+            self.pending_card = None
+        if tag == 'section':
+            self.capture_section = None
+        if tag == 'table':
+            self.inventory_group = None
         if self.count_text and tag == self.count_text[0]:
             _, values, parts = self.count_text
             values.append(''.join(parts).strip())
@@ -114,20 +147,70 @@ def normalized_doi(value):
     return re.sub(r"^(?:https?://(?:dx\.)?doi\.org/|doi:\s*)", "", str(value or ""), flags=re.I).lower().strip()
 
 
-def check_explorer_counts(pages):
-    cards = pages[(DIST / 'catalogue.html').resolve()].catalogue_cards
-    groups = {group for group, _ in cards}
+def check_explorer_counts(pages, origin, records):
+    required = ['catalogue.html', 'methodology.html', 'index.html', 'finding-aid.html', 'website-records.html']
+    by_name = {name: pages.get((DIST / name).resolve()) for name in required}
+    integration = DIST / 'integration/archive-explorer.hbs'
+    if not all(by_name.values()) or not integration.is_file():
+        require(False, 'Catalogue consistency check is missing a required page or integration partial.')
+        return
+    arrangement = load(DIST / 'metadata/publication-arrangement.json') or {}
+    captures = arrangement.get('records', [])
+    standalone = [row for row in captures if row['collection'] and not row['edition_path']]
+    reference = [row for row in captures if not row['collection']]
+    linked = [row for row in captures if row['edition_path']]
+    editions = [(row['collection'], 'edition', f"items/{row['id']}.html") for row in records]
+    inventory = Counter(editions + [(row['collection'], 'website', row['capture_path']) for row in standalone])
+    require(by_name['catalogue.html'].cards == inventory,
+            'Displayed catalogue records differ from the edition and capture inventories by identity, collection or format.')
+    require(by_name['methodology.html'].cards == Counter({key: n for key, n in inventory.items() if key[0] == 'Methodology'}),
+            'Methodology destination differs from the expected catalogue records.')
+    require(by_name['finding-aid.html'].cards == Counter({(group, path): 2 for group, _, path in editions}),
+            'Finding aid inventory must list each deposited edition with matching reference and title links.')
+
+    capture_index = by_name['website-records.html']
+    captures_by_section = Counter((collection_anchor(row['collection']) if row['collection'] else 'website-reference',
+                                  'website', row['capture_path']) for row in captures)
+    require(capture_index.cards == captures_by_section, 'Website capture index has missing, duplicate or misplaced records.')
+    capture_totals = {'all': len(captures), 'standalone': len(standalone), 'linked': len(linked), 'reference': len(reference)}
+    require(capture_totals['all'] == sum(n for key, n in capture_totals.items() if key != 'all'),
+            'Website capture categories do not form an exhaustive breakdown.')
+    expected_captures = {('data-capture-total', key): [str(n)] for key, n in capture_totals.items()}
+    groups = arrangement.get('collections', {})
+    for anchor in [*(collection_anchor(group) for group in groups), 'website-reference']:
+        n = sum(count for (section, _, _), count in captures_by_section.items() if section == anchor)
+        expected_captures['data-capture-count', anchor] = [f'{n} website {"capture" if n == 1 else "captures"}']
+    require(capture_index.explorer_counts == expected_captures, 'Website capture index counts differ from the records displayed.')
+    require(Counter(row['capture_path'] for row in captures) ==
+            Counter(path.relative_to(DIST).as_posix() for path in (DIST / 'website').glob('web-*.html')),
+            'Readable capture files differ from the classification inventory.')
+
+    cards = Counter()
+    for (group, form, _), count in inventory.items():
+        cards[group, form] += count
     full = {group: cards[group, 'edition'] + cards[group, 'website'] for group in groups}
     feed = load(DIST / 'metadata/research-discovery.v2.json') or {}
     rows = feed.get('records', [])
     kinds = Counter(row['kind'] for row in rows)
-    indexed_cards = Counter((row['collection'], 'edition' if row['kind'] == 'publication' else 'website')
+    prefix = origin + '/'
+    indexed_cards = Counter((row['collection'], 'edition' if row['kind'] == 'publication' else 'website',
+                             row.get('archive_url', row['url']).removeprefix(prefix))
                             for row in rows if row['kind'] == 'publication' or row.get('catalogue_record') is True)
-    require(indexed_cards == cards, 'Discovery entries and displayed catalogue cards differ by collection or format.')
+    require(indexed_cards == inventory, 'Discovery entries differ from the catalogue by identity, collection or format.')
+    require(Counter((row.get('original_url'), row.get('archive_url'), row.get('collection') or None)
+                    for row in rows if row['kind'] == 'website' and row.get('archive_url')) ==
+            Counter((row['source_url'], prefix + row['capture_path'], row['collection']) for row in captures),
+            'Website discovery destinations and collection assignments differ from the capture inventory.')
+    by_url = {row['url']: row for row in rows}
+    for row in linked:
+        website = by_url.get(row['source_url'], {})
+        edition = by_url.get(prefix + row['edition_path'], {})
+        scope = row['edition_relationship']
+        require(all(any(edge.get('target_id') == target.get('id') and edge.get('url') == target.get('url')
+                        and edge.get('evidence_scope') == scope for edge in source.get('relationships', []))
+                    for source, target in ((website, edition), (edition, website))),
+                f"Missing reciprocal edition relationship or wrong evidence scope: {row['capture_path']}")
     require(feed.get('collection_counts') == full, 'Discovery collection totals do not match the catalogue cards.')
-    methodology = pages[(DIST / 'methodology.html').resolve()].methodology_cards
-    require(all(methodology[format] == cards['Methodology', format] for format in ('edition', 'website')),
-            'Methodology destination does not match the catalogue by record format.')
 
     totals = {'catalogue': sum(full.values()), 'publication': kinds['publication'],
               'website': sum(count for (_, format), count in cards.items() if format == 'website'),
@@ -137,9 +220,13 @@ def check_explorer_counts(pages):
         expected['data-ax-full-count', group] = [f'{count} catalogue {"record" if count == 1 else "records"} ↗']
         expected['data-ax-deposit-count', group] = [str(cards[group, 'edition'])]
         expected['data-ax-website-count', group] = [str(cards[group, 'website'])]
-    for page in (pages[(DIST / 'index.html').resolve()], Page(DIST / 'integration/archive-explorer.hbs')):
+    for page, base in ((by_name['index.html'], ''), (Page(integration), prefix)):
         require(page.explorer_counts == expected,
                 f'Explorer counts do not match the catalogue and discovery index: {page.path.relative_to(DIST)}')
+        require(page.collection_links == Counter((group, str(n), base + collection_link(group)) for group, n in full.items()),
+                f'Explorer collection counts link to the wrong destinations: {page.path.relative_to(DIST)}')
+        require(page.edition_links and set(page.edition_links) == {base + 'finding-aid.html#inventory'},
+                f'Deposited edition controls must link to the edition inventory: {page.path.relative_to(DIST)}')
 
 
 def main():
@@ -155,13 +242,15 @@ def main():
                 f"Style output differs from tracked source: {name}. Rebuild before publishing.")
     if ERRORS:
         return report()
-    check_explorer_counts(pages)
     require(len(pages) >= 5, "Core pages are missing.")
     origins = {urlsplit(page.canonical).netloc for page in pages.values() if page.canonical}
     require(len(origins) == 1, f"Canonical URLs use inconsistent origins: {origins}")
     public_catalogue = load(DIST / 'metadata' / 'catalogue.json') or {}
     origin = str(public_catalogue.get('canonical_origin') or '').rstrip('/')
     require(urlsplit(origin).scheme == 'https' and bool(urlsplit(origin).netloc), 'Public catalogue lacks an absolute HTTPS canonical_origin.')
+    catalogue = load(ROOT / "data" / "catalogue.json")
+    records = catalogue.get("records", []) if isinstance(catalogue, dict) else catalogue or []
+    check_explorer_counts(pages, origin, records)
     canonical_values = [page.canonical for page in pages.values()]
     require(len(canonical_values) == len(set(canonical_values)), 'Multiple HTML pages have the same canonical URL.')
     internal_links = 0
@@ -222,6 +311,8 @@ def main():
                 if target.parent == (DIST/'read').resolve() and page_route:
                     manifest=load(DIST/'metadata/readers'/(target.stem+'.json')) or {}
                     require(1 <= int(page_route[1]) <= manifest.get('page_count',0), f"Reader page outside source extent in {relative}: {link}")
+                elif target == (DIST / 'index.html').resolve() and fragment == 'ax:view=reading':
+                    require('archive-explorer' in pages[target].ids, f"Missing explorer for reading list in {relative}")
                 else:
                     require(fragment in pages[target].ids, f"Missing fragment in {relative}: {link}")
 
@@ -245,8 +336,6 @@ def main():
         except (ET.ParseError, OSError) as exc:
             ERRORS.append(f"Invalid XML {path.relative_to(DIST)}: {exc}")
 
-    catalogue = load(ROOT / "data" / "catalogue.json")
-    records = catalogue.get("records", []) if isinstance(catalogue, dict) else catalogue or []
     require(bool(records), "Catalogue has no records.")
     ids = [str(r.get("id", "")) for r in records]
     dois = [normalized_doi(r.get("doi")) for r in records]

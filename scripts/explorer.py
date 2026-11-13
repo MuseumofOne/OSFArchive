@@ -19,7 +19,7 @@ def e(value):
 
 def render_explorer(records, programmes, origin, *, standalone=False, collection_counts=None, index_counts=None):
     origin=origin.rstrip('/')
-    dest=lambda path: path if standalone else origin+'/'+path
+    dest=lambda path: path if standalone or path.startswith('#') else origin+'/'+path
     asset=lambda path: path if standalone else "{{asset 'archive/explorer/"+path.removeprefix('assets/')+"'}}"
     index='metadata/research-discovery.v2.json' if standalone else "{{asset 'archive/research-discovery.v2.json'}}"
     passages='metadata/research-passages.v2.json' if standalone else "{{asset 'archive/research-passages.v2.json'}}"
@@ -28,6 +28,8 @@ def render_explorer(records, programmes, origin, *, standalone=False, collection
     groups = list(collection_counts)
     catalogue_total = sum(collection_counts.values())
     website_total = catalogue_total - len(records)
+    edition_label = 'deposited edition' if len(records) == 1 else 'deposited editions'
+    edition_inventory = 'finding-aid.html#inventory'
     newest=sorted(records,key=lambda r:r['date'],reverse=True)
     # The contextual register also includes people linked through exchanges/programmes.
     if index_counts is None:
@@ -52,7 +54,7 @@ def render_explorer(records, programmes, origin, *, standalone=False, collection
         return f'<a href="{e(dest(path))}" data-ax-view="{view}"{extra}>{label}</a>'
     html=f'''<section class="archive-explorer" id="archive-explorer" data-archive-explorer data-standalone="{str(standalone).lower()}" data-origin="{e(origin)}" aria-label="Interactive archive explorer">
 <div class="ax-topline"><span>Archive registry / Item-level records</span><a data-ax-handoff href="{e(origin+'/')}">Open full archive ↗</a><button type="button" data-ax-expand aria-pressed="false" hidden>Expand explorer</button></div>
-<div class="ax-workspace"><aside class="ax-tree" aria-label="Explorer collection tree"><details><summary>Browse the archive<small>{len(records)} deposited editions · {chapters} analytic parts</small></summary><nav aria-label="Explorer pathways"><a class="ax-tree-root" href="{e(dest('finding-aid.html'))}">Museum of One<br>Digital Archive Library</a>{nav('Overview','overview','index.html')}{nav('Deposited editions <small>'+str(len(records))+'</small>','catalogue','catalogue.html')}'''
+<div class="ax-workspace"><aside class="ax-tree" aria-label="Explorer collection tree"><details><summary>Browse the archive<small>{len(records)} {edition_label} · {chapters} indexed {"chapter or essay" if chapters == 1 else "chapters and essays"}</small></summary><nav aria-label="Explorer pathways"><a class="ax-tree-root" href="{e(dest('finding-aid.html'))}">Museum of One<br>Digital Archive Library</a>{nav('Overview','overview','index.html')}{nav('Deposited editions <small>'+str(len(records))+'</small>','catalogue',edition_inventory)}'''
     def collection_attributes(group):
         href = e(dest(collection_link(group)))
         return f'href="{href}"'
@@ -60,12 +62,12 @@ def render_explorer(records, programmes, origin, *, standalone=False, collection
     for group in groups:
         rs=[r for r in records if r['collection']==group]
         html+=f'<details class="ax-tree-group"><summary>{e(group)}<small>{len(rs)} deposited {"edition" if len(rs) == 1 else "editions"}</small></summary><a {collection_attributes(group)}>Browse this collection · {collection_counts[group]} catalogue {"record" if collection_counts[group] == 1 else "records"} →</a><ul>'+''.join(f'<li><a data-ax-handoff href="{e(dest("items/"+str(r["id"])+".html"))}"><small>{e(r["accession"])}</small>{e(r.get("short_title") or r["title"])}</a></li>' for r in rs)+'</ul></details>'
-    html+=nav('Discover across the archive','discover','research-discovery.html')+nav('Reading list <span data-ax-count>0</span>','reading','catalogue.html')
+    reading = '#ax:view=reading'
+    html+=nav('Discover across the archive','discover','research-discovery.html')+nav('Reading list <span data-ax-count>0</span>','reading',reading)
     for path,label in [('methodology.html','Methodology'),('contents.html','Chapters & essays'),('people.html','People & organisations'),('artworks.html','Artworks discussed'),('programmes.html','Research pathways'),('vocabulary.html','Discovery vocabulary'),('metadata-quality.html','Catalogue quality'),('finding-aid.html','Finding aid')]:
         html+=f'<a href="{e(dest(path))}">{label} ↗</a>'
     html+='</nav><p class="ax-note">Published items and analytic parts. Editorial arrangement is described in the finding aid.</p></details></aside><div class="ax-workbench">'
     html+=f'''<div class="ax-opening"><p class="ax-label">Research catalogue / Museum of One</p><{heading} class="ax-title" id="ax-title">The archive,<br><em>in context.</em></{heading}><p>Read the publications. Follow ideas, artworks and people through a connected record of independent inquiry.</p><form class="ax-entry-search" data-ax-entry action="{e(dest('research-discovery.html'))}" method="get" role="search"><label for="ax-entry-query" class="ax-sr">Search the archive</label><input id="ax-entry-query" name="q" type="search" placeholder="A title, person, artwork or idea…"><button type="submit">Search the archive ↗</button></form><dl class="ax-totals">'''
-    edition_label = 'deposited edition' if len(records) == 1 else 'deposited editions'
     website_label = 'website record' if website_total == 1 else 'website records'
     html += (f'<div><dt>Catalogue records</dt><dd data-ax-total="catalogue">{catalogue_total}</dd>'
              f'<dd class="ax-total-breakdown"><span data-ax-total="publication">{len(records)}</span> {edition_label} · '
@@ -73,7 +75,7 @@ def render_explorer(records, programmes, origin, *, standalone=False, collection
     for kind, label in [('chapter', 'Indexed chapters & essays'), ('entity', 'Indexed people, works & organisations'),
                         ('programme', 'Research programmes')]:
         html += f'<div><dt>{e(label)}</dt><dd data-ax-total="{kind}">{index_counts.get(kind, 0)}</dd></div>'
-    html+='</dl></div><nav class="ax-tabs" aria-label="Archive explorer views">'+''.join(nav(label,view,path) for label,view,path in [('Overview','overview','index.html'),('Catalogue','catalogue','catalogue.html'),('Discover','discover','research-discovery.html'),('Reading list','reading','catalogue.html')])+'</nav>'
+    html+='</dl></div><nav class="ax-tabs" aria-label="Archive explorer views">'+''.join(nav(label,view,path) for label,view,path in [('Overview','overview','index.html'),('Deposited editions','catalogue',edition_inventory),('Discover','discover','research-discovery.html'),('Reading list','reading',reading)])+'</nav>'
     rows = '<p class="ax-count-note">Each collection combines deposited editions and standalone website records. A website capture linked to a deposited edition shares its catalogue entry.</p>'
     for i,group in enumerate(groups):
         total, deposited = collection_counts[group], deposit_counts[group]
@@ -86,10 +88,10 @@ def render_explorer(records, programmes, origin, *, standalone=False, collection
                  f'{total} catalogue {"record" if total == 1 else "records"} ↗</span></a>')
     if standalone:
         html = html.replace('</form><dl class="ax-totals">', '</form><nav class="ax-entrance-collections" aria-label="Collections">'+rows+'</nav><dl class="ax-totals">', 1)
-    html+='<div data-ax-panel="overview"><div class="ax-section-head"><h3>The collection register</h3>'+nav('Browse deposited editions ↗','catalogue','catalogue.html')+'</div>'
+    html+='<div data-ax-panel="overview"><div class="ax-section-head"><h3>The collection register</h3>'+nav('Browse deposited editions ↗','catalogue',edition_inventory)+'</div>'
     if not standalone:
         html += rows
-    html+='<div class="ax-section-head"><h3>On the reading desk</h3>'+nav('View the complete shelf ↗','catalogue','catalogue.html')+'</div><div class="ax-grid ax-featured">'+''.join(card(r) for r in newest[:4])+'</div></div>'
+    html+='<div class="ax-section-head"><h3>On the reading desk</h3>'+nav('View all deposited editions ↗','catalogue',edition_inventory)+'</div><div class="ax-grid ax-featured">'+''.join(card(r) for r in newest[:4])+'</div></div>'
     def options(values):return ''.join(f'<option value="{e(v)}">{e(v)}</option>' for v in values)
     html+=f'''<section data-ax-panel="catalogue" aria-labelledby="ax-catalogue-heading" hidden><div class="ax-section-head"><h3 id="ax-catalogue-heading">Deposited editions</h3><a href="{e(dest('catalogue.html'))}">Browse all publications ↗</a></div><form data-ax-filter class="ax-filters" role="search" action="{e(dest('catalogue.html'))}" method="get"><label>Search the catalogue<input aria-label="Search the catalogue" name="q" type="search" placeholder="Title, creator, subject or DOI"></label><label>Collection<select aria-label="Collection" name="collection"><option value="">All collections</option>{options(groups)}</select></label><label>Publication year<select aria-label="Publication year" name="year"><option value="">All years</option>{options(sorted({r['date'][:4] for r in records},reverse=True))}</select></label><label>Material type<select aria-label="Material type" name="type"><option value="">All types</option>{options(sorted({r['type'] for r in records}))}</select></label><label>Sort<select aria-label="Sort" name="sort"><option value="newest">Latest source publication</option><option value="reference">Reference order</option><option value="oldest">Earliest source publication</option><option value="title">Title A–Z</option></select></label><button type="reset">Clear filters</button><button class="ax-fallback-submit" type="submit">Search</button></form><div class="ax-resultbar"><p data-ax-results role="status">{len(records)} records</p><div role="group" aria-label="Catalogue presentation"><button type="button" data-ax-layout="shelf" aria-pressed="true">Shelf</button><button type="button" data-ax-layout="list" aria-pressed="false">List</button></div></div><div class="ax-grid" data-ax-cards>'''+''.join(card(r) for r in newest)+'''</div><p data-ax-empty hidden>No matching records. Try fewer words or clear the filters.</p></section>'''
     html+=f'''<section data-ax-panel="discover" hidden><div data-research-discovery data-archive-origin="{e(origin)}" data-index-snapshot="{index}" data-passages-url="{passages}" data-local-results="{str(standalone).lower()}"><div class="ax-section-head"><h3>Follow a line of inquiry</h3></div><form data-discovery-form class="ax-discovery-form" role="search" method="get" action="{e(dest('research-discovery.html'))}"><label for="ax-discovery-query">Search titles, names, identifiers and concepts</label><input id="ax-discovery-query" name="q" type="search" placeholder="A title, person, artwork or idea…"><div class="ax-discovery-controls"><label>Look in<select aria-label="Look in" name="kind"><option value="">All records</option><option value="publication">Publications</option><option value="chapter">Chapters & essays</option><option value="entity">People, artworks & events</option><option value="concept">Concepts & subjects</option><option value="programme">Research programmes</option><option value="website">Writing & website pages</option><option value="passage">Source passages only</option></select></label><label>Collection<select name="collection"><option value="">All collections</option>{options(groups)}</select></label><label class="ax-check"><input type="checkbox" name="fulltext" value="1"> Also search passages in publications</label><button type="submit">Search</button></div></form><p data-discovery-status role="status" aria-live="polite">Search the archive or follow a collection link.</p><ol data-discovery-results class="ax-discovery-results"></ol><button type="button" data-discovery-more hidden>Show more results</button><p class="ax-note">Passages quote the original PDF text layer and link to its file page. Check the deposited PDF for layout, wording and rights.</p></div></section>'''

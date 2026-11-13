@@ -108,10 +108,18 @@ class ResearchDiscovery(unittest.TestCase):
             record = next(r for r in records if r.get('institutional_url'))
             record['institutional_match_scope'] = scope
             record.setdefault('institutional_metadata', {})['linked_zenodo_dois'] = [record['doi']] if scope == 'exact_edition' else [record['conceptdoi']] if scope == 'version_family' else []
-            page = dict(url=record['institutional_url'], source_url=record['institutional_url'], title='Verified web description', public=True, reviewed='2026-11-04', source_sha256='a' * 64)
-            feed = self.build(records=records, ghost_records=[page])
+            source_url = record['institutional_url']
+            record['institutional_url'] = source_url.replace('://www.', '://').rstrip('/')
+            page = dict(url=source_url, source_url=source_url, title='Verified web description', public=True, reviewed='2026-11-04', source_sha256='a' * 64)
+            inventory = [dict(source_url=source_url, collection=record['collection'], aliases=[],
+                              subjects=[], date=record['date'], role='Website version',
+                              edition_path='items/' + record['id'] + '.html',
+                              capture_path='website/web-' + 'b' * 24 + '.html')]
+            feed = self.build(records=records, ghost_records=[page], website_inventory=inventory)
             website = next(r for r in feed['records'] if r['kind'] == 'website')
             publication = next(r for r in feed['records'] if r['id'] == 'publication:' + record['id'])
+            self.assertFalse(website['catalogue_record'])
+            self.assertEqual(publication['original_url'], source_url)
             edges = [next(e for e in website['relationships'] if e['target_id'] == publication['id']), next(e for e in publication['relationships'] if e['target_id'] == website['id'])]
             for edge in edges:
                 self.assertEqual(edge['institutional_match_scope'], scope)
