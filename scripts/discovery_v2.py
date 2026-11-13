@@ -14,6 +14,7 @@ from urllib.parse import urlsplit
 
 from integration_search import load_source_snapshots, public_export_eligible, searchable_text
 from identities import institutional_scope
+from publication_arrangement import TITLE_ALIASES, canonical_key
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_VERSION = 2
@@ -91,7 +92,7 @@ def _record(id, kind, title, url, summary='', **extra):
     return row
 
 
-def build_research_discovery(records, entities, vocab, programmes, origin, *, root=ROOT, ghost_records=(), evidence_payload=None):
+def build_research_discovery(records, entities, vocab, programmes, origin, *, root=ROOT, ghost_records=(), website_inventory=(), collection_counts=None, evidence_payload=None):
     origin = _origin(origin)
     by_id = _eligible(records, root)
     public_entities = {e['id']: e for e in entities if _public(e) and e.get('sources') and (any(str(link.get('record_id')) in by_id and _url(link.get('source_url')) for link in e.get('record_links', [])) or any(_url(link.get('url')) and link.get('source_url') == link.get('url') and link.get('reviewed') and link.get('note') and link.get('relation') == 'dialogue participant' for link in e.get('web_links', [])))}
@@ -99,6 +100,7 @@ def build_research_discovery(records, entities, vocab, programmes, origin, *, ro
     public_programmes = [p for p in programmes if _public(p) and _url(p.get('source_url')) and p.get('reviewed')]
     programme_urls = {p['url'] for p in public_programmes}
     programme_ids = {urlsplit(u).path.rstrip('/').split('/')[-1] for u in programme_urls}
+    inventory = {canonical_key(row["source_url"]): row for row in website_inventory}
     rows = []
     for rid, record in by_id.items():
         discovery_record = {**record,
@@ -114,6 +116,11 @@ def build_research_discovery(records, entities, vocab, programmes, origin, *, ro
                    identifiers=_texts([rid, record.get('accession'), record.get('doi'), record.get('conceptdoi'), record.get('isbn')]),
                    sources=[_source(record['zenodo_url'], 'Repository edition', reviewed=record.get('source_review', ''))],
                    search_text=searchable_text(discovery_record))
+        source = _url(record.get('institutional_url'))
+        if source and urlsplit(source).netloc == 'www.museumofone.art' and not (urlsplit(source).query or urlsplit(source).fragment):
+            row['original_url'] = source
+            row['aliases'] = _texts(row['aliases'] + TITLE_ALIASES.get(canonical_key(source)[1].rsplit('/', 1)[-1], []))
+        row['archive_url'] = row['url']
         if record.get('osf_copy'):
             o = record['osf_copy']
             row['sources'].append(_source(o['osf_url'], 'OSF exact edition PDF', reviewed=o['verified_at']))
@@ -211,9 +218,16 @@ def build_research_discovery(records, entities, vocab, programmes, origin, *, ro
                    sources=[_source(address, 'Public Ghost page', reviewed=page['reviewed'], sha256=page['source_sha256'])],
                    search_text=' '.join(_texts([page['title'], row['summary'], page.get('text'), page.get('author')])),
                    source_sha256=page['source_sha256'])
-        if page.get('archive_url'):
-            capture_url=page['archive_url']
+        entry = inventory.get(canonical_key(address))
+        if entry:
+            row.update(collection=entry['collection'] or '', aliases=entry['aliases'],
+                       subjects=entry['subjects'], date=(entry['date'] or '')[:10],
+                       resource_type=entry['role'])
+        row['original_url'] = address
+        capture_url = origin + '/' + entry['capture_path'] if entry else page.get('archive_url')
+        if capture_url:
             if not re.fullmatch(re.escape(origin)+r'/website/web-[a-f0-9]{24}\.html',capture_url):raise ValueError('Invalid web capture route')
+            row['archive_url'] = capture_url
             row['relationships'].append(_edge('Stored website capture',page_id,capture_url,address,'Readable archival copy of this public web record; not a new publication edition.'))
         for rid, record in by_id.items():
             if str(record.get('institutional_url', '')).rstrip('/') == address.rstrip('/'):
@@ -245,7 +259,8 @@ def build_research_discovery(records, entities, vocab, programmes, origin, *, ro
             edge['target_title'] = titles[edge['target_id']]
     from evidence import evidence_discovery
     rows.extend(evidence_discovery(evidence_payload,origin))
-    return _finish(rows, origin, counts=dict(Counter(r['kind'] for r in rows)))
+    return _finish(rows, origin, counts=dict(Counter(r['kind'] for r in rows)),
+                   collection_counts=dict(collection_counts or {}))
 
 
 def build_fulltext_index(records, root, origin):
@@ -310,11 +325,11 @@ def build_discovery_page(write, layout, feed, origin):
     e = lambda x: escape(str(x), quote=True)
     kinds = [('publication', 'Publications'), ('chapter', 'Chapters & essays'), ('entity', 'People, artworks & events'), ('concept', 'Concepts & subjects'), ('programme', 'Research programmes'), ('website', 'Writing & website pages'), ('evidence', 'Evidence records & dossiers'), ('passage', 'Source passages only')]
     choices = ''.join('<option value="' + k + '">' + label + '</option>' for k, label in kinds)
-    fallback = ''.join('<li><a href="' + e(row['url'][len(origin) + 1:] if row['url'].startswith(origin + '/') else row['url']) + '">' + e(row['title']) + '</a><small>' + e(row['kind']) + '</small></li>' for row in feed['records'])
+    fallback = ''.join('<li><a href="' + e(target[len(origin) + 1:] if target.startswith(origin + '/') else target) + '">' + e(row['title']) + '</a><small>' + e(row['kind']) + '</small></li>' for row in feed['records'] for target in [row.get('archive_url') or row['url']])
     body = '''<div class="page-head"><div class="eyebrow">Connected research discovery</div><h1>Follow an idea through the archive.</h1><p>Find a publication, a chapter, a person, an artwork or a concept. Each connection leads back to its source.</p></div>'''
     body += '''<section class="research-discovery" data-research-discovery data-sync-url="true" data-local-results="true" data-archive-origin="''' + e(origin) + '''" data-index-snapshot="metadata/research-discovery.v2.json" data-passages-url="metadata/research-passages.v2.json"><form class="discovery-form" data-discovery-form method="get" action="research-discovery.html"><label for="research-query">Search titles, names, identifiers and concepts</label><input id="research-query" type="search" name="q" autocomplete="off"><div class="discovery-controls"><label for="research-kind">Look in</label><select id="research-kind" name="kind"><option value="">All records</option>''' + choices + '''</select><label><input type="checkbox" name="fulltext"> Also search passages in the publications</label><button type="submit">Search</button></div></form><p class="discovery-status" data-discovery-status role="status" aria-live="polite">Browse the linked records below or search the catalogue.</p><ol class="discovery-results" data-discovery-results></ol><button class="discovery-more" type="button" data-discovery-more hidden>Show more results</button><p class="discovery-evidence">Passages come from the original PDF text layer and link to the exact file page. Extraction order may differ from the printed layout. Publication licences and attribution remain attached to the originals.</p><p><a href="evidence.html">Browse evidence records</a> · <a href="catalogue.html">Browse publication records</a> · <a href="contents.html">Browse chapters</a> · <a href="vocabulary.html">Explore concepts</a> · <a href="https://www.museumofone.art/">Search writing on Museum of One</a></p></section>'''
     facets=''
-    for key,label in [('material_type','Material type'),('period','Period as described'),('languages','Language'),('transcription_status','Reading status'),('source_layer','Source layer')]:
+    for key,label in [('collection','Collection'),('material_type','Material type'),('period','Period as described'),('languages','Language'),('transcription_status','Reading status'),('source_layer','Source layer')]:
         values=sorted({str(v) for r in feed['records'] for v in (r.get(key,[]) if isinstance(r.get(key),list) else [r.get(key,'')]) if v})
         if values:facets+='<label>'+label+'<select name="'+key+'"><option value="">All</option>'+''.join('<option value="'+e(v)+'">'+e(v)+'</option>' for v in values)+'</select></label>'
     body=body.replace('</form>','<details class="discovery-facets"><summary>Refine by material and source</summary><div class="discovery-controls">'+facets+'</div></details></form>',1)

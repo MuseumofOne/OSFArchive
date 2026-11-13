@@ -57,7 +57,7 @@ def _item_register(record, base):
     return banner, context
 
 
-def archival_page(path, html, records, programmes):
+def archival_page(path, html, records, programmes, *, collection_counts=None):
     """Apply the registry presentation after experience.enhance_page."""
     base = '../' if '/' in path else ''
     lookup = {str(r['id']): r for r in records}
@@ -83,7 +83,7 @@ def archival_page(path, html, records, programmes):
         explorer_script = Path(__file__).resolve().parents[1] / 'dist/assets/archive-explorer.js'
         version = sha256(explorer_script.read_bytes()).hexdigest()[:12]
         html = html.replace('</head>', f'<link rel="stylesheet" href="assets/archive-explorer.css"><script defer src="assets/research-discovery.js"></script><script defer src="assets/archive-explorer.js?v={version}"></script></head>')
-        html = html.replace('<div class="archive-masthead">', render_explorer(records, programmes, os.environ.get('SITE_ORIGIN', 'https://archive.museumofone.art'), standalone=True) + '<div class="archive-masthead">', 1)
+        html = html.replace('<div class="archive-masthead">', render_explorer(records, programmes, os.environ.get('SITE_ORIGIN', 'https://archive.museumofone.art'), standalone=True, collection_counts=collection_counts) + '<div class="archive-masthead">', 1)
         html = html.replace('<h1>The record.<br><em>In context.</em></h1>', '<h2 class="archive-reading-title">Open a document.<br><em>Stay with its record.</em></h2>')
         html = html.replace('Digital Archive Library</span><span class="archive-masthead-aside">Museum of One / Catalogue edition 02', 'Digital reading room</span><span class="archive-masthead-aside">Publication files / Selected editions')
         html = html.replace('01 / The collected shelf', 'Item register / Selected publications').replace('<h2>Selected editions</h2>', '<h2>Selected item records</h2>')

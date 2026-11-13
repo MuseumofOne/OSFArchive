@@ -471,6 +471,12 @@
       "role": "editorial_dataset"
     },
     {
+      "path": "data/website-language-evidence.json",
+      "bytes": 22858,
+      "sha256": "59e0036f8d7a968a2f3877bbe9d5e37d8d83f03e2d61121f69a1542cacf436bc",
+      "role": "editorial_dataset"
+    },
+    {
       "path": "dist/assets/documents/19863790.pdf",
       "bytes": 224701,
       "sha256": "01dd4f6727c08692c5df59af23ef817535a15a57ca4551b930827ee8dac917fa",
@@ -1969,6 +1975,119 @@
       "added": [],
       "changed": [],
       "inventory_sha256": "085d615781340009160aac646ba23d849b70e4cfdcbc38a4db2a47ab03095069"
+    },
+    {
+      "at": "2026-11-13T08:32:16Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 101,
+      "checked_files": 101,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "085d615781340009160aac646ba23d849b70e4cfdcbc38a4db2a47ab03095069"
+    },
+    {
+      "at": "2026-11-13T08:39:44Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 101,
+      "checked_files": 101,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "085d615781340009160aac646ba23d849b70e4cfdcbc38a4db2a47ab03095069"
+    },
+    {
+      "at": "2026-11-13T08:39:45Z",
+      "event": "backup_and_restoration_test",
+      "status": "passed",
+      "package_filename": "archive-inventory-2026-11-13.tar.gz",
+      "package_bytes": 14794251,
+      "package_sha256": "23371169efe2dfc1f8753226c30498b9f51d71772a51fabaaa9281480fecaec3",
+      "inventory_sha256": "085d615781340009160aac646ba23d849b70e4cfdcbc38a4db2a47ab03095069",
+      "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
+      "restoration": {
+        "status": "passed",
+        "files_restored": 101,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      }
+    },
+    {
+      "at": "2026-11-13T09:09:26Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 101,
+      "checked_files": 101,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "085d615781340009160aac646ba23d849b70e4cfdcbc38a4db2a47ab03095069"
+    },
+    {
+      "at": "2026-11-13T09:38:35Z",
+      "event": "fixity_check",
+      "status": "failed",
+      "algorithm": "SHA-256",
+      "file_count": 101,
+      "checked_files": 101,
+      "missing": [],
+      "added": [
+        "data/website-language-evidence.json"
+      ],
+      "changed": [],
+      "inventory_sha256": "085d615781340009160aac646ba23d849b70e4cfdcbc38a4db2a47ab03095069"
+    },
+    {
+      "at": "2026-11-13T09:39:11Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 102,
+      "inventory_sha256": "6ef920f9c67c8687eab5872dd7c1f3bc3478f8214fe27719cad20cea096734a4"
+    },
+    {
+      "at": "2026-11-13T09:39:12Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 102,
+      "checked_files": 102,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "6ef920f9c67c8687eab5872dd7c1f3bc3478f8214fe27719cad20cea096734a4"
+    },
+    {
+      "at": "2026-11-13T09:39:12Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 102,
+      "checked_files": 102,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "6ef920f9c67c8687eab5872dd7c1f3bc3478f8214fe27719cad20cea096734a4"
+    },
+    {
+      "at": "2026-11-13T09:39:12Z",
+      "event": "backup_and_restoration_test",
+      "status": "passed",
+      "package_filename": "archive-preservation-2026-11-13-language-evidence.tar.gz",
+      "package_bytes": 14795929,
+      "package_sha256": "a806006eed10f0bc4a13b4221ab0d65beae989cbd8abcc5387372de0a7e3e318",
+      "inventory_sha256": "6ef920f9c67c8687eab5872dd7c1f3bc3478f8214fe27719cad20cea096734a4",
+      "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
+      "restoration": {
+        "status": "passed",
+        "files_restored": 102,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      }
     }
   ],
   "scope": "Repository source snapshots, editorial JSON datasets, and original PDF access copies.",
@@ -1981,32 +2100,32 @@
     "upstream_sources": "Original deposits remain at Zenodo; website source is held by the site platform.",
     "offsite_backup_status": "The current 101-file preservation payload was stored as a new revision of the existing private Google Drive backup, independently downloaded and fully restored on 11 November 2026. The prior 96-file revision and 4 November backup remain preserved."
   },
-  "inventory_sha256": "085d615781340009160aac646ba23d849b70e4cfdcbc38a4db2a47ab03095069",
-  "baseline_created_at": "2026-11-13T08:21:11Z",
+  "inventory_sha256": "6ef920f9c67c8687eab5872dd7c1f3bc3478f8214fe27719cad20cea096734a4",
+  "baseline_created_at": "2026-11-13T09:39:11Z",
   "last_check": {
-    "at": "2026-11-13T08:23:25Z",
+    "at": "2026-11-13T09:39:12Z",
     "event": "fixity_check",
     "status": "passed",
     "algorithm": "SHA-256",
-    "file_count": 101,
-    "checked_files": 101,
+    "file_count": 102,
+    "checked_files": 102,
     "missing": [],
     "added": [],
     "changed": [],
-    "inventory_sha256": "085d615781340009160aac646ba23d849b70e4cfdcbc38a4db2a47ab03095069"
+    "inventory_sha256": "6ef920f9c67c8687eab5872dd7c1f3bc3478f8214fe27719cad20cea096734a4"
   },
   "backup": {
-    "at": "2026-11-11T18:12:09Z",
+    "at": "2026-11-13T09:39:12Z",
     "event": "backup_and_restoration_test",
     "status": "passed",
-    "package_filename": "museum-of-one-preservation-backup-2026-11-11-kcworks-complete.tar.gz",
-    "package_bytes": 14793966,
-    "package_sha256": "cd494207061662998ad842786ee60f5f44828a8c466c408194df89db28c7d939",
-    "inventory_sha256": "ccf022c447798a5853dfc4e128e57c589accbcdb161642377ef81c26edfb193d",
+    "package_filename": "archive-preservation-2026-11-13-language-evidence.tar.gz",
+    "package_bytes": 14795929,
+    "package_sha256": "a806006eed10f0bc4a13b4221ab0d65beae989cbd8abcc5387372de0a7e3e318",
+    "inventory_sha256": "6ef920f9c67c8687eab5872dd7c1f3bc3478f8214fe27719cad20cea096734a4",
     "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
     "restoration": {
       "status": "passed",
-      "files_restored": 101,
+      "files_restored": 102,
       "algorithm": "SHA-256",
       "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
     }

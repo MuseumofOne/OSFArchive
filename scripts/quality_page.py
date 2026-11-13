@@ -40,7 +40,7 @@ def build_quality_page(write, layout, report):
     dims = report['dimensions']
     body = '<div class="page-head"><div class="eyebrow">Description &amp; accountability</div><h1>A record you can inspect.</h1><p>How the catalogue is checked, where its evidence comes from, and what remains unresolved.</p></div>'
     body += '<div class="quality-grid">'
-    for value, label in [(report['records'], 'Publication records checked'),
+    for value, label in [(report['records'], 'Deposited editions checked'),
                          (dims['typed_relationships'], 'Explicit relationships'),
                          (dims['relationships_with_evidence'], 'Relationships with source evidence')]:
         body += f'<div><strong>{e(value)}</strong><span>{e(label)}</span></div>'
@@ -49,6 +49,21 @@ def build_quality_page(write, layout, report):
         state = 'Passed' if check.get('executed', True) and not check['errors'] else 'Not executed' if not check.get('executed', True) else 'Requires correction'
         body += f'<div><dt>{e(name.replace("_", " ").capitalize())}</dt><dd>{state}</dd></div>'
     body += '</dl><p>These checks compare the catalogue against its description rules and generated files. They do not certify the source’s factual accuracy or guarantee inclusion in external search services.</p>'
+    mirror = report.get("website_mirror", {})
+    if mirror:
+        body += '<h2>Website mirror</h2><dl class="metadata">'
+        for count, label in [
+            (mirror["records_checked"], "Public website captures checked"),
+            (mirror["source_declared_work_languages"], "Work languages declared in publication metadata"),
+            (mirror["source_declared_document_languages"], "Page languages declared by source HTML"),
+            (len(mirror["language_unresolved"]), "Captures without language evidence"),
+            (mirror["classified_with_editorial_subjects"], "Classified captures with archive subject terms"),
+            (len(mirror["classified_without_subjects"]), "Classified captures without subjects"),
+            (len(mirror["date_issues"]), "Capture or publication date issues"),
+            (len(mirror["edition_relationship_issues"]), "Unscoped edition links"),
+        ]:
+            body += f'<div><dt>{e(label)}</dt><dd>{count}</dd></div>'
+        body += '</dl><p><a href="metadata/publication-arrangement.json">Inspect language, subject, date and edition evidence per capture ↓</a></p>'
     body += '<h2>The scope of a match</h2><p>A website can describe a work without identifying the exact deposited edition. The catalogue records that distinction.</p><dl class="metadata">'
     for name, count in dims['institutional_match_scope'].items():
         body += f'<div><dt>{e(name.replace("_", " ").capitalize())}</dt><dd>{count} records</dd></div>'

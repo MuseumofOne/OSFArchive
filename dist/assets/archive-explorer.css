@@ -159,3 +159,10 @@ body:has(.archive-explorer.ax-expanded){overflow:hidden}
 .archive-explorer .ax-grid[data-layout=list] .ax-type-cover strong {
   font-size: 13px;
 }
+
+.archive-explorer .ax-entrance-collections { margin-bottom: 24px; }
+@media (max-width: 520px) {
+  .archive-explorer[data-standalone=true] .ax-entry-search { flex-wrap: wrap; }
+  .archive-explorer[data-standalone=true] .ax-entry-search input { flex-basis: 100%; }
+  .archive-explorer[data-standalone=true] .ax-entry-search button { width: 100%; }
+}

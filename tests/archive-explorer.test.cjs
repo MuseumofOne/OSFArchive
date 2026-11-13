@@ -9,7 +9,7 @@ test('reading handoff carries only bounded numeric archive IDs and retains PDF p
  assert.equal(explorer.handoffURL('https://zenodo.org/records/123', ['19864099'],origin,origin), 'https://zenodo.org/records/123');
 });
 test('explorer state round-trips combined filters without taking over the host page query',()=>{
- const state={view:'catalogue',q:'Hassan Sharif',collection:'Books & volumes',year:'2026',type:'Book',sort:'title',layout:'list',dq:'lived experience',dk:'publication',fulltext:true};
+ const state={view:'catalogue',q:'Hassan Sharif',collection:'Books & volumes',year:'2026',type:'Book',sort:'title',layout:'list',dq:'lived experience',dk:'publication',dc:'Methodology',fulltext:true};
  assert.deepEqual(explorer.readState(explorer.stateHash(state)),state);
  assert.equal(explorer.readState('#ax:view=javascript:alert(1)').view,'overview');
  assert.equal(explorer.readState('#page=182').view,'overview');

@@ -21,8 +21,9 @@ from citations import build_citation_model, visible_citation, csl_json, bibtex, 
 from evidence import load_evidence, build_evidence_pages, copy_evidence_assets
 from discovery_v2 import build_research_discovery, build_fulltext_index, build_discovery_page, encode_index
 from wdw_sources import build_wdw_sources, source_collection_link
-from publication_arrangement import (METHODOLOGY, collection_anchor, collection_link,
-                                     load_publication_captures, publication_card, publication_inventory)
+from publication_arrangement import (METHODOLOGY, RAI_SERIES, collection_anchor, collection_link,
+                                     load_publication_captures, mirror_quality, publication_card, publication_inventory)
+from collections import Counter
 from pathlib import Path
 from html import escape
 import json, os, re, shutil, urllib.parse, xml.etree.ElementTree as ET
@@ -65,6 +66,12 @@ collection_config=json.loads((DATA/'collections.json').read_text())
 GROUPS={c['name']:(f"{i+1:02d}",c['title'],c['description']) for i,c in enumerate(collection_config['collections'])}
 for r in RECORDS:
  if r['collection'] not in GROUPS:GROUPS[r['collection']]=(f"{len(GROUPS)+1:02d}",r['collection'],'Explore records in this collection.')
+CAPTURES = load_publication_captures(SYNC_WORK)
+WEB_INVENTORY = publication_inventory(CAPTURES, RECORDS)
+WEB_PUBLICATIONS = [r for r in WEB_INVENTORY if r['collection']]
+WEBSITE_CARDS = [r for r in WEB_PUBLICATIONS if not r['edition_path']]
+CAPTURE_LINKS = {r['edition_path']: r['capture_path'] for r in WEB_PUBLICATIONS if r['edition_path']}
+FULL_COUNTS = Counter(r['collection'] for r in [*RECORDS, *WEBSITE_CARDS])
 SEARCH_ICON='<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>'
 
 def url(path): return ORIGIN+'/' if path in ('', 'index.html') else ORIGIN+'/'+path.lstrip('/')
@@ -85,7 +92,7 @@ def layout(title,desc,content,path='index.html',base='',active='',schema=None):
 def write(path,content):
  if path.endswith('.html') and path != '404.html':
   content=enhance_page(path,content,RECORDS,PROGRAMMES)
-  content=archival_page(path,content,RECORDS,PROGRAMMES)
+  content=archival_page(path,content,RECORDS,PROGRAMMES,collection_counts=FULL_COUNTS)
   content=reader_link(path,content,RECORDS)
   content=institutional_page(path,content,RECORDS,PROGRAMMES)
   design_base="../" if "/" in path else ""
@@ -115,24 +122,15 @@ art=''
 for i,r in enumerate(withcovers[:2]):
  art+=f'<img class="book {"second" if i else ""}" src="{E(r["cover"])}" alt="{E(r.get("cover_alt",r["title"]))}" fetchpriority="high">'
 if not art:art=cover(RECORDS[0],hero=True)
-hero=f'''<section class="hero"><div><div class="eyebrow">The digital archive / Selected works</div><h1>A quiet place<br>for <em>the record.</em></h1><p class="hero-copy">Published thought, carefully held.<br>Explore the books, treatises, and critical writing of Museum of One through a source-linked archival catalogue.</p><div class="actions"><a class="button" href="catalogue.html">Enter the catalogue <span aria-hidden="true">↗</span></a><a class="text-link" href="about.html">About this archive</a></div></div><div><div class="hero-art"><span class="shelf-label">MUSEUM OF ONE PRESS / THE COLLECTED SHELF</span>{art}</div><div class="hero-caption"><span>PUBLICATION COVERS / MUSEUM OF ONE</span><span>01 — 02</span></div></div></section><div class="hero-foot"><span>{len(RECORDS):02d} CATALOGUED RECORDS</span><span><span class="dot">●</span> SOURCE-LINKED EDITIONS</span><span>BOOKS · THEORY · CRITICAL WRITING</span></div>'''
+hero=f'''<section class="hero"><div><div class="eyebrow">The digital archive / Selected works</div><h1>A quiet place<br>for <em>the record.</em></h1><p class="hero-copy">Published thought, carefully held.<br>Explore the books, treatises, and critical writing of Museum of One through a source-linked archival catalogue.</p><div class="actions"><a class="button" href="catalogue.html">Enter the catalogue <span aria-hidden="true">↗</span></a><a class="text-link" href="about.html">About this archive</a></div></div><div><div class="hero-art"><span class="shelf-label">MUSEUM OF ONE PRESS / THE COLLECTED SHELF</span>{art}</div><div class="hero-caption"><span>PUBLICATION COVERS / MUSEUM OF ONE</span><span>01 — 02</span></div></div></section><div class="hero-foot"><span>{len(RECORDS):02d} DEPOSITED EDITIONS</span><span><span class="dot">●</span> SOURCE-LINKED EDITIONS</span><span>BOOKS · THEORY · CRITICAL WRITING</span></div>'''
 selected=f'<section class="section"><div class="section-head"><div><span class="section-no">01 / The collected shelf</span><h2>Selected editions</h2></div><a class="text-link" href="catalogue.html">View all records ↗</a></div><div class="book-grid">'+''.join(card(r) for r in featured)+'</div></section>'
-routes='<section class="section" style="padding-top:0"><div class="section-head"><div><span class="section-no">02 / Paths into the archive</span><h2>Follow a line of inquiry</h2></div></div><div class="route-grid">'
-for group,(n,title,desc) in GROUPS.items():
- count=sum(r['collection']==group for r in RECORDS)
- routes+=f'<a class="route-card" href="{E(collection_link(group))}"><span class="route-top"><span>{n} / {E(group.upper())}</span><span>{count:02d} RECORDS</span></span><h3>{E(title)}</h3><p>{E(desc)}</p><span class="small-link">Explore the collection ↗</span></a>'
-routes+='</div></section>'
 recent='<section class="section recent"><div class="section-head"><div><span class="section-no">03 / Reading room</span><h2>From the catalogue</h2></div><a class="text-link" href="catalogue.html">Browse the reading room ↗</a></div>'
 for r in [x for x in RECORDS if x not in featured][:4]:recent+=f'<a class="record-row" href="items/{r["id"]}.html"><span class="row-id">{E(r["accession"])}</span><span><h3>{E(r["title"])}</h3><p>{E(r["author"])} · {E(r["date"][:4])}</p><p class="row-summary">{E(r["summary"])}</p></span><span class="row-type">{E(r["type"])}</span><span aria-hidden="true">↗</span></a>'
 recent+='</section>'
 note='''<section class="archive-note"><div><div class="eyebrow">A record, with its sources</div><h2>Preserve the work.<br>Keep its context.</h2></div><div><p>Every catalogue entry brings the deposited edition into conversation with its Museum of One publication record. Original metadata, editorial description, and external references remain distinct.</p><p>Read, cite, and follow the evidence back to its source.</p><a href="sources.html">Sources, identifiers & catalogue links ↗</a></div></section>'''
 research_home='<section class="section" style="padding-top:0"><div class="section-head"><div><span class="section-no">Research / From inquiry to publication</span><h2>Stay with the inquiry.</h2></div><a class="text-link" href="programmes.html">Research programmes ↗</a></div><p style="max-width:650px;color:var(--muted);font-size:13px">Follow the programme badges into Museum of One’s continuing research. Published outputs retain their own records; programme stages remain distinct from publication status.</p><div class="programme-badges">'+''.join(f'<a class="programme-badge" href="programmes.html#{E(programme_id(p))}">{E(p["title"])}<small>{E(p.get("status", ""))}</small></a>' for p in PROGRAMMES if any(any(x['url']==p['url'] for x in programmes_for(r)) for r in RECORDS))+'</div></section>'
-write('index.html',layout('The Archival Library','Explore Museum of One books, treatises and critical writing in a source-linked digital catalogue.',hero+selected+routes+research_home+recent+note))
+write('index.html',layout('The Archival Library','Explore Museum of One books, treatises and critical writing in a source-linked digital catalogue.',hero+selected+research_home+recent+note))
 
-CAPTURES = load_publication_captures(SYNC_WORK)
-WEB_PUBLICATIONS = [r for r in publication_inventory(CAPTURES, RECORDS) if r['collection']]
-WEBSITE_CARDS = [r for r in WEB_PUBLICATIONS if not r['edition_path']]
-CAPTURE_LINKS = {r['edition_path']: r['capture_path'] for r in WEB_PUBLICATIONS if r['edition_path']}
 subjects=sorted({s for r in [*RECORDS,*WEBSITE_CARDS] for s in r['subjects']})
 years=sorted({r['date'][:4] for r in [*RECORDS,*WEBSITE_CARDS] if r['date']},reverse=True)
 resource_types=sorted({r['type'] for r in RECORDS} | {r['role'] for r in WEBSITE_CARDS})
@@ -150,14 +148,18 @@ write('catalogue.html',layout('Catalogue','Search Museum of One publications by 
 collections=pagehead('Collections','Lines of inquiry.','Four editorial collections for deposited editions and website publications.')
 for group,(n,title,desc) in GROUPS.items():
  rs=[r for r in RECORDS if r['collection']==group]
- collections+=f'<section class="collection-block"><span class="collection-no">{n}</span><div><div class="eyebrow">{E(group)}</div><h2>{E(title)}</h2><p>{E(desc)}</p><p>{len(rs)} catalogue records</p><a class="text-link" href="{E(collection_link(group))}">Explore this collection ↗</a><p><a href="website-records.html#{collection_anchor(group)}">Website publications ↗</a></p></div><div class="book-grid">'+''.join(card(r) for r in rs[:2])+'</div></section>'
+ collections+=f'<section class="collection-block"><span class="collection-no">{n}</span><div><div class="eyebrow">{E(group)}</div><h2>{E(title)}</h2><p>{E(desc)}</p><p>{FULL_COUNTS[group]} catalogue records · {len(rs)} deposited editions</p><a class="text-link" href="{E(collection_link(group))}">Explore this collection ↗</a><p><a href="website-records.html#{collection_anchor(group)}">Website publications ↗</a></p></div><div class="book-grid">'+''.join(card(r) for r in rs[:2])+'</div></section>'
 collections+='<div style="height:50px"></div>'
 write('collections.html',layout('Collections','Explore books, theoretical writing, field essays and methodology in Museum of One’s archive.',collections,'collections.html',active='collections'))
 
 methodology_desc = collection_config['collections'][-1]['description']
 methodology = pagehead('Collections', METHODOLOGY, methodology_desc)
-methodology += '<section class="section"><div class="section-head"><h2>Deposited editions</h2><a href="catalogue.html?collection=Methodology">Filter the item register ↗</a></div><div class="book-grid">'
-methodology += ''.join(card(r) for r in sorted(RECORDS,key=lambda r:r['date'],reverse=True) if r['collection']==METHODOLOGY)
+methodology += '<section class="section" id="rai"><div class="section-head"><h2>Relational Archival Investigation</h2><a href="evidence.html">Explore RAI evidence ↗</a></div><div class="book-grid">'
+rai_records = [r for r in RECORDS if programme_id({"url": r.get("institutional_url") or ""}) in RAI_SERIES]
+methodology += ''.join(card(r, capture=CAPTURE_LINKS.get(f'items/{r["id"]}.html')) for r in rai_records)
+methodology += '</div><div data-methodology-rai></div></section>'
+methodology += '<section class="section"><div class="section-head"><h2>Other deposited editions</h2><a href="catalogue.html?collection=Methodology">Filter the item register ↗</a></div><div class="book-grid">'
+methodology += ''.join(card(r) for r in sorted(RECORDS,key=lambda r:r['date'],reverse=True) if r['collection']==METHODOLOGY and r not in rai_records)
 methodology += '</div></section><div data-methodology-website></div>'
 
 
@@ -319,24 +321,25 @@ write('metadata/entities.json',json.dumps(ENTITIES,ensure_ascii=False,indent=2))
 write('metadata/contents.json',json.dumps(CONTENTS,ensure_ascii=False,indent=2))
 # One generated discovery model serves archive pages and the native Ghost entrance.
 from website_pages import build_website_pages
-paths+=build_website_pages(SYNC_WORK,OUT,write,layout,ORIGIN,methodology=methodology,methodology_desc=methodology_desc, captures=CAPTURES)
+paths+=build_website_pages(SYNC_WORK,OUT,write,layout,ORIGIN,methodology=methodology,methodology_desc=methodology_desc, captures=CAPTURES, inventory=WEB_INVENTORY)
 GHOST_DISCOVERY=json.loads((SYNC_WORK/'public/discovery.json').read_text())['records'] if (SYNC_WORK/'public/discovery.json').exists() else []
 EVIDENCE=load_evidence(ROOT,ORIGIN)
 copy_evidence_assets(EVIDENCE,ROOT,OUT)
 paths+=build_evidence_pages(EVIDENCE,write,layout,ORIGIN)
-DISCOVERY_V2=build_research_discovery(RECORDS,ENTITIES,VOCABULARY,PROGRAMMES,ORIGIN,root=ROOT,ghost_records=GHOST_DISCOVERY,evidence_payload=EVIDENCE)
+DISCOVERY_V2=build_research_discovery(RECORDS,ENTITIES,VOCABULARY,PROGRAMMES,ORIGIN,root=ROOT,ghost_records=GHOST_DISCOVERY,website_inventory=WEB_INVENTORY,collection_counts=FULL_COUNTS,evidence_payload=EVIDENCE)
 PASSAGES_V2=build_fulltext_index(RECORDS,ROOT,ORIGIN)
 write('metadata/research-discovery.v2.json',encode_index(DISCOVERY_V2))
 write('metadata/research-passages.v2.json',encode_index(PASSAGES_V2))
 paths+=build_discovery_page(write,layout,DISCOVERY_V2,ORIGIN)
 # Ghost consumes this partial from the exact same renderer as the homepage.
 from explorer import render_explorer
-write('integration/archive-explorer.hbs',render_explorer(RECORDS,PROGRAMMES,ORIGIN))
+write('integration/archive-explorer.hbs',render_explorer(RECORDS,PROGRAMMES,ORIGIN,collection_counts=FULL_COUNTS))
 write('metadata/metadata-profile.json',json.dumps(PROFILE,ensure_ascii=False,indent=2))
 write('metadata/relations.json',json.dumps(relation_register(ORIGIN),ensure_ascii=False,indent=2))
 write('metadata/relationships.json',json.dumps({'profile_version':PROFILE['version'],'assertions':[a for r in RECORDS for a in r['relationship_assertions']]+typed_entity_relationship_assertions(ENTITIES,ORIGIN)},ensure_ascii=False,indent=2))
 ALL_GRAPHS=collect_graphs(OUT,paths)
 QUALITY=build_quality_report(RECORDS,ALL_GRAPHS,entity_graph(ENTITIES,ORIGIN),ORIGIN,output_dir=OUT,entity_records=ENTITIES)
+QUALITY['website_mirror'] = mirror_quality(WEB_INVENTORY)
 write('metadata/quality-report.json',json.dumps(QUALITY,ensure_ascii=False,indent=2))
 require_valid_report(QUALITY)
 write('metadata/knowledge-graph.jsonld',json.dumps(combine_graphs(ALL_GRAPHS),ensure_ascii=False,indent=2))

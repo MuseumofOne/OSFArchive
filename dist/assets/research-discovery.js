@@ -14,6 +14,15 @@
    const url=new URL(r.url);if(url.username||url.password||url.search||url.protocol!=='https:')throw new Error('Invalid research destination');
    if(r.kind==='website'){if(url.origin!=='https://www.museumofone.art'||url.hash||!/^website:[a-f0-9]{24}$/.test(r.id))throw new Error('Invalid public website destination');}
    else if(!r.url.startsWith(origin+'/')||!/^\/(?:[A-Za-z0-9._~-]+\/)*(?:items\/\d+\.html|parts\/\d+-[A-Za-z0-9_-]+\.html|entities\/[A-Za-z0-9_-]+\.html|(?:evidence|dossiers)\/[A-Za-z0-9_-]+\.html|read\/\d+\.html|vocabulary\.html|programmes\.html)$/.test(url.pathname))throw new Error('Invalid research destination');
+   if(r.archive_url!==undefined){
+    const archivePath=String(r.archive_url).slice(origin.length+1);
+    const allowed=r.kind==='website'?/^website\/web-[a-f0-9]{24}\.html$/.test(archivePath):r.kind==='publication'&&r.archive_url===r.url;
+    if(typeof r.archive_url!=='string'||!r.archive_url.startsWith(origin+'/')||!allowed)throw new Error('Invalid archive copy destination');
+   }
+   if(r.original_url!==undefined){
+    const original=new URL(r.original_url);
+    if(typeof r.original_url!=='string'||original.origin!=='https://www.museumofone.art'||original.username||original.password||original.search||original.hash||(r.kind==='website'&&r.original_url!==r.url))throw new Error('Invalid original destination');
+   }
    for(const field of ['material_type','period','transcription_status','source_layer','record_level'])if(r[field]!==undefined&&typeof r[field]!=='string')throw new Error('Invalid evidence facet');
    if(r.languages!==undefined&&(!Array.isArray(r.languages)||!r.languages.every(v=>typeof v==='string')))throw new Error('Invalid evidence languages');
    if(r.reader_url&&(typeof r.reader_url!=='string'||!r.reader_url.startsWith(origin+'/read/')||!/^\d+\.html#page=[1-9][0-9]*$/.test(r.reader_url.slice((origin+'/read/').length))))throw new Error('Invalid reader destination');
@@ -97,7 +106,19 @@
    let pool=payload.records;if(wantsPassages()&&passages)pool=mergeIndexes([pool,passages]);
    const found=rankRecords(pool,input.value,filters);results.replaceChildren();
    found.slice(0,shown).forEach(record=>{
-    const item=el('li','discovery-result'),label=el('p','discovery-result-kind',record.kind==='entity'?(record.entity_type||'Entity'):(record.record_level||record.kind)),heading=el('h3'),link=el('a',null,record.title);link.href=destination(record.url);heading.append(link);item.append(label,heading,el('p','discovery-match-reason',record.match_reason));
+    const type=record.kind==='entity'?(record.entity_type||'Entity'):(record.record_level||record.resource_type||record.kind);
+    const item=el('li','discovery-result'),label=el('p','discovery-result-kind',[type,record.collection].filter(Boolean).join(' · ')),heading=el('h3'),link=el('a',null,record.title);
+    const capture=record.archive_url||record.relationships?.find(edge=>edge.relation==='Stored website capture')?.url;
+    link.href=destination(capture||record.url);heading.append(link);item.append(label,heading,el('p','discovery-match-reason',record.match_reason));
+    if(capture||record.original_url){
+     const actions=el('p','discovery-result-actions');
+     for(const [label,url] of [['View archived copy',capture],['Read original',record.original_url]]){
+      if(!url)continue;
+      if(actions.childElementCount)actions.append(doc.createTextNode(' · '));
+      const action=el('a',null,label);action.href=destination(url);actions.append(action);
+     }
+     item.append(actions);
+    }
     if(record.source_layer)item.append(el('p','discovery-evidence','Source layer: '+(record.source_layer_label||{"research-document":"Published research document","institutional-metadata":"Institutional source metadata","primary-source":"Original archival source"}[record.source_layer]||record.source_layer)+(record.material_type?' · '+record.material_type:'')));
     if(record.summary)item.append(el('p','discovery-summary',record.summary));
     if(record.snippet)item.append(el('blockquote','discovery-snippet',record.snippet));

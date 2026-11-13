@@ -1,0 +1,526 @@
+{
+  "reviewed": "2026-11-13",
+  "method": "Language declared by the source HTML document root (page language).",
+  "records": {
+    "https://www.museumofone.art/02-canon-of-witnesses-the-artist-who-refused-to-show-the-dead-alfredo-jaar/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:05:06.000+00:00"
+    },
+    "https://www.museumofone.art/06-canon-of-witnesses-he-walked-with-his-eyes-closed-so-the-world-could-see-hiwa-k/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:55:53.000+00:00"
+    },
+    "https://www.museumofone.art/07-canon-of-witnesses-on-christian-boltanski-and-the-rituals-of-loss/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:55:47.000+00:00"
+    },
+    "https://www.museumofone.art/08-canon-of-witnesses-the-language-of-the-crack-on-doris-salcedos-shibboleth/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:54:57.000+00:00"
+    },
+    "https://www.museumofone.art/09-canon-of-witnesses-on-zarina-hashmis-home-is-a-foreign-place/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:54:46.000+00:00"
+    },
+    "https://www.museumofone.art/10-canon-of-witnesses-on-ana-mendieta-and-the-imprint-of-the-unreturnable-the-trace-that-would-not-fade/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:54:33.000+00:00"
+    },
+    "https://www.museumofone.art/11-canon-of-witnesses-tehching-hsieh-the-custodian-of-time/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:54:12.000+00:00"
+    },
+    "https://www.museumofone.art/12-canon-of-witnesses-the-body-that-dissolved-sweetly-felix-gonzalez-torres-2/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:53:50.000+00:00"
+    },
+    "https://www.museumofone.art/a-museum-of-breath-designing-spaces-for-attention-not-spectacle/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:48:46.000+00:00"
+    },
+    "https://www.museumofone.art/a-quantitative-analysis-of-critical-posture-in-art-writing-1980-2025-dataset-20-critical-texts-1980-2025/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:20:28.000+00:00"
+    },
+    "https://www.museumofone.art/about/": {
+      "language": "en",
+      "source_modified": "2026-11-10T16:23:24.000+00:00"
+    },
+    "https://www.museumofone.art/absential-aesthetics-theory-on-ghosts-absence-and-the-afterlife-of-art/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:56:20.000+00:00"
+    },
+    "https://www.museumofone.art/aesthetic-recursion-theory-recursion-as-residue/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:04:05.000+00:00"
+    },
+    "https://www.museumofone.art/after-the-interpretation-changes/": {
+      "language": "en",
+      "source_modified": "2026-11-11T14:49:02.000+00:00"
+    },
+    "https://www.museumofone.art/against-the-compulsive-urge-to-interpret/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:50:39.000+00:00"
+    },
+    "https://www.museumofone.art/analytical-diagnostic-tools/": {
+      "language": "en",
+      "source_modified": "2026-10-22T21:31:37.000+00:00"
+    },
+    "https://www.museumofone.art/answerability/": {
+      "language": "en",
+      "source_modified": "2026-11-11T14:48:40.000+00:00"
+    },
+    "https://www.museumofone.art/arabic-translation-threads-of-sand/": {
+      "language": "en",
+      "source_modified": "2026-10-24T16:22:12.000+00:00"
+    },
+    "https://www.museumofone.art/archival-partnership/": {
+      "language": "en",
+      "source_modified": "2025-10-17T17:58:17.000+00:00"
+    },
+    "https://www.museumofone.art/archives-scholarly-infrastructure/": {
+      "language": "en",
+      "source_modified": "2026-10-21T10:02:43.000+00:00"
+    },
+    "https://www.museumofone.art/art-as-truth-a-treatise/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:57:05.000+00:00"
+    },
+    "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:20:03.000+00:00"
+    },
+    "https://www.museumofone.art/before-meaning-measure-pythagoras-proportion-and-the-ethics-of-post-interpretive-witness/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:49:39.000+00:00"
+    },
+    "https://www.museumofone.art/canon-of-witnesses-teresa-margolles/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:04:54.000+00:00"
+    },
+    "https://www.museumofone.art/canon-of-witnesses-the-woman-who-let-you-undress-her-on-yoko-ono-and-the-violence-of-interpretation/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:58:06.000+00:00"
+    },
+    "https://www.museumofone.art/canon-of-witnesses-the-woman-who-refused-to-move-kimsooja-and-the-ethics-of-stillness/": {
+      "language": "en",
+      "source_modified": "2026-11-09T20:13:40.000+00:00"
+    },
+    "https://www.museumofone.art/collected-works-as-cognitive-trace/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:58:11.000+00:00"
+    },
+    "https://www.museumofone.art/devotion-without-doctrine/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:47:06.000+00:00"
+    },
+    "https://www.museumofone.art/diagnostic-reading/": {
+      "language": "en",
+      "source_modified": "2026-10-21T10:02:54.000+00:00"
+    },
+    "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:20:22.000+00:00"
+    },
+    "https://www.museumofone.art/digital-archive-library/": {
+      "language": "en",
+      "source_modified": "2026-11-05T09:27:31.000+00:00"
+    },
+    "https://www.museumofone.art/doctrine-reframing-language-and-witnessing/": {
+      "language": "en",
+      "source_modified": "2026-10-22T16:28:48.000+00:00"
+    },
+    "https://www.museumofone.art/doctrine/": {
+      "language": "en",
+      "source_modified": "2026-11-11T00:04:21.000+00:00"
+    },
+    "https://www.museumofone.art/dong-yeon-koh/": {
+      "language": "en",
+      "source_modified": "2026-11-05T11:29:15.000+00:00"
+    },
+    "https://www.museumofone.art/duchamp/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:56:07.000+00:00"
+    },
+    "https://www.museumofone.art/el-anatsuis-mans-cloth-series-redemption-of-waste-as-modern-eucharist/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:20:09.000+00:00"
+    },
+    "https://www.museumofone.art/embodied-reading-how-presence-and-posture-change-the-way-we-read-art/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:58:54.000+00:00"
+    },
+    "https://www.museumofone.art/encounter-differential/": {
+      "language": "en",
+      "source_modified": "2026-10-22T21:30:56.000+00:00"
+    },
+    "https://www.museumofone.art/erased-museums-destroyed-collections-as-conceptual-inheritance/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:49:52.000+00:00"
+    },
+    "https://www.museumofone.art/ethical-charter/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:11:28.000+00:00"
+    },
+    "https://www.museumofone.art/exit-signs-and-epiphany-architecture-of-departure/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:47:16.000+00:00"
+    },
+    "https://www.museumofone.art/experimental-curatorial-space-phenomenological-aesthetics-experience-environment-simulator/": {
+      "language": "en",
+      "source_modified": "2026-10-21T09:54:58.000+00:00"
+    },
+    "https://www.museumofone.art/extending-post-interpretive-criticism-additional-diagnostic-indices-for-enhanced-phenomenological-fidelity-in-art-criticism/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:48:41.000+00:00"
+    },
+    "https://www.museumofone.art/external-records/": {
+      "language": "en",
+      "source_modified": "2026-11-10T11:39:34.000+00:00"
+    },
+    "https://www.museumofone.art/finished-message-transfer-theory-mtt-a-treatise-on-the-reversal-of-meaning-the-displacement-of-intent-and-the-object-as-conduit/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:56:57.000+00:00"
+    },
+    "https://www.museumofone.art/finished-the-viewer-as-evidence-a-treatise-on-witness-residue-and-critical-consequence/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:04:27.000+00:00"
+    },
+    "https://www.museumofone.art/formal-defence-of-post-interpretive-criticism/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:04:13.000+00:00"
+    },
+    "https://www.museumofone.art/fractured-curation-on-the-cost-of-discontinuity/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:05:39.000+00:00"
+    },
+    "https://www.museumofone.art/from-husserls-mathematics-to-dufrennes-aesthetics-toward-a-formalization-of-phenomenological-aesthetics/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:48:52.000+00:00"
+    },
+    "https://www.museumofone.art/grammar-of-grief/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:47:25.000+00:00"
+    },
+    "https://www.museumofone.art/hassan-sharifs-objects-the-ascetic-of-the-everyday/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:20:06.000+00:00"
+    },
+    "https://www.museumofone.art/hauntmark-theory-the-lingering-weight-of-words/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:57:21.000+00:00"
+    },
+    "https://www.museumofone.art/institutional-archival-investigations/": {
+      "language": "en",
+      "source_modified": "2026-11-11T09:46:12.000+00:00"
+    },
+    "https://www.museumofone.art/interpretation-at-risk-post-interpretive-criticism-after-the-20th-century/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:20:33.000+00:00"
+    },
+    "https://www.museumofone.art/language-as-a-blade-the-ethics-of-precision-in-post-interpretive-criticism/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:03:28.000+00:00"
+    },
+    "https://www.museumofone.art/language-as-custody-writing-without-harm-in-post-interpretive-criticism/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:20:46.000+00:00"
+    },
+    "https://www.museumofone.art/linguistic-diagnostics-analysis/": {
+      "language": "en",
+      "source_modified": "2026-10-21T09:55:00.000+00:00"
+    },
+    "https://www.museumofone.art/measuring-proximity-a-post-interpretive-diagnostic-experiment-in-art-criticism-post-hermeneutic-phenomenology/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:49:30.000+00:00"
+    },
+    "https://www.museumofone.art/moral-proximity-ethics-as-method-in-post-interpretive-criticism/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:20:40.000+00:00"
+    },
+    "https://www.museumofone.art/nomadic-aesthetics-travelling-installations-as-moral-geography/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:50:27.000+00:00"
+    },
+    "https://www.museumofone.art/oindrilla-maity-surai/": {
+      "language": "en",
+      "source_modified": "2026-10-25T10:07:14.000+00:00"
+    },
+    "https://www.museumofone.art/on-agnus-by-konstantin-korobov-2022/": {
+      "language": "en",
+      "source_modified": "2026-11-09T20:16:29.000+00:00"
+    },
+    "https://www.museumofone.art/on-classon-ave-by-yongjae-kim-2023/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:05:33.000+00:00"
+    },
+    "https://www.museumofone.art/on-clouded-water-the-changing-of-kok-river-an-exhibition/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:49:48.000+00:00"
+    },
+    "https://www.museumofone.art/on-kawara-the-devotion-of-days/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:48:26.000+00:00"
+    },
+    "https://www.museumofone.art/on-zaya-2025-marcel-van-luit/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:50:15.000+00:00"
+    },
+    "https://www.museumofone.art/paul-gladston/": {
+      "language": "en",
+      "source_modified": "2026-11-05T11:30:13.000+00:00"
+    },
+    "https://www.museumofone.art/phenomenological-indices-analysis/": {
+      "language": "en",
+      "source_modified": "2026-10-21T09:55:01.000+00:00"
+    },
+    "https://www.museumofone.art/post-interpretive-criticism-a-philosophical-departure-from-post-criticism-2/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:53:54.000+00:00"
+    },
+    "https://www.museumofone.art/post-interpretive-criticism-a-philosophical-departure-from-post-criticism/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:55:42.000+00:00"
+    },
+    "https://www.museumofone.art/post-interpretive-criticism-and-the-seven-liberal-arts-how-ancient-disciplines-produced-a-contemporary-method/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:49:43.000+00:00"
+    },
+    "https://www.museumofone.art/post-interpretive-criticism-volume-i-foundational-essays/": {
+      "language": "en",
+      "source_modified": "2026-10-22T16:28:49.000+00:00"
+    },
+    "https://www.museumofone.art/post-interpretive-criticism-volume-ii-essays-from-the-field/": {
+      "language": "en",
+      "source_modified": "2026-10-22T16:28:50.000+00:00"
+    },
+    "https://www.museumofone.art/post-interpretive-curatorial-museum-research/": {
+      "language": "en",
+      "source_modified": "2026-10-22T21:30:50.000+00:00"
+    },
+    "https://www.museumofone.art/post-interpretive-method-how-to-practice-restraint-in-front-of-a-work-of-art/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:51:52.000+00:00"
+    },
+    "https://www.museumofone.art/principles-of-post-interpretive-criticism-a-study-guide/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:03:59.000+00:00"
+    },
+    "https://www.museumofone.art/publication-canon-of-witnesses/": {
+      "language": "en",
+      "source_modified": "2026-10-18T22:25:55.000+00:00"
+    },
+    "https://www.museumofone.art/publication-essays-from-field/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:15:00.000+00:00"
+    },
+    "https://www.museumofone.art/publication-foundational-essays/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:11:20.000+00:00"
+    },
+    "https://www.museumofone.art/publication-moral-evidence-of-space/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:18:41.000+00:00"
+    },
+    "https://www.museumofone.art/publication-threads-of-sand/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:18:21.000+00:00"
+    },
+    "https://www.museumofone.art/publications/": {
+      "language": "en",
+      "source_modified": "2026-10-22T16:28:52.000+00:00"
+    },
+    "https://www.museumofone.art/publisher/": {
+      "language": "en",
+      "source_modified": "2026-10-25T20:52:02.000+00:00"
+    },
+    "https://www.museumofone.art/quantifying-critical-posture-a-diagnostic-analysis-of-art-writing-1980-2025-formalizing-post-hermeneutic-phenomenology/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:48:35.000+00:00"
+    },
+    "https://www.museumofone.art/rai-documentary-supplement/": {
+      "language": "en",
+      "source_modified": "2026-11-11T14:08:05.000+00:00"
+    },
+    "https://www.museumofone.art/rai-extended-case-studies/": {
+      "language": "en",
+      "source_modified": "2026-11-11T14:08:53.000+00:00"
+    },
+    "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/": {
+      "language": "en",
+      "source_modified": "2026-11-11T14:05:03.000+00:00"
+    },
+    "https://www.museumofone.art/reflections-on-dominic-chambers-since-i-was-a-jit-2025-where-the-trees-conspire-against-light/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:55:03.000+00:00"
+    },
+    "https://www.museumofone.art/reiko-tomii/": {
+      "language": "en",
+      "source_modified": "2026-11-10T11:33:26.000+00:00"
+    },
+    "https://www.museumofone.art/relational-archival-investigation/": {
+      "language": "en",
+      "source_modified": "2026-11-10T10:29:20.000+00:00"
+    },
+    "https://www.museumofone.art/research-aesthetics-critical-inquiry/": {
+      "language": "en",
+      "source_modified": "2026-11-09T19:55:24.000+00:00"
+    },
+    "https://www.museumofone.art/research-aesthetics-experience/": {
+      "language": "en",
+      "source_modified": "2026-10-26T19:57:04.000+00:00"
+    },
+    "https://www.museumofone.art/research-critical-language/": {
+      "language": "en",
+      "source_modified": "2026-11-11T10:17:42.000+00:00"
+    },
+    "https://www.museumofone.art/research-cultural-memory-translation/": {
+      "language": "en",
+      "source_modified": "2026-11-09T19:56:57.000+00:00"
+    },
+    "https://www.museumofone.art/research-curatorial-museum-research/": {
+      "language": "en",
+      "source_modified": "2026-10-22T21:30:14.000+00:00"
+    },
+    "https://www.museumofone.art/research-discovery-and-archive-sources/": {
+      "language": "en",
+      "source_modified": "2026-10-22T16:28:53.000+00:00"
+    },
+    "https://www.museumofone.art/research-encounter-differential/": {
+      "language": "en",
+      "source_modified": "2026-10-25T09:35:47.000+00:00"
+    },
+    "https://www.museumofone.art/research-infrastructure/": {
+      "language": "en",
+      "source_modified": "2026-11-09T20:54:09.000+00:00"
+    },
+    "https://www.museumofone.art/research-intellectual-history/": {
+      "language": "en",
+      "source_modified": "2026-10-24T16:22:03.000+00:00"
+    },
+    "https://www.museumofone.art/research-methods-instruments/": {
+      "language": "en",
+      "source_modified": "2026-11-09T20:53:18.000+00:00"
+    },
+    "https://www.museumofone.art/research-methods/": {
+      "language": "en",
+      "source_modified": "2026-10-24T16:21:28.000+00:00"
+    },
+    "https://www.museumofone.art/research-programmes/": {
+      "language": "en",
+      "source_modified": "2026-11-10T11:38:36.000+00:00"
+    },
+    "https://www.museumofone.art/research-record-2026/": {
+      "language": "en",
+      "source_modified": "2026-11-10T12:24:34.000+00:00"
+    },
+    "https://www.museumofone.art/research-witness-material-memory/": {
+      "language": "en",
+      "source_modified": "2026-10-24T16:22:21.000+00:00"
+    },
+    "https://www.museumofone.art/research-working-papers/": {
+      "language": "en",
+      "source_modified": "2026-11-10T10:30:04.000+00:00"
+    },
+    "https://www.museumofone.art/silence-as-medium/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:50:21.000+00:00"
+    },
+    "https://www.museumofone.art/spatiotemporal-comparison/": {
+      "language": "en",
+      "source_modified": "2026-10-21T09:54:57.000+00:00"
+    },
+    "https://www.museumofone.art/stillmark-theory-a-treatise-on-presence-vanishing-and-the-discipline-of-the-fleeting-2/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:58:00.000+00:00"
+    },
+    "https://www.museumofone.art/sudanese-art-and-aesthetics/": {
+      "language": "en",
+      "source_modified": "2026-11-02T14:21:43.000+00:00"
+    },
+    "https://www.museumofone.art/tag-canon-of-witnesses-2/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:58:43.000+00:00"
+    },
+    "https://www.museumofone.art/the-adjacency-contamination-mapper/": {
+      "language": "en",
+      "source_modified": "2026-10-21T09:53:56.000+00:00"
+    },
+    "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:20:43.000+00:00"
+    },
+    "https://www.museumofone.art/the-cult-of-the-medium-when-process-becomes-propaganda/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:54:51.000+00:00"
+    },
+    "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:20:16.000+00:00"
+    },
+    "https://www.museumofone.art/the-custodian-of-consequence-reframing-the-role-of-the-critic/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:53:45.000+00:00"
+    },
+    "https://www.museumofone.art/the-dialogues/": {
+      "language": "en",
+      "source_modified": "2026-11-11T10:08:17.000+00:00"
+    },
+    "https://www.museumofone.art/the-dogs-who-outlived-philosophy-on-araya-rasdjarmrearnsooks-some-unexpected-events-sometimes-bring-momentary-happiness-2005/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:05:00.000+00:00"
+    },
+    "https://www.museumofone.art/the-first-break-since-postmodernism-the-rise-of-post-interpretive-criticism/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:54:01.000+00:00"
+    },
+    "https://www.museumofone.art/the-first-pillars-raised-a-statement-on-the-completion-of-the-foundational-trilogy/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:50:32.000+00:00"
+    },
+    "https://www.museumofone.art/the-journal-of-post-interpretive-criticism/": {
+      "language": "en",
+      "source_modified": "2026-10-18T23:41:05.000+00:00"
+    },
+    "https://www.museumofone.art/the-living-lexicon-post-interpretive-criticism-first-edition/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:54:40.000+00:00"
+    },
+    "https://www.museumofone.art/the-living-lexicon/": {
+      "language": "en",
+      "source_modified": "2026-10-21T10:03:01.000+00:00"
+    },
+    "https://www.museumofone.art/the-theory-of-misplacement/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:57:14.000+00:00"
+    },
+    "https://www.museumofone.art/theory-of-aesthetic-displacement/": {
+      "language": "en",
+      "source_modified": "2026-11-04T23:04:21.000+00:00"
+    },
+    "https://www.museumofone.art/theory-prism/": {
+      "language": "en",
+      "source_modified": "2026-10-21T09:54:55.000+00:00"
+    },
+    "https://www.museumofone.art/titles-dates-and-reconstructed-works/": {
+      "language": "en",
+      "source_modified": "2026-11-13T08:22:41.000+00:00"
+    },
+    "https://www.museumofone.art/tomoki-akimaru/": {
+      "language": "en",
+      "source_modified": "2026-11-11T00:04:22.000+00:00"
+    },
+    "https://www.museumofone.art/when-documentation-becomes-the-work/": {
+      "language": "en",
+      "source_modified": "2026-11-13T08:22:41.000+00:00"
+    },
+    "https://www.museumofone.art/when-interpretation-becomes-authority/": {
+      "language": "en",
+      "source_modified": "2026-11-13T08:22:38.000+00:00"
+    },
+    "https://www.museumofone.art/witnessing-vs-interpreting-a-post-interpretive-comparative-exercise/": {
+      "language": "en",
+      "source_modified": "2026-11-04T22:50:45.000+00:00"
+    }
+  }
+}
