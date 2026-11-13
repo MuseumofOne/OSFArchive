@@ -50,6 +50,9 @@ class Page(HTMLParser):
         self.collection_href = None
         self.collection_links = Counter()
         self.edition_links = []
+        self.collection_tree_count = 0
+        self.tree_counts = {}
+        self.tree_links = Counter()
         self.explorer_counts = {}
         self.count_text = None
         self.feed(path.read_text(encoding="utf-8"))
@@ -59,6 +62,14 @@ class Page(HTMLParser):
         attrs = dict(attrs)
         classes = (attrs.get('class') or '').split()
         name = self.path.name
+        if tag == 'aside' and 'collection-tree' in classes:
+            self.collection_tree_count += 1
+        if tag == 'a' and 'data-tree-collection' in attrs:
+            self.tree_links[attrs['data-tree-collection'], attrs.get('href', '')] += 1
+        for key in ('data-tree-total', 'data-tree-total-breakdown', 'data-tree-full-count', 'data-tree-breakdown'):
+            if key in attrs:
+                values = self.tree_counts.setdefault((key, attrs[key] or ''), [])
+                self.count_text = (tag, values, [])
         if name == 'website-records.html' and tag == 'section' and 'section' in classes:
             self.capture_section = attrs.get('id')
         if name == 'finding-aid.html' and tag == 'table':
@@ -84,9 +95,9 @@ class Page(HTMLParser):
         if 'data-ax-full-count' in attrs:
             self.collection_links[attrs['data-ax-full-count'], attrs.get('data-count'), self.collection_href] += 1
         for key in ('data-ax-total', 'data-ax-deposit-count', 'data-ax-website-count', 'data-ax-full-count',
-                    'data-capture-count', 'data-capture-total'):
+                    'data-capture-count', 'data-capture-total', 'data-ax-sidebar-count', 'data-ax-sidebar-breakdown', 'data-ax-sidebar-total'):
             if key in attrs:
-                values = self.explorer_counts.setdefault((key, attrs[key]), [])
+                values = self.explorer_counts.setdefault((key, attrs[key] or ''), [])
                 self.count_text = (tag, values, [])
         if tag == 'body':
             self.body_classes = (attrs.get('class') or '').split()
@@ -189,6 +200,7 @@ def check_explorer_counts(pages, origin, records):
     for (group, form, _), count in inventory.items():
         cards[group, form] += count
     full = {group: cards[group, 'edition'] + cards[group, 'website'] for group in groups}
+    check_collection_trees(pages, full, cards)
     feed = load(DIST / 'metadata/research-discovery.v2.json') or {}
     rows = feed.get('records', [])
     kinds = Counter(row['kind'] for row in rows)
@@ -216,7 +228,14 @@ def check_explorer_counts(pages, origin, records):
               'website': sum(count for (_, format), count in cards.items() if format == 'website'),
               **{kind: kinds[kind] for kind in ('chapter', 'entity', 'programme')}}
     expected = {('data-ax-total', key): [str(count)] for key, count in totals.items()}
+    expected['data-ax-sidebar-total', ''] = [
+        f'{totals["catalogue"]} catalogue {"record" if totals["catalogue"] == 1 else "records"} · '
+        f'{totals["publication"]} deposited {"edition" if totals["publication"] == 1 else "editions"}']
     for group, count in full.items():
+        deposits, web = cards[group, 'edition'], cards[group, 'website']
+        expected['data-ax-sidebar-count', group] = [f'{count} catalogue {"record" if count == 1 else "records"}']
+        expected['data-ax-sidebar-breakdown', group] = [
+            f'{deposits} deposited {"edition" if deposits == 1 else "editions"} · {web} website {"record" if web == 1 else "records"}']
         expected['data-ax-full-count', group] = [f'{count} catalogue {"record" if count == 1 else "records"} ↗']
         expected['data-ax-deposit-count', group] = [str(cards[group, 'edition'])]
         expected['data-ax-website-count', group] = [str(cards[group, 'website'])]
@@ -227,6 +246,30 @@ def check_explorer_counts(pages, origin, records):
                 f'Explorer collection counts link to the wrong destinations: {page.path.relative_to(DIST)}')
         require(page.edition_links and set(page.edition_links) == {base + 'finding-aid.html#inventory'},
                 f'Deposited edition controls must link to the edition inventory: {page.path.relative_to(DIST)}')
+
+
+def check_collection_trees(pages, full, cards):
+    """Every persistent sidebar advertises the same scope as its destination."""
+    label = lambda count, noun: f'{count} {noun}' + ('' if count == 1 else 's')
+    deposited = sum(count for (_, kind), count in cards.items() if kind == 'edition')
+    expected = {
+        ('data-tree-total', ''): [label(sum(full.values()), 'catalogue record')],
+        ('data-tree-total-breakdown', ''): [label(deposited, 'deposited edition') + ' · ' +
+                                          label(sum(full.values()) - deposited, 'website record')],
+    }
+    for group, count in full.items():
+        expected['data-tree-full-count', group] = [label(count, 'catalogue record')]
+        expected['data-tree-breakdown', group] = [label(cards[group, 'edition'], 'deposited edition') + ' · ' +
+                                                 label(cards[group, 'website'], 'website record')]
+    for path, page in pages.items():
+        relative = path.relative_to(DIST.resolve())
+        if relative.as_posix() in ('index.html', '404.html'):
+            continue
+        base = '../' * (len(relative.parts) - 1)
+        require(page.collection_tree_count == 1, f'Missing or duplicate persistent collection tree: {relative}')
+        require(page.tree_counts == expected, f'Persistent sidebar count or breakdown differs from catalogue: {relative}')
+        require(page.tree_links == Counter((group, base + collection_link(group)) for group in full),
+                f'Persistent sidebar collection links differ from advertised scope: {relative}')
 
 
 def main():

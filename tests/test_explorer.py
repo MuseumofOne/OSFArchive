@@ -41,7 +41,7 @@ class ExplorerContract(unittest.TestCase):
    cards=html.split(marker,1)[1]
    self.assertLess(cards.index('data-ax-record="124"'),cards.index('data-ax-record="123"'))
   self.assertIn('href="catalogue.html">Browse all publications',html)
-  self.assertIn('href="catalogue.html?collection=Books%20%26%20volumes">Browse this collection',html)
+  self.assertIn('href="catalogue.html?collection=Books%20%26%20volumes">Browse all 2 records',html)
   self.assertNotIn('data-ax-collection=', html)
  def test_catalogue_filter_uses_shared_identifier_and_context_scope(self):
   record=self.fixture()[0]

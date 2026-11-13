@@ -171,18 +171,49 @@ body.archive-registry { background: var(--paper); font-size: 16px; }
   font-size: .8125rem;
   margin-top: .4rem;
 }
+/* Publication records are complete cards, including the first and last in a row.
+   Generic route links use open edges and asymmetric padding; those rules must
+   not carry into the catalogue or the website publication grid. */
+.archive-registry .publication-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 20px;
+  border: 0;
+  align-items: start;
+}
+.archive-registry .publication-card {
+  min-width: 0;
+  padding: clamp(18px, 2vw, 26px);
+  border: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
 .archive-registry .publication-card .eyebrow {
-  margin: 0 0 .55rem;
+  margin: 0 0 14px;
+  font: 12px/1.65 var(--mono);
+  letter-spacing: .04em;
+  color: var(--muted);
+  align-items: baseline;
+}
+.archive-registry .publication-card .eyebrow::before {
+  flex: 0 0 5px;
+}
+.archive-registry .publication-card h3 {
+  font: 400 clamp(22px, 1.7vw, 24px)/1.32 var(--serif);
+  letter-spacing: -.015em;
+  margin: 0 0 16px;
 }
 .archive-registry .publication-card h3 a {
   color: inherit;
   text-decoration: underline;
-  text-decoration-thickness: .06em;
+  text-decoration-thickness: .045em;
   text-underline-offset: .16em;
 }
-.archive-registry .publication-grid {
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+.archive-registry .publication-card p {
+  max-width: none;
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 0 0 14px;
 }
+.archive-registry .publication-card > :last-child { margin-bottom: 0; }
 
 .archive-registry .catalogue-website-card[hidden] {
   display: none;
@@ -510,4 +541,53 @@ body.archive-registry {
   background: var(--reader-paper);
   border-color: var(--brass);
   color: #29241e;
+}
+/* Every collection label describes the full destination, with its format breakdown. */
+.archive-registry .collection-tree > details > summary {
+  font: 600 14px/1.45 var(--sans);
+  letter-spacing: .025em;
+}
+.archive-registry .collection-tree > details > summary > span {
+  font: 400 13px/1.5 var(--sans);
+  color: #655541;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.archive-registry .tree-group > summary {
+  position: relative;
+  padding: 0 18px 0 0;
+  font: 600 15px/1.4 var(--sans);
+  color: #392e25;
+  list-style: none;
+}
+.archive-registry .tree-group > summary::-webkit-details-marker { display: none; }
+.archive-registry .tree-group > summary::after {
+  content: '+';
+  position: absolute;
+  inset: 0 0 auto auto;
+  color: #703b38;
+}
+.archive-registry .tree-group[open] > summary::after { content: '−'; }
+.archive-registry .tree-group .tree-group-count {
+  display: block;
+  margin-top: 6px;
+  font: 600 14px/1.45 var(--sans);
+  color: #703b38;
+}
+.archive-registry .tree-group small {
+  font: 400 13px/1.5 var(--sans);
+  color: #655541;
+}
+.archive-registry .tree-group :is(.tree-collection-link, .tree-list-label) {
+  display: block;
+  font: 600 13px/1.5 var(--sans);
+  margin-block: 16px 10px;
+}
+.archive-registry .tree-group .tree-list-label { color: #655541; }
+.archive-registry .tree-group { padding: 12px; }
+.archive-registry .tree-group > summary::before { content: none; }
+@media (max-width: 1100px) {
+  .archive-registry .collection-tree > details {
+    background: #f4efe3;
+  }
 }

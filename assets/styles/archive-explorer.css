@@ -325,3 +325,21 @@ body:has(.archive-explorer.ax-expanded){overflow:hidden}
   .archive-explorer :is(.ax-topline, .ax-title em, .ax-totals dd, .ax-collection-row > span:first-child) { color: #222; }
   .archive-explorer .ax-card { box-shadow: none; }
 }
+/* Use the same full collection totals in both explorer sidebars. */
+.archive-explorer .ax-tree-group > summary .ax-tree-total {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ax-accent);
+}
+.archive-explorer .ax-tree-group > summary .ax-tree-breakdown {
+  font-size: 13px;
+  color: var(--ax-muted);
+}
+.archive-explorer .ax-tree-group .ax-tree-list-label {
+  font: 600 13px/1.5 var(--ax-sans);
+  color: var(--ax-muted);
+  margin: 16px 0 8px;
+}
+.archive-explorer .ax-tree > details > summary > small {
+  font: 400 13px/1.5 var(--ax-sans);
+}

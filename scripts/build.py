@@ -100,7 +100,7 @@ def write(path,content):
   content=enhance_page(path,content,RECORDS,PROGRAMMES)
   content=archival_page(path,content,RECORDS,PROGRAMMES,collection_counts=FULL_COUNTS,index_counts=DISCOVERY_V2['counts'])
   content=reader_link(path,content,RECORDS)
-  content=institutional_page(path,content,RECORDS,PROGRAMMES)
+  content=institutional_page(path,content,RECORDS,PROGRAMMES,collection_counts=FULL_COUNTS)
  if path.endswith(".html"):
   if path == '404.html':
    content=archival_page(path,content,RECORDS,PROGRAMMES,base=ERROR_BASE)

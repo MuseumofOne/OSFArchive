@@ -6,16 +6,18 @@ from publication_arrangement import collection_link
 import json,re
 E=lambda value:escape(str(value or ''),quote=True)
 
-def collection_tree(path,records,programmes):
+def collection_tree(path,records,programmes,*,collection_counts):
  base='../' if '/' in path else '';current=next((r for r in records if str(r['id'])==PurePosixPath(path).stem),None)
- groups=list(dict.fromkeys(r['collection'] for r in records));parts=sum(len(r.get('contents') or []) for r in records)
- tree=f'<aside class="collection-tree" aria-label="Archive navigation"><details id="collection-tree-panel" open><summary>Browse the archive<span>{len(records):02d} deposited editions · {parts:02d} analytic parts</span></summary><nav aria-label="Collection tree"><a class="tree-root" href="{base}finding-aid.html">Museum of One<br>Digital Archive Library</a><div class="tree-branch"><a href="{base}catalogue.html">Full catalogue</a>'
+ groups=list(collection_counts);total=sum(collection_counts.values())
+ label=lambda count, noun: f'{count} {noun}' + ('' if count==1 else 's')
+ tree=f'<aside class="collection-tree" aria-label="Archive navigation"><details id="collection-tree-panel" open><summary>Browse the archive<span data-tree-total>{label(total,"catalogue record")}</span><span data-tree-total-breakdown>{label(len(records),"deposited edition")} · {label(total-len(records),"website record")}</span></summary><nav aria-label="Collection tree"><a class="tree-root" href="{base}finding-aid.html">Museum of One<br>Digital Archive Library</a><div class="tree-branch"><a href="{base}catalogue.html">Full catalogue</a>'
  for group in groups:
   rows=[r for r in records if r['collection']==group];active=current and current['collection']==group
-  tree+=f'<details class="tree-group"'+(' open' if active else '')+f'><summary>{E(group)}<small>{len(rows)} deposited editions</small></summary><ul>'
+  count=collection_counts[group]
+  tree+=f'<details class="tree-group"'+(' open' if active else '')+f'><summary>{E(group)}<strong class="tree-group-count" data-tree-full-count="{E(group)}">{label(count,"catalogue record")}</strong><small data-tree-breakdown="{E(group)}">{label(len(rows),"deposited edition")} · {label(count-len(rows),"website record")}</small></summary><p><a class="tree-collection-link" data-tree-collection="{E(group)}" href="{base}{E(collection_link(group))}">Browse all {label(count,"catalogue record")} ↗</a></p><p class="tree-list-label">Deposited editions</p><ul>'
   for r in rows:
    tree+=f'<li><a href="{base}items/{r["id"]}.html"'+(' aria-current="page"' if current and current['id']==r['id'] else '')+f'><span>{E(r["accession"])}</span>{E(r.get("short_title") or r["title"])}</a></li>'
-  tree+=f'</ul><p><a href="{base}{E(collection_link(group))}">Browse the full collection ↗</a></p></details>'
+  tree+='</ul></details>'
  tree+='</div><div class="tree-tools">'
  for dest,label in [('research-discovery.html','Discover across the archive'),('contents.html','Chapters & essays'),('people.html','People & organisations'),('artworks.html','Artworks discussed'),('exhibitions.html','Exhibition context'),('research-registry.html','PIRR research records'),('programmes.html','Research pathways'),('vocabulary.html','Discovery vocabulary'),('policies.html','Policies & description'),('stewardship.html','Digital stewardship'),('research-help.html','Research enquiries')]:
   tree+=f'<a href="{base}{dest}"'+(' aria-current="page"' if path==dest else '')+f'>{label}</a>'
@@ -55,11 +57,11 @@ def responsibility_section(r):
  from policies import policy_record_panel
  return policy_record_panel(r,base='../').replace('id="description-history"','id="description-control"')
 
-def institutional_page(path,html,records,programmes):
+def institutional_page(path,html,records,programmes,*,collection_counts):
  base='../' if '/' in path else ''
  html=html.replace('</head>',f'<link rel="stylesheet" href="{base}assets/institutional.css"><script defer src="{base}assets/institutional.js"></script></head>')
  if path != 'index.html':
-  html=re.sub(r'(<main id="main" class="shell">)(.*?)(</main>)',lambda m:m[1]+'<div class="archive-workspace">'+collection_tree(path,records,programmes)+'<div class="archive-workbench">'+m[2]+'</div></div>'+m[3],html,count=1,flags=re.S)
+  html=re.sub(r'(<main id="main" class="shell">)(.*?)(</main>)',lambda m:m[1]+'<div class="archive-workspace">'+collection_tree(path,records,programmes,collection_counts=collection_counts)+'<div class="archive-workbench">'+m[2]+'</div></div>'+m[3],html,count=1,flags=re.S)
  if path=='programmes.html':
   for programme in programmes:
    if programme.get('pirr_registry_url'):
