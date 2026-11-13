@@ -24,8 +24,9 @@
 .archive-explorer .ax-tree nav>a{display:block;padding:9px 0;font-size:12px;border-bottom:1px solid var(--ax-line)}
 .archive-explorer .ax-tree nav>.ax-tree-root{font:21px/1.35 var(--ax-serif);padding-bottom:18px}
 .archive-explorer .ax-tree-group{border:1px solid var(--ax-line)!important;padding:14px!important;margin:13px 0!important}
-.archive-explorer .ax-tree-group summary{padding:0;text-transform:none;font:12px/1.6 var(--ax-sans);letter-spacing:0}
-.archive-explorer .ax-tree-group summary small{display:inline;margin:0 8px}
+.archive-explorer .ax-tree-group>summary{position:relative;padding:0;padding-inline-end:24px;color:var(--ax-ink);text-transform:none;font:600 15px/1.35 var(--ax-sans);letter-spacing:0}
+.archive-explorer .ax-tree-group>summary::after{position:absolute;inset-block-start:0;inset-inline-end:0;float:none;color:var(--ax-accent);font-size:16px;line-height:1.3}
+.archive-explorer .ax-tree-group>summary small{display:block;margin:5px 0 0;color:var(--ax-muted);font:400 13px/1.4 var(--ax-sans)}
 .archive-explorer .ax-tree-group>a{display:block;font-size:12px;margin:12px 0}
 .archive-explorer .ax-tree-group ul{list-style:none;padding:0;margin:0}
 .archive-explorer .ax-tree-group li{font-size:12px;line-height:1.55;margin:12px 0}
@@ -262,6 +263,8 @@ body:has(.archive-explorer.ax-expanded){overflow:hidden}
   text-decoration: none;
 }
 .archive-explorer .ax-collection-row > span:first-child { color: #d9bb82; }
+.archive-explorer .ax-collection-row small { font-size: 12px; letter-spacing: .03em; }
+.archive-explorer .ax-collection-row > span:last-child { font-size: 13px; }
 .archive-explorer .ax-tabs a[aria-current="page"] {
   background: #c6ac7712;
   color: #f3dfb5;
