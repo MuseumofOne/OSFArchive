@@ -21,12 +21,14 @@ from citations import build_citation_model, visible_citation, csl_json, bibtex, 
 from evidence import load_evidence, build_evidence_pages, copy_evidence_assets
 from discovery_v2 import build_research_discovery, build_fulltext_index, build_discovery_page, encode_index
 from wdw_sources import build_wdw_sources, source_collection_link
-from publication_arrangement import METHODOLOGY, collection_anchor, collection_link
+from publication_arrangement import (METHODOLOGY, collection_anchor, collection_link,
+                                     load_publication_captures, publication_card, publication_inventory)
 from pathlib import Path
 from html import escape
 import json, os, re, shutil, urllib.parse, xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'dist'; DATA=ROOT/'data'
+SYNC_WORK=Path(os.environ.get('WEBSITE_SYNC_DIR') or ROOT/'.sync-work')
 ORIGIN=(os.environ.get('SITE_ORIGIN') or 'https://archive.museumofone.art').rstrip('/')
 RECORDS=json.loads((DATA/'catalogue.json').read_text())
 if isinstance(RECORDS,dict): RECORDS=RECORDS['records']
@@ -95,11 +97,13 @@ def write(path,content):
 def cover(r,base='',hero=False):
  if r.get('cover'): return f'<img src="{base}{E(r["cover"])}" alt="{E(r.get("cover_alt") or "Published cover of "+r["title"])}" '+('fetchpriority="high"' if hero else 'loading="lazy"')+' decoding="async">'
  return f'<div class="cover-placeholder" aria-label="Catalogue display, not an original publication cover"><span class="cover-kicker">MUSEUM OF ONE<br>ARCHIVAL LIBRARY</span><span class="cover-title">{E(r.get("short_title",r["title"]))}</span><span class="cover-author">{E(r["author"])}<br>{E(r["date"][:4])} · Catalogue display</span></div>'
-def card(r,base='',search=False):
+def card(r,base='',search=False,capture=None):
  attrs=''
+ if capture:
+  attrs=f' data-capture="{E(capture)}"'
  if search:
   searchtext=searchable_text(r)
-  attrs=f' data-programmes="{E(json.dumps([programme_id(p) for p in programmes_for(r)]))}" data-type="{E(r["type"])}" data-record data-title="{E(r["title"])}" data-search="{E(searchtext)}" data-group="{E(r["collection"])}" data-year="{E(r["date"][:4])}" data-date="{E(r["date"])}" data-subjects="{E(json.dumps(r["subjects"]))}"'
+  attrs+=f' data-format="edition" data-programmes="{E(json.dumps([programme_id(p) for p in programmes_for(r)]))}" data-type="{E(r["type"])}" data-record data-title="{E(r["title"])}" data-search="{E(searchtext)}" data-group="{E(r["collection"])}" data-year="{E(r["date"][:4])}" data-date="{E(r["date"])}" data-subjects="{E(json.dumps(r["subjects"]))}"'
  return f'<a class="book-card" href="{base}items/{r["id"]}.html"{attrs}><div class="cover-well">{cover(r,base)}</div><div class="catalogue-id">{E(r["accession"])} <span class="arrow" aria-hidden="true">↗</span></div><h3>{E(r.get("short_title",r["title"]))}</h3><p>{E(r["author"])} · {E(r["date"][:4])}<br>{E(r["type"])}</p></a>'
 def pagehead(eyebrow,title,desc):
  return f'<div class="page-head"><div class="breadcrumb"><a href="index.html">Library</a> / {E(eyebrow)}</div><div class="eyebrow">{E(eyebrow)}</div><h1>{E(title)}</h1><p>{E(desc)}</p></div>'
@@ -125,10 +129,23 @@ note='''<section class="archive-note"><div><div class="eyebrow">A record, with i
 research_home='<section class="section" style="padding-top:0"><div class="section-head"><div><span class="section-no">Research / From inquiry to publication</span><h2>Stay with the inquiry.</h2></div><a class="text-link" href="programmes.html">Research programmes ↗</a></div><p style="max-width:650px;color:var(--muted);font-size:13px">Follow the programme badges into Museum of One’s continuing research. Published outputs retain their own records; programme stages remain distinct from publication status.</p><div class="programme-badges">'+''.join(f'<a class="programme-badge" href="programmes.html#{E(programme_id(p))}">{E(p["title"])}<small>{E(p.get("status", ""))}</small></a>' for p in PROGRAMMES if any(any(x['url']==p['url'] for x in programmes_for(r)) for r in RECORDS))+'</div></section>'
 write('index.html',layout('The Archival Library','Explore Museum of One books, treatises and critical writing in a source-linked digital catalogue.',hero+selected+routes+research_home+recent+note))
 
-subjects=sorted({s for r in RECORDS for s in r['subjects']});years=sorted({r['date'][:4] for r in RECORDS},reverse=True)
+CAPTURES = load_publication_captures(SYNC_WORK)
+WEB_PUBLICATIONS = [r for r in publication_inventory(CAPTURES, RECORDS) if r['collection']]
+WEBSITE_CARDS = [r for r in WEB_PUBLICATIONS if not r['edition_path']]
+CAPTURE_LINKS = {r['edition_path']: r['capture_path'] for r in WEB_PUBLICATIONS if r['edition_path']}
+subjects=sorted({s for r in [*RECORDS,*WEBSITE_CARDS] for s in r['subjects']})
+years=sorted({r['date'][:4] for r in [*RECORDS,*WEBSITE_CARDS] if r['date']},reverse=True)
+resource_types=sorted({r['type'] for r in RECORDS} | {r['role'] for r in WEBSITE_CARDS})
+
+catalogue_cards = ''.join(
+    markup for _, markup in sorted(
+        [(r['date'], card(r, search=True, capture=CAPTURE_LINKS.get(f'items/{r["id"]}.html'))) for r in RECORDS] +
+        [(r['date'] or '', publication_card(r, catalogue=True)) for r in WEBSITE_CARDS],
+        key=lambda row: row[0], reverse=True)
+)
 def options(values):return ''.join(f'<option value="{E(v)}">{E(v)}</option>' for v in values)
-catalogue=pagehead('Catalogue','The published record.','Browse a selected corpus of Museum of One publications. Search titles, creators, subjects, ISBNs, and DOIs.')
-catalogue+=f'''<div class="catalogue-layout"><aside class="filters" aria-label="Filter the catalogue"><h2 class="filter-title">Refine the catalogue</h2><div class="filter-field"><label for="group-filter">Collection</label><select id="group-filter"><option value="">All collections</option>{options(GROUPS)}</select></div><div class="filter-field"><label for="year-filter">Repository publication year</label><select id="year-filter"><option value="">All years</option>{options(years)}</select></div><div class="filter-field"><label for="subject-filter">Editorial subject</label><select id="subject-filter"><option value="">All subjects</option>{options(subjects)}</select></div><div class="filter-field"><label for="type-filter">Resource type</label><select id="type-filter"><option value="">All types</option>{options(sorted({r["type"] for r in RECORDS}))}</select></div><div class="filter-field"><label for="programme-filter">Research programme</label><select id="programme-filter"><option value="">All programmes</option>{''.join(f'<option value="{E(programme_id(p))}">{E(p["title"])}</option>' for p in PROGRAMMES)}</select></div><button class="reset" id="reset-filters">Clear filters</button><p class="filter-note">The item register lists deposited editions. <a href="website-records.html">Browse website publications by collection ↗</a><br><a href="methodology.html">Browse the Methodology page ↗</a></p></aside><section aria-label="Catalogue results"><div class="searchbar">{SEARCH_ICON}<label class="sr-only" for="catalogue-search">Search the catalogue</label><input id="catalogue-search" type="search" placeholder="Search titles, subjects, identifiers…" autocomplete="off"></div><div class="result-toolbar"><span id="result-count" aria-live="polite">{len(RECORDS)} records</span><div><label for="sort">Sort: </label><select id="sort"><option value="newest">Latest source publication</option><option value="oldest">Earliest source publication</option><option value="title">Title A–Z</option></select></div></div><div class="catalogue-grid" id="catalogue-grid">'''+''.join(card(r,search=True) for r in sorted(RECORDS,key=lambda r:r['date'],reverse=True))+'''</div><div id="no-results" class="empty" hidden><h2>No matching records</h2><p>Try a shorter search or clear the filters.</p></div></section></div>'''
+catalogue=pagehead('Catalogue','The published record.','Browse Museum of One’s deposited editions and website publications together. Filter by collection or record format.')
+catalogue+=f'''<div class="catalogue-layout"><aside class="filters" aria-label="Filter the catalogue"><h2 class="filter-title">Refine the catalogue</h2><div class="filter-field"><label for="group-filter">Collection</label><select id="group-filter"><option value="">All collections</option>{options(GROUPS)}</select></div><div class="filter-field"><label for="format-filter">Record format</label><select id="format-filter"><option value="">All formats</option><option value="edition">Deposited editions</option><option value="website">Website records</option></select></div><div class="filter-field"><label for="year-filter">Publication year</label><select id="year-filter"><option value="">All years</option>{options(years)}</select></div><div class="filter-field"><label for="subject-filter">Editorial subject</label><select id="subject-filter"><option value="">All subjects</option>{options(subjects)}</select></div><div class="filter-field"><label for="type-filter">Resource type</label><select id="type-filter"><option value="">All types</option>{options(resource_types)}</select></div><div class="filter-field"><label for="programme-filter">Research programme</label><select id="programme-filter"><option value="">All programmes</option>{''.join(f'<option value="{E(programme_id(p))}">{E(p["title"])}</option>' for p in PROGRAMMES)}</select></div><button class="reset" id="reset-filters">Clear filters</button><p class="filter-note"><a href="website-records.html">Browse all website captures ↗</a><br><a href="methodology.html">Browse the Methodology page ↗</a></p></aside><section aria-label="Catalogue results"><div class="searchbar">{SEARCH_ICON}<label class="sr-only" for="catalogue-search">Search the catalogue</label><input id="catalogue-search" type="search" placeholder="Search titles, subjects, identifiers…" autocomplete="off"></div><div class="result-toolbar"><span id="result-count" aria-live="polite">{len(RECORDS)+len(WEBSITE_CARDS)} records</span><div><label for="sort">Sort: </label><select id="sort"><option value="newest">Latest source publication</option><option value="oldest">Earliest source publication</option><option value="title">Title A–Z</option></select></div></div><div class="catalogue-grid" id="catalogue-grid">'''+catalogue_cards+'''</div><div id="no-results" class="empty" hidden><h2>No matching records</h2><p>Try a shorter search or clear the filters.</p></div></section></div>'''
 write('catalogue.html',layout('Catalogue','Search Museum of One publications by title, subject, creator and persistent identifier.',catalogue,'catalogue.html',active='catalogue'))
 collections=pagehead('Collections','Lines of inquiry.','Four editorial collections for deposited editions and website publications.')
 for group,(n,title,desc) in GROUPS.items():
@@ -301,9 +318,8 @@ paths+=build_pirr_pages(RECORDS,PROGRAMMES,PIRR,write,layout,ORIGIN)
 write('metadata/entities.json',json.dumps(ENTITIES,ensure_ascii=False,indent=2))
 write('metadata/contents.json',json.dumps(CONTENTS,ensure_ascii=False,indent=2))
 # One generated discovery model serves archive pages and the native Ghost entrance.
-SYNC_WORK=Path(os.environ.get('WEBSITE_SYNC_DIR') or ROOT/'.sync-work')
 from website_pages import build_website_pages
-paths+=build_website_pages(SYNC_WORK,OUT,write,layout,ORIGIN,methodology=methodology,methodology_desc=methodology_desc)
+paths+=build_website_pages(SYNC_WORK,OUT,write,layout,ORIGIN,methodology=methodology,methodology_desc=methodology_desc, captures=CAPTURES)
 GHOST_DISCOVERY=json.loads((SYNC_WORK/'public/discovery.json').read_text())['records'] if (SYNC_WORK/'public/discovery.json').exists() else []
 EVIDENCE=load_evidence(ROOT,ORIGIN)
 copy_evidence_assets(EVIDENCE,ROOT,OUT)

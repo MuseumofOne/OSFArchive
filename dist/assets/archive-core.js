@@ -3,7 +3,7 @@
 const normalize=value=>String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 function matches(data,filters){
  const terms=normalize(filters.q).trim().split(/\s+/).filter(Boolean);
- return terms.every(t=>normalize(data.search).includes(t)) && (!filters.collection||data.group===filters.collection) && (!filters.year||data.year===filters.year) && (!filters.subject||(data.subjects||[]).includes(filters.subject)) && (!filters.type||data.type===filters.type) && (!filters.programme||(data.programmes||[]).includes(filters.programme));
+ return terms.every(t=>normalize(data.search).includes(t)) && (!filters.format||data.format===filters.format) && (!filters.collection||data.group===filters.collection) && (!filters.year||data.year===filters.year) && (!filters.subject||(data.subjects||[]).includes(filters.subject)) && (!filters.type||data.type===filters.type) && (!filters.programme||(data.programmes||[]).includes(filters.programme));
 }
 function parseSaved(raw){try{const values=JSON.parse(raw);return Array.isArray(values)?[...new Set(values.filter(v=>typeof v==='string'&&/^[a-zA-Z0-9_-]{1,80}$/.test(v)))].slice(0,200):[];}catch{return [];}}
 function toggleSaved(ids,id){if(!/^[a-zA-Z0-9_-]{1,80}$/.test(id))return ids;return ids.includes(id)?ids.filter(x=>x!==id):[...ids,id].slice(-200);}

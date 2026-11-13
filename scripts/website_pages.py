@@ -9,7 +9,7 @@ from website_sync import digest
 from website_metadata import capture_schema
 from image_dimensions import dimensions
 from publication_arrangement import (BOOKS, ESSAYS, THEORY, METHODOLOGY,
-                                     collection_anchor, publication_grid, publication_inventory)
+                                     collection_anchor, load_publication_captures, publication_grid, publication_inventory)
 
 
 def access_asset(asset, file, out, origin, catalogue):
@@ -100,18 +100,14 @@ def capture_publication_date(capture):
     return date if date.tzinfo else date.replace(tzinfo=timezone.utc)
 
 
-def build_website_pages(work, out, write, layout, origin, *, methodology=None, methodology_desc=None):
+def build_website_pages(work, out, write, layout, origin, *, methodology=None, methodology_desc=None, captures=None):
     work = Path(work)
     out = Path(out)
     # A fresh whitelist is rebuilt each time, never leave a withdrawn readable file.
     for p in [out / "website", out / "assets/website-captures"]:
         if p.exists():
             shutil.rmtree(p)
-    current = (
-        json.loads((work / "public/current.json").read_text())
-        if (work / "public/current.json").exists()
-        else []
-    )
+    current = load_publication_captures(work) if captures is None else captures
     source_map = {
         p["source"]["url"]: origin + "/website/" + p["archive_id"] + ".html"
         for p in current

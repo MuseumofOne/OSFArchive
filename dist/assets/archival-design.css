@@ -180,3 +180,27 @@ body.archive-registry { background: var(--paper); font-size: 16px; }
 .archive-registry .publication-grid {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
 }
+
+.archive-registry .catalogue-website-card[hidden] {
+  display: none;
+}
+.archive-registry .catalogue-grid[data-view=list] .catalogue-website-card {
+  display: block;
+}
+.archive-registry .catalogue-grid[data-view=list] .catalogue-website-card[hidden] {
+  display: none;
+}
+.archive-registry .catalogue-layout > *,
+.archive-registry .catalogue-layout .filter-field select,
+.archive-registry .catalogue-layout .searchbar input {
+  min-width: 0;
+  max-width: 100%;
+}
+.archive-registry .catalogue-website-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.archive-registry .catalogue-layout .result-toolbar {
+  flex-wrap: wrap;
+  gap: .75rem;
+}

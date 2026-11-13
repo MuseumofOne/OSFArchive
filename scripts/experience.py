@@ -66,8 +66,10 @@ def enhance_page(path,html,records,programmes):
  def enhance_card(m):
   target,attrs,inner=m.groups();rid=Path(urllib.parse.urlparse(target).path).stem;r=lookup.get(rid)
   if not r:return m.group(0)
+  capture = re.search(r' data-capture="([^"]+)"', attrs)
+  capture_link = f'<a class="read-record" href="{capture[1]}">Website version ↗</a>' if capture else ''
   inner=inner.replace('</h3>','</h3><p class="card-abstract">'+E(r['summary'])+'</p>',1)
-  return f'<article class="catalogue-card"{attrs}><a class="book-card" href="{E(target)}">{inner}</a><div class="record-tools"><span class="record-collection">{E(r["type"])}</span><button type="button" class="save-record" data-save="{E(rid)}" aria-pressed="false" aria-label="Save {E(r["short_title"])} to reading list"><span aria-hidden="true">＋</span> Save</button></div></article>'
+  return f'<article class="catalogue-card"{attrs}><a class="book-card" href="{E(target)}">{inner}</a><div class="record-tools"><span class="record-collection">{E(r["type"])}</span>{capture_link}<button type="button" class="save-record" data-save="{E(rid)}" aria-pressed="false" aria-label="Save {E(r["short_title"])} to reading list"><span aria-hidden="true">＋</span> Save</button></div></article>'
  html=re.sub(r'<a class="book-card" href="([^"]+)"([^>]*)>(.*?)</a>',enhance_card,html,flags=re.S)
  if path=='catalogue.html':
   html=html.replace('<div class="result-toolbar">','<div class="active-filters" id="active-filters" aria-label="Active filters"></div><div class="result-toolbar">')

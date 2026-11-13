@@ -1,6 +1,7 @@
 """Editorial browsing routes for public website publications and deposited editions."""
 
 from html import escape
+import json
 from urllib.parse import quote, urlsplit
 
 METHODOLOGY = "Methodology"
@@ -98,6 +99,11 @@ def classify_capture(source, deposited):
     return None, "Website reference"
 
 
+def load_publication_captures(work):
+    path = work / "public/current.json"
+    return json.loads(path.read_text()) if path.is_file() else []
+
+
 def publication_inventory(captures, editions):
     deposited = {canonical_key(r["institutional_url"]): r for r in editions if r.get("institutional_url")}
     rows = []
@@ -112,6 +118,7 @@ def publication_inventory(captures, editions):
             "role": role,
             "date": capture["original_published_at"],
             "summary": capture["summary"],
+            "subjects": source.get("subjects", []),
             "creators": [creator["name"] for creator in source.get("creators", [])],
             "source_url": source["url"],
             "capture_path": f'website/{capture["archive_id"]}.html',
@@ -120,7 +127,23 @@ def publication_inventory(captures, editions):
     return sorted(rows, key=lambda row: row["date"] or "", reverse=True)
 
 
-def publication_card(row):
+def publication_card(row, *, catalogue=False):
+    attrs = ""
+    css = "route-card publication-card"
+    if catalogue:
+        css += " catalogue-website-card"
+        date = row["date"] or ""
+        fields = {
+            "group": row["collection"], "type": row["role"], "year": date[:4],
+            "date": date, "title": row["title"], "format": "website",
+            "subjects": json.dumps(row["subjects"]),
+            "search": " ".join([row["title"], row["summary"] or "",
+                                *row["creators"], *row["subjects"]]),
+        }
+        attrs = " data-record" + "".join(
+            f' data-{key}="{escape(value, quote=True)}"' for key, value in fields.items()
+        )
+
     title = escape(row["title"])
     authors = " · ".join(escape(author) for author in row["creators"])
     date = escape((row["date"] or "")[:10])
@@ -130,7 +153,7 @@ def publication_card(row):
     edition = row["edition_path"]
     edition_link = f'<a href="{escape(edition, quote=True)}">Deposited edition ↗</a>' if edition else ""
     return (
-        f'<article class="route-card publication-card" id="{escape(row["id"], quote=True)}">'
+        f'<article class="{css}" id="{escape(row["id"], quote=True)}"{attrs}>'
         f'<p class="eyebrow">{details}</p><h3><a href="{capture}">{title}</a></h3>'
         f'<p>{summary}</p>{edition_link}</article>'
     )

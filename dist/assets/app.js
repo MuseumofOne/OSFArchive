@@ -34,7 +34,7 @@ window.addEventListener('storage',event=>{if(event.key===storageKey){saved=core.
 const search=$('#catalogue-search');
 if(search){
  const cards=$$('[data-record]');
- const fields={q:search,collection:$('#group-filter'),year:$('#year-filter'),subject:$('#subject-filter'),type:$('#type-filter'),programme:$('#programme-filter')};
+ const fields={q:search,collection:$('#group-filter'),format:$('#format-filter'),year:$('#year-filter'),subject:$('#subject-filter'),type:$('#type-filter'),programme:$('#programme-filter')};
  const params=new URLSearchParams(location.search),sort=$('#sort'),grid=$('#catalogue-grid');
  Object.entries(fields).forEach(([key,field])=>{const value=params.get(key)||'';field.value=value;if(field.value!==value)field.value='';});
  const data=card=>({...card.dataset,subjects:JSON.parse(card.dataset.subjects||'[]'),programmes:JSON.parse(card.dataset.programmes||'[]')});

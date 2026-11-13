@@ -2,6 +2,7 @@
 from html import escape
 from pathlib import PurePosixPath
 from urllib.parse import quote
+from publication_arrangement import collection_link
 import json,re
 E=lambda value:escape(str(value or ''),quote=True)
 
@@ -14,7 +15,7 @@ def collection_tree(path,records,programmes):
   tree+=f'<details class="tree-group"'+(' open' if active else '')+f'><summary>{E(group)}<small>{len(rows):02d}</small></summary><ul>'
   for r in rows:
    tree+=f'<li><a href="{base}items/{r["id"]}.html"'+(' aria-current="page"' if current and current['id']==r['id'] else '')+f'><span>{E(r["accession"])}</span>{E(r.get("short_title") or r["title"])}</a></li>'
-  tree+='</ul></details>'
+  tree+=f'</ul><p><a href="{base}{E(collection_link(group))}">Browse the full collection ↗</a></p></details>'
  tree+='</div><div class="tree-tools">'
  for dest,label in [('research-discovery.html','Discover across the archive'),('contents.html','Chapters & essays'),('people.html','People & organisations'),('artworks.html','Artworks discussed'),('exhibitions.html','Exhibition context'),('research-registry.html','PIRR research records'),('programmes.html','Research pathways'),('vocabulary.html','Discovery vocabulary'),('policies.html','Policies & description'),('stewardship.html','Digital stewardship'),('research-help.html','Research enquiries')]:
   tree+=f'<a href="{base}{dest}"'+(' aria-current="page"' if path==dest else '')+f'>{label}</a>'
