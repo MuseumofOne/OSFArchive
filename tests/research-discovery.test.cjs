@@ -83,7 +83,7 @@ test('forty real corpus retrieval cases meet the declared target ranks',()=>{
 
 test('contextual name variants retrieve the person while dialogue status stays explicit',()=>{
  const feed=load('dist/metadata/research-discovery.v2.json');
- for(const [query,id] of [['Kazuo Shiraga','shiraga-kazuo'],['Shiraga Kazuo','shiraga-kazuo'],['Dong-Yeon Koh','dong-yeon-koh'],['Koh Dongyeon','dong-yeon-koh'],['Reiko Tomii','reiko-tomii'],['Paul Gladston','paul-gladston']]){
+ for(const [query,id] of [['Kazuo Shiraga','shiraga-kazuo'],['Shiraga Kazuo','shiraga-kazuo'],['白髪一雄','shiraga-kazuo'],['Dong-Yeon Koh','dong-yeon-koh'],['Koh Dongyeon','dong-yeon-koh'],['Reiko Tomii','reiko-tomii'],['Paul Gladston','paul-gladston']]){
   assert.equal(api.rankRecords(feed.records,query,{kind:'entity'})[0].id,'entity:'+id);
  }
  const gladston=feed.records.find(r=>r.id==='entity:paul-gladston');
@@ -132,4 +132,17 @@ test('quoted released text requires a contiguous normalized phrase',()=>{
   const exact=api.rankRecords([{...record,text:'The WOOD   acquisition is described.'}],'"wood acquisition"');assert.equal(exact.length,1);assert.ok(exact[0].match_reason.startsWith(expected));
   const alias=api.rankRecords([{...record,aliases:['wood acquisition']}],'"wood acquisition"');assert.equal(alias.length,1);assert.equal(alias[0].match_reason,'Known alternative title or name');
  }
+});
+
+
+test('Japanese artist alias retrieves the sourced person and discussed publication',()=>{
+ const feed=load('dist/metadata/research-discovery.v2.json');
+ const person=api.rankRecords(feed.records,'白髪一雄',{kind:'entity'})[0];
+ assert.equal(person.id,'entity:shiraga-kazuo');
+ assert.equal(person.match_reason,'Known alternative title or name');
+ const publications=api.rankRecords(feed.records,'白髪一雄',{kind:'publication'});
+ assert.ok(publications.some(row=>row.id==='publication:23428974'));
+ const target=publications.find(row=>row.id==='publication:23428974');
+ assert.ok(!target.aliases.includes('白髪一雄'));
+ assert.equal(target.author,'Dorian Vale');
 });

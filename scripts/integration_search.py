@@ -166,6 +166,8 @@ def searchable_text(record):
     terms += [creator.get('name') for creator in _objects(creators)] + _strings(creators)
     terms += [title.get('title') for title in _objects(record.get('alternate_titles'))]
     terms += [entity.get('label') for entity in _objects(record.get('entity_links'))]
+    for entity in _objects(record.get('entity_links')):
+        terms += _strings(entity.get('variants'))
     terms += [part.get('title') for part in _objects(record.get('contents'))]
     for subject in _objects(record.get('controlled_subjects')):
         terms += _strings(subject.get('alternative_labels'))

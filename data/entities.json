@@ -1194,7 +1194,8 @@
     "label": "Shiraga Kazuo",
     "type": "Person",
     "variants": [
-      "Kazuo Shiraga"
+      "Kazuo Shiraga",
+      "白髪一雄"
     ],
     "identifiers": [],
     "summary": "Dorian Vale’s Answerability examines Shiraga Kazuo’s Challenging Mud through artistic preparation, exhibition and documentary evidence, engaging the scholarship of Reiko Tomii and Namiko Kunimoto.",
@@ -1209,6 +1210,12 @@
         "url": "https://www.moma.org/artists/38972-kazuo-shiraga",
         "label": "MoMA — Kazuo Shiraga",
         "note": "Museum source corroborates the artist name and attribution of Challenging Mud; no equivalence of executions is inferred."
+      },
+      {
+        "url": "https://artplatform.go.jp/artists/A1478",
+        "label": "Art Platform Japan — Dictionary of Artists in Japan, Shiraga Kazuo",
+        "note": "The national artist dictionary explicitly identifies 白髪一雄 as the Japanese display name for Shiraga Kazuo; this source supports the name variant only.",
+        "reviewed": "2026-11-13"
       }
     ],
     "record_links": [

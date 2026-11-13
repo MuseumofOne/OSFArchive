@@ -87,6 +87,17 @@ class IntegrationSearchTest(unittest.TestCase):
         self.assertIn('pir-prj-pyp5yx3w', volume['search_text'])
         self.assertEqual(searchable_text(original), volume['search_text'])
 
+    def test_sourced_artist_variants_are_searchable_without_changing_work_identity(self):
+        payload = build_search_index(self.records, 'https://archive.example', self.sources)
+        answerability = next(r for r in payload['records'] if r['id'] == '23428974')
+        for query in ('Shiraga Kazuo', 'Kazuo Shiraga', '白髪一雄'):
+            self.assertIn(query, answerability['search_text'])
+        original = next(r for r in self.records if r['id'] == '23428974')
+        self.assertEqual(answerability['title'], original['title'])
+        self.assertEqual(answerability['author'], original['author'])
+        self.assertEqual(answerability['doi'], original['doi'])
+        self.assertEqual(searchable_text(original), answerability['search_text'])
+
     def test_unapproved_fields_are_not_serialized_or_searchable(self):
         record = deepcopy(self.records[0])
         record['internal_notes'] = 'PRIVATE_SENTINEL'

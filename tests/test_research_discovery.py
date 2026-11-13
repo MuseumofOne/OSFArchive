@@ -144,6 +144,21 @@ class ResearchDiscovery(unittest.TestCase):
         self.assertNotIn('10.5281', ' '.join(chapter['identifiers']))
         self.assertEqual(chapter['identity'], chapter['url'] + '#component')
 
+    def test_japanese_artist_name_keeps_entity_and_publication_scopes_distinct(self):
+        rows = {r['id']: r for r in self.feed['records']}
+        artist = rows['entity:shiraga-kazuo']
+        publication = rows['publication:23428974']
+        self.assertIn('白髪一雄', artist['aliases'])
+        self.assertIn('白髪一雄', artist['search_text'])
+        self.assertTrue(any(s['url'] == 'https://artplatform.go.jp/artists/A1478'
+                            for s in artist['sources']))
+        self.assertIn('白髪一雄', publication['search_text'])
+        self.assertNotIn('白髪一雄', publication['aliases'])
+        self.assertEqual(publication['author'], 'Dorian Vale')
+        self.assertTrue(any(e['target_id'] == artist['id'] and
+                            e['relation'] == 'artist discussed'
+                            for e in publication['relationships']))
+
     def test_fulltext_fixity_and_verbatim_page_evidence(self):
         import fitz
         feed = build_fulltext_index(self.records, ROOT, self.origin)
