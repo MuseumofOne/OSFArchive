@@ -125,3 +125,37 @@ body:has(.archive-explorer.ax-expanded){overflow:hidden}
 .archive-explorer .ax-grid[data-layout=list] .ax-card-summary {
   display: block;
 }
+
+/* Text jackets use the cover proportion as a minimum and grow with their copy. */
+.archive-explorer .ax-card,
+.archive-explorer .ax-card-copy {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.archive-explorer .ax-cover:has(.ax-type-cover),
+.archive-explorer .ax-grid[data-layout=list] .ax-cover:has(.ax-type-cover) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: stretch;
+  align-self: start;
+  aspect-ratio: auto;
+  max-height: none;
+}
+.archive-explorer .ax-cover:has(.ax-type-cover)::before {
+  content: "";
+  aspect-ratio: 4 / 4.7;
+  grid-area: 1 / 1;
+}
+.archive-explorer .ax-type-cover {
+  grid-area: 1 / 1;
+  box-sizing: border-box;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.archive-explorer .ax-grid[data-layout=list] .ax-type-cover {
+  padding: 8px 5px;
+  gap: 8px;
+}
+.archive-explorer .ax-grid[data-layout=list] .ax-type-cover strong {
+  font-size: 13px;
+}

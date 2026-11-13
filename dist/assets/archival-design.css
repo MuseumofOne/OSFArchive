@@ -204,3 +204,32 @@ body.archive-registry { background: var(--paper); font-size: 16px; }
   flex-wrap: wrap;
   gap: .75rem;
 }
+
+/* Let generated catalogue jackets expand when titles wrap. */
+.archive-registry .cover-well:has(.cover-placeholder),
+.archive-registry .catalogue-grid[data-view=list] .cover-well:has(.cover-placeholder) {
+  aspect-ratio: auto;
+  max-height: none;
+  min-width: 0;
+}
+.archive-registry .cover-placeholder {
+  box-sizing: border-box;
+  height: auto;
+  min-width: 0;
+  gap: 12px;
+  overflow-wrap: anywhere;
+}
+.archive-registry .catalogue-grid[data-view=list] .cover-placeholder {
+  gap: 5px;
+}
+.archive-registry .book-card,
+.archive-registry .publication-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 420px) {
+  .archive-registry .book-grid,
+  .archive-registry .catalogue-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
