@@ -14,6 +14,7 @@ import subprocess
 import sys
 from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
+from archive_design import STYLES, THEME_COLOR, VIEWPORT, asset_url, source as style_source
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -39,11 +40,17 @@ class Page(HTMLParser):
         self.canonicals = []
         self.meta = {}
         self.iframes = []
+        self.stylesheets = []
+        self.body_classes = []
         self.feed(path.read_text(encoding="utf-8"))
         self.close()
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if tag == 'body':
+            self.body_classes = (attrs.get('class') or '').split()
+        if tag == 'link' and attrs.get('rel') == 'stylesheet':
+            self.stylesheets.append(attrs.get('href'))
         if tag == 'iframe':
             self.iframes.append(attrs.get('src', ''))
         if attrs.get("id"):
@@ -89,7 +96,15 @@ def main():
     require((DIST / "index.html").is_file(), "Build output missing: run scripts/build.py first.")
     if ERRORS:
         return report()
-    pages = {p.resolve(): Page(p) for p in DIST.rglob("*.html")}
+    # The host serves this machine token as an HTML file without a page layout.
+    pages = {p.resolve(): Page(p) for p in DIST.rglob("*.html")
+             if p != DIST / 'google0d801b50e1695db7.html'}
+    for name in STYLES:
+        tracked, built = style_source(ROOT, name), DIST / 'assets' / name
+        require(tracked.is_file() and built.is_file() and tracked.read_bytes() == built.read_bytes(),
+                f"Style output differs from tracked source: {name}. Rebuild before publishing.")
+    if ERRORS:
+        return report()
     require(len(pages) >= 5, "Core pages are missing.")
     origins = {urlsplit(page.canonical).netloc for page in pages.values() if page.canonical}
     require(len(origins) == 1, f"Canonical URLs use inconsistent origins: {origins}")
@@ -101,6 +116,19 @@ def main():
     internal_links = 0
     for path, page in pages.items():
         relative = path.relative_to(DIST)
+        style_base = (urlsplit(origin).path.rstrip('/') + '/' if relative.as_posix() == '404.html'
+                      else '../' * (len(relative.parts) - 1))
+        required_styles = ['archival-design.css']
+        if relative.as_posix() == 'index.html':
+            required_styles.append('archive-explorer.css')
+        if relative.parts[0] == 'website':
+            required_styles.append('website-captures.css')
+        for name in required_styles:
+            require(page.stylesheets.count(style_base + asset_url(ROOT, name)) == 1,
+                    f"Missing or duplicated current {name}: {relative}")
+        require('archive-registry' in page.body_classes, f"Missing archive design shell: {relative}")
+        require(page.meta.get('viewport') == [VIEWPORT], f"Missing archive mobile viewport: {relative}")
+        require(page.meta.get('theme-color') == [THEME_COLOR], f"Missing archive theme color: {relative}")
         require(bool(page.canonical), f"Missing canonical URL: {relative}")
         require(len(page.canonicals) == 1, f"Expected exactly one canonical URL: {relative}")
         require(page.canonical == origin + ('/' if relative.as_posix() == 'index.html' else '/' + relative.as_posix()), f"Canonical URL does not match the stable page path: {relative}")

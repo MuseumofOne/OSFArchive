@@ -1,6 +1,7 @@
 """Copy one reviewed archive build into a prepared Ghost theme; never deploy."""
 from pathlib import Path
 import argparse,hashlib,json,shutil
+from archive_design import source as style_source
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -9,7 +10,8 @@ def sync(theme):
     assert (theme/'page-digital-archive-library.hbs').is_file(), 'Expected the Museum of One theme'
     pairs=[(out/'integration/archive-explorer.hbs',theme/'partials/generated/archive-explorer.hbs')]
     for name in ['archive-explorer.css','archive-explorer.js','archive-core.js']:
-        pairs.append((out/'assets'/name,theme/'assets/archive/explorer'/name))
+        asset = style_source(ROOT, name) if name.endswith('.css') else out/'assets'/name
+        pairs.append((asset,theme/'assets/archive/explorer'/name))
     for row in json.loads((out/'metadata/discovery.json').read_text()):
         if row.get('cover'):
             path=(out/row['cover']).resolve()

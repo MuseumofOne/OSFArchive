@@ -12,6 +12,7 @@ from stewardship import build_stewardship_page
 from institutional import institutional_page
 from pirr import load_pirr, attach_pirr, build_pirr_pages
 from archival import archival_page
+from archive_design import THEME_COLOR, VIEWPORT, asset_url, publish_styles
 from readers import apply_reading_metadata, reader_link, build_reader_pages
 from integration_search import build_search_index, encode_search_index, load_source_snapshots, public_export_eligible, searchable_text
 from descriptions import repository_description_html
@@ -31,6 +32,7 @@ ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'dist'; DATA=ROOT/'data'
 SYNC_WORK=Path(os.environ.get('WEBSITE_SYNC_DIR') or ROOT/'.sync-work')
 ORIGIN=(os.environ.get('SITE_ORIGIN') or 'https://archive.museumofone.art').rstrip('/')
+ERROR_BASE=urllib.parse.urlparse(ORIGIN).path.rstrip('/')+'/'
 RECORDS=json.loads((DATA/'catalogue.json').read_text())
 if isinstance(RECORDS,dict): RECORDS=RECORDS['records']
 # This repository is a public catalogue, never a draft store. Fail before writing
@@ -88,16 +90,19 @@ def description_excerpt(value, limit):
 
 def layout(title,desc,content,path='index.html',base='',active='',schema=None):
  graph=schema or {'@context':'https://schema.org','@type':'CollectionPage','name':title,'description':desc,'url':url(path),'isPartOf':{'@type':'WebSite','@id':ORIGIN+'/#website','name':'Museum of One Digital Archive Library','url':ORIGIN+'/'}}
- return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{E(title)} | Museum of One Digital Archive Library</title><meta name="description" content="{E(description_excerpt(desc,170))}"><link rel="canonical" href="{E(url(path))}"><meta property="og:site_name" content="Museum of One Digital Archive Library"><meta property="og:locale" content="en_GB"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(description_excerpt(desc,200))}"><meta property="og:url" content="{E(url(path))}"><link rel="alternate" type="text/plain" title="Machine-readable archive guide" href="{base}llms.txt"><meta name="theme-color" content="#f3f0e8"><link rel="icon" href="{base}assets/favicon.svg" type="image/svg+xml"><script>document.documentElement.classList.add("archive-has-js")</script><link rel="stylesheet" href="{base}assets/style.css"><script type="application/ld+json">{J(graph)}</script><script defer src="{base}assets/app.js"></script></head><body>{header(base,active)}<main id="main" class="shell">{content}</main>{footer(base)}</body></html>'''
+ return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="{VIEWPORT}"><title>{E(title)} | Museum of One Digital Archive Library</title><meta name="description" content="{E(description_excerpt(desc,170))}"><link rel="canonical" href="{E(url(path))}"><meta property="og:site_name" content="Museum of One Digital Archive Library"><meta property="og:locale" content="en_GB"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(description_excerpt(desc,200))}"><meta property="og:url" content="{E(url(path))}"><link rel="alternate" type="text/plain" title="Machine-readable archive guide" href="{base}llms.txt"><meta name="theme-color" content="{THEME_COLOR}"><link rel="icon" href="{base}assets/favicon.svg" type="image/svg+xml"><script>document.documentElement.classList.add("archive-has-js")</script><link rel="stylesheet" href="{base}assets/style.css"><script type="application/ld+json">{J(graph)}</script><script defer src="{base}assets/app.js"></script></head><body>{header(base,active)}<main id="main" class="shell">{content}</main>{footer(base)}</body></html>'''
 def write(path,content):
  if path.endswith('.html') and path != '404.html':
   content=enhance_page(path,content,RECORDS,PROGRAMMES)
   content=archival_page(path,content,RECORDS,PROGRAMMES,collection_counts=FULL_COUNTS)
   content=reader_link(path,content,RECORDS)
   content=institutional_page(path,content,RECORDS,PROGRAMMES)
-  design_base="../" if "/" in path else ""
-  content=content.replace("</head>",f'<link rel="stylesheet" href="{design_base}assets/archival-design.css"></head>')
  if path.endswith(".html"):
+  if path == '404.html':
+   content=archival_page(path,content,RECORDS,PROGRAMMES,base=ERROR_BASE)
+  design_base=ERROR_BASE if path == '404.html' else '../' * path.count('/')
+  style=asset_url(ROOT, 'archival-design.css')
+  content=content.replace("</head>",f'<link rel="stylesheet" href="{design_base}{style}"></head>')
   from image_dimensions import enrich_images
   content=enrich_images(content,path,OUT,ORIGIN)
  p=OUT/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(content)
@@ -114,6 +119,8 @@ def card(r,base='',search=False,capture=None):
  return f'<a class="book-card" href="{base}items/{r["id"]}.html"{attrs}><div class="cover-well">{cover(r,base)}</div><div class="catalogue-id">{E(r["accession"])} <span class="arrow" aria-hidden="true">↗</span></div><h3>{E(r.get("short_title",r["title"]))}</h3><p>{E(r["author"])} · {E(r["date"][:4])}<br>{E(r["type"])}</p></a>'
 def pagehead(eyebrow,title,desc):
  return f'<div class="page-head"><div class="breadcrumb"><a href="index.html">Library</a> / {E(eyebrow)}</div><div class="eyebrow">{E(eyebrow)}</div><h1>{E(title)}</h1><p>{E(desc)}</p></div>'
+
+publish_styles(ROOT, OUT)
 
 books=[r for r in RECORDS if r['collection']=='Books & volumes']
 featured=(books+[r for r in RECORDS if r not in books])[:4]
@@ -351,10 +358,9 @@ write('robots.txt','User-agent: *\nAllow: /\nSitemap: '+url('sitemap.xml')+'\n')
 
 # GitHub Pages serves this file at arbitrary missing paths. Root-relative assets
 # and navigation must therefore work without knowing the requested directory.
-errorbase=urllib.parse.urlparse(ORIGIN).path.rstrip('/')+'/'
-errorcontent=f'<section class="page-head"><div class="eyebrow">Digital Archive Library / 404</div><h1>Record not found.</h1><p>This address does not identify an available archive page. Search the catalogue by title, local item number or DOI.</p><div class="actions"><a class="button" href="{E(errorbase)}catalogue.html">Search the catalogue</a><a class="text-link" href="{E(errorbase)}finding-aid.html">Consult the finding aid</a></div></section>'
-errorhtml=layout('Page not found','Search the Museum of One Digital Archive Library for a publication or archival description.',errorcontent,'404.html',errorbase,schema={'@context':'https://schema.org','@type':'WebPage','name':'Page not found','url':url('404.html')})
-errorhtml=errorhtml.replace(f'<script defer src="{errorbase}assets/app.js"></script>','').replace('</head>','<meta name="robots" content="noindex,follow"></head>')
+errorcontent=f'<section class="page-head"><div class="eyebrow">Digital Archive Library / 404</div><h1>Record not found.</h1><p>This address does not identify an available archive page. Search the catalogue by title, local item number or DOI.</p><div class="actions"><a class="button" href="{E(ERROR_BASE)}catalogue.html">Search the catalogue</a><a class="text-link" href="{E(ERROR_BASE)}finding-aid.html">Consult the finding aid</a></div></section>'
+errorhtml=layout('Page not found','Search the Museum of One Digital Archive Library for a publication or archival description.',errorcontent,'404.html',ERROR_BASE,schema={'@context':'https://schema.org','@type':'WebPage','name':'Page not found','url':url('404.html')})
+errorhtml=errorhtml.replace(f'<script defer src="{ERROR_BASE}assets/app.js"></script>','').replace('</head>','<meta name="robots" content="noindex,follow"></head>')
 write('404.html',errorhtml)
 print(f'Built {len(paths)} HTML pages and metadata for {len(RECORDS)} records in {OUT}')
 

@@ -1,0 +1,513 @@
+/* Museum of One reading room. Local, independent presentation tokens. */
+body.archive-registry {
+  --paper: #eee7d8;
+  --white: #fbf5e8;
+  --ink: #29241e;
+  --muted: #5d5144;
+  --line: #c7b99f;
+  --wine: #703b38;
+  --green: #2e4035;
+  --cloth: #232820;
+  --brass: #c6ac77;
+}
+
+body.archive-registry { background: var(--paper); font-size: 16px; }
+.archive-registry .shell { max-width: 1540px; padding-inline: clamp(22px, 4vw, 70px); }
+.archive-registry .utility { font-size: 10px; color: #4f584f; letter-spacing: .07em; padding-block: 13px; }
+.archive-registry .header { border-block: 0 1px solid var(--ink); padding-block: 30px 25px; }
+.archive-registry .brand strong { font-size: clamp(26px, 2.5vw, 36px); letter-spacing: -.04em; }
+.archive-registry .brand small { font-size: 10px; letter-spacing: .1em; color: var(--muted); }
+.archive-registry .nav { gap: 21px; }
+.archive-registry .nav a { font: 12px/1.5 var(--sans); }
+.archive-registry .reading-list-button { padding: 9px 12px; font: 11px var(--sans); }
+.archive-registry .archive-workspace { grid-template-columns: 225px minmax(0,1fr); gap: clamp(26px,4vw,64px); padding-top: 32px; }
+.archive-registry .archive-workbench { min-width: 0; }
+.archive-registry .collection-tree { background: transparent; border: 0; border-top: 2px solid var(--green); padding: 17px 0; }
+.archive-registry .collection-tree summary { font-size: 12px; line-height: 1.5; }
+.archive-registry .collection-tree summary span,
+.archive-registry .tree-note { font-size: 10px; line-height: 1.7; color: var(--muted); }
+.archive-registry .tree-root { font: 19px/1.4 var(--serif); }
+.archive-registry .tree-tools a { font-size: 12px; line-height: 1.6; padding-block: 8px; }
+.archive-registry .tree-group ul a { font-size: 12px; line-height: 1.6; }
+.archive-registry .tree-group small { font-size: 11px; }
+.archive-registry .registry-overview { border-top: 0; padding: 20px 0 34px; gap: 26px; display: block; }
+.archive-registry .register-label, .archive-registry .section-no,
+.archive-registry .eyebrow, .archive-registry .source-label { font-size: 10px; line-height: 1.6; letter-spacing: .1em; }
+.archive-registry .registry-overview h1 { font: 400 clamp(44px,5.2vw,78px)/1.04 var(--serif); letter-spacing: -.045em; margin: 23px 0; max-width: 800px; }
+.archive-registry .registry-overview h1 em { color: var(--wine); font-weight: 400; }
+.archive-registry .registry-overview-title > p { font: 16px/1.8 var(--sans); color: #535c54; max-width: 620px; margin-bottom: 26px; }
+.archive-entry-search { display: flex; width: 100%; max-width: 800px; border: 1px solid #8e968a; background: var(--white); margin: 0 0 24px; }
+.archive-entry-search input { min-width: 0; flex: 1; padding: 18px; border: 0; background: transparent; color: var(--ink); font-size: 15px; }
+.archive-entry-search button { border: 0; padding: 14px 22px; background: var(--green); color: var(--white); font-size: 13px; }
+.archive-entry-search:focus-within { outline: 2px solid var(--wine); outline-offset: 3px; }
+.archive-registry .registry-totals { display: grid; grid-template-columns: repeat(4,1fr); border: 0; border-block: 1px solid var(--line); background: transparent; }
+.archive-registry .registry-totals div { padding: 18px 12px; }
+.archive-registry .registry-totals dt { font-size: 10px; letter-spacing: .05em; color: var(--muted); }
+.archive-registry .registry-totals dd { font: 34px/1.2 var(--serif); margin: 8px 0 0; }
+.archive-registry .registry-index { margin-bottom: 48px; }
+.archive-registry .registry-index-head { padding: 15px 0; }
+.archive-registry .registry-index-head h2 { font: 11px/1.5 var(--mono); letter-spacing: .1em; }
+.archive-registry .registry-index-head a { font-size: 12px; }
+.archive-registry .registry-index-row { padding-block: 22px; gap: 18px; }
+.archive-registry .registry-index-row strong { font-size: 27px; line-height: 1.25; }
+.archive-registry .registry-index-row small, .archive-registry .register-range { font-size: 10px; line-height: 1.8; }
+.archive-registry .registry-index-row:hover { background: #fffdf760; }
+.archive-registry .archive-masthead { padding-block: 25px 18px; }
+.archive-registry .archive-masthead-title { font-size: 25px; }
+.archive-registry .archive-masthead-aside { font-size: 10px; line-height: 1.7; }
+.archive-registry .hero { gap: 32px; padding-block: 35px 40px; }
+.archive-registry .archive-reading-title { font: 400 clamp(34px,3.5vw,51px)/1.15 var(--serif); letter-spacing: -.03em; }
+.archive-registry .hero-copy { font-size: 15px; line-height: 1.8; }
+.archive-registry .hero-art { background: #e7e4da; border: 1px solid var(--line); box-shadow: none; }
+.archive-registry .hero-art::before { border-color: #c8c6b9; }
+.archive-registry .hero-foot { font-size: 10px; line-height: 1.8; }
+.archive-registry .section { padding-block: 48px; }
+.archive-registry .section-head h2 { font-size: clamp(29px,3vw,41px); }
+.archive-registry .catalogue-card { border: 1px solid var(--line); background: #fffdf740; padding: 14px; }
+.archive-registry .jacket-reference { font-size: 10px; letter-spacing: .04em; padding: 0 0 12px; }
+.archive-registry .jacket-reference small { font-size: 9px; }
+.archive-registry .cover-well { background: #eae6dc; border: 0; }
+.archive-registry .book-card h3 { font-size: 22px; line-height: 1.3; margin-top: 14px; }
+.archive-registry .book-card p, .archive-registry .card-abstract { font-size: 12px; line-height: 1.7; color: #535c54; }
+.archive-registry .card-bottom { padding-top: 12px; }
+.archive-registry .card-bottom a, .archive-registry .card-bottom button { font-size: 11px; }
+.archive-registry .record-row { padding-block: 23px; }
+.archive-registry .record-row h3 { font-size: 23px; }
+.archive-registry .record-row .row-id, .archive-registry .record-row p { font-size: 11px; line-height: 1.7; }
+.archive-registry .route-card p, .archive-registry .programme-section > p { font-size: 14px; line-height: 1.8; }
+.archive-registry .page-head h1 { font-size: clamp(38px,4.5vw,62px); letter-spacing: -.035em; }
+.archive-registry .page-head p { font-size: 15px; line-height: 1.8; }
+.archive-registry .item-head h1 { font-size: clamp(33px,3.8vw,53px); line-height: 1.13; letter-spacing: -.03em; }
+.archive-registry .item-head .item-summary, .archive-registry .item-section p { font-size: 15px; line-height: 1.85; }
+.archive-registry .item-head { grid-template-columns: minmax(0,1fr) 250px; gap: 35px; }
+.archive-registry .item-layout { grid-template-columns: minmax(0,1fr) 250px; gap: 35px; }
+.archive-registry .metadata dt { font-size: 12px; }
+.archive-registry .metadata dd { font-size: 14px; }
+.archive-registry .metadata .value-note { font-size: 12px; line-height: 1.6; }
+.archive-registry .source-list a { font-size: 14px; }
+.archive-registry .source-list small { font-size: 12px; line-height: 1.7; }
+.archive-registry .access-card p, .archive-registry .access-card a { font-size: 12px; line-height: 1.7; }
+.archive-registry .pill { font-size: 10px; line-height: 1.7; }
+.archive-registry .citation { font-size: 14px; line-height: 1.8; }
+.archive-registry .record-tabs { flex-wrap: wrap; gap: 12px 18px; }
+.archive-registry .record-tabs a { font-size: 12px; }
+.archive-registry .footer-main p, .archive-registry .footer-links a { font-size: 12px; line-height: 1.8; }
+.archive-registry .footer-bottom { font-size: 10px; line-height: 1.7; }
+.research-discovery { padding-bottom: 50px; }
+.discovery-form { border-block: 2px solid var(--green); padding: 24px 0; margin: 18px 0 24px; }
+.discovery-form input[type=search] { width: 100%; background: var(--white); border: 1px solid #8e968a; padding: 18px; color: var(--ink); font: 16px/1.5 var(--sans); }
+.discovery-form label { font-size: 12px; line-height: 1.6; }
+.discovery-controls { display: flex; flex-wrap: wrap; gap: 16px; align-items: end; margin-top: 18px; }
+.discovery-controls label { display: grid; gap: 6px; }
+.discovery-controls label:has(input[type=checkbox]) { display: flex; align-items: center; align-self: center; gap: 8px; max-width: 280px; }
+.discovery-controls input[type=checkbox] { width: 16px; height: 16px; margin: 0; flex: 0 0 auto; }
+.discovery-controls select { border: 1px solid var(--line); padding: 10px; background: var(--white); color: var(--ink); max-width: 100%; font-size: 13px; }
+.discovery-form button, .discovery-more { padding: 12px 20px; border: 1px solid var(--green); background: var(--green); color: var(--white); font-size: 13px; }
+.discovery-status { font: 12px/1.8 var(--mono); color: #4c584e; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.discovery-results { list-style: none; margin: 0; padding: 0; }
+.discovery-result { padding: 26px 0; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+.discovery-result h2, .discovery-result h3 { font: 400 28px/1.25 var(--serif); letter-spacing: -.02em; margin: 10px 0; }
+.discovery-result h2 a, .discovery-result h3 a { text-decoration: none; }
+.discovery-result-kind { display: inline-block; color: var(--wine); font: 10px/1.5 var(--mono); text-transform: uppercase; letter-spacing: .12em; }
+.discovery-result p { font-size: 14px; line-height: 1.8; max-width: 76ch; }
+.discovery-match-reason { color: #5f665c; font: 11px/1.7 var(--mono); }
+.discovery-snippet { border-left: 2px solid #8c9686; padding-left: 17px; font: 18px/1.65 var(--serif); background: #fffdf760; }
+.discovery-relations { display: flex; flex-wrap: wrap; gap: 8px 16px; padding: 0; list-style: none; font-size: 12px; }
+.discovery-evidence { font-size: 12px; line-height: 1.7; color: #596355; }
+.discovery-fallback { background: #e9ece3; padding: 22px; margin-block: 22px; border: 1px solid var(--line); }
+.discovery-more { margin-top: 24px; }
+.quality-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+.quality-grid > div { border: 1px solid var(--line); padding: 20px; }
+.quality-grid strong { display: block; font: 36px var(--serif); }
+.quality-grid span { font-size: 12px; }
+@media (max-width: 1190px) {
+  .archive-registry .archive-workspace { display: block; }
+  .archive-registry .collection-tree { margin-bottom: 24px; padding-block: 12px; }
+  .archive-registry .collection-tree > details > summary { display: flex; flex-wrap: wrap; gap: 7px 20px; align-items: center; padding-block: 5px; }
+  .archive-registry .registry-overview { padding-top: 12px; }
+}
+@media (max-width: 760px) {
+  .archive-registry .header { padding-block: 23px; gap: 20px; }
+  .archive-registry .brand strong { font-size: 28px; }
+  .archive-registry .brand small { font-size: 9px; }
+  .archive-registry .nav { flex-wrap: wrap; justify-content: flex-start; gap: 12px 22px; }
+  .archive-registry .nav .nav-search { margin-left: auto; }
+  .archive-registry .registry-overview h1 { font-size: 49px; }
+  .archive-registry .registry-totals { grid-template-columns: repeat(2,1fr); }
+  .archive-registry .registry-totals div { border-bottom: 1px solid var(--line); }
+  .archive-registry .registry-index-row { grid-template-columns: 25px minmax(0,1fr) 14px; gap: 12px; }
+  .archive-registry .register-range { display: none; }
+  .archive-registry .registry-index-row strong { font-size: 25px; }
+  .archive-registry .registry-index-head { flex-wrap: wrap; gap: 12px; }
+  .archive-registry .hero { grid-template-columns: 1fr; }
+  .archive-registry .item-head, .archive-registry .item-layout { grid-template-columns: 1fr; }
+  .archive-registry .catalogue-card { padding: 10px; }
+  .archive-registry .book-card h3 { font-size: 21px; }
+  .archive-registry .metadata div { grid-template-columns: 1fr; gap: 4px; }
+  .archive-entry-search input { padding: 14px 12px; font-size: 14px; }
+  .archive-entry-search button { padding-inline: 16px; }
+  .discovery-controls { display: grid; grid-template-columns: 1fr 1fr; }
+  .discovery-result h2, .discovery-result h3 { font-size: 26px; }
+  .quality-grid { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print {
+  .collection-tree,.nav,.discovery-form,.reading-list-button,.footer-links { display: none !important; }
+  .archive-registry .archive-workspace { display: block; }
+  body.archive-registry { background: white; color: black; }
+  .archive-registry .shell { padding: 0; }
+}
+
+/* Keep the existing paper palette; make small register labels readable. */
+.archive-registry :is(.shelf-label,.jacket-reference,.jacket-reference small,.archive-note .eyebrow){color:#535c54}
+
+/* Give each catalogue card enough context to choose a record. */
+.archive-registry .book-card .card-abstract {
+  display: block;
+  margin-top: .65rem;
+}
+.archive-registry .record-row .row-summary {
+  font-family: var(--sans);
+  font-size: .8125rem;
+  margin-top: .4rem;
+}
+.archive-registry .publication-card .eyebrow {
+  margin: 0 0 .55rem;
+}
+.archive-registry .publication-card h3 a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: .06em;
+  text-underline-offset: .16em;
+}
+.archive-registry .publication-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+}
+
+.archive-registry .catalogue-website-card[hidden] {
+  display: none;
+}
+.archive-registry .catalogue-grid[data-view=list] .catalogue-website-card {
+  display: block;
+}
+.archive-registry .catalogue-grid[data-view=list] .catalogue-website-card[hidden] {
+  display: none;
+}
+.archive-registry .catalogue-layout > *,
+.archive-registry .catalogue-layout .filter-field select,
+.archive-registry .catalogue-layout .searchbar input {
+  min-width: 0;
+  max-width: 100%;
+}
+.archive-registry .catalogue-website-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.archive-registry .catalogue-layout .result-toolbar {
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+
+/* Preserve reading width before fitting another book onto the shelf. */
+.archive-registry .book-grid,
+.archive-registry .catalogue-grid[data-view="grid"] {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+}
+.archive-registry .book-grid > *,
+.archive-registry .catalogue-grid > *,
+.archive-registry .book-card,
+.archive-registry .publication-card,
+.archive-registry .jacket-reference > *,
+.archive-registry .archive-workbench :is(h1, h2, h3, dd, li, p) {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+.archive-registry .jacket-reference {
+  flex-wrap: wrap;
+  background: #e6dcc8;
+}
+.archive-registry .catalogue-card {
+  background: var(--white);
+  box-shadow: 2px 3px 0 #d8cab0;
+}
+.archive-registry .cover-well {
+  background: #e7ddcb;
+}
+.archive-registry .hero-art {
+  background: #ddd0b8;
+}
+.archive-registry .cover-well:has(.cover-placeholder) {
+  container-type: inline-size;
+  aspect-ratio: auto;
+  max-height: none;
+  min-width: 0;
+  padding: clamp(.45rem, 1vw, .9rem);
+}
+.archive-registry .cover-well .cover-placeholder {
+  width: 100%;
+  max-width: 20rem;
+  min-height: min(15rem, 116cqi);
+  height: auto;
+  padding: clamp(.45rem, 6cqi, 1.25rem);
+  gap: clamp(.65rem, 6cqi, 1.3rem);
+  background: #293b31 !important;
+  border-left: 3px solid #b99758;
+  color: #faf0d9;
+  overflow-wrap: anywhere;
+}
+.archive-registry .catalogue-card:nth-child(4n+2) .cover-well .cover-placeholder {
+  background: #583637 !important;
+}
+.archive-registry .cover-well .cover-placeholder::before {
+  inset: 5px;
+  border-color: #c9ac7166;
+}
+.archive-registry .cover-well .cover-title {
+  font: 400 clamp(.95rem, 10cqi, 1.65rem)/1.23 var(--serif);
+  text-wrap: pretty;
+}
+.archive-registry .cover-well :is(.cover-kicker, .cover-author) {
+  font-size: clamp(.58rem, 4.8cqi, .72rem);
+  letter-spacing: .045em;
+}
+.archive-registry .catalogue-grid[data-view="list"] .book-card:has(.cover-placeholder) {
+  display: block;
+}
+.archive-registry .catalogue-grid[data-view="list"] .cover-well:has(.cover-placeholder) {
+  display: none;
+}
+.archive-registry .catalogue-grid[data-view="list"] .catalogue-card:has(.cover-placeholder) .record-tools {
+  margin-inline-start: 0;
+}
+.archive-registry .archive-workbench :is(input, select, button) {
+  min-width: 0;
+  max-width: 100%;
+}
+.archive-registry :focus-visible {
+  outline: 2px solid var(--wine);
+  outline-offset: 3px;
+}
+
+.archive-registry .book-card .card-abstract {
+  font: .875rem/1.65 var(--sans);
+  color: var(--muted);
+}
+.archive-registry .jacket-reference {
+  padding: .45rem .55rem;
+  color: var(--muted);
+}
+.archive-registry .record-tools {
+  flex-wrap: wrap;
+  row-gap: .5rem;
+}
+
+@media (max-width: 420px) {
+  .archive-registry .archive-masthead,
+  .archive-registry .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .archive-registry .archive-masthead-aside {
+    padding-inline: 0;
+    border-inline: 0;
+  }
+  .archive-registry .archive-reading-title {
+    font-size: clamp(1.65rem, 8vw, 2.125rem);
+  }
+  .archive-registry .hero-cover-mat {
+    max-width: 100%;
+  }
+  .archive-registry :is(.section-head, .item-actions, .actions) {
+    flex-wrap: wrap;
+  }
+  .archive-registry :is(.button, .text-link) {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Dark academia: a cloth-bound frame around the parchment reading room.
+   Only presentation changes here; record text and source images remain intact. */
+body.archive-registry {
+  background: #20231e;
+  background-image: linear-gradient(115deg, #332c2329, transparent 55%);
+}
+.archive-registry > main.shell {
+  background: var(--paper);
+  border-inline: 1px solid #b49b6940;
+  box-shadow: 0 18px 70px #0003;
+  padding-bottom: clamp(24px, 4vw, 64px);
+}
+.archive-registry > div.shell {
+  --ink: #eee4d0;
+  --muted: #c7bba2;
+  --line: #c6ac774d;
+  --wine: #d9bb82;
+  --white: #282c24;
+  color: var(--ink);
+}
+.archive-registry .utility {
+  border-top: 3px solid var(--brass);
+  color: var(--muted);
+  border-bottom-color: var(--line);
+  padding-block: 14px;
+}
+.archive-registry .header {
+  border-bottom: 1px solid var(--line);
+  padding-block: clamp(25px, 3vw, 42px);
+}
+.archive-registry .brand strong {
+  color: #f1e8d5;
+  font-weight: 400;
+}
+.archive-registry .brand small { color: #c6ac77; }
+.archive-registry .nav a { color: #eee4d0; }
+.archive-registry .nav a:hover,
+.archive-registry .nav a[aria-current="page"] {
+  color: #dfc795;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.archive-registry .reading-list-button {
+  border-color: #a28c64;
+  color: #eee4d0;
+  background: transparent;
+}
+.archive-registry .reading-list-button span {
+  background: #d6bd88;
+  color: #28241d;
+}
+.archive-registry .footer {
+  border-top: 1px solid var(--brass);
+  padding-top: 40px;
+}
+.archive-registry .footer a:hover { color: #dfc795; }
+.archive-registry .page-head {
+  padding-block: clamp(30px, 4vw, 56px) 35px;
+  border-bottom-color: #b7a17c;
+}
+.archive-registry .page-head h1,
+.archive-registry .item-head h1 { color: #392e25; }
+.archive-registry .eyebrow::before { border-color: #8c603d; }
+.archive-registry .collection-tree {
+  border-top-color: #8d6f43;
+  padding-top: 20px;
+}
+.archive-registry .tree-group { border-color: #c7b99f; }
+.archive-registry .tree-group > summary { padding-right: 0; }
+.archive-registry .tree-group small {
+  position: static;
+  display: block;
+  margin-top: .4rem;
+  font-size: 10px;
+  line-height: 1.6;
+}
+.archive-registry :is(.catalogue-card, .publication-card) {
+  background: #f7efdf;
+  border-color: #c7b594;
+  box-shadow: 2px 3px 0 #d9c9ac;
+}
+.archive-registry .jacket-reference {
+  background: #e8dcc5;
+  color: #594937;
+  border-bottom-color: #a38a60;
+  padding: .6rem .65rem;
+}
+.archive-registry .jacket-reference small { color: #594937; }
+.archive-registry .cover-well {
+  background: #ded1b9;
+  background-image: linear-gradient(135deg, #f1e5cf55, #aa947b12);
+}
+.archive-registry .cover-well .cover-placeholder {
+  background: #29372d !important;
+  border-left-color: #bca16a;
+  box-shadow: 4px 5px 9px #35261729;
+}
+.archive-registry .catalogue-card:nth-child(4n+2) .cover-well .cover-placeholder {
+  background: #563435 !important;
+}
+.archive-registry .catalogue-card:nth-child(4n+3) .cover-well .cover-placeholder {
+  background: #423a2e !important;
+}
+.archive-registry :is(.register-heading, .archive-item-register::before) {
+  background: #e6d8bd;
+  border-color: #a48b60;
+}
+.archive-registry :is(.metadata, .context-register, .assertion-table) { background: #f5eddd; }
+.archive-registry :is(.access-card, .citation, .item-reader-access, .reading-copy-audit, .reader-object-record) {
+  background: #e7dcc6;
+  border-color: #b5a17d;
+  box-shadow: none;
+}
+.archive-registry .citation { border-left: 3px solid #703b38; }
+.archive-registry .archive-note {
+  background: #29372d;
+  color: #f1e8d5;
+  border-color: #9c855d;
+}
+.archive-registry .archive-note :is(p, .eyebrow) { color: #d8cbb2; }
+.archive-registry .archive-note a { color: #dfc795; }
+.archive-registry .archive-note::before { border-color: #bc9f6559; }
+.archive-registry .discovery-snippet {
+  border-left-color: #9d794b;
+  background: #f7efdf;
+}
+.archive-registry .archive-explorer .discovery-snippet { background: transparent; }
+.archive-registry .discovery-fallback { background: #e7dcc6; }
+.archive-registry .archive-dialog {
+  background: #f4ebd9;
+  color: #29241e;
+  border: 1px solid #a48b60;
+}
+.archive-registry .archive-dialog::backdrop { background: #141712bb; }
+.archive-registry .dialog-head { border-bottom-color: #b5a17d; }
+.archive-registry .archive-toast { background: #29372d; color: #f1e8d5; }
+.archive-registry ::selection { background: #703b38; color: #fff5e1; }
+@media (max-width: 760px) {
+  .archive-registry > main.shell { border-inline: 0; }
+  .archive-registry .header { padding-block: 25px; }
+}
+@media print {
+  body.archive-registry { background: white; }
+  .archive-registry > main.shell { background: white; border: 0; box-shadow: none; }
+  .archive-registry > div.shell {
+    --ink: #222;
+    --muted: #444;
+    --line: #aaa;
+    color: #222;
+  }
+  .archive-registry :is(.brand strong, .brand small) { color: #222; }
+  .archive-registry .utility { color: #444; border-color: #888; }
+  .archive-registry .archive-note { background: white; color: #222; }
+  .archive-registry .archive-note :is(p, a, .eyebrow) { color: #222; }
+}
+
+/* The reader shares the archive's cloth, brass and parchment surfaces. */
+.archive-registry .reader-shell {
+  --reader-bg: var(--cloth);
+  --reader-panel: #30382d;
+  --reader-rule: #8c7953;
+  --reader-paper: var(--paper);
+  color: var(--reader-paper);
+  border-color: var(--reader-rule);
+}
+.archive-registry .reader-shell :is(.reader-header, #reader-thumbnails, input[type=number]) {
+  background: #20231e;
+  border-color: var(--reader-rule);
+}
+.archive-registry .reader-shell #reader-stage {
+  background: radial-gradient(ellipse at center, var(--reader-panel), var(--reader-bg) 72%);
+}
+.archive-registry .reader-shell :is(.reader-header small, #reader-controls label, #reader-status) { color: #d8cbb2; }
+.archive-registry .reader-shell a { color: #dfc795; }
+.archive-registry .reader-shell :is(button, select, #reader-loading) {
+  background: var(--reader-panel);
+  border-color: var(--reader-rule);
+  color: var(--reader-paper);
+}
+.archive-registry .reader-shell button:is(:hover:not(:disabled), [aria-expanded=true], [aria-pressed=true]) {
+  background: var(--reader-paper);
+  border-color: var(--brass);
+  color: #29241e;
+}

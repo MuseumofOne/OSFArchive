@@ -21,3 +21,9 @@ python3 -B scripts/sync_ghost_explorer.py --theme '/path/to/prepared/theme'
 The command copies the generated partial, CSS/controller/core, four original cover files, and the matching discovery/passages feeds into the theme. `docs/SHARED-EXPLORER-SYNC.json` records source/target checksums. Rebuild the theme and verify those checksums before packaging. Do not edit the generated partial or theme's shared assets independently.
 
 Validation: archive static checks; Python and JavaScript tests including real-corpus discovery benchmarks; theme build/integrity/unit gate; GScan; CUA desktop/mobile review of actual templates with fixture helpers and the standalone archive. This revision has not been installed on the live Ghost server. The full existing automated browser release gate is not represented as executed.
+
+## Style source and automatic updates
+
+Edit the archive's maintained styles in `assets/styles/`. Each archive build copies them to `dist/assets/` and versions the shared design, explorer and capture stylesheet URLs by their contents. Both the hosted Ghost reconciliation and the T7 updater run this build and its page checks. The readable captures use the same page layout and add responsive rules for imported text and tables. Ghost article styles are stripped from readable captures; original content is available separately as an inert download. The GitHub ownership verification file is a machine token, not an archive page.
+
+`archive-explorer.css` is also the stylesheet source for future Ghost theme builds prepared with `scripts/sync_ghost_explorer.py`. Regular Ghost content sync does not install or replace a Ghost theme.

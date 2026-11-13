@@ -2,6 +2,7 @@
 
 from datetime import datetime, timezone
 from pathlib import Path
+from archive_design import asset_url
 from html import escape, unescape
 import json, shutil, re
 from urllib.parse import urlsplit
@@ -423,9 +424,10 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
             base="../",
             schema=schema,
         )
+        style = asset_url(Path(__file__).resolve().parents[1], "website-captures.css")
         html = html.replace(
             "</head>",
-            '<link rel="stylesheet" href="../assets/website-captures.css"></head>',
+            f'<link rel="stylesheet" href="../{style}"></head>',
         )
         write(page, html)
         paths.append(page)

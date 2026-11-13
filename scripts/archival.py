@@ -5,6 +5,7 @@ institutional accession, physical custody, or archival certification claims.
 """
 from html import escape
 from hashlib import sha256
+from archive_design import asset_url
 from pathlib import Path, PurePosixPath
 from urllib.parse import quote, urlparse
 import re
@@ -57,12 +58,16 @@ def _item_register(record, base):
     return banner, context
 
 
-def archival_page(path, html, records, programmes, *, collection_counts=None):
+def archival_page(path, html, records, programmes, *, collection_counts=None, base=None):
     """Apply the registry presentation after experience.enhance_page."""
-    base = '../' if '/' in path else ''
+    if base is None:
+        base = '../' * path.count('/')
+    if '<body>' in html:
+        html = html.replace('<body>', '<body class="archive-registry">', 1)
+    else:
+        html = html.replace('<body ', '<body class="archive-registry" ', 1)
     lookup = {str(r['id']): r for r in records}
     html = html.replace('</head>', f'<link rel="stylesheet" href="{base}assets/archive-identity.css"></head>')
-    html = html.replace('<body ', '<body class="archive-registry" ', 1)
     html = html.replace('<strong>Museum of One</strong><small>Digital Archive Library</small>', '<strong>Digital Archive Library</strong><small>Museum of One / Source-linked catalogue</small>')
     html = html.replace('Museum of One / Research, criticism & preservation ↗', 'Museum of One / Institutional website ↗')
     html = html.replace('A source-linked digital catalogue · Selected works', 'Archive registry / Item-level records')
@@ -80,9 +85,11 @@ def archival_page(path, html, records, programmes, *, collection_counts=None):
     html = re.sub(r'<article class="catalogue-card"([^>]*)><a class="book-card" href="([^"]+)">', jacket, html)
 
     if path == 'index.html':
-        explorer_script = Path(__file__).resolve().parents[1] / 'dist/assets/archive-explorer.js'
+        root = Path(__file__).resolve().parents[1]
+        explorer_script = root / 'dist/assets/archive-explorer.js'
         version = sha256(explorer_script.read_bytes()).hexdigest()[:12]
-        html = html.replace('</head>', f'<link rel="stylesheet" href="assets/archive-explorer.css"><script defer src="assets/research-discovery.js"></script><script defer src="assets/archive-explorer.js?v={version}"></script></head>')
+        style = asset_url(root, 'archive-explorer.css')
+        html = html.replace('</head>', f'<link rel="stylesheet" href="{style}"><script defer src="assets/research-discovery.js"></script><script defer src="assets/archive-explorer.js?v={version}"></script></head>')
         html = html.replace('<div class="archive-masthead">', render_explorer(records, programmes, os.environ.get('SITE_ORIGIN', 'https://archive.museumofone.art'), standalone=True, collection_counts=collection_counts) + '<div class="archive-masthead">', 1)
         html = html.replace('<h1>The record.<br><em>In context.</em></h1>', '<h2 class="archive-reading-title">Open a document.<br><em>Stay with its record.</em></h2>')
         html = html.replace('Digital Archive Library</span><span class="archive-masthead-aside">Museum of One / Catalogue edition 02', 'Digital reading room</span><span class="archive-masthead-aside">Publication files / Selected editions')
