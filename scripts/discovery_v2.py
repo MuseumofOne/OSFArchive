@@ -222,7 +222,7 @@ def build_research_discovery(records, entities, vocab, programmes, origin, *, ro
         if entry:
             row.update(collection=entry['collection'] or '', aliases=entry['aliases'],
                        subjects=entry['subjects'], date=(entry['date'] or '')[:10],
-                       resource_type=entry['role'])
+                       resource_type=entry['role'], catalogue_record=bool(entry['collection'] and not entry['edition_path']))
         row['original_url'] = address
         capture_url = origin + '/' + entry['capture_path'] if entry else page.get('archive_url')
         if capture_url:

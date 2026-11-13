@@ -74,6 +74,10 @@ WEB_PUBLICATIONS = [r for r in WEB_INVENTORY if r['collection']]
 WEBSITE_CARDS = [r for r in WEB_PUBLICATIONS if not r['edition_path']]
 CAPTURE_LINKS = {r['edition_path']: r['capture_path'] for r in WEB_PUBLICATIONS if r['edition_path']}
 FULL_COUNTS = Counter(r['collection'] for r in [*RECORDS, *WEBSITE_CARDS])
+GHOST_DISCOVERY = json.loads((SYNC_WORK/'public/discovery.json').read_text())['records'] if (SYNC_WORK/'public/discovery.json').exists() else []
+EVIDENCE = load_evidence(ROOT, ORIGIN)
+DISCOVERY_V2 = build_research_discovery(RECORDS, ENTITIES, VOCABULARY, PROGRAMMES, ORIGIN, root=ROOT,
+    ghost_records=GHOST_DISCOVERY, website_inventory=WEB_INVENTORY, collection_counts=FULL_COUNTS, evidence_payload=EVIDENCE)
 SEARCH_ICON='<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>'
 
 def url(path): return ORIGIN+'/' if path in ('', 'index.html') else ORIGIN+'/'+path.lstrip('/')
@@ -94,7 +98,7 @@ def layout(title,desc,content,path='index.html',base='',active='',schema=None):
 def write(path,content):
  if path.endswith('.html') and path != '404.html':
   content=enhance_page(path,content,RECORDS,PROGRAMMES)
-  content=archival_page(path,content,RECORDS,PROGRAMMES,collection_counts=FULL_COUNTS)
+  content=archival_page(path,content,RECORDS,PROGRAMMES,collection_counts=FULL_COUNTS,index_counts=DISCOVERY_V2['counts'])
   content=reader_link(path,content,RECORDS)
   content=institutional_page(path,content,RECORDS,PROGRAMMES)
  if path.endswith(".html"):
@@ -329,18 +333,15 @@ write('metadata/contents.json',json.dumps(CONTENTS,ensure_ascii=False,indent=2))
 # One generated discovery model serves archive pages and the native Ghost entrance.
 from website_pages import build_website_pages
 paths+=build_website_pages(SYNC_WORK,OUT,write,layout,ORIGIN,methodology=methodology,methodology_desc=methodology_desc, captures=CAPTURES, inventory=WEB_INVENTORY)
-GHOST_DISCOVERY=json.loads((SYNC_WORK/'public/discovery.json').read_text())['records'] if (SYNC_WORK/'public/discovery.json').exists() else []
-EVIDENCE=load_evidence(ROOT,ORIGIN)
 copy_evidence_assets(EVIDENCE,ROOT,OUT)
 paths+=build_evidence_pages(EVIDENCE,write,layout,ORIGIN)
-DISCOVERY_V2=build_research_discovery(RECORDS,ENTITIES,VOCABULARY,PROGRAMMES,ORIGIN,root=ROOT,ghost_records=GHOST_DISCOVERY,website_inventory=WEB_INVENTORY,collection_counts=FULL_COUNTS,evidence_payload=EVIDENCE)
 PASSAGES_V2=build_fulltext_index(RECORDS,ROOT,ORIGIN)
 write('metadata/research-discovery.v2.json',encode_index(DISCOVERY_V2))
 write('metadata/research-passages.v2.json',encode_index(PASSAGES_V2))
 paths+=build_discovery_page(write,layout,DISCOVERY_V2,ORIGIN)
 # Ghost consumes this partial from the exact same renderer as the homepage.
 from explorer import render_explorer
-write('integration/archive-explorer.hbs',render_explorer(RECORDS,PROGRAMMES,ORIGIN,collection_counts=FULL_COUNTS))
+write('integration/archive-explorer.hbs',render_explorer(RECORDS,PROGRAMMES,ORIGIN,collection_counts=FULL_COUNTS,index_counts=DISCOVERY_V2['counts']))
 write('metadata/metadata-profile.json',json.dumps(PROFILE,ensure_ascii=False,indent=2))
 write('metadata/relations.json',json.dumps(relation_register(ORIGIN),ensure_ascii=False,indent=2))
 write('metadata/relationships.json',json.dumps({'profile_version':PROFILE['version'],'assertions':[a for r in RECORDS for a in r['relationship_assertions']]+typed_entity_relationship_assertions(ENTITIES,ORIGIN)},ensure_ascii=False,indent=2))

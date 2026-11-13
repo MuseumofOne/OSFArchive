@@ -17,7 +17,7 @@ def e(value):
     return escape(str(value or ''), quote=True).replace('{{', '&#123;&#123;').replace('}}', '&#125;&#125;')
 
 
-def render_explorer(records, programmes, origin, *, standalone=False, collection_counts=None):
+def render_explorer(records, programmes, origin, *, standalone=False, collection_counts=None, index_counts=None):
     origin=origin.rstrip('/')
     dest=lambda path: path if standalone else origin+'/'+path
     asset=lambda path: path if standalone else "{{asset 'archive/explorer/"+path.removeprefix('assets/')+"'}}"
@@ -26,10 +26,17 @@ def render_explorer(records, programmes, origin, *, standalone=False, collection
     deposit_counts = Counter(r['collection'] for r in records)
     collection_counts = deposit_counts if collection_counts is None else collection_counts
     groups = list(collection_counts)
+    catalogue_total = sum(collection_counts.values())
+    website_total = catalogue_total - len(records)
     newest=sorted(records,key=lambda r:r['date'],reverse=True)
     # The contextual register also includes people linked through exchanges/programmes.
-    entities=len(json.loads((Path(__file__).resolve().parents[1]/'data/entities.json').read_text()))
-    chapters=sum(len(r.get('contents',[])) for r in records)
+    if index_counts is None:
+        index_counts = {
+            'entity': len(json.loads((Path(__file__).resolve().parents[1]/'data/entities.json').read_text())),
+            'chapter': sum(len(r.get('contents',[])) for r in records),
+            'programme': len(programmes),
+        }
+    chapters = index_counts.get('chapter', 0)
     heading='h1' if standalone else 'h2'
     model=[]
     for r in records:
@@ -52,17 +59,31 @@ def render_explorer(records, programmes, origin, *, standalone=False, collection
 
     for group in groups:
         rs=[r for r in records if r['collection']==group]
-        html+=f'<details class="ax-tree-group"><summary>{e(group)}<small>{len(rs)} deposited editions</small></summary><a {collection_attributes(group)}>Browse this collection · {collection_counts[group]} records →</a><ul>'+''.join(f'<li><a data-ax-handoff href="{e(dest("items/"+str(r["id"])+".html"))}"><small>{e(r["accession"])}</small>{e(r.get("short_title") or r["title"])}</a></li>' for r in rs)+'</ul></details>'
+        html+=f'<details class="ax-tree-group"><summary>{e(group)}<small>{len(rs)} deposited {"edition" if len(rs) == 1 else "editions"}</small></summary><a {collection_attributes(group)}>Browse this collection · {collection_counts[group]} catalogue {"record" if collection_counts[group] == 1 else "records"} →</a><ul>'+''.join(f'<li><a data-ax-handoff href="{e(dest("items/"+str(r["id"])+".html"))}"><small>{e(r["accession"])}</small>{e(r.get("short_title") or r["title"])}</a></li>' for r in rs)+'</ul></details>'
     html+=nav('Discover across the archive','discover','research-discovery.html')+nav('Reading list <span data-ax-count>0</span>','reading','catalogue.html')
     for path,label in [('methodology.html','Methodology'),('contents.html','Chapters & essays'),('people.html','People & organisations'),('artworks.html','Artworks discussed'),('programmes.html','Research pathways'),('vocabulary.html','Discovery vocabulary'),('metadata-quality.html','Catalogue quality'),('finding-aid.html','Finding aid')]:
         html+=f'<a href="{e(dest(path))}">{label} ↗</a>'
     html+='</nav><p class="ax-note">Published items and analytic parts. Editorial arrangement is described in the finding aid.</p></details></aside><div class="ax-workbench">'
     html+=f'''<div class="ax-opening"><p class="ax-label">Research catalogue / Museum of One</p><{heading} class="ax-title" id="ax-title">The archive,<br><em>in context.</em></{heading}><p>Read the publications. Follow ideas, artworks and people through a connected record of independent inquiry.</p><form class="ax-entry-search" data-ax-entry action="{e(dest('research-discovery.html'))}" method="get" role="search"><label for="ax-entry-query" class="ax-sr">Search the archive</label><input id="ax-entry-query" name="q" type="search" placeholder="A title, person, artwork or idea…"><button type="submit">Search the archive ↗</button></form><dl class="ax-totals">'''
-    for label,count in [('Deposited editions',len(records)),('Chapters & essays',chapters),('Contextual entities',entities),('Research pathways',len(programmes))]:html+=f'<div><dt>{e(label)}</dt><dd>{count:02d}</dd></div>'
+    edition_label = 'deposited edition' if len(records) == 1 else 'deposited editions'
+    website_label = 'website record' if website_total == 1 else 'website records'
+    html += (f'<div><dt>Catalogue records</dt><dd data-ax-total="catalogue">{catalogue_total}</dd>'
+             f'<dd class="ax-total-breakdown"><span data-ax-total="publication">{len(records)}</span> {edition_label} · '
+             f'<span data-ax-total="website">{website_total}</span> {website_label}</dd></div>')
+    for kind, label in [('chapter', 'Indexed chapters & essays'), ('entity', 'Indexed people, works & organisations'),
+                        ('programme', 'Research programmes')]:
+        html += f'<div><dt>{e(label)}</dt><dd data-ax-total="{kind}">{index_counts.get(kind, 0)}</dd></div>'
     html+='</dl></div><nav class="ax-tabs" aria-label="Archive explorer views">'+''.join(nav(label,view,path) for label,view,path in [('Overview','overview','index.html'),('Catalogue','catalogue','catalogue.html'),('Discover','discover','research-discovery.html'),('Reading list','reading','catalogue.html')])+'</nav>'
-    rows = ''
+    rows = '<p class="ax-count-note">Each collection combines deposited editions and standalone website records. A website capture linked to a deposited edition shares its catalogue entry.</p>'
     for i,group in enumerate(groups):
-        rows += f'<a class="ax-collection-row" {collection_attributes(group)}><span>{i+1:02d}</span><span><strong>{e(group)}</strong><small>{deposit_counts[group]} deposited editions</small></span><span>{collection_counts[group]} records ↗</span></a>'
+        total, deposited = collection_counts[group], deposit_counts[group]
+        website = total - deposited
+        rows += (f'<a class="ax-collection-row" {collection_attributes(group)}><span aria-hidden="true">{i+1:02d}</span>'
+                 f'<span><strong>{e(group)}</strong><small><span data-ax-deposit-count="{e(group)}">{deposited}</span> '
+                 f'deposited {"edition" if deposited == 1 else "editions"} · <span data-ax-website-count="{e(group)}">{website}</span> '
+                 f'website {"record" if website == 1 else "records"}</small></span>'
+                 f'<span class="ax-collection-count" data-ax-full-count="{e(group)}" data-count="{total}">'
+                 f'{total} catalogue {"record" if total == 1 else "records"} ↗</span></a>')
     if standalone:
         html = html.replace('</form><dl class="ax-totals">', '</form><nav class="ax-entrance-collections" aria-label="Collections">'+rows+'</nav><dl class="ax-totals">', 1)
     html+='<div data-ax-panel="overview"><div class="ax-section-head"><h3>The collection register</h3>'+nav('Browse deposited editions ↗','catalogue','catalogue.html')+'</div>'

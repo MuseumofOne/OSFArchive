@@ -42,11 +42,27 @@ class Page(HTMLParser):
         self.iframes = []
         self.stylesheets = []
         self.body_classes = []
+        self.catalogue_cards = Counter()
+        self.methodology_cards = Counter()
+        self.explorer_counts = {}
+        self.count_text = None
         self.feed(path.read_text(encoding="utf-8"))
         self.close()
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if 'data-record' in attrs and attrs.get('data-format') in ('edition', 'website'):
+            self.catalogue_cards[attrs.get('data-group'), attrs['data-format']] += 1
+        if self.path.name == 'methodology.html':
+            classes = (attrs.get('class') or '').split()
+            if 'book-card' in classes:
+                self.methodology_cards['edition'] += 1
+            if 'publication-card' in classes:
+                self.methodology_cards['website'] += 1
+        for key in ('data-ax-total', 'data-ax-deposit-count', 'data-ax-website-count', 'data-ax-full-count'):
+            if key in attrs:
+                values = self.explorer_counts.setdefault((key, attrs[key]), [])
+                self.count_text = (tag, values, [])
         if tag == 'body':
             self.body_classes = (attrs.get('class') or '').split()
         if tag == 'link' and attrs.get('rel') == 'stylesheet':
@@ -69,12 +85,18 @@ class Page(HTMLParser):
             self.meta.setdefault(attrs['name'], []).append(attrs.get('content', ''))
 
     def handle_data(self, data):
+        if self.count_text:
+            self.count_text[2].append(data)
         if self.jsonld_buffer is not None:
             self.jsonld_buffer.append(data)
         else:
             self.text.append(data)
 
     def handle_endtag(self, tag):
+        if self.count_text and tag == self.count_text[0]:
+            _, values, parts = self.count_text
+            values.append(''.join(parts).strip())
+            self.count_text = None
         if tag == "script" and self.jsonld_buffer is not None:
             self.jsonld.append("".join(self.jsonld_buffer))
             self.jsonld_buffer = None
@@ -92,6 +114,34 @@ def normalized_doi(value):
     return re.sub(r"^(?:https?://(?:dx\.)?doi\.org/|doi:\s*)", "", str(value or ""), flags=re.I).lower().strip()
 
 
+def check_explorer_counts(pages):
+    cards = pages[(DIST / 'catalogue.html').resolve()].catalogue_cards
+    groups = {group for group, _ in cards}
+    full = {group: cards[group, 'edition'] + cards[group, 'website'] for group in groups}
+    feed = load(DIST / 'metadata/research-discovery.v2.json') or {}
+    rows = feed.get('records', [])
+    kinds = Counter(row['kind'] for row in rows)
+    indexed_cards = Counter((row['collection'], 'edition' if row['kind'] == 'publication' else 'website')
+                            for row in rows if row['kind'] == 'publication' or row.get('catalogue_record') is True)
+    require(indexed_cards == cards, 'Discovery entries and displayed catalogue cards differ by collection or format.')
+    require(feed.get('collection_counts') == full, 'Discovery collection totals do not match the catalogue cards.')
+    methodology = pages[(DIST / 'methodology.html').resolve()].methodology_cards
+    require(all(methodology[format] == cards['Methodology', format] for format in ('edition', 'website')),
+            'Methodology destination does not match the catalogue by record format.')
+
+    totals = {'catalogue': sum(full.values()), 'publication': kinds['publication'],
+              'website': sum(count for (_, format), count in cards.items() if format == 'website'),
+              **{kind: kinds[kind] for kind in ('chapter', 'entity', 'programme')}}
+    expected = {('data-ax-total', key): [str(count)] for key, count in totals.items()}
+    for group, count in full.items():
+        expected['data-ax-full-count', group] = [f'{count} catalogue {"record" if count == 1 else "records"} ↗']
+        expected['data-ax-deposit-count', group] = [str(cards[group, 'edition'])]
+        expected['data-ax-website-count', group] = [str(cards[group, 'website'])]
+    for page in (pages[(DIST / 'index.html').resolve()], Page(DIST / 'integration/archive-explorer.hbs')):
+        require(page.explorer_counts == expected,
+                f'Explorer counts do not match the catalogue and discovery index: {page.path.relative_to(DIST)}')
+
+
 def main():
     require((DIST / "index.html").is_file(), "Build output missing: run scripts/build.py first.")
     if ERRORS:
@@ -105,6 +155,7 @@ def main():
                 f"Style output differs from tracked source: {name}. Rebuild before publishing.")
     if ERRORS:
         return report()
+    check_explorer_counts(pages)
     require(len(pages) >= 5, "Core pages are missing.")
     origins = {urlsplit(page.canonical).netloc for page in pages.values() if page.canonical}
     require(len(origins) == 1, f"Canonical URLs use inconsistent origins: {origins}")
