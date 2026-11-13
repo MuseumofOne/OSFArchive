@@ -181,7 +181,7 @@ body:has(.archive-explorer.ax-expanded){overflow:hidden}
   --ax-accent: #703b38;
 }
 .archive-explorer .ax-grid:not([data-layout="list"]) {
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, max(13rem, 208px)), 1fr));
 }
 .archive-explorer .ax-cover {
   background: #e7ddcb;
