@@ -50,9 +50,23 @@ class Citations(unittest.TestCase):
         self.assertIn("@article{", bibtex(model))
         self.assertIn("TY  - JOUR\n", ris(model))
         self.assertEqual(dict(scholar_meta(model))["citation_journal_title"], model["journal"])
-        typo = self.model("20593003")
-        self.assertEqual(typo["journal"], "Journal of Post-Interpretive Critiism")
-        self.assertNotIn("issn", typo)
+        corrected = self.model("20593003")
+        self.assertEqual(corrected["journal"], "Journal of Post-Interpretive Criticism")
+        self.assertNotIn("issn", corrected)
+        historical = json.loads((ROOT / "data/source/20593003.json").read_text())
+        self.assertEqual(historical["metadata"]["journal"]["title"], "Journal of Post-Interpretive Critiism")
+
+    def test_corrected_manual_remains_distinct_from_dataset_and_its_original_snapshot(self):
+        record = self.records["20100136"]
+        model = self.model("20100136")
+        historical = json.loads((ROOT / "data/source/20100136.json").read_text())
+        self.assertEqual(record["type"], "Other")
+        self.assertEqual(csl_json(model)["type"], "document")
+        self.assertIn("TY  - GEN\n", ris(model))
+        self.assertEqual(historical["metadata"]["resource_type"]["type"], "dataset")
+        self.assertEqual(record["doi"], historical["doi"])
+        self.assertEqual(record["date"], historical["metadata"]["publication_date"])
+        self.assertEqual(csl_json(self.model("20100139"))["type"], "dataset")
 
     def test_dataset_is_citable_but_receives_no_scholar_article_tags(self):
         model = self.model("20100139")

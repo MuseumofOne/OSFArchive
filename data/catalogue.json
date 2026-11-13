@@ -135,7 +135,7 @@
     ],
     "orcid": "0009-0004-7737-5094",
     "publisher": "Museum of One",
-    "language": null,
+    "language": "en",
     "isbn": "978-1-06-982030-3",
     "related_identifiers": [
       {
@@ -255,7 +255,7 @@
       }
     ],
     "source_created": "2026-04-28T19:07:18.070464+00:00",
-    "source_modified": "2026-10-15T14:32:18.509095+00:00",
+    "source_modified": "2026-11-13T16:28:56.162568+00:00",
     "source_description_html": "<h3>Bibliographic clarification</h3>\n<p>The publisher's current citation title is <em>Post-Interpretive Criticism: Volume I - The Foundational Essays</em>. The title page of the unchanged deposited PDF (PDF page 3) reads <em>Post&ndash;Interprative Criticism: Volume I</em>, with the subtitle <em>Foundational Essays (Collected Doctrines, Treaties, Theories, and Application)</em>. The cover uses <em>Post-Interpretive Criticism</em>. These are title variants of this deposited work; the corrected publisher citation does not alter or purport to transcribe the PDF title page.</p>\n<p>The copyright page (PDF page 4) states first publication by Museum of One in 2025, First edition, and prints ISBN 978-1-0698203-0-3. The April 2026 date identifies repository release v5, not a new book edition. The printed ISBN is retained as printed, without asserting a newly verified ISBN-agency assignment.</p>\n<p>Publisher citation and edition record: <a href=\"https://www.museumofone.art/publication-foundational-essays/\">Museum of One publication record</a>. Stable concept DOI: <a href=\"https://doi.org/10.5281/zenodo.17058411\">10.5281/zenodo.17058411</a>.</p>\n<p><strong><em>Museum of One / Archive and Research</em></strong><em> (ISNI: 0000000528819728)</em></p>\n<p><strong><em>Journal of Post-Interpretive Criticism</em></strong><em> (ISNI: 0000000528819787)</em></p>\n<p><strong><em>Dorian Vale </em></strong><em>(ISNI: 0000000528819744)</em></p>\n<p><strong>Post-Interpretive Criticism: Foundational Essays</strong> is the inaugural volume in a groundbreaking aesthetic philosophy movement pioneered by art critic and theorist <strong>Dorian Vale</strong>. This collected body of doctrine, theory, and application offers a radical alternative to traditional art criticism&mdash;one grounded not in interpretation, but in restraint, reverence, and moral proximity.</p>\n<p>&nbsp;</p>\n<p>Rather than decoding or distilling meaning, Vale&rsquo;s <em>Post-Interpretive Criticism</em> proposes a mode of custodial encounter: the critic as witness, the viewer as evidence, and language as stewardship.</p>\n<p>&nbsp;</p>\n<p>This volume gathers all core philosophical structures and establishes the intellectual foundation of the Post-Interpretive Movement, including:</p>\n<p>&nbsp;</p>\n<ul>\n<li>\n<p><strong>The Doctrine of Post-Interpretive Criticism</strong></p>\n</li>\n<li>\n<p><strong>Stillmark Theory</strong> &mdash; on presence, temporality, and vanishing as discipline</p>\n</li>\n<li>\n<p><strong>Absential Aesthetics</strong> &mdash; on erasure, ghost forms, and the art of what remains</p>\n</li>\n<li>\n<p><strong>Hauntmark Theory</strong> &mdash; on language as harm, inheritance, or afterlife</p>\n</li>\n<li>\n<p><strong>Theory of Aesthetic Displacement</strong> &mdash; on dislocation of truth across institutional, spatial, and linguistic lines</p>\n</li>\n<li>\n<p><strong>Theory of Misplacement</strong> &mdash; on the misuse of aesthetic objects through curatorial or critical projection</p>\n</li>\n<li>\n<p><strong>Art as Truth</strong> &mdash; a metaphysical treatise on presence as the irreducible aesthetic ontology</p>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>It also includes cornerstone essays on <em>Viewer-as-Evidence</em>, <em>The Custodian&rsquo;s Oath</em>, and applied case studies on artists such as <strong>Zarina Hashmi</strong>, <strong>Doris Salcedo</strong>, and <strong>Teresa Margolles</strong>&mdash;each explored through the lens of sacred witnessing and restrained presence.</p>\n<p>&nbsp;</p>\n<p>This book is not merely a collection. It is the founding architecture of a new philosophical tradition in aesthetics.</p>\n<p>&nbsp;</p>\n<p>Vale, Dorian. <a href=\"https://zenodo.org/records/17069115\">Post-Interprative Criticism: Foundational Essays (Collected Doctrines, Treaties, Theories, and Application)</a>. Museum of One, 2025. DOI: 10.5281/zenodo.17069115</p>\n<p>This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and <em>Art as Truth: A Treatise</em> (Q136329071), <em>Aesthetic Recursion Theory</em>&nbsp;(Q136339843), The Journal of Post-Interpretive Criticism (Q136530009)</p>\n<p>Post-Interpretive Criticism, Dorian Vale, contemporary art theory, philosophy of aesthetics, Absential Aesthetics, Stillmark Theory, Hauntmark Theory, Theory of Aesthetic Displacement, Theory of Misplacement, Art as Truth, ethics of art criticism, sacred criticism, witnessing aesthetics, non-interpretive art, Zarina Hashmi, Doris Salcedo, Teresa Margolles, trauma in contemporary art, moral proximity, restraint in criticism, ontology of art, post-criticism, viewer as evidence, presence in art, post-structuralist art theory, slow criticism</p>",
     "provenance": {
       "repository": "Zenodo REST API response supplied in query.json",
@@ -274,7 +274,7 @@
     "cover": "assets/foundational-essays.jpg",
     "cover_alt": "Published cover of Post-Interpretive Criticism: Volume I - The Foundational Essays",
     "cover_source": "https://www.museumofone.art/",
-    "source_review": "2026-11-04",
+    "source_review": "2026-11-13",
     "relations": [
       {
         "identifier": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5443334",
@@ -362,7 +362,7 @@
     ],
     "extent": "1 digital file; 1044796 bytes",
     "medium": "Digital document",
-    "record_reviewed": "2026-11-04",
+    "record_reviewed": "2026-11-13",
     "date_precision": "month",
     "alternate_titles": [
       {
@@ -482,6 +482,24 @@
           "https://zenodo.org/records/19864099"
         ]
       }
+    ],
+    "field_assertions": [
+      {
+        "field": "language",
+        "value": "en",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19864099",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_modified",
+        "value": "2026-11-13T16:28:56.162568+00:00",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19864099",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      }
     ]
   },
   {
@@ -545,7 +563,7 @@
     "discrepancies": [],
     "orcid": "0009-0004-7737-5094",
     "publisher": "Museum of One",
-    "language": null,
+    "language": "en",
     "isbn": "978-1-06-982031-0",
     "related_identifiers": [
       {
@@ -580,7 +598,7 @@
       }
     ],
     "source_created": "2026-04-28T19:19:00.113516+00:00",
-    "source_modified": "2026-10-15T12:15:14.061006+00:00",
+    "source_modified": "2026-11-13T16:29:01.048598+00:00",
     "source_description_html": "<p><strong>Post-Interpretive Criticism: Volume II &mdash; Essays from the Field</strong> continues the formal articulation of a new movement in contemporary art thought: one rooted not in interpretation, but in <em>presence</em>. As the second major volume by Dorian Vale, this collection gathers eight pivotal essays that apply and expand the doctrines of <strong>Post-Interpretive Criticism (PIC)</strong>&mdash;a philosophical and aesthetic framework grounded in restraint, moral proximity, and the ethics of witnessing.</p>\n<p>Divided into two sections, the book offers:</p>\n<ul>\n<li>\n<p><strong>Part I &mdash; Canonical Essays</strong>: Deep explorations of works by Doris Salcedo, Zarina Hashmi, Kimsooja, and Ana Mendieta, each demonstrating how post-interpretive principles reveal new modes of custodial engagement with trauma, exile, stillness, and erasure.</p>\n</li>\n<li>\n<p><strong>Part II &mdash; Pedagogical Essays</strong>: Practical tools and educational resources designed to teach and transmit PIC as a method. These essays guide readers through practices of restraint, witnessing, and language discipline, equipping students, curators, and viewers alike to approach art with greater reverence and ethical literacy.</p>\n</li>\n</ul>\n<p>Together, these writings mark the maturation of a critical movement that refuses sensationalism, values silence, and honors the unspoken. This volume cements Dorian Vale&rsquo;s position not only as the founder of Post-Interpretive Criticism, but as a leading voice in rethinking what it means to encounter art&mdash;<em>not to explain it, but to stand beside it</em>.</p>\n<p>&nbsp;</p>\n<p>Vale, Dorian. Post-Interpretive Criticism: Volume II &mdash; Essays from the Field. Museum of One, 2025. DOI: 10.5281/zenodo.17078846</p>\n<p>&nbsp;</p>\n<p>First published by Museum of One in 2025. Stable work DOI: <a href=\"https://doi.org/10.5281/zenodo.17078846\">10.5281/zenodo.17078846</a></p>",
     "provenance": {
       "repository": "Zenodo REST API response supplied in query.json",
@@ -598,7 +616,7 @@
     "cover": "assets/essays-from-field.webp",
     "cover_alt": "Published cover of Post-Interpretive Criticism: Volume II — Essays from the Field",
     "cover_source": "https://www.museumofone.art/",
-    "source_review": "2026-11-04",
+    "source_review": "2026-11-13",
     "relations": [
       {
         "identifier": "10.5281/zenodo.17058411",
@@ -645,7 +663,7 @@
     ],
     "extent": "1 digital file; 2610097 bytes",
     "medium": "Digital document",
-    "record_reviewed": "2026-11-04",
+    "record_reviewed": "2026-11-13",
     "date_precision": "year",
     "alternate_titles": [
       {
@@ -779,6 +797,24 @@
           "https://zenodo.org/records/19864115"
         ]
       }
+    ],
+    "field_assertions": [
+      {
+        "field": "language",
+        "value": "en",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19864115",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_modified",
+        "value": "2026-11-13T16:29:01.048598+00:00",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19864115",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      }
     ]
   },
   {
@@ -844,7 +880,7 @@
     ],
     "orcid": "0009-0004-7737-5094",
     "publisher": "Museum of One",
-    "language": null,
+    "language": "en",
     "isbn": "978-1-06-982033-4",
     "related_identifiers": [],
     "alternate_identifiers": [
@@ -863,7 +899,7 @@
       }
     ],
     "source_created": "2026-10-15T13:02:22.774012+00:00",
-    "source_modified": "2026-10-15T13:02:23.227934+00:00",
+    "source_modified": "2026-11-13T16:29:19.849702+00:00",
     "source_description_html": "<p><strong>Title:</strong> Threads of Sand, Scar &amp; Scripture: Sudanese Art and the Ethics of Witnessing (A Post-Interpretive Study)</p>\n<p><strong>Author:</strong> Dorian Vale</p>\n<p><strong>Affiliation:</strong> Museum of One &mdash; Registered Archive &amp; Independent Research Institute for Contemporary Aesthetics</p>\n<p>This book presents a sustained philosophical and critical inquiry into Sudanese art under conditions of war, displacement, and historical fragmentation, advancing <strong>Post-Interpretive Criticism (PIC)</strong> as an ethical alternative to dominant interpretive frameworks in contemporary art discourse. Rather than treating artworks as objects to be decoded, explained, or culturally translated for external audiences, this study repositions the critic as a <strong>witness in proximity</strong>&mdash;one who resists extraction, narrative closure, and symbolic appropriation.</p>\n<p>Through a series of close encounters with Sudanese visual practices&mdash;ranging from material craft traditions and domestic forms to contemporary expressions shaped by exile and rupture&mdash;the book develops a methodology grounded in <strong>restraint, presence, and moral adjacency</strong>. It argues that conventional art criticism, particularly within post-1950s interpretive paradigms, has produced a condition of <strong>interpretive saturation</strong>, wherein artworks are reduced to vehicles for meaning rather than approached as sites of lived continuity and fragile coherence.</p>\n<p>Drawing on the philosophical architecture of Post-Interpretive Criticism&mdash;including concepts such as <strong>viewer-as-evidence, ethical proximity, and the refusal of interpretive closure</strong>&mdash;the text examines how Sudanese art operates not as representation but as <strong>survival infrastructure</strong>: a means of carrying memory, dignity, and cultural continuity through conditions of systemic disruption. In doing so, it reframes aesthetic experience as an ethical encounter shaped by limits, rather than an opportunity for discursive expansion.</p>\n<p>The book further situates Sudanese art within broader discussions of <strong>archive politics, institutional mediation, and the epistemic violence of interpretation</strong>, arguing that acts of naming, framing, and explaining often function as forms of displacement. Against this, it proposes a discipline of witnessing that privileges <strong>silence, material attention, and positional awareness</strong> over interpretive authority.</p>\n<p>Positioned at the intersection of aesthetics, anthropology, and philosophy,&nbsp;<em>Threads of Sand, Scar, &amp; Scripture</em> contributes to emerging post-hermeneutic approaches to art criticism by offering both a theoretical framework and a series of applied analyses. It establishes Post-Interpretive Criticism not merely as a method, but as a <strong>necessary ethical recalibration</strong> in the face of cultural fragility, where the role of criticism is no longer to extract meaning, but to <strong>remain answerable to what survives</strong>.</p>\n<div>\n<p><strong>Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen.</strong></p>\n</div>\n<p>Repository file correction, 15 October 2026: this version restores the verified Threads PDF from public version 10.5281/zenodo.20272105. It corrects the unrelated Moral Evidence PDF deposited in version 10.5281/zenodo.20274964. The restored PDF is unchanged and identifies itself as the Second edition; this repository correction does not create a new book edition. First publication date for this edition: 18 May 2026. All earlier repository versions remain in the history. Stable concept DOI: 10.5281/zenodo.19207069.</p>",
     "provenance": {
       "repository": "Zenodo REST API response supplied in query.json",
@@ -881,7 +917,7 @@
     "cover": "assets/threads-of-sand.webp",
     "cover_alt": "Published cover of Threads of Sand, Scar & Scripture: Sudanese Art and the Ethics of Witnessing (A Post-Interpretive Study)",
     "cover_source": "https://www.museumofone.art/",
-    "source_review": "2026-11-04",
+    "source_review": "2026-11-13",
     "relations": [],
     "institutional_metadata": {
       "title": "Threads of Sand, Scar & Scripture",
@@ -932,7 +968,7 @@
     ],
     "extent": "1 digital file; 1285819 bytes",
     "medium": "Digital document",
-    "record_reviewed": "2026-11-04",
+    "record_reviewed": "2026-11-13",
     "date_precision": "day",
     "alternate_titles": [
       {
@@ -1042,6 +1078,24 @@
           "https://zenodo.org/records/23395654"
         ]
       }
+    ],
+    "field_assertions": [
+      {
+        "field": "language",
+        "value": "en",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/23395654",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_modified",
+        "value": "2026-11-13T16:29:19.849702+00:00",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/23395654",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      }
     ]
   },
   {
@@ -1106,7 +1160,7 @@
     ],
     "orcid": "0009-0004-7737-5094",
     "publisher": "Museum of One",
-    "language": null,
+    "language": "en",
     "isbn": "978-1-06-982034-1",
     "related_identifiers": [],
     "alternate_identifiers": [
@@ -1125,7 +1179,7 @@
       }
     ],
     "source_created": "2026-05-25T17:57:02.477362+00:00",
-    "source_modified": "2026-10-15T23:24:10.711327+00:00",
+    "source_modified": "2026-11-13T16:29:10.696382+00:00",
     "source_description_html": "<p class=\"p1\"><strong>The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing</strong> by Dorian Vale is a major philosophical and architectural treatise that expands the framework of Post-Interpretive Criticism into the spatial domain, arguing that architecture must be understood not merely as aesthetic production or functional design, but as a system of moral choreography acting directly upon the human body. Drawing from architectural history, phenomenology, spatial theory, ethics, theology, and critical aesthetics, the book proposes that built environments do not simply contain human life; they actively shape posture, perception, obedience, dignity, and emotional possibility.</p>\n<p class=\"p1\">Rejecting the interpretive traditions that reduce architecture to symbolism, style, or semiotic analysis, Vale develops a witness-based methodology centered on bodily testimony and spatial encounter. The text argues that space operates prior to language and often beyond conscious interpretation, producing ethical and psychological effects before the inhabitant can conceptualize them. From Paleolithic caves and Mesopotamian ziggurats to Gothic cathedrals, imperial complexes, corporate glass towers, hospitals, prisons, welfare offices, and public housing projects, the book traces an unbroken lineage of spatial systems that choreograph human behavior through scale, light, threshold, surveillance, circulation, elevation, enclosure, and access.</p>\n<p class=\"p1\">Central to the work is the claim that architecture is the oldest technology of moral formation. The text reframes buildings not as neutral containers but as active ethical agents that distribute visibility, shame, reverence, exclusion, and belonging through material conditions. Vale introduces concepts such as &ldquo;moral choreography,&rdquo; &ldquo;custodial space,&rdquo; &ldquo;architectures of obedience,&rdquo; and &ldquo;space as moral evidence,&rdquo; arguing that the body itself functions as the primary archive of architectural truth. Against traditions of detached architectural interpretation, the book positions testimony, presence, restraint, and witness as the proper ethical stance of criticism.</p>\n<p class=\"p1\">The work also critiques the modern fiction of neutral design, exposing how institutional and bureaucratic architectures frequently disguise systems of behavioral control beneath the language of efficiency, transparency, optimization, and functionality. By examining how spatial arrangements condition emotional and social realities, the book situates architecture within broader questions of governance, hierarchy, surveillance, ritual, and power. Simultaneously, it identifies counter-traditions of custodial architecture&mdash;spaces designed not to dominate the body but to shelter dignity, contemplation, and human presence.</p>\n<p class=\"p1\">Blending philosophical inquiry with literary prose,&nbsp;<span class=\"s1\"><em>The Moral Evidence of Space</em></span> establishes a new branch of Post-Interpretive Criticism focused on spatial ethics and the phenomenology of built environments. It positions architecture not as a passive backdrop to history but as one of the primary forces through which civilizations produce forms of subjectivity, obedience, exclusion, and transcendence. The book contributes to contemporary debates in architecture, critical theory, aesthetics, urban studies, museum studies, phenomenology, and ethics by proposing a new framework for understanding how space acts upon human beings before interpretation begins.</p>\n<p>First published by Museum of One in 2026. Stable work DOI: <a href=\"https://doi.org/10.5281/zenodo.20095467\">10.5281/zenodo.20095467</a></p>",
     "provenance": {
       "repository": "Zenodo REST API response supplied in query.json",
@@ -1143,7 +1197,7 @@
     "cover": "assets/moral-evidence-space.jpg",
     "cover_alt": "Published cover of The Moral Evidence of Space: Architecture, Power, and the Ethics of Witnessing (A Post-Interpretive Study)",
     "cover_source": "https://www.museumofone.art/",
-    "source_review": "2026-11-04",
+    "source_review": "2026-11-13",
     "relations": [],
     "first_edition": "First edition; institutional publication date 2026-05-09",
     "institutional_metadata": {
@@ -1179,7 +1233,7 @@
     ],
     "extent": "1 digital file; 2713642 bytes",
     "medium": "Digital document",
-    "record_reviewed": "2026-11-04",
+    "record_reviewed": "2026-11-13",
     "date_precision": "day",
     "alternate_titles": [
       {
@@ -1286,6 +1340,24 @@
         "sources": [
           "https://zenodo.org/records/20383926"
         ]
+      }
+    ],
+    "field_assertions": [
+      {
+        "field": "language",
+        "value": "en",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20383926",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_modified",
+        "value": "2026-11-13T16:29:10.696382+00:00",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20383926",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
       }
     ]
   },
@@ -2784,11 +2856,13 @@
       {
         "name": "Vale, Dorian",
         "affiliation": null,
-        "orcid": "0009-0004-7737-5094"
-      },
-      {
-        "name": "Museum of One",
-        "affiliation": null
+        "orcid": "0009-0004-7737-5094",
+        "identifiers": [
+          {
+            "identifier": "0000000528819744",
+            "scheme": "isni"
+          }
+        ]
       }
     ],
     "doi": "10.5281/zenodo.21715085",
@@ -2910,12 +2984,12 @@
     "institutional_url": "https://www.museumofone.art/art-that-falls-apart-material-fatigue-as-moral-statement/",
     "corroboration": "Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. Its repository links and publication dates are retained separately from this selected Zenodo edition. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.",
     "discrepancies": [
-      "The repository also lists organizational or URL-form creator entries. The catalogue displays Dorian Vale as bibliographic author while retaining the deposited creator list separately.",
+      "The original dated repository snapshot lists organizational or URL-form creator entries. The current repository creator metadata was corrected and verified on 13 November 2026; Dorian Vale remains the bibliographic author. The original snapshot is retained unchanged.",
       "The Museum of One web record is dated 29 July 2026; this selected Zenodo edition gives 31 July 2026. These describe separate publication records."
     ],
     "orcid": "0009-0004-7737-5094",
     "publisher": "Museum of One",
-    "language": null,
+    "language": "en",
     "isbn": null,
     "related_identifiers": [
       {
@@ -3019,20 +3093,7 @@
         "scheme": "url"
       }
     ],
-    "alternate_identifiers": [
-      {
-        "identifier": "2819-7232"
-      },
-      {
-        "identifier": "0000000528819728"
-      },
-      {
-        "identifier": "0000000528819787"
-      },
-      {
-        "identifier": "0000000528819744"
-      }
-    ],
+    "alternate_identifiers": [],
     "source_references": [
       "https://www.museumofone.art"
     ],
@@ -3040,9 +3101,21 @@
       "title": "Journal of Post-Interpretive Criticism"
     },
     "source_imprint": null,
-    "source_contributors": [],
+    "source_contributors": [
+      {
+        "name": "Museum of One",
+        "affiliation": null,
+        "identifiers": [
+          {
+            "identifier": "0000000528819728",
+            "scheme": "isni"
+          }
+        ],
+        "type": "Hosting institution"
+      }
+    ],
     "source_created": "2026-07-31T06:35:35.777378+00:00",
-    "source_modified": "2026-07-31T06:35:36.092919+00:00",
+    "source_modified": "2026-11-13T16:27:10.316138+00:00",
     "source_description_html": "<p class=\"p1\"><strong>Abstract</strong></p>\n<p class=\"p3\">This essay examines material deterioration in contemporary art as an ethical and aesthetic condition rather than a conservation problem. Challenging the museum&rsquo;s traditional commitment to permanence, it argues that entropy, material fatigue, and physical decay can function as intrinsic components of artistic meaning rather than accidental losses requiring restoration. Drawing upon principles of Post-Interpretive Criticism, the essay proposes that deterioration constitutes evidence of an artwork&rsquo;s temporal existence and should be approached through witnessing rather than interpretive recovery.</p>\n<p class=\"p3\">Through discussions of works by Eva Hesse, Gordon Matta-Clark, Joseph Beuys, Anselm Kiefer, Dieter Roth, Anya Gallaccio, Felix Gonzalez-Torres, and Zoe Leonard, the essay explores how unstable materials&mdash;including latex, fat, organic matter, flowers, candy, and architectural interventions&mdash;redefine the relationship between object, institution, and viewer. It argues that museums often operate within a preservation paradigm that privileges permanence, stability, and market value, while overlooking the ethical significance of material transformation. Cases of conservation intervention further reveal the tension between institutional stewardship and artistic intentions that incorporate impermanence.</p>\n<p class=\"p3\">Rather than treating physical degradation as damage or failure, the essay frames material fatigue as a visible record of time, encounter, and existence. It proposes that criticism should abandon the pursuit of hidden meanings in favor of attentive witnessing, where cracks, fading pigments, decomposition, and structural instability become legitimate aesthetic events. In this framework, decay functions not as the negation of the artwork but as part of its continuing presence.</p>\n<p class=\"p4\">By repositioning entropy as an ethical condition of viewing, the essay contributes to contemporary debates in aesthetics, conservation ethics, museum studies, material culture, and conceptual art. It advances the view that the moral responsibility of both institutions and critics is not to deny mortality through preservation alone, but to recognize impermanence as an essential dimension of artistic experience.</p>\n<ul>\n<li><span class=\"s1\"><strong>Title:</strong></span> <span class=\"s1\"><em>Art That Falls Apart: Material Fatigue as Moral Statement</em></span></li>\n<li><span class=\"s1\"><strong>Creator:</strong></span><span class=\"s2\"> Dorian Vale</span></li>\n<li><span class=\"s1\"><strong>Publisher:</strong></span><span class=\"s2\"> Museum of One</span></li>\n<li><span class=\"s1\"><strong>Publication Year:</strong></span><span class=\"s2\"> 2026</span></li>\n<li><span class=\"s1\"><strong>Resource Type:</strong></span> Journal Article / Critical Essay</li>\n<li><span class=\"s1\"><strong>Language:</strong></span><span class=\"s2\"> English</span></li>\n<li><span class=\"s1\"><strong>Subjects / Keywords:</strong></span> Post-Interpretive Criticism; contemporary aesthetics; material fatigue; entropy; impermanence; conservation ethics; museum studies; conceptual art; contemporary art; materiality; decay; aesthetics; phenomenology of art; witnessing; art conservation; institutional critique; Eva Hesse; Joseph Beuys; Gordon Matta-Clark; Anselm Kiefer; Felix Gonzalez-Torres; Anya Gallaccio; Zoe Leonard; museum ethics; material culture.</li>\n</ul>\n<div class=\"el-p\">\n<p>This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and&nbsp;<em>Art as Truth: A Treatise</em>&nbsp;(Q136329071),&nbsp;<em>Aesthetic Recursion Theory</em>&nbsp;(Q136339843), The Journal of Post-Interpretive Criticism (Q136530009), Canon of Witnesses (Q136565881),Interpretive Load Index (ILI)&nbsp;(Q137709526), Viewer Displacement Ratio (VDR)&nbsp;(Q137709583)&nbsp;, Ethical Proximity Score (EPS)&nbsp;(Q137709600)&nbsp;, Institutional Alignment Indicator (IAI)&nbsp;(Q137709608), Post-Hermeneutic Phenomenology&nbsp;(Q137711946)</p>\n</div>\n<div class=\"el-p\">&nbsp;</div>\n<div class=\"el-p\">\n<div class=\"el-p\">\n<p><strong>Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen.</strong></p>\n</div>\n<div class=\"el-h2\">\n<h2>&nbsp;</h2>\n</div>\n</div>",
     "provenance": {
       "repository": "Zenodo REST API response supplied in query.json",
@@ -3057,7 +3130,7 @@
       "source_snapshot": "source/21715085.json",
       "institutional_review": "Reviewed page-level title, author and repository links in saved public institutional HTML, 2026-11-04."
     },
-    "source_review": "2026-11-04",
+    "source_review": "2026-11-13",
     "relations": [
       {
         "identifier": "978-1-06-982030-3",
@@ -3192,7 +3265,7 @@
     ],
     "extent": "1 digital file; 880295 bytes",
     "medium": "Digital document",
-    "record_reviewed": "2026-11-04",
+    "record_reviewed": "2026-11-13",
     "date_precision": "day",
     "alternate_titles": [],
     "digital_extent": {
@@ -3239,9 +3312,9 @@
       },
       {
         "name": "Museum of One",
-        "source_category": "creator",
-        "source_role": null,
-        "role_label": "Creator (role not supplied)",
+        "source_category": "contributor",
+        "source_role": "Hosting institution",
+        "role_label": "Hosting institution",
         "affiliation_as_supplied": null,
         "source_url": "https://zenodo.org/records/21715085"
       }
@@ -3266,6 +3339,97 @@
           "https://zenodo.org/records/21715085"
         ]
       }
+    ],
+    "field_assertions": [
+      {
+        "field": "alternate_identifiers",
+        "value": [],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/21715085",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "contributor_roles",
+        "value": [
+          {
+            "name": "Vale, Dorian",
+            "source_category": "creator",
+            "source_role": null,
+            "role_label": "Creator (role not supplied)",
+            "affiliation_as_supplied": null,
+            "source_url": "https://zenodo.org/records/21715085"
+          },
+          {
+            "name": "Museum of One",
+            "source_category": "contributor",
+            "source_role": "Hosting institution",
+            "role_label": "Hosting institution",
+            "affiliation_as_supplied": null,
+            "source_url": "https://zenodo.org/records/21715085"
+          }
+        ],
+        "status": "derived_from_source",
+        "source_url": "https://zenodo.org/records/21715085",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "creators",
+        "value": [
+          {
+            "name": "Vale, Dorian",
+            "affiliation": null,
+            "orcid": "0009-0004-7737-5094",
+            "identifiers": [
+              {
+                "identifier": "0000000528819744",
+                "scheme": "isni"
+              }
+            ]
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/21715085",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "language",
+        "value": "en",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/21715085",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_contributors",
+        "value": [
+          {
+            "name": "Museum of One",
+            "affiliation": null,
+            "identifiers": [
+              {
+                "identifier": "0000000528819728",
+                "scheme": "isni"
+              }
+            ],
+            "type": "Hosting institution"
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/21715085",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_modified",
+        "value": "2026-11-13T16:27:10.316138+00:00",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/21715085",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      }
     ]
   },
   {
@@ -3279,7 +3443,13 @@
       {
         "name": "Vale, Dorian",
         "affiliation": "Museum of One",
-        "orcid": "0009-0004-7737-5094"
+        "orcid": "0009-0004-7737-5094",
+        "identifiers": [
+          {
+            "identifier": "0000000528819744",
+            "scheme": "isni"
+          }
+        ]
       }
     ],
     "doi": "10.5281/zenodo.21241866",
@@ -3409,7 +3579,7 @@
     ],
     "orcid": "0009-0004-7737-5094",
     "publisher": "Museum of One",
-    "language": null,
+    "language": "en",
     "isbn": null,
     "related_identifiers": [
       {
@@ -3488,20 +3658,7 @@
         "scheme": "url"
       }
     ],
-    "alternate_identifiers": [
-      {
-        "identifier": "0000000528819728"
-      },
-      {
-        "identifier": "0000000528819787"
-      },
-      {
-        "identifier": "0000000528819744"
-      },
-      {
-        "identifier": "https://www.museumofone.art"
-      }
-    ],
+    "alternate_identifiers": [],
     "source_references": [
       "https://www.museumofone.art",
       "https://zenodo.org/communities/post-interpretive-criticism",
@@ -3525,7 +3682,7 @@
     "source_imprint": null,
     "source_contributors": [],
     "source_created": "2026-07-07T13:45:10.371458+00:00",
-    "source_modified": "2026-07-07T13:45:10.791243+00:00",
+    "source_modified": "2026-11-13T16:27:06.111375+00:00",
     "source_description_html": "<p>This article examines the work of Emirati artist Hassan Sharif, focusing on his handmade accumulations known as <em>Objects</em>. Set against the backdrop of the rapid modernization and industrial spectacle of the United Arab Emirates in the 1980s, Sharif&rsquo;s practice is analyzed as a profound exercise in \"ethical repetition\" and civic asceticism. By meticulously folding, binding, and assembling discarded everyday materials&mdash;such as rope, wire, newspaper, and cardboard&mdash;Sharif cultivated a \"theology of the banal\" that both mirrors and inverts the hierarchies of Western conceptual minimalism.</p>\n<p>The paper argues that Sharif's deliberate manual exhaustion serves as a critique of hyper-consumption and an act of solidarity with the invisible physical labor that built the modern Gulf. Furthermore, the inherent fragility and inevitable decay of his perishable works are explored as deliberate challenges to museum conservation and the commodification of the global art market. Ultimately, the article posits that Sharif&rsquo;s continuous, \"skill-less\" repetition transcends mere aesthetic endeavor to become a moral act of resistance, transforming mundane drudgery into a lasting meditation on presence, humanity, and conscience.</p>\n<div class=\"el-p\">\n<p><strong>Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen.</strong></p>\n</div>\n<div class=\"el-p\">\n<p>Post-Interpretive Criticism, Stillmark Theory, Message-Transfer Theory, MTT, Misplacement, Displacement, Aesthetic Displacement Theory, Theory of Misplacement, Absential Aesthetics, Witness Aesthetics, Hauntmark Theory, Spiritual Criticism, Presence-Based Criticism, Custodianship of Art, Art as Ontology, Aesthetic Recursion Theory, Aesthetic Recursion, Viewer as Evidence Theory, Restraint in front of art, Moral proximity, Interpretive silence, Erasure as ethics, Temporal scarcity, Silence as method, Ontology of beauty, Aesthetic mercy, Language as violence, Art encounter ethics, Epistemology of witness, Philosophy of Art, Aesthetics, Art Theory, Contemporary Aesthetics, Comparative Aesthetics, Phenomenology and Art, Ethics in Art Criticism, Interpretation and Meaning, Criticism and Reception Theory, Epistemology of Art, Visual Culture Studies, Dorian Vale, Founder of Post-Interpretive Criticism, Post-Aesthetic Critic, Independent Philosopher of Art, Museum of One, Art Writer and Theorist, Aesthetic Philosopher, Custodian of Witness Aesthetics, Spiritual Aesthetics Movement, The Doctrine of Post-Interpretive Criticism, The Custodian&rsquo;s Oath, The Canon of Witnesses, Art as Truth, Art as Presence, The Viewer as Evidence, Interpretation vs. Witnessing, Language as Custody, Erasure as Afterlife, Museum of One Manifesto, Alternative art criticism, New art criticism movement, Ethical art theory, Criticism beyond interpretation, Slow looking philosophy, Quiet philosophy of art, Radical art restraint, Witness over interpretation, Interpretive Restraint, The Journal of Post-Interpretive criticism, The Journal of Post-Interpretive criticism ISSN 2819-7232), The Journal of Post-Interpretive Criticism (Q136530009), Epoch&eacute; Fidelity Index (EFI)&nbsp;(Q138018710), Phenomenological Phase Alignment Score (PPAS)&nbsp;(Q138018807), Residue Engagement Restraint Ratio (RERR)&nbsp;(Q138018901), Quasi-Subject Agency Recognition Index (QSARI)&nbsp;(Q138018929), Dialectical Circulation Index (DCI)&nbsp;(Q138018950)</p>\n</div>\n<div class=\"el-p\">&nbsp;</div>",
     "provenance": {
       "repository": "Zenodo REST API response supplied in query.json",
@@ -3540,7 +3697,7 @@
       "source_snapshot": "source/21241866.json",
       "institutional_review": "Reviewed page-level title, author and repository links in saved public institutional HTML, 2026-11-04."
     },
-    "source_review": "2026-11-04",
+    "source_review": "2026-11-13",
     "relations": [
       {
         "identifier": "https://www.museumofone.art",
@@ -3646,7 +3803,7 @@
     ],
     "extent": "1 digital file; 1077820 bytes",
     "medium": "Digital document",
-    "record_reviewed": "2026-11-04",
+    "record_reviewed": "2026-11-13",
     "date_precision": "day",
     "alternate_titles": [
       {
@@ -3718,6 +3875,52 @@
           "https://zenodo.org/records/21241866"
         ]
       }
+    ],
+    "field_assertions": [
+      {
+        "field": "alternate_identifiers",
+        "value": [],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/21241866",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "creators",
+        "value": [
+          {
+            "name": "Vale, Dorian",
+            "affiliation": "Museum of One",
+            "orcid": "0009-0004-7737-5094",
+            "identifiers": [
+              {
+                "identifier": "0000000528819744",
+                "scheme": "isni"
+              }
+            ]
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/21241866",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "language",
+        "value": "en",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/21241866",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_modified",
+        "value": "2026-11-13T16:27:06.111375+00:00",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/21241866",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      }
     ]
   },
   {
@@ -3731,7 +3934,13 @@
       {
         "name": "Vale, Dorian",
         "affiliation": "Museum of One",
-        "orcid": "0009-0004-7737-5094"
+        "orcid": "0009-0004-7737-5094",
+        "identifiers": [
+          {
+            "identifier": "0000000528819744",
+            "scheme": "isni"
+          }
+        ]
       }
     ],
     "doi": "10.5281/zenodo.20593003",
@@ -3854,7 +4063,7 @@
     "discrepancies": [],
     "orcid": "0009-0004-7737-5094",
     "publisher": "Museum of One",
-    "language": null,
+    "language": "en",
     "isbn": null,
     "related_identifiers": [
       {
@@ -3938,20 +4147,7 @@
         "scheme": "url"
       }
     ],
-    "alternate_identifiers": [
-      {
-        "identifier": "0000000528819728"
-      },
-      {
-        "identifier": "0000000528819787"
-      },
-      {
-        "identifier": "0000000528819744"
-      },
-      {
-        "identifier": "https://www.museumofone.art"
-      }
-    ],
+    "alternate_identifiers": [],
     "source_references": [
       "https://www.museumofone.art",
       "https://zenodo.org/communities/post-interpretive-criticism",
@@ -3971,12 +4167,13 @@
       "https://webarchiveweb.wayback.bac-lac.canada.ca/web/*/https://www.museumofone.art"
     ],
     "source_journal": {
-      "title": "Journal of Post-Interpretive Critiism"
+      "title": "Journal of Post-Interpretive Criticism",
+      "issn": "2819-7232"
     },
     "source_imprint": null,
     "source_contributors": [],
     "source_created": "2026-06-08T11:37:51.610402+00:00",
-    "source_modified": "2026-06-08T11:37:51.823356+00:00",
+    "source_modified": "2026-11-13T16:27:01.430597+00:00",
     "source_description_html": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">This article examines El Anatsui's <em>Man's Cloth</em> Series (c. 1999&ndash;) as a sustained practice of material redemption, tracing the ethical and aesthetic logic by which discarded liquor bottle caps, residues of the Atlantic trade economy, are transformed into monumental textile-like assemblages. Drawing on Post-Interpretive Criticism, the essay argues that Anatsui's work enacts what PIC terms the ethics of reparation: the restoration of moral and material dignity to objects declared worthless by colonial and capitalist systems. The analysis attends to the formal conditions of this transformation, collective studio labour, the retention of legible brand markings, the open-ended installation protocols Anatsui extends to curators and preparators, and reads these not as curatorial gestures but as structural enactments of repair. The piece further situates <em>Man's Cloth</em> within Anatsui's broader bottle-cap practice and his Ewe-Kente inheritance, arguing that the series produces what might be called a new aesthetic theology: one in which beauty is diagnostic rather than decorative, and continuity of historical record is treated as a moral obligation of form. The essay concludes by considering Anatsui's institutional presence, from the British Museum's Sainsbury African Galleries to Tate Modern's Turbine Hall, and the capacity of these works to resist capture even within spaces of preservation and prestige.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">&nbsp;</p>\n<p class=\"p1\">Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen. This name is used for all official publications, essays, and theoretical works indexed through DOI-linked repositories including Zenodo, OSF, PhilPapers, and SSRN.</p>\n<p class=\"p1\">&nbsp;</p>\n<p class=\"p1\"></p>\n<p>This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and <em>Art as Truth: A Treatise</em> (Q136329071), <em>Aesthetic Recursion Theory</em> (Q136339843), The Journal of Post-Interpretive Criticism (Q136530009), Canon of Witnesses (Q136565881),Interpretive Load Index (ILI)&nbsp;(Q137709526), Viewer Displacement Ratio (VDR)&nbsp;(Q137709583)&nbsp;, Ethical Proximity Score (EPS)&nbsp;(Q137709600)&nbsp;, Institutional Alignment Indicator (IAI)&nbsp;(Q137709608), Post-Hermeneutic Phenomenology&nbsp;(Q137711946)</p>",
     "provenance": {
       "repository": "Zenodo REST API response supplied in query.json",
@@ -3991,7 +4188,7 @@
       "source_snapshot": "source/20593003.json",
       "institutional_review": "Reviewed page-level title, author and repository links in saved public institutional HTML, 2026-11-04."
     },
-    "source_review": "2026-11-04",
+    "source_review": "2026-11-13",
     "relations": [
       {
         "identifier": "https://www.museumofone.art",
@@ -4102,7 +4299,7 @@
     ],
     "extent": "1 digital file; 360669 bytes",
     "medium": "Digital document",
-    "record_reviewed": "2026-11-04",
+    "record_reviewed": "2026-11-13",
     "date_precision": "day",
     "alternate_titles": [
       {
@@ -4174,6 +4371,63 @@
           "https://zenodo.org/records/20593003"
         ]
       }
+    ],
+    "field_assertions": [
+      {
+        "field": "alternate_identifiers",
+        "value": [],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20593003",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "creators",
+        "value": [
+          {
+            "name": "Vale, Dorian",
+            "affiliation": "Museum of One",
+            "orcid": "0009-0004-7737-5094",
+            "identifiers": [
+              {
+                "identifier": "0000000528819744",
+                "scheme": "isni"
+              }
+            ]
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20593003",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "language",
+        "value": "en",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20593003",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_journal",
+        "value": {
+          "title": "Journal of Post-Interpretive Criticism",
+          "issn": "2819-7232"
+        },
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20593003",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_modified",
+        "value": "2026-11-13T16:27:01.430597+00:00",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20593003",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      }
     ]
   },
   {
@@ -4187,11 +4441,13 @@
       {
         "name": "Vale, Dorian",
         "affiliation": "Museum of One",
-        "orcid": "0009-0004-7737-5094"
-      },
-      {
-        "name": "Museum of One",
-        "affiliation": null
+        "orcid": "0009-0004-7737-5094",
+        "identifiers": [
+          {
+            "identifier": "0000000528819744",
+            "scheme": "isni"
+          }
+        ]
       }
     ],
     "doi": "10.5281/zenodo.19963428",
@@ -4310,11 +4566,11 @@
     "institutional_url": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
     "corroboration": "Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. Its repository links and publication dates are retained separately from this selected Zenodo edition. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.",
     "discrepancies": [
-      "The repository also lists organizational or URL-form creator entries. The catalogue displays Dorian Vale as bibliographic author while retaining the deposited creator list separately."
+      "The original dated repository snapshot lists organizational or URL-form creator entries. The current repository creator metadata was corrected and verified on 13 November 2026; Dorian Vale remains the bibliographic author. The original snapshot is retained unchanged."
     ],
     "orcid": "0009-0004-7737-5094",
     "publisher": "Museum of One",
-    "language": null,
+    "language": "en",
     "isbn": null,
     "related_identifiers": [
       {
@@ -4400,22 +4656,8 @@
     ],
     "alternate_identifiers": [
       {
-        "identifier": "2819-7232"
-      },
-      {
-        "identifier": "0000000528819728"
-      },
-      {
-        "identifier": "0000000528819787"
-      },
-      {
-        "identifier": "0000000528819744"
-      },
-      {
-        "identifier": "https://www.museumofone.art"
-      },
-      {
-        "identifier": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/"
+        "identifier": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+        "scheme": "url"
       }
     ],
     "source_references": [
@@ -4440,9 +4682,21 @@
       "title": "Journal of Post-Interpretive Criticism"
     },
     "source_imprint": null,
-    "source_contributors": [],
+    "source_contributors": [
+      {
+        "name": "Museum of One",
+        "affiliation": null,
+        "identifiers": [
+          {
+            "identifier": "0000000528819728",
+            "scheme": "isni"
+          }
+        ],
+        "type": "Hosting institution"
+      }
+    ],
     "source_created": "2026-05-02T00:09:25.313806+00:00",
-    "source_modified": "2026-05-02T00:09:25.743533+00:00",
+    "source_modified": "2026-11-13T16:26:43.813153+00:00",
     "source_description_html": "<p class=\"p1\"><em>The Curator&rsquo;s Shadow: The Unspoken Authorship Behind Neutrality</em> examines the persistent fiction of curatorial neutrality within modern and contemporary museology, reframing the curator as an invisible yet decisive author of the exhibitionary encounter. Drawing on historical analysis from Enlightenment-era taxonomic displays to contemporary global curatorial practice, the article argues that neutrality operates not as absence, but as a rhetorical and institutional posture that conceals authorship while intensifying its power. Through a Post-Interpretive Criticism framework, the exhibition is reconceived as a spatial text in which sequencing, lighting, distance, and omission function as syntactic and ethical decisions rather than logistical ones.</p>\n<p class=\"p1\">The study traces how curatorial authority evolved from custodianship of objects to governance of narrative, revealing the exhibition as a structured field of visibility shaped by ideological, architectural, and institutional inheritances, including colonial epistemologies and modernist claims to universality. By analyzing the curatorial role as a form of &ldquo;moral choreography,&rdquo; the article foregrounds how exhibition design mediates the viewer&rsquo;s encounter with trauma, beauty, and knowledge, determining whether the experience produces reverence, detachment, or consumption.</p>\n<p class=\"p1\">Engaging key figures such as Harald Szeemann, Okwui Enwezor, and Hans-Ulrich Obrist, the article situates the shift from curatorial invisibility to auteurship, identifying the contemporary challenge as neither neutrality nor self-display, but the cultivation of disciplined authorship. Within this context, Post-Interpretive Criticism proposes an ethical reorientation: the curator as witness rather than interpreter, whose task is to preserve the conditions of meaning rather than impose it.</p>\n<p class=\"p1\">The article further introduces the concept of &ldquo;curatorial shadow&rdquo; as a diagnostic lens for evaluating institutional power, where silence, absence, and spatial arrangement are treated as forms of authorship with measurable ethical consequences. It argues for a redefinition of neutrality as ego-restraint rather than objectivity, and for the transformation of exhibition-making into an ethics of care grounded in humility, proximity, and responsibility.</p>\n<p class=\"p2\">Ultimately, the article positions curatorial practice as a threshold condition&mdash;an act of structuring encounter without closure&mdash;where the success of an exhibition is measured not by the clarity of its message, but by its capacity to sustain the viewer&rsquo;s presence without domination. In doing so, it contributes to the broader Post-Interpretive movement by extending its principles beyond criticism into the architecture of display, offering a philosophical and methodological foundation for ethically attuned exhibition-making in the twenty-first century.</p>\n<p class=\"p1\">Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen. This name is used for all official publications, essays, and theoretical works indexed through DOI-linked repositories including Zenodo, OSF, PhilPapers, and SSRN.</p>\n<p class=\"p1\">Post-Interpretive Criticism, Stillmark Theory, Message-Transfer Theory, MTT, Misplacement, Displacement, Aesthetic Displacement Theory, Theory of Misplacement, Absential Aesthetics, Witness Aesthetics, Adab for Art, Hauntmark Theory, Spiritual Criticism, Presence-Based Criticism, Custodianship of Art, Art as Ontology, Aesthetic Recursion Theory, Aesthetic Recursion, Viewer as Evidence Theory, Restraint in front of art, Moral proximity, Interpretive silence, Erasure as ethics, Temporal scarcity, Silence as method, Ontology of beauty, Aesthetic mercy, Language as violence, Art encounter ethics, Epistemology of witness, Philosophy of Art, Aesthetics, Art Theory, Contemporary Aesthetics, Comparative Aesthetics, Phenomenology and Art, Ethics in Art Criticism, Interpretation and Meaning, Criticism and Reception Theory, Epistemology of Art, Visual Culture Studies, Dorian Vale, Founder of Post-Interpretive Criticism, Post-Aesthetic Critic, Independent Philosopher of Art, Museum of One, Art Writer and Theorist, Aesthetic Philosopher, Custodian of Witness Aesthetics, Spiritual Aesthetics Movement, The Doctrine of Post-Interpretive Criticism, The Custodian&rsquo;s Oath, The Canon of Witnesses, Art as Truth, Art as Presence, The Viewer as Evidence, Interpretation vs. Witnessing, Language as Custody, Erasure as Afterlife, Museum of One Manifesto, Alternative art criticism, New art criticism movement, Ethical art theory, Criticism beyond interpretation, Slow looking philosophy, Quiet philosophy of art, Radical art restraint, Witness over interpretation, Interpretive Restraint, The Journal of Post-Interpretive criticism, The Journal of Post-Interpretive criticism ISSN 2819-7232), The Journal of Post-Interpretive Criticism (<span class=\"s1\">Q136530009), </span>&nbsp;<span class=\"s2\">Interpretive Load Index (ILI)&nbsp;</span><span class=\"s3\">(Q137709526), </span><span class=\"s2\">Viewer Displacement Ratio (VDR)&nbsp;</span><span class=\"s3\">(Q137709583)</span>&nbsp;, <span class=\"s2\">Ethical Proximity Score (EPS)&nbsp;</span><span class=\"s3\">(Q137709600)</span>&nbsp;, Institutional Alignment Indicator (IAI)&nbsp;<span class=\"s1\">(Q137709608), </span></p>",
     "provenance": {
       "repository": "Zenodo REST API response supplied in query.json",
@@ -4457,7 +4711,7 @@
       "source_snapshot": "source/19963428.json",
       "institutional_review": "Reviewed page-level title, author and repository links in saved public institutional HTML, 2026-11-04."
     },
-    "source_review": "2026-11-04",
+    "source_review": "2026-11-13",
     "relations": [
       {
         "identifier": "https://www.museumofone.art",
@@ -4568,7 +4822,7 @@
     ],
     "extent": "1 digital file; 400025 bytes",
     "medium": "Digital document",
-    "record_reviewed": "2026-11-04",
+    "record_reviewed": "2026-11-13",
     "date_precision": "day",
     "alternate_titles": [],
     "digital_extent": {
@@ -4615,9 +4869,9 @@
       },
       {
         "name": "Museum of One",
-        "source_category": "creator",
-        "source_role": null,
-        "role_label": "Creator (role not supplied)",
+        "source_category": "contributor",
+        "source_role": "Hosting institution",
+        "role_label": "Hosting institution",
         "affiliation_as_supplied": null,
         "source_url": "https://zenodo.org/records/19963428"
       }
@@ -4642,6 +4896,102 @@
           "https://zenodo.org/records/19963428"
         ]
       }
+    ],
+    "field_assertions": [
+      {
+        "field": "alternate_identifiers",
+        "value": [
+          {
+            "identifier": "https://www.museumofone.art/the-curators-shadow-the-unspoken-authorship-behind-neutrality/",
+            "scheme": "url"
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19963428",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "contributor_roles",
+        "value": [
+          {
+            "name": "Vale, Dorian",
+            "source_category": "creator",
+            "source_role": null,
+            "role_label": "Creator (role not supplied)",
+            "affiliation_as_supplied": "Museum of One",
+            "source_url": "https://zenodo.org/records/19963428"
+          },
+          {
+            "name": "Museum of One",
+            "source_category": "contributor",
+            "source_role": "Hosting institution",
+            "role_label": "Hosting institution",
+            "affiliation_as_supplied": null,
+            "source_url": "https://zenodo.org/records/19963428"
+          }
+        ],
+        "status": "derived_from_source",
+        "source_url": "https://zenodo.org/records/19963428",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "creators",
+        "value": [
+          {
+            "name": "Vale, Dorian",
+            "affiliation": "Museum of One",
+            "orcid": "0009-0004-7737-5094",
+            "identifiers": [
+              {
+                "identifier": "0000000528819744",
+                "scheme": "isni"
+              }
+            ]
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19963428",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "language",
+        "value": "en",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19963428",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_contributors",
+        "value": [
+          {
+            "name": "Museum of One",
+            "affiliation": null,
+            "identifiers": [
+              {
+                "identifier": "0000000528819728",
+                "scheme": "isni"
+              }
+            ],
+            "type": "Hosting institution"
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19963428",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_modified",
+        "value": "2026-11-13T16:26:43.813153+00:00",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19963428",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      }
     ]
   },
   {
@@ -4655,21 +5005,24 @@
       {
         "name": "Vale, Dorian",
         "affiliation": "Museum of One",
-        "orcid": "0009-0004-7737-5094"
-      },
-      {
-        "name": "Museum of One",
-        "affiliation": null
+        "orcid": "0009-0004-7737-5094",
+        "identifiers": [
+          {
+            "identifier": "0000000528819744",
+            "scheme": "isni"
+          }
+        ]
       }
     ],
     "doi": "10.5281/zenodo.20100136",
     "conceptdoi": "10.5281/zenodo.20099594",
     "zenodo_url": "https://zenodo.org/records/20100136",
     "date": "2026-02-09",
-    "type": "Dataset",
+    "type": "Other",
     "source_resource_type": {
-      "title": "Dataset",
-      "type": "dataset"
+      "title": "Other",
+      "type": "publication",
+      "subtype": "other"
     },
     "version": "",
     "collection": "Methodology",
@@ -4774,12 +5127,12 @@
     "institutional_url": "https://www.museumofone.art/diagnostics-without-possession-an-operational-manual-for-post-interpretive-criticism-operational-reference-for-inter-rater-reliability/",
     "corroboration": "Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. Its repository links and publication dates are retained separately from this selected Zenodo edition. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.",
     "discrepancies": [
-      "The repository also lists organizational or URL-form creator entries. The catalogue displays Dorian Vale as bibliographic author while retaining the deposited creator list separately.",
-      "Zenodo classifies this deposited operational manual as a dataset. That repository classification is retained; the editorial collection describes its methodological function."
+      "The original dated repository snapshot lists organizational or URL-form creator entries. The current repository creator metadata was corrected and verified on 13 November 2026; Dorian Vale remains the bibliographic author. The original snapshot is retained unchanged.",
+      "The original dated Zenodo snapshot classified this operational manual as a dataset. The current repository classification was corrected to Other on 13 November 2026; the manual, its title and its deposited file are unchanged."
     ],
     "orcid": "0009-0004-7737-5094",
     "publisher": "Museum of One",
-    "language": null,
+    "language": "en",
     "isbn": null,
     "related_identifiers": [
       {
@@ -4863,29 +5216,7 @@
         "scheme": "url"
       }
     ],
-    "alternate_identifiers": [
-      {
-        "identifier": "2819-7232"
-      },
-      {
-        "identifier": "978-1-06-982030-3"
-      },
-      {
-        "identifier": "978-1-06-982031-0"
-      },
-      {
-        "identifier": "978-1-06-982032-7"
-      },
-      {
-        "identifier": "0000000528819728"
-      },
-      {
-        "identifier": "0000000528819787"
-      },
-      {
-        "identifier": "0000000528819744"
-      }
-    ],
+    "alternate_identifiers": [],
     "source_references": [
       "https://www.museumofone.art",
       "https://zenodo.org/communities/post-interpretive-criticism",
@@ -4909,9 +5240,21 @@
       "volume": "4"
     },
     "source_imprint": null,
-    "source_contributors": [],
+    "source_contributors": [
+      {
+        "name": "Museum of One",
+        "affiliation": null,
+        "identifiers": [
+          {
+            "identifier": "0000000528819728",
+            "scheme": "isni"
+          }
+        ],
+        "type": "Hosting institution"
+      }
+    ],
     "source_created": "2026-05-09T19:04:52.528705+00:00",
-    "source_modified": "2026-05-09T19:04:52.862725+00:00",
+    "source_modified": "2026-11-13T16:26:57.139514+00:00",
     "source_description_html": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">This manual operationalises the ten diagnostic indices of Post-Interpretive Criticism (PIC) for consistent application across coders, supporting inter-rater reliability work, comparative corpus studies, and self-audit by individual critics. It is an operational reference rather than a theoretical exposition; the foundational arguments are set out in the published v.2 specifications and are not rehearsed here except where required for procedural clarity.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">The framework is structured in two layers. Layer A &mdash; Ethical / Postural Indices (RD, ILI, VDR, EPS, IAI) &mdash; diagnoses how much force a critical text applies and where it lands. Layer B &mdash; Phenomenological Fidelity Indices (EFI, PPAS, RERR, QSARI, DCI) &mdash; diagnoses which phenomenological operations the text honours or violates, grounded in Husserl's epoch&eacute; and Dufrenne's three-phase model of aesthetic experience (presence, representation, reflection / feeling) together with his three-layer architecture of work, aesthetic object, and residue.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Part I establishes general coding principles, including coding units, the Direction of Force matrices (MAC/EBS, RM/CA), exclusion rules, the zero-denominator convention, genre awareness, and the PIC Constraint, which forbids single-index posture diagnoses. Parts II and III specify each index &mdash; definition, coding unit, calculation, criteria, disambiguation rules, and behavioural bands &mdash; and define Layer A postures (Forensic, Colonising, Poetic, Institutionalist) and Layer B postures (Witness-Aligned, Extractive, Institutionally Overdetermined, Unstable). Part IV addresses composite profiles and reporting protocols; Part V addresses methodological considerations including reliability targets (Cohen's &kappa; &ge; 0.80; ICC &ge; 0.85), context sensitivity, and cultural specificity. Three appendices cover operational terminology, reliability calculation, and a standard coding workflow.</p>\n<div class=\"el-p\">\n<p>This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and&nbsp;<em>Art as Truth: A Treatise</em>&nbsp;(Q136329071),&nbsp;<em>Aesthetic Recursion Theory</em>&nbsp;(Q136339843), The Journal of Post-Interpretive Criticism (Q136530009), Canon of Witnesses (Q136565881),Interpretive Load Index (ILI)&nbsp;(Q137709526), Viewer Displacement Ratio (VDR)&nbsp;(Q137709583)&nbsp;, Ethical Proximity Score (EPS)&nbsp;(Q137709600)&nbsp;, Institutional Alignment Indicator (IAI)&nbsp;(Q137709608), Post-Hermeneutic Phenomenology&nbsp;(Q137711946)</p>\n</div>\n<div class=\"el-p\">\n<div class=\"el-p\">\n<p><strong>Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen.</strong></p>\n</div>\n<div class=\"el-h2\">\n<h2>&nbsp;</h2>\n</div>\n</div>",
     "provenance": {
       "repository": "Zenodo REST API response supplied in query.json",
@@ -4926,7 +5269,7 @@
       "source_snapshot": "source/20100136.json",
       "institutional_review": "Reviewed page-level title, author and repository links in saved public institutional HTML, 2026-11-04."
     },
-    "source_review": "2026-11-04",
+    "source_review": "2026-11-13",
     "relations": [
       {
         "identifier": "https://www.museumofone.art",
@@ -5044,7 +5387,7 @@
     ],
     "extent": "1 digital file; 525965 bytes",
     "medium": "Digital document",
-    "record_reviewed": "2026-11-04",
+    "record_reviewed": "2026-11-13",
     "date_precision": "day",
     "alternate_titles": [],
     "digital_extent": {
@@ -5071,60 +5414,15 @@
         "checksum_valid": true,
         "note": "ISO 7064 MOD 11-2 checksum only; this is not a live registry verification."
       },
-      "isbn": [
-        {
-          "source_value": "978-1-06-982030-3",
-          "normalized": "9781069820303",
-          "checksum_valid": true,
-          "note": "Checksum validation tests the identifier syntax only; it does not verify assignment, format or edition applicability.",
-          "scope": "source_alternate_identifier; applicability to this item unverified",
-          "source_url": "https://zenodo.org/records/20100136"
-        },
-        {
-          "source_value": "978-1-06-982031-0",
-          "normalized": "9781069820310",
-          "checksum_valid": true,
-          "note": "Checksum validation tests the identifier syntax only; it does not verify assignment, format or edition applicability.",
-          "scope": "source_alternate_identifier; applicability to this item unverified",
-          "source_url": "https://zenodo.org/records/20100136"
-        },
-        {
-          "source_value": "978-1-06-982032-7",
-          "normalized": "9781069820327",
-          "checksum_valid": true,
-          "note": "Checksum validation tests the identifier syntax only; it does not verify assignment, format or edition applicability.",
-          "scope": "source_alternate_identifier; applicability to this item unverified",
-          "source_url": "https://zenodo.org/records/20100136"
-        }
-      ],
+      "isbn": [],
       "doi": {
         "source_value": "10.5281/zenodo.20100136",
         "syntax_valid": true,
         "note": "Syntax check only; repository snapshot supplies the identifier."
-      },
-      "isbn_note": "ISBNs listed in repository alternate identifiers refer to other publications or lack item-level applicability. They are retained as source identifiers, not asserted as this item’s ISBN."
-    },
-    "isbn_applicability": "unverified",
-    "source_identifiers": [
-      {
-        "scheme": "isbn",
-        "value": "978-1-06-982030-3",
-        "scope": "source_alternate_identifier; applicability to this item unverified",
-        "source_url": "https://zenodo.org/records/20100136"
-      },
-      {
-        "scheme": "isbn",
-        "value": "978-1-06-982031-0",
-        "scope": "source_alternate_identifier; applicability to this item unverified",
-        "source_url": "https://zenodo.org/records/20100136"
-      },
-      {
-        "scheme": "isbn",
-        "value": "978-1-06-982032-7",
-        "scope": "source_alternate_identifier; applicability to this item unverified",
-        "source_url": "https://zenodo.org/records/20100136"
       }
-    ],
+    },
+    "isbn_applicability": "not_supplied",
+    "source_identifiers": [],
     "serial": null,
     "contributor_roles": [
       {
@@ -5137,9 +5435,9 @@
       },
       {
         "name": "Museum of One",
-        "source_category": "creator",
-        "source_role": null,
-        "role_label": "Creator (role not supplied)",
+        "source_category": "contributor",
+        "source_role": "Hosting institution",
+        "role_label": "Hosting institution",
         "affiliation_as_supplied": null,
         "source_url": "https://zenodo.org/records/20100136"
       }
@@ -5163,6 +5461,153 @@
         "sources": [
           "https://zenodo.org/records/20100136"
         ]
+      }
+    ],
+    "field_assertions": [
+      {
+        "field": "alternate_identifiers",
+        "value": [],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20100136",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "contributor_roles",
+        "value": [
+          {
+            "name": "Vale, Dorian",
+            "source_category": "creator",
+            "source_role": null,
+            "role_label": "Creator (role not supplied)",
+            "affiliation_as_supplied": "Museum of One",
+            "source_url": "https://zenodo.org/records/20100136"
+          },
+          {
+            "name": "Museum of One",
+            "source_category": "contributor",
+            "source_role": "Hosting institution",
+            "role_label": "Hosting institution",
+            "affiliation_as_supplied": null,
+            "source_url": "https://zenodo.org/records/20100136"
+          }
+        ],
+        "status": "derived_from_source",
+        "source_url": "https://zenodo.org/records/20100136",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "creators",
+        "value": [
+          {
+            "name": "Vale, Dorian",
+            "affiliation": "Museum of One",
+            "orcid": "0009-0004-7737-5094",
+            "identifiers": [
+              {
+                "identifier": "0000000528819744",
+                "scheme": "isni"
+              }
+            ]
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20100136",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "identifier_validation",
+        "value": {
+          "orcid": {
+            "source_value": "0009-0004-7737-5094",
+            "checksum_valid": true,
+            "note": "ISO 7064 MOD 11-2 checksum only; this is not a live registry verification."
+          },
+          "isbn": [],
+          "doi": {
+            "source_value": "10.5281/zenodo.20100136",
+            "syntax_valid": true,
+            "note": "Syntax check only; repository snapshot supplies the identifier."
+          }
+        },
+        "status": "derived_from_source",
+        "source_url": "https://zenodo.org/records/20100136",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "isbn_applicability",
+        "value": "not_supplied",
+        "status": "derived_from_source",
+        "source_url": "https://zenodo.org/records/20100136",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "language",
+        "value": "en",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20100136",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_contributors",
+        "value": [
+          {
+            "name": "Museum of One",
+            "affiliation": null,
+            "identifiers": [
+              {
+                "identifier": "0000000528819728",
+                "scheme": "isni"
+              }
+            ],
+            "type": "Hosting institution"
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20100136",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_identifiers",
+        "value": [],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20100136",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_modified",
+        "value": "2026-11-13T16:26:57.139514+00:00",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20100136",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_resource_type",
+        "value": {
+          "title": "Other",
+          "type": "publication",
+          "subtype": "other"
+        },
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20100136",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "type",
+        "value": "Other",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20100136",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
       }
     ]
   },
@@ -5294,7 +5739,7 @@
     ],
     "orcid": "0009-0004-7737-5094",
     "publisher": "Museum of One",
-    "language": null,
+    "language": "en",
     "isbn": null,
     "related_identifiers": [
       {
@@ -5400,55 +5845,8 @@
     ],
     "alternate_identifiers": [
       {
-        "identifier": "https://hcommons.org/members/dorianvale/"
-      },
-      {
-        "identifier": "https://philpeople.org/profiles/dorian-vale"
-      },
-      {
-        "identifier": "https://www.museumofone.art/"
-      },
-      {
-        "identifier": "https://independent.academia.edu/DorianVale"
-      },
-      {
-        "identifier": "https://doi.org/10.5281/zenodo.17069115"
-      },
-      {
-        "identifier": "https://doi.org/10.5281/zenodo.17078847"
-      },
-      {
-        "identifier": "https://orcid.org/0009-0004-7737-5094"
-      },
-      {
-        "identifier": "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ"
-      },
-      {
-        "identifier": "https://works.hcommons.org/records/xv2j2-g6927"
-      },
-      {
-        "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266"
-      },
-      {
-        "identifier": "https://www.researchcatalogue.net/profile/?person=3919333"
-      },
-      {
-        "identifier": "https://doi.org/10.17605/OSF.IO/ZHNRE"
-      },
-      {
-        "identifier": "https://archive.org/details/osf-registrations-kve9y-v1"
-      },
-      {
-        "identifier": "2819-7232"
-      },
-      {
-        "identifier": "0000000528819728"
-      },
-      {
-        "identifier": "0000000528819787"
-      },
-      {
-        "identifier": "0000000528819744"
+        "identifier": "https://works.hcommons.org/records/xv2j2-g6927",
+        "scheme": "url"
       }
     ],
     "source_references": [
@@ -5460,7 +5858,7 @@
     "source_imprint": null,
     "source_contributors": [],
     "source_created": "2026-05-09T19:05:37.382757+00:00",
-    "source_modified": "2026-10-22T19:57:04.870933+00:00",
+    "source_modified": "2026-11-13T16:28:45.728898+00:00",
     "source_description_html": "<p>Title: A Quantitative Analysis of Critical Posture in Art Ariting, 1980-2025 (Dataset - 20 Critical Texts 1980&ndash;2025)</p>\n<p><br>Author:Dorian Vale</p>\n<p><br>Affiliation: Museum of One</p>\n<p><br>This dataset presents a quantitative diagnostic analysis of critical posture in contemporary art writing across a forty-five-year span (1980&ndash;2025). Using the Post-Interpretive Criticism (PIC) diagnostic framework, twenty influential texts drawn from journals, newspapers, magazines, institutional press releases, and exhibition discourse were coded sentence-by-sentence to examine how critical language positions itself in relation to artworks, viewers, and institutional authority. Five indices were applied: <span><strong>Rhetorical Density (RD)</strong></span>, <span><strong>Interpretive Load Index (ILI)</strong></span>, <span><strong>Viewer Displacement Ratio (VDR)</strong></span>, <span><strong>Ethical Proximity Score (EPS)</strong></span>, and <span><strong>Institutional Alignment Indicator (IAI)</strong></span>.</p>\n<p>Rather than evaluating interpretive correctness or aesthetic value, the framework isolates <em>how</em> critical claims are produced&mdash;measuring the balance between descriptive encounter and explanatory force, the degree of viewer displacement, the presence or absence of linguistic restraint, and the extent of institutional mediation. The dataset demonstrates that high rhetorical intensity does not necessarily correlate with high interpretive extraction, and that ostensibly &ldquo;plain&rdquo; theoretical language frequently produces maximal displacement. Across historical periods, the results reveal recurring postures&mdash;verdict-driven criticism, theory-dominated explanation, affective populism, and market-aligned promotion&mdash;each identifiable through distinct metric profiles.</p>\n<p>The findings provide quantitative support for a central claim of Post-Interpretive Criticism: that the ethical stakes of art writing reside not in what criticism concludes, but in how closely it remains to the conditions of encounter. This dataset is offered as a reflective and exploratory diagnostic resource, not a prescriptive model, contributing a formal complement to phenomenological and post-hermeneutic approaches in contemporary aesthetics.</p>\n<p>&nbsp;</p>\n<p>This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and _Art as Truth: A Treatise_ (Q136329071), _Aesthetic Recursion Theory_ (Q136339843), The Journal of Post-Interpretive Criticism (Q136530009), Canon of Witnesses (Q136565881),Interpretive Load Index (ILI) (Q137709526), Viewer Displacement Ratio (VDR) (Q137709583) , Ethical Proximity Score (EPS) (Q137709600) , Institutional Alignment Indicator (IAI) (Q137709608), Post-Hermeneutic Phenomenology (Q137711946)</p>\n<p>ISSN 2819-7232</p>\n<p>Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen. This name is used for all official publications, essays, and theoretical works indexed through DOI-linked repositories including Zenodo, OSF, PhilPapers, and SSRN.</p>\n<p><a href=\"https://orcid.org/0009-0004-7737-5094\">ORCID: 0009-0004-7737-5094</a></p>",
     "provenance": {
       "repository": "Zenodo REST API response supplied in query.json",
@@ -5475,7 +5873,7 @@
       "source_snapshot": "source/20100139.json",
       "institutional_review": "Reviewed page-level title, author and repository links in saved public institutional HTML, 2026-11-04."
     },
-    "source_review": "2026-11-04",
+    "source_review": "2026-11-13",
     "relations": [
       {
         "identifier": "https://hcommons.org/members/dorianvale/",
@@ -5600,7 +5998,7 @@
     ],
     "extent": "1 digital file; 506516 bytes",
     "medium": "Digital document",
-    "record_reviewed": "2026-11-04",
+    "record_reviewed": "2026-11-13",
     "date_precision": "day",
     "alternate_titles": [],
     "digital_extent": {
@@ -5666,6 +6064,37 @@
           "https://zenodo.org/records/20100139"
         ]
       }
+    ],
+    "field_assertions": [
+      {
+        "field": "alternate_identifiers",
+        "value": [
+          {
+            "identifier": "https://works.hcommons.org/records/xv2j2-g6927",
+            "scheme": "url"
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20100139",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "language",
+        "value": "en",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20100139",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_modified",
+        "value": "2026-11-13T16:28:45.728898+00:00",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/20100139",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      }
     ]
   },
   {
@@ -5728,7 +6157,7 @@
     "discrepancies": [],
     "orcid": "0009-0004-7737-5094",
     "publisher": "Museum of One",
-    "language": null,
+    "language": "en",
     "isbn": null,
     "related_identifiers": [
       {
@@ -5751,7 +6180,7 @@
       }
     ],
     "source_created": "2026-08-04T07:48:39.211908+00:00",
-    "source_modified": "2026-10-15T12:20:13.956799+00:00",
+    "source_modified": "2026-11-13T16:29:15.516458+00:00",
     "source_description_html": "<p><strong>Title:</strong></p>\n<p><strong>Interpretation at Risk: Post‑Interpretive Criticism After the 20th Century</strong></p>\n<p><strong>Author:</strong></p>\n<p>Dorian Vale</p>\n<p><strong>Affiliation:</strong></p>\n<p>Museum of One &mdash; Registered Archive and Independent Research Institute for Contemporary Aesthetics</p>\n<p><strong>Abstract:</strong></p>\n<p>This essay establishes Post‑Interpretive Criticism as a formal break with the dominant aesthetic consensus of the late twentieth century, which treated meaning as something produced through mediation rather than encountered through structure. Surveying post‑1950 traditions across structuralism, hermeneutics, phenomenology, critical theory, and post‑structuralism, the essay identifies a shared assumption underlying their disagreements: interpretation functions as the necessary and ethically justified ground of meaning. Post‑Interpretive Criticism rejects this premise not by proposing an alternative theory of meaning‑production, but by questioning whether production itself is the correct frame.</p>\n<p>The essay argues that interpretation is not neutral, inevitable, or inherently liberatory, but structurally hazardous. Language, when introduced prematurely or excessively, alters the proportions of the aesthetic encounter, collapsing interval, crowding distance, and displacing presence with discourse. Meaning, on this account, does not originate in interpretation but in a relational field between work and witness that possesses structure prior to mediation. Interpretation is therefore recast as an intervention rather than a foundation&mdash;one that must justify itself ethically by preserving proportion rather than overwhelming it.</p>\n<p>Positioning Post‑Interpretive Criticism against the historical conditions that necessitated interpretive excess in the post‑war period, the essay argues that contemporary aesthetics now faces the inverse problem: interpretive saturation. Where interpretation once functioned as moral responsibility, it now frequently preempts encounter, substituting commentary for perception. Drawing careful distinctions from phenomenological aesthetics, the essay emphasizes that description of experience is insufficient without a discipline governing speech. Post‑Interpretive Criticism introduces restraint as method, silence as ethical posture, and proportion as evaluative criterion.</p>\n<p>The essay concludes by outlining the institutional, pedagogical, and critical consequences of adopting Post‑Interpretive Criticism, including reduced interpretive authority, contraction of discourse, and the re‑training of attention prior to articulation. It does not argue for universal application, but claims necessity under specific contemporary conditions. Interpretation, once required, is now placed at risk&mdash;not because meaning has vanished, but because the encounter has returned as the primary site of aesthetic responsibility.</p>\n<p><strong>Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen.</strong></p>\n<p>First published by Museum of One on 31 December 2025. Stable work DOI: <a href=\"https://doi.org/10.5281/zenodo.18104019\">10.5281/zenodo.18104019</a></p>",
     "provenance": {
       "repository": "Zenodo REST API response supplied in query.json",
@@ -5766,7 +6195,7 @@
       "source_snapshot": "source/21786998.json",
       "institutional_review": "Reviewed page-level title, author and repository links in saved public institutional HTML, 2026-11-04."
     },
-    "source_review": "2026-11-04",
+    "source_review": "2026-11-13",
     "relations": [
       {
         "identifier": "2819-7232",
@@ -5793,7 +6222,7 @@
     ],
     "extent": "1 digital file; 229568 bytes",
     "medium": "Digital document",
-    "record_reviewed": "2026-11-04",
+    "record_reviewed": "2026-11-13",
     "date_precision": "day",
     "alternate_titles": [],
     "digital_extent": {
@@ -5880,6 +6309,24 @@
           "https://zenodo.org/records/21786998"
         ]
       }
+    ],
+    "field_assertions": [
+      {
+        "field": "language",
+        "value": "en",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/21786998",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_modified",
+        "value": "2026-11-13T16:29:15.516458+00:00",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/21786998",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      }
     ]
   },
   {
@@ -5894,10 +6341,6 @@
         "name": "Vale, Dorian",
         "affiliation": "MuseumofOne",
         "orcid": "0009-0004-7737-5094"
-      },
-      {
-        "name": "Museum Of One",
-        "affiliation": "https://www.museumofone.art/"
       }
     ],
     "doi": "10.5281/zenodo.19863790",
@@ -6008,13 +6451,13 @@
     "institutional_url": "https://www.museumofone.art/moral-proximity-ethics-as-method-in-post-interpretive-criticism/",
     "corroboration": "Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. Its repository links and publication dates are retained separately from this selected Zenodo edition. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.",
     "discrepancies": [
-      "The repository also lists organizational or URL-form creator entries. The catalogue displays Dorian Vale as bibliographic author while retaining the deposited creator list separately.",
+      "The original dated repository snapshot lists organizational or URL-form creator entries. The current repository creator metadata was corrected and verified on 13 November 2026; Dorian Vale remains the bibliographic author. The original snapshot is retained unchanged.",
       "The source description includes a 2025 citation and an earlier DOI. The selected Zenodo record has a 2026 publication-date field; a web-publication date is not substituted for that deposited date.",
       "The institutional page does not explicitly link this selected edition DOI in its saved HTML. The match is at work level through title, authorship, and publication context; the catalogue preserves the exact repository edition separately."
     ],
     "orcid": "0009-0004-7737-5094",
     "publisher": "Museum of One",
-    "language": null,
+    "language": "en",
     "isbn": null,
     "related_identifiers": [
       {
@@ -6087,43 +6530,8 @@
     ],
     "alternate_identifiers": [
       {
-        "identifier": "https://www.museumofone.art/"
-      },
-      {
-        "identifier": "https://hcommons.org/members/dorianvale/"
-      },
-      {
-        "identifier": "https://philpeople.org/profiles/dorian-vale"
-      },
-      {
-        "identifier": "https://osf.io/xa5jw/"
-      },
-      {
-        "identifier": "https://independent.academia.edu/DorianVale"
-      },
-      {
-        "identifier": "10.5281/zenodo.17112807"
-      },
-      {
-        "identifier": "10.5281/zenodo.17078847"
-      },
-      {
-        "identifier": "10.5281/zenodo.17069115"
-      },
-      {
-        "identifier": "https://figshare.com/authors/Dorian_Vale/22186984"
-      },
-      {
-        "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d"
-      },
-      {
-        "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266"
-      },
-      {
-        "identifier": "https://zenodo.org/communities/post-interpretive-criticism"
-      },
-      {
-        "identifier": "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ"
+        "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d",
+        "scheme": "url"
       }
     ],
     "source_references": [
@@ -6148,18 +6556,18 @@
       "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ"
     ],
     "source_journal": {
-      "title": "Museum of One"
+      "title": "Post-interpretive criticism"
     },
     "source_imprint": null,
     "source_contributors": [
       {
         "name": "https://www.museumofone.art/",
         "affiliation": "Museum Of One",
-        "type": null
+        "type": "Annotator"
       }
     ],
     "source_created": "2026-04-28T18:51:44.977265+00:00",
-    "source_modified": "2026-04-28T18:51:45.522186+00:00",
+    "source_modified": "2026-11-13T16:26:19.518757+00:00",
     "source_description_html": "<p><strong>Moral Proximity: Ethics as Method in Post-Interpretive Criticism</strong></p>\n<p><em>By Dorian Vale</em></p>\n<p>In this defining essay, Dorian Vale articulates&nbsp;<strong>moral proximity</strong> as the central method of Post-Interpretive Criticism (PIC). Departing from frameworks that prioritize interpretation, context, or theoretical discourse, this piece reframes criticism itself as an <em>ethical position</em>, not an intellectual act.</p>\n<p>&nbsp;</p>\n<p>Moral proximity is the discipline of standing near a work&mdash;especially works born of trauma, exile, or silence&mdash;without consuming it. It demands neither resolution nor analysis, but a custodial presence rooted in humility, restraint, and witness. The critic is not a translator but a steward of what cannot be said without distortion.</p>\n<p>&nbsp;</p>\n<p>Drawing upon Vale&rsquo;s broader doctrines&mdash;including the Viewer as Evidence, Absential Aesthetics, and Hauntmark Theory&mdash;this essay positions <em>moral nearness</em> as the irreducible truth in art writing. It becomes the difference between exploitation and reverence, between performance and presence.</p>\n<p>&nbsp;</p>\n<p>Vale, Dorian. Moral Proximity: Ethics as Method in Post-Interpretive Criticism. Museum of One, 2025. DOI: 10.5281/zenodo.17076247</p>\n<p>Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen. This name is used for all official publications, essays, and theoretical works indexed through DOI-linked repositories including Zenodo, OSF, PhilPapers, and SSRN.</p>\n<p>This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and&nbsp;<em>Art as Truth: A Treatise</em> (Q136329071), <em>Aesthetic Recursion Theory</em>&nbsp;(Q136339843)</p>\n<p>Post-Interpretive Criticism, Dorian Vale, moral proximity, ethics in art criticism, witnessing art, aesthetic ethics, viewer presence, non-extractive criticism, trauma-informed aesthetics, silent art, ethical presence, affective encounter, restraint in criticism</p>",
     "provenance": {
       "repository": "Zenodo REST API response supplied in query.json",
@@ -6174,7 +6582,7 @@
       "source_snapshot": "source/19863790.json",
       "institutional_review": "Reviewed page-level title, author and repository links in saved public institutional HTML, 2026-11-04."
     },
-    "source_review": "2026-11-04",
+    "source_review": "2026-11-13",
     "relations": [
       {
         "identifier": "10.5281/zenodo.17069115",
@@ -6263,7 +6671,7 @@
     ],
     "extent": "1 digital file; 224701 bytes",
     "medium": "Digital document",
-    "record_reviewed": "2026-11-04",
+    "record_reviewed": "2026-11-13",
     "date_precision": "year",
     "alternate_titles": [],
     "digital_extent": {
@@ -6309,18 +6717,10 @@
         "source_url": "https://zenodo.org/records/19863790"
       },
       {
-        "name": "Museum Of One",
-        "source_category": "creator",
-        "source_role": null,
-        "role_label": "Creator (role not supplied)",
-        "affiliation_as_supplied": "https://www.museumofone.art/",
-        "source_url": "https://zenodo.org/records/19863790"
-      },
-      {
         "name": "https://www.museumofone.art/",
         "source_category": "contributor",
-        "source_role": null,
-        "role_label": "Creator (role not supplied)",
+        "source_role": "Annotator",
+        "role_label": "Annotator",
         "affiliation_as_supplied": "Museum Of One",
         "source_url": "https://zenodo.org/records/19863790"
       }
@@ -6345,6 +6745,100 @@
           "https://zenodo.org/records/19863790"
         ]
       }
+    ],
+    "field_assertions": [
+      {
+        "field": "alternate_identifiers",
+        "value": [
+          {
+            "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d",
+            "scheme": "url"
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863790",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "contributor_roles",
+        "value": [
+          {
+            "name": "Vale, Dorian",
+            "source_category": "creator",
+            "source_role": null,
+            "role_label": "Creator (role not supplied)",
+            "affiliation_as_supplied": "MuseumofOne",
+            "source_url": "https://zenodo.org/records/19863790"
+          },
+          {
+            "name": "https://www.museumofone.art/",
+            "source_category": "contributor",
+            "source_role": "Annotator",
+            "role_label": "Annotator",
+            "affiliation_as_supplied": "Museum Of One",
+            "source_url": "https://zenodo.org/records/19863790"
+          }
+        ],
+        "status": "derived_from_source",
+        "source_url": "https://zenodo.org/records/19863790",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "creators",
+        "value": [
+          {
+            "name": "Vale, Dorian",
+            "affiliation": "MuseumofOne",
+            "orcid": "0009-0004-7737-5094"
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863790",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "language",
+        "value": "en",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863790",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_contributors",
+        "value": [
+          {
+            "name": "https://www.museumofone.art/",
+            "affiliation": "Museum Of One",
+            "type": "Annotator"
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863790",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_journal",
+        "value": {
+          "title": "Post-interpretive criticism"
+        },
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863790",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_modified",
+        "value": "2026-11-13T16:26:19.518757+00:00",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863790",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      }
     ]
   },
   {
@@ -6359,14 +6853,6 @@
         "name": "Vale, Dorian",
         "affiliation": "MuseumofOne",
         "orcid": "0009-0004-7737-5094"
-      },
-      {
-        "name": "https://www.museumofone.art/",
-        "affiliation": null
-      },
-      {
-        "name": "Museum Of One",
-        "affiliation": null
       }
     ],
     "doi": "10.5281/zenodo.19863836",
@@ -6474,13 +6960,13 @@
     "institutional_url": "https://www.museumofone.art/the-afterlife-of-the-work-viewer-as-evidence-in-post-interpretive-criticism/",
     "corroboration": "Museum of One’s matching publication page confirms Dorian Vale’s authorship and the work’s institutional context. Its repository links and publication dates are retained separately from this selected Zenodo edition. Web-record dates are not treated as dates of the deposited edition. Source review: 4 November 2026.",
     "discrepancies": [
-      "The repository also lists organizational or URL-form creator entries. The catalogue displays Dorian Vale as bibliographic author while retaining the deposited creator list separately.",
+      "The original dated repository snapshot lists organizational or URL-form creator entries. The current repository creator metadata was corrected and verified on 13 November 2026; Dorian Vale remains the bibliographic author. The original snapshot is retained unchanged.",
       "The source description includes a 2025 citation and an earlier DOI. The selected Zenodo record has a 2026 publication-date field; a web-publication date is not substituted for that deposited date.",
       "The institutional page does not explicitly link this selected edition DOI in its saved HTML. The match is at work level through title, authorship, and publication context; the catalogue preserves the exact repository edition separately."
     ],
     "orcid": "0009-0004-7737-5094",
     "publisher": "Museum of One",
-    "language": null,
+    "language": "en",
     "isbn": null,
     "related_identifiers": [
       {
@@ -6551,37 +7037,8 @@
     ],
     "alternate_identifiers": [
       {
-        "identifier": "10.5281/zenodo.17069115"
-      },
-      {
-        "identifier": "https://www.museumofone.art/"
-      },
-      {
-        "identifier": "https://hcommons.org/members/dorianvale/"
-      },
-      {
-        "identifier": "https://philpeople.org/profiles/dorian-vale"
-      },
-      {
-        "identifier": "https://osf.io/xa5jw/"
-      },
-      {
-        "identifier": "https://independent.academia.edu/DorianVale"
-      },
-      {
-        "identifier": "https://figshare.com/authors/Dorian_Vale/22186984"
-      },
-      {
-        "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d"
-      },
-      {
-        "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266"
-      },
-      {
-        "identifier": "https://zenodo.org/communities/post-interpretive-criticism"
-      },
-      {
-        "identifier": "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ"
+        "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d",
+        "scheme": "url"
       }
     ],
     "source_references": [
@@ -6605,7 +7062,7 @@
       "https://ssrn.com/abstract=5471149"
     ],
     "source_journal": {
-      "title": "Museum of One"
+      "title": "Post-interpretive criticism"
     },
     "source_imprint": null,
     "source_contributors": [
@@ -6616,7 +7073,7 @@
       }
     ],
     "source_created": "2026-04-28T18:52:53.714810+00:00",
-    "source_modified": "2026-04-28T18:52:54.111962+00:00",
+    "source_modified": "2026-11-13T16:26:25.262271+00:00",
     "source_description_html": "<p><strong>The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism</strong></p>\n<p><em>By Dorian Vale</em></p>\n<p>This essay presents one of the central epistemological pillars of Post-Interpretive Criticism (PIC): the concept of the viewer as evidence. Dorian Vale challenges the traditional hierarchy where the critic&rsquo;s interpretation takes precedence over the encounter itself, proposing instead that the <em>afterlife</em> of the artwork&mdash;the residue it leaves in the viewer&mdash;is its most truthful legacy.</p>\n<p>&nbsp;</p>\n<p>Rather than dissect the work, Vale observes what lingers after it is gone: silence, tremor, unease, reverence. These affective traces are not emotional accidents, but ethical data. The viewer&rsquo;s internal shift becomes testimony, and the absence of interpretation becomes its own kind of presence.</p>\n<p>&nbsp;</p>\n<p>Rooted in restraint and moral proximity, this essay reframes the act of viewing as sacred evidence collection. The artwork does not exist to be understood; it exists to be endured. And in that endurance, the viewer becomes witness, custodian, and echo.</p>\n<div>\n<div>&nbsp;</div>\n<div>\n<p>Vale, Dorian. The Afterlife of the Work: Viewer as Evidence in Post-Interpretive Criticism. Museum of One, 2025. DOI: 10.5281/zenodo.17076535</p>\n</div>\n<div>\n<p>Dorian Vale is a chosen pseudonym, not to obscure identity, but to preserve clarity of voice and integrity of message. It creates distance between the writer and the work, allowing the philosophy to stand unclouded by biography. The name exists not to hide, but to honor the seriousness of the task: to speak without spectacle, and to build without needing to be seen. This name is used for all official publications, essays, and theoretical works indexed through DOI-linked repositories including Zenodo, OSF, PhilPapers, and SSRN.</p>\n</div>\n<div>\n<p>This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and <em>Art as Truth: A Treatise</em> (Q136329071), <em>Aesthetic Recursion Theory</em>&nbsp;(Q136339843)</p>\n</div>\n</div>\n<p>&nbsp;</p>\n<p>Post-Interpretive Criticism, Dorian Vale, viewer as evidence, art afterlife, ethical criticism, art encounter, aesthetic presence, trauma-informed art viewing, philosophy of art, witnessing in art, moral proximity, affective criticism</p>",
     "provenance": {
       "repository": "Zenodo REST API response supplied in query.json",
@@ -6631,7 +7088,7 @@
       "source_snapshot": "source/19863836.json",
       "institutional_review": "Reviewed page-level title, author and repository links in saved public institutional HTML, 2026-11-04."
     },
-    "source_review": "2026-11-04",
+    "source_review": "2026-11-13",
     "relations": [
       {
         "identifier": "https://www.museumofone.art/",
@@ -6727,7 +7184,7 @@
     ],
     "extent": "1 digital file; 253546 bytes",
     "medium": "Digital document",
-    "record_reviewed": "2026-11-04",
+    "record_reviewed": "2026-11-13",
     "date_precision": "year",
     "alternate_titles": [],
     "digital_extent": {
@@ -6773,22 +7230,6 @@
         "source_url": "https://zenodo.org/records/19863836"
       },
       {
-        "name": "https://www.museumofone.art/",
-        "source_category": "creator",
-        "source_role": null,
-        "role_label": "Creator (role not supplied)",
-        "affiliation_as_supplied": null,
-        "source_url": "https://zenodo.org/records/19863836"
-      },
-      {
-        "name": "Museum Of One",
-        "source_category": "creator",
-        "source_role": null,
-        "role_label": "Creator (role not supplied)",
-        "affiliation_as_supplied": null,
-        "source_url": "https://zenodo.org/records/19863836"
-      },
-      {
         "name": "Museum Of One",
         "source_category": "contributor",
         "source_role": "RightsHolder",
@@ -6816,6 +7257,86 @@
         "sources": [
           "https://zenodo.org/records/19863836"
         ]
+      }
+    ],
+    "field_assertions": [
+      {
+        "field": "alternate_identifiers",
+        "value": [
+          {
+            "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d",
+            "scheme": "url"
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863836",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "contributor_roles",
+        "value": [
+          {
+            "name": "Vale, Dorian",
+            "source_category": "creator",
+            "source_role": null,
+            "role_label": "Creator (role not supplied)",
+            "affiliation_as_supplied": "MuseumofOne",
+            "source_url": "https://zenodo.org/records/19863836"
+          },
+          {
+            "name": "Museum Of One",
+            "source_category": "contributor",
+            "source_role": "RightsHolder",
+            "role_label": "RightsHolder",
+            "affiliation_as_supplied": "https://www.museumofone.art/",
+            "source_url": "https://zenodo.org/records/19863836"
+          }
+        ],
+        "status": "derived_from_source",
+        "source_url": "https://zenodo.org/records/19863836",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "creators",
+        "value": [
+          {
+            "name": "Vale, Dorian",
+            "affiliation": "MuseumofOne",
+            "orcid": "0009-0004-7737-5094"
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863836",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "language",
+        "value": "en",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863836",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_journal",
+        "value": {
+          "title": "Post-interpretive criticism"
+        },
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863836",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_modified",
+        "value": "2026-11-13T16:26:25.262271+00:00",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863836",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
       }
     ]
   },
@@ -6939,146 +7460,74 @@
     ],
     "orcid": "0009-0004-7737-5094",
     "publisher": "Museum of One",
-    "language": null,
+    "language": "en",
     "isbn": null,
     "related_identifiers": [
       {
         "identifier": "https://www.museumofone.art/",
-        "relation": "cites",
-        "scheme": "url"
+        "scheme": "url",
+        "relation": "cites"
       },
       {
         "identifier": "https://hcommons.org/members/dorianvale/",
-        "relation": "isSupplementTo",
-        "scheme": "url"
+        "scheme": "url",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "https://osf.io/xa5jw/",
-        "relation": "isSupplementTo",
-        "scheme": "url"
-      },
-      {
-        "identifier": "https://philpeople.org/profiles/dorian-vale",
-        "relation": "isSupplementTo",
-        "scheme": "url"
+        "scheme": "url",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "https://independent.academia.edu/DorianVale",
-        "relation": "isSupplementTo",
-        "scheme": "url"
-      },
-      {
-        "identifier": "https://figshare.com/authors/Dorian_Vale/22186984",
-        "relation": "isSupplementTo",
-        "scheme": "url"
+        "scheme": "url",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "10.5281/zenodo.17112807",
-        "relation": "isSupplementTo",
-        "scheme": "doi"
+        "scheme": "doi",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "10.5281/zenodo.17078847",
-        "relation": "isSupplementTo",
-        "scheme": "doi"
+        "scheme": "doi",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "10.5281/zenodo.17069115",
-        "relation": "isSupplementTo",
-        "scheme": "doi"
-      },
-      {
-        "identifier": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5443334",
-        "relation": "isIdenticalTo",
-        "scheme": "url"
+        "scheme": "doi",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "10.2139/ssrn.5443334",
-        "relation": "isSupplementTo",
-        "scheme": "doi"
+        "scheme": "doi",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d",
-        "relation": "isSupplementTo",
-        "scheme": "url"
-      },
-      {
-        "identifier": "https://zenodo.org/communities/post-interpretive-criticism",
-        "relation": "isSupplementTo",
-        "scheme": "url"
-      },
-      {
-        "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
-        "relation": "isSupplementTo",
-        "scheme": "url"
+        "scheme": "url",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ",
-        "relation": "cites",
-        "scheme": "url"
+        "scheme": "url",
+        "relation": "cites"
       },
       {
         "identifier": "10.2139/ssrn.5471149",
-        "relation": "isSupplementTo",
-        "scheme": "doi"
+        "scheme": "doi",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "https://ssrn.com/abstract=5471149",
-        "relation": "isSupplementTo",
-        "scheme": "url"
+        "scheme": "url",
+        "relation": "isSupplementTo"
       }
     ],
     "alternate_identifiers": [
       {
-        "identifier": "https://www.museumofone.art/"
-      },
-      {
-        "identifier": "https://hcommons.org/members/dorianvale/"
-      },
-      {
-        "identifier": "https://philpeople.org/profiles/dorian-vale"
-      },
-      {
-        "identifier": "https://osf.io/xa5jw/"
-      },
-      {
-        "identifier": "https://independent.academia.edu/DorianVale"
-      },
-      {
-        "identifier": "https://doi.org/10.5281/zenodo.17112807"
-      },
-      {
-        "identifier": "https://doi.org/10.5281/zenodo.17078847"
-      },
-      {
-        "identifier": "https://doi.org/10.5281/zenodo.17069115"
-      },
-      {
-        "identifier": "https://figshare.com/authors/Dorian_Vale/22186984"
-      },
-      {
-        "identifier": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5443334"
-      },
-      {
-        "identifier": "10.2139/ssrn.5443334"
-      },
-      {
-        "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d"
-      },
-      {
-        "identifier": "https://zenodo.org/communities/post-interpretive-criticism"
-      },
-      {
-        "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266"
-      },
-      {
-        "identifier": "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ"
-      },
-      {
-        "identifier": "https://ssrn.com/abstract=5471149"
-      },
-      {
-        "identifier": "10.2139/ssrn.5471149"
+        "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d",
+        "scheme": "url"
       }
     ],
     "source_references": [
@@ -7105,7 +7554,7 @@
       "http://dx.doi.org/10.2139/ssrn.5471149"
     ],
     "source_journal": {
-      "title": "Museum of One"
+      "title": "Post-interpretive criticism"
     },
     "source_imprint": null,
     "source_contributors": [
@@ -7121,7 +7570,7 @@
       }
     ],
     "source_created": "2026-04-28T18:55:23.348733+00:00",
-    "source_modified": "2026-10-11T17:52:14.842757+00:00",
+    "source_modified": "2026-11-13T16:26:30.523628+00:00",
     "source_description_html": "<p><strong>Language as Custody &mdash; Writing Without Harm in Post-Interpretive Criticism</strong></p>\n<p><em>By Dorian Vale</em></p>\n<p>In this critical essay, Dorian Vale addresses the often overlooked violence of language in art criticism. Drawing from the philosophical core of <strong>Post-Interpretive Criticism (PIC)</strong>, this work reframes writing not as interpretation, but as <strong>custody</strong>&mdash;an act of ethical stewardship over what cannot be explained without distortion.</p>\n<p>&nbsp;</p>\n<p>Vale explores how clinical, ironic, or overly descriptive language can flatten the moral gravity of witness-based artworks&mdash;particularly those dealing with trauma, silence, exile, or the sacred. Instead of attempting to decode or resolve these works, the essay proposes a discipline of linguistic restraint, where words become <strong>protective vessels</strong> rather than invasive instruments.</p>\n<p>&nbsp;</p>\n<p>Through real case studies and comparative language analysis, <em>Language as Custody</em> offers both a conceptual foundation and practical framework for how one might write without harm. The goal is not to say more, but to write in a way that holds what the work cannot say aloud.</p>\n<p>&nbsp;</p>\n<p>This is not a guide for translation&mdash;it is a doctrine for presence. A refusal to violate what resists interpretation. And in that refusal, it calls for a quieter, more reverent kind of authorship.</p>\n<p>&nbsp;</p>\n<p>Vale, Dorian. Language as Custody &mdash; Writing Without Harm in Post-Interpretive Criticism. Museum of One, 2025. DOI:&nbsp;10.5281/zenodo.17077653</p>\n<div>\n<div>&nbsp;</div>\n<div>\n<p>This entry is connected to a series of original theories and treatises forming the foundation of the Post-Interpretive Criticism movement (Q136308909), authored by Dorian Vale (Q136308916) and published by Museum of One (Q136308879). These include: Stillmark Theory (Q136328254), Hauntmark Theory (Q136328273), Absential Aesthetic Theory (Q136328330), Viewer-as-Evidence Theory (Q136328828), Message-Transfer Theory (Q136329002), Aesthetic Displacement Theory (Q136329014), Theory of Misplacement (Q136329054), and <em>Art as Truth: A Treatise</em> (Q136329071), <em>Aesthetic Recursion Theory</em>&nbsp;<span>(Q136339843)</span></p>\n</div>\n</div>\n<p>&nbsp;</p>\n<p>post-interpretive criticism, Dorian Vale, study guide for art criticism, five principles of art ethics, ethical witnessing in art, presence over interpretation, restraint in criticism, moral proximity, viewer as evidence, rejecting performance, contemporary art criticism, poetic criticism, art education resources, museum pedagogy, witnessing trauma in art, art writing without interpretation, anti-interpretation philosophy, critique without harm, non-extractive art writing</p>",
     "provenance": {
       "repository": "Zenodo REST API response supplied in query.json",
@@ -7147,92 +7596,67 @@
       "reviewed": "2026-11-04",
       "source_url": "https://www.museumofone.art/language-as-custody-writing-without-harm-in-post-interpretive-criticism/"
     },
-    "source_review": "2026-11-04",
+    "source_review": "2026-11-13",
     "relations": [
       {
         "identifier": "https://www.museumofone.art/",
-        "relation": "cites",
-        "scheme": "url"
+        "scheme": "url",
+        "relation": "cites"
       },
       {
         "identifier": "https://hcommons.org/members/dorianvale/",
-        "relation": "isSupplementTo",
-        "scheme": "url"
+        "scheme": "url",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "https://osf.io/xa5jw/",
-        "relation": "isSupplementTo",
-        "scheme": "url"
-      },
-      {
-        "identifier": "https://philpeople.org/profiles/dorian-vale",
-        "relation": "isSupplementTo",
-        "scheme": "url"
+        "scheme": "url",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "https://independent.academia.edu/DorianVale",
-        "relation": "isSupplementTo",
-        "scheme": "url"
-      },
-      {
-        "identifier": "https://figshare.com/authors/Dorian_Vale/22186984",
-        "relation": "isSupplementTo",
-        "scheme": "url"
+        "scheme": "url",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "10.5281/zenodo.17112807",
-        "relation": "isSupplementTo",
-        "scheme": "doi"
+        "scheme": "doi",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "10.5281/zenodo.17078847",
-        "relation": "isSupplementTo",
-        "scheme": "doi"
+        "scheme": "doi",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "10.5281/zenodo.17069115",
-        "relation": "isSupplementTo",
-        "scheme": "doi"
-      },
-      {
-        "identifier": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5443334",
-        "relation": "isIdenticalTo",
-        "scheme": "url"
+        "scheme": "doi",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "10.2139/ssrn.5443334",
-        "relation": "isSupplementTo",
-        "scheme": "doi"
+        "scheme": "doi",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d",
-        "relation": "isSupplementTo",
-        "scheme": "url"
-      },
-      {
-        "identifier": "https://zenodo.org/communities/post-interpretive-criticism",
-        "relation": "isSupplementTo",
-        "scheme": "url"
-      },
-      {
-        "identifier": "https://www.semanticscholar.org/author/Dorian-Vale/2380743266",
-        "relation": "isSupplementTo",
-        "scheme": "url"
+        "scheme": "url",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ",
-        "relation": "cites",
-        "scheme": "url"
+        "scheme": "url",
+        "relation": "cites"
       },
       {
         "identifier": "10.2139/ssrn.5471149",
-        "relation": "isSupplementTo",
-        "scheme": "doi"
+        "scheme": "doi",
+        "relation": "isSupplementTo"
       },
       {
         "identifier": "https://ssrn.com/abstract=5471149",
-        "relation": "isSupplementTo",
-        "scheme": "url"
+        "scheme": "url",
+        "relation": "isSupplementTo"
       }
     ],
     "research_programmes": [],
@@ -7243,7 +7667,7 @@
     ],
     "extent": "1 digital file; 253299 bytes",
     "medium": "Digital document",
-    "record_reviewed": "2026-11-04",
+    "record_reviewed": "2026-11-13",
     "date_precision": "year",
     "alternate_titles": [
       {
@@ -7330,6 +7754,185 @@
         "sources": [
           "https://zenodo.org/records/19863851"
         ]
+      }
+    ],
+    "field_assertions": [
+      {
+        "field": "alternate_identifiers",
+        "value": [
+          {
+            "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d",
+            "scheme": "url"
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863851",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "language",
+        "value": "en",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863851",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "related_identifiers",
+        "value": [
+          {
+            "identifier": "https://www.museumofone.art/",
+            "scheme": "url",
+            "relation": "cites"
+          },
+          {
+            "identifier": "https://hcommons.org/members/dorianvale/",
+            "scheme": "url",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "https://osf.io/xa5jw/",
+            "scheme": "url",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "https://independent.academia.edu/DorianVale",
+            "scheme": "url",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "10.5281/zenodo.17112807",
+            "scheme": "doi",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "10.5281/zenodo.17078847",
+            "scheme": "doi",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "10.5281/zenodo.17069115",
+            "scheme": "doi",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "10.2139/ssrn.5443334",
+            "scheme": "doi",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d",
+            "scheme": "url",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ",
+            "scheme": "url",
+            "relation": "cites"
+          },
+          {
+            "identifier": "10.2139/ssrn.5471149",
+            "scheme": "doi",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "https://ssrn.com/abstract=5471149",
+            "scheme": "url",
+            "relation": "isSupplementTo"
+          }
+        ],
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863851",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "relations",
+        "value": [
+          {
+            "identifier": "https://www.museumofone.art/",
+            "scheme": "url",
+            "relation": "cites"
+          },
+          {
+            "identifier": "https://hcommons.org/members/dorianvale/",
+            "scheme": "url",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "https://osf.io/xa5jw/",
+            "scheme": "url",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "https://independent.academia.edu/DorianVale",
+            "scheme": "url",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "10.5281/zenodo.17112807",
+            "scheme": "doi",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "10.5281/zenodo.17078847",
+            "scheme": "doi",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "10.5281/zenodo.17069115",
+            "scheme": "doi",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "10.2139/ssrn.5443334",
+            "scheme": "doi",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "https://www.semanticscholar.org/paper/Post-Interprative-Criticism%3A-Foundational-Essays-Vale/09538ab14a89022e2886f9cccaf133e8d5c9cf7d",
+            "scheme": "url",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "https://scholar.google.com/citations?hl=en&authuser=1&user=15tvhjAAAAAJ",
+            "scheme": "url",
+            "relation": "cites"
+          },
+          {
+            "identifier": "10.2139/ssrn.5471149",
+            "scheme": "doi",
+            "relation": "isSupplementTo"
+          },
+          {
+            "identifier": "https://ssrn.com/abstract=5471149",
+            "scheme": "url",
+            "relation": "isSupplementTo"
+          }
+        ],
+        "status": "derived_from_source",
+        "source_url": "https://zenodo.org/records/19863851",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_journal",
+        "value": {
+          "title": "Post-interpretive criticism"
+        },
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863851",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
+      },
+      {
+        "field": "source_modified",
+        "value": "2026-11-13T16:26:30.523628+00:00",
+        "status": "source_transcription",
+        "source_url": "https://zenodo.org/records/19863851",
+        "note": "Current public repository metadata checked on 13 November 2026 after a metadata-only correction. Original dated metadata snapshot, publication dates, DOI identity and deposited files are retained unchanged.",
+        "reviewed": "2026-11-13"
       }
     ]
   },

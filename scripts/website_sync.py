@@ -260,6 +260,7 @@ class Readable(HTMLParser):
         self.text = []
         self.links = []
         self.skip = []
+        self.anchors = []
         self.feed(html or "")
         self.close()
 
@@ -286,8 +287,12 @@ class Readable(HTMLParser):
             return
         if t == "img":
             u = self.safe(a.get("src"))
-            label = a.get("alt") or "Source image"
-            if u:
+            label = a.get("alt") or (self.anchors[-1]["label"] if self.anchors else "") or "Source image"
+            if self.anchors:
+                # Keep an image-only link's destination and accessible label.
+                # A nested image-source anchor would close the original link.
+                self.anchors[-1]["images"].append(label)
+            elif u:
                 self.parts.append(
                     '<p><a href="'
                     + escape(u, quote=True)
@@ -295,12 +300,15 @@ class Readable(HTMLParser):
                     + escape(label)
                     + " — image at source</a></p>"
                 )
+            if u:
                 self.links.append({"url": u, "role": "image", "label": label})
             return
         if t not in self.allowed:
             return
         attrs_out = ""
         if t == "a":
+            self.anchors.append({"images": [], "has_text": False,
+                                 "label": a.get("aria-label") or a.get("title") or ""})
             u = self.safe(a.get("href"))
             if u:
                 attrs_out = (
@@ -319,6 +327,12 @@ class Readable(HTMLParser):
             if t == self.skip[-1]:
                 self.skip.pop()
             return
+        if t == "a" and self.anchors:
+            anchor = self.anchors.pop()
+            if anchor["images"] and not anchor["has_text"]:
+                label = " ".join(dict.fromkeys(anchor["images"]))
+                self.parts.append(escape(label))
+                self.text.append(label)
         if t in self.allowed and t not in ("br", "hr"):
             self.parts.append("</" + t + ">")
         if t in ("p", "div", "li", "h1", "h2", "h3", "tr"):
@@ -328,6 +342,9 @@ class Readable(HTMLParser):
         if not self.skip:
             self.parts.append(escape(s))
             self.text.append(s)
+            if s.strip():
+                for anchor in self.anchors:
+                    anchor["has_text"] = True
 
     def safe(self, u):
         if not u:

@@ -16,8 +16,8 @@
     },
     {
       "path": "data/catalogue.json",
-      "bytes": 626313,
-      "sha256": "8b242ec502c978bf0ad5b1041ac77c3b565ba8a1e9100ad7b20ec03cca985e5b",
+      "bytes": 658114,
+      "sha256": "ab991ee470f0dbf7ccfb384c3676b1307b340e279b204765aef48d2c66a30537",
       "role": "editorial_dataset"
     },
     {
@@ -40,8 +40,8 @@
     },
     {
       "path": "data/description-events.json",
-      "bytes": 3950,
-      "sha256": "bb7d20c6534bf3efc3146b184ae5b4a5b5c18e70082687d860d41e85a21173f0",
+      "bytes": 6476,
+      "sha256": "0e9945c6214bd0c525846995b605d9995dd2aad7697f17c2f63d0b0ea4c66854",
       "role": "editorial_dataset"
     },
     {
@@ -64,8 +64,8 @@
     },
     {
       "path": "data/metadata-profile.json",
-      "bytes": 2354,
-      "sha256": "5f0a92b24b8085ecbf18c03900703dfe5901eabbdacdc1f6b706cf43d9b440a0",
+      "bytes": 2371,
+      "sha256": "907442206aa452fac288376dd41d3ba3135b737754fc0ce4c645fe269ca648c8",
       "role": "editorial_dataset"
     },
     {
@@ -2147,6 +2147,53 @@
         "algorithm": "SHA-256",
         "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
       }
+    },
+    {
+      "at": "2026-11-13T16:44:30Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 102,
+      "inventory_sha256": "e39ef2ea2162bf3153debf11a268fe5f4ebaf728d9a8a6515a19c6b2f1278e57"
+    },
+    {
+      "at": "2026-11-13T16:44:30Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 102,
+      "checked_files": 102,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "e39ef2ea2162bf3153debf11a268fe5f4ebaf728d9a8a6515a19c6b2f1278e57"
+    },
+    {
+      "at": "2026-11-13T16:44:30Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 102,
+      "checked_files": 102,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "e39ef2ea2162bf3153debf11a268fe5f4ebaf728d9a8a6515a19c6b2f1278e57"
+    },
+    {
+      "at": "2026-11-13T16:44:30Z",
+      "event": "backup_and_restoration_test",
+      "status": "passed",
+      "package_filename": "preservation-current-metadata-20261113.tar.gz",
+      "package_bytes": 14796881,
+      "package_sha256": "aebd2799a69ed74554f57ede572912324ec5dfdc9b16bd5bbabad74bc228d238",
+      "inventory_sha256": "e39ef2ea2162bf3153debf11a268fe5f4ebaf728d9a8a6515a19c6b2f1278e57",
+      "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
+      "restoration": {
+        "status": "passed",
+        "files_restored": 102,
+        "algorithm": "SHA-256",
+        "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
+      }
     }
   ],
   "scope": "Repository source snapshots, editorial JSON datasets, and original PDF access copies.",
@@ -2159,10 +2206,10 @@
     "upstream_sources": "Original deposits remain at Zenodo; website source is held by the site platform.",
     "offsite_backup_status": "The current 101-file preservation payload was stored as a new revision of the existing private Google Drive backup, independently downloaded and fully restored on 11 November 2026. The prior 96-file revision and 4 November backup remain preserved."
   },
-  "inventory_sha256": "b4df4d9002b07e6027c8996855972975cc32f42ed8065418faa2745c045afb4d",
-  "baseline_created_at": "2026-11-13T16:00:00Z",
+  "inventory_sha256": "e39ef2ea2162bf3153debf11a268fe5f4ebaf728d9a8a6515a19c6b2f1278e57",
+  "baseline_created_at": "2026-11-13T16:44:30Z",
   "last_check": {
-    "at": "2026-11-13T16:00:00Z",
+    "at": "2026-11-13T16:44:30Z",
     "event": "fixity_check",
     "status": "passed",
     "algorithm": "SHA-256",
@@ -2171,16 +2218,16 @@
     "missing": [],
     "added": [],
     "changed": [],
-    "inventory_sha256": "b4df4d9002b07e6027c8996855972975cc32f42ed8065418faa2745c045afb4d"
+    "inventory_sha256": "e39ef2ea2162bf3153debf11a268fe5f4ebaf728d9a8a6515a19c6b2f1278e57"
   },
   "backup": {
-    "at": "2026-11-13T16:00:01Z",
+    "at": "2026-11-13T16:44:30Z",
     "event": "backup_and_restoration_test",
     "status": "passed",
-    "package_filename": "archive-reviewed-content-restoration.tar.gz",
-    "package_bytes": 14795749,
-    "package_sha256": "cbd1f97e2e5a76d78245285c419a5be05cac0fe7c9b0cc34e965b3eabce2d8c2",
-    "inventory_sha256": "b4df4d9002b07e6027c8996855972975cc32f42ed8065418faa2745c045afb4d",
+    "package_filename": "preservation-current-metadata-20261113.tar.gz",
+    "package_bytes": 14796881,
+    "package_sha256": "aebd2799a69ed74554f57ede572912324ec5dfdc9b16bd5bbabad74bc228d238",
+    "inventory_sha256": "e39ef2ea2162bf3153debf11a268fe5f4ebaf728d9a8a6515a19c6b2f1278e57",
     "storage_scope": "Local execution environment, outside the source repository; not an independent offsite backup.",
     "restoration": {
       "status": "passed",

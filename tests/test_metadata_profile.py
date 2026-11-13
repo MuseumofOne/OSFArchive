@@ -104,6 +104,16 @@ class MetadataProfileTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Unregistered'):
             typed_relationship_assertions(record, ORIGIN)
 
+    def test_other_type_requires_source_classification_in_profile_validation(self):
+        manual = deepcopy(next(r for r in self.records if r["id"] == "20100136"))
+        self.assertEqual(validate_metadata_profile([manual], ORIGIN), [])
+        for source_type in (None, {}, {"type": "dataset"}, {"type": "publication", "subtype": "article"}):
+            with self.subTest(source_type=source_type):
+                record = deepcopy(manual)
+                record["source_resource_type"] = source_type
+                errors = validate_metadata_profile([record], ORIGIN)
+                self.assertTrue(any("Other type lacks explicit publication/other" in error for error in errors))
+
     def test_profile_rejects_date_scope_and_assertion_drift(self):
         self.assertEqual(validate_metadata_profile(self.records, ORIGIN), [])
         record = deepcopy(self.by_id['19863790'])

@@ -51,7 +51,8 @@
         "Working paper",
         "Dataset",
         "Technical note",
-        "Research dialogue"
+        "Research dialogue",
+        "Other"
       ]
     },
     "zenodo_url": {

@@ -154,6 +154,36 @@ class Sync(unittest.TestCase):
   self.row['record'].update(feature_image='https://www.museumofone.art/content/images/fixture.png',feature_image_alt='Checked image description',feature_image_caption='<em>Credit only</em>')
   _,rows,_=self.run_sync()
   self.assertEqual(next(a for a in rows[0]['attachments'] if a['role']=='image')['label'],'Checked image description')
+ def test_remote_image_only_link_keeps_destination_label_and_inert_source(self):
+  doi='https://doi.org/10.5281/zenodo.17111649';image='https://img.shields.io/badge/DOI-record-blue.svg'
+  html=f'<p><a href="{doi}"><span><img src="{image}" alt="DOI &lt;checked&gt; &amp; citation"></span></a></p>'
+  self.row['record']['html']=html
+  state,rows,_=self.run_sync();body=rows[0]['readable_html']
+  self.assertIn(f'<a href="{doi}" rel="noopener noreferrer"><span></span>DOI &lt;checked&gt; &amp; citation</a>',body)
+  self.assertEqual(body.count('<a '),1);self.assertNotIn('<img',body);self.assertNotIn('<checked>',body)
+  self.assertEqual(rows[0]['source']['html'],html)
+  attachment=next(a for a in rows[0]['attachments'] if a['url']==image)
+  self.assertEqual(attachment['storage'],'external_link_only')
+  out=self.root/'dist';out.mkdir()
+  def write(path,text):
+   file=out/path;file.parent.mkdir(parents=True,exist_ok=True);file.write_text(text)
+  build_website_pages(self.work,out,write,lambda title,description,content,*args,**kwargs:content,'https://archive.museumofone.art')
+  rendered=(out/'website'/('web-'+RID+'.html')).read_text()
+  self.assertIn(f'href="{doi}"',rendered);self.assertIn(f'href="{image}"',rendered)
+  self.assertNotIn(f'<img src="{image}"',rendered)
+  self.assertIn('DOI <checked> & citation',rows[0]['text'])
+  state2,rows2,report=self.run_sync(state=state)
+  self.assertEqual(rows2[0]['readable_html'],body);self.assertEqual(report['changes'][0]['action'],'unchanged')
+  self.assertEqual(state2['records'][RID]['revisions'],state['records'][RID]['revisions'])
+ def test_link_image_fallback_does_not_duplicate_visible_text_or_remove_source_reference(self):
+  image='https://external.example/badge.svg'
+  body=''.join(Readable(f'<a href="/read/"><img src="{image}" alt="Read now"><strong>Read now</strong></a>').parts)
+  self.assertEqual(body.count('Read now'),1);self.assertEqual(body.count('<a '),1)
+  body=''.join(Readable(f'<a href="/read/" aria-label="Read the deposited edition"><img src="{image}" alt=""></a>').parts)
+  self.assertIn('>Read the deposited edition</a>',body)
+  parser=Readable(f'<img src="{image}" alt="Standalone illustration">')
+  self.assertIn('Standalone illustration — image at source</a>',''.join(parser.parts))
+  self.assertEqual(parser.links,[{'url':image,'role':'image','label':'Standalone illustration'}])
  def test_media_sources_and_site_images_are_detected(self):
   parser=Readable('<video><source src="/content/media/a.mp4"></video><audio src="/content/media/b.mp3"></audio><img src="/content/images/c.png">')
   self.assertEqual({x['role'] for x in parser.links},{'source','audio','image'})

@@ -39,6 +39,13 @@ def _descriptor(term, vocab, assignment_field):
     }
 
 
+def source_other_publication(record):
+    source_type = record.get('source_resource_type') or {}
+    return (record.get('type') == 'Other' and isinstance(source_type, dict)
+            and source_type.get('type') == 'publication'
+            and source_type.get('subtype') == 'other')
+
+
 def attach_vocabulary(records, vocab):
     """Return copied records with controlled subjects/genres; retain source data.
 
@@ -63,7 +70,10 @@ def attach_vocabulary(records, vocab):
                 controlled.append(_descriptor(term, vocab, 'subjects'))
         record['controlled_subjects'] = controlled
         genre = genres.get(str(raw.get('type', '')).casefold())
-        if raw.get('type') and genre is None:
+        source_other = source_other_publication(raw)
+        # The repository's generic publication/other classification does not
+        # establish a narrower local genre. Preserve it without inventing one.
+        if raw.get('type') and genre is None and not source_other:
             raise ValueError('Undocumented resource genre: ' + raw['type'])
         record['genre_terms'] = [_descriptor(genre, vocab, 'type')] if genre else []
         record['vocabulary_version'] = vocab['scheme']['version']

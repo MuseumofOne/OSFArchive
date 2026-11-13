@@ -105,6 +105,66 @@
       "sources": [
         "metadata/osf-editions.json"
       ]
+    },
+    {
+      "event_id": "current-repository-metadata-reconciliation-2026-11-13",
+      "date": "2026-11-13",
+      "record_ids": [
+        "19864099",
+        "19864115",
+        "23395654",
+        "20383926",
+        "21715085",
+        "21241866",
+        "20593003",
+        "19963428",
+        "20100136",
+        "20100139",
+        "21786998",
+        "19863790",
+        "19863836",
+        "19863851"
+      ],
+      "action": "Reconcile current repository metadata after verified metadata-only corrections",
+      "note": "Current creator/contributor roles, language, alternate identifiers and the affected source journal, related-identifier and resource-type fields were checked against public Zenodo records. Field assertions distinguish this current review from the original dated metadata snapshots, which remain unchanged. Publication titles, authorship, dates, DOI/version identities, descriptions and deposited PDF bytes are unchanged. The operational manual remains distinct from its sibling dataset.",
+      "fields": [
+        "alternate_identifiers",
+        "contributor_roles",
+        "creators",
+        "discrepancies",
+        "identifier_validation",
+        "isbn_applicability",
+        "language",
+        "record_reviewed",
+        "related_identifiers",
+        "relations",
+        "source_contributors",
+        "source_identifiers",
+        "source_journal",
+        "source_modified",
+        "source_resource_type",
+        "source_review",
+        "type"
+      ],
+      "responsible_service": "Museum of One Digital Archive Library",
+      "method": "Source-qualified current metadata projection with independent public readback, regression checks and file/source preservation guards",
+      "date_kind": "Catalogue description event; not a publication, deposit, acquisition or new edition date",
+      "sources": [
+        "https://zenodo.org/records/19864099",
+        "https://zenodo.org/records/19864115",
+        "https://zenodo.org/records/23395654",
+        "https://zenodo.org/records/20383926",
+        "https://zenodo.org/records/21715085",
+        "https://zenodo.org/records/21241866",
+        "https://zenodo.org/records/20593003",
+        "https://zenodo.org/records/19963428",
+        "https://zenodo.org/records/20100136",
+        "https://zenodo.org/records/20100139",
+        "https://zenodo.org/records/21786998",
+        "https://zenodo.org/records/19863790",
+        "https://zenodo.org/records/19863836",
+        "https://zenodo.org/records/19863851"
+      ]
     }
   ]
 }

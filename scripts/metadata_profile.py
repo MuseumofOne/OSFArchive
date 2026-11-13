@@ -14,6 +14,7 @@ from urllib.parse import urlsplit
 from identities import (DEFAULT_ORIGIN, catalogue_uri, doi_uri, entity_uri, work_uri,
                         institutional_scope, institutional_target, edition_isbn)
 from relationship_assertions import typed_relationship_assertions, typed_entity_relationship_assertions, relation_register
+from vocabulary import source_other_publication
 
 ROOT = Path(__file__).resolve().parents[1]
 PROFILE = json.loads((ROOT / 'data/metadata-profile.json').read_text())
@@ -107,6 +108,8 @@ def validate_metadata_profile(records, origin=DEFAULT_ORIGIN):
                 errors.append(prefix + key + ' has no entries')
             if rule.get('format') == 'uri' and not _http(value):
                 errors.append(prefix + key + ' is not an HTTP(S) URI')
+        if record.get("type") == "Other" and not source_other_publication(record):
+            errors.append(prefix + 'Other type lacks explicit publication/other source classification')
         if not _valid_date(record.get('date')):
             errors.append(prefix + 'invalid or fabricated publication date')
         if record.get('institutional_match_scope') not in (None, institutional_scope(record)):

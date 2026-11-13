@@ -27,7 +27,12 @@ class ControlledVocabulary(unittest.TestCase):
             self.assertEqual(original['type'], result['type'])
             self.assertTrue(all(any(label.casefold() in {x.casefold() for x in [t['label']]+t['alternative_labels']} for t in result['controlled_subjects']) for label in original['subjects']))
             self.assertEqual(len({t['id'] for t in result['controlled_subjects']}), len(result['controlled_subjects']))
-            self.assertEqual(result['genre_terms'][0]['label'], original['type'])
+            if original['type'] == 'Other':
+                self.assertEqual(original['source_resource_type']['type'], 'publication')
+                self.assertEqual(original['source_resource_type']['subtype'], 'other')
+                self.assertEqual(result['genre_terms'], [])
+            else:
+                self.assertEqual(result['genre_terms'][0]['label'], original['type'])
             for assigned in result['controlled_subjects'] + result['genre_terms']:
                 self.assertIn(assigned['id'], self.terms)
                 self.assertIn('#' + assigned['id'], assigned['uri'])
@@ -60,6 +65,27 @@ class ControlledVocabulary(unittest.TestCase):
         record['type'] = 'Oral history'
         with self.assertRaisesRegex(ValueError, 'Undocumented resource genre'):
             attach_vocabulary([record], self.vocab)
+
+    def test_explicit_source_other_remains_unmapped_without_inventing_a_genre(self):
+        record = deepcopy(self.records[0])
+        record['type'] = 'Other'
+        record['source_resource_type'] = {'title': 'Other', 'type': 'publication', 'subtype': 'other'}
+        before = deepcopy(record)
+        result = attach_vocabulary([record], self.vocab)[0]
+        self.assertEqual(record, before)
+        self.assertEqual(result['type'], 'Other')
+        self.assertEqual(result['source_resource_type'], before['source_resource_type'])
+        self.assertEqual(result['genre_terms'], [])
+        self.assertEqual(result['subjects'], before['subjects'])
+
+    def test_other_without_matching_source_classification_still_fails(self):
+        for source_type in (None, {}, {'type': 'dataset'}, {'type': 'publication', 'subtype': 'article'}):
+            with self.subTest(source_type=source_type):
+                record = deepcopy(self.records[0])
+                record['type'] = 'Other'
+                record['source_resource_type'] = source_type
+                with self.assertRaisesRegex(ValueError, 'Undocumented resource genre'):
+                    attach_vocabulary([record], self.vocab)
 
     def test_local_framework_does_not_inherit_external_equivalence(self):
         for term in self.terms.values():
