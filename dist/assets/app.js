@@ -54,7 +54,13 @@ if(search){
  Object.values(fields).forEach(field=>field.addEventListener('input',update));
  sort.addEventListener('change',()=>{sortCards();updateURL();});
  $$('button[data-view]').forEach(button=>button.addEventListener('click',()=>{setView(button.dataset.view);updateURL();}));
- $('#reset-filters').addEventListener('click',()=>{Object.values(fields).forEach(field=>field.value='');update();search.focus();});
+ $('#reset-filters').addEventListener('click',()=>{
+  Object.values(fields).forEach(field=>field.value='');
+  sort.value='newest';
+  sortCards();
+  update();
+  search.focus();
+ });
  setView(view);sortCards();update();
 }
 const reading=$('#reading-dialog'),compare=$('#comparison-dialog');
