@@ -591,3 +591,6 @@ body.archive-registry {
     background: #f4efe3;
   }
 }
+
+/* Keep the dark explorer toggle independent of the paper-page summary colour. */
+.archive-registry .archive-explorer .ax-tree > details > summary { color: var(--ax-ink); }
