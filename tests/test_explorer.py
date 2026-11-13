@@ -40,7 +40,9 @@ class ExplorerContract(unittest.TestCase):
   for marker in ['ax-featured">','data-ax-cards>']:
    cards=html.split(marker,1)[1]
    self.assertLess(cards.index('data-ax-record="124"'),cards.index('data-ax-record="123"'))
-  self.assertIn('href="website-records.html">Latest website captures',html)
+  self.assertIn('href="catalogue.html">Browse all publications',html)
+  self.assertIn('href="catalogue.html?collection=Books%20%26%20volumes">Browse this collection',html)
+  self.assertNotIn('data-ax-collection=', html)
  def test_catalogue_filter_uses_shared_identifier_and_context_scope(self):
   record=self.fixture()[0]
   record.update(isbn='978-1-06-982034-1',keywords=['Source keyword'],alternate_titles=[{'title':'Source title variant'}],entity_links=[{'id':'artist','label':'A discussed artist'}])
