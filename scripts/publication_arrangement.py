@@ -1,7 +1,6 @@
 """Editorial browsing routes for public website publications and deposited editions."""
 
 from html import escape
-from pathlib import Path
 from identities import institutional_scope
 import json
 from urllib.parse import quote, urlsplit
@@ -139,6 +138,10 @@ def classify_capture(source, deposited):
         return THEORY, "Website publication"
     if slug in BOOK_PAGES:
         return BOOKS, "Website description"
+    declared = {tag.strip().casefold() for tag in source.get("subjects", [])}
+    for group in (METHODOLOGY, BOOKS, THEORY, ESSAYS):
+        if group.casefold() in declared:
+            return group, "Website publication"
     if source["kind"] == "post" or slug in ESSAY_PAGES:
         return ESSAYS, "Website publication"
     return None, "Website reference"
@@ -150,8 +153,6 @@ def load_publication_captures(work):
 
 
 def publication_inventory(captures, editions):
-    evidence_path = Path(__file__).resolve().parents[1] / "data/website-language-evidence.json"
-    language_evidence = json.loads(evidence_path.read_text()) if captures else {"records": {}}
     deposited = {canonical_key(r["institutional_url"]): r for r in editions if r.get("institutional_url")}
     rows = []
     for capture in captures:
@@ -164,8 +165,7 @@ def publication_inventory(captures, editions):
             editorial_subjects = list(EDITORIAL_SUBJECTS.get(slug, ()))
             if edition and not editorial_subjects:
                 editorial_subjects = edition.get("subjects", [])
-        observed = language_evidence["records"].get(source["url"], {})
-        document_language = observed.get("language") if observed.get("source_modified") == source["updated_at"] else None
+        document_language = capture.get("document_language") or {}
         rows.append({
             "id": capture["archive_id"],
             "title": source["title"],
@@ -180,8 +180,8 @@ def publication_inventory(captures, editions):
             "subject_basis": ("Public Ghost tags" if source.get("subjects") else
                               ("Linked deposited edition catalogue subjects" if edition else "Editorial access terms") if editorial_subjects else None),
             "source_declared_language": capture.get("language"),
-            "source_document_language": document_language,
-            "document_language_checked": language_evidence["reviewed"] if document_language else None,
+            "source_document_language": document_language.get("language"),
+            "document_language_checked": document_language.get("checked_at"),
             "source_publication_date": capture["original_published_at"],
             "current_source_publication_date": source["published_at"],
             "source_modified": source["updated_at"],

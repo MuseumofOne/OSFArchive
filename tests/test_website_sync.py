@@ -40,6 +40,27 @@ class Sync(unittest.TestCase):
   for field,value in [('status','draft'),('status','scheduled'),('visibility','members'),('visibility','paid'),('visibility','private'),('visibility',None),('published_at','2099-01-01T00:00:00Z')]:
    with self.subTest(field=field,value=value):
     row=copy.deepcopy(self.row);row['record'][field]=value;s,p,r=self.run_sync([row]);self.assertFalse(p);self.assertNotIn('source_id',str(r['excluded']))
+ def test_new_and_revised_pages_refresh_document_language_without_guessing_work_language(self):
+  class PublicPage(Fetch):
+   def __init__(self):super().__init__();self.calls=[]
+   def document_language(self,url):self.calls.append(url);return 'en-GB'
+  fetcher=PublicPage()
+  state,rows,_=self.run_sync(fetcher=fetcher)
+  self.assertEqual(rows[0]['document_language']['language'],'en-GB')
+  self.assertIsNone(rows[0]['language'])
+  state,_,_=self.run_sync(state=state,fetcher=fetcher)
+  self.assertEqual(len(fetcher.calls),1)
+  self.row['record']['html']='<p>Updated public text.</p>'
+  _,_,_=self.run_sync(state=state,fetcher=fetcher)
+  self.assertEqual(len(fetcher.calls),2)
+ def test_public_collection_tags_classify_new_pages_and_posts(self):
+  from publication_arrangement import classify_capture
+  source=dict(self.row['record'],kind='page',subjects=['Theory & Treatises'])
+  self.assertEqual(classify_capture(source,{}),('Theory & treatises','Website publication'))
+  source.update(kind='post',subjects=['Methodology'])
+  self.assertEqual(classify_capture(source,{}),('Methodology','Website publication'))
+  source.update(kind='page',subjects=[])
+  self.assertEqual(classify_capture(source,{}),(None,'Website reference'))
  def test_missing_metadata_reported_without_invention(self):
   r=self.row['record'];r['authors']=[];r.pop('updated_at');s,p,report=self.run_sync();self.assertIsNone(p[0]['language']);self.assertIsNone(p[0]['source']['updated_at']);self.assertTrue(report['validation_issues']);self.assertNotIn('bookEdition',encoded(p).decode())
  def test_unpublishing_withholds_copy_and_preserves_encrypted_history(self):

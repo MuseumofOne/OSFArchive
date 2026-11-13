@@ -155,6 +155,34 @@ class Fetcher:
         raise FetchFailure("Source request failed")
 
 
+    def document_language(self, url):
+        """Read only the public page head; absence is not a capture failure."""
+        if not url.startswith(ORIGIN + "/"):
+            return None
+        try:
+            with self.opener.open(Request(url, headers={
+                "User-Agent": "MuseumOfOne-WebsiteArchiveSync/1.0",
+                "Accept": "text/html",
+            }), timeout=5) as response:
+                if response.geturl() != url or response.headers.get_content_type() != "text/html":
+                    return None
+                parser = DocumentLanguage()
+                parser.feed(response.read(32768).decode("utf-8", errors="replace"))
+                return parser.language
+        except (FetchFailure, URLError, OSError):
+            return None
+
+
+class DocumentLanguage(HTMLParser):
+    language = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "html":
+            value = (dict(attrs).get("lang") or "").strip()
+            if re.fullmatch(r"[A-Za-z]{2,8}(?:-[A-Za-z0-9]{1,8})*", value):
+                self.language = value
+
+
 class SourceHead(HTMLParser):
     def __init__(self, html):
         super().__init__()
@@ -721,6 +749,10 @@ def reconcile(
     }
     key = (root / policy["public_key"]).read_bytes()
     fetcher.asset_index = copy.deepcopy(state.get("asset_index", {}))
+    # The reviewed snapshot seeds existing records. New and revised pages are
+    # checked directly, and transient evidence gaps are retried on the next run.
+    evidence_file = root / "data/website-language-evidence.json"
+    reviewed = json.loads(evidence_file.read_text()) if evidence_file.is_file() else {"records": {}}
     for entry in rows:
         r = entry["record"]
         rid = r.get("id", "")
@@ -797,7 +829,16 @@ def reconcile(
                     language = json.loads(supplied[0])
                 except ValueError:
                     language = supplied[0]
-        if not language:
+        document = (old or {}).get("document_language")
+        if not document or document["content_hash"] != h:
+            checked = reviewed["records"].get(source["url"], {})
+            if checked.get("language") and checked.get("source_modified") == source["updated_at"]:
+                document = {"language": checked["language"], "checked_at": reviewed["reviewed"], "content_hash": h}
+            else:
+                observe = getattr(fetcher, "document_language", None)
+                value = observe(source["url"]) if observe else None
+                document = {"language": value, "checked_at": at, "content_hash": h} if value else None
+        if not language and not document:
             warnings.append("Language not explicitly supplied for this web record")
         m = (
             copy.deepcopy(old)
@@ -860,6 +901,7 @@ def reconcile(
             source_modified=r.get("updated_at"),
             content_hash=h,
             asset_signature=asset_signature,
+            document_language=document,
             last_verified_at=at,
         )
         records[rid] = m
@@ -894,6 +936,7 @@ def reconcile(
                 "text": " ".join("".join(parser.text).split()),
                 "summary": summary,
                 "language": language,
+                "document_language": {k: document[k] for k in ("language", "checked_at")} if document else None,
                 "attachments": assets,
                 "validation_issues": warnings,
             }
