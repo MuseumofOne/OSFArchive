@@ -221,3 +221,99 @@ body:has(.archive-explorer.ax-expanded){overflow:hidden}
     padding: .4rem;
   }
 }
+
+/* The shared explorer is a dark cloth reading desk with parchment records. */
+.archive-explorer {
+  --ax-paper: #232820;
+  --ax-white: #30372d;
+  --ax-ink: #eee4d0;
+  --ax-muted: #c7bba2;
+  --ax-line: #c6ac774d;
+  --ax-accent: #d9bb82;
+  background: var(--ax-paper);
+  background-image: linear-gradient(120deg, #51402d24, transparent 55%);
+  border: 1px solid #9d875b;
+  box-shadow: 0 10px 30px #241b191c, inset 0 0 0 5px #c6ac7709;
+  color-scheme: dark;
+}
+.archive-explorer .ax-topline { color: #c7bba2; }
+.archive-explorer .ax-tree { border-top-color: #c6ac77; }
+.archive-explorer .ax-tree nav > .ax-tree-root { color: #eee4d0; }
+.archive-explorer .ax-tree-group { background: #ffffff03 !important; }
+.archive-explorer .ax-opening { padding-top: 4px; }
+.archive-explorer .ax-title { text-wrap: balance; }
+.archive-explorer .ax-title em { color: #d9bb82; }
+.archive-explorer .ax-entry-search {
+  background: #f6edda;
+  border-color: #bba273;
+  color-scheme: light;
+}
+.archive-explorer .ax-entry-search input { color: #29241e; }
+.archive-explorer .ax-entry-search input::placeholder { color: #6b5a47; opacity: 1; }
+.archive-explorer .ax-entry-search button {
+  background: #684044;
+  color: #fff2dc;
+  border-left: 1px solid #a28062;
+}
+.archive-explorer .ax-entry-search button:hover { background: #7c494c; }
+.archive-explorer .ax-collection-row:hover {
+  background: #c6ac770b;
+  color: #f3dfb5;
+  text-decoration: none;
+}
+.archive-explorer .ax-collection-row > span:first-child { color: #d9bb82; }
+.archive-explorer .ax-tabs a[aria-current="page"] {
+  background: #c6ac7712;
+  color: #f3dfb5;
+}
+.archive-explorer .ax-totals dd { color: #e7cea0; }
+.archive-explorer .ax-card {
+  --ax-ink: #29241e;
+  --ax-muted: #5d5144;
+  --ax-white: #f7efdf;
+  --ax-line: #c7b594;
+  --ax-accent: #703b38;
+  background: #f7efdf;
+  color: #29241e;
+  border-color: #c7b594;
+  box-shadow: 2px 3px 0 #0b100c66;
+  color-scheme: light;
+}
+.archive-explorer .ax-reference {
+  color: #594937;
+  border-bottom: 1px solid #c7b594;
+  padding-bottom: 10px;
+}
+.archive-explorer .ax-cover { background: #ded1b9; }
+.archive-explorer .ax-type-cover {
+  background: #29372d;
+  color: #faf0d9;
+  border-left-color: #bca16a;
+  outline: 1px solid #c9ac7155;
+  outline-offset: -6px;
+}
+.archive-explorer .ax-card:nth-child(4n+2) .ax-type-cover { background: #563435; }
+.archive-explorer .ax-card:nth-child(4n+3) .ax-type-cover { background: #423a2e; }
+.archive-explorer [aria-pressed="true"] {
+  background: #d6bd88 !important;
+  color: #29241e !important;
+}
+.archive-explorer .discovery-snippet { background: transparent; }
+.archive-explorer .discovery-result :is(h2, h3) { color: var(--ax-ink); }
+.archive-explorer ::selection { background: #d6bd88; color: #29241e; }
+@media print {
+  .archive-explorer {
+    --ax-paper: white;
+    --ax-white: white;
+    --ax-ink: #222;
+    --ax-muted: #444;
+    --ax-line: #aaa;
+    --ax-accent: #444;
+    background: white;
+    color: #222;
+    box-shadow: none;
+    border: 0;
+  }
+  .archive-explorer :is(.ax-topline, .ax-title em, .ax-totals dd, .ax-collection-row > span:first-child) { color: #222; }
+  .archive-explorer .ax-card { box-shadow: none; }
+}

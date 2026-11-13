@@ -7,7 +7,10 @@ body.archive-registry {
   --line: #c7b99f;
   --wine: #703b38;
   --green: #2e4035;
+  --cloth: #232820;
+  --brass: #c6ac77;
 }
+
 body.archive-registry { background: var(--paper); font-size: 16px; }
 .archive-registry .shell { max-width: 1540px; padding-inline: clamp(22px, 4vw, 70px); }
 .archive-registry .utility { font-size: 10px; color: #4f584f; letter-spacing: .07em; padding-block: 13px; }
@@ -322,4 +325,160 @@ body.archive-registry { background: var(--paper); font-size: 16px; }
     white-space: normal;
     overflow-wrap: anywhere;
   }
+}
+
+/* Dark academia: a cloth-bound frame around the parchment reading room.
+   Only presentation changes here; record text and source images remain intact. */
+body.archive-registry {
+  background: #20231e;
+  background-image: linear-gradient(115deg, #332c2329, transparent 55%);
+}
+.archive-registry > main.shell {
+  background: var(--paper);
+  border-inline: 1px solid #b49b6940;
+  box-shadow: 0 18px 70px #0003;
+  padding-bottom: clamp(24px, 4vw, 64px);
+}
+.archive-registry > div.shell {
+  --ink: #eee4d0;
+  --muted: #c7bba2;
+  --line: #c6ac774d;
+  --wine: #d9bb82;
+  --white: #282c24;
+  color: var(--ink);
+}
+.archive-registry .utility {
+  border-top: 3px solid var(--brass);
+  color: var(--muted);
+  border-bottom-color: var(--line);
+  padding-block: 14px;
+}
+.archive-registry .header {
+  border-bottom: 1px solid var(--line);
+  padding-block: clamp(25px, 3vw, 42px);
+}
+.archive-registry .brand strong {
+  color: #f1e8d5;
+  font-weight: 400;
+}
+.archive-registry .brand small { color: #c6ac77; }
+.archive-registry .nav a { color: #eee4d0; }
+.archive-registry .nav a:hover,
+.archive-registry .nav a[aria-current="page"] {
+  color: #dfc795;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.archive-registry .reading-list-button {
+  border-color: #a28c64;
+  color: #eee4d0;
+  background: transparent;
+}
+.archive-registry .reading-list-button span {
+  background: #d6bd88;
+  color: #28241d;
+}
+.archive-registry .footer {
+  border-top: 1px solid var(--brass);
+  padding-top: 40px;
+}
+.archive-registry .footer a:hover { color: #dfc795; }
+.archive-registry .page-head {
+  padding-block: clamp(30px, 4vw, 56px) 35px;
+  border-bottom-color: #b7a17c;
+}
+.archive-registry .page-head h1,
+.archive-registry .item-head h1 { color: #392e25; }
+.archive-registry .eyebrow::before { border-color: #8c603d; }
+.archive-registry .collection-tree {
+  border-top-color: #8d6f43;
+  padding-top: 20px;
+}
+.archive-registry .tree-group { border-color: #c7b99f; }
+.archive-registry .tree-group > summary { padding-right: 0; }
+.archive-registry .tree-group small {
+  position: static;
+  display: block;
+  margin-top: .4rem;
+  font-size: 10px;
+  line-height: 1.6;
+}
+.archive-registry :is(.catalogue-card, .publication-card) {
+  background: #f7efdf;
+  border-color: #c7b594;
+  box-shadow: 2px 3px 0 #d9c9ac;
+}
+.archive-registry .jacket-reference {
+  background: #e8dcc5;
+  color: #594937;
+  border-bottom-color: #a38a60;
+  padding: .6rem .65rem;
+}
+.archive-registry .jacket-reference small { color: #594937; }
+.archive-registry .cover-well {
+  background: #ded1b9;
+  background-image: linear-gradient(135deg, #f1e5cf55, #aa947b12);
+}
+.archive-registry .cover-well .cover-placeholder {
+  background: #29372d !important;
+  border-left-color: #bca16a;
+  box-shadow: 4px 5px 9px #35261729;
+}
+.archive-registry .catalogue-card:nth-child(4n+2) .cover-well .cover-placeholder {
+  background: #563435 !important;
+}
+.archive-registry .catalogue-card:nth-child(4n+3) .cover-well .cover-placeholder {
+  background: #423a2e !important;
+}
+.archive-registry :is(.register-heading, .archive-item-register::before) {
+  background: #e6d8bd;
+  border-color: #a48b60;
+}
+.archive-registry :is(.metadata, .context-register, .assertion-table) { background: #f5eddd; }
+.archive-registry :is(.access-card, .citation, .item-reader-access, .reading-copy-audit, .reader-object-record) {
+  background: #e7dcc6;
+  border-color: #b5a17d;
+  box-shadow: none;
+}
+.archive-registry .citation { border-left: 3px solid #703b38; }
+.archive-registry .archive-note {
+  background: #29372d;
+  color: #f1e8d5;
+  border-color: #9c855d;
+}
+.archive-registry .archive-note :is(p, .eyebrow) { color: #d8cbb2; }
+.archive-registry .archive-note a { color: #dfc795; }
+.archive-registry .archive-note::before { border-color: #bc9f6559; }
+.archive-registry .discovery-snippet {
+  border-left-color: #9d794b;
+  background: #f7efdf;
+}
+.archive-registry .archive-explorer .discovery-snippet { background: transparent; }
+.archive-registry .discovery-fallback { background: #e7dcc6; }
+.archive-registry .archive-dialog {
+  background: #f4ebd9;
+  color: #29241e;
+  border: 1px solid #a48b60;
+}
+.archive-registry .archive-dialog::backdrop { background: #141712bb; }
+.archive-registry .dialog-head { border-bottom-color: #b5a17d; }
+.archive-registry .archive-toast { background: #29372d; color: #f1e8d5; }
+.archive-registry ::selection { background: #703b38; color: #fff5e1; }
+@media (max-width: 760px) {
+  .archive-registry > main.shell { border-inline: 0; }
+  .archive-registry .header { padding-block: 25px; }
+}
+@media print {
+  body.archive-registry { background: white; }
+  .archive-registry > main.shell { background: white; border: 0; box-shadow: none; }
+  .archive-registry > div.shell {
+    --ink: #222;
+    --muted: #444;
+    --line: #aaa;
+    color: #222;
+  }
+  .archive-registry :is(.brand strong, .brand small) { color: #222; }
+  .archive-registry .utility { color: #444; border-color: #888; }
+  .archive-registry .archive-note { background: white; color: #222; }
+  .archive-registry .archive-note :is(p, a, .eyebrow) { color: #222; }
 }
