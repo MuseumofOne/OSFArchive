@@ -4,12 +4,12 @@ HTML, public record projection and interactions are generated from the reviewed
 catalogue; Ghost consumes the generated partial rather than a parallel design.
 """
 from html import escape
-from urllib.parse import quote
 import json
 import re
 from pathlib import Path
 from image_dimensions import attributes
 from integration_search import searchable_text
+from publication_arrangement import METHODOLOGY, collection_link
 
 
 def e(value):
@@ -43,11 +43,16 @@ def render_explorer(records, programmes, origin, *, standalone=False):
     html=f'''<section class="archive-explorer" id="archive-explorer" data-archive-explorer data-standalone="{str(standalone).lower()}" data-origin="{e(origin)}" aria-label="Interactive archive explorer">
 <div class="ax-topline"><span>Archive registry / Item-level records</span><a data-ax-handoff href="{e(origin+'/')}">Open full archive ↗</a><button type="button" data-ax-expand aria-pressed="false" hidden>Expand explorer</button></div>
 <div class="ax-workspace"><aside class="ax-tree" aria-label="Explorer collection tree"><details><summary>Browse the archive<small>{len(records)} items · {chapters} analytic parts</small></summary><nav aria-label="Explorer pathways"><a class="ax-tree-root" href="{e(dest('finding-aid.html'))}">Museum of One<br>Digital Archive Library</a>{nav('Overview','overview','index.html')}{nav('Item register <small>'+str(len(records))+'</small>','catalogue','catalogue.html')}'''
+    def collection_attributes(group):
+        href = e(dest(collection_link(group)))
+        filter_attr = f' data-ax-collection="{e(group)}"' if group != METHODOLOGY else ''
+        return f'href="{href}"{filter_attr}'
+
     for group in groups:
         rs=[r for r in records if r['collection']==group]
-        html+=f'<details class="ax-tree-group"><summary>{e(group)}<small>{len(rs):02d}</small></summary><a href="{e(dest("catalogue.html?collection="+quote(group)))}" data-ax-collection="{e(group)}">Browse this collection →</a><ul>'+''.join(f'<li><a data-ax-handoff href="{e(dest("items/"+str(r["id"])+".html"))}"><small>{e(r["accession"])}</small>{e(r.get("short_title") or r["title"])}</a></li>' for r in rs)+'</ul></details>'
+        html+=f'<details class="ax-tree-group"><summary>{e(group)}<small>{len(rs):02d}</small></summary><a {collection_attributes(group)}>Browse this collection →</a><ul>'+''.join(f'<li><a data-ax-handoff href="{e(dest("items/"+str(r["id"])+".html"))}"><small>{e(r["accession"])}</small>{e(r.get("short_title") or r["title"])}</a></li>' for r in rs)+'</ul></details>'
     html+=nav('Discover across the archive','discover','research-discovery.html')+nav('Reading list <span data-ax-count>0</span>','reading','catalogue.html')
-    for path,label in [('contents.html','Chapters & essays'),('people.html','People & organisations'),('artworks.html','Artworks discussed'),('programmes.html','Research pathways'),('vocabulary.html','Discovery vocabulary'),('metadata-quality.html','Catalogue quality'),('finding-aid.html','Finding aid')]:
+    for path,label in [('methodology.html','Methodology'),('contents.html','Chapters & essays'),('people.html','People & organisations'),('artworks.html','Artworks discussed'),('programmes.html','Research pathways'),('vocabulary.html','Discovery vocabulary'),('metadata-quality.html','Catalogue quality'),('finding-aid.html','Finding aid')]:
         html+=f'<a href="{e(dest(path))}">{label} ↗</a>'
     html+='</nav><p class="ax-note">Published items and analytic parts. Editorial arrangement is described in the finding aid.</p></details></aside><div class="ax-workbench">'
     html+=f'''<div class="ax-opening"><p class="ax-label">Research catalogue / Museum of One</p><{heading} class="ax-title" id="ax-title">The archive,<br><em>in context.</em></{heading}><p>Read the publications. Follow ideas, artworks and people through a connected record of independent inquiry.</p><form class="ax-entry-search" data-ax-entry action="{e(dest('research-discovery.html'))}" method="get" role="search"><label for="ax-entry-query" class="ax-sr">Discover across the archive</label><input id="ax-entry-query" name="q" type="search" placeholder="A title, person, artwork or idea…"><button type="submit">Discover ↗</button></form><dl class="ax-totals">'''
@@ -56,7 +61,7 @@ def render_explorer(records, programmes, origin, *, standalone=False):
     html+='<div data-ax-panel="overview"><div class="ax-section-head"><h3>The collection register</h3>'+nav('Browse publication records ↗','catalogue','catalogue.html')+'</div>'
     for i,group in enumerate(groups):
         rs=[r for r in records if r['collection']==group]
-        html+=f'<a class="ax-collection-row" href="{e(dest("catalogue.html?collection="+quote(group)))}" data-ax-collection="{e(group)}"><span>{i+1:02d}</span><span><strong>{e(group)}</strong><small>Editorial arrangement / Item-level description</small></span><span>{len(rs):02d} described items ↗</span></a>'
+        html+=f'<a class="ax-collection-row" {collection_attributes(group)}><span>{i+1:02d}</span><span><strong>{e(group)}</strong><small>Editorial arrangement / Item-level description</small></span><span>{len(rs):02d} described items ↗</span></a>'
     html+='<div class="ax-section-head"><h3>On the reading desk</h3>'+nav('View the complete shelf ↗','catalogue','catalogue.html')+'</div><div class="ax-grid ax-featured">'+''.join(card(r) for r in newest[:4])+'</div></div>'
     def options(values):return ''.join(f'<option value="{e(v)}">{e(v)}</option>' for v in values)
     html+=f'''<section data-ax-panel="catalogue" aria-labelledby="ax-catalogue-heading" hidden><div class="ax-section-head"><h3 id="ax-catalogue-heading">The item register</h3><a href="{e(dest('website-records.html'))}">Latest website captures ↗</a></div><form data-ax-filter class="ax-filters" role="search" action="{e(dest('catalogue.html'))}" method="get"><label>Search the catalogue<input aria-label="Search the catalogue" name="q" type="search" placeholder="Title, creator, subject or DOI"></label><label>Collection<select aria-label="Collection" name="collection"><option value="">All collections</option>{options(groups)}</select></label><label>Publication year<select aria-label="Publication year" name="year"><option value="">All years</option>{options(sorted({r['date'][:4] for r in records},reverse=True))}</select></label><label>Material type<select aria-label="Material type" name="type"><option value="">All types</option>{options(sorted({r['type'] for r in records}))}</select></label><label>Sort<select aria-label="Sort" name="sort"><option value="newest">Latest source publication</option><option value="reference">Reference order</option><option value="oldest">Earliest source publication</option><option value="title">Title A–Z</option></select></label><button type="reset">Clear filters</button><button class="ax-fallback-submit" type="submit">Search</button></form><div class="ax-resultbar"><p data-ax-results role="status">{len(records)} records</p><div role="group" aria-label="Catalogue presentation"><button type="button" data-ax-layout="shelf" aria-pressed="true">Shelf</button><button type="button" data-ax-layout="list" aria-pressed="false">List</button></div></div><div class="ax-grid" data-ax-cards>'''+''.join(card(r) for r in newest)+'''</div><p data-ax-empty hidden>No matching records. Try fewer words or clear the filters.</p></section>'''

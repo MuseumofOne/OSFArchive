@@ -8,6 +8,8 @@ from urllib.parse import urlsplit
 from website_sync import digest
 from website_metadata import capture_schema
 from image_dimensions import dimensions
+from publication_arrangement import (BOOKS, ESSAYS, THEORY, METHODOLOGY,
+                                     collection_anchor, publication_grid, publication_inventory)
 
 
 def access_asset(asset, file, out, origin, catalogue):
@@ -98,7 +100,7 @@ def capture_publication_date(capture):
     return date if date.tzinfo else date.replace(tzinfo=timezone.utc)
 
 
-def build_website_pages(work, out, write, layout, origin):
+def build_website_pages(work, out, write, layout, origin, *, methodology=None, methodology_desc=None):
     work = Path(work)
     out = Path(out)
     # A fresh whitelist is rebuilt each time, never leave a withdrawn readable file.
@@ -131,28 +133,47 @@ def build_website_pages(work, out, write, layout, origin):
     metadata = []
     derivatives = set()
     link_changes = 0
-    intro = '<div class="page-head"><div class="eyebrow">Website record / Automatic capture</div><h1>The published website, held in the archive.</h1><p>Public posts and pages, including essays, research, books’ web descriptions and public tool pages. Website records remain distinct from deposited publication editions.</p></div>'
+    inventory = publication_inventory(current, catalogue)
+    groups = (BOOKS, ESSAYS, THEORY, METHODOLOGY)
+    arranged = {group: [row for row in inventory if row["collection"] == group] for group in groups}
+    references = [row for row in inventory if row["collection"] is None]
+    assert sum(map(len, arranged.values())) + len(references) == len(current)
+    e = lambda x: escape(str(x or ""), quote=True)
+    intro = '<div class="page-head"><div class="eyebrow">Website captures</div><h1>Published website records</h1><p>Browse public Museum of One writing, research and tools by collection. Each card links to its preserved website capture and to a deposited edition where the source match is established.</p></div>'
     intro += (
-        '<div class="reading"><p>Reconciliation: '
-        + e(report.get("checked_at", "Not yet run"))
-        + " · "
-        + e(len(current))
-        + ' current readable web captures. Earlier revisions are retained as encrypted recovery objects, not overwritten.</p><p><a href="metadata/website-sync.json">Reconciliation report</a> · <a href="metadata/website-captures.json">Capture metadata</a></p><h2>Latest website publications</h2><ul class="source-list">'
+        f'<p>{len(current)} public captures · Last reconciliation {e(report.get("checked_at", "Not yet run"))}</p>'
+        '<p><a href="metadata/website-sync.json">Reconciliation report</a> · '
+        '<a href="metadata/publication-arrangement.json">Classification inventory</a></p>'
+        '<nav aria-label="Website publication collections">'
+        + " · ".join(f'<a href="#{collection_anchor(group)}">{e(group)}</a>' for group in groups)
+        + ' · <a href="#website-reference">Website reference pages</a></nav>'
     )
-    for p in sorted(current, key=capture_publication_date, reverse=True):
-        r = p["source"]
-        page = "website/" + p["archive_id"] + ".html"
-        intro += (
-            '<li><a href="'
-            + page
-            + '">'
-            + e(r["title"])
-            + "</a><small>"
-            + e(r["kind"])
-            + " · Website publication "
-            + e(p["original_published_at"])
-            + "</small></li>"
-        )
+    for group, rows in arranged.items():
+        anchor = collection_anchor(group)
+        intro += f'<section class="section" id="{anchor}"><div class="section-head"><h2>{e(group)}</h2><span>{len(rows)} website records</span></div>'
+        intro += publication_grid(rows) + "</section>"
+    intro += '<section class="section" id="website-reference"><h2>Website reference pages</h2><p>Programme pages, directories and institutional information.</p>'
+    intro += publication_grid(references) + "</section>"
+
+    if methodology is not None:
+        methods = arranged[METHODOLOGY]
+        papers = [row for row in methods if row["role"] != "Research tool or guide"]
+        tools = [row for row in methods if row["role"] == "Research tool or guide"]
+        sections = '<section class="section"><h2>Website publications and research demonstrations</h2>' + publication_grid(papers) + "</section>"
+        sections += '<section class="section"><h2>Research tools and guides</h2>' + publication_grid(tools) + "</section>"
+        sections += '<p><a href="evidence.html">Explore the published RAI evidence records ↗</a></p>'
+        write("methodology.html", layout("Methodology", methodology_desc,
+              methodology.replace('<div data-methodology-website></div>', sections),
+              "methodology.html", active="methodology"))
+        paths.append("methodology.html")
+
+    write("metadata/publication-arrangement.json", json.dumps({
+        "website_capture_count": len(inventory),
+        "deposited_edition_count": len(catalogue),
+        "collections": {group: len(rows) for group, rows in arranged.items()},
+        "reference_count": len(references),
+        "records": inventory,
+    }, ensure_ascii=False, indent=2))
     for p in current:
         r = p["source"]
         rid = p["archive_id"]
@@ -396,7 +417,6 @@ def build_website_pages(work, out, write, layout, origin):
                 "url": url,
             }
         )
-    intro += "</ul></div>"
     write(
         "website-records.html",
         layout(

@@ -157,3 +157,26 @@ body.archive-registry { background: var(--paper); font-size: 16px; }
 
 /* Keep the existing paper palette; make small register labels readable. */
 .archive-registry :is(.shelf-label,.jacket-reference,.jacket-reference small,.archive-note .eyebrow){color:#535c54}
+
+/* Give each catalogue card enough context to choose a record. */
+.archive-registry .book-card .card-abstract {
+  display: block;
+  margin-top: .65rem;
+}
+.archive-registry .record-row .row-summary {
+  font-family: var(--sans);
+  font-size: .8125rem;
+  margin-top: .4rem;
+}
+.archive-registry .publication-card .eyebrow {
+  margin: 0 0 .55rem;
+}
+.archive-registry .publication-card h3 a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: .06em;
+  text-underline-offset: .16em;
+}
+.archive-registry .publication-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+}

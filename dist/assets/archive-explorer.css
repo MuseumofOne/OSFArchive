@@ -119,3 +119,9 @@ body:has(.archive-explorer.ax-expanded){overflow:hidden}
 @media print{.archive-explorer .ax-tree,.archive-explorer .ax-tabs,.archive-explorer form,.archive-explorer button{display:none!important}.archive-explorer .ax-workspace{display:block}.archive-explorer{background:white;border:0;padding:0}}
 /* Host placement changes no Ghost shell or article typography. */
 .moo-archive-explorer-wrap{max-width:1540px;margin:0 auto;padding:0 clamp(16px,3vw,40px)}
+
+/* Summaries are part of both shelf and list presentations. */
+.archive-explorer .ax-card-summary,
+.archive-explorer .ax-grid[data-layout=list] .ax-card-summary {
+  display: block;
+}
