@@ -1,12 +1,12 @@
 /* Museum of One reading room. Local, independent presentation tokens. */
-:root {
-  --paper: #f4f1e9;
-  --white: #fffdf7;
-  --ink: #252e2b;
-  --muted: #62665e;
-  --line: #cbc9bd;
-  --wine: #754936;
-  --green: #293f38;
+body.archive-registry {
+  --paper: #eee7d8;
+  --white: #fbf5e8;
+  --ink: #29241e;
+  --muted: #5d5144;
+  --line: #c7b99f;
+  --wine: #703b38;
+  --green: #2e4035;
 }
 body.archive-registry { background: var(--paper); font-size: 16px; }
 .archive-registry .shell { max-width: 1540px; padding-inline: clamp(22px, 4vw, 70px); }
@@ -205,31 +205,96 @@ body.archive-registry { background: var(--paper); font-size: 16px; }
   gap: .75rem;
 }
 
-/* Let generated catalogue jackets expand when titles wrap. */
-.archive-registry .cover-well:has(.cover-placeholder),
-.archive-registry .catalogue-grid[data-view=list] .cover-well:has(.cover-placeholder) {
+/* Preserve reading width before fitting another book onto the shelf. */
+.archive-registry .book-grid,
+.archive-registry .catalogue-grid[data-view="grid"] {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+}
+.archive-registry .book-grid > *,
+.archive-registry .catalogue-grid > *,
+.archive-registry .book-card,
+.archive-registry .publication-card,
+.archive-registry .jacket-reference > *,
+.archive-registry .archive-workbench :is(h1, h2, h3, dd, li, p) {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+.archive-registry .jacket-reference {
+  flex-wrap: wrap;
+  background: #e6dcc8;
+}
+.archive-registry .catalogue-card {
+  background: var(--white);
+  box-shadow: 2px 3px 0 #d8cab0;
+}
+.archive-registry .cover-well {
+  background: #e7ddcb;
+}
+.archive-registry .hero-art {
+  background: #ddd0b8;
+}
+.archive-registry .cover-well:has(.cover-placeholder) {
+  container-type: inline-size;
   aspect-ratio: auto;
   max-height: none;
   min-width: 0;
+  padding: clamp(.45rem, 1vw, .9rem);
 }
-.archive-registry .cover-placeholder {
-  box-sizing: border-box;
+.archive-registry .cover-well .cover-placeholder {
+  width: 100%;
+  max-width: 20rem;
+  min-height: min(15rem, 116cqi);
   height: auto;
-  min-width: 0;
-  gap: 12px;
+  padding: clamp(.45rem, 6cqi, 1.25rem);
+  gap: clamp(.65rem, 6cqi, 1.3rem);
+  background: #293b31 !important;
+  border-left: 3px solid #b99758;
+  color: #faf0d9;
   overflow-wrap: anywhere;
 }
-.archive-registry .catalogue-grid[data-view=list] .cover-placeholder {
-  gap: 5px;
+.archive-registry .catalogue-card:nth-child(4n+2) .cover-well .cover-placeholder {
+  background: #583637 !important;
 }
-.archive-registry .book-card,
-.archive-registry .publication-card {
+.archive-registry .cover-well .cover-placeholder::before {
+  inset: 5px;
+  border-color: #c9ac7166;
+}
+.archive-registry .cover-well .cover-title {
+  font: 400 clamp(.95rem, 10cqi, 1.65rem)/1.23 var(--serif);
+  text-wrap: pretty;
+}
+.archive-registry .cover-well :is(.cover-kicker, .cover-author) {
+  font-size: clamp(.58rem, 4.8cqi, .72rem);
+  letter-spacing: .045em;
+}
+.archive-registry .catalogue-grid[data-view="list"] .book-card:has(.cover-placeholder) {
+  display: block;
+}
+.archive-registry .catalogue-grid[data-view="list"] .cover-well:has(.cover-placeholder) {
+  display: none;
+}
+.archive-registry .catalogue-grid[data-view="list"] .catalogue-card:has(.cover-placeholder) .record-tools {
+  margin-inline-start: 0;
+}
+.archive-registry .archive-workbench :is(input, select, button) {
   min-width: 0;
-  overflow-wrap: anywhere;
+  max-width: 100%;
 }
-@media (max-width: 420px) {
-  .archive-registry .book-grid,
-  .archive-registry .catalogue-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
+.archive-registry :focus-visible {
+  outline: 2px solid var(--wine);
+  outline-offset: 3px;
+}
+
+.archive-registry .book-card .card-abstract {
+  font: .875rem/1.65 var(--sans);
+  color: var(--muted);
+}
+.archive-registry .jacket-reference {
+  padding: .45rem .55rem;
+  color: var(--muted);
+}
+.archive-registry .record-tools {
+  flex-wrap: wrap;
+  row-gap: .5rem;
 }
