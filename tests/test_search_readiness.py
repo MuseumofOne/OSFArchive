@@ -37,7 +37,11 @@ class SearchReadiness(unittest.TestCase):
                              hashlib.sha256((DIST/'assets/documents'/f'{path.stem}.pdf').read_bytes()).digest())
 
     def test_datasets_expose_real_description_and_download(self):
-        for rid in ('20100136','20100139'):
+        records = json.loads((ROOT/'data/catalogue.json').read_text())
+        dataset_ids = [r['id'] for r in records if r['type'] == 'Dataset']
+        self.assertIn('20100139', dataset_ids)
+        self.assertNotIn('20100136', dataset_ids)
+        for rid in dataset_ids:
             graph = json.loads((DIST/'metadata'/f'{rid}.jsonld').read_text())['@graph']
             nodes = {x['@id']:x for x in graph}
             dataset = next(x for x in graph if x.get('@type') == 'Dataset')
@@ -51,5 +55,22 @@ class SearchReadiness(unittest.TestCase):
             page = (DIST/'items'/f'{rid}.html').read_text()
             self.assertIn('repository-description-text', page)
             self.assertNotIn('<summary>Read the complete repository description', page)
+
+    def test_operational_manual_is_not_misrepresented_as_a_dataset(self):
+        rid = '20100136'
+        graph = json.loads((DIST/'metadata'/f'{rid}.jsonld').read_text())['@graph']
+        nodes = {x['@id']:x for x in graph}
+        work = nodes['https://doi.org/10.5281/zenodo.' + rid]
+        self.assertEqual(work['@type'], 'CreativeWork')
+        self.assertFalse(any(x.get('@type') == 'Dataset' for x in graph))
+        self.assertGreater(len(work['description']), 50)
+        self.assertEqual(work['identifier']['value'], '10.5281/zenodo.' + rid)
+        self.assertTrue(work['encoding'])
+        for ref in work['encoding']:
+            download = nodes[ref['@id']]
+            self.assertEqual(download['@type'], 'MediaObject')
+            self.assertEqual(download['encodingFormat'], 'application/pdf')
+            self.assertEqual(download['encodesCreativeWork']['@id'], work['@id'])
+        self.assertIn('repository-description-text', (DIST/'items'/f'{rid}.html').read_text())
 
 if __name__ == '__main__': unittest.main()
