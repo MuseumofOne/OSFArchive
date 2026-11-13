@@ -37,7 +37,7 @@
       "paragraphs": [
         "Zenodo deposit metadata and deposited files are the primary sources for the selected publications. Museum of One work pages provide institutional corroboration and research-programme context. The catalogue preserves source titles, identifiers and source snapshots alongside qualified local description; disagreement between sources is recorded rather than silently resolved.",
         "A local digital reading copy is an access copy of the identified deposited file. Its manifest records the source URL, original filename, byte extent, checksums and verification date. Source metadata retrieval dates and local file verification dates are stated separately. The repository remains the source of record for the deposited version.",
-        "The three current browsing groupings are a local editorial arrangement, not an original order, archival series or repository collection. No donation, physical transfer, chain of custody or ownership of originals is inferred from public online availability.",
+        "The current browsing groupings are a local editorial arrangement, not an original order, archival series or repository collection. No donation, physical transfer, chain of custody or ownership of originals is inferred from public online availability.",
         "For any future primary archival material, description must retain the creating person or body, documented custodial history, transfer or acquisition basis where known, original grouping and order where evidenced, restrictions and links to related records. Unknown custody or order must remain unknown. Contextual relationships must not be replaced by the library publication arrangement."
       ]
     },

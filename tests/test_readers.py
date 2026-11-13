@@ -24,6 +24,20 @@ class ReadingCopies(unittest.TestCase):
     p=Contract((DIST/'read'/(r['id']+'.html')).read_text());self.assertEqual(p.body['data-root'],'../');self.assertEqual(len(p.ids),len(set(p.ids)))
     for id in needed:self.assertIn(id,p.ids)
     manifest=json.loads((DIST/'metadata/readers'/(r['id']+'.json')).read_text());self.assertEqual(manifest['pdf_url'],'../assets/documents/'+r['id']+'.pdf')
+ def test_reader_rights_separator_does_not_duplicate_existing_punctuation(self):
+  import sys,copy
+  sys.path.insert(0,str(ROOT/'scripts'))
+  from readers import build_reader_pages
+  source=json.loads((ROOT/'data/catalogue.json').read_text())[0]
+  source['reading_copy']=self.copies[0]
+  for rights in ('In Copyright','In Copyright.'):
+   with self.subTest(rights=rights):
+    record=copy.deepcopy(source);record['license']={'label':rights};pages={}
+    build_reader_pages([record],lambda path,text:pages.update({path:text}),lambda title,description,content,*a,**kw:content,'https://archive.museumofone.art')
+    rendered=pages['read/'+record['id']+'.html']
+    self.assertIn('In Copyright. Original file retained unchanged',rendered)
+    self.assertNotIn('In Copyright..',rendered)
+    self.assertEqual(record['license']['label'],rights)
  def test_metadata_distinguishes_local_copy_from_deposited_edition(self):
   for r in self.copies:
    data=json.loads((DIST/'metadata'/(r['id']+'.json')).read_text());self.assertEqual(data['reading_copy']['sha256'],r['sha256']);self.assertEqual(data['page_count'],r['page_count']);self.assertTrue(any(a['field']=='reading_copy' and a['status']=='derived_file_inspection' for a in data['field_assertions']))

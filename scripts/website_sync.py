@@ -803,7 +803,7 @@ def reconcile(
                     "url": r["feature_image"],
                     "role": "image",
                     "label": r.get("feature_image_alt")
-                    or r.get("feature_image_caption")
+                    or " ".join("".join(Readable(r.get("feature_image_caption")).text).split())
                     or "Source feature image",
                 }
             )

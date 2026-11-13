@@ -1,13 +1,17 @@
 # Deployment, installation and rollback
 
-**Current 5 November 2026:** Ghost theme 1.12.2 and automatic public website preservation are deployed. Both native and global discovery refresh from the live reconciled archive, with a curated-only fallback. See [current release verification](RELEASE-WEBSITE-SYNC-2026-11-05.md) and [synchronization operations](WEBSITE-SYNCHRONIZATION.md). Earlier dated preparation, staging and snapshot descriptions below are historical context, not a current deployment hold or configuration instruction.
+For the current release, start with [deployment status](../DEPLOYMENT-STATUS.md), the latest successful public workflow and the verified theme `CURRENT-RELEASE.json` in the designated Desktop folder. [Open on either Mac](OPEN-ON-EITHER-MAC.md) describes receipt and source/ZIP verification. Confirm actual installed Ghost state before changing it. Current authority comes from these verified receipts and production evidence, not a version named in historical instructions.
+
+## Historical publication milestones
+
+**5 November 2026:** Ghost theme 1.12.2 and automatic public website preservation are deployed. Both native and global discovery refresh from the live reconciled archive, with a curated-only fallback. See [current release verification](RELEASE-WEBSITE-SYNC-2026-11-05.md) and [synchronization operations](WEBSITE-SYNCHRONIZATION.md). Earlier dated preparation, staging and snapshot descriptions below are historical context, not a current deployment hold or configuration instruction.
 
 
-**Current publication:** the archive and native Ghost 1.12.0 entrance were published on 4 November 2026 after explicit authorization. See [current deployment status](../DEPLOYMENT-STATUS.md) for live addresses, HTTPS evidence, tests and the exact CMS scope. The staging authorization notes below record the earlier preparation phase; they are not a current deployment hold.
+**4 November 2026 publication:** the archive and native Ghost 1.12.0 entrance were published on 4 November 2026 after explicit authorization. See [current deployment status](../DEPLOYMENT-STATUS.md) for live addresses, HTTPS evidence, tests and the exact CMS scope. The staging authorization notes below record the earlier preparation phase; they are not a current deployment hold.
 
-## Staging status and authorization
+## Historical staging status and authorization
 
-The implementation is staged on `integration/ghost-archive-consolidation`; production deployment, DNS changes and overwriting live services are not authorized by the current task. The commands below are a runbook for a later authorized release, not actions already performed.
+During the original staging phase, the implementation was on `integration/ghost-archive-consolidation` and production changes were not yet authorized. That historical hold is superseded by the recorded deployment. Each later release still requires current user authorization and available account permissions; a runbook does not grant either.
 
 The historical handoff inspection recorded:
 
@@ -22,7 +26,7 @@ Repository administration and public hosting must be rechecked before release; t
 
 ## Pre-release package
 
-1. Preserve the current main revision, source package and the original functioning Ghost theme ZIP. The archive inspection baseline is `31dec12d74e0147ac1b50a4fbd22b52de38da33b`; select the actual latest successful release when rolling back later.
+1. Preserve the actual current source revision, working changes, public data and functioning Ghost source/ZIP with its release receipt. Select the latest verified successful release as the rollback baseline. The original inspection revision `31dec12d74e0147ac1b50a4fbd22b52de38da33b` is historical evidence only.
 2. Inspect the branch diff. Run the build, static checks, Python/Node tests and fixity verification described in [MAINTENANCE.md](MAINTENANCE.md). Resolve failures; do not silently rebaseline unexpected content changes.
 3. Check `SITE_ORIGIN` and the generated canonicals, JSON-LD, sitemap, asset paths and `dist/CNAME`. The default origin is the intended custom hostname. For a temporary GitHub project preview, rebuild with its full project origin; do not publish mismatched custom-domain canonicals accidentally.
 4. Verify that only public material is present in the source, history, generated output and integration feed. Keep credentials and private storage receipts outside the repository.
@@ -32,17 +36,17 @@ Repository administration and public hosting must be rechecked before release; t
 
 After explicit release authorization and repository-owner access:
 
-1. Make the reviewed repository public if required for the free GitHub Pages plan.
-2. In repository **Settings → Pages → Build and deployment**, select **GitHub Actions**.
-3. Set the repository `SITE_ORIGIN` variable to `https://archive.museumofone.art` for the custom-domain release. The builder already defaults to that origin.
+1. Verify the existing public repository, owned account and intended current main revision. Do not change repository visibility as part of an ordinary release.
+2. Verify that **Settings → Pages → Build and deployment** still uses **GitHub Actions**; do not migrate the established hosting configuration.
+3. Verify the existing `SITE_ORIGIN` is `https://archive.museumofone.art`. The builder defaults to that origin. Configuration changes require their own demonstrated need and authorization.
 4. Release the tested branch to `main` using the institution's chosen review process. `.github/workflows/pages.yml` validates and packages `dist/`, then configures and deploys Pages. Its existing `configure-pages` enablement step cannot overcome missing repository-administration permission. Main pushes and manual workflow dispatch can publish; do not use either before authorization.
 5. Inspect both the validation job and deployment job. A successful artifact upload is not a successful deployment. Record the final deployment URL and commit.
 
 The integrity workflow verifies content on relevant pushes/manual dispatch. Its presence is not evidence of a scheduled backup service or a completed independent restoration.
 
-## DNS and HTTPS
+## DNS and HTTPS recovery reference
 
-The archive uses a subdomain of the already-owned domain; no additional domain purchase is needed. Do not edit production DNS until explicitly authorized. Once authorized and Pages is ready, set the custom domain to `archive.museumofone.art` in Pages and configure the DNS record:
+The existing archive uses the already-owned subdomain and HTTPS. Ordinary releases do not require DNS changes. The following is a recovery/reconfiguration reference only; verify the current records and obtain separate explicit authorization before changing production DNS or the Pages custom domain:
 
 | Type | Host/name | Target |
 | --- | --- | --- |
@@ -52,17 +56,17 @@ Preserve the main website's existing records. Review a conflicting record at the
 
 After DNS propagation, verify the actual HTTPS origin, certificate, canonical URLs, asset paths, reader workers, PDFs, sitemap and robots response. Fetch `metadata/research-discovery.v2.json` from a browser running on the actual Ghost origin; keep the v1 endpoint compatible where used. Confirm public CORS behavior and safe network-failure fallback rather than assuming the custom hostname behaves like another GitHub URL.
 
-## Ghost entrance: preparation and installation
+## Ghost entrance: maintenance and installation
 
-The actual latest Desktop baseline has now been inspected, and the native 1.12.0 revision is prepared locally. The production installation and hosting hold remain in force. See [GHOST_INTEGRATION.md](GHOST_INTEGRATION.md) for current capability and exact validation limits.
+The native entrance is deployed at `/digital-archive-library/`. Use the actual current source/ZIP receipt and installed Ghost theme as the baseline; earlier preparation notes in [GHOST_INTEGRATION.md](GHOST_INTEGRATION.md) are historical. The established private release controller validates trusted-main theme changes, refreshes and verifies the archive, uploads/activates Ghost, then records verified production provenance. Keep its source, credentials, receipts and account-specific instructions outside this public repository. Archive-only content or documentation repairs do not require a new theme release.
 
-1. Preserve the verified original 1.11.10 source/ZIP and current active theme identity before promoting a replacement. Keep the current theme source, candidate ZIP, checksums and evidence together in the existing Desktop theme folder; complete Ghost backups belong separately outside the public archive repository.
-2. Inspect all templates, partials, assets, package requirements, routes, navigation, search, structured data and existing archive/Omeka links. Record representative baseline pages and mobile/search behavior. The source and local settings snapshot confirm the existing `/digital-archive-library/` page entrance. Its prepared slug-specific native template needs no new route. No `/archive/` alias has been added.
-3. Review the prepared native theme entrance with institutional context, supported collections, verified records, direct archive links and the v2 shared discovery and passage snapshots. Replace all active Omeka links, embeds and metadata destinations with the new archive, keeping former URLs only as migration history. Keep Ghost's header/footer/mobile conventions and global search. Do not use an iframe or duplicate navigation entries. Bundle a validated index snapshot for fallback and mount the entrance controller only on the native container; global search also consumes the shared module.
-4. Review the extracted token specification in the prepared theme's `docs/ARCHIVE-DESIGN.md`. Keep the independent archive's own runtime CSS and archival hierarchy.
+1. Preserve the actual current verified source/ZIP, checksums, release receipt and active theme identity before promoting a replacement. Keep the current theme source, candidate ZIP, checksums and evidence together in the existing Desktop theme folder; complete Ghost backups belong separately outside the public archive repository.
+2. Inspect all templates, partials, assets, package requirements, routes, navigation, search, structured data and existing archive/Omeka links. Record representative baseline pages and mobile/search behavior. The source and local settings snapshot confirm the existing `/digital-archive-library/` page entrance. Its existing slug-specific native template needs no new route. No `/archive/` alias has been added.
+3. Review the existing native theme entrance with institutional context, supported collections, verified records, direct archive links and the v2 shared discovery and passage snapshots. Correct a legacy Omeka destination only when its intended current archive replacement is verified; preserve useful historical repository records and accurately labelled older presentations. Keep Ghost's header/footer/mobile conventions and global search. Do not use an iframe or duplicate navigation entries. Bundle a validated index snapshot for fallback and mount the entrance controller only on the native container; global search also consumes the shared module.
+4. Review the current theme's `docs/ARCHIVE-DESIGN.md` and preserved shared design sources. Keep the independent archive's own runtime CSS and archival hierarchy.
 5. Validate with the Ghost-compatible theme checker for the installed Ghost version, template checks and a representative staging browser test. Check existing pages, publication metadata, navigation, search, mobile menu and archive results. Do not invent a successful Ghost test result if no staging runtime is available.
-6. Produce the complete updated theme ZIP with a diff and installation notes only after its ordinary full release gate passes. A separately encoded review/transfer candidate must be marked prepared and explicitly record the unexecuted full legacy browser gate and unavailable exact Ghost runtime; it is not a deployment-ready package. Only after explicit authorization, upload/install it through Ghost's theme administration. If a Ghost page, navigation change or routes update is required, preserve its existing configuration and apply only the tested change.
-7. Verify both directions of navigation, active states, accessibility, native entrance, canonical destinations and bundled fallback. Remote feed refresh remains disabled until actual public HTTPS/CORS checks pass, then requires a separately reviewed configuration revision.
+6. Produce the complete updated theme ZIP with a diff and installation notes only after its ordinary full release gate passes. A separately encoded review/transfer candidate must be marked prepared and explicitly record the unexecuted full legacy browser gate and unavailable exact Ghost runtime; it is not a deployment-ready package. Increment the theme version for changed source bytes. After validation and release authorization, use the established private controller to upload and activate the package; use Ghost administration only when the documented recovery procedure requires it. If a Ghost page, navigation change or routes update is required, preserve its existing configuration and apply only the tested change.
+7. Verify both directions of navigation, active states, accessibility, native entrance, canonical destinations and bundled fallback. Remote feed refresh is part of the deployed configuration. Verify current HTTPS/CORS responses, content versions and safe curated-only fallback; do not disable or reconfigure a working feed without a demonstrated defect.
 
 The archive remains independently usable if Ghost is unavailable. The Ghost entrance retains a useful link and bundled index if the archive refresh fails.
 

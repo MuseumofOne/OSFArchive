@@ -133,6 +133,27 @@ class Sync(unittest.TestCase):
   with patch.object(f.opener,'open',side_effect=URLError('sensitive request key')):
    with self.assertRaises(FetchFailure) as ctx:f.get('https://www.museumofone.art/')
   self.assertEqual(sleeps,[1,2,4]);self.assertNotIn('key',str(ctx.exception))
+ def test_feature_caption_label_is_plain_text_while_credit_and_source_are_retained(self):
+  caption='<a href="https://example.org/credit">Yongjae Kim, <i>Classon Ave</i></a> &amp; archive'
+  self.row['record'].update(feature_image='https://www.museumofone.art/content/images/fixture.png',feature_image_alt=None,feature_image_caption=caption)
+  state,rows,_=self.run_sync();image=next(a for a in rows[0]['attachments'] if a['role']=='image')
+  self.assertEqual(image['label'],'Yongjae Kim, Classon Ave & archive')
+  self.assertEqual(rows[0]['source']['feature_image_caption'],caption)
+  self.assertEqual(rows[0]['source']['html'],self.row['record']['html'])
+  out=self.root/'dist';out.mkdir()
+  def write(path,text):
+   file=out/path;file.parent.mkdir(parents=True,exist_ok=True);file.write_text(text)
+  build_website_pages(self.work,out,write,lambda title,description,content,*args,**kwargs:content,'https://archive.museumofone.art')
+  rendered=(out/'website'/('web-'+RID+'.html')).read_text()
+  self.assertIn('alt="Yongjae Kim, Classon Ave &amp; archive"',rendered)
+  self.assertNotIn('alt="&lt;a',rendered)
+  state,rows,report=self.run_sync(state=state)
+  self.assertEqual(report['changes'][0]['action'],'unchanged')
+  self.assertEqual(len(state['records'][RID]['revisions']),1)
+ def test_explicit_feature_alt_is_preferred_to_caption(self):
+  self.row['record'].update(feature_image='https://www.museumofone.art/content/images/fixture.png',feature_image_alt='Checked image description',feature_image_caption='<em>Credit only</em>')
+  _,rows,_=self.run_sync()
+  self.assertEqual(next(a for a in rows[0]['attachments'] if a['role']=='image')['label'],'Checked image description')
  def test_media_sources_and_site_images_are_detected(self):
   parser=Readable('<video><source src="/content/media/a.mp4"></video><audio src="/content/media/b.mp3"></audio><img src="/content/images/c.png">')
   self.assertEqual({x['role'] for x in parser.links},{'source','audio','image'})
