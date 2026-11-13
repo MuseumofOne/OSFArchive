@@ -298,3 +298,28 @@ body.archive-registry { background: var(--paper); font-size: 16px; }
   flex-wrap: wrap;
   row-gap: .5rem;
 }
+
+@media (max-width: 420px) {
+  .archive-registry .archive-masthead,
+  .archive-registry .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .archive-registry .archive-masthead-aside {
+    padding-inline: 0;
+    border-inline: 0;
+  }
+  .archive-registry .archive-reading-title {
+    font-size: clamp(1.65rem, 8vw, 2.125rem);
+  }
+  .archive-registry .hero-cover-mat {
+    max-width: 100%;
+  }
+  .archive-registry :is(.section-head, .item-actions, .actions) {
+    flex-wrap: wrap;
+  }
+  .archive-registry :is(.button, .text-link) {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
