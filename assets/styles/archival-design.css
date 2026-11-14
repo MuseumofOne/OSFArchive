@@ -405,6 +405,12 @@ body.archive-registry {
   color: #eee4d0;
   background: transparent;
 }
+.archive-registry .filter-note a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding-block: 2px;
+}
 .archive-registry .reading-list-button span {
   background: #d6bd88;
   color: #28241d;

@@ -62,7 +62,7 @@ def enhance_page(path,html,records,programmes):
  lookup={str(r['id']):r for r in records}
  html=html.replace('<body>',f'<body data-root="{base}" data-page="{E(path)}">')
  html=html.replace(f'<script defer src="{base}assets/app.js">',f'<script defer src="{base}assets/archive-core.js"></script><script defer src="{base}assets/app.js">')
- html=html.replace('<a class="nav-search"', '<button type="button" class="reading-list-button" data-open-reading aria-label="Open reading list">Reading list <span data-reading-count>0</span></button><a class="nav-search"')
+ html=html.replace('<a class="nav-search"', '<button type="button" class="reading-list-button" data-open-reading aria-haspopup="dialog" aria-controls="reading-dialog">Reading list <span data-reading-count>0</span></button><a class="nav-search"')
  def enhance_card(m):
   target,attrs,inner=m.groups();rid=Path(urllib.parse.urlparse(target).path).stem;r=lookup.get(rid)
   if not r:return m.group(0)
@@ -72,7 +72,7 @@ def enhance_page(path,html,records,programmes):
   return f'<article class="catalogue-card"{attrs}><a class="book-card" href="{E(target)}">{inner}</a><div class="record-tools"><span class="record-collection">{E(r["type"])}</span>{capture_link}<button type="button" class="save-record" data-save="{E(rid)}" aria-pressed="false" aria-label="Save {E(r["short_title"])} to reading list"><span aria-hidden="true">＋</span> Save</button></div></article>'
  html=re.sub(r'<a class="book-card" href="([^"]+)"([^>]*)>(.*?)</a>',enhance_card,html,flags=re.S)
  if path=='catalogue.html':
-  html=html.replace('<div class="result-toolbar">','<div class="active-filters" id="active-filters" aria-label="Active filters"></div><div class="result-toolbar">')
+  html=html.replace('<div class="result-toolbar">','<div class="active-filters" id="active-filters" role="group" aria-label="Active filters"></div><div class="result-toolbar">')
   html=html.replace('<span id="result-count" aria-live="polite">','<div class="view-switch" role="group" aria-label="Catalogue view"><button type="button" data-view="grid" aria-pressed="true">Shelf</button><button type="button" data-view="list" aria-pressed="false">List</button></div><span id="result-count" aria-live="polite">')
   html=html.replace('id="catalogue-grid"','id="catalogue-grid" data-view="grid"')
   html=html.replace('placeholder="Search titles, subjects, identifiers…"','placeholder="Search titles, subjects, item numbers, identifiers…"')
@@ -84,7 +84,9 @@ def enhance_page(path,html,records,programmes):
   if books:
    r=books[0]
    new=f'<div class="hero-art"><span class="shelf-label">ON THE READING DESK / SELECTED EDITIONS</span><span class="hero-shelf-number" aria-hidden="true">I</span><div class="hero-cover-mat"><a id="hero-record-link" href="items/{r["id"]}.html"><img id="hero-cover" class="hero-featured-cover" src="{E(r["cover"])}" alt="{E(r["cover_alt"])}" fetchpriority="high"></a></div></div><div class="hero-switcher" role="group" aria-label="Featured publications">'
-   for i,book in enumerate(books):new+=f'<button type="button" data-featured="{E(book["id"])}" aria-pressed="{str(i==0).lower()}" aria-label="Show {E(book["short_title"])}">{["I","II","III","IV"][i]}</button>'
+   for i,book in enumerate(books):
+    index = ("I", "II", "III", "IV")[i]
+    new+=f'<button type="button" data-featured="{E(book["id"])}" aria-pressed="{str(i==0).lower()}" aria-label="{index}: Show {E(book["short_title"])}">{index}</button>'
    new+=f'<a class="hero-selected-caption" id="hero-selected-caption" href="items/{r["id"]}.html">{E(r["short_title"])} <span aria-hidden="true">↗</span></a></div>'
    html=re.sub(r'<div class="hero-art">.*?<div class="hero-caption">.*?</div>',new,html,count=1,flags=re.S)
  if path.startswith('items/'):
