@@ -1,6 +1,6 @@
 """Research context and a persistent collection tree for all archive records."""
 from html import escape
-from pathlib import PurePosixPath
+from pathlib import Path, PurePosixPath
 from urllib.parse import quote
 from publication_arrangement import collection_link
 import json,re
@@ -62,6 +62,9 @@ def institutional_page(path,html,records,programmes,*,collection_counts):
  html=html.replace('</head>',f'<link rel="stylesheet" href="{base}assets/institutional.css"><script defer src="{base}assets/institutional.js"></script></head>')
  if path != 'index.html':
   html=re.sub(r'(<main id="main" class="shell">)(.*?)(</main>)',lambda m:m[1]+'<div class="archive-workspace">'+collection_tree(path,records,programmes,collection_counts=collection_counts)+'<div class="archive-workbench">'+m[2]+'</div></div>'+m[3],html,count=1,flags=re.S)
+ if path in ('catalogue.html', 'research-discovery.html'):
+  search_layout = (Path(__file__).resolve().parents[1] / 'assets/search-layout.js').read_text()
+  html = html.replace('</body>', '<script>' + search_layout + '</script></body>', 1)
  if path=='programmes.html':
   for programme in programmes:
    if programme.get('pirr_registry_url'):
