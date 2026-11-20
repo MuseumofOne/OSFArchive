@@ -237,6 +237,49 @@ body.archive-registry { background: var(--paper); font-size: 16px; }
 .archive-registry .catalogue-layout .result-toolbar {
   flex-wrap: wrap;
   gap: .75rem;
+  font-size: .8125rem;
+  --catalogue-control-height: 2.375rem;
+}
+.archive-registry .catalogue-layout .result-toolbar select {
+  height: var(--catalogue-control-height);
+}
+.archive-registry .catalogue-layout .view-switch button,
+.archive-registry .catalogue-layout .result-toolbar select {
+  min-height: 2.375rem;
+  font-size: inherit;
+  line-height: 1.35;
+}
+.archive-registry .catalogue-layout .view-switch button {
+  padding-inline: .75rem;
+}
+.archive-registry .catalogue-grid .record-tools {
+  justify-content: flex-start;
+  column-gap: .75rem;
+  row-gap: .125rem;
+}
+.archive-registry .catalogue-grid .record-tools .record-collection {
+  flex-basis: 100%;
+  max-width: none;
+  font-size: .6875rem;
+  line-height: 1.5;
+}
+.archive-registry .catalogue-grid .record-tools :is(.read-record, .save-record) {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.375rem;
+  max-width: 100%;
+  font-size: .8125rem;
+  line-height: 1.35;
+  white-space: normal;
+  color: var(--wine);
+}
+@media (pointer: coarse) {
+  .archive-registry .catalogue-layout .result-toolbar { --catalogue-control-height: 2.75rem; }
+  .archive-registry .catalogue-layout .view-switch button,
+  .archive-registry .catalogue-layout .result-toolbar select,
+  .archive-registry .catalogue-grid .record-tools :is(.read-record, .save-record) {
+    min-height: 2.75rem;
+  }
 }
 
 /* Preserve reading width before fitting another book onto the shelf. */
