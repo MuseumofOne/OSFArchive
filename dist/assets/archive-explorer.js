@@ -42,13 +42,25 @@ function mount(root){
  }
  function updateReadingCompare(){const button=$('[data-ax-compare]');button.disabled=selected.size<2||selected.size>3;button.textContent=selected.size?'Compare '+selected.size+' selected records':'Compare selected records';}
  function renderReading(){
-  const host=$('[data-ax-reading]');host.replaceChildren();selected=new Set([...selected].filter(id=>saved.includes(id)&&byId.has(id)));const known=saved.map(id=>byId.get(id)).filter(Boolean);
+  const host=$('[data-ax-reading]'),active=doc.activeElement;
+  const removes=Array.from(host.querySelectorAll('button'));
+  const focusedIndex=removes.indexOf(active);
+  const clearing=active===$('[data-ax-clear]');
+  host.replaceChildren();selected=new Set([...selected].filter(id=>saved.includes(id)&&byId.has(id)));const known=saved.map(id=>byId.get(id)).filter(Boolean);
   if(!known.length)host.append(make('p','ax-note','Use Save on a catalogue record to build your reading list.'));
   known.forEach(record=>{const article=make('article','ax-reading-entry'),label=make('label'),check=make('input');check.type='checkbox';check.checked=selected.has(record.id);check.setAttribute('aria-label','Compare '+record.title);label.append(check);check.addEventListener('change',()=>{if(check.checked&&selected.size===3){check.checked=false;announce('Choose up to three records to compare.');return;}if(check.checked)selected.add(record.id);else selected.delete(record.id);updateReadingCompare();});
    const copy=make('div'),ref=make('p','ax-label',record.accession),title=make('h3'),link=make('a',null,record.short_title||record.title);link.href=href('items/'+record.id+'.html');link.dataset.axHandoff='';title.append(link);copy.append(ref,title,make('p',null,record.author+' · '+record.date));
-   const remove=make('button',null,'Remove');remove.type='button';remove.setAttribute('aria-label','Remove '+record.title);remove.addEventListener('click',()=>{saved=saved.filter(id=>id!==record.id);selected.delete(record.id);persist();renderReading();announce('Removed from your reading list.');});article.append(label,copy,remove);host.append(article);
+   const remove=make('button',null,'Remove');remove.type='button';remove.setAttribute('aria-label','Remove '+record.title);remove.addEventListener('click',()=>{saved=saved.filter(id=>id!==record.id);selected.delete(record.id);persist();announce('Removed from your reading list.');});article.append(label,copy,remove);host.append(article);
   });
   $('[data-ax-export]').disabled=!known.length;$('[data-ax-clear]').disabled=!saved.length;updateReadingCompare();
+  if(focusedIndex>=0||clearing&&!saved.length){
+   const remaining=host.querySelectorAll('button');
+   const neighbour=remaining[Math.min(focusedIndex,remaining.length-1)];
+   if(neighbour)neighbour.focus();
+   else{
+    const heading=$('[data-ax-panel="reading"] .ax-section-head :is(h2,h3)');heading.tabIndex=-1;heading.focus();
+   }
+  }
   if(!storageOK)announce('Browser storage is unavailable. Your reading list lasts for this visit.');
  }
  root.addEventListener('click',event=>{
@@ -65,7 +77,7 @@ function mount(root){
  $('[data-discovery-form]').addEventListener('input',()=>{const form=$('[data-discovery-form]');state.dq=form.elements.namedItem('q').value;state.dk=form.elements.namedItem('kind').value;state.dc=form.elements.namedItem('collection')?.value||'';state.fulltext=form.elements.namedItem('fulltext').checked;setHash();});
  filter.addEventListener('submit',event=>event.preventDefault());filter.addEventListener('reset',event=>{event.preventDefault();state={...state,q:'',collection:'',year:'',type:'',sort:'newest'};filters();setHash();});
  $$('[data-ax-layout]').forEach(button=>button.addEventListener('click',()=>{state.layout=button.dataset.axLayout;filters();setHash();}));
- $('[data-ax-clear]').addEventListener('click',()=>{saved=[];selected.clear();$('[data-ax-comparison]').replaceChildren();persist();renderReading();announce('Reading list cleared.');});
+ $('[data-ax-clear]').addEventListener('click',()=>{saved=[];selected.clear();$('[data-ax-comparison]').replaceChildren();persist();announce('Reading list cleared.');});
  $('[data-ax-export]').addEventListener('click',()=>{const blob=new win.Blob([core.csv(saved.map(id=>byId.get(id)).filter(Boolean))],{type:'text/csv;charset=utf-8;'}),url=win.URL.createObjectURL(blob),a=make('a');a.href=url;a.download='museum-of-one-reading-list.csv';a.click();win.setTimeout(()=>win.URL.revokeObjectURL(url),1000);});
  $('[data-ax-compare]').addEventListener('click',()=>{if(selected.size<2||selected.size>3)return;const chosen=[...selected].map(id=>byId.get(id)),table=make('table'),caption=make('caption',null,'Selected catalogue records; dates retain their source precision.'),head=make('thead'),tr=make('tr');tr.append(make('th',null,'Description'));chosen.forEach(r=>tr.append(make('th',null,r.short_title||r.title)));head.append(tr);const body=make('tbody');core.comparisonRows(chosen).forEach(row=>{const tr=make('tr'),th=make('th',null,row.label);th.scope='row';tr.append(th);row.values.forEach(value=>tr.append(make('td',null,value)));body.append(tr);});table.append(caption,head,body);const scroll=make('div','ax-table-scroll');scroll.append(table);$('[data-ax-comparison]').replaceChildren(scroll);});
  function expand(next){expanded=next;const button=$('[data-ax-expand]');root.classList.toggle('ax-expanded',next);button.setAttribute('aria-pressed',String(next));button.textContent=next?'Return to page':'Expand explorer';if(next){previousOverflow=doc.body.style.overflow;doc.body.style.overflow='hidden';root.setAttribute('role','dialog');root.setAttribute('aria-modal','true');for(let branch=root;branch.parentElement&&branch!==doc.body;branch=branch.parentElement){for(const sibling of branch.parentElement.children)if(sibling!==branch&&!sibling.inert&&!['SCRIPT','STYLE','LINK'].includes(sibling.tagName)){sibling.inert=true;inertElements.push(sibling);}}button.focus();}else{doc.body.style.overflow=previousOverflow;root.removeAttribute('role');root.removeAttribute('aria-modal');inertElements.forEach(n=>n.inert=false);inertElements=[];button.focus();}}
