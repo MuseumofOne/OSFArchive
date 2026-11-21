@@ -3,7 +3,8 @@ const core=require('../dist/assets/archive-core.js');
 const records=JSON.parse(fs.readFileSync(path.join(__dirname,'../dist/metadata/discovery.json'),'utf8'));
 const script=fs.readFileSync(path.join(__dirname,'../dist/assets/app.js'),'utf8');
 const tick=()=>new Promise(resolve=>setImmediate(resolve));
-function fixture({blocked=false,fetchFails=false}={}){
+function fixture({blocked=false,fetchFails=false,discovery=false}={}){
+ const documentEvents=new Map(),windowEvents=new Map();
  const sets=new Map(),byId=new Map(),storage=new Map();
  class Element{
   constructor(id,dataset={}){this.id=id;this.dataset=dataset;this.listeners={};this.attrs={};this.open=false;this.textContent='';this.checked=false;this.disabled=false;this.classList={add(){},remove(){},toggle(){}};this._html='';}
@@ -11,6 +12,8 @@ function fixture({blocked=false,fetchFails=false}={}){
   async fire(name,event={}){for(const fn of this.listeners[name]||[])await fn({target:this,...event})}
   setAttribute(k,v){this.attrs[k]=v}
   closest(selector){return selector==='dialog'?this.dialog:null}
+  focus(){doc.activeElement=this}
+  querySelector(selector){return this.id==='reading-dialog'&&selector==='[data-close-dialog]'?closeButton:null}
   showModal(){this.open=true}
   close(){this.open=false;this.fire('close')}
   set innerHTML(value){this._html=value;if(this.id==='reading-records'){
@@ -22,13 +25,15 @@ function fixture({blocked=false,fetchFails=false}={}){
  }
  const ids=['reading-dialog','comparison-dialog','cover-dialog','archive-toast','reading-records','reading-message','compare-records','export-reading','clear-reading','comparison-content','cover-image','cover-caption','evidence-filter','hero-cover','hero-record-link','hero-selected-caption'];
  ids.forEach(id=>byId.set(id,new Element(id)));
+ if(discovery)byId.set('research-query',new Element('research-query'));
+ const closeButton=new Element();
  const button=new Element('',{save:'19864099'}),duplicate=new Element('',{save:'19864099'}),opener=new Element(),counter=new Element(),cover=new Element('',{coverSrc:'../assets/foundational-essays.jpg',coverCaption:'Published cover'});
  sets.set('[data-save]',[button,duplicate]);sets.set('[data-reading-count]',[counter]);sets.set('[data-open-reading]',[opener]);sets.set('[data-cover-src]',[cover]);sets.set('dialog',['reading-dialog','comparison-dialog','cover-dialog'].map(id=>byId.get(id)));
- const doc={body:{dataset:{root:'../'}},querySelector:s=>s.startsWith('#')?byId.get(s.slice(1))||null:null,querySelectorAll:s=>sets.get(s)||[],addEventListener(){}};
+ const doc={body:{dataset:{root:'../'}},querySelector:s=>s.startsWith('#')?byId.get(s.slice(1))||null:null,querySelectorAll:s=>sets.get(s)||[],addEventListener:(name,fn)=>documentEvents.set(name,fn)};
  const localStorage={getItem(k){if(blocked)throw Error('blocked');return storage.get(k)||null},setItem(k,v){if(blocked)throw Error('blocked');storage.set(k,v)}};
- const context={document:doc,ArchiveCore:core,localStorage,window:{addEventListener(){}},location:{href:'https://museum.example/items/19864099.html',search:'',pathname:'/items/19864099.html'},URL,URLSearchParams,fetch:async()=>({ok:!fetchFails,json:async()=>records}),setTimeout:()=>1,clearTimeout(){},Blob};
+ const context={document:doc,ArchiveCore:core,localStorage,window:{addEventListener:(name,fn)=>windowEvents.set(name,fn),CustomEvent:class{constructor(type,{detail}){this.type=type;this.detail=detail}},dispatchEvent:event=>windowEvents.get(event.type)?.(event)},location:{href:'https://museum.example/items/19864099.html',search:'',pathname:'/items/19864099.html'},URL,URLSearchParams,fetch:async()=>({ok:!fetchFails,json:async()=>records}),setTimeout:()=>1,clearTimeout(){},Blob};
  vm.runInNewContext(script,context);
- return {byId,sets,button,duplicate,opener,counter,cover,storage};
+ return {byId,sets,button,duplicate,opener,counter,cover,storage,doc,closeButton,documentEvents,location:context.location};
 }
 test('save buttons synchronize, persist, and populate the reading list',async()=>{
  const f=fixture();await f.button.fire('click');assert.equal(f.counter.textContent,1);assert.equal(f.duplicate.attrs['aria-pressed'],'true');assert.ok([...f.storage.values()][0].includes('19864099'));
@@ -45,4 +50,25 @@ test('comparison opens only with two selected saved records',async()=>{
  const f=fixture();await f.button.fire('click');f.button.dataset.save='19864115';await f.button.fire('click');await f.opener.fire('click');await tick();
  const inputs=f.sets.get('[data-select-compare]');assert.equal(inputs.length,2);inputs[0].checked=true;await inputs[0].fire('change');assert.equal(f.byId.get('compare-records').disabled,true);inputs[1].checked=true;await inputs[1].fire('change');assert.equal(f.byId.get('compare-records').disabled,false);
  await f.byId.get('compare-records').fire('click');await tick();assert.equal(f.byId.get('comparison-dialog').open,true);assert.equal(f.byId.get('reading-dialog').open,false);assert.match(f.byId.get('comparison-content').innerHTML,/month precision/);assert.match(f.byId.get('comparison-content').innerHTML,/Version-family DOI/);
+});
+
+test('Remove preserves the neighbouring reading-list position through the last item',async()=>{
+ const f=fixture();
+ for(const r of records.slice(0,3)){f.button.dataset.save=r.id;await f.button.fire('click')}
+ await f.opener.fire('click');await tick();
+ const removes=()=>f.sets.get('[data-remove-saved]');
+ const removeAt=async index=>{const button=removes()[index];button.focus();await button.fire('click');await tick()};
+ await removeAt(1);assert.equal(f.doc.activeElement,removes()[1]);
+ await removeAt(1);assert.equal(f.doc.activeElement,removes()[0]);
+ await removeAt(0);assert.equal(f.doc.activeElement,f.closeButton);
+});
+test('the slash shortcut uses Discovery in place and reaches it from other pages',()=>{
+ const event={key:'/',preventDefault(){},target:{closest(){return null}}};
+ const f=fixture({discovery:true});
+ const query=f.byId.get('research-query');query.value='Koh';
+ f.documentEvents.get('keydown')(event);
+ assert.equal(f.doc.activeElement,query);assert.equal(query.value,'Koh');
+ assert.equal(f.location.href,'https://museum.example/items/19864099.html');
+ const other=fixture();other.documentEvents.get('keydown')(event);
+ assert.equal(other.location.href,'../research-discovery.html#research-query');
 });

@@ -8,7 +8,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from discovery_v2 import build_research_discovery, build_fulltext_index, encode_index
+from discovery_v2 import build_discovery_page, build_research_discovery, build_fulltext_index, encode_index
 from enrich import enrich_record
 from entities import attach_entities
 from contents import attach_contents
@@ -32,6 +32,11 @@ class ResearchDiscovery(unittest.TestCase):
         cls.records, cls.entities, cls.vocab, cls.programmes = inputs()
         cls.origin = 'https://archive.museumofone.art'
         cls.feed = build_research_discovery(cls.records, cls.entities, cls.vocab, cls.programmes, cls.origin)
+
+    def test_standalone_results_have_a_section_heading(self):
+        output = {}
+        build_discovery_page(output.__setitem__, lambda title, desc, body, path: body, self.feed, self.origin)
+        self.assertIn('<h2 class="sr-only">Search results</h2><ol class="discovery-results"', output['research-discovery.html'])
 
     def build(self, **changes):
         values = dict(records=self.records, entities=self.entities, vocab=self.vocab, programmes=self.programmes, origin=self.origin)

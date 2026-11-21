@@ -110,9 +110,10 @@ def pirr_item_panel(record, base="../"):
 
 
 def _publication(record, link=None):
+    heading = "h4" if link else "h3"
     doi = str(record.get("doi") or "").removeprefix("https://doi.org/")
     body = (f'<li><div class="catalogue-id">{_e(record.get("accession"))} · Published item</div>'
-            f'<h4><a href="items/{_e(record["id"])}.html">{_e(record["title"])}</a></h4>'
+            f'<{heading}><a href="items/{_e(record["id"])}.html">{_e(record["title"])}</a></{heading}>'
             f'<p><a href="https://doi.org/{_e(doi)}">DOI: {_e(doi)}</a> · '
             f'<a href="read/{_e(record["id"])}.html">Read publication ↗</a></p>')
     if link:

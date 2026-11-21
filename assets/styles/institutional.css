@@ -3,3 +3,12 @@ main.shell{max-width:1740px}.archive-workspace{display:grid;grid-template-column
 
 /* Match the settled mobile navigation before its deferred controller runs. */
 @media(max-width:1100px){html.archive-has-js .collection-tree>details:not([data-tree-ready])>nav{display:none}html.archive-has-js .collection-tree>details:not([data-tree-ready])>summary:after{content:"+"}}
+.registry-record .catalogue-id {
+  color: #584f42;
+  font-size: 12px;
+}
+.registry-publications > li > h3 {
+  font-size: 1em;
+  margin: 1.33em 0;
+  letter-spacing: normal;
+}
