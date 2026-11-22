@@ -100,6 +100,31 @@ class ResearchDiscovery(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'public-source evidence'):
                 self.build(ghost_records=[{**page, **changes}])
 
+    def test_gladston_dialogue_edges_require_a_verified_public_capture(self):
+        source_url = 'https://www.museumofone.art/paul-gladston/'
+        page = dict(url=source_url, source_url=source_url, title='Paul Gladston programme',
+                    public=True, reviewed='2026-11-04', source_sha256='a' * 64)
+        entity_id = 'entity:paul-gladston'
+        relationship = 'dialogue participation documented in'
+
+        offline_entity = next(record for record in self.feed['records'] if record['id'] == entity_id)
+        self.assertFalse(any(edge['relation'] == relationship for edge in offline_entity['relationships']))
+
+        records = self.build(ghost_records=[page])['records']
+        entity = next(record for record in records if record['id'] == entity_id)
+        capture = next(record for record in records if record.get('original_url') == source_url
+                       and record['kind'] == 'website')
+        for source, target, relation in ((entity, capture, relationship),
+                                         (capture, entity, 'describes dialogue participation')):
+            edges = [edge for edge in source['relationships'] if edge['relation'] == relation]
+            self.assertEqual(
+                [(edge['target_id'], edge['source_url'], edge['evidence_scope']) for edge in edges],
+                [(target['id'], source_url, 'public programme record')],
+            )
+
+        with self.assertRaisesRegex(ValueError, 'public-source evidence'):
+            self.build(ghost_records=[{**page, 'public': False}])
+
     def test_related_names_are_not_alternative_titles_and_isbn_scope_is_visible(self):
         rows = {r['id']: r for r in self.feed['records']}
         for record in rows.values():

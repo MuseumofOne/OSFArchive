@@ -88,7 +88,15 @@ test('contextual name variants retrieve the person while dialogue status stays e
  }
  const gladston=feed.records.find(r=>r.id==='entity:paul-gladston');
  assert.match(gladston.summary,/unpublished/);
- assert.ok(gladston.relationships.some(r=>r.relation==='dialogue participation documented in'));
+ const sourceUrl = 'https://www.museumofone.art/paul-gladston/';
+ const sourcePage = feed.records.find(record =>
+  record.kind === 'website' && record.original_url === sourceUrl);
+ const participation = gladston.relationships.filter(edge =>
+  edge.relation === 'dialogue participation documented in');
+ const sourceEdges = participation.filter(edge => edge.source_url === sourceUrl);
+ assert.deepEqual(sourceEdges.map(edge => edge.target_id), sourcePage ? [sourcePage.id] : []);
+ assert.ok(participation.every(edge =>
+  feed.records.some(record => record.kind === 'website' && record.id === edge.target_id)));
  assert.ok(!gladston.relationships.some(r=>/author|employee|member|publisher/.test(r.relation)));
 });
 
