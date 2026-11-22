@@ -1,12 +1,14 @@
 /* One native explorer controller, scoped to its root in either host. */
 (function(root,factory){'use strict';const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else{root.ArchiveExplorer=api;const start=()=>root.document.querySelectorAll('[data-archive-explorer]').forEach(node=>api.mount(node));if(root.document.readyState==='loading')root.document.addEventListener('DOMContentLoaded',start,{once:true});else start();}})(typeof globalThis!=='undefined'?globalThis:this,function(){
 'use strict';
+const controllers=new WeakMap();
 const STORAGE='museum-of-one-reading-list-v1',VIEWS=new Set(['overview','catalogue','discover','reading']);
 function shelfIds(raw){if(typeof raw!=='string'||raw.length>2000||!/^\d+(?:,\d+)*$/.test(raw))return[];return[...new Set(raw.split(','))].slice(0,200);}
 function handoffURL(value,saved,origin,pageURL){const u=new URL(value,pageURL);if(u.origin!==new URL(origin).origin||u.protocol!=='https:')return u.href;const ids=shelfIds(saved.join(','));if(ids.length)u.searchParams.set('moo_shelf',ids.join(','));else u.searchParams.delete('moo_shelf');return u.href;}
 function readState(hash){if(hash==='#public-catalogue')hash='#ax:view=catalogue';if(!String(hash).startsWith('#ax:'))return{view:'overview',collection:'',q:'',year:'',type:'',sort:'newest',layout:'shelf',dq:'',dk:'',dc:'',fulltext:false};const p=new URLSearchParams(hash.slice(4));return{view:VIEWS.has(p.get('view'))?p.get('view'):'overview',collection:p.get('collection')||'',q:p.get('q')||'',year:p.get('year')||'',type:p.get('type')||'',sort:['reference','oldest','title'].includes(p.get('sort'))?p.get('sort'):'newest',layout:p.get('layout')==='list'?'list':'shelf',dq:p.get('dq')||'',dk:p.get('dk')||'',dc:p.get('dc')||'',fulltext:p.get('fulltext')==='1'};}
 function stateHash(state){const p=new URLSearchParams();p.set('view',VIEWS.has(state.view)?state.view:'overview');for(const key of ['collection','q','year','type','dq','dk','dc'])if(state[key])p.set(key,state[key]);if(state.sort&&state.sort!=='newest')p.set('sort',state.sort);if(state.layout==='list')p.set('layout','list');if(state.fulltext)p.set('fulltext','1');return'#ax:'+p;}
 function mount(root){
+ if(controllers.has(root))return controllers.get(root);
  if(root.dataset.axMounted)return;
  const doc=root.ownerDocument,win=doc.defaultView,core=win.ArchiveCore;
  if(!core)return;
@@ -18,13 +20,15 @@ function mount(root){
  let saved=[],storageOK=true,selected=new Set(),expanded=false,previousOverflow='',inertElements=[];
  try{saved=core.parseSaved(win.localStorage.getItem(STORAGE));}catch{storageOK=false;}
  const incoming=new URL(win.location.href),carry=shelfIds(incoming.searchParams.get('moo_shelf'));
- if(carry.length){saved=[...new Set([...saved,...carry.filter(id=>knownIds.has(id))])].slice(0,200);try{win.localStorage.setItem(STORAGE,JSON.stringify(saved));}catch{storageOK=false;}incoming.searchParams.delete('moo_shelf');win.history.replaceState(null,'',incoming.pathname+incoming.search+incoming.hash);}
+ if(carry.length){saved=[...new Set([...saved,...carry])].slice(0,200);try{win.localStorage.setItem(STORAGE,JSON.stringify(saved));}catch{storageOK=false;}incoming.searchParams.delete('moo_shelf');win.history.replaceState(null,'',incoming.pathname+incoming.search+incoming.hash);}
  let state=readState(win.location.hash);if(win.location.hash==='#archive-search')state.view='discover';
- const filter=$('[data-ax-filter]'),grid=$('[data-ax-cards]'),cards=Array.from(grid.children),message=$('[data-ax-message]');
+ const filter=$('[data-ax-filter]'),grid=$('[data-ax-cards]'),message=$('[data-ax-message]');
+ let cards=Array.from(grid.children);
  const make=(tag,cls,text)=>{const n=doc.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
  const announce=text=>{message.textContent=text;};
- function href(path){return root.dataset.standalone==='true'?path:root.dataset.origin+'/'+path;}
+ function href(path){return handoffURL(root.dataset.standalone==='true'?path:root.dataset.origin+'/'+path,saved,root.dataset.origin,win.location.href);}
  function sync(){
+  $$('a[data-ax-handoff]').forEach(link=>{link.href=handoffURL(link.href,saved,root.dataset.origin,win.location.href);});
   $$('[data-ax-count]').forEach(n=>n.textContent=saved.length);
   $$('[data-ax-save]').forEach(n=>{const active=saved.includes(n.dataset.axSave);n.setAttribute('aria-pressed',String(active));n.textContent=active?'✓ Saved':'＋ Save';});
  }
@@ -32,7 +36,8 @@ function mount(root){
  function setHash(push=false){const next=win.location.pathname+win.location.search+stateHash(state);win.history[push?'pushState':'replaceState'](null,'',next);}
  function filters(){for(const key of ['q','collection','year','type','sort']){const field=filter.elements.namedItem(key);field.value=state[key]||'';if(field.value!==(state[key]||''))state[key]=field.value;}
   let count=0;cards.forEach(card=>{const data={search:card.dataset.search,group:card.dataset.collection,year:card.dataset.year,type:card.dataset.type};card.hidden=!core.matches(data,state);if(!card.hidden)count++;});
-  [...cards].sort((a,b)=>state.sort==='title'?a.dataset.title.localeCompare(b.dataset.title):state.sort==='newest'?b.dataset.date.localeCompare(a.dataset.date):state.sort==='oldest'?a.dataset.date.localeCompare(b.dataset.date):records.findIndex(r=>r.id===a.dataset.axRecord)-records.findIndex(r=>r.id===b.dataset.axRecord)).forEach(card=>grid.append(card));
+  const order=new Map(records.map((record,index)=>[record.id,index]));
+  [...cards].sort((a,b)=>state.sort==='title'?a.dataset.title.localeCompare(b.dataset.title):state.sort==='newest'?b.dataset.date.localeCompare(a.dataset.date):state.sort==='oldest'?a.dataset.date.localeCompare(b.dataset.date):order.get(a.dataset.axRecord)-order.get(b.dataset.axRecord)).forEach(card=>grid.append(card));
   grid.dataset.layout=state.layout;$$('[data-ax-layout]').forEach(n=>n.setAttribute('aria-pressed',String(n.dataset.axLayout===state.layout)));$('[data-ax-results]').textContent=count+' '+(count===1?'record':'records');$('[data-ax-empty]').hidden=count!==0;
  }
  function show(view,{push=false,focus=false}={}){
@@ -47,7 +52,9 @@ function mount(root){
   const focusedIndex=removes.indexOf(active);
   const clearing=active===$('[data-ax-clear]');
   host.replaceChildren();selected=new Set([...selected].filter(id=>saved.includes(id)&&byId.has(id)));const known=saved.map(id=>byId.get(id)).filter(Boolean);
-  if(!known.length)host.append(make('p','ax-note','Use Save on a catalogue record to build your reading list.'));
+  const unknown=saved.filter(id=>!byId.has(id));
+  if(unknown.length)host.append(make('p','ax-note',unknown.length+' saved item'+(unknown.length===1?' is':'s are')+' not described in the current catalogue. The saved identifiers are retained for the next refresh.'));
+  if(!known.length&&!unknown.length)host.append(make('p','ax-note','Use Save on a catalogue record to build your reading list.'));
   known.forEach(record=>{const article=make('article','ax-reading-entry'),label=make('label'),check=make('input');check.type='checkbox';check.checked=selected.has(record.id);check.setAttribute('aria-label','Compare '+record.title);label.append(check);check.addEventListener('change',()=>{if(check.checked&&selected.size===3){check.checked=false;announce('Choose up to three records to compare.');return;}if(check.checked)selected.add(record.id);else selected.delete(record.id);updateReadingCompare();});
    const copy=make('div'),ref=make('p','ax-label',record.accession),title=make('h3'),link=make('a',null,record.short_title||record.title);link.href=href('items/'+record.id+'.html');link.dataset.axHandoff='';title.append(link);copy.append(ref,title,make('p',null,record.author+' · '+record.date));
    const remove=make('button',null,'Remove');remove.type='button';remove.setAttribute('aria-label','Remove '+record.title);remove.addEventListener('click',()=>{saved=saved.filter(id=>id!==record.id);selected.delete(record.id);persist();announce('Removed from your reading list.');});article.append(label,copy,remove);host.append(article);
@@ -87,7 +94,16 @@ function mount(root){
  const receive=event=>{try{saved=core.parseSaved(event?.type==='moo-reading-list-change'?JSON.stringify(event.detail):win.localStorage.getItem(STORAGE));}catch{return;}sync();if(state.view==='reading')renderReading();};
  win.addEventListener('storage',event=>{if(event.key===STORAGE)receive(event);});win.addEventListener('moo-reading-list-change',receive);
  doc.querySelectorAll('a[href="#archive-search"]').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();show('discover',{push:true,focus:true});}));
- sync();show(state.view);return{show,root};
+ function updateRecords(next){
+  if(!Array.isArray(next)||!next.every(r=>typeof r.id==='string'&&/^\d+$/.test(r.id)&&typeof r.title==='string')||new Set(next.map(r=>r.id)).size!==next.length)throw new Error('Invalid catalogue refresh');
+  records=next;byId.clear();knownIds.clear();records.forEach(record=>{byId.set(record.id,record);knownIds.add(record.id);});
+  cards=Array.from(grid.children);filters();sync();
+  const comparison=$('[data-ax-comparison]');
+  if(comparison.childElementCount){comparison.replaceChildren();announce('Catalogue refreshed. Compare the selected records again for current descriptions.');}
+  if(state.view==='reading')renderReading();
+ }
+ const controller={show,root,updateRecords,get records(){return records.slice();}};
+ controllers.set(root,controller);sync();show(state.view);return controller;
 }
 return{STORAGE,shelfIds,handoffURL,readState,stateHash,mount};
 });

@@ -7,6 +7,7 @@ explicit public, evidenced relationship to the reviewed catalogue/vocabulary.
 from collections import Counter, defaultdict
 from hashlib import sha256
 from html import escape
+from archive_design import script_url
 import json
 from pathlib import Path
 import re
@@ -342,6 +343,6 @@ def build_discovery_page(write, layout, feed, origin):
     body += '<details class="discovery-fallback"><summary>Browse every described record</summary><ul>' + fallback + '</ul></details>'
     body += '<noscript><p>The search controls need JavaScript. All described records remain available in the browse list above.</p></noscript>'
     html = layout('Research discovery', 'Search publications, chapters, people, artworks, concepts and verified source passages.', body, 'research-discovery.html')
-    html = html.replace('</head>', '<script defer src="assets/research-discovery.js?v=' + feed['content_version'][:12] + '"></script></head>')
+    html = html.replace('</head>', '<script defer src="' + script_url(ROOT, 'research-discovery.js') + '"></script></head>')
     write('research-discovery.html', html)
     return ['research-discovery.html']

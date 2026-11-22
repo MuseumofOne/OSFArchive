@@ -75,22 +75,121 @@
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),timeout);
   try{const response=await fetcher(url,{credentials:'omit',mode:'cors',cache:'no-cache',signal:controller.signal,headers:{Accept:'application/json'}});if(!response.ok||Number(response.headers.get('Content-Length'))>maxBytes)throw new Error('Research index unavailable');const body=await response.text();if(new TextEncoder().encode(body).length>maxBytes)throw new Error('Research index exceeds size budget');return validateIndex(JSON.parse(body),origin);}finally{clearTimeout(timer);}
  }
- async function loadIndexes(config,onIndex,fetcher=globalThis.fetch){
+ // A Ghost bundle can outlive a withdrawal. Website captures belong to live reconciliation.
+ function curatedGhostSnapshot(index){
+  const records=index.records.filter(record=>record.kind!=='website').map(record=>{
+   const relationships=record.relationships.filter(edge=>!edge.target_id.startsWith('website:'));
+   return relationships.length===record.relationships.length?record:{...record,relationships};
+  });
+  const counts={...index.counts};
+  delete counts.website;
+  return {...index,records,counts};
+ }
+ // A snapshot is a fallback, not proof that the remote publisher is up to date.
+ // Discovery and full-text indexes use identical origin, size and schema checks.
+ async function loadIndexSet(kind,config,onIndex,fetcher=globalThis.fetch){
   const origin=baseURL(config.origin),page=new URL(config.pageURL),snapshot=new URL(config.snapshot,page);
   if(snapshot.origin!==page.origin||!/^https?:$/.test(snapshot.protocol)||snapshot.username||snapshot.password)throw new Error('Research snapshot must be same-origin');
-  let latest;
-  try{latest=await fetchIndex(snapshot.href,origin,fetcher,{maxBytes:24*1024*1024});if(latest.index_kind!=='discovery')throw new Error('Expected discovery index');onIndex(latest,'snapshot');}catch{latest=undefined;}
+  const notify=status=>{if(typeof config.onStatus==='function')config.onStatus(status);};
+  let latest,snapshotWasFiltered=false;
+  try{
+   const bundled=await fetchIndex(snapshot.href,origin,fetcher,{maxBytes:24*1024*1024});
+   if(bundled.index_kind!==kind)throw new Error('Unexpected research index kind');
+   latest=kind==='discovery'&&page.origin!==origin?curatedGhostSnapshot(bundled):bundled;
+   snapshotWasFiltered=latest.records.length!==bundled.records.length||latest.records.some((record,i)=>record!==bundled.records[i]);
+   onIndex(latest,'snapshot');notify('snapshot');
+  }catch{latest=undefined;}
   const localPreview=['localhost','127.0.0.1','[::1]'].includes(page.hostname);
-  const refresh=config.remote||(!localPreview&&page.origin!==origin?origin+'/metadata/research-discovery.v2.json':null);
-  if(refresh){const remote=new URL(refresh);if(remote.href!==origin+'/metadata/research-discovery.v2.json')throw new Error('Unexpected discovery refresh URL');try{const fresh=await fetchIndex(remote.href,origin,fetcher,{maxBytes:24*1024*1024});if(fresh.index_kind!=='discovery')throw new Error('Expected discovery index');if(!latest||fresh.content_version!==latest.content_version){latest=fresh;onIndex(latest,'remote');}}catch{/* A verified bundled index remains usable. */}}
-  if(!latest)throw new Error('Research discovery unavailable');return latest;
+  const endpoint=origin+'/metadata/research-'+kind+'.v2.json';
+  const refresh=config.remote||(!localPreview&&page.origin!==origin?endpoint:null);
+  if(refresh){
+   const remote=new URL(refresh);
+   if(remote.href!==endpoint)throw new Error('Unexpected research refresh URL');
+   try{
+    const fresh=await fetchIndex(remote.href,origin,fetcher,{maxBytes:24*1024*1024});
+    if(fresh.index_kind!==kind)throw new Error('Unexpected research index kind');
+    if(!latest||snapshotWasFiltered||fresh.content_version!==latest.content_version){latest=fresh;onIndex(latest,'remote');}
+    notify('fresh');
+   }catch{notify(latest?'offline':'unavailable');}
+  }else notify(latest?'snapshot-only':'unavailable');
+  if(!latest)throw new Error('Research discovery unavailable');
+  return latest;
  }
+ function loadIndexes(config,onIndex,fetcher=globalThis.fetch){return loadIndexSet('discovery',config,onIndex,fetcher);}
+ function loadPassageIndexes(config,onIndex,fetcher=globalThis.fetch){return loadIndexSet('passages',config,onIndex,fetcher);}
+
+ // One mounted page owns one bounded refresh loop. Snapshots are loaded only
+ // during initialization; a failed later request retains the last good index.
+ function watchIndexSet(kind,config,onIndex,fetcher=globalThis.fetch,environment={}){
+  const doc=environment.document||globalThis.document;
+  const win=environment.window||doc?.defaultView||globalThis;
+  const enabled=environment.enabled||(()=>true);
+  const now=environment.now||(()=>Date.now());
+  const interval=60000,origin=baseURL(config.origin),page=new URL(config.pageURL);
+  const localPreview=['localhost','127.0.0.1','[::1]'].includes(page.hostname);
+  const endpoint=origin+'/metadata/research-'+kind+'.v2.json';
+  const selected=config.remote||(!localPreview?endpoint:null);
+  if(selected&&new URL(selected).href!==endpoint)throw new Error('Unexpected research refresh URL');
+  const visible=()=>!doc||(!doc.hidden&&doc.visibilityState!=='hidden');
+  let latest,latestSource='snapshot',inFlight=null,started=false,stopped=false,lastAttempt=now();
+  let resolveReady,rejectReady;
+  const ready=new Promise((resolve,reject)=>{resolveReady=resolve;rejectReady=reject;});
+  const alive=()=>{if(environment.connected&&!environment.connected()){stop();return false;}return !stopped;};
+  const notify=value=>{if(!alive())return;if(value==='fresh')latestSource='remote';if(value==='offline'&&latestSource==='remote')value='stale';if(typeof config.onStatus==='function')config.onStatus(value);};
+  const receive=(index,source)=>{if(!alive())return;latest=index;latestSource=source;onIndex(index,source,{background:false});};
+  function start(){
+   if(started||stopped||!visible()||!enabled())return ready;
+   started=true;lastAttempt=now();
+   const task=loadIndexSet(kind,{...config,onStatus:notify},receive,fetcher);
+   inFlight=task;
+   task.then(value=>{if(inFlight===task)inFlight=null;resolveReady(value);},error=>{if(inFlight===task)inFlight=null;rejectReady(error);});
+   return ready;
+  }
+  function refresh(){
+   if(!alive()||!visible()||!enabled())return Promise.resolve(latest);
+   if(!started)return start();
+   if(inFlight)return inFlight;
+   if(!selected)return Promise.resolve(latest);
+   lastAttempt=now();
+   const task=(async()=>{
+    try{
+     const fresh=await fetchIndex(endpoint,origin,fetcher,{maxBytes:24*1024*1024});
+     if(fresh.index_kind!==kind)throw new Error('Unexpected research index kind');
+     if(!alive())return latest;
+     if(!latest||fresh.content_version!==latest.content_version){latest=fresh;onIndex(latest,'remote',{background:true});}
+     notify('fresh');
+    }catch{notify(latest?'offline':'unavailable');}
+    return latest;
+   })();
+   inFlight=task;
+   task.then(()=>{if(inFlight===task)inFlight=null;},()=>{if(inFlight===task)inFlight=null;});
+   return task;
+  }
+  const tick=()=>{refresh().catch(()=>{});};
+  const resume=()=>{if(visible()&&(!started||now()-lastAttempt>=1000))tick();};
+  const timer=selected&&typeof win.setInterval==='function'?win.setInterval(tick,interval):null;
+  doc?.addEventListener('visibilitychange',resume);
+  win.addEventListener?.('pageshow',resume);
+  function stop(){
+   if(stopped)return;stopped=true;
+   if(timer!==null)win.clearInterval(timer);
+   doc?.removeEventListener('visibilitychange',resume);
+   win.removeEventListener?.('pageshow',resume);
+  }
+  start();
+  return{ready,refresh,stop,get index(){return latest;}};
+ }
+ const controllers=new WeakMap();
  function mount(container){
+  if(controllers.has(container))return controllers.get(container);
   if(container.dataset.researchDiscoveryMounted)return;
   const form=container.querySelector('[data-discovery-form]'),results=container.querySelector('[data-discovery-results]'),status=container.querySelector('[data-discovery-status]'),more=container.querySelector('[data-discovery-more]');
   if(!form||!results||!status||!container.dataset.indexSnapshot)return;
   const doc=container.ownerDocument,input=form.elements.namedItem('q'),kind=form.elements.namedItem('kind'),fulltext=form.elements.namedItem('fulltext');if(!input)return;
-  container.dataset.researchDiscoveryMounted='true';let payload,passages,passagesPromise,passageFailure=false,shown=30;
+  container.dataset.researchDiscoveryMounted='true';let payload,passages,passageWatcher,passageFailure=false,passageStatus='',indexStatus='',shown=30,lastRenderKey='',passageWasWanted=false;
+  const waitForRefresh=container.dataset.waitForRefresh==='true';
+  const limitedScope=()=>waitForRefresh&&['offline','snapshot-only','unavailable'].includes(indexStatus)
+   ?' Showing curated records from the bundled snapshot. Website records require the live archive.' :'';
   const params=new URLSearchParams(doc.location.search);if(params.has('q'))input.value=params.get('q');['kind','collection','year','subject','material_type','period','languages','transcription_status','source_layer'].forEach(k=>{const control=form.elements.namedItem(k);if(control&&params.has(k))control.value=params.get(k);});if(fulltext&&params.has('fulltext'))fulltext.checked=params.get('fulltext')==='1';
   const el=(tag,cls,text)=>{const node=doc.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node;};
   const destination=value=>resultURL(value,{origin:container.dataset.archiveOrigin||'https://archive.museumofone.art',pageURL:doc.location.href,localResults:container.dataset.localResults==='true'});
@@ -98,16 +197,55 @@
   const wantsPassages=()=>Boolean(fulltext?.checked&&passageType());
   function syncPassageControls(event){if(kind?.value==='passage'&&fulltext){if(event?.target===fulltext&&!fulltext.checked)kind.value='';else fulltext.checked=true;}if(fulltext)fulltext.disabled=!passageType();}
   syncPassageControls();
+
+  function preserveInteraction(work){
+   const win=doc.defaultView,active=doc.activeElement,scope=container.closest('[data-archive-explorer]')||container;
+   const row=active?.closest?.('[data-discovery-id]'),group=active?.closest?.('.ax-tree-group');
+   const action=row?{id:row.dataset.discoveryId,tag:active.tagName,href:active.href||''}:null;
+   const collection=group?.dataset.axCollectionGroup;
+   const open=new Set(Array.from(results.querySelectorAll('[data-discovery-id] details[open]'),node=>node.closest('[data-discovery-id]').dataset.discoveryId));
+   const x=win.scrollX,y=win.scrollY;
+   work();
+   results.querySelectorAll('[data-discovery-id]').forEach(node=>{if(open.has(node.dataset.discoveryId))node.querySelectorAll('details').forEach(details=>details.open=true);});
+   if(active&&!active.isConnected){
+    let target;
+    if(action){const current=Array.from(results.querySelectorAll('[data-discovery-id]')).find(node=>node.dataset.discoveryId===action.id);target=current&&Array.from(current.querySelectorAll('a,summary')).find(node=>node.tagName===action.tag&&(!action.href||node.href===action.href));}
+    else if(collection&&active.tagName==='SUMMARY')target=Array.from(scope.querySelectorAll('.ax-tree-group')).find(node=>node.dataset.axCollectionGroup===collection)?.querySelector('summary');
+    else if(active.id)target=doc.getElementById(active.id);
+    else if(active.href){const url=value=>{const next=new URL(value,doc.location.href);next.searchParams.delete('moo_shelf');return next.href;};target=Array.from(scope.querySelectorAll('a[href]')).find(node=>url(node.href)===url(active.href));}
+    (target||input).focus({preventScroll:true});
+   }
+   if(Number.isFinite(x)&&Number.isFinite(y)&&(win.scrollX!==x||win.scrollY!==y))win.scrollTo(x,y);
+  }
+  function updateFacets(index){
+   for(const name of ['collection','year','subject','languages','material_type','period','transcription_status']){
+    const select=form.elements.namedItem(name);if(!select||select.tagName!=='SELECT')continue;
+    const values=new Set();
+    index.records.forEach(record=>{const value=name==='year'?String(record.date||'').slice(0,4):record[name==='subject'?'subjects':name];for(const item of (Array.isArray(value)?value:[value]))if(typeof item==='string'&&item)values.add(item);});
+    const selected=select.value,old=new Map(Array.from(select.options,option=>[option.value,option]));
+    if(selected)values.add(selected);
+    const initial=old.get('')?.cloneNode(true)||el('option',null,'All');initial.value='';
+    select.replaceChildren(initial,...[...values].sort((a,b)=>name==='year'?b.localeCompare(a):a.localeCompare(b)).map(value=>{const option=old.get(value)?.cloneNode(true)||el('option',null,value);option.value=value;return option;}));
+    select.value=selected;
+   }
+  }
   function render(){
    if(!payload)return;
+   if(waitForRefresh&&(!indexStatus||indexStatus==='snapshot')){
+    status.textContent='Checking the live archive before showing search results…';return;
+   }
    const filters={};['kind','collection','year','subject','material_type','period','languages','transcription_status','source_layer'].forEach(k=>{filters[k]=form.elements.namedItem(k)?.value||'';});
-   if(container.dataset.searchOnly==='true'&&!normalize(input.value)&&!Object.values(filters).some(Boolean)){results.replaceChildren();status.textContent='Search a title, name, concept or identifier across the archive.';if(more)more.hidden=true;return;}
+   if(container.dataset.searchOnly==='true'&&!normalize(input.value)&&!Object.values(filters).some(Boolean)){lastRenderKey='';results.replaceChildren();status.textContent='Search a title, name, concept or identifier across the archive.'+limitedScope();if(more)more.hidden=true;return;}
    filters.includePassages=wantsPassages();
    let pool=payload.records;if(wantsPassages()&&passages)pool=mergeIndexes([pool,passages]);
-   const found=rankRecords(pool,input.value,filters);results.replaceChildren();
+   const found=rankRecords(pool,input.value,filters);
+   const renderKey=JSON.stringify([payload.content_version,wantsPassages()?passages?.content_version||'':'',input.value,filters,shown]);
+   if(renderKey!==lastRenderKey){
+   lastRenderKey=renderKey;results.replaceChildren();
    found.slice(0,shown).forEach(record=>{
     const type=record.kind==='entity'?(record.entity_type||'Entity'):(record.record_level||record.resource_type||record.kind);
     const item=el('li','discovery-result'),label=el('p','discovery-result-kind',[type,record.collection].filter(Boolean).join(' · ')),heading=el('h3'),link=el('a',null,record.title);
+    item.dataset.discoveryId=record.id;
     const capture=record.archive_url||record.relationships?.find(edge=>edge.relation==='Stored website capture')?.url;
     link.href=destination(capture||record.url);heading.append(link);item.append(label,heading,el('p','discovery-match-reason',record.match_reason));
     if(capture||record.original_url){
@@ -127,22 +265,49 @@
     if(record.kind==='passage'){const rights=record.license?.label||'See original item rights';item.append(el('p','discovery-evidence',rights+' · Extracted text; check the linked PDF for layout and wording.'));}
     results.append(item);
    });
+   }
    status.textContent=found.length+' '+(found.length===1?'result':'results')+(found.length>shown?' · Showing '+shown+'.':'')+(wantsPassages()&&!passages?(passageFailure?' Passage search could not load; described records remain searchable.':' Loading source passages…'):'')+(fulltext?.checked&&!passageType()?' Source passages are outside this record type. Choose All records, Publications, Chapters or Source passages to search them.':'')+(!found.length?' Try a title, name, identifier or fewer words.':'');
+   if(indexStatus==='stale')status.textContent+=' Archive update check failed; showing the last verified live index.';
+   if(waitForRefresh)status.textContent+=limitedScope();
+   else if(indexStatus==='offline')status.textContent+=' Live archive unavailable; showing the bundled record snapshot.';
+   if(wantsPassages()&&passages&&['offline','snapshot-only'].includes(passageStatus))status.textContent+=' Passage results use the bundled snapshot; newer source text may be missing.';
+   if(wantsPassages()&&passages&&passageStatus==='stale')status.textContent+=' Passage update check failed; using the last verified live source text.';
    if(more)more.hidden=found.length<=shown;
    if(container.dataset.syncUrl==='true'){const next=new URLSearchParams();if(input.value)next.set('q',input.value);Object.entries(filters).forEach(([k,v])=>{if(k!=='includePassages'&&v)next.set(k,v);});if(fulltext?.checked)next.set('fulltext','1');doc.defaultView.history.replaceState(null,'',doc.location.pathname+(next.size?'?'+next:''));}
   }
   function loadPassages(){
-   if(!wantsPassages()||passages||passagesPromise||!container.dataset.passagesUrl)return;
-   const u=new URL(container.dataset.passagesUrl,doc.location.href),page=new URL(doc.location.href);
-   if(u.origin!==page.origin){passageFailure=true;render();return;}
-   passagesPromise=fetchIndex(u.href,container.dataset.archiveOrigin||'https://archive.museumofone.art').then(index=>{if(index.index_kind!=='passages')throw new Error('Expected passages');passages=index;passageFailure=false;}).catch(()=>{passageFailure=true;}).finally(()=>{passagesPromise=null;render();});
+   const wanted=wantsPassages();
+   if(!wanted){passageWasWanted=false;return;}
+   if(!container.dataset.passagesUrl)return;
+   if(passageWatcher){if(!passageWasWanted)passageWatcher.refresh().catch(()=>{});passageWasWanted=true;return;}
+   passageWasWanted=true;
+   passageWatcher=watchIndexSet('passages',{
+    origin:container.dataset.archiveOrigin||'https://archive.museumofone.art',
+    snapshot:container.dataset.passagesUrl,remote:container.dataset.passagesIndexUrl,
+    pageURL:doc.location.href,onStatus:value=>{passageStatus=value;preserveInteraction(render);}
+   },index=>{preserveInteraction(()=>{passages=index;passageFailure=false;render();});},winFetch(),{document:doc,window:doc.defaultView,enabled:wantsPassages,connected:()=>container.isConnected});
+   passageWatcher.ready.catch(()=>{passageFailure=true;preserveInteraction(render);});
   }
+  const winFetch=()=>doc.defaultView.fetch.bind(doc.defaultView);
   form.addEventListener('input',event=>{shown=30;syncPassageControls(event);loadPassages();render();});
   form.addEventListener('submit',event=>{if(payload){event.preventDefault();shown=30;syncPassageControls();loadPassages();render();}});
   more?.addEventListener('click',()=>{shown+=30;render();});
   status.textContent='Loading described research records…';
-  const ready=loadIndexes({origin:container.dataset.archiveOrigin||'https://archive.museumofone.art',snapshot:container.dataset.indexSnapshot,remote:container.dataset.indexUrl,pageURL:doc.location.href},index=>{payload=index;loadPassages();render();}).catch(()=>{status.textContent='Search is temporarily unavailable. Follow the browse links or submit your query to the archive.';});
-  return{ready,render};
+  const signal=(name,detail)=>container.dispatchEvent(new doc.defaultView.CustomEvent(name,{bubbles:true,detail}));
+  const watcher=watchIndexSet('discovery',{
+   origin:container.dataset.archiveOrigin||'https://archive.museumofone.art',snapshot:container.dataset.indexSnapshot,
+   remote:container.dataset.indexUrl,pageURL:doc.location.href,
+   onStatus:value=>{indexStatus=value;signal('museum:research-index-status',{status:value});preserveInteraction(render);}
+  },(index,source)=>{preserveInteraction(()=>{payload=index;updateFacets(index);signal('museum:research-index',{index,source});loadPassages();render();});},winFetch(),{document:doc,window:doc.defaultView,connected:()=>container.isConnected});
+  const ready=watcher.ready.catch(()=>{
+   indexStatus='unavailable';
+   if(payload)render();
+   else status.textContent='Search is temporarily unavailable. Follow the browse links or submit your query to the archive.';
+   signal('museum:research-index-status',{status:'unavailable'});
+  });
+  const controller={ready,render,refresh:()=>watcher.refresh(),stop:()=>{watcher.stop();passageWatcher?.stop();},get index(){return payload;},get status(){return indexStatus;}};
+  controllers.set(container,controller);
+  return controller;
  }
- return{normalize,baseURL,validateIndex,matches,resultURL,excerpt,rankRecords,mergeIndexes,fetchIndex,loadIndexes,mount};
+ return{normalize,baseURL,validateIndex,matches,resultURL,excerpt,rankRecords,mergeIndexes,fetchIndex,loadIndexes,loadPassageIndexes,watchIndexSet,mount};
 });

@@ -5,7 +5,7 @@ institutional accession, physical custody, or archival certification claims.
 """
 from html import escape
 from hashlib import sha256
-from archive_design import asset_url
+from archive_design import asset_url, script_url
 from pathlib import Path, PurePosixPath
 from urllib.parse import quote, urlparse
 import re
@@ -89,7 +89,9 @@ def archival_page(path, html, records, programmes, *, collection_counts=None, in
         explorer_script = root / 'dist/assets/archive-explorer.js'
         version = sha256(explorer_script.read_bytes()).hexdigest()[:12]
         style = asset_url(root, 'archive-explorer.css')
-        html = html.replace('</head>', f'<link rel="stylesheet" href="{style}"><script defer src="assets/research-discovery.js"></script><script defer src="assets/archive-explorer.js?v={version}"></script></head>')
+        discovery_script = script_url(root, 'research-discovery.js')
+        live_script = script_url(root, 'archive-live.js')
+        html = html.replace('</head>', f'<link rel="stylesheet" href="{style}"><script defer src="{discovery_script}"></script><script defer src="assets/archive-explorer.js?v={version}"></script><script defer src="{live_script}"></script></head>')
         html = html.replace('<div class="archive-masthead">', render_explorer(records, programmes, os.environ.get('SITE_ORIGIN', 'https://archive.museumofone.art'), standalone=True, collection_counts=collection_counts, index_counts=index_counts) + '<div class="archive-masthead">', 1)
         html = html.replace('<h1>The record.<br><em>In context.</em></h1>', '<h2 class="archive-reading-title">Open a document.<br><em>Stay with its record.</em></h2>')
         html = html.replace('Digital Archive Library</span><span class="archive-masthead-aside">Museum of One / Catalogue edition 02', 'Digital reading room</span><span class="archive-masthead-aside">Publication files / Selected editions')

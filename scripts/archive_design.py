@@ -28,3 +28,9 @@ def publish_styles(root, out):
     target.mkdir(parents=True, exist_ok=True)
     for name, content in styles.items():
         (target / name).write_bytes(content)
+
+
+def script_url(root, name):
+    """Version executable discovery code independently of publication content."""
+    version = sha256((root / 'dist/assets' / name).read_bytes()).hexdigest()[:12]
+    return f'assets/{name}?v={version}'
