@@ -99,7 +99,7 @@ def contents_table(record, base=""):
     """Reusable contents block for a parent item page (base='../')."""
     if not record.get("contents"):
         return ""
-    return f'<div class="table-scroll"><table class="inventory-table"><caption>Analytic contents · {_e(record["short_title"] if record.get("short_title") else record["title"])}</caption><thead><tr><th scope="col">Local part reference</th><th scope="col">Title / component</th><th scope="col">Printed pages</th><th scope="col">PDF file pages / read</th></tr></thead><tbody>{_rows(record, base)}</tbody></table></div>'
+    return f'<div class="table-scroll" role="region" aria-label="Analytic contents" tabindex="0"><table class="inventory-table"><caption>Analytic contents · {_e(record["short_title"] if record.get("short_title") else record["title"])}</caption><thead><tr><th scope="col">Local part reference</th><th scope="col">Title / component</th><th scope="col">Printed pages</th><th scope="col">PDF file pages / read</th></tr></thead><tbody>{_rows(record, base)}</tbody></table></div>'
 
 
 def build_content_pages(records, contents, write, layout, origin):
