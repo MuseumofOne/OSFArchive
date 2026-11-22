@@ -400,8 +400,14 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
                 + "</dd></div>"
                 for v in r["source_declared_metadata"]
             )
-            + "</dl>"
         )
+        if r.get("source_declared_citations"):
+            citations = " · ".join(
+                '<a href="' + e(v["url"]) + '">' + e(v["name"]) + "</a>"
+                for v in r["source_declared_citations"]
+            )
+            content += "<div><dt>Sources cited by the original page</dt><dd>" + citations + "</dd></div>"
+        content += "</dl>"
         content += (
             "<p>Source content SHA-256: <code>"
             + e(p["capture"]["content_hash"])

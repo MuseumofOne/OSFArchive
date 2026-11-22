@@ -3,6 +3,39 @@ No date, subtitle, affiliation, review status or edition is inferred from prose.
 """
 
 import json, re
+from urllib.parse import urlsplit
+
+
+def public_page_citations(items, visible_links):
+    """Project page-level citations already linked in the public source body."""
+    result = {}
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        url, title = item.get("url"), item.get("name")
+        if not isinstance(url, str) or url not in visible_links:
+            continue
+        parts = urlsplit(url)
+        if parts.scheme != "https" or not parts.hostname or parts.username or parts.password:
+            continue
+        if not isinstance(title, str) or not title.strip() or len(title) > 400:
+            continue
+        kind = item.get("@type")
+        citation = {
+            "@type": kind if kind in ("Article", "ScholarlyArticle", "Book", "WebPage", "CreativeWork") else "CreativeWork",
+            "name": title.strip(),
+            "url": url,
+        }
+        for field, entity_type in (("author", "Person"), ("publisher", "Organization")):
+            credited = item.get(field)
+            if isinstance(credited, dict) and credited.get("@type") == entity_type:
+                name = credited.get("name")
+                if isinstance(name, str) and 0 < len(name.strip()) <= 200:
+                    citation[field] = {"@type": entity_type, "name": name.strip()}
+        if item.get("encodingFormat") == "application/pdf":
+            citation["encodingFormat"] = "application/pdf"
+        result.setdefault(url, citation)
+    return list(result.values())
 
 
 def describe(source, language, summary, curated):
@@ -108,6 +141,9 @@ def describe(source, language, summary, curated):
     subtitle = values("citation_subtitle", "dc.subtitle")
     if subtitle:
         result["source_declared_subtitles"] = subtitle
+    # Captured declarations are a citation list, never a relationship of identity.
+    if source.get("source_declared_citations"):
+        result["source_declared_citations"] = source["source_declared_citations"]
     return result
 
 
@@ -159,6 +195,8 @@ def capture_schema(record, assets, original_html, url, origin):
         "isBasedOn": based_on,
         "isPartOf": {"@id": origin + "/#website"},
     }
+    if source.get("source_declared_citations"):
+        based_on["citation"] = source["source_declared_citations"]
     graph["encoding"] = {
         "@type": "MediaObject",
         "name": "Original published content HTML (inert text download)",

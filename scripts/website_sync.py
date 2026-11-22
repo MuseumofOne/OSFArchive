@@ -12,7 +12,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlsplit, urlencode
 from urllib.request import Request, HTTPRedirectHandler, build_opener
 from urllib.error import HTTPError, URLError
-from website_metadata import describe
+from website_metadata import describe, public_page_citations
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = "https://www.museumofone.art"
@@ -184,16 +184,22 @@ class DocumentLanguage(HTMLParser):
 
 
 class SourceHead(HTMLParser):
-    def __init__(self, html):
+    def __init__(self, html, page_url=None):
         super().__init__()
         self.meta = []
+        self.page_url = page_url
+        self.citations = []
         self.buffer = None
+        self.programme_seed = False
         self.feed(html or "")
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
-        if tag == "script" and a.get("type") == "application/ld+json":
-            self.buffer = ""
+        if tag == "script":
+            script_type = a.get("type")
+            self.programme_seed = script_type == "application/json" and "data-programme-schema-source" in a
+            if script_type == "application/ld+json" or self.programme_seed:
+                self.buffer = ""
         if tag == "meta" and a.get("content") is not None:
             self.meta.append(
                 {
@@ -239,7 +245,15 @@ class SourceHead(HTMLParser):
                         elif k in ("@graph", "mainEntity", "hasPart"):
                             walk(v)
 
-            walk(value)
+            if not self.programme_seed:
+                walk(value)
+            graph = value.get("@graph", [value]) if isinstance(value, dict) else value
+            if isinstance(graph, list) and self.page_url:
+                for node in graph:
+                    if (isinstance(node, dict) and node.get("@type") == "WebPage"
+                            and node.get("url") == self.page_url):
+                        items = node.get("citation", [])
+                        self.citations.extend(items if isinstance(items, list) else [items])
         except (ValueError, TypeError):
             pass
         self.buffer = None
@@ -464,7 +478,16 @@ def metadata(r, kind):
         for t in r.get("tags", [])
         if t.get("visibility") == "public" and t.get("name")
     ]
-    m["source_declared_metadata"] = SourceHead(r.get("codeinjection_head")).meta
+    head = SourceHead(r.get("codeinjection_head"), r.get("url"))
+    m["source_declared_metadata"] = head.meta
+    if head.citations:
+        public_links = {
+            item["url"] for item in Readable(r["html"], r["url"]).links
+            if item["role"] == "link"
+        }
+        citations = public_page_citations(head.citations, public_links)
+        if citations:
+            m["source_declared_citations"] = citations
     # No author emails, account fields, internal tags, keys, script code or subscribers.
     return m
 
