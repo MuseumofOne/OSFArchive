@@ -275,6 +275,8 @@ class Readable(HTMLParser):
         self.links = []
         self.skip = []
         self.anchors = []
+        self.preserve_weganda_reader = base.rstrip("/") == ORIGIN + "/external-records"
+        self.disclosures = []
         self.feed(html or "")
         self.close()
 
@@ -299,6 +301,19 @@ class Readable(HTMLParser):
             if t not in ("input", "embed"):
                 self.skip.append(t)
             return
+        if t == "details" and self.preserve_weganda_reader:
+            keep = a.get("class") == "moo-weganda-reader"
+            self.disclosures.append(keep)
+            if keep:
+                self.parts.append('<details class="capture-pdf-reader">')
+            return
+        in_reader = bool(self.disclosures and self.disclosures[-1])
+        if in_reader and t == "summary":
+            self.parts.append("<summary>")
+            return
+        if in_reader and t == "nav":
+            self.parts.append('<nav class="capture-pdf-reader-pages" aria-label="PDF page navigation">')
+            return
         if t == "img":
             u = self.safe(a.get("src"))
             label = a.get("alt") or (self.anchors[-1]["label"] if self.anchors else "") or "Source image"
@@ -308,9 +323,8 @@ class Readable(HTMLParser):
                 self.anchors[-1]["images"].append(label)
             elif u:
                 self.parts.append(
-                    '<p><a href="'
-                    + escape(u, quote=True)
-                    + '">'
+                    ('<p class="capture-pdf-page-image">' if in_reader else '<p>')
+                    + '<a href="' + escape(u, quote=True) + '">'
                     + escape(label)
                     + " — image at source</a></p>"
                 )
@@ -320,6 +334,8 @@ class Readable(HTMLParser):
         if t not in self.allowed:
             return
         attrs_out = ""
+        if in_reader and t == "div" and a.get("class") == "moo-weganda-viewport":
+            attrs_out = ' class="capture-pdf-reader-viewport" role="region" tabindex="0" aria-label="Archived PDF pages"'
         if t == "a":
             self.anchors.append({"images": [], "has_text": False,
                                  "label": a.get("aria-label") or a.get("title") or ""})
@@ -340,6 +356,13 @@ class Readable(HTMLParser):
         if self.skip:
             if t == self.skip[-1]:
                 self.skip.pop()
+            return
+        if t == "details" and self.disclosures:
+            if self.disclosures.pop():
+                self.parts.append("</details>")
+            return
+        if t in ("summary", "nav") and self.disclosures and self.disclosures[-1]:
+            self.parts.append("</" + t + ">")
             return
         if t == "a" and self.anchors:
             anchor = self.anchors.pop()

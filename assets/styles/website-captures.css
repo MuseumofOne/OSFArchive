@@ -6,3 +6,10 @@
 .website-captured-content img,.website-record video,.website-record audio{max-width:100%;height:auto}
 .website-captured-content pre{white-space:pre-wrap;overflow-wrap:anywhere}
 .website-record .source-list img{display:block;max-width:100%;height:auto;margin-block:1rem}
+.capture-pdf-reader{border:1px solid currentColor;padding:0.75rem;min-width:0}
+.capture-pdf-reader>summary{cursor:pointer;font-weight:600}
+.capture-pdf-reader-pages{display:flex;flex-wrap:wrap;gap:0 0.85rem;margin-block:0.75rem}
+.capture-pdf-reader-pages a{display:inline-flex;align-items:center;min-height:44px}
+.capture-pdf-reader-viewport{max-height:min(72vh,630px);overflow:auto;overscroll-behavior:contain;padding:clamp(0.4rem,2vw,1rem)}
+.capture-pdf-reader-viewport figure{max-width:44rem;margin:0 auto 1rem}
+.capture-pdf-reader-viewport img{display:block;width:100%;height:auto;background:#fff}

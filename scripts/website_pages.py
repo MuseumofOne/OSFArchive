@@ -102,6 +102,33 @@ def capture_publication_date(capture):
     return date if date.tzinfo else date.replace(tzinfo=timezone.utc)
 
 
+def inline_pdf_reader_pages(body, assets, origin):
+    """Use verified local images in the sanitized reader, with links as fallback."""
+    images = {
+        asset["url"]: asset for asset in assets
+        if asset["storage"] == "local_archival_file"
+        and asset.get("mime_type") == "image/webp"
+        and re.fullmatch(r"assets/website-captures/[a-f0-9]{64}\.webp", asset.get("archive_path", ""))
+        and asset.get("pixel_dimensions")
+    }
+    embedded = set()
+
+    def inline(match):
+        image = images.get(unescape(match.group(1)))
+        if not image:
+            return match.group()
+        path = image["archive_path"]
+        embedded.add(path)
+        size = image["pixel_dimensions"]
+        return (
+            f'<img loading="lazy" decoding="async" src="{escape(origin + "/" + path, quote=True)}" '
+            f'width="{size["width"]}" height="{size["height"]}" alt="{escape(unescape(match.group(2)), quote=True)}">'
+        )
+
+    body = re.sub(r'<p class="capture-pdf-page-image"><a href="([^"]+)">([^<]+) — image at source</a></p>', inline, body)
+    return body, embedded
+
+
 def build_website_pages(work, out, write, layout, origin, *, methodology=None, methodology_desc=None, captures=None, inventory=None):
     work = Path(work)
     out = Path(out)
@@ -224,6 +251,9 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
                 replacements[a["url"]] = origin + "/" + path
             assets.append(a)
         body = p["readable_html"]
+        embedded_reader_images = set()
+        if 'class="capture-pdf-reader"' in body:
+            body, embedded_reader_images = inline_pdf_reader_pages(body, assets, origin)
         for source, target in {**source_map, **replacements}.items():
             body = body.replace('href="' + e(source) + '"', 'href="' + e(target) + '"')
         for source, target in source_map.items():
@@ -364,7 +394,7 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
                     + e(a["source_sha256"])
                     + " · encrypted recovery only</small>"
                 )
-            if a.get("archive_path") and (a.get("mime_type") or "").startswith(
+            if a.get("archive_path") and a["archive_path"] not in embedded_reader_images and (a.get("mime_type") or "").startswith(
                 "image/"
             ):
                 content += (

@@ -5,7 +5,7 @@ from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.primitives import serialization
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from website_sync import reconcile,projection,Readable,FetchFailure,seal,unseal,fetch_collection,digest,encoded
-from website_pages import build_website_pages,access_asset
+from website_pages import build_website_pages,access_asset,inline_pdf_reader_pages
 AT='2026-11-05T12:00:00Z';RID='a'*24
 class Fetch:
  def __init__(self,content=b'file'):self.content=content;self.cache={};self.asset_bytes=0
@@ -184,6 +184,32 @@ class Sync(unittest.TestCase):
   parser=Readable(f'<img src="{image}" alt="Standalone illustration">')
   self.assertIn('Standalone illustration — image at source</a>',''.join(parser.parts))
   self.assertEqual(parser.links,[{'url':image,'role':'image','label':'Standalone illustration'}])
+ def test_weganda_capture_preserves_native_reader_with_only_verified_inline_images(self):
+  source='https://www.museumofone.art/external-records/'
+  origin='https://archive.museumofone.art'
+  image='https://www.museumofone.art/content/images/page.webp'
+  path='assets/website-captures/'+'a'*64+'.webp'
+  markup=(f'<details class="moo-weganda-reader" open><summary>Read the archived copy</summary>'
+          '<nav><a href="#page-1">Page 1</a></nav><div class="moo-weganda-viewport">'
+          f'<figure id="page-1"><img src="{image}" alt="Page 1 &amp; cover"></figure>'
+          '<figure><img src="https://example.com/remote.webp" alt="Other page"></figure></div>'
+          '<style>body {display:none}</style></details><details><summary>Other disclosure</summary></details>')
+  sanitized=''.join(Readable(markup,source).parts)
+  self.assertEqual(sanitized.count('<details class="capture-pdf-reader">'),1)
+  self.assertIn('<summary>Read the archived copy</summary>',sanitized)
+  self.assertIn(f'href="{source}#page-1"',sanitized)
+  self.assertNotIn('<style',sanitized)
+  self.assertIn('</details>Other disclosure',sanitized)
+  outside=''.join(Readable(markup,'https://www.museumofone.art/another-page/').parts)
+  self.assertNotIn('capture-pdf-reader',outside)
+  asset={'url':image,'storage':'local_archival_file','mime_type':'image/webp','archive_path':path,
+         'pixel_dimensions':{'width':1275,'height':1650}}
+  rendered,embedded=inline_pdf_reader_pages(sanitized,[asset],origin)
+  self.assertEqual(embedded,{path})
+  self.assertIn(f'src="{origin}/{path}" width="1275" height="1650" alt="Page 1 &amp; cover"',rendered)
+  self.assertIn('href="https://example.com/remote.webp"',rendered)
+  self.assertEqual(rendered.count('<img '),1)
+  self.assertEqual(inline_pdf_reader_pages(sanitized,[],origin),(sanitized,set()))
  def test_media_sources_and_site_images_are_detected(self):
   parser=Readable('<video><source src="/content/media/a.mp4"></video><audio src="/content/media/b.mp3"></audio><img src="/content/images/c.png">')
   self.assertEqual({x['role'] for x in parser.links},{'source','audio','image'})
