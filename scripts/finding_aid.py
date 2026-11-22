@@ -10,7 +10,7 @@ def build_finding_aid(records,programmes,write,layout):
  rows=[]
  for group in groups:
   items=[r for r in records if r['collection']==group]
-  content+=f'<section class="inventory-group"><h3>{E(group)}</h3><p>Editorial grouping · {len(items)} deposited {"edition" if len(items) == 1 else "editions"}</p><div class="table-scroll"><table class="inventory-table" data-edition-group="{E(group)}"><caption class="sr-only">{E(group)} inventory</caption><thead><tr><th scope="col">Reference code</th><th scope="col">Title / description</th><th scope="col">Source date</th><th scope="col">Digital object</th></tr></thead><tbody>'
+  content+=f'<section class="inventory-group"><h3>{E(group)}</h3><p>Editorial grouping · {len(items)} deposited {"edition" if len(items) == 1 else "editions"}</p><div class="table-scroll" role="region" aria-label="{E(group)} inventory" tabindex="0"><table class="inventory-table" data-edition-group="{E(group)}"><caption class="sr-only">{E(group)} inventory</caption><thead><tr><th scope="col">Reference code</th><th scope="col">Title / description</th><th scope="col">Source date</th><th scope="col">Digital object</th></tr></thead><tbody>'
   for r in items:
    content+=f'<tr><th scope="row"><a href="items/{r["id"]}.html">{E(r["accession"])}</a></th><td><a href="items/{r["id"]}.html">{E(r["title"])}</a><small>{E(r["type"])} · {E(r["author"])}</small></td><td>{E(r["date"])}</td><td>'+(f'<a href="read/{r["id"]}.html">Read {r["page_count"]} pages ↗</a>' if r.get('reading_copy') else 'Source links in item record')+'</td></tr>'
    rows.append([r['accession'],r['title'],r['author'],r['date'],r['type'],r['collection'],r.get('page_count',''),r['doi'],r['zenodo_url']])

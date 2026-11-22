@@ -120,7 +120,7 @@ body.archive-registry { background: var(--paper); font-size: 16px; }
 .quality-grid > div { border: 1px solid var(--line); padding: 20px; }
 .quality-grid strong { display: block; font: 36px var(--serif); }
 .quality-grid span { font-size: 12px; }
-@media (max-width: 1190px) {
+@media (max-width: 1100px) {
   .archive-registry .archive-workspace { display: block; }
   .archive-registry .collection-tree { margin-bottom: 24px; padding-block: 12px; }
   .archive-registry .collection-tree > details > summary { display: flex; flex-wrap: wrap; gap: 7px 20px; align-items: center; padding-block: 5px; }
@@ -140,7 +140,7 @@ body.archive-registry { background: var(--paper); font-size: 16px; }
   .archive-registry .registry-index-row strong { font-size: 25px; }
   .archive-registry .registry-index-head { flex-wrap: wrap; gap: 12px; }
   .archive-registry .hero { grid-template-columns: 1fr; }
-  .archive-registry .item-head, .archive-registry .item-layout { grid-template-columns: 1fr; }
+  .archive-registry .item-head, .archive-registry .item-layout { grid-template-columns: minmax(0, 1fr); }
   .archive-registry .catalogue-card { padding: 10px; }
   .archive-registry .book-card h3 { font-size: 21px; }
   .archive-registry .metadata div { grid-template-columns: 1fr; gap: 4px; }
@@ -362,6 +362,9 @@ body.archive-registry { background: var(--paper); font-size: 16px; }
   outline: 2px solid var(--wine);
   outline-offset: 3px;
 }
+.archive-registry :is(.archive-note, .reader-shell) a:focus-visible {
+  outline-color: var(--brass);
+}
 
 .archive-registry .book-card .card-abstract {
   font: .875rem/1.65 var(--sans);
@@ -374,6 +377,26 @@ body.archive-registry { background: var(--paper); font-size: 16px; }
 .archive-registry .record-tools {
   flex-wrap: wrap;
   row-gap: .5rem;
+}
+@media (max-width: 760px) {
+  .archive-registry[data-page="index.html"] .record-tools .save-record {
+    min-inline-size: 2.75rem;
+    min-block-size: 2.75rem;
+    font-size: .8125rem;
+  }
+  .archive-registry .collection-tree > details:not([open]) {
+    padding-block: .5625rem;
+  }
+  .archive-registry .collection-tree > details:not([open]) > summary {
+    gap: 3px 8px;
+    padding-block: 0;
+  }
+  .archive-registry .collection-tree > details:not([open]) > summary > [data-tree-total-breakdown] {
+    display: none;
+  }
+  .archive-registry[data-page^="read/"] .reader-breadcrumb {
+    padding-top: .75rem;
+  }
 }
 
 @media (max-width: 420px) {
