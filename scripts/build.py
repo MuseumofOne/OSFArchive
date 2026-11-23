@@ -228,7 +228,11 @@ for r in RECORDS:
  body+='<section class="item-section"><h2>Subjects & discovery</h2><span class="source-label">Editorial subjects · Local discovery vocabulary</span>'+''.join(f'<a class="pill" href="../catalogue.html?subject={urllib.parse.quote(s)}">{E(s)}</a>' for s in r['subjects'])
  if r.get('keywords'):body+='<h3>Repository keywords</h3><p>'+E(' · '.join(r['keywords']))+'</p>'
  body+='</section>'
- body+=f'<section class="item-section" id="source-evidence"><h2>Source corroboration</h2><p>{E(r.get("corroboration") or "The deposited record is linked to the corresponding Museum of One work page. The catalogue retains edition-specific repository identifiers and institutional publication context separately.")}</p><ul class="source-list"><li><a href="{E(r["zenodo_url"])}">Zenodo edition record ↗</a><small>Deposited metadata, files, version and rights.</small></li><li><a href="{E(institutional)}">Museum of One work record ↗</a><small>Institutional title, authorship and publication context.</small></li></ul>'
+ body+=f'<section class="item-section" id="source-evidence"><h2>Source corroboration</h2><p>{E(r.get("corroboration") or "The deposited record is linked to the corresponding Museum of One work page. The catalogue retains edition-specific repository identifiers and institutional publication context separately.")}</p><ul class="source-list"><li><a href="{E(r["zenodo_url"])}">Zenodo edition record ↗</a><small>Deposited metadata, files, version and rights.</small></li><li><a href="{E(institutional)}">Museum of One work record ↗</a><small>Institutional title, authorship and publication context.</small></li>'
+ capture=CAPTURE_LINKS.get(f'items/{rid}.html')
+ if capture:
+  body+=f'<li><a href="{base}{E(capture)}">Archived website version ↗</a><small>Preserved copy of the linked Museum of One page.</small></li>'
+ body+='</ul>'
  auth_data=json.loads((DATA/'authorities.json').read_text()) if (DATA/'authorities.json').exists() else {}
  matches=[w for w in auth_data.get('works',[]) if w['match_title'].lower() in (r['title']+' '+r.get('short_title','')).lower()]
  for w in matches:
