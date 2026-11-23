@@ -6,10 +6,10 @@ sealed to an offline recovery key; the runner only needs the public key.
 from __future__ import annotations
 import argparse, base64, copy, fcntl, gzip, hashlib, json, os, re, shutil, tempfile, time
 from datetime import datetime, timezone
-from html import escape, unescape
+from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urljoin, urlsplit, urlencode
+from urllib.parse import parse_qs, urljoin, urlsplit, urlencode
 from urllib.request import Request, HTTPRedirectHandler, build_opener
 from urllib.error import HTTPError, URLError
 from website_metadata import describe, public_page_citations
@@ -393,14 +393,57 @@ class Readable(HTMLParser):
         return ""
 
 
+class PublicContentAPI(HTMLParser):
+    """Recognize the site's explicit, public Ghost Content API configuration."""
+
+    def __init__(self, api_origin):
+        super().__init__()
+        self.api_base = api_origin.rstrip("/") + "/ghost/api/content/"
+        self.allowed_hosts = {urlsplit(api_origin).netloc, urlsplit(ORIGIN).netloc}
+        self.services = set()
+        self.alternate = set()
+
+    def handle_starttag(self, tag, attrs):
+        fields = dict(attrs)
+        if (
+            tag == "script"
+            and fields.get("type") == "application/json"
+            and "data-mo1-public-services" in fields
+            and fields.get("data-api") == self.api_base
+        ):
+            key = fields.get("data-key") or ""
+            if re.fullmatch(r"[0-9a-f]{26}", key):
+                self.services.add(key)
+        if tag != "link" or fields.get("rel") != "alternate" or fields.get("type") != "application/json":
+            return
+        try:
+            target = urlsplit(urljoin(ORIGIN + "/", fields.get("href") or ""))
+        except ValueError:
+            return
+        if (
+            target.scheme != "https"
+            or target.netloc not in self.allowed_hosts
+            or target.path != "/ghost/api/content/pages/"
+            or target.fragment
+        ):
+            return
+        keys = parse_qs(target.query, keep_blank_values=True).get("key", [])
+        if len(keys) == 1 and re.fullmatch(r"[0-9a-f]{26}", keys[0]):
+            self.alternate.add(keys[0])
+
+    def key(self):
+        keys = self.services or self.alternate
+        if len(keys) > 1:
+            raise FetchFailure("Public Content API configuration is ambiguous")
+        if not keys:
+            raise FetchFailure("Public Content API configuration unavailable")
+        return next(iter(keys))
+
+
 def fetch_collection(fetcher, policy):
-    home = fetcher.get(ORIGIN + "/").decode()
-    match = re.search(
-        r'/ghost/api/content/[^"<>]*[?&]key=([0-9a-f]+)', unescape(home)
-    ) or re.search(r'contentKey["\x27]?\s*[:=]\s*["\x27]([0-9a-f]+)', home)
-    if not match:
-        raise FetchFailure("Public Content API configuration unavailable")
-    key = match.group(1)
+    source = PublicContentAPI(policy["content_api_origin"])
+    source.feed(fetcher.get(ORIGIN + "/").decode())
+    key = source.key()
     rows = []
     seen = set()
     for kind in ("posts", "pages"):

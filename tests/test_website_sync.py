@@ -4,7 +4,7 @@ from unittest.mock import patch
 from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.primitives import serialization
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
-from website_sync import reconcile,projection,Readable,FetchFailure,seal,unseal,fetch_collection,digest,encoded
+from website_sync import PublicContentAPI,reconcile,projection,Readable,FetchFailure,seal,unseal,fetch_collection,digest,encoded
 from website_pages import build_website_pages,access_asset,inline_pdf_reader_pages
 AT='2026-11-05T12:00:00Z';RID='a'*24
 class Fetch:
@@ -153,10 +153,41 @@ class Sync(unittest.TestCase):
   class API:
    def get(self,url,*args):
     from urllib.parse import urlsplit,parse_qs
-    if url.endswith('.art/'):return b'contentKey:"abcdef0123456789"'
-    q=parse_qs(urlsplit(url).query);page=int(q['page'][0]);kind='posts' if '/posts/' in url else 'pages';rid=('%024x'%page) if kind=='posts' else ('%024x'%(page+10))
+    if url.endswith('.art/'):
+     return (
+         b'<script>var demo={contentKey:"example-placeholder"}</script>'
+         b'<script data-key="' + b'a' * 26 + b'" type="application/json" data-mo1-public-services '
+         b'data-api="https://the-museum-of-one.ghost.io/ghost/api/content/">{}</script>'
+     )
+    q=parse_qs(urlsplit(url).query)
+    assert q['key'] == ['a' * 26]
+    page=int(q['page'][0]);kind='posts' if '/posts/' in url else 'pages';rid=('%024x'%page) if kind=='posts' else ('%024x'%(page+10))
     return encoded({kind:[{'id':rid}], 'meta':{'pagination':{'next':2 if page==1 else None}}})
   policy={'max_records':10,'content_api_origin':'https://the-museum-of-one.ghost.io'};self.assertEqual(len(fetch_collection(API(),policy)),4)
+ def test_public_services_config_requires_exact_key_and_target(self):
+  origin='https://the-museum-of-one.ghost.io'
+  def marker(key, target=origin):
+   return (f'<script type="application/json" data-mo1-public-services data-key="{key}" '
+           f'data-api="{target}/ghost/api/content/">{{}}</script>')
+  for html in ('<script>var demo={contentKey:"example-placeholder"}</script>',
+               marker('a' * 25), marker('a' * 26 + 'z'), marker('a' * 26, origin + '.example')):
+   config=PublicContentAPI(origin)
+   config.feed(html)
+   with self.assertRaisesRegex(FetchFailure,'configuration unavailable'):
+    config.key()
+  config=PublicContentAPI(origin)
+  config.feed(marker('a' * 26) + marker('b' * 26))
+  with self.assertRaisesRegex(FetchFailure,'configuration is ambiguous'):
+   config.key()
+ def test_only_an_exact_legacy_alternate_can_supply_a_fallback_key(self):
+  config=PublicContentAPI('https://the-museum-of-one.ghost.io')
+  config.feed('<link rel="alternate" type="application/json" '
+              'href="https://[invalid/ghost/api/content/pages/?key=' + 'c' * 26 + '">'
+              '<link rel="alternate" type="application/json" '
+              'href="https://example.org/ghost/api/content/pages/?key=' + 'b' * 26 + '">'
+              '<link rel="alternate" type="application/json" '
+              'href="/ghost/api/content/pages/?key=' + 'a' * 26 + '&amp;filter=visibility%3Apublic">')
+  self.assertEqual(config.key(),'a' * 26)
  def test_source_failure_clears_readable_output_without_losing_checkpoint(self):
   from website_sync import main
   from unittest.mock import patch
