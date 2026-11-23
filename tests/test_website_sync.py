@@ -286,6 +286,33 @@ class Sync(unittest.TestCase):
   parser=Readable('<video><source src="/content/media/a.mp4"></video><audio src="/content/media/b.mp3"></audio><img src="/content/images/c.png">')
   self.assertEqual({x['role'] for x in parser.links},{'source','audio','image'})
   self.assertIn('https://www.museumofone.art/content/media/a.mp4',{x['url'] for x in parser.links})
+ def test_first_party_pdf_objects_are_preserved_without_embedded_fallback(self):
+  pdf='https://www.museumofone.art/content/files/object.PDF'
+  self.row['record']['html']=(
+   f'<object type="application/pdf" data="{pdf}">'
+   '<iframe src="/content/files/object-fallback.pdf"></iframe>'
+   '<embed src="/content/files/embedded-fallback.pdf">'
+   '<object data="/content/files/nested.pdf"></object>'
+   '</object>'
+   '<iframe src="/preview/"><object data="/content/files/frame-fallback.pdf"></object></iframe>'
+   '<object type="application/pdf" data="https://another.example/document.pdf"></object>'
+   '<object data="/content/files/different-format.svg"></object>'
+   f'<a href="{pdf}"><object data="{pdf}"></object></a>'
+   '<p>Still readable.</p>'
+  )
+  data=b'%PDF-1.7 fixture'
+  _,captures,report=self.run_sync(fetcher=Fetch(data))
+  capture,=captures
+  attachment,=capture['attachments']
+  self.assertEqual((attachment['url'],attachment['role'],attachment['sha256']),(pdf,'object',digest(data)))
+  self.assertEqual(attachment['mime_type'],'application/pdf')
+  self.assertEqual((self.work/'public'/attachment['archive_path']).read_bytes(),data)
+  self.assertEqual(report['failed_attachments'],0)
+  body=capture['readable_html']
+  self.assertIn(f'<p><a href="{pdf}">Source PDF</a></p>',body)
+  self.assertIn(f'<a href="{pdf}" rel="noopener noreferrer">Source PDF</a>',body)
+  self.assertIn('<p>Still readable.</p>',body)
+  self.assertNotRegex(body,r'<(?:object|iframe|embed)\b|fallback\.pdf|nested\.pdf|another\.example|different-format')
  def test_ghost_fallback_never_keeps_frozen_website_text(self):
   from website_cache import fallback
   data={'schema_version':2,'index_kind':'discovery','canonical_origin':'https://archive.museumofone.art','counts':{'publication':1,'website':1},'records':[{'id':'publication:1','kind':'publication','relationships':[{'target_id':'website:x'}]},{'id':'website:x','kind':'website','title':'Previously public source','relationships':[]}],'content_version':'a'*64}
