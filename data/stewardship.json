@@ -52,8 +52,8 @@
     },
     {
       "path": "data/entities.json",
-      "bytes": 118339,
-      "sha256": "aeabe0ff580b31826193b076ac14c169c996e736dc9c1935f1b7b8c93373345b",
+      "bytes": 122802,
+      "sha256": "757e3f95912b77450aecb7397caa659071c6d63ee00b7e52a9bf643dfc7e57a7",
       "role": "editorial_dataset"
     },
     {
@@ -76,8 +76,8 @@
     },
     {
       "path": "data/pirr.json",
-      "bytes": 19651,
-      "sha256": "cbb8dfe7ab3db30177989b699cb1144e84e73fd888c16dff247475f7134ac42a",
+      "bytes": 22428,
+      "sha256": "a7fd33ea18daf98400c9c7ef561c726bd221aa8c0e793da9beb9a4b23d1c4057",
       "role": "editorial_dataset"
     },
     {
@@ -88,8 +88,8 @@
     },
     {
       "path": "data/programmes.json",
-      "bytes": 5623,
-      "sha256": "1f32d7dd01ced4c188072b122b2853370bd971bb6d2cc3a8fef84162d7e9e081",
+      "bytes": 6493,
+      "sha256": "c6838d0faa3b70344e85261fef630f0fff3df3d927534f34e654d0b5b7327386",
       "role": "editorial_dataset"
     },
     {
@@ -2241,6 +2241,58 @@
         "algorithm": "SHA-256",
         "method": "Extracted into an isolated temporary directory; every restored file compared with the baseline."
       }
+    },
+    {
+      "at": "2026-11-23T10:57:58Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 102,
+      "inventory_sha256": "085d0e72e5892c6842d414516549943d9399836dc638722d3ede1bfcf5eaf7c1",
+      "reviewed_paths": [
+        "data/pirr.json",
+        "data/programmes.json"
+      ]
+    },
+    {
+      "at": "2026-11-23T12:34:10Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 102,
+      "inventory_sha256": "d83677b0cd516d64a830243e16504127936725a1bdc566c378e590673282fdf8",
+      "reviewed_paths": [
+        "data/entities.json"
+      ]
+    },
+    {
+      "at": "2026-11-23T18:29:44Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 102,
+      "checked_files": 102,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "d83677b0cd516d64a830243e16504127936725a1bdc566c378e590673282fdf8"
+    },
+    {
+      "at": "2026-11-23T18:53:48Z",
+      "event": "baseline_refreshed",
+      "status": "recorded",
+      "file_count": 102,
+      "inventory_sha256": "137784ca03262958ed3f432649ad18571af380a25298651431072aab29d57da8"
+    },
+    {
+      "at": "2026-11-23T18:53:48Z",
+      "event": "fixity_check",
+      "status": "passed",
+      "algorithm": "SHA-256",
+      "file_count": 102,
+      "checked_files": 102,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "inventory_sha256": "137784ca03262958ed3f432649ad18571af380a25298651431072aab29d57da8"
     }
   ],
   "scope": "Repository source snapshots, editorial JSON datasets, and original PDF access copies.",
@@ -2253,20 +2305,8 @@
     "upstream_sources": "Original deposits remain at Zenodo; website source is held by the site platform.",
     "offsite_backup_status": "The current 101-file preservation payload was stored as a new revision of the existing private Google Drive backup, independently downloaded and fully restored on 11 November 2026. The prior 96-file revision and 4 November backup remain preserved."
   },
-  "inventory_sha256": "c0f6d071c31627ab06cd3898da598c335e5cdc0e3ac11e941023d3931fa18d36",
-  "baseline_created_at": "2026-11-13T18:06:35Z",
-  "last_check": {
-    "at": "2026-11-13T18:06:35Z",
-    "event": "fixity_check",
-    "status": "passed",
-    "algorithm": "SHA-256",
-    "file_count": 102,
-    "checked_files": 102,
-    "missing": [],
-    "added": [],
-    "changed": [],
-    "inventory_sha256": "c0f6d071c31627ab06cd3898da598c335e5cdc0e3ac11e941023d3931fa18d36"
-  },
+  "inventory_sha256": "137784ca03262958ed3f432649ad18571af380a25298651431072aab29d57da8",
+  "baseline_created_at": "2026-11-23T18:53:48Z",
   "backup": {
     "at": "2026-11-13T18:06:36Z",
     "event": "backup_and_restoration_test",
@@ -2333,5 +2373,17 @@
       "access": "Private owner-controlled backup folder",
       "scope": "Source snapshots, editorial JSON datasets and 22 original PDF access copies. Website code, dependencies, covers and the website capture vault are held separately. This dated evidence covers the prior 96-file preservation payload; the current inventory and repository deployment are recorded separately."
     }
-  ]
+  ],
+  "last_check": {
+    "at": "2026-11-23T18:53:48Z",
+    "event": "fixity_check",
+    "status": "passed",
+    "algorithm": "SHA-256",
+    "file_count": 102,
+    "checked_files": 102,
+    "missing": [],
+    "added": [],
+    "changed": [],
+    "inventory_sha256": "137784ca03262958ed3f432649ad18571af380a25298651431072aab29d57da8"
+  }
 }
