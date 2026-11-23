@@ -286,6 +286,26 @@
           "relation": "Published dialogue listed by the programme account"
         }
       ]
+    },
+    {
+      "key": "relational-archival-investigation",
+      "title": "Relational Archival Investigation",
+      "url": "https://www.museumofone.art/relational-archival-investigation/",
+      "source_url": "https://www.museumofone.art/relational-archival-investigation/",
+      "reviewed": "2026-11-23",
+      "stage": "Method in development",
+      "identifiers": [],
+      "question": "How can relationships among documentary records generate historical questions, and what evidence can support the resulting claims?",
+      "form": "Source-led historical research method (RAI) and published applications",
+      "responsibility": "Dorian Vale, Museum of One",
+      "current_work": "Relational Archival Investigation records how questions, evidence, and conclusions change as sources are compared. Its published work includes a study of identity and chronology in Korean experimental art, documentary and case-study supplements, and applications of the method.",
+      "public_sources": [
+        {
+          "title": "Relational Archival Investigation publications",
+          "url": "https://www.museumofone.art/relational-archival-investigation/#rai-publication",
+          "relation": "Methodology, working papers, and published applications"
+        }
+      ]
     }
   ],
   "programme_relations": [

@@ -24,7 +24,16 @@ class PirrCrosswalkTest(unittest.TestCase):
         originals = json.dumps([self.records, self.programmes], sort_keys=True)
         records, programmes = attach_pirr(self.records, self.programmes, self.data)
         self.assertEqual(originals, json.dumps([self.records, self.programmes], sort_keys=True))
-        self.assertEqual(sum(bool(r['pirr_references']) for r in records), 13)
+        self.assertEqual(sum(bool(r['pirr_references']) for r in records), 18)
+        rai_key = 'relational-archival-investigation'
+        rai = next(p for p in self.data['programmes'] if p['key'] == rai_key)
+        self.assertEqual(rai['identifiers'], [])
+        rai_works = {
+            str(record['id'])
+            for record in records
+            if any(ref['programme_key'] == rai_key for ref in record['pirr_references'])
+        }
+        self.assertEqual(rai_works, {'24088563', '24088574', '24088573', '24095308', '24095953'})
         self.assertEqual(sum(len(p['identifiers']) for p in self.data['programmes']), 8)
         methods = next(p for p in programmes if '/research-methods/' in p['url'])
         self.assertEqual(methods['pirr_project_id'], 'pir-prj-pyp5yx3w')
@@ -62,6 +71,7 @@ class PirrCrosswalkTest(unittest.TestCase):
         self.assertIn('href="items/23430200.html"', page['body'])
         self.assertIn('href="parts/19864099-c001.html"', page['body'])
         self.assertIn('data-registry-entry', page['body'])
+        self.assertEqual(page['body'].count('id="relational-archival-investigation"'), 1)
         programme, further = page['body'].split('<h2>Further publications in the archive</h2>')
         self.assertIn('<h4><a href="items/', programme)
         self.assertIn('<h3><a href="items/', further)
