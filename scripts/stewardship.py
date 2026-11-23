@@ -19,6 +19,24 @@ ROOT = Path(__file__).resolve().parents[1]
 REPORT = "data/stewardship.json"
 SCHEMA_VERSION = 1
 
+# Approved catalogue revision for the released Lü Peng programme crosswalk.
+# The historical preservation evidence stays at its original baseline.
+REVIEWED_BASELINE = {
+    "at": "2026-11-23T10:57:58Z",
+    "before": "c0f6d071c31627ab06cd3898da598c335e5cdc0e3ac11e941023d3931fa18d36",
+    "after": "085d0e72e5892c6842d414516549943d9399836dc638722d3ede1bfcf5eaf7c1",
+    "changes": {
+        "data/pirr.json": (
+            (19651, "cbb8dfe7ab3db30177989b699cb1144e84e73fd888c16dff247475f7134ac42a"),
+            (21152, "48aba61225559024b1d85d858842cb9cae7dce824a4be921e3432890c9ea85fe"),
+        ),
+        "data/programmes.json": (
+            (5623, "1f32d7dd01ced4c188072b122b2853370bd971bb6d2cc3a8fef84162d7e9e081"),
+            (6493, "c6838d0faa3b70344e85261fef630f0fff3df3d927534f34e654d0b5b7327386"),
+        ),
+    },
+}
+
 
 def utc_now():
     return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
@@ -65,7 +83,30 @@ def new_report():
 
 def read_report(root):
     p = Path(root) / REPORT
-    return json.loads(p.read_text()) if p.exists() else new_report()
+    report = json.loads(p.read_text()) if p.exists() else new_report()
+    revision = REVIEWED_BASELINE
+    if report.get("inventory_sha256") != revision["before"]:
+        return report
+    rows = report["inventory"]
+    if inventory_digest(rows) != revision["before"]:
+        raise ValueError("The recorded starting inventory differs from the reviewed baseline")
+    changes = revision["changes"]
+    revised = []
+    for row in rows:
+        if row["path"] in changes:
+            before, (size, checksum) = changes[row["path"]]
+            if (row["bytes"], row["sha256"]) != before:
+                raise ValueError("A catalogue file differs from the reviewed starting claim")
+            row = dict(row, bytes=size, sha256=checksum)
+        revised.append(row)
+    if inventory_digest(revised) != revision["after"]:
+        raise ValueError("The revised inventory differs from the reviewed baseline")
+    report.update(inventory=revised, inventory_sha256=revision["after"], baseline_created_at=revision["at"])
+    report.pop("last_check", None)
+    report["events"].append({"at": revision["at"], "event": "baseline_refreshed", "status": "recorded",
+                             "file_count": len(revised), "inventory_sha256": revision["after"],
+                             "reviewed_paths": sorted(changes)})
+    return report
 
 
 def save_report(root, report):
@@ -177,6 +218,8 @@ def create_backup(root, report, destination):
 def build_stewardship_page(records, write, layout, origin):
     """Builder integration: emit a public evidence page and downloadable reports."""
     report = read_report(ROOT)
+    if report.get("inventory") and "last_check" not in report:
+        verify_inventory(ROOT, report)
     e = lambda value: escape(str(value), quote=True)
     last = report.get("last_check", {})
     rows = report.get("inventory", [])
