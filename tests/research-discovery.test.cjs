@@ -83,7 +83,14 @@ test('forty real corpus retrieval cases meet the declared target ranks',()=>{
 
 test('contextual name variants retrieve the person while dialogue status stays explicit',()=>{
  const feed=load('dist/metadata/research-discovery.v2.json');
- for(const [query,id] of [['Kazuo Shiraga','shiraga-kazuo'],['Shiraga Kazuo','shiraga-kazuo'],['白髪一雄','shiraga-kazuo'],['Dong-Yeon Koh','dong-yeon-koh'],['Koh Dongyeon','dong-yeon-koh'],['Reiko Tomii','reiko-tomii'],['Paul Gladston','paul-gladston']]){
+ const nameCases = [
+  ['Kazuo Shiraga','shiraga-kazuo'], ['Shiraga Kazuo','shiraga-kazuo'], ['白髪一雄','shiraga-kazuo'],
+  ['Dong-Yeon Koh','dong-yeon-koh'], ['Koh Dongyeon','dong-yeon-koh'],
+  ['Reiko Tomii','reiko-tomii'], ['Paul Gladston','paul-gladston'],
+  ['Lu Peng','lu-peng'], ['吕澎','lu-peng'],
+  ['Akimaru Tomoki','tomoki-akimaru'], ['秋丸知貴','tomoki-akimaru'],
+ ];
+ for(const [query,id] of nameCases){
   assert.equal(api.rankRecords(feed.records,query,{kind:'entity'})[0].id,'entity:'+id);
  }
  const gladston=feed.records.find(r=>r.id==='entity:paul-gladston');

@@ -251,9 +251,10 @@ def build_research_discovery(records, entities, vocab, programmes, origin, *, ro
         for eid, entity in public_entities.items():
             for link in entity.get('web_links', []):
                 if link['url'] == address:
-                    row['relationships'].append(_edge('describes dialogue participation', 'entity:' + eid, origin + '/entities/' + eid + '.html', link['source_url'], link['note'], evidence_scope='public programme record'))
+                    scope = link.get('evidence_scope', 'public programme record')
+                    row['relationships'].append(_edge('describes dialogue participation', 'entity:' + eid, origin + '/entities/' + eid + '.html', link['source_url'], link['note'], evidence_scope=scope))
                     target = next(r for r in rows if r['id'] == 'entity:' + eid)
-                    target['relationships'].append(_edge('dialogue participation documented in', page_id, address, link['source_url'], link['note'], evidence_scope='public programme record'))
+                    target['relationships'].append(_edge('dialogue participation documented in', page_id, address, link['source_url'], link['note'], evidence_scope=scope))
         rows.append(row)
 
     # Relationships only target exported records. This also prevents private
