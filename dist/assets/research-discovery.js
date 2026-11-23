@@ -207,7 +207,7 @@
    const x=win.scrollX,y=win.scrollY;
    work();
    results.querySelectorAll('[data-discovery-id]').forEach(node=>{if(open.has(node.dataset.discoveryId))node.querySelectorAll('details').forEach(details=>details.open=true);});
-   if(active&&!active.isConnected){
+   if(active&&!active.isConnected&&doc.activeElement===doc.body){
     let target;
     if(action){const current=Array.from(results.querySelectorAll('[data-discovery-id]')).find(node=>node.dataset.discoveryId===action.id);target=current&&Array.from(current.querySelectorAll('a,summary')).find(node=>node.tagName===action.tag&&(!action.href||node.href===action.href));}
     else if(collection&&active.tagName==='SUMMARY')target=Array.from(scope.querySelectorAll('.ax-tree-group')).find(node=>node.dataset.axCollectionGroup===collection)?.querySelector('summary');

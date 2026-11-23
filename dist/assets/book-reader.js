@@ -122,5 +122,5 @@ async function startReader(root){
   Object.values(controls).forEach(control=>{if(control)control.disabled=false;});
   if(controls.fullscreen&&!shell.requestFullscreen){controls.fullscreen.hidden=true;}
   currentPage=core.pageFromHash(location.hash,pdf.numPages);await showPage(currentPage,{hash:false});shell.classList.add('reader-ready');
- }catch(error){setBusy(false);shell.classList.add('reader-failed');message('The in-site reader could not open this publication. Use the original PDF or repository record below.');}
+ }catch(error){setBusy(false);shell.classList.add('reader-failed');message('The in-site reader could not open this publication. Use Open or download PDF to read the original file.');}
 }

@@ -394,9 +394,6 @@ body.archive-registry { background: var(--paper); font-size: 16px; }
   .archive-registry .collection-tree > details:not([open]) > summary > [data-tree-total-breakdown] {
     display: none;
   }
-  .archive-registry[data-page^="read/"] .reader-breadcrumb {
-    padding-top: .75rem;
-  }
 }
 
 @media (max-width: 420px) {
@@ -604,6 +601,17 @@ body.archive-registry {
 }
 .archive-registry .reader-shell :is(.reader-header small, #reader-controls label, #reader-status) { color: #d8cbb2; }
 .archive-registry .reader-shell a { color: #dfc795; }
+@media (min-width: 1101px) {
+  .archive-registry[data-page^="read/"] .archive-workspace > .archive-workbench { grid-area: 1 / 2; }
+  .archive-registry[data-page^="read/"] .archive-workspace > .collection-tree { grid-area: 1 / 1; }
+}
+@media (max-width: 760px) {
+  .archive-registry[data-page^="read/"] .utility { padding-block: .45rem; }
+  .archive-registry[data-page^="read/"] .header { padding-block: .75rem; row-gap: .625rem; }
+  .archive-registry[data-page^="read/"] .nav { gap: .5rem .875rem; }
+  .archive-registry[data-page^="read/"] .archive-workspace { padding-top: .75rem; }
+  .archive-registry[data-page^="read/"] .reader-breadcrumb { padding-top: 0; }
+}
 .archive-registry .reader-shell :is(button, select, #reader-loading) {
   background: var(--reader-panel);
   border-color: var(--reader-rule);

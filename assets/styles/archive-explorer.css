@@ -109,6 +109,7 @@
 .archive-explorer .ax-reading-entry p{font-size:12px}
 .archive-explorer .ax-reading-actions{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
 .archive-explorer .ax-table-scroll{overflow:auto}
+.archive-explorer .ax-table-scroll:focus-visible{outline:2px solid var(--ax-accent);outline-offset:-2px}
 .archive-explorer table{border-collapse:collapse;width:100%;font:12px/1.6 var(--ax-sans);margin-top:24px;min-width:500px}
 .archive-explorer th,.archive-explorer td{border:1px solid var(--ax-line);padding:12px;text-align:left;vertical-align:top;background:transparent;color:var(--ax-ink)}
 .archive-explorer .ax-live{font-size:12px;min-height:18px;margin:20px 0 0;color:var(--ax-muted)}

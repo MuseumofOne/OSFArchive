@@ -94,7 +94,17 @@ def description_excerpt(value, limit):
 
 def layout(title,desc,content,path='index.html',base='',active='',schema=None):
  graph=schema or {'@context':'https://schema.org','@type':'CollectionPage','name':title,'description':desc,'url':url(path),'isPartOf':{'@type':'WebSite','@id':ORIGIN+'/#website','name':'Museum of One Digital Archive Library','url':ORIGIN+'/'}}
- return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="{VIEWPORT}"><title>{E(title)} | Museum of One Digital Archive Library</title><meta name="description" content="{E(description_excerpt(desc,170))}"><link rel="canonical" href="{E(url(path))}"><meta property="og:site_name" content="Museum of One Digital Archive Library"><meta property="og:locale" content="en_GB"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(description_excerpt(desc,200))}"><meta property="og:url" content="{E(url(path))}"><link rel="alternate" type="text/plain" title="Machine-readable archive guide" href="{base}llms.txt"><meta name="theme-color" content="{THEME_COLOR}"><link rel="icon" href="{base}assets/favicon.svg" type="image/svg+xml"><script>document.documentElement.classList.add("archive-has-js")</script><link rel="stylesheet" href="{base}assets/style.css"><script type="application/ld+json">{J(graph)}</script><script defer src="{base}assets/app.js"></script></head><body>{header(base,active)}<main id="main" class="shell">{content}</main>{footer(base)}</body></html>'''
+ image=E(url('assets/archive-social-preview.jpg'))
+ image_alt='Museum of One Digital Archive Library, with the institutional seal'
+ social_preview=(
+  f'<meta property="og:image" content="{image}">'
+  '<meta property="og:image:type" content="image/jpeg">'
+  '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
+  f'<meta property="og:image:alt" content="{image_alt}">'
+  '<meta name="twitter:card" content="summary_large_image">'
+  f'<meta name="twitter:image" content="{image}"><meta name="twitter:image:alt" content="{image_alt}">'
+ )
+ return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="{VIEWPORT}"><title>{E(title)} | Museum of One Digital Archive Library</title><meta name="description" content="{E(description_excerpt(desc,170))}"><link rel="canonical" href="{E(url(path))}"><meta property="og:site_name" content="Museum of One Digital Archive Library"><meta property="og:locale" content="en_GB"><meta property="og:type" content="website">{social_preview}<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(description_excerpt(desc,200))}"><meta property="og:url" content="{E(url(path))}"><link rel="alternate" type="text/plain" title="Machine-readable archive guide" href="{base}llms.txt"><meta name="theme-color" content="{THEME_COLOR}"><link rel="icon" href="{base}assets/favicon.svg" type="image/svg+xml"><script>document.documentElement.classList.add("archive-has-js")</script><link rel="stylesheet" href="{base}assets/style.css"><script type="application/ld+json">{J(graph)}</script><script defer src="{base}assets/app.js"></script></head><body>{header(base,active)}<main id="main" class="shell">{content}</main>{footer(base)}</body></html>'''
 def write(path,content):
  if path.endswith('.html') and path != '404.html':
   content=enhance_page(path,content,RECORDS,PROGRAMMES)

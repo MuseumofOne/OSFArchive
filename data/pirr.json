@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "reviewed": "2026-11-04",
+  "reviewed": "2026-11-23",
   "registry_url": "https://www.museumofone.art/research-programmes/#pirr",
   "registry_source_url": "https://www.museumofone.art/research-infrastructure/#post-interpretive-research-registry",
   "scope": "A local crosswalk of public Museum of One research programme accounts and the archive’s deposited publications. PIRR project IDs and programme references remain distinct; no independent PIRR publication identifiers are assigned.",
@@ -258,6 +258,32 @@
           "title": "Existing English-language publication",
           "url": "https://www.museumofone.art/publication-threads-of-sand/",
           "relation": "Available public record listed by the programme account"
+        }
+      ]
+    },
+    {
+      "key": "research-chinese-art-historiography",
+      "title": "Historical Explanation and Chinese Art Historiography",
+      "url": "https://www.museumofone.art/research-chinese-art-historiography/",
+      "source_url": "https://www.museumofone.art/research-chinese-art-historiography/",
+      "reviewed": "2026-11-23",
+      "stage": "In development",
+      "identifiers": [
+        {
+          "scheme": "PIRR project ID",
+          "value": "pir-prj-br3k2hk9",
+          "source_url": "https://www.museumofone.art/research-chinese-art-historiography/#programme-record"
+        }
+      ],
+      "question": "How can historical explanation reveal what a work makes possible, while remaining open to evidence that changes the account?",
+      "current_work": "The inquiry examines how archival corroboration and comparison among works can inform analysis of form, materials and visual structure. The dialogue is the first public record of the exchange. Case selection and findings remain part of the developing research.",
+      "form": "Art-historical case inquiry and methodological dialogue",
+      "responsibility": "Dorian Vale, Museum of One programme record. Lü Peng, interlocutor and author of the published first response.",
+      "public_sources": [
+        {
+          "title": "What Art Reveals, What History Explains",
+          "url": "https://www.museumofone.art/lu-peng/",
+          "relation": "Published dialogue listed by the programme account"
         }
       ]
     }
