@@ -6,7 +6,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from entities import attach_entities, build_entity_pages
+from entities import attach_entities, build_entity_pages, canonical_author_profiles
 
 
 class ContextualEntitiesTest(unittest.TestCase):
@@ -55,6 +55,51 @@ class ContextualEntitiesTest(unittest.TestCase):
         self.assertEqual(artwork['schema']['creator'][0]['name'], 'Doris Salcedo')
         tomii = json.loads(output['entities/reiko-tomii.html'])
         self.assertNotIn('author', tomii['schema'])
+
+    def test_public_exchange_count_and_preserved_capture_are_visible(self):
+        output = {}
+        def layout(title, desc, body, **kwargs):
+            return json.dumps({'description': desc, 'body': body, **kwargs})
+        koh = next(entity for entity in self.entities if entity['id'] == 'dong-yeon-koh')
+        source = koh['web_links'][0]['url']
+        capture = 'website/web-abcdef0123456789abcdef01.html'
+        origin = 'https://archive.example'
+        build_entity_pages(self.records, self.entities, output.__setitem__, layout, origin,
+                           website_captures={source: capture})
+        directory = json.loads(output['people.html'])['body']
+        card = directory.split('id="dong-yeon-koh"', 1)[1].split('</article>', 1)[0]
+        self.assertIn('1 linked exchange', card)
+        self.assertNotIn('linked publications', card)
+        page = json.loads(output['entities/dong-yeon-koh.html'])
+        self.assertIn(f'href="../{capture}"', page['body'])
+        self.assertIn(f'href="{source}"', page['body'])
+        self.assertEqual(page['schema']['subjectOf'][-1]['@id'], f'{origin}/{capture}#record')
+        self.assertEqual(page['schema']['subjectOf'][-1]['isBasedOn'], {'@id': source})
+        lee = json.loads(output['entities/lee-kang-so.html'])
+        self.assertIn('Lee Kang-so', lee['description'])
+
+    def test_publisher_profile_requires_an_attributed_author_source(self):
+        vale = next(entity for entity in self.entities if entity['id'] == 'dorian-vale')
+        author_source, other_source = [
+            link['source_url'] for link in vale['record_links'] if link['relation'] == 'author'
+        ][:2]
+        url = 'https://www.museumofone.art/author/dorianvale/'
+        author = {'name': 'Dorian Vale', 'url': url}
+        captures = [{'source': {'url': author_source, 'creators': [author]}}]
+        profiles = canonical_author_profiles(self.entities, captures)
+        self.assertEqual(profiles, {'dorian-vale': url})
+        output = {}
+        def layout(title, desc, body, **kwargs):
+            return json.dumps({'body': body, **kwargs})
+        build_entity_pages(self.records, self.entities, output.__setitem__, layout, 'https://archive.example',
+                           author_profiles=profiles)
+        page = json.loads(output['entities/dorian-vale.html'])
+        self.assertIn(f'href="{url}"', page['body'])
+        self.assertEqual(page['schema']['sameAs'], [url])
+        self.assertNotIn('affiliation', page['schema'])
+        alternate = dict(author, url='https://www.museumofone.art/author/second-profile/')
+        captures.append({'source': {'url': other_source, 'creators': [alternate]}})
+        self.assertFalse(canonical_author_profiles(self.entities, captures))
 
 
 if __name__ == '__main__':

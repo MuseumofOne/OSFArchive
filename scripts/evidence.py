@@ -169,7 +169,8 @@ def build_evidence_pages(payload,write,layout,origin):
   if r.get('collectionId'):schema['mainEntity']['isPartOf']={'@id':groups[r['collectionId']]['recordUrl']+'#record'}
   if r.get('pages'):schema['mainEntity']['hasPart']=[{'@type':'CreativeWork','@id':r['recordUrl']+'#'+p['id'],'name':p.get('label',p['id']),'url':p['recordUrl']} for p in r['pages']]
   head='<div class="page-head"><div class="breadcrumb"><a href="../index.html">Archive</a> / <a href="../evidence.html">Evidence records</a></div><div class="eyebrow">'+E(level)+'</div><h1>'+E(r['title'])+'</h1></div>'
-  html=layout(r['title'],schema['description'],head+'<div class="evidence-record">'+body+'</div>',path,base='../',schema=schema).replace('</head>','<link rel="stylesheet" href="../assets/evidence.css"><script defer src="../assets/evidence.js"></script></head>');write(path,html);paths.append(path)
+  page_title=r['title']+' — Evidence record' if r.get('publicationId') else r['title']
+  html=layout(page_title,schema['description'],head+'<div class="evidence-record">'+body+'</div>',path,base='../',schema=schema).replace('</head>','<link rel="stylesheet" href="../assets/evidence.css"><script defer src="../assets/evidence.js"></script></head>');write(path,html);paths.append(path)
  for collection in payload['collections']+payload['series']:
   body=''.join(para(collection.get(k)) for k in ('introduction','description','scope','selection','omissions','arrangement'))
   body+='<h2>Documents available to read</h2>'+links([{'url':d['recordUrl'],'title':d['title'],'note':d.get('materialType','')} for d in documents.values() if d.get('seriesId')==collection['id'] or d.get('collectionId')==collection['id']])

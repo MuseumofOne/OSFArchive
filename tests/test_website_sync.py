@@ -117,6 +117,20 @@ class Sync(unittest.TestCase):
   self.assertIn(f'href="{source}#live-only"',page)
   self.assertIn(f'href="{uncaptured}#programme-outputs"',page)
   self.assertIn(f'href="{source}#programme-outputs"',(out/f'website/web-{RID}.source.html.txt').read_text())
+ def test_same_day_same_title_captures_keep_both_publication_dates(self):
+  other=copy.deepcopy(self.row)
+  other['record'].update(id='d'*24,url='https://www.museumofone.art/another/',
+                         published_at='2025-04-02T00:00:00Z')
+  self.run_sync([self.row,other])
+  out=self.root/'dist'
+  def write(path,text):
+   file=out/path;file.parent.mkdir(parents=True,exist_ok=True);file.write_text(text)
+  def layout(title,description,content,*args,**kwargs):return f'<title>{title}</title>{content}'
+  build_website_pages(self.work,out,write,layout,'https://archive.museumofone.art')
+  first=(out/f'website/web-{RID}.html').read_text()
+  second=(out/('website/web-'+'d'*24+'.html')).read_text()
+  self.assertIn('Website capture (2026-11-05, source published 2025-03-02)',first)
+  self.assertIn('Website capture (2026-11-05, source published 2025-04-02)',second)
  def test_curated_files_never_mutated_and_withdrawn_render_paths_removed(self):
   (self.root/'data').mkdir();curated=self.root/'data/catalogue.json';curated.write_text('{"manual":"retain"}');before=curated.read_bytes();s,p,_=self.run_sync();out=self.root/'dist';out.mkdir()
   def write(path,text):f=out/path;f.parent.mkdir(parents=True,exist_ok=True);f.write_text(text)

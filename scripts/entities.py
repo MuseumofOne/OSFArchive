@@ -6,7 +6,7 @@ artists, correspondents and curators are never promoted to publication authors.
 from copy import deepcopy
 from html import escape
 import re
-from identities import entity_uri, doi_uri
+from identities import entity_uri
 from relationship_assertions import RELATIONS
 
 
@@ -82,10 +82,32 @@ def _nav(base=''):
             f'<a class="pill" href="{base}exhibitions.html">Exhibitions discussed</a></nav>')
 
 
-def entity_graph(entities, origin):
+def canonical_author_profiles(entities, captures):
+    """Match publisher profiles through public, attributed author records."""
+    authors_by_url = {capture['source']['url']: capture['source']['creators'] for capture in captures}
+    profiles = {}
+    for entity in _entities(entities):
+        if entity['type'] != 'Person':
+            continue
+        urls = {
+            author['url']
+            for link in entity.get('record_links', [])
+            if link['relation'] == 'author'
+            for author in authors_by_url.get(link['source_url'], [])
+            if author['name'] == entity['label']
+            and re.fullmatch(r'https://www\.museumofone\.art/author/[a-z0-9-]+/', author.get('url') or '')
+        }
+        if len(urls) == 1:
+            profiles[entity['id']] = next(iter(urls))
+    return profiles
+
+
+def entity_graph(entities, origin, *, website_captures=None, author_profiles=None):
     """The same authority nodes used by entity pages and the combined graph."""
     entities = _entities(entities)
     _validate(entities)
+    website_captures = website_captures or {}
+    author_profiles = author_profiles or {}
     by_id = {entity['id']: entity for entity in entities}
     nodes = []
     for entity in entities:
@@ -100,24 +122,37 @@ def entity_graph(entities, origin):
         if entity.get('identifiers'):
             node['identifier'] = [{'@type': 'PropertyValue', 'propertyID': i['scheme'], 'value': i['value']}
                                   for i in entity['identifiers']]
+        if entity['id'] in author_profiles:
+            node['sameAs'] = [author_profiles[entity['id']]]
         creators = [r for r in entity.get('relationships', []) if r['relation'] == 'created by']
         if creators:
             node['creator'] = [{'@type': 'Person', '@id': entity_uri(r['id'], origin),
                                 'name': by_id[r['id']]['label']} for r in creators]
         node['subjectOf'] = [{'@type': 'CreativeWork', '@id': origin.rstrip('/')+'/items/'+str(link['record_id'])+'.html#work'}
                              for link in entity.get('record_links', []) if link['relation'] in {'artist discussed', 'artwork discussed', 'exhibition discussed', 'scholar discussed', 'curator discussed'}]
-        node['subjectOf'] += [{'@type': 'WebPage', '@id': link['url'], 'url': link['url'], 'description': link['note']} for link in entity.get('web_links', [])]
+        for link in entity.get('web_links', []):
+            node['subjectOf'].append({'@type': 'WebPage', '@id': link['url'], 'url': link['url'],
+                                      'description': link['note']})
+            capture_path = website_captures.get(link['url'])
+            if capture_path:
+                capture = origin.rstrip('/') + '/' + capture_path
+                node['subjectOf'].append({'@type': 'WebPage', '@id': capture + '#record', 'url': capture,
+                                          'isBasedOn': {'@id': link['url']}})
         nodes.append(node)
     return {'@context': 'https://schema.org', '@graph': nodes}
 
 
-def build_entity_pages(records, entities, write, layout, origin):
+def build_entity_pages(records, entities, write, layout, origin, *, website_captures=None, author_profiles=None):
     """Write indexes and individual authorities; return paths for the sitemap."""
     entities = _entities(entities)
     _validate(entities)
     by_id = {entity['id']: entity for entity in entities}
     by_record = {str(record['id']): record for record in records}
-    authority_nodes = {node['@id']: node for node in entity_graph(entities, origin)['@graph']}
+    website_captures = website_captures or {}
+    author_profiles = author_profiles or {}
+    authority_nodes = {node['@id']: node for node in
+                       entity_graph(entities, origin, website_captures=website_captures,
+                                    author_profiles=author_profiles)['@graph']}
     paths = []
     indexes = [
         ('people.html', 'People & organizations', {'Person', 'Organization'},
@@ -138,10 +173,16 @@ def build_entity_pages(records, entities, write, layout, origin):
                 f'<div class="reading"><p>{_e(scope)}</p></div>'
                 '<div class="directory-grid entity-directory">')
         for entity in selected:
-            count = len({str(link['record_id']) for link in entity.get('record_links', [])})
+            publications = len({str(link['record_id']) for link in entity.get('record_links', [])})
+            exchanges = len({link['url'] for link in entity.get('web_links', [])})
+            counts = []
+            if publications:
+                counts.append(f'{publications} linked publication' + ('s' if publications != 1 else ''))
+            if exchanges:
+                counts.append(f'{exchanges} linked exchange' + ('s' if exchanges != 1 else ''))
+            label = ' · '.join([entity['type'], *counts])
             body += (f'<article class="directory-entry" id="{_e(entity["id"])}">'
-                     f'<div class="eyebrow">{_e(entity["type"])} · {count} linked publication'
-                     f'{"s" if count != 1 else ""}</div>'
+                     f'<div class="eyebrow">{_e(label)}</div>'
                      f'<h2><a href="entities/{_e(entity["id"])}.html">{_e(entity["label"])}</a></h2>'
                      f'<p>{_e(entity.get("summary", ""))}</p></article>')
         body += '</div>'
@@ -166,6 +207,9 @@ def build_entity_pages(records, entities, write, layout, origin):
             body += (f'<div><dt>{_e(identifier["scheme"])}</dt><dd>'
                      f'<a href="{_e(identifier["url"])}">{_e(identifier["value"])} ↗</a>'
                      f'<p>{_e(identifier.get("note", ""))}</p></dd></div>')
+        if entity['id'] in author_profiles:
+            body += (f'<div><dt>Publisher author profile</dt><dd>'
+                     f'<a href="{_e(author_profiles[entity["id"]])}">{_e(entity["label"])} at Museum of One ↗</a></dd></div>')
         body += '</dl></section>'
         related = list(entity.get('relationships', []))
         for other in entities:
@@ -182,25 +226,29 @@ def build_entity_pages(records, entities, write, layout, origin):
                          f'<small>{_e(relationship["relation"])} · '
                          f'<a href="{_e(relationship["source_url"])}">source evidence ↗</a></small></li>')
             body += '</ul></section>'
-        body += '<section class="item-section">'
         if entity.get('record_links'):
-            body += '<h2>Linked publications</h2>'
-        for link in entity.get('record_links', []):
-            record = by_record[str(link['record_id'])]
-            body += (f'<div class="entity-publication"><a class="record-row" href="../items/{_e(record["id"])}.html">'
-                     f'<span class="row-id">{_e(record["accession"])}</span><span>'
-                     f'<h3>{_e(record.get("short_title", record["title"]))}</h3>'
-                     f'<p>{_e(link["relation"])} · {_e(record["type"])}</p></span>'
-                     '<span aria-hidden="true">↗</span></a>'
-                     f'<p class="entity-evidence">{_e(link.get("note", ""))} '
-                     f'<a href="{_e(link["source_url"])}">Read the source ↗</a></p></div>')
+            body += '<section class="item-section"><h2>Linked publications</h2>'
+            for link in entity['record_links']:
+                record = by_record[str(link['record_id'])]
+                body += (f'<div class="entity-publication"><a class="record-row" href="../items/{_e(record["id"])}.html">'
+                         f'<span class="row-id">{_e(record["accession"])}</span><span>'
+                         f'<h3>{_e(record.get("short_title", record["title"]))}</h3>'
+                         f'<p>{_e(link["relation"])} · {_e(record["type"])}</p></span>'
+                         '<span aria-hidden="true">↗</span></a>'
+                         f'<p class="entity-evidence">{_e(link.get("note", ""))} '
+                         f'<a href="{_e(link["source_url"])}">Read the source ↗</a></p></div>')
+            body += '</section>'
         if entity.get('web_links'):
             body += '<section class="item-section"><h2>Exchanges and research context</h2><ul class="source-list">'
             for link in entity['web_links']:
                 body += (f'<li><a href="{_e(link["url"])}">{_e(link["relation"])} ↗</a>'
-                         f'<p>{_e(link["note"])}</p><small>Status: {_e(link["status"])} · reviewed {_e(link["reviewed"])}</small></li>')
+                         f'<p>{_e(link["note"])}</p>')
+                capture = website_captures.get(link['url'])
+                if capture:
+                    body += f'<p><a href="../{_e(capture)}">Read the preserved website capture ↗</a></p>'
+                body += f'<small>Status: {_e(link["status"])} · reviewed {_e(link["reviewed"])}</small></li>'
             body += '</ul></section>'
-        body += '</section><section class="item-section"><h2>Sources &amp; record control</h2><ul class="source-list">'
+        body += '<section class="item-section"><h2>Sources &amp; record control</h2><ul class="source-list">'
         for source in entity.get('sources', []):
             body += (f'<li><a href="{_e(source["url"])}">{_e(source["label"])} ↗</a>'
                      f'<small>{_e(source.get("note", ""))}</small></li>')
@@ -208,6 +256,9 @@ def build_entity_pages(records, entities, write, layout, origin):
                  'No external authority identifier is assigned where one has not been established.</p>'
                  f'<p><a href="../metadata/entities.json" download>Download contextual authority data ↓</a></p></section>')
         node = authority_nodes[entity_uri(entity['id'], origin)]
-        write(path, layout(entity['label'], description, body, path=path, base='../', schema=node))
+        meta_description = description
+        if entity['label'].casefold() not in description.casefold():
+            meta_description = entity['label'] + ' — ' + description
+        write(path, layout(entity['label'], meta_description, body, path=path, base='../', schema=node))
         paths.append(path)
     return paths

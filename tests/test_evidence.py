@@ -39,11 +39,12 @@ class EvidenceRecords(unittest.TestCase):
   d=next(r for r in rows if r['id']=='evidence:rai-main-paper-v1');self.assertEqual(d['source_layer'],'research-document');self.assertIn('ko',d['languages']);self.assertIn('24088563',d['relationships'][-1]['target_id'])
  def test_static_records_preserve_readings_rights_provenance_and_exports(self):
   p=prepare_evidence(self.raw,ORIGIN);out={}
-  def layout(title,desc,content,path,**kwargs):return '<html><head></head><body>'+content+'</body></html>'
+  def layout(title,desc,content,path,**kwargs):return '<html><head><title>'+title+'</title></head><body>'+content+'</body></html>'
   paths=build_evidence_pages(p,out.__setitem__,layout,ORIGIN)
   self.assertIn('dossiers/park-suk-won-chronology.html',paths)
   for d in p['documents']:
    page=out['evidence/'+d['id']+'.html'];self.assertIn(d['rights']['statement'].split('.')[0],page)
+   if d.get('publicationId'):self.assertIn(' — Evidence record</title>',page)
    for x in d['pages']:self.assertIn('id="'+x['id']+'"',page)
    self.assertIn('metadata/evidence/'+d['id']+'.csl.json',out)
   self.assertIn('iiif/rai-main-paper-v1/manifest.json',out);self.assertNotIn('iiif/mmca-collection-07912/manifest.json',out)
