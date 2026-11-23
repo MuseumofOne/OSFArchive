@@ -1,11 +1,13 @@
 """Render source web records separately from the curated publication catalogue."""
 
+from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from archive_design import asset_url
 from html import escape, unescape
 import json, shutil, re
 from urllib.parse import urlsplit
+from identities import entity_uri
 from website_sync import digest
 from website_metadata import capture_schema
 from publication_arrangement import ENCOUNTER_LINKS, RAI_SERIES, canonical_key, mirror_quality
@@ -241,6 +243,12 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
         "reference_count": len(references),
         "records": inventory,
     }, ensure_ascii=False, indent=2))
+    capture_titles = Counter((p['source']['title'], p['capture']['captured_at'][:10]) for p in current)
+    entities = json.loads((Path(__file__).resolve().parents[1] / 'data/entities.json').read_text())
+    entities_by_source = defaultdict(list)
+    for entity in entities:
+        for link in entity.get('web_links', []):
+            entities_by_source[link['url']].append((entity, link))
     for p in current:
         r = p["source"]
         rid = p["archive_id"]
@@ -477,8 +485,7 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
                 + "".join("<li>" + e(v) + "</li>" for v in p["validation_issues"])
                 + "</ul>"
             )
-        entities = json.loads((Path(__file__).resolve().parents[1] / 'data/entities.json').read_text())
-        linked = [(entity, link) for entity in entities for link in entity.get('web_links', []) if link['url'] == r['url']]
+        linked = entities_by_source[r['url']]
         if linked:
             content += '<section class="item-section"><h2>People in this exchange</h2><ul class="source-list">'
             for entity, link in linked:
@@ -486,6 +493,8 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
             content += '</ul></section>'
         content += "</div></div>"
         schema = capture_schema(p, assets, capture_files[1], url, origin)
+        if linked:
+            schema['mentions'] = [{'@id': entity_uri(entity['id'], origin)} for entity, _ in linked]
         if arrangement["edition_path"]:
             content = content.replace("</h1>", '</h1><p><a href="../' + e(arrangement["edition_path"]) + '">View the linked deposited edition ↗</a></p>', 1)
         slug = canonical_key(r["url"])[1].rsplit("/", 1)[-1]
@@ -494,9 +503,16 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
             target = captures_by_slug.get(target_slug)
             if target:
                 content = content.replace("</h1>", '</h1><p><a href="../' + e(target["capture_path"]) + '">' + e(label) + ' ↗</a></p>', 1)
+        selected_date = p['capture']['captured_at'][:10]
+        capture_label = selected_date
+        if capture_titles[r['title'], selected_date] > 1 and p.get('original_published_at'):
+            capture_label += ', source published ' + p['original_published_at'][:10]
+        description = p['summary'] or 'Stored public website record and its source metadata.'
+        if arrangement['edition_path']:
+            description = 'Archived website record. ' + description
         html = layout(
-            r["title"] + " — Website capture (" + p["capture"]["captured_at"][:10] + ")",
-            p["summary"] or "Stored public website record and its source metadata.",
+            r['title'] + ' — Website capture (' + capture_label + ')',
+            description,
             content,
             page,
             base="../",

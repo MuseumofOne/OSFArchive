@@ -4,7 +4,7 @@ from osf_editions import attach_osf_editions
 from experience import enhance_page, discovery_payload
 from enrich import enrich_record
 from finding_aid import build_finding_aid
-from entities import attach_entities, build_entity_pages, entity_graph
+from entities import attach_entities, build_entity_pages, canonical_author_profiles, entity_graph
 from contents import attach_contents, build_content_pages
 from vocabulary import attach_vocabulary, build_vocabulary_pages
 from policies import attach_catalogue_history, build_policy_pages
@@ -70,6 +70,8 @@ for r in RECORDS:
  if r['collection'] not in GROUPS:GROUPS[r['collection']]=(f"{len(GROUPS)+1:02d}",r['collection'],'Explore records in this collection.')
 CAPTURES = load_publication_captures(SYNC_WORK)
 WEB_INVENTORY = publication_inventory(CAPTURES, RECORDS)
+WEBSITE_CAPTURE_PATHS = {r['source_url']: r['capture_path'] for r in WEB_INVENTORY}
+AUTHOR_PROFILES = canonical_author_profiles(ENTITIES, CAPTURES)
 WEB_PUBLICATIONS = [r for r in WEB_INVENTORY if r['collection']]
 WEBSITE_CARDS = [r for r in WEB_PUBLICATIONS if not r['edition_path']]
 CAPTURE_LINKS = {r['edition_path']: r['capture_path'] for r in WEB_PUBLICATIONS if r['edition_path']}
@@ -333,7 +335,8 @@ build_finding_aid(RECORDS,PROGRAMMES,write,layout)
 paths=['finding-aid.html','index.html','catalogue.html','collections.html','about.html','sources.html','programmes.html','subjects.html']+[f'items/{r["id"]}.html' for r in RECORDS]
 paths+=build_wdw_sources(write,layout,ORIGIN)
 paths+=build_reader_pages(RECORDS,write,layout,ORIGIN)
-paths+=build_entity_pages(RECORDS,ENTITIES,write,layout,ORIGIN)
+paths+=build_entity_pages(RECORDS,ENTITIES,write,layout,ORIGIN,website_captures=WEBSITE_CAPTURE_PATHS,
+                          author_profiles=AUTHOR_PROFILES)
 paths+=build_content_pages(RECORDS,CONTENTS,write,layout,ORIGIN)
 paths+=build_vocabulary_pages(RECORDS,VOCABULARY,write,layout,ORIGIN)
 paths+=build_policy_pages(RECORDS,write,layout,ORIGIN)
@@ -357,7 +360,9 @@ write('metadata/metadata-profile.json',json.dumps(PROFILE,ensure_ascii=False,ind
 write('metadata/relations.json',json.dumps(relation_register(ORIGIN),ensure_ascii=False,indent=2))
 write('metadata/relationships.json',json.dumps({'profile_version':PROFILE['version'],'assertions':[a for r in RECORDS for a in r['relationship_assertions']]+typed_entity_relationship_assertions(ENTITIES,ORIGIN)},ensure_ascii=False,indent=2))
 ALL_GRAPHS=collect_graphs(OUT,paths)
-QUALITY=build_quality_report(RECORDS,ALL_GRAPHS,entity_graph(ENTITIES,ORIGIN),ORIGIN,output_dir=OUT,entity_records=ENTITIES)
+QUALITY=build_quality_report(RECORDS,ALL_GRAPHS,
+    entity_graph(ENTITIES,ORIGIN,website_captures=WEBSITE_CAPTURE_PATHS,author_profiles=AUTHOR_PROFILES),
+    ORIGIN,output_dir=OUT,entity_records=ENTITIES)
 QUALITY['website_mirror'] = mirror_quality(WEB_INVENTORY)
 write('metadata/quality-report.json',json.dumps(QUALITY,ensure_ascii=False,indent=2))
 require_valid_report(QUALITY)
