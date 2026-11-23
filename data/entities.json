@@ -2574,5 +2574,99 @@
     ],
     "relationships": [],
     "name_source": "English/Hangul pairing retained from the previously verified public RAI artist indexes; PDF locators independently checked for the English label."
+  },
+  {
+    "id": "lu-peng",
+    "label": "Lü Peng",
+    "type": "Person",
+    "variants": [
+      "吕澎",
+      "Lu Peng"
+    ],
+    "identifiers": [],
+    "summary": "Lü Peng (吕澎), a Chinese art historian and curator, wrote the first published response in a dialogue with Dorian Vale on Post-Interpretive Criticism and Chinese art historiography.",
+    "authority_status": "Locally maintained, source-qualified contextual record",
+    "sources": [
+      {
+        "url": "https://www.museumofone.art/lu-peng/#part-01",
+        "label": "Lü Peng’s response — Museum of One",
+        "note": "The dialogue presents this instalment under Lü Peng’s byline and records the original WeChat publication."
+      },
+      {
+        "url": "https://mp.weixin.qq.com/s?__biz=MzcwMjM0ODE2MA==&mid=2247484270&idx=1&sn=952491480f89063073fab6733076da9d&chksm=f493ed81c3e46497d3af3ce3364ad594944d78e235c318c5f7ad88d5a8ef70e10facfdcc9a73&cur_album_id=4787993867315052553&scene=189#wechat_redirect",
+        "label": "Lü Peng’s original response — Lü Peng – Art History, WeChat",
+        "note": "Original publication linked by the Museum of One edition, dated 15 November 2026."
+      },
+      {
+        "url": "https://www.museumofone.art/research-chinese-art-historiography/#programme-record",
+        "label": "Historical Explanation and Chinese Art Historiography — programme record",
+        "note": "Museum of One’s programme follows Lü Peng’s proposal to test the dialogue’s questions through particular works and historical cases."
+      },
+      {
+        "url": "https://cdn.aaa.org.hk/_source/Collection_documents/lu-peng-archive.pdf",
+        "label": "Asia Art Archive — Lu Peng archive",
+        "note": "Independent name and research context source."
+      }
+    ],
+    "record_links": [],
+    "web_links": [
+      {
+        "url": "https://www.museumofone.art/lu-peng/",
+        "relation": "dialogue participant",
+        "evidence_scope": "published dialogue record",
+        "source_url": "https://www.museumofone.art/lu-peng/",
+        "note": "Author of the response published on 15 November 2026 on the Lü Peng – Art History WeChat account. The exchange also includes a separately attributed reply by Dorian Vale.",
+        "reviewed": "2026-11-23",
+        "status": "published dialogue"
+      }
+    ],
+    "description_reviewed": "2026-11-23"
+  },
+  {
+    "id": "tomoki-akimaru",
+    "label": "Tomoki Akimaru",
+    "type": "Person",
+    "variants": [
+      "秋丸知貴",
+      "Akimaru Tomoki"
+    ],
+    "identifiers": [],
+    "summary": "Tomoki Akimaru (秋丸知貴) and Dorian Vale are the credited participants in On Post-Interpretive Criticism, a dialogue published in English and Japanese by Art Criticism+ / AICA Japan.",
+    "authority_status": "Locally maintained, source-qualified contextual record",
+    "sources": [
+      {
+        "url": "https://www.museumofone.art/tomoki-akimaru/",
+        "label": "Museum of One — archived dialogue and citation",
+        "note": "The archival presentation cites both interlocutors and links to the published English and Japanese texts."
+      },
+      {
+        "url": "https://critique.aicajapan.com/19726",
+        "label": "Art Criticism+ / AICA Japan — original English publication",
+        "note": "Published 5 September 2026 with both interlocutors named."
+      },
+      {
+        "url": "https://critique.aicajapan.com/19740",
+        "label": "Art Criticism+ / AICA Japan — original Japanese publication",
+        "note": "Published 5 September 2026 with both interlocutors named."
+      },
+      {
+        "url": "https://critique.aicajapan.com/author/akimarut",
+        "label": "Art Criticism+ — Tomoki Akimaru author page",
+        "note": "The original publication outlet’s author page links both language editions."
+      }
+    ],
+    "record_links": [],
+    "web_links": [
+      {
+        "url": "https://www.museumofone.art/tomoki-akimaru/",
+        "relation": "dialogue participant",
+        "evidence_scope": "published dialogue record",
+        "source_url": "https://www.museumofone.art/tomoki-akimaru/",
+        "note": "Akimaru and Vale are the participants credited in the published dialogue. Art Criticism+ / AICA Japan published the English and Japanese texts on 5 September 2026.",
+        "reviewed": "2026-11-23",
+        "status": "published bilingual dialogue"
+      }
+    ],
+    "description_reviewed": "2026-11-23"
   }
 ]

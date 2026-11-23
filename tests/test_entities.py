@@ -101,6 +101,27 @@ class ContextualEntitiesTest(unittest.TestCase):
         captures.append({'source': {'url': other_source, 'creators': [alternate]}})
         self.assertFalse(canonical_author_profiles(self.entities, captures))
 
+    def test_dialogue_authorities_attach_to_archival_copies_and_originals(self):
+        out = {}
+        def layout(title, desc, body, **kwargs):
+            return json.dumps({'body': body, **kwargs})
+        origin = 'https://archive.example'
+        paths = {
+            'https://www.museumofone.art/lu-peng/': 'website/web-abcdef0123456789abcdef01.html',
+            'https://www.museumofone.art/tomoki-akimaru/': 'website/web-abcdef0123456789abcdef02.html',
+        }
+        build_entity_pages(self.records, self.entities, out.__setitem__, layout, origin,
+                           website_captures=paths)
+        for name, original in (('lu-peng', 'https://mp.weixin.qq.com/s?'),
+                               ('tomoki-akimaru', 'https://critique.aicajapan.com/19726')):
+            page = json.loads(out['entities/' + name + '.html'])
+            published = 'https://www.museumofone.art/' + name + '/'
+            self.assertIn(f'href="../{paths[published]}"', page['body'])
+            self.assertIn(f'href="{original}', page['body'])
+            self.assertEqual(page['schema']['subjectOf'][-1]['isBasedOn'], {'@id': published})
+            self.assertTrue({'author', 'affiliation', 'sameAs'}.isdisjoint(page['schema']))
+        self.assertIn('https://critique.aicajapan.com/19740', out['entities/tomoki-akimaru.html'])
+
 
 if __name__ == '__main__':
     unittest.main()

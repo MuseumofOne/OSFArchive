@@ -44,7 +44,7 @@ class ResearchDiscovery(unittest.TestCase):
         return build_research_discovery(**values)
 
     def test_all_described_levels_are_search_destinations(self):
-        self.assertEqual(self.feed['counts'], {'publication': 22, 'chapter': 57, 'entity': 44, 'concept': 63, 'programme': 12})
+        self.assertEqual(self.feed['counts'], {'publication': 22, 'chapter': 57, 'entity': 46, 'concept': 63, 'programme': 12})
         lu_peng = next(r for r in self.feed['records'] if r['id'] == 'programme:research-chinese-art-historiography')
         self.assertEqual(lu_peng['identifiers'], ['pir-prj-br3k2hk9'])
         self.assertEqual(lu_peng['kind'], 'programme')
@@ -127,6 +127,31 @@ class ResearchDiscovery(unittest.TestCase):
 
         with self.assertRaisesRegex(ValueError, 'public-source evidence'):
             self.build(ghost_records=[{**page, 'public': False}])
+
+    def test_lu_and_akimaru_links_preserve_publication_roles(self):
+        aliases = {'lu-peng': '吕澎', 'tomoki-akimaru': '秋丸知貴'}
+        originals = {
+            'lu-peng': ('https://mp.weixin.qq.com/s?',),
+            'tomoki-akimaru': ('https://critique.aicajapan.com/19726', 'https://critique.aicajapan.com/19740'),
+        }
+        pages = []
+        for person in aliases:
+            url = 'https://www.museumofone.art/' + person + '/'
+            pages.append(dict(url=url, source_url=url, title=person, public=True,
+                              reviewed='2026-11-23', source_sha256='a' * 64))
+        rows = self.build(ghost_records=pages)['records']
+        for person, alias in aliases.items():
+            source = 'https://www.museumofone.art/' + person + '/'
+            authority = next(row for row in rows if row['id'] == 'entity:' + person)
+            record = next(row for row in rows if row.get('original_url') == source)
+            self.assertIn(alias, authority['aliases'])
+            self.assertEqual(authority['identifiers'], ['MOO-CTX-' + person])
+            self.assertTrue(all(any(x['url'].startswith(url) for x in authority['sources'])
+                                for url in originals[person]))
+            for here, there in ((authority, record), (record, authority)):
+                self.assertEqual([(edge['target_id'], edge['source_url'], edge['evidence_scope'])
+                                  for edge in here['relationships']],
+                                 [(there['id'], source, 'published dialogue record')])
 
     def test_related_names_are_not_alternative_titles_and_isbn_scope_is_visible(self):
         rows = {r['id']: r for r in self.feed['records']}

@@ -1,4 +1,5 @@
 """Preservation checks must detect loss, change and unsafe recovery packages."""
+from copy import deepcopy
 import io
 import json
 from pathlib import Path
@@ -46,6 +47,41 @@ class Stewardship(unittest.TestCase):
         stewardship.save_report(self.root, self.report)
         self.assertEqual(stewardship.inventory(self.root), baseline)
         self.assertEqual(self.report['last_check']['status'], 'passed')
+
+    def test_reviewed_revisions_chain_without_repeating_history(self):
+        original = self.report
+        original['backup'] = {'inventory_sha256': original['inventory_sha256'], 'status': 'verified'}
+        revisions = []
+        previous = original['inventory']
+        for date, payload in (('2026-11-22', '[]\n'), ('2026-11-23', '[2]\n')):
+            (self.root / 'data/catalogue.json').write_text(payload)
+            current = stewardship.inventory(self.root)
+            old, new = (next(row for row in rows if row['path'] == 'data/catalogue.json')
+                        for rows in (previous, current))
+            revisions.append({
+                'at': date + 'T00:00:00Z',
+                'before': stewardship.inventory_digest(previous),
+                'after': stewardship.inventory_digest(current),
+                'changes': {'data/catalogue.json': ((old['bytes'], old['sha256']),
+                                                     (new['bytes'], new['sha256']))},
+            })
+            previous = current
+        intermediate = deepcopy(original)
+        stewardship._apply_reviewed_baseline(intermediate, revisions[0])
+        with patch.object(stewardship, 'REVIEWED_BASELINES', revisions):
+            for start in (original, intermediate):
+                stewardship.save_report(self.root, start)
+                revised = stewardship.read_report(self.root)
+                self.assertEqual(revised['inventory'], current)
+                self.assertEqual(revised['backup'], original['backup'])
+                self.assertEqual(revised['events'][:len(original['events'])], original['events'])
+                self.assertEqual([e['inventory_sha256'] for e in revised['events'][-2:]],
+                                 [r['after'] for r in revisions])
+                stewardship.save_report(self.root, revised)
+                self.assertEqual(stewardship.read_report(self.root), revised)
+            (self.root / 'data/catalogue.json').write_text('{}')
+            self.assertEqual(stewardship.verify_inventory(self.root, revised)['changed'],
+                             ['data/catalogue.json'])
 
     def test_backup_performs_full_restore_and_compares_all_hashes(self):
         package = Path(self.tmp.name) / 'archive-backup.tar.gz'

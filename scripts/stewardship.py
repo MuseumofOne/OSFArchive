@@ -19,9 +19,9 @@ ROOT = Path(__file__).resolve().parents[1]
 REPORT = "data/stewardship.json"
 SCHEMA_VERSION = 1
 
-# Approved catalogue revision for the released Lü Peng programme crosswalk.
-# The historical preservation evidence stays at its original baseline.
-REVIEWED_BASELINE = {
+# Reviewed changes to the published programme crosswalk and contextual authorities.
+# Each revision starts from an exact prior inventory and retains its history.
+REVIEWED_BASELINES = ({
     "at": "2026-11-23T10:57:58Z",
     "before": "c0f6d071c31627ab06cd3898da598c335e5cdc0e3ac11e941023d3931fa18d36",
     "after": "085d0e72e5892c6842d414516549943d9399836dc638722d3ede1bfcf5eaf7c1",
@@ -35,7 +35,17 @@ REVIEWED_BASELINE = {
             (6493, "c6838d0faa3b70344e85261fef630f0fff3df3d927534f34e654d0b5b7327386"),
         ),
     },
-}
+}, {
+    "at": "2026-11-23T12:34:10Z",
+    "before": "085d0e72e5892c6842d414516549943d9399836dc638722d3ede1bfcf5eaf7c1",
+    "after": "d83677b0cd516d64a830243e16504127936725a1bdc566c378e590673282fdf8",
+    "changes": {
+        "data/entities.json": (
+            (118339, "aeabe0ff580b31826193b076ac14c169c996e736dc9c1935f1b7b8c93373345b"),
+            (122802, "757e3f95912b77450aecb7397caa659071c6d63ee00b7e52a9bf643dfc7e57a7"),
+        ),
+    },
+})
 
 
 def utc_now():
@@ -84,9 +94,13 @@ def new_report():
 def read_report(root):
     p = Path(root) / REPORT
     report = json.loads(p.read_text()) if p.exists() else new_report()
-    revision = REVIEWED_BASELINE
-    if report.get("inventory_sha256") != revision["before"]:
-        return report
+    for revision in REVIEWED_BASELINES:
+        if report.get("inventory_sha256") == revision["before"]:
+            _apply_reviewed_baseline(report, revision)
+    return report
+
+
+def _apply_reviewed_baseline(report, revision):
     rows = report["inventory"]
     if inventory_digest(rows) != revision["before"]:
         raise ValueError("The recorded starting inventory differs from the reviewed baseline")
@@ -106,7 +120,6 @@ def read_report(root):
     report["events"].append({"at": revision["at"], "event": "baseline_refreshed", "status": "recorded",
                              "file_count": len(revised), "inventory_sha256": revision["after"],
                              "reviewed_paths": sorted(changes)})
-    return report
 
 
 def save_report(root, report):
