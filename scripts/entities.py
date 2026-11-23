@@ -124,6 +124,11 @@ def entity_graph(entities, origin, *, website_captures=None, author_profiles=Non
                                   for i in entity['identifiers']]
         if entity['id'] in author_profiles:
             node['sameAs'] = [author_profiles[entity['id']]]
+        elif entity['id'] == 'museum-of-one' and entity['type'] == 'Organization':
+            homepage = 'https://www.museumofone.art/'
+            if any(i.get('scheme') == 'Institutional website' and i.get('url') == i.get('source_url') == homepage
+                   for i in entity.get('identifiers', [])):
+                node['sameAs'] = [homepage + '#organization']
         creators = [r for r in entity.get('relationships', []) if r['relation'] == 'created by']
         if creators:
             node['creator'] = [{'@type': 'Person', '@id': entity_uri(r['id'], origin),

@@ -6,7 +6,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from entities import attach_entities, build_entity_pages, canonical_author_profiles
+from entities import attach_entities, build_entity_pages, canonical_author_profiles, entity_graph
 
 
 class ContextualEntitiesTest(unittest.TestCase):
@@ -121,6 +121,24 @@ class ContextualEntitiesTest(unittest.TestCase):
             self.assertEqual(page['schema']['subjectOf'][-1]['isBasedOn'], {'@id': published})
             self.assertTrue({'author', 'affiliation', 'sameAs'}.isdisjoint(page['schema']))
         self.assertIn('https://critique.aicajapan.com/19740', out['entities/tomoki-akimaru.html'])
+
+    def test_museum_authority_connects_to_the_reviewed_official_identity(self):
+        origin = 'https://archive.example'
+        out = {}
+        def layout(title, desc, body, **kwargs):
+            return json.dumps({'body': body, **kwargs})
+        build_entity_pages(self.records, self.entities, out.__setitem__, layout, origin)
+        page = json.loads(out['entities/museum-of-one.html'])
+        homepage = 'https://www.museumofone.art/'
+        self.assertIn(f'<dt>Institutional website</dt><dd><a href="{homepage}"', page['body'])
+        self.assertEqual(page['schema']['@id'], origin + '/entities/museum-of-one.html#entity')
+        self.assertEqual(page['schema']['sameAs'], [homepage + '#organization'])
+        node = next(n for n in entity_graph(self.entities, origin)['@graph'] if n['@id'] == page['schema']['@id'])
+        self.assertEqual(node, page['schema'])
+        institution = next(e for e in self.entities if e['id'] == 'museum-of-one')
+        unverified = dict(institution, identifiers=[dict(institution['identifiers'][0],
+                                                       source_url='https://unverified.example/')])
+        self.assertNotIn('sameAs', entity_graph([unverified], origin)['@graph'][0])
 
 
 if __name__ == '__main__':
