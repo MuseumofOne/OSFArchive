@@ -280,23 +280,36 @@ class Readable(HTMLParser):
         self.feed(html or "")
         self.close()
 
+    def add_media_link(self, url, role, label):
+        self.links.append({"url": url, "role": role, "label": label})
+        if self.anchors:
+            self.anchors[-1]["fallback_labels"].append(label)
+        else:
+            self.parts.append(
+                '<p><a href="' + escape(url, quote=True) + '">'
+                + escape(label) + "</a></p>"
+            )
+
     def handle_starttag(self, t, attrs):
         a = dict(attrs)
-        if t in ("audio", "video", "source", "iframe", "embed") and a.get("src"):
-            u = self.safe(a["src"])
-            if u:
-                self.links.append({"url": u, "role": t, "label": "Source " + t})
-                self.parts.append(
-                    '<p><a href="'
-                    + escape(u, quote=True)
-                    + '">Source '
-                    + t
-                    + "</a></p>"
-                )
         if self.skip:
+            # A direct media source is useful; fallback markup inside suppressed
+            # objects and frames must not add a new source or runnable embed.
+            if t == "source" and self.skip in (["audio"], ["video"]):
+                u = self.safe(a.get("src"))
+                if u:
+                    self.add_media_link(u, t, "Source " + t)
             if t in self.blocked and t not in ("input", "embed"):
                 self.skip.append(t)
             return
+        if t == "object":
+            u = self.safe(a.get("data"))
+            if u and is_upload(u) and urlsplit(u).path.lower().endswith(".pdf"):
+                self.add_media_link(u, t, "Source PDF")
+        elif t in ("audio", "video", "source", "iframe", "embed"):
+            u = self.safe(a.get("src"))
+            if u:
+                self.add_media_link(u, t, "Source " + t)
         if t in self.blocked:
             if t not in ("input", "embed"):
                 self.skip.append(t)
@@ -320,7 +333,7 @@ class Readable(HTMLParser):
             if self.anchors:
                 # Keep an image-only link's destination and accessible label.
                 # A nested image-source anchor would close the original link.
-                self.anchors[-1]["images"].append(label)
+                self.anchors[-1]["fallback_labels"].append(label)
             elif u:
                 self.parts.append(
                     ('<p class="capture-pdf-page-image">' if in_reader else '<p>')
@@ -337,7 +350,7 @@ class Readable(HTMLParser):
         if in_reader and t == "div" and a.get("class") == "moo-weganda-viewport":
             attrs_out = ' class="capture-pdf-reader-viewport" role="region" tabindex="0" aria-label="Archived PDF pages"'
         if t == "a":
-            self.anchors.append({"images": [], "has_text": False,
+            self.anchors.append({"fallback_labels": [], "has_text": False,
                                  "label": a.get("aria-label") or a.get("title") or ""})
             u = self.safe(a.get("href"))
             if u:
@@ -366,8 +379,8 @@ class Readable(HTMLParser):
             return
         if t == "a" and self.anchors:
             anchor = self.anchors.pop()
-            if anchor["images"] and not anchor["has_text"]:
-                label = " ".join(dict.fromkeys(anchor["images"]))
+            if anchor["fallback_labels"] and not anchor["has_text"]:
+                label = " ".join(dict.fromkeys(anchor["fallback_labels"]))
                 self.parts.append(escape(label))
                 self.text.append(label)
         if t in self.allowed and t not in ("br", "hr"):
