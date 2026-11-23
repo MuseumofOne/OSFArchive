@@ -27,6 +27,20 @@ class SearchReadiness(unittest.TestCase):
         self.assertNotIn(h.canonical[0]+'index.html', loc)
         self.assertNotIn('https://archive.museumofone.art/404.html', loc)
 
+    def test_reader_descriptions_and_archive_share_image(self):
+        home = Head((DIST/'index.html').read_text())
+        image = 'assets/archive-social-preview.jpg'
+        self.assertEqual(home.meta['og:image'], home.canonical[0]+image)
+        self.assertEqual(home.meta['twitter:image'], home.meta['og:image'])
+        self.assertEqual(home.meta['twitter:card'], 'summary_large_image')
+        self.assertTrue((DIST/image).read_bytes().startswith(b'\xff\xd8'))
+        readers = [Head(path.read_text()) for path in (DIST/'read').glob('*.html')]
+        self.assertGreater(len(readers), 1)
+        self.assertEqual(len({reader.meta['description'] for reader in readers}), len(readers))
+        for reader in readers:
+            self.assertEqual(reader.meta['og:image'], home.meta['og:image'])
+            self.assertTrue(reader.meta['description'].startswith('Read '))
+
     def test_scholar_pdfs_are_byte_identical_siblings(self):
         for path in (DIST/'items').glob('*.html'):
             h = Head(path.read_text())

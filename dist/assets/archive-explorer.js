@@ -23,6 +23,10 @@ function mount(root){
  if(carry.length){saved=[...new Set([...saved,...carry])].slice(0,200);try{win.localStorage.setItem(STORAGE,JSON.stringify(saved));}catch{storageOK=false;}incoming.searchParams.delete('moo_shelf');win.history.replaceState(null,'',incoming.pathname+incoming.search+incoming.hash);}
  let state=readState(win.location.hash);if(win.location.hash==='#archive-search')state.view='discover';
  const filter=$('[data-ax-filter]'),grid=$('[data-ax-cards]'),message=$('[data-ax-message]');
+ const comparison=$('[data-ax-comparison]'),compareButton=$('[data-ax-compare]');
+ const tableObserver=typeof win.ResizeObserver==='function'
+  ?new win.ResizeObserver(entries=>entries.forEach(({target})=>syncTableFocus(target)))
+  :null;
  let cards=Array.from(grid.children);
  const make=(tag,cls,text)=>{const n=doc.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
  const announce=text=>{message.textContent=text;};
@@ -45,25 +49,40 @@ function mount(root){
   if(state.view==='catalogue')filters();if(state.view==='reading')renderReading();if(state.view==='discover'){const form=$('[data-discovery-form]');form.elements.namedItem('q').value=state.dq||'';form.elements.namedItem('kind').value=state.dk||'';const collection=form.elements.namedItem('collection');if(collection)collection.value=state.dc||'';form.elements.namedItem('fulltext').checked=Boolean(state.fulltext);win.MuseumResearchDiscovery?.mount($('[data-research-discovery]'));form.dispatchEvent(new win.Event('input',{bubbles:true}));}
   setHash(push);if(focus){const panel=$('[data-ax-panel="'+state.view+'"]'),target=panel.querySelector('input,select,h3');if(target){if(target.tagName==='H3')target.tabIndex=-1;target.focus({preventScroll:true});panel.scrollIntoView({behavior:'auto',block:'start'});}}
  }
- function updateReadingCompare(){const button=$('[data-ax-compare]');button.disabled=selected.size<2||selected.size>3;button.textContent=selected.size?'Compare '+selected.size+' selected records':'Compare selected records';}
+ function syncTableFocus(region){region.tabIndex=region.scrollWidth>region.clientWidth?0:-1;}
+ function clearComparison(){
+  const previous=comparison.firstElementChild;
+  if(!previous)return;
+  if(previous===doc.activeElement&& !compareButton.disabled)compareButton.focus({preventScroll:true});
+  tableObserver?.unobserve(previous);
+  previous.remove();
+  delete comparison.dataset.selection;
+ }
+ function updateReadingCompare(){
+  compareButton.disabled=selected.size<2||selected.size>3;
+  compareButton.textContent=selected.size?'Compare '+selected.size+' selected records':'Compare selected records';
+  if(comparison.dataset.selection&&comparison.dataset.selection!==[...selected].join(','))clearComparison();
+ }
  function renderReading(){
   const host=$('[data-ax-reading]'),active=doc.activeElement;
-  const removes=Array.from(host.querySelectorAll('button'));
-  const focusedIndex=removes.indexOf(active);
+  const focusedRow=host.contains(active)?active.closest('[data-ax-reading-id]'):null;
+  const focusedIndex=Array.from(host.children).indexOf(focusedRow);
   const clearing=active===$('[data-ax-clear]');
   host.replaceChildren();selected=new Set([...selected].filter(id=>saved.includes(id)&&byId.has(id)));const known=saved.map(id=>byId.get(id)).filter(Boolean);
   const unknown=saved.filter(id=>!byId.has(id));
   if(unknown.length)host.append(make('p','ax-note',unknown.length+' saved item'+(unknown.length===1?' is':'s are')+' not described in the current catalogue. The saved identifiers are retained for the next refresh.'));
   if(!known.length&&!unknown.length)host.append(make('p','ax-note','Use Save on a catalogue record to build your reading list.'));
-  known.forEach(record=>{const article=make('article','ax-reading-entry'),label=make('label'),check=make('input');check.type='checkbox';check.checked=selected.has(record.id);check.setAttribute('aria-label','Compare '+record.title);label.append(check);check.addEventListener('change',()=>{if(check.checked&&selected.size===3){check.checked=false;announce('Choose up to three records to compare.');return;}if(check.checked)selected.add(record.id);else selected.delete(record.id);updateReadingCompare();});
+  known.forEach(record=>{const article=make('article','ax-reading-entry'),label=make('label'),check=make('input');article.dataset.axReadingId=record.id;check.type='checkbox';check.checked=selected.has(record.id);check.setAttribute('aria-label','Compare '+record.title);label.append(check);check.addEventListener('change',()=>{if(check.checked&&selected.size===3){check.checked=false;announce('Choose up to three records to compare.');return;}if(check.checked)selected.add(record.id);else selected.delete(record.id);updateReadingCompare();});
    const copy=make('div'),ref=make('p','ax-label',record.accession),title=make('h3'),link=make('a',null,record.short_title||record.title);link.href=href('items/'+record.id+'.html');link.dataset.axHandoff='';title.append(link);copy.append(ref,title,make('p',null,record.author+' · '+record.date));
    const remove=make('button',null,'Remove');remove.type='button';remove.setAttribute('aria-label','Remove '+record.title);remove.addEventListener('click',()=>{saved=saved.filter(id=>id!==record.id);selected.delete(record.id);persist();announce('Removed from your reading list.');});article.append(label,copy,remove);host.append(article);
   });
   $('[data-ax-export]').disabled=!known.length;$('[data-ax-clear]').disabled=!saved.length;updateReadingCompare();
   if(focusedIndex>=0||clearing&&!saved.length){
-   const remaining=host.querySelectorAll('button');
+   const remaining=Array.from(host.querySelectorAll('[data-ax-reading-id]'));
+   const current=remaining.find(row=>row.dataset.axReadingId===focusedRow?.dataset.axReadingId);
    const neighbour=remaining[Math.min(focusedIndex,remaining.length-1)];
-   if(neighbour)neighbour.focus();
+   const control=(current||neighbour)?.querySelector(active.localName);
+   if(control)control.focus({preventScroll:true});
    else{
     const heading=$('[data-ax-panel="reading"] .ax-section-head :is(h2,h3)');heading.tabIndex=-1;heading.focus();
    }
@@ -84,12 +103,33 @@ function mount(root){
  $('[data-discovery-form]').addEventListener('input',()=>{const form=$('[data-discovery-form]');state.dq=form.elements.namedItem('q').value;state.dk=form.elements.namedItem('kind').value;state.dc=form.elements.namedItem('collection')?.value||'';state.fulltext=form.elements.namedItem('fulltext').checked;setHash();});
  filter.addEventListener('submit',event=>event.preventDefault());filter.addEventListener('reset',event=>{event.preventDefault();state={...state,q:'',collection:'',year:'',type:'',sort:'newest'};filters();setHash();});
  $$('[data-ax-layout]').forEach(button=>button.addEventListener('click',()=>{state.layout=button.dataset.axLayout;filters();setHash();}));
- $('[data-ax-clear]').addEventListener('click',()=>{saved=[];selected.clear();$('[data-ax-comparison]').replaceChildren();persist();announce('Reading list cleared.');});
+ $('[data-ax-clear]').addEventListener('click',()=>{saved=[];selected.clear();clearComparison();persist();announce('Reading list cleared.');});
  $('[data-ax-export]').addEventListener('click',()=>{const blob=new win.Blob([core.csv(saved.map(id=>byId.get(id)).filter(Boolean))],{type:'text/csv;charset=utf-8;'}),url=win.URL.createObjectURL(blob),a=make('a');a.href=url;a.download='museum-of-one-reading-list.csv';a.click();win.setTimeout(()=>win.URL.revokeObjectURL(url),1000);});
- $('[data-ax-compare]').addEventListener('click',()=>{if(selected.size<2||selected.size>3)return;const chosen=[...selected].map(id=>byId.get(id)),table=make('table'),caption=make('caption',null,'Selected catalogue records; dates retain their source precision.'),head=make('thead'),tr=make('tr');tr.append(make('th',null,'Description'));chosen.forEach(r=>tr.append(make('th',null,r.short_title||r.title)));head.append(tr);const body=make('tbody');core.comparisonRows(chosen).forEach(row=>{const tr=make('tr'),th=make('th',null,row.label);th.scope='row';tr.append(th);row.values.forEach(value=>tr.append(make('td',null,value)));body.append(tr);});table.append(caption,head,body);const scroll=make('div','ax-table-scroll');scroll.append(table);$('[data-ax-comparison]').replaceChildren(scroll);});
+ compareButton.addEventListener('click',()=>{
+  if(compareButton.disabled)return;
+  const chosen=[...selected].map(id=>byId.get(id)),table=make('table');
+  const caption=make('caption',null,'Selected catalogue records; dates retain their source precision.');
+  const head=make('thead'),columns=make('tr');
+  for(const title of ['Description',...chosen.map(record=>record.short_title||record.title)]){
+   const cell=make('th',null,title);cell.scope='col';columns.append(cell);
+  }
+  head.append(columns);
+  const body=make('tbody');
+  for(const row of core.comparisonRows(chosen)){
+   const cells=make('tr'),heading=make('th',null,row.label);heading.scope='row';cells.append(heading);
+   row.values.forEach(value=>cells.append(make('td',null,value)));
+   body.append(cells);
+  }
+  table.append(caption,head,body);
+  const scroll=make('div','ax-table-scroll');
+  scroll.setAttribute('role','region');scroll.setAttribute('aria-label','Catalogue record comparison');
+  clearComparison();
+  scroll.append(table);comparison.append(scroll);comparison.dataset.selection=[...selected].join(',');
+  syncTableFocus(scroll);tableObserver?.observe(scroll);
+ });
  function expand(next){expanded=next;const button=$('[data-ax-expand]');root.classList.toggle('ax-expanded',next);button.setAttribute('aria-pressed',String(next));button.textContent=next?'Return to page':'Expand explorer';if(next){previousOverflow=doc.body.style.overflow;doc.body.style.overflow='hidden';root.setAttribute('role','dialog');root.setAttribute('aria-modal','true');for(let branch=root;branch.parentElement&&branch!==doc.body;branch=branch.parentElement){for(const sibling of branch.parentElement.children)if(sibling!==branch&&!sibling.inert&&!['SCRIPT','STYLE','LINK'].includes(sibling.tagName)){sibling.inert=true;inertElements.push(sibling);}}button.focus();}else{doc.body.style.overflow=previousOverflow;root.removeAttribute('role');root.removeAttribute('aria-modal');inertElements.forEach(n=>n.inert=false);inertElements=[];button.focus();}}
  $('[data-ax-expand]').hidden=false;$('[data-ax-expand]').addEventListener('click',()=>expand(!expanded));
- root.addEventListener('keydown',event=>{if(!expanded)return;if(event.key==='Escape'){event.preventDefault();expand(false);}else if(event.key==='Tab'){const all=$$('a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),summary').filter(n=>n.getClientRects().length),first=all[0],last=all.at(-1);if(event.shiftKey&&doc.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&doc.activeElement===last){event.preventDefault();first.focus();}}});
+ root.addEventListener('keydown',event=>{if(!expanded)return;if(event.key==='Escape'){event.preventDefault();expand(false);}else if(event.key==='Tab'){const all=$$('a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),summary,[tabindex="0"]').filter(n=>n.getClientRects().length),first=all[0],last=all.at(-1);if(event.shiftKey&&doc.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&doc.activeElement===last){event.preventDefault();first.focus();}}});
  win.addEventListener('popstate',()=>{state=readState(win.location.hash);show(state.view);});
  const receive=event=>{try{saved=core.parseSaved(event?.type==='moo-reading-list-change'?JSON.stringify(event.detail):win.localStorage.getItem(STORAGE));}catch{return;}sync();if(state.view==='reading')renderReading();};
  win.addEventListener('storage',event=>{if(event.key===STORAGE)receive(event);});win.addEventListener('moo-reading-list-change',receive);
@@ -98,8 +138,7 @@ function mount(root){
   if(!Array.isArray(next)||!next.every(r=>typeof r.id==='string'&&/^\d+$/.test(r.id)&&typeof r.title==='string')||new Set(next.map(r=>r.id)).size!==next.length)throw new Error('Invalid catalogue refresh');
   records=next;byId.clear();knownIds.clear();records.forEach(record=>{byId.set(record.id,record);knownIds.add(record.id);});
   cards=Array.from(grid.children);filters();sync();
-  const comparison=$('[data-ax-comparison]');
-  if(comparison.childElementCount){comparison.replaceChildren();announce('Catalogue refreshed. Compare the selected records again for current descriptions.');}
+  if(comparison.childElementCount){clearComparison();announce('Catalogue refreshed. Compare the selected records again for current descriptions.');}
   if(state.view==='reading')renderReading();
  }
  const controller={show,root,updateRecords,get records(){return records.slice();}};

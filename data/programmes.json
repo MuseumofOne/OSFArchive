@@ -94,5 +94,18 @@
       "https://www.museumofone.art/relational-archival-investigation/",
       "https://www.museumofone.art/research-working-papers/"
     ]
+  },
+  {
+    "title": "Historical Explanation and Chinese Art Historiography",
+    "url": "https://www.museumofone.art/research-chinese-art-historiography/",
+    "status": "In development",
+    "source_url": "https://www.museumofone.art/research-chinese-art-historiography/",
+    "reviewed": "2026-11-23",
+    "description": "A Museum of One research programme on how historical evidence, formal analysis, aesthetic experience and interpretation inform the writing of Chinese art history. The published dialogue between Lü Peng and Dorian Vale documents the exchange from which the programme develops.",
+    "directory_scope": "The public project record distinguishes the developing case inquiry from the published dialogue.",
+    "sources": [
+      "https://www.museumofone.art/research-chinese-art-historiography/",
+      "https://www.museumofone.art/lu-peng/"
+    ]
   }
 ]

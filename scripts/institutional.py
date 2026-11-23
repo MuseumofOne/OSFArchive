@@ -61,7 +61,12 @@ def institutional_page(path,html,records,programmes,*,collection_counts):
  base='../' if '/' in path else ''
  html=html.replace('</head>',f'<link rel="stylesheet" href="{base}assets/institutional.css"><script defer src="{base}assets/institutional.js"></script></head>')
  if path != 'index.html':
-  html=re.sub(r'(<main id="main" class="shell">)(.*?)(</main>)',lambda m:m[1]+'<div class="archive-workspace">'+collection_tree(path,records,programmes,collection_counts=collection_counts)+'<div class="archive-workbench">'+m[2]+'</div></div>'+m[3],html,count=1,flags=re.S)
+  tree=collection_tree(path,records,programmes,collection_counts=collection_counts)
+  def workspace(match):
+   content='<div class="archive-workbench">'+match[2]+'</div>'
+   ordered=content+tree if path.startswith('read/') else tree+content
+   return match[1]+'<div class="archive-workspace">'+ordered+'</div>'+match[3]
+  html=re.sub(r'(<main id="main" class="shell">)(.*?)(</main>)',workspace,html,count=1,flags=re.S)
  if path in ('catalogue.html', 'research-discovery.html'):
   search_layout = (Path(__file__).resolve().parents[1] / 'assets/search-layout.js').read_text()
   html = html.replace('</body>', '<script>' + search_layout + '</script></body>', 1)

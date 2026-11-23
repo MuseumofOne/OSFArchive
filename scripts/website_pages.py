@@ -13,6 +13,32 @@ from image_dimensions import dimensions
 from publication_arrangement import (BOOKS, ESSAYS, THEORY, METHODOLOGY,
                                      collection_anchor, load_publication_captures, publication_grid, publication_inventory)
 
+# The live theme generates these anchors from specific authored headings.
+# Archive readers use the preserved headings without the live theme.
+PROGRAMME_OUTPUT_ALIASES = {
+    "arabic-translation-threads-of-sand",
+    "oindrilla-maity-surai",
+    "paul-gladston",
+    "reiko-tomii",
+    "research-aesthetics-experience",
+    "research-intellectual-history",
+    "research-methods",
+    "research-witness-material-memory",
+    "sudanese-art-and-aesthetics",
+}
+PREPARATORY_STUDY_ALIASES = {"research-methods", "research-witness-material-memory"}
+
+
+def capture_fragments(source, body):
+    anchors = set(re.findall(r'id="([^"]+)"', body))
+    fragments = {anchor: anchor for anchor in anchors}
+    slug = canonical_key(source)[1].rsplit("/", 1)[-1]
+    if slug in PROGRAMME_OUTPUT_ALIASES and "outputs-and-developments" in anchors:
+        fragments.setdefault("programme-outputs", "outputs-and-developments")
+    if slug in PREPARATORY_STUDY_ALIASES and "preparatory-curatorial-micro-study" in anchors:
+        fragments.setdefault("preparatory-curatorial-study", "preparatory-curatorial-micro-study")
+    return fragments
+
 
 def access_asset(asset, file, out, origin, catalogue):
     """Keep original fixity in recovery; reconcile obsolete links in access JSON."""
@@ -142,7 +168,7 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
         for p in current
     }
     fragment_map = {
-        p["source"]["url"]: set(re.findall(r'id="([^"]+)"', p["readable_html"]))
+        p["source"]["url"]: capture_fragments(p["source"]["url"], p["readable_html"])
         for p in current
     }
     report = (
@@ -257,13 +283,15 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
         for source, target in {**source_map, **replacements}.items():
             body = body.replace('href="' + e(source) + '"', 'href="' + e(target) + '"')
         for source, target in source_map.items():
+            fragments = fragment_map[source]
+
+            def local_section(match):
+                fragment = fragments.get(unescape(match[1]))
+                return 'href="' + e(target) + "#" + e(fragment) + '"' if fragment else match[0]
+
             body = re.sub(
                 'href="' + re.escape(e(source)) + '#([^"]+)"',
-                lambda m: (
-                    'href="' + e(target) + "#" + m[1] + '"'
-                    if unescape(m[1]) in fragment_map[source]
-                    else m[0]
-                ),
+                local_section,
                 body,
             )
         raw = (r["html"] or "").encode()
@@ -467,7 +495,7 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
             if target:
                 content = content.replace("</h1>", '</h1><p><a href="../' + e(target["capture_path"]) + '">' + e(label) + ' ↗</a></p>', 1)
         html = layout(
-            r["title"] + " — Website capture (" + (r.get("published_at") or "undated")[:10] + ")",
+            r["title"] + " — Website capture (" + p["capture"]["captured_at"][:10] + ")",
             p["summary"] or "Stored public website record and its source metadata.",
             content,
             page,

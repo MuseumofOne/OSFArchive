@@ -90,6 +90,33 @@ class Sync(unittest.TestCase):
   build_website_pages(self.work,out,write,lambda title,description,content,*args,**kwargs:content,'https://archive.museumofone.art')
   listing=(out/'website-records.html').read_text()
   self.assertLess(listing.index('Newly published research'),listing.index('تجربة — 考察'))
+ def test_capture_title_and_verified_theme_fragment_aliases(self):
+  source='https://www.museumofone.art/research-methods/'
+  uncaptured='https://www.museumofone.art/another/'
+  self.row['record'].update(url=source,html=f'''
+   <h2 id="outputs-and-developments">Outputs and developments</h2>
+   <h3 id="preparatory-curatorial-micro-study">Preparatory curatorial micro-study</h3>
+   <a href="{source}#programme-outputs">Outputs</a>
+   <a href="{source}#preparatory-curatorial-study">Study</a>
+   <a href="{source}#live-only">Interactive source</a>
+   <a href="{uncaptured}#programme-outputs">Uncaptured programme</a>
+  ''')
+  self.run_sync()
+  out=self.root/'dist'
+  def write(path,text):
+   file=out/path;file.parent.mkdir(parents=True,exist_ok=True);file.write_text(text)
+  def layout(title,description,content,*args,**kwargs):return f'<title>{title}</title>{content}'
+  origin='https://archive.museumofone.art'
+  build_website_pages(self.work,out,write,layout,origin)
+  release=f'website/web-{RID}.html'
+  page=(out/release).read_text()
+  self.assertIn('Website capture (2026-11-05)',page)
+  self.assertIn('2025-03-02T00:00:00Z',page)
+  self.assertIn(f'href="{origin}/{release}#outputs-and-developments"',page)
+  self.assertIn(f'href="{origin}/{release}#preparatory-curatorial-micro-study"',page)
+  self.assertIn(f'href="{source}#live-only"',page)
+  self.assertIn(f'href="{uncaptured}#programme-outputs"',page)
+  self.assertIn(f'href="{source}#programme-outputs"',(out/f'website/web-{RID}.source.html.txt').read_text())
  def test_curated_files_never_mutated_and_withdrawn_render_paths_removed(self):
   (self.root/'data').mkdir();curated=self.root/'data/catalogue.json';curated.write_text('{"manual":"retain"}');before=curated.read_bytes();s,p,_=self.run_sync();out=self.root/'dist';out.mkdir()
   def write(path,text):f=out/path;f.parent.mkdir(parents=True,exist_ok=True);f.write_text(text)
