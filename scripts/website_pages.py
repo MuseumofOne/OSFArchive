@@ -467,6 +467,16 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
                 for v in r["source_declared_metadata"]
             )
         )
+        related_doi = arrangement.get("related_publication_doi")
+        if related_doi:
+            doi = related_doi["doi"]
+            content += (
+                f'<div><dt>{e(related_doi["scope_label"])}</dt><dd>'
+                f'<a href="https://doi.org/{e(doi)}">{e(doi)}</a> · '
+                f'<a href="{e(related_doi["source_url"])}">Original page declaration</a> · '
+                f'<a href="{e(related_doi["registry_url"])}">DataCite registration</a>'
+                f' (checked {e(related_doi["reviewed"])})</dd></div>'
+            )
         if r.get("source_declared_citations"):
             citations = " · ".join(
                 '<a href="' + e(v["url"]) + '">' + e(v["name"]) + "</a>"

@@ -230,6 +230,13 @@ def build_research_discovery(records, entities, vocab, programmes, origin, *, ro
             row.update(collection=entry['collection'] or '', aliases=entry['aliases'],
                        subjects=entry['subjects'], date=(entry['date'] or '')[:10],
                        resource_type=entry['role'], catalogue_record=bool(entry['collection'] and not entry['edition_path']))
+            related_doi = entry.get('related_publication_doi')
+            if related_doi and related_doi['source_url'] == address:
+                doi = related_doi['doi']
+                row['identifiers'].append(doi)
+                row['identifier_scopes'] = {doi: related_doi['scope_label']}
+                row['sources'].append(_source(related_doi['registry_url'], 'DataCite DOI registration',
+                                              reviewed=related_doi['reviewed']))
         row['original_url'] = address
         capture_url = origin + '/' + entry['capture_path'] if entry else page.get('archive_url')
         if capture_url:

@@ -123,6 +123,41 @@ class Sync(unittest.TestCase):
   self.assertIn(f'href="{source}#live-only"',page)
   self.assertIn(f'href="{uncaptured}#programme-outputs"',page)
   self.assertIn(f'href="{source}#programme-outputs"',(out/f'website/web-{RID}.source.html.txt').read_text())
+ def test_editorial_subjects_and_reviewed_doi_keep_source_fixity(self):
+  doi_source='https://www.museumofone.art/formal-defence-of-post-interpretive-criticism/'
+  doi='10.5281/zenodo.16934437'
+  self.row['record'].update(url=doi_source,tags=[],codeinjection_head='')
+  dialogue=copy.deepcopy(self.row)
+  dialogue['record'].update(id='d'*24,url='https://www.museumofone.art/lu-peng/',title='Lü Peng')
+  dialogue['kind']='page'
+  _,captures,_=self.run_sync([self.row,dialogue])
+  out=self.root/'dist'
+  def write(path,text):
+   file=out/path
+   file.parent.mkdir(parents=True,exist_ok=True)
+   file.write_text(text)
+  build_website_pages(self.work,out,write,lambda title,description,body,*args,**kw:body,
+                      'https://archive.museumofone.art')
+  result=json.loads((out/'metadata/website-captures.json').read_text())
+  by_source={row['source']['url']:row for row in result}
+  reviewed=by_source[doi_source]
+  self.assertEqual(reviewed['source']['source_declared_metadata'],[])
+  self.assertEqual(reviewed['arrangement']['related_publication_doi']['doi'],doi)
+  page=(out/f'website/web-{RID}.html').read_text()
+  self.assertIn(f'href="https://doi.org/{doi}"',page)
+  self.assertIn(f'href="https://api.datacite.org/dois/{doi}"',page)
+  self.assertIn('Related publication’s deposited version DOI',page)
+  for capture in captures:
+   result=by_source[capture['source']['url']]
+   self.assertEqual(result['capture']['content_hash'],capture['capture']['content_hash'])
+   original=out/f"website/{capture['archive_id']}.source.html.txt"
+   self.assertEqual(original.read_text(),capture['source']['html'])
+  lu=by_source[dialogue['record']['url']]['arrangement']
+  self.assertEqual(lu['source_subjects'],[])
+  self.assertEqual(lu['editorial_subjects'],
+                   ['Chinese art historiography','Post-Interpretive Criticism','Research dialogue'])
+  self.assertNotIn('related_publication_doi',lu)
+
  def test_same_day_same_title_captures_keep_both_publication_dates(self):
   other=copy.deepcopy(self.row)
   other['record'].update(id='d'*24,url='https://www.museumofone.art/another/',
