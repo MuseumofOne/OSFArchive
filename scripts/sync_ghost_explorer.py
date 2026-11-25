@@ -9,7 +9,7 @@ def sync(theme):
     theme=Path(theme).resolve();out=ROOT/'dist'
     assert (theme/'page-digital-archive-library.hbs').is_file(), 'Expected the Museum of One theme'
     pairs=[(out/'integration/archive-explorer.hbs',theme/'partials/generated/archive-explorer.hbs')]
-    for name in ['archive-explorer.css','archive-explorer.js','archive-core.js']:
+    for name in ['archive-explorer.css','archive-explorer.js','archive-core.js','archive-live.js']:
         asset = style_source(ROOT, name) if name.endswith('.css') else out/'assets'/name
         pairs.append((asset,theme/'assets/archive/explorer'/name))
     for row in json.loads((out/'metadata/discovery.json').read_text()):

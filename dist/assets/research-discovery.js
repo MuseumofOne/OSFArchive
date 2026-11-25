@@ -4,6 +4,7 @@
  const KINDS=new Set(['publication','chapter','entity','concept','programme','passage','website','evidence']);
  const normalize=value=>String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[‘’]/g,"'").replace(/[–—]/g,'-').toLowerCase().replace(/\s+/g,' ').trim();
  const words=value=>normalize(value).replace(/["“”]/g,'').split(/\s+/).filter(Boolean);
+ const collectionLabel=value=>value==='rai-published-research'?'Published RAI research: Korean art comparisons':value;
  function baseURL(value){const base=String(value||'').replace(/\/$/,''),u=new URL(base);if(u.protocol!=='https:'||u.username||u.password||u.search||u.hash||u.href.replace(/\/$/,'')!==base||u.pathname.split('/').some(p=>p==='.'||p==='..'))throw new Error('Invalid discovery origin');return base;}
  function validateIndex(payload,expectedOrigin){
   const origin=baseURL(expectedOrigin);
@@ -48,7 +49,13 @@
  }
  function excerpt(text,query,max=280){const raw=String(text||''),needle=words(query)[0]||'',offsets=[];let folded='',at=0;for(const character of raw){const value=character.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[‘’]/g,"'").replace(/[–—]/g,'-').toLowerCase();for(const c of value){if(/\s/.test(c)){if(folded&&!folded.endsWith(' ')){folded+=' ';offsets.push(at);}}else{folded+=c;offsets.push(at);}}at+=character.length;}const found=folded.indexOf(needle),position=found<0?0:offsets[found]||0,start=Math.max(0,position-90),end=Math.min(raw.length,start+max);return(start?'…':'')+raw.slice(start,end)+(end<raw.length?'…':'');}
  function rankRecords(records,query,filters={}){
-  const phrase=normalize(query).replace(/^["“]|["”]$/g,''),identifier=phrase.replace(/^(?:https?:\/\/(?:dx\.)?doi\.org\/|doi:\s*|https:\/\/orcid\.org\/)/,''),terms=words(query),quoted=/^["“].+["”]$/.test(String(query||'').trim());
+  const phrase=normalize(query).replace(/^["“]|["”]$/g,''),terms=words(query),quoted=/^["“].+["”]$/.test(String(query||'').trim());
+  const resolver=/^(?:https?:\/\/(?:dx\.)?doi\.org|https:\/\/orcid\.org)\/([^?#]+)(?:[?#].*)?$/.exec(phrase);
+  let identifier=phrase.replace(/^doi:\s*/,'');
+  if(resolver){
+   try{identifier=normalize(decodeURIComponent(resolver[1]));}
+   catch{identifier=resolver[1];}
+  }
   return records.filter(r=>matches(r,filters)).map(record=>{
    const title=normalize(record.title),aliases=(record.aliases||[]).map(normalize),ids=(record.identifiers||[]).map(normalize),summary=normalize(record.summary),text=normalize(record.text||record.search_text||record.searchIndex||''),all=[title,...aliases,...ids,summary,text].join(' ');
    if(phrase&&!ids.includes(identifier)&&(quoted?![title,...aliases,...ids,summary,text].some(field=>field.includes(phrase)):!terms.every(term=>all.includes(term))))return null;
@@ -89,17 +96,18 @@
  // Discovery and full-text indexes use identical origin, size and schema checks.
  async function loadIndexSet(kind,config,onIndex,fetcher=globalThis.fetch){
   const origin=baseURL(config.origin),page=new URL(config.pageURL),snapshot=new URL(config.snapshot,page);
+  const localPreview=['localhost','127.0.0.1','[::1]'].includes(page.hostname);
+  const archiveSnapshot=page.origin===origin||(localPreview&&config.localResults===true);
   if(snapshot.origin!==page.origin||!/^https?:$/.test(snapshot.protocol)||snapshot.username||snapshot.password)throw new Error('Research snapshot must be same-origin');
   const notify=status=>{if(typeof config.onStatus==='function')config.onStatus(status);};
   let latest,snapshotWasFiltered=false;
   try{
    const bundled=await fetchIndex(snapshot.href,origin,fetcher,{maxBytes:24*1024*1024});
    if(bundled.index_kind!==kind)throw new Error('Unexpected research index kind');
-   latest=kind==='discovery'&&page.origin!==origin?curatedGhostSnapshot(bundled):bundled;
+   latest=kind==='discovery'&&!archiveSnapshot?curatedGhostSnapshot(bundled):bundled;
    snapshotWasFiltered=latest.records.length!==bundled.records.length||latest.records.some((record,i)=>record!==bundled.records[i]);
    onIndex(latest,'snapshot');notify('snapshot');
   }catch{latest=undefined;}
-  const localPreview=['localhost','127.0.0.1','[::1]'].includes(page.hostname);
   const endpoint=origin+'/metadata/research-'+kind+'.v2.json';
   const refresh=config.remote||(!localPreview&&page.origin!==origin?endpoint:null);
   if(refresh){
@@ -225,7 +233,12 @@
     const selected=select.value,old=new Map(Array.from(select.options,option=>[option.value,option]));
     if(selected)values.add(selected);
     const initial=old.get('')?.cloneNode(true)||el('option',null,'All');initial.value='';
-    select.replaceChildren(initial,...[...values].sort((a,b)=>name==='year'?b.localeCompare(a):a.localeCompare(b)).map(value=>{const option=old.get(value)?.cloneNode(true)||el('option',null,value);option.value=value;return option;}));
+    const label=name==='collection'?collectionLabel:value=>value;
+    select.replaceChildren(initial,...[...values].sort((a,b)=>name==='year'?b.localeCompare(a):label(a).localeCompare(label(b))).map(value=>{
+     const option=old.get(value)?.cloneNode(true)||el('option',null,label(value));
+     if(label(value)!==value)option.textContent=label(value);
+     option.value=value;return option;
+    }));
     select.value=selected;
    }
   }
@@ -244,7 +257,7 @@
    lastRenderKey=renderKey;results.replaceChildren();
    found.slice(0,shown).forEach(record=>{
     const type=record.kind==='entity'?(record.entity_type||'Entity'):(record.record_level||record.resource_type||record.kind);
-    const item=el('li','discovery-result'),label=el('p','discovery-result-kind',[type,record.collection].filter(Boolean).join(' · ')),heading=el('h3'),link=el('a',null,record.title);
+    const item=el('li','discovery-result'),label=el('p','discovery-result-kind',[type,collectionLabel(record.collection)].filter(Boolean).join(' · ')),heading=el('h3'),link=el('a',null,record.title);
     item.dataset.discoveryId=record.id;
     const capture=record.archive_url||record.relationships?.find(edge=>edge.relation==='Stored website capture')?.url;
     link.href=destination(capture||record.url);heading.append(link);item.append(label,heading,el('p','discovery-match-reason',record.match_reason));
@@ -297,6 +310,7 @@
   const watcher=watchIndexSet('discovery',{
    origin:container.dataset.archiveOrigin||'https://archive.museumofone.art',snapshot:container.dataset.indexSnapshot,
    remote:container.dataset.indexUrl,pageURL:doc.location.href,
+   localResults:container.dataset.localResults==='true',
    onStatus:value=>{indexStatus=value;signal('museum:research-index-status',{status:value});preserveInteraction(render);}
   },(index,source)=>{preserveInteraction(()=>{payload=index;updateFacets(index);signal('museum:research-index',{index,source});loadPassages();render();});},winFetch(),{document:doc,window:doc.defaultView,connected:()=>container.isConnected});
   const ready=watcher.ready.catch(()=>{

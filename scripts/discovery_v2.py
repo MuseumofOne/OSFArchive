@@ -346,7 +346,17 @@ def build_discovery_page(write, layout, feed, origin):
     facets=''
     for key,label in [('collection','Collection'),('material_type','Material type'),('period','Period as described'),('languages','Language'),('transcription_status','Reading status'),('source_layer','Source layer')]:
         values=sorted({str(v) for r in feed['records'] for v in (r.get(key,[]) if isinstance(r.get(key),list) else [r.get(key,'')]) if v})
-        if values:facets+='<label>'+label+'<select name="'+key+'"><option value="">All</option>'+''.join('<option value="'+e(v)+'">'+e(v)+'</option>' for v in values)+'</select></label>'
+        if not values:
+            continue
+        options = [(v, v) for v in values]
+        if key == 'collection':
+            options = sorted(
+                [(v, 'Published RAI research: Korean art comparisons' if v == 'rai-published-research' else v)
+                 for v in values],
+                key=lambda option: option[1].casefold(),
+            )
+        choices = ''.join('<option value="' + e(v) + '">' + e(text) + '</option>' for v, text in options)
+        facets += '<label>' + label + '<select name="' + key + '"><option value="">All</option>' + choices + '</select></label>'
     body=body.replace('</form>','<details class="discovery-facets"><summary>Refine by material and source</summary><div class="discovery-controls">'+facets+'</div></details></form>',1)
     body += '<details class="discovery-fallback"><summary>Browse every described record</summary><ul>' + fallback + '</ul></details>'
     body += '<noscript><p>The search controls need JavaScript. All described records remain available in the browse list above.</p></noscript>'

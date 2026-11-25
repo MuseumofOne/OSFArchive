@@ -153,6 +153,37 @@ class Sync(unittest.TestCase):
   self.assertEqual({r['archive_id']:r['capture']['content_hash'] for r in generated},
                    {r['archive_id']:r['capture']['content_hash'] for r in captures})
 
+ def test_bilingual_summaries_and_link_labels_keep_source_fixity(self):
+  h2='<h2 id="korean-summary">한국어 연구 개요</h2>'
+  h2_marked='<h2 lang="ko">한국어 연구 개요</h2>'
+  opener='이 워킹페이퍼는 김용익, 박석원, 이강소, 김구림의 작품에 관한 기록을 비교한다.'
+  body=h2+h2_marked+f'<p>{opener}</p><p>Japanese art history (日本美術史).</p>'
+  body+='<p><a href="https://critique.aicajapan.com/19740">Japanese edition (日本語)</a></p>'
+  slugs=('titles-dates-and-reconstructed-works','rai-identity-chronology-korean-experimental-art',
+         'rai-documentary-supplement','rai-extended-case-studies','research-programmes','tomoki-akimaru','another')
+  rows=[]
+  for i,slug in enumerate(slugs):
+   row=copy.deepcopy(self.row)
+   row['record'].update(id=f'{i:024x}',url=f'https://www.museumofone.art/{slug}/',html=body)
+   rows.append(row)
+  self.run_sync(rows)
+  out=self.root/'dist'
+  def write(path,text):
+   file=out/path
+   file.parent.mkdir(parents=True,exist_ok=True)
+   file.write_text(text)
+  build_website_pages(self.work,out,write,lambda title,description,body,*args,**kw:body,
+                      'https://archive.museumofone.art')
+  for i,slug in enumerate(slugs):
+   with self.subTest(slug=slug):
+    rendered=(out/f'website/web-{i:024x}.html').read_text()
+    self.assertEqual('<h2 id="korean-summary" lang="ko">한국어 연구 개요</h2>' in rendered,i<4)
+    self.assertIn(h2_marked,rendered)
+    self.assertEqual(f'<p lang="ko">{opener}</p>' in rendered,i==0)
+    self.assertEqual('(<span lang="ja">日本美術史</span>)' in rendered,slug=='research-programmes')
+    self.assertEqual('(<span lang="ja">日本語</span>)</a>' in rendered,slug=='tomoki-akimaru')
+    self.assertEqual((out/f'website/web-{i:024x}.source.html.txt').read_text(),body)
+
  def test_editorial_subjects_and_reviewed_doi_keep_source_fixity(self):
   doi_source='https://www.museumofone.art/formal-defence-of-post-interpretive-criticism/'
   doi='10.5281/zenodo.16934437'
@@ -353,6 +384,29 @@ class Sync(unittest.TestCase):
   self.assertIn('href="https://example.com/remote.webp"',rendered)
   self.assertEqual(rendered.count('<img '),1)
   self.assertEqual(inline_pdf_reader_pages(sanitized,[],origin),(sanitized,set()))
+ def test_dialogue_captures_preserve_only_their_native_pdf_readers(self):
+  for slug,prefix in (('tomoki-akimaru','akimaru'),('lu-peng','lu-peng')):
+   with self.subTest(slug=slug):
+    page=f'https://www.museumofone.art/{slug}/'
+    jump=f'{prefix}-copy-01-page-1'
+    raw=(f'<details class="moo-{prefix}-reader" open><summary>Archived copy</summary>'
+         f'<nav aria-label="PDF pages"><a href="#{jump}">Page 1</a>'
+         '<a href="/content/files/edition.pdf">Open PDF</a></nav>'
+         f'<div class="moo-{prefix}-viewport" aria-label="PDF edition">'
+         f'<figure id="{jump}"><img src="/content/images/page.webp" alt="Page 1"></figure>'
+         '</div><script>untrusted()</script></details>')
+    reader=Readable(raw,page)
+    rendered=''.join(reader.parts)
+    self.assertIn('<details class="capture-pdf-reader"><summary>Archived copy</summary>',rendered)
+    self.assertIn('role="region" tabindex="0" aria-label="PDF edition"',rendered)
+    self.assertIn(f'href="{page}#{jump}"',rendered)
+    self.assertIn(f'id="{jump}"',rendered)
+    self.assertNotIn('<script',rendered)
+    self.assertNotIn('open>',rendered)
+    other=Readable(raw,'https://www.museumofone.art/another/')
+    self.assertNotIn('capture-pdf-reader',''.join(other.parts))
+    self.assertEqual(reader.links[1:],other.links[1:])
+
  def test_media_sources_and_site_images_are_detected(self):
   parser=Readable('<video><source src="/content/media/a.mp4"></video><audio src="/content/media/b.mp3"></audio><img src="/content/images/c.png">')
   self.assertEqual({x['role'] for x in parser.links},{'source','audio','image'})
