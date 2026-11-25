@@ -123,6 +123,36 @@ class Sync(unittest.TestCase):
   self.assertIn(f'href="{source}#live-only"',page)
   self.assertIn(f'href="{uncaptured}#programme-outputs"',page)
   self.assertIn(f'href="{source}#programme-outputs"',(out/f'website/web-{RID}.source.html.txt').read_text())
+ def test_research_programmes_labels_only_two_unmarked_heading_phrases(self):
+  korean='<h3 id="korean-art">Korean experimental art · 한국 실험미술</h3>'
+  japanese='<h3 id="japanese-art">Postwar Japanese art · 戦後日本美術</h3>'
+  marked='<h3 lang="en">Postwar Japanese art · <span lang="ja">戦後日本美術</span></h3>'
+  body=korean+japanese+marked+'<p>한국 실험미술 and 戦後日本美術</p>'
+  other=copy.deepcopy(self.row)
+  other['record'].update(id='d'*24,html=body)
+  self.row['record'].update(url='https://www.museumofone.art/research-programmes/',html=body)
+  self.row['kind']='page'
+  _,captures,_=self.run_sync([self.row,other])
+  out=self.root/'dist'
+  def write(path,text):
+   file=out/path
+   file.parent.mkdir(parents=True,exist_ok=True)
+   file.write_text(text)
+  build_website_pages(self.work,out,write,lambda title,description,body,*args,**kw:body,
+                      'https://archive.museumofone.art')
+  programme=(out/f'website/web-{RID}.html').read_text()
+  self.assertIn(korean.replace('한국 실험미술','<span lang="ko">한국 실험미술</span>'),programme)
+  self.assertIn(japanese.replace('戦後日本美術','<span lang="ja">戦後日本美術</span>'),programme)
+  self.assertIn(marked,programme)
+  self.assertIn('<p>한국 실험미술 and 戦後日本美術</p>',programme)
+  unrelated=(out/('website/web-'+'d'*24+'.html')).read_text()
+  self.assertIn(korean+japanese,unrelated)
+  archived=(out/f'website/web-{RID}.source.html.txt').read_text()
+  self.assertEqual(archived,body)
+  generated=json.loads((out/'metadata/website-captures.json').read_text())
+  self.assertEqual({r['archive_id']:r['capture']['content_hash'] for r in generated},
+                   {r['archive_id']:r['capture']['content_hash'] for r in captures})
+
  def test_editorial_subjects_and_reviewed_doi_keep_source_fixity(self):
   doi_source='https://www.museumofone.art/formal-defence-of-post-interpretive-criticism/'
   doi='10.5281/zenodo.16934437'

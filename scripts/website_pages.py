@@ -285,6 +285,16 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
                 replacements[a["url"]] = origin + "/" + path
             assets.append(a)
         body = p["readable_html"]
+        if r["url"] == "https://www.museumofone.art/research-programmes/":
+            for prefix, title, language in (
+                ("Korean experimental art", "한국 실험미술", "ko"),
+                ("Postwar Japanese art", "戦後日本美術", "ja"),
+            ):
+                body = re.sub(
+                    rf"(<h3(?: [^>]*)?>{prefix} · ){title}(?=</h3>)",
+                    rf'\1<span lang="{language}">{title}</span>',
+                    body,
+                )
         embedded_reader_images = set()
         if 'class="capture-pdf-reader"' in body:
             body, embedded_reader_images = inline_pdf_reader_pages(body, assets, origin)
