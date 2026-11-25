@@ -5,7 +5,8 @@ from html import escape
 from dialogue_guide import guide_capture, guided_dialogues
 
 
-DESCRIPTION = "Read Museum of One’s published dialogues, with archived texts, original publications and deposited editions."
+DESCRIPTION = ("Read Museum of One’s dialogues on Post-Interpretive Criticism and art history, "
+               "with archived texts and links to the original publications.")
 
 
 def dialogue_rows(captures, inventory, records):
@@ -37,6 +38,11 @@ def dialogue_rows(captures, inventory, records):
     return rows
 
 
+def dialogue_record_path(row):
+    edition = row["edition"]
+    return f'items/{edition["id"]}.html' if edition else row["capture_path"]
+
+
 def render_dialogue(row):
     edition = row["edition"]
     links = []
@@ -48,11 +54,11 @@ def render_dialogue(row):
             work = f'<p class="dialogue-work">{escape(edition["title"])}</p>'
         if edition.get("reading_copy"):
             links.append((f"read/{rid}.html", "Read deposited edition"))
-        links.append((f"items/{rid}.html", "Edition record"))
+        links.append((dialogue_record_path(row), "Edition record"))
         if edition.get("doi"):
             links.append(("https://doi.org/" + edition["doi"], "DOI " + edition["doi"]))
     else:
-        links.append((row["capture_path"], "Read archived exchange"))
+        links.append((dialogue_record_path(row), "Read archived exchange"))
         if row["pdf_count"]:
             noun = "PDF" if row["pdf_count"] == 1 else "PDFs"
             count = f'<p class="dialogue-files">{row["pdf_count"]} archived {noun}</p>'
@@ -65,10 +71,20 @@ def render_dialogue(row):
             f'<p>{escape(row["summary"] or "")}</p>{count}<div class="actions">{actions}</div></article>')
 
 
-def build_dialogues(captures, inventory, records, write, layout, pagehead):
+def build_dialogues(captures, inventory, records, write, layout, pagehead, origin):
     rows = dialogue_rows(captures, inventory, records)
     entries = "".join(render_dialogue(row) for row in rows)
     content = pagehead("Reading room", "Dialogues", DESCRIPTION)
     content += '<div class="dialogue-index">' + (entries or '<p>No dialogue records are available.</p>') + '</div>'
-    write("dialogues.html", layout("Dialogues", DESCRIPTION, content, "dialogues.html"))
+    path = "dialogues.html"
+    schema = {"@context": "https://schema.org", "@type": "CollectionPage",
+              "name": "Dialogues", "description": DESCRIPTION, "url": f"{origin}/{path}",
+              "isPartOf": {"@id": f"{origin}/#website"}}
+    if rows:
+        schema["mainEntity"] = {"@type": "ItemList", "itemListElement": [
+            {"@type": "ListItem", "position": position, "name": row["title"],
+             "url": f"{origin}/{dialogue_record_path(row)}"}
+            for position, row in enumerate(rows, start=1)
+        ]}
+    write(path, layout("Dialogues", DESCRIPTION, content, path, schema=schema))
     return ["dialogues.html"]

@@ -358,7 +358,7 @@ write('metadata/contents.json',json.dumps(CONTENTS,ensure_ascii=False,indent=2))
 # One generated discovery model serves archive pages and the native Ghost entrance.
 from website_pages import build_website_pages
 paths+=build_website_pages(SYNC_WORK,OUT,write,layout,ORIGIN,methodology=methodology,methodology_desc=methodology_desc, captures=CAPTURES, inventory=WEB_INVENTORY)
-paths+=build_dialogues(CAPTURES,WEB_INVENTORY,RECORDS,write,layout,pagehead)
+paths+=build_dialogues(CAPTURES,WEB_INVENTORY,RECORDS,write,layout,pagehead,ORIGIN)
 copy_evidence_assets(EVIDENCE,ROOT,OUT)
 paths+=build_evidence_pages(EVIDENCE,write,layout,ORIGIN)
 PASSAGES_V2=build_fulltext_index(RECORDS,ROOT,ORIGIN)
@@ -380,8 +380,9 @@ write('metadata/quality-report.json',json.dumps(QUALITY,ensure_ascii=False,inden
 require_valid_report(QUALITY)
 write('metadata/knowledge-graph.jsonld',json.dumps(combine_graphs(ALL_GRAPHS),ensure_ascii=False,indent=2))
 paths+=build_quality_page(write,layout,QUALITY)
-# Only dated local description events justify a sitemap modification date.
+# Use dated catalogue edits and actual capture revisions, not the build time.
 modified={f'items/{r["id"]}.html':r.get('record_modified') for r in RECORDS}
+modified.update({r['capture_path']:r['selected_captured_at'] for r in WEB_INVENTORY})
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{E(url(p))}</loc>'+ (f'<lastmod>{E(modified[p])}</lastmod>' if modified.get(p) else '')+'</url>' for p in paths)+'</urlset>')
 write('robots.txt','User-agent: *\nAllow: /\nSitemap: '+url('sitemap.xml')+'\n')
 
