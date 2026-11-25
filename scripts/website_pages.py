@@ -157,6 +157,14 @@ def inline_pdf_reader_pages(body, assets, origin):
     return body, embedded
 
 
+KOREAN_SUMMARY_SOURCES = {
+    "https://www.museumofone.art/titles-dates-and-reconstructed-works/",
+    "https://www.museumofone.art/rai-identity-chronology-korean-experimental-art/",
+    "https://www.museumofone.art/rai-documentary-supplement/",
+    "https://www.museumofone.art/rai-extended-case-studies/",
+}
+
+
 def build_website_pages(work, out, write, layout, origin, *, methodology=None, methodology_desc=None, captures=None, inventory=None):
     work = Path(work)
     out = Path(out)
@@ -295,6 +303,24 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
                     rf'\1<span lang="{language}">{title}</span>',
                     body,
                 )
+            body = body.replace(
+                "Japanese art history (日本美術史).",
+                'Japanese art history (<span lang="ja">日本美術史</span>).',
+            )
+        if r["url"] in KOREAN_SUMMARY_SOURCES:
+            body = re.sub(
+                r'(<h2(?: id="[^"]+")?)>한국어 연구 개요</h2>',
+                r'\1 lang="ko">한국어 연구 개요</h2>',
+                body,
+            )
+        if r["url"] == "https://www.museumofone.art/titles-dates-and-reconstructed-works/":
+            opener = "이 워킹페이퍼는 김용익, 박석원, 이강소, 김구림의 작품에 관한 기록을 비교한다."
+            body = body.replace("<p>" + opener, '<p lang="ko">' + opener)
+        if r["url"] == "https://www.museumofone.art/tomoki-akimaru/":
+            body = body.replace(
+                ">Japanese edition (日本語)</a>",
+                '>Japanese edition (<span lang="ja">日本語</span>)</a>',
+            )
         embedded_reader_images = set()
         if 'class="capture-pdf-reader"' in body:
             body, embedded_reader_images = inline_pdf_reader_pages(body, assets, origin)

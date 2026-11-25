@@ -269,6 +269,8 @@ class Readable(HTMLParser):
     pdf_readers = {
         ORIGIN + "/external-records": ("moo-weganda-reader", "moo-weganda-viewport"),
         ORIGIN + "/dong-yeon-koh": ("moo-koh-reader", "moo-koh-viewport"),
+        ORIGIN + "/tomoki-akimaru": ("moo-akimaru-reader", "moo-akimaru-viewport"),
+        ORIGIN + "/lu-peng": ("moo-lu-peng-reader", "moo-lu-peng-viewport"),
     }
     citation_heading = re.compile(
         r'<h4 class="kg-toggle-heading-text">('

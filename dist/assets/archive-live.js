@@ -122,6 +122,7 @@
             return node;
         };
         const itemURL = record => record.catalogue_url || ORIGIN + '/items/' + record.id + '.html';
+        const snapshotNote = root.querySelector('[data-ax-snapshot-note]');
         let status = root.querySelector('[data-ax-update-status]');
         if (!status) {
             status = make('p', root.dataset.standalone === 'true' ? 'ax-note sr-only' : 'ax-note');
@@ -142,6 +143,7 @@
         function setStatus(value) {
             if (value === 'fresh' && !catalogueValid) value = 'unavailable';
             status.dataset.state = value;
+            if (snapshotNote) snapshotNote.hidden = value === 'fresh' || value === 'stale';
             status.textContent = statusMessages[value] || statusMessages.unavailable;
         }
         function updateCard(card, record) {

@@ -17,6 +17,23 @@ test('exact identifiers, titles, aliases and explanations outrank metadata noise
  assert.equal(api.rankRecords([exact],'unrepresented word').length,0);
  assert.equal(api.rankRecords([exact],'witness',{kind:'chapter'}).length,0);
 });
+test('recognizes DOI and ORCID resolver links with tracking, fragments or encoded path separators',()=>{
+ const record={...fixture().records[0],identifiers:['10.5281/zenodo.17056223','0009-0004-7737-5094']};
+ const queries=[
+  'https://doi.org/10.5281/zenodo.17056223?ref=museumofone.art',
+  'https://dx.doi.org/10.5281%2Fzenodo.17056223#record',
+  'https://orcid.org/0009-0004-7737-5094?lang=en',
+ ];
+ for(const query of queries){
+  const [result]=api.rankRecords([record],query);
+  assert.equal(result.id,record.id);
+  assert.equal(result.match_reason,'Exact identifier');
+ }
+ for(const invalid of ['https://doi.org.example/10.5281/zenodo.17056223?ref=museumofone.art',
+                        'https://doi.org/10.5281%2Fzenodo.%not-escaped']){
+  assert.deepEqual(api.rankRecords([record],invalid),[]);
+ }
+});
 test('source snippets are literal slices with explicit truncation',()=>{
  const text='Opening words. Evidence is on this page. Closing words.';
  assert.equal(api.excerpt(text,'evidence'),text);
@@ -112,6 +129,30 @@ test('localhost preview retains the staged feed without replacing it from produc
  const calls=[];
  await api.loadIndexes({origin,pageURL:'http://127.0.0.1:8846/research-discovery.html',snapshot:'/metadata/research-discovery.v2.json'},()=>{},async u=>{calls.push(u);return response(fixture());});
  assert.deepEqual(calls,['http://127.0.0.1:8846/metadata/research-discovery.v2.json']);
+});
+
+test('standalone loopback keeps the full index while Ghost fallbacks stay curated',async()=>{
+ const snapshot=fixture();
+ const id='website:'+'1'.repeat(24);
+ snapshot.records.push({...snapshot.records[0],id,kind:'website',
+  title:'Archived public writing',url:'https://www.museumofone.art/published-writing/'});
+ const read=async url=>{
+  if(url.startsWith(origin))throw new Error('Offline');
+  return response(snapshot);
+ };
+ const found=async(pageURL,localResults)=>{
+  const payload=await api.loadIndexes({origin,pageURL,localResults,snapshot:'/metadata/research-discovery.v2.json'},()=>{},read);
+  return payload.records.map(r=>r.id).includes(id);
+ };
+ for(const host of ['127.0.0.1','localhost','[::1]']){
+  assert.equal(await found('http://'+host+':8123/research-discovery.html',true),true);
+ }
+ assert.equal(await found('http://127.0.0.1:8123/page-digital-archive-library',false),false);
+ assert.equal(await found('http://127.0.0.1:8123/page-digital-archive-library','true'),false);
+ assert.equal(await found('https://www.museumofone.art/digital-archive-library/',true),false);
+ assert.equal(await found('https://localhost.example/digital-archive-library/',true),false);
+ await assert.rejects(api.loadIndexes({origin,localResults:true,pageURL:'http://127.0.0.1:8123/research-discovery.html',
+  snapshot:'http://127.0.0.1:8124/metadata/research-discovery.v2.json'},()=>{},read),/same-origin/);
 });
 
 test('evidence facets combine without hiding the distinction between source and research',()=>{

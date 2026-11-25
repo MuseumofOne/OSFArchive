@@ -39,6 +39,14 @@ class ResearchDiscovery(unittest.TestCase):
         build_discovery_page(output.__setitem__, lambda title, desc, body, path: body, self.feed, self.origin)
         self.assertIn('<h2 class="sr-only">Search results</h2><ol class="discovery-results"', output['research-discovery.html'])
 
+    def test_standalone_evidence_collection_label_retains_its_filter_key(self):
+        output = {}
+        feed = {'records': [{'title': 'Example evidence', 'url': self.origin + '/evidence.html',
+                             'kind': 'evidence', 'collection': 'rai-published-research'}]}
+        build_discovery_page(output.__setitem__, lambda title, desc, body, path: body, feed, self.origin)
+        self.assertIn('<option value="rai-published-research">Published RAI research: Korean art comparisons</option>',
+                      output['research-discovery.html'])
+
     def build(self, **changes):
         values = dict(records=self.records, entities=self.entities, vocab=self.vocab, programmes=self.programmes, origin=self.origin)
         values.update(changes)
