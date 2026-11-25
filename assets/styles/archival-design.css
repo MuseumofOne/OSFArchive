@@ -27,6 +27,7 @@ body.archive-registry { background: var(--paper); font-size: 16px; }
 .archive-registry .collection-tree summary span,
 .archive-registry .tree-note { font-size: 10px; line-height: 1.7; color: var(--muted); }
 .archive-registry .tree-root { font: 19px/1.4 var(--serif); }
+.archive-registry .tree-branch > a[aria-current="page"] { color: var(--wine); font-weight: bold; }
 .archive-registry .tree-tools a { font-size: 12px; line-height: 1.6; padding-block: 8px; }
 .archive-registry .tree-group ul a { font-size: 12px; line-height: 1.6; }
 .archive-registry .tree-group small { font-size: 11px; }
@@ -674,3 +675,28 @@ body.archive-registry {
 
 /* Keep the dark explorer toggle independent of the paper-page summary colour. */
 .archive-registry .archive-explorer .ax-tree > details > summary { color: var(--ax-ink); }
+
+.archive-registry .dialogue-entry {
+  border-top: 1px solid var(--line);
+  padding: 1.5rem 0;
+}
+.archive-registry .dialogue-entry :is(h2, p) {
+  max-width: 65ch;
+}
+.archive-registry .dialogue-entry h2 {
+  margin: 0 0 .6rem;
+}
+.archive-registry .dialogue-entry .dialogue-work {
+  font-style: italic;
+}
+.archive-registry .dialogue-entry .dialogue-files {
+  font-size: .88em;
+}
+.archive-registry .dialogue-entry .actions {
+  margin: 1rem 0 0;
+  gap: .85rem 1.3rem;
+}
+.archive-registry .dialogue-entry .text-link {
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
