@@ -1,6 +1,7 @@
 """Editorial browsing routes for public website publications and deposited editions."""
 
 from html import escape
+from dialogue_guide import guided_dialogues
 from identities import institutional_scope
 import json
 from urllib.parse import quote, urlsplit
@@ -147,7 +148,7 @@ def collection_link(group):
     return "catalogue.html?collection=" + quote(group)
 
 
-def classify_capture(source, deposited):
+def classify_capture(source, deposited, *, dialogue=False):
     """Return an editorial route and display role for each captured public record."""
     key = canonical_key(source["url"])
     slug = key[1].rsplit("/", 1)[-1]
@@ -165,7 +166,7 @@ def classify_capture(source, deposited):
     for group in (METHODOLOGY, BOOKS, THEORY, ESSAYS):
         if group.casefold() in declared:
             return group, "Website publication"
-    if source["kind"] == "post" or slug in ESSAY_PAGES:
+    if source["kind"] == "post" or slug in ESSAY_PAGES or dialogue:
         return ESSAYS, "Website publication"
     return None, "Website reference"
 
@@ -177,10 +178,12 @@ def load_publication_captures(work):
 
 def publication_inventory(captures, editions):
     deposited = {canonical_key(r["institutional_url"]): r for r in editions if r.get("institutional_url")}
+    dialogue_ids = {capture["archive_id"] for _, capture in guided_dialogues(captures)}
     rows = []
     for capture in captures:
         source = capture["source"]
-        group, role = classify_capture(source, deposited)
+        dialogue = capture["archive_id"] in dialogue_ids
+        group, role = classify_capture(source, deposited, dialogue=dialogue)
         edition = deposited.get(canonical_key(source["url"]))
         slug = canonical_key(source["url"])[1].rsplit("/", 1)[-1]
         editorial_subjects = []
@@ -188,6 +191,8 @@ def publication_inventory(captures, editions):
             editorial_subjects = list(EDITORIAL_SUBJECTS.get(slug, ()))
             if edition and not editorial_subjects:
                 editorial_subjects = edition.get("subjects", [])
+            if dialogue and not editorial_subjects:
+                editorial_subjects = ["Research dialogue"]
         document_language = capture.get("document_language") or {}
         row = {
             "id": capture["archive_id"],
