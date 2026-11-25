@@ -283,7 +283,8 @@
         {
           "title": "What Art Reveals, What History Explains",
           "url": "https://www.museumofone.art/lu-peng/",
-          "relation": "Published dialogue listed by the programme account"
+          "relation": "Published dialogue listed by the programme account",
+          "archive_copy": true
         }
       ]
     },

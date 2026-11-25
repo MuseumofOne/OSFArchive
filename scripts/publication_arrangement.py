@@ -80,7 +80,7 @@ TITLE_ALIASES = {
     "post-interpretive-criticism-a-philosophical-departure-from-post-criticism": ["Post-Interpretive Criticism", "PIC"],
 }
 
-ESSAY_PAGES = frozenset({"dong-yeon-koh", "tomoki-akimaru"})
+ESSAY_PAGES = frozenset({"dong-yeon-koh", "lu-peng", "tomoki-akimaru"})
 
 
 # Editorial access terms supplement absent Ghost tags.

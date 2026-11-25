@@ -128,7 +128,14 @@ def _publication(record, link=None):
     return body + '</li>'
 
 
-def build_pirr_pages(records, programmes, data, write, layout, origin):
+def programme_source_capture(source, website_captures):
+    """Resolve an approved public source to its existing readable capture."""
+    if source.get("archive_copy") is not True or not website_captures:
+        return None
+    return website_captures.get(source["url"])
+
+
+def build_pirr_pages(records, programmes, data, write, layout, origin, *, website_captures=None):
     """Write searchable programme/publication crosswalk and reusable exports."""
     records, programmes = attach_pirr(records, programmes, data)
     by_key = {p["key"]: p for p in data["programmes"]}
@@ -146,6 +153,7 @@ def build_pirr_pages(records, programmes, data, write, layout, origin):
     export = {"reviewed": data["reviewed"], "scope": data["scope"], "archive_origin": origin.rstrip("/"), "registry_url": data["registry_url"], "programmes": deepcopy(data["programmes"]), "programme_relations": deepcopy(data.get("programme_relations", [])), "publications": []}
     for p in data["programmes"]:
         related = [(r, link) for r in records for link in r["pirr_references"] if link["programme_key"] == p["key"]]
+        archive_sources = False
         search = " ".join([p["title"], p.get("question", ""), p.get("responsibility", ""), p.get("form", ""), p.get("current_work", "")] + [i["value"] for i in p.get("identifiers", [])] + [source["title"] for source in p.get("public_sources", [])] + [str(v) for r, _ in related for v in [r["title"], r.get("accession"), r.get("doi")]] + [str(part.get(field) or "") for r, _ in related for part in r.get("contents", []) for field in ("title", "reference")])
         body += (f'<article class="item-section registry-record" id="{_e(p["key"])}" data-registry-entry data-search="{_e(search)}">'
                  f'<div class="section-no">Programme account · {_e(p["stage"])}</div><h2>{_e(p["title"])}</h2>'
@@ -163,7 +171,12 @@ def build_pirr_pages(records, programmes, data, write, layout, origin):
         if p.get("public_sources"):
             body += '<h3>Public records cited by this programme</h3><ul class="source-list">'
             for public in p["public_sources"]:
-                body += f'<li><a href="{_e(public["url"])}">{_e(public["title"])} ↗</a><small>{_e(public["relation"])}</small></li>'
+                body += f'<li><a href="{_e(public["url"])}">{_e(public["title"])} ↗</a><small>{_e(public["relation"])}</small>'
+                capture = programme_source_capture(public, website_captures)
+                if capture:
+                    body += f'<p><a href="{_e(capture)}">Read the archived dialogue ↗</a></p>'
+                    archive_sources = True
+                body += '</li>'
             body += '</ul>'
         neighbours = [rel for rel in data.get("programme_relations", []) if p["key"] in (rel["from"], rel["to"])]
         if neighbours:
@@ -172,10 +185,11 @@ def build_pirr_pages(records, programmes, data, write, layout, origin):
                 other = rel["to"] if rel["from"] == p["key"] else rel["from"]
                 body += f'<li><a href="#{_e(other)}">{_e(by_key[other]["title"])}</a><small>{_e(rel["relation"])} · <a href="{_e(rel["source_url"])}">Source relationship ↗</a></small></li>'
             body += '</ul>'
-        body += f'<h3>Archive publications connected with this research <span class="catalogue-id">{len(related):02d}</span></h3>'
+        if related or not archive_sources:
+            body += f'<h3>Archive publications connected with this research <span class="catalogue-id">{len(related):02d}</span></h3>'
         if related:
             body += '<ul class="source-list registry-publications">' + ''.join(_publication(r, link) for r, link in related) + '</ul>'
-        else:
+        elif not archive_sources:
             body += '<p>The selected archive has no work-specific programme relationship recorded here. The public account may include developing work and publications outside this deposited selection.</p>'
         body += '</article>'
     unlinked = [r for r in records if not r["pirr_references"]]
