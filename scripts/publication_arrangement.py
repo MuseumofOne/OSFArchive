@@ -91,6 +91,7 @@ EDITORIAL_SUBJECTS = {
     "post-interpretive-criticism-volume-i-foundational-essays": ["Aesthetics", "Post-Interpretive Criticism"],
     "tomoki-akimaru": ["Post-Interpretive Criticism", "Research dialogue"],
     "dong-yeon-koh": ["Korean art history", "Research dialogue"],
+    "lu-peng": ["Chinese art historiography", "Post-Interpretive Criticism", "Research dialogue"],
     "phenomenological-indices-analysis": ["Phenomenology", "Diagnostic indices"],
     "linguistic-diagnostics-analysis": ["Critical language", "Diagnostic instruments"],
     "quantifying-critical-posture-a-diagnostic-analysis-of-art-writing-1980-2025-formalizing-post-hermeneutic-phenomenology": ["Art criticism", "Critical posture", "Diagnostic indices"],
@@ -103,6 +104,28 @@ EDITORIAL_SUBJECTS = {
     "diagnostic-reading": ["Diagnostic reading", "Research methodology"],
     "the-living-lexicon": ["Critical vocabulary", "Post-Interpretive Criticism"],
 }
+
+PUBLICATION_DOI_SCOPE_LABELS = {
+    "version_family": "Related publication’s version-family DOI",
+    "deposited_version": "Related publication’s deposited version DOI",
+}
+
+
+# Original citation_doi meta tags, checked against their DataCite registrations.
+# These search associations leave the web captures' identities and source fields intact.
+REVIEWED_PUBLICATION_DOIS = {
+    "https://www.museumofone.art/"
+    "nomadic-aesthetics-travelling-installations-as-moral-geography/":
+        ("10.5281/zenodo.17478280", "version_family", "2026-11-25"),
+    "https://www.museumofone.art/"
+    "a-museum-of-breath-designing-spaces-for-attention-not-spectacle/":
+        ("10.5281/zenodo.18349238", "version_family", "2026-11-25"),
+    "https://www.museumofone.art/formal-defence-of-post-interpretive-criticism/":
+        ("10.5281/zenodo.16934437", "deposited_version", "2026-11-25"),
+    "https://www.museumofone.art/duchamp/":
+        ("10.5281/zenodo.17056223", "deposited_version", "2026-11-25"),
+}
+
 
 def canonical_key(url):
     parts = urlsplit(url)
@@ -166,7 +189,7 @@ def publication_inventory(captures, editions):
             if edition and not editorial_subjects:
                 editorial_subjects = edition.get("subjects", [])
         document_language = capture.get("document_language") or {}
-        rows.append({
+        row = {
             "id": capture["archive_id"],
             "title": source["title"],
             "aliases": TITLE_ALIASES.get(slug, []),
@@ -192,7 +215,15 @@ def publication_inventory(captures, editions):
             "source_url": source["url"],
             "capture_path": f'website/{capture["archive_id"]}.html',
             "edition_path": f'items/{edition["id"]}.html' if edition else None,
-        })
+        }
+        if source["url"] in REVIEWED_PUBLICATION_DOIS:
+            doi, scope, reviewed = REVIEWED_PUBLICATION_DOIS[source["url"]]
+            row["related_publication_doi"] = {
+                "doi": doi, "scope": scope, "scope_label": PUBLICATION_DOI_SCOPE_LABELS[scope],
+                "reviewed": reviewed, "source_url": source["url"], "source_field": "citation_doi",
+                "registry_url": "https://api.datacite.org/dois/" + doi,
+            }
+        rows.append(row)
     return sorted(rows, key=lambda row: row["date"] or "", reverse=True)
 
 

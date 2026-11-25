@@ -15,6 +15,7 @@ from contents import attach_contents
 from vocabulary import attach_vocabulary
 from readers import apply_reading_metadata
 from pirr import attach_pirr, load_pirr
+from publication_arrangement import publication_inventory
 
 
 def inputs():
@@ -102,6 +103,49 @@ class ResearchDiscovery(unittest.TestCase):
         for changes in ({'public': False}, {'private': True}, {'source_sha256': ''}, {'source_url': 'https://example.org/'}, {'url': 'https://example.org/'}):
             with self.assertRaisesRegex(ValueError, 'public-source evidence'):
                 self.build(ghost_records=[{**page, **changes}])
+
+    def test_reviewed_website_dois_apply_only_to_the_checked_source(self):
+        sources = {
+            'nomadic-aesthetics-travelling-installations-as-moral-geography': ('17478280', 'version_family'),
+            'a-museum-of-breath-designing-spaces-for-attention-not-spectacle': ('18349238', 'version_family'),
+            'formal-defence-of-post-interpretive-criticism': ('16934437', 'deposited_version'),
+            'duchamp': ('17056223', 'deposited_version'),
+        }
+        all_dois = ' '.join('10.5281/zenodo.' + rid for rid, _ in sources.values())
+        pages, captures = [], []
+        for i, slug in enumerate([*sources, 'archives']):
+            url = 'https://www.museumofone.art/' + slug + '/'
+            title = slug.replace('-', ' ').title()
+            pages.append(dict(url=url, source_url=url, title=title, public=True,
+                              reviewed='2026-11-25', source_sha256='a' * 64, text=all_dois))
+            captures.append({
+                'source': dict(url=url, title=title, kind='post', published_at='2026-11-25',
+                               updated_at='2026-11-25'),
+                'archive_id': f'web-{i:024x}', 'summary': '',
+                'original_published_at': '2026-11-25', 'first_captured_at': '2026-11-25',
+                'capture': {'captured_at': '2026-11-25'},
+            })
+        inventory = publication_inventory(captures, self.records)
+        feed = self.build(ghost_records=pages, website_inventory=inventory)
+        by_url = {row['url']: row for row in feed['records'] if row['kind'] == 'website'}
+        by_source = {row['source_url']: row for row in inventory}
+        for page in pages[:-1]:
+            url = page['url']
+            slug = url.rstrip('/').rsplit('/', 1)[-1]
+            rid, scope = sources[slug]
+            doi = '10.5281/zenodo.' + rid
+            row = by_url[url]
+            association = by_source[url]['related_publication_doi']
+            self.assertEqual(association['scope'], scope)
+            self.assertEqual(association['source_field'], 'citation_doi')
+            self.assertEqual(row['identity'], url)
+            self.assertEqual(row['identifiers'], [doi])
+            self.assertEqual(row['identifier_scopes'], {doi: association['scope_label']})
+            self.assertEqual(row['sources'][1]['url'], 'https://api.datacite.org/dois/' + doi)
+        archives = pages[-1]['url']
+        self.assertIn('10.5281/zenodo.16934437', by_url[archives]['search_text'])
+        self.assertEqual(by_url[archives]['identifiers'], [])
+        self.assertNotIn('related_publication_doi', by_source[archives])
 
     def test_gladston_dialogue_edges_require_a_verified_public_capture(self):
         source_url = 'https://www.museumofone.art/paul-gladston/'
