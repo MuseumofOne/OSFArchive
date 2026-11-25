@@ -9,6 +9,7 @@ Institutional website: https://www.museumofone.art/
 
 - [Shared discovery](https://archive.museumofone.art/research-discovery.html): Search titles, people, artworks, concepts, programmes, website records and verified PDF passages.
 - [Curated catalogue](https://archive.museumofone.art/catalogue.html): Deposited publication editions and original PDF reading copies.
+- [Dialogues](https://archive.museumofone.art/dialogues.html): Published research exchanges with archive records, available PDFs and original publication links.
 - [Website captures](https://archive.museumofone.art/website-records.html): Current eligible public Ghost posts/pages, readable copies, inert original content HTML and preserved uploads.
 - [Finding aid](https://archive.museumofone.art/finding-aid.html): Scope, editorial arrangement, access conditions and item inventory.
 - [Rights and policies](https://archive.museumofone.art/policies.html): Work-specific rights, third-party exclusions, description responsibility and limits.

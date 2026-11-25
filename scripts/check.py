@@ -397,10 +397,25 @@ def main():
                 'Search result does not link to its canonical record: ' + str(record.get('id')))
     try:
         ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
-        locations = [node.text for node in ET.parse(DIST/'sitemap.xml').findall('s:url/s:loc', ns)]
+        entries = ET.parse(DIST/'sitemap.xml').findall('s:url', ns)
+        locations = [entry.findtext('s:loc', namespaces=ns) for entry in entries]
         intended = {page.canonical for path, page in pages.items() if path.name != '404.html'}
         require(len(locations) == len(set(locations)) and set(locations) == intended,
                 'Sitemap must contain every intended public HTML page exactly once, excluding the error page.')
+        modified = dict(zip(locations, [entry.findtext('s:lastmod', namespaces=ns) for entry in entries]))
+        captures = load(DIST/'metadata'/'website-captures.json') or []
+        for capture in captures:
+            location = origin + f'/website/{capture["archive_id"]}.html'
+            date = capture['capture']['captured_at']
+            require(date and modified.get(location) == date,
+                    f'Sitemap lastmod must match the archived revision: {location}')
+        for page in pages.values():
+            if page.canonical in intended:
+                directives = [*page.meta.get('robots', []), *page.meta.get('googlebot', [])]
+                require(not re.search(r'\b(?:noindex|none)\b', ' '.join(directives), re.I),
+                        f'Sitemap page excludes itself from Google indexing: {page.canonical}')
+        require(f'Sitemap: {origin}/sitemap.xml' in (DIST/'robots.txt').read_text().splitlines(),
+                'Crawler rules must advertise the public sitemap.')
         require('noindex' in ','.join(pages[(DIST/'404.html').resolve()].meta.get('robots', [])), 'Error page lacks noindex.')
     except (OSError, ET.ParseError, KeyError) as exc:
         ERRORS.append('Sitemap/error-page contract failed: ' + str(exc))
