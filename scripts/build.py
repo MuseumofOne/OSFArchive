@@ -21,6 +21,7 @@ from quality_page import collect_graphs, build_quality_page
 from citations import build_citation_model, visible_citation, csl_json, bibtex, ris, scholar_meta
 from evidence import load_evidence, build_evidence_pages, copy_evidence_assets
 from discovery_v2 import build_research_discovery, build_fulltext_index, build_discovery_page, encode_index
+from dialogues import build_dialogues
 from wdw_sources import build_wdw_sources, source_collection_link
 from publication_arrangement import (METHODOLOGY, RAI_SERIES, collection_anchor, collection_link,
                                      load_publication_captures, mirror_quality, publication_card, publication_inventory)
@@ -357,6 +358,7 @@ write('metadata/contents.json',json.dumps(CONTENTS,ensure_ascii=False,indent=2))
 # One generated discovery model serves archive pages and the native Ghost entrance.
 from website_pages import build_website_pages
 paths+=build_website_pages(SYNC_WORK,OUT,write,layout,ORIGIN,methodology=methodology,methodology_desc=methodology_desc, captures=CAPTURES, inventory=WEB_INVENTORY)
+paths+=build_dialogues(CAPTURES,WEB_INVENTORY,RECORDS,write,layout,pagehead)
 copy_evidence_assets(EVIDENCE,ROOT,OUT)
 paths+=build_evidence_pages(EVIDENCE,write,layout,ORIGIN)
 PASSAGES_V2=build_fulltext_index(RECORDS,ROOT,ORIGIN)

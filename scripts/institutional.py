@@ -11,6 +11,8 @@ def collection_tree(path,records,programmes,*,collection_counts):
  groups=list(collection_counts);total=sum(collection_counts.values())
  label=lambda count, noun: f'{count} {noun}' + ('' if count==1 else 's')
  tree=f'<aside class="collection-tree" aria-label="Archive navigation"><details id="collection-tree-panel" open><summary>Browse the archive<span data-tree-total>{label(total,"catalogue record")}</span><span data-tree-total-breakdown>{label(len(records),"deposited edition")} · {label(total-len(records),"website record")}</span></summary><nav aria-label="Collection tree"><a class="tree-root" href="{base}finding-aid.html">Museum of One<br>Digital Archive Library</a><div class="tree-branch"><a href="{base}catalogue.html">Full catalogue</a>'
+ current_dialogues=' aria-current="page"' if path=='dialogues.html' else ''
+ tree+=f'<a href="{base}dialogues.html"{current_dialogues}>Dialogues</a>'
  for group in groups:
   rows=[r for r in records if r['collection']==group];active=current and current['collection']==group
   count=collection_counts[group]

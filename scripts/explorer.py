@@ -55,6 +55,9 @@ def render_explorer(records, programmes, origin, *, standalone=False, collection
     html=f'''<section class="archive-explorer" id="archive-explorer" data-archive-explorer data-standalone="{str(standalone).lower()}" data-origin="{e(origin)}" aria-label="Interactive archive explorer">
 <div class="ax-topline"><span>Archive registry / Item-level records</span><a data-ax-handoff href="{e(origin+'/')}">Open full archive ↗</a><button type="button" data-ax-expand aria-pressed="false" hidden>Expand explorer</button></div>
 <div class="ax-workspace"><aside class="ax-tree" aria-label="Explorer collection tree"><details><summary>Browse the archive<small data-ax-sidebar-total>{catalogue_total} catalogue {"record" if catalogue_total == 1 else "records"} · {len(records)} {edition_label}</small></summary><nav aria-label="Explorer pathways"><a class="ax-tree-root" href="{e(dest('finding-aid.html'))}">Museum of One<br>Digital Archive Library</a>{nav('Overview','overview','index.html')}{nav('Deposited editions <small>'+str(len(records))+'</small>','catalogue',edition_inventory)}'''
+    if standalone:
+        html += '<a href="dialogues.html">Dialogues</a>'
+
     def collection_attributes(group):
         href = e(dest(collection_link(group)))
         return f'href="{href}"'
