@@ -266,6 +266,22 @@ class Readable(HTMLParser):
     blocked = set(
         "script style iframe object embed form input button select textarea svg canvas audio video".split()
     )
+    pdf_readers = {
+        ORIGIN + "/external-records": ("moo-weganda-reader", "moo-weganda-viewport"),
+        ORIGIN + "/dong-yeon-koh": ("moo-koh-reader", "moo-koh-viewport"),
+    }
+    citation_heading = re.compile(
+        r'<h4 class="kg-toggle-heading-text">('
+        r'Research record and citation|<span style="white-space: pre-wrap;">Research record and citation</span>'
+        r')</h4>'
+    )
+    korean_pages = {
+        ORIGIN + "/dong-yeon-koh",
+        ORIGIN + "/when-documentation-becomes-the-work",
+    }
+    hangul = r"[\u1100-\u11ff\u3131-\u318e\uac00-\ud7a3]"
+    hangul_between = r"[\u1100-\u11ff\u3131-\u318e\uac00-\ud7a3 \t\u00a0\u00b7\u318d\.,?!:;()\[\]“”‘’\-–—0-9]*"
+    korean_runs = re.compile(hangul + "(?:" + hangul_between + hangul + ")?")
 
     def __init__(self, html, base=ORIGIN + "/"):
         super().__init__(convert_charrefs=True)
@@ -275,9 +291,11 @@ class Readable(HTMLParser):
         self.links = []
         self.skip = []
         self.anchors = []
-        self.preserve_weganda_reader = base.rstrip("/") == ORIGIN + "/external-records"
+        self.pdf_reader = self.pdf_readers.get(base.rstrip("/"))
         self.disclosures = []
-        self.feed(html or "")
+        self.label_korean = base.rstrip("/") in self.korean_pages
+        self.languages = []
+        self.feed(self.citation_heading.sub(r"<h2>\1</h2>", html or ""))
         self.close()
 
     def add_media_link(self, url, role, label):
@@ -314,8 +332,8 @@ class Readable(HTMLParser):
             if t not in ("input", "embed"):
                 self.skip.append(t)
             return
-        if t == "details" and self.preserve_weganda_reader:
-            keep = a.get("class") == "moo-weganda-reader"
+        if t == "details" and self.pdf_reader:
+            keep = a.get("class") == self.pdf_reader[0]
             self.disclosures.append(keep)
             if keep:
                 self.parts.append('<details class="capture-pdf-reader">')
@@ -325,7 +343,8 @@ class Readable(HTMLParser):
             self.parts.append("<summary>")
             return
         if in_reader and t == "nav":
-            self.parts.append('<nav class="capture-pdf-reader-pages" aria-label="PDF page navigation">')
+            label = escape(a.get("aria-label") or "PDF page navigation", quote=True)
+            self.parts.append(f'<nav class="capture-pdf-reader-pages" aria-label="{label}">')
             return
         if t == "img":
             u = self.safe(a.get("src"))
@@ -346,9 +365,13 @@ class Readable(HTMLParser):
             return
         if t not in self.allowed:
             return
+        if self.label_korean and t not in ("br", "hr"):
+            language = a.get("lang") or ""
+            self.languages.append((t, language if re.fullmatch(r"[\w.:-]{1,120}", language) else ""))
         attrs_out = ""
-        if in_reader and t == "div" and a.get("class") == "moo-weganda-viewport":
-            attrs_out = ' class="capture-pdf-reader-viewport" role="region" tabindex="0" aria-label="Archived PDF pages"'
+        if in_reader and t == "div" and a.get("class") == self.pdf_reader[1]:
+            label = escape(a.get("aria-label") or "Archived PDF pages", quote=True)
+            attrs_out = f' class="capture-pdf-reader-viewport" role="region" tabindex="0" aria-label="{label}"'
         if t == "a":
             self.anchors.append({"fallback_labels": [], "has_text": False,
                                  "label": a.get("aria-label") or a.get("title") or ""})
@@ -377,6 +400,11 @@ class Readable(HTMLParser):
         if t in ("summary", "nav") and self.disclosures and self.disclosures[-1]:
             self.parts.append("</" + t + ">")
             return
+        if self.label_korean and t in self.allowed and t not in ("br", "hr"):
+            for i in range(len(self.languages) - 1, -1, -1):
+                if self.languages[i][0] == t:
+                    del self.languages[i:]
+                    break
         if t == "a" and self.anchors:
             anchor = self.anchors.pop()
             if anchor["fallback_labels"] and not anchor["has_text"]:
@@ -390,7 +418,16 @@ class Readable(HTMLParser):
 
     def handle_data(self, s):
         if not self.skip:
-            self.parts.append(escape(s))
+            language = next((label for _, label in reversed(self.languages) if label), "")
+            if self.label_korean and language.casefold().split("-", 1)[0] != "ko":
+                start = 0
+                for match in self.korean_runs.finditer(s):
+                    self.parts.append(escape(s[start:match.start()]))
+                    self.parts.append('<span lang="ko">' + escape(match.group()) + "</span>")
+                    start = match.end()
+                self.parts.append(escape(s[start:]))
+            else:
+                self.parts.append(escape(s))
             self.text.append(s)
             if s.strip():
                 for anchor in self.anchors:

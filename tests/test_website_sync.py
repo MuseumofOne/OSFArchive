@@ -61,6 +61,12 @@ class Sync(unittest.TestCase):
   self.assertEqual(classify_capture(source,{}),('Methodology','Website publication'))
   source.update(kind='page',subjects=[])
   self.assertEqual(classify_capture(source,{}),(None,'Website reference'))
+ def test_published_dialogues_share_the_essays_collection(self):
+  from publication_arrangement import classify_capture
+  for slug in ('dong-yeon-koh','lu-peng','tomoki-akimaru'):
+   with self.subTest(slug=slug):
+    source={'url':f'https://www.museumofone.art/{slug}/','kind':'page','subjects':[]}
+    self.assertEqual(classify_capture(source,{}),('Essays & research','Website publication'))
  def test_missing_metadata_reported_without_invention(self):
   r=self.row['record'];r['authors']=[];r.pop('updated_at');s,p,report=self.run_sync();self.assertIsNone(p[0]['language']);self.assertIsNone(p[0]['source']['updated_at']);self.assertTrue(report['validation_issues']);self.assertNotIn('bookEdition',encoded(p).decode())
  def test_unpublishing_withholds_copy_and_preserves_encrypted_history(self):
@@ -286,6 +292,58 @@ class Sync(unittest.TestCase):
   parser=Readable('<video><source src="/content/media/a.mp4"></video><audio src="/content/media/b.mp3"></audio><img src="/content/images/c.png">')
   self.assertEqual({x['role'] for x in parser.links},{'source','audio','image'})
   self.assertIn('https://www.museumofone.art/content/media/a.mp4',{x['url'] for x in parser.links})
+ def test_only_research_record_toggle_heading_gets_h2_fallback(self):
+  raw=('<h4 class="kg-toggle-heading-text">Research record and citation</h4>'
+       '<h4 class="kg-toggle-heading-text"><span style="white-space: pre-wrap;">Research record and citation</span></h4>'
+       '<h4 class="kg-toggle-heading-text">Different citation title</h4>'
+       '<h4>Research record and citation</h4>')
+  rendered=''.join(Readable(raw).parts)
+  self.assertIn('<h2>Research record and citation</h2>',rendered)
+  self.assertIn('<h2><span>Research record and citation</span></h2>',rendered)
+  self.assertIn('<h4>Different citation title</h4>',rendered)
+  self.assertIn('<h4>Research record and citation</h4>',rendered)
+  self.assertNotIn('style=',rendered)
+ def test_korean_runs_are_labelled_without_replacing_existing_language(self):
+  raw=('<p>English title (임동식 and 김구림) with notes.</p>'
+       '<div lang="ko-KR"><p><em>한국어</em></p></div><p>Later 문장.</p>'
+       '<script>나쁜 스크립트</script>')
+  for slug in ('dong-yeon-koh','when-documentation-becomes-the-work'):
+   with self.subTest(slug=slug):
+    parser=Readable(raw,'https://www.museumofone.art/'+slug+'/')
+    rendered=''.join(parser.parts)
+    self.assertIn('English title (<span lang="ko">임동식</span> and <span lang="ko">김구림</span>) with notes.',rendered)
+    self.assertIn('<div lang="ko-KR"><p><em>한국어</em></p></div>',rendered)
+    self.assertIn('Later <span lang="ko">문장</span>.',rendered)
+    self.assertNotIn('나쁜 스크립트',rendered)
+    self.assertNotIn('lang=', ''.join(parser.text))
+  self.assertNotIn('<span lang=', ''.join(Readable(raw,'https://www.museumofone.art/other/').parts))
+ def test_koh_reader_keeps_safe_page_navigation_and_captured_pdf(self):
+  source='https://www.museumofone.art/dong-yeon-koh/'
+  image='https://www.museumofone.art/content/images/koh-page.webp'
+  pdf='https://www.museumofone.art/content/files/koh-paper.pdf'
+  path='assets/website-captures/'+'b'*64+'.webp'
+  markup=(f'<details class="moo-koh-reader" open onclick="alert(1)"><summary>Read the archived copy</summary>'
+          '<nav class="moo-koh-reader-nav" aria-label="Pages for A &amp; B">'
+          f'<a href="#koh-copy-21-page-1">Page 1</a><a href="{pdf}">Open PDF</a></nav>'
+          '<div class="moo-koh-viewport" aria-label="Scrollable pages for A &amp; B">'
+          f'<figure id="koh-copy-21-page-1"><img src="{image}" alt="Page 1" onerror="alert(1)"></figure>'
+          '<script>bad script</script></div></details>')
+  reader=Readable(markup,source)
+  sanitized=''.join(reader.parts)
+  self.assertIn('<details class="capture-pdf-reader">',sanitized)
+  self.assertIn('aria-label="Pages for A &amp; B"',sanitized)
+  self.assertIn('tabindex="0" aria-label="Scrollable pages for A &amp; B"',sanitized)
+  self.assertIn(f'href="{source}#koh-copy-21-page-1"',sanitized)
+  self.assertIn('id="koh-copy-21-page-1"',sanitized)
+  self.assertIn(pdf,{link['url'] for link in reader.links})
+  self.assertNotRegex(sanitized,r'onclick|onerror|<script|bad script|<details[^>]+ open')
+  self.assertNotIn('capture-pdf-reader',''.join(Readable(markup,'https://www.museumofone.art/another-page/').parts))
+  asset={'url':image,'storage':'local_archival_file','mime_type':'image/webp','archive_path':path,
+         'pixel_dimensions':{'width':1275,'height':1650}}
+  rendered,embedded=inline_pdf_reader_pages(sanitized,[asset],'https://archive.example')
+  self.assertEqual(embedded,{path})
+  self.assertIn(f'src="https://archive.example/{path}" width="1275" height="1650" alt="Page 1"',rendered)
+  self.assertIn(f'href="{pdf}"',rendered)
  def test_first_party_pdf_objects_are_preserved_without_embedded_fallback(self):
   pdf='https://www.museumofone.art/content/files/object.PDF'
   self.row['record']['html']=(

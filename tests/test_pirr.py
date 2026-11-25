@@ -97,6 +97,32 @@ class PirrCrosswalkTest(unittest.TestCase):
         no_link = next(r for r in records if str(r['id']) == '21786998')
         self.assertEqual(pirr_item_panel(no_link), '')
 
+    def test_existing_lu_peng_programme_links_only_approved_archive_source(self):
+        output = {}
+        lu_peng = 'https://www.museumofone.art/lu-peng/'
+        koh = 'https://www.museumofone.art/dong-yeon-koh/'
+        lu_capture = 'website/web-6b031692ba83ce00017364d5.html'
+        koh_capture = 'website/web-6aad41d7ee54740001bdd0e5.html'
+
+        def layout(title, description, body, **kwargs):
+            return body
+
+        build_pirr_pages(self.records, self.programmes, self.data, output.__setitem__,
+                         layout, 'https://archive.example',
+                         website_captures={lu_peng: lu_capture, koh: koh_capture})
+        html = output['research-registry.html']
+        section = html.split('id="research-chinese-art-historiography"', 1)[1].split('</article>', 1)[0]
+        self.assertIn(f'href="{lu_capture}"', section)
+        self.assertIn(f'href="{lu_peng}"', section)
+        self.assertIn('id="pir-prj-br3k2hk9"', section)
+        self.assertNotIn('href="' + koh_capture + '"', html)
+        self.assertNotIn('no work-specific programme relationship', section)
+
+        build_pirr_pages(self.records, self.programmes, self.data, output.__setitem__, layout,
+                         'https://archive.example', website_captures={})
+        self.assertNotIn(f'href="{lu_capture}"', output['research-registry.html'])
+        self.assertIn(f'href="{lu_peng}"', output['research-registry.html'])
+
 
 if __name__ == '__main__':
     unittest.main()

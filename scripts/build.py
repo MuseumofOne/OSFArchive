@@ -10,7 +10,7 @@ from vocabulary import attach_vocabulary, build_vocabulary_pages
 from policies import attach_catalogue_history, build_policy_pages
 from stewardship import build_stewardship_page
 from institutional import institutional_page
-from pirr import load_pirr, attach_pirr, build_pirr_pages
+from pirr import load_pirr, attach_pirr, build_pirr_pages, programme_source_capture
 from archival import archival_page
 from archive_design import THEME_COLOR, VIEWPORT, asset_url, publish_styles
 from readers import apply_reading_metadata, reader_link, build_reader_pages
@@ -315,14 +315,20 @@ programme_content=pagehead('Research programmes','From inquiry to record.','Expl
 programme_content+='<div class="institution-links"><a href="https://www.museumofone.art/research-programmes/">Open institutional programme directory ↗</a><a href="https://www.museumofone.art/research-record-2026/">Research Record 2026 ↗</a><a href="https://www.museumofone.art/research-working-papers/">Working paper series ↗</a></div>'
 for p in PROGRAMMES:
  related=[r for r in RECORDS if any(x['url']==p['url'] for x in programmes_for(r))]
+ captures=[]
+ for public in p.get('pirr_record', {}).get('public_sources', []):
+  capture=programme_source_capture(public, WEBSITE_CAPTURE_PATHS)
+  if capture:captures.append((public['title'],capture))
  programme_content+=f'<section class="programme-section" id="{E(programme_id(p))}"><div class="eyebrow">{E(p.get("status", "See institutional source"))}</div><h2>{E(p["title"])}</h2><p>{E(p.get("description") or "Programme details, current questions, and developments are maintained on Museum of One. This library presents the selected publications explicitly linked to that inquiry.")}</p><a class="text-link" href="{E(p["url"])}">Explore the programme on Museum of One ↗</a>'
+ for title,capture in captures:
+  programme_content+=f'<p><a href="{E(capture)}">{E(title)} · Archived dialogue ↗</a></p>'
  if related:
   programme_content+='<span class="source-label">Linked records in this selected catalogue</span><div class="programme-outputs">'
   for r in related:
    rel=next(x for x in programmes_for(r) if x['url']==p['url'])
    programme_content+=f'<a class="programme-output" href="items/{r["id"]}.html"><span class="catalogue-id">{E(r["accession"])} / {E(r["type"])}</span><h3>{E(r.get("short_title") or r["title"])}</h3><p>{E(rel.get("relation_label") or rel.get("relation"))}</p></a>'
   programme_content+='</div>'
- else:programme_content+='<p>No linked output has been included in this selected catalogue. Consult the programme page for its current record.</p>'
+ elif not captures:programme_content+='<p>No linked output has been included in this selected catalogue. Consult the programme page for its current record.</p>'
  programme_content+='</section>'
 write('programmes.html',layout('Research programmes','Follow Museum of One research programme badges to source-linked publication records and ongoing inquiries.',programme_content,'programmes.html',active='programmes'))
 subject_content=pagehead('Subject index','An index of ideas.','Browse the local editorial discovery vocabulary. Original repository keywords are retained separately on each item page.')+'<div class="directory-grid">'
@@ -345,7 +351,7 @@ paths+=build_content_pages(RECORDS,CONTENTS,write,layout,ORIGIN)
 paths+=build_vocabulary_pages(RECORDS,VOCABULARY,write,layout,ORIGIN)
 paths+=build_policy_pages(RECORDS,write,layout,ORIGIN)
 paths+=build_stewardship_page(RECORDS,write,layout,ORIGIN)
-paths+=build_pirr_pages(RECORDS,PROGRAMMES,PIRR,write,layout,ORIGIN)
+paths+=build_pirr_pages(RECORDS,PROGRAMMES,PIRR,write,layout,ORIGIN,website_captures=WEBSITE_CAPTURE_PATHS)
 write('metadata/entities.json',json.dumps(ENTITIES,ensure_ascii=False,indent=2))
 write('metadata/contents.json',json.dumps(CONTENTS,ensure_ascii=False,indent=2))
 # One generated discovery model serves archive pages and the native Ghost entrance.
