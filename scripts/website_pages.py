@@ -165,7 +165,8 @@ KOREAN_SUMMARY_SOURCES = {
 }
 
 
-def build_website_pages(work, out, write, layout, origin, *, methodology=None, methodology_desc=None, captures=None, inventory=None):
+def build_website_pages(work, out, write, layout, origin, *, methodology=None, methodology_desc=None,
+                        captures=None, inventory=None, carousel_sha=None):
     work = Path(work)
     out = Path(out)
     # A fresh whitelist is rebuilt each time, never leave a withdrawn readable file.
@@ -206,6 +207,8 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
     standalone = sum(bool(row['collection']) and not row['edition_path'] for row in inventory)
     linked = sum(bool(row['edition_path']) for row in inventory)
     intro = '<div class="page-head"><div class="eyebrow">Website captures</div><h1>Published website records</h1><p>Browse captured Museum of One writing, research, tools and reference pages.</p></div>'
+    if carousel_sha:
+        intro += '<p><a class="text-link" href="homepage-carousel.html">View the archived Museum of One homepage carousel ↗</a></p>'
     intro += (
         f'<p><strong><span data-capture-total="all">{len(current)}</span> public website captures</strong> · Last reconciliation {e(report.get("checked_at", "Not yet run"))}</p>'
         f'<p><span data-capture-total="standalone">{standalone}</span> standalone catalogue {"record" if standalone == 1 else "records"}, '
@@ -600,6 +603,8 @@ def build_website_pages(work, out, write, layout, origin, *, methodology=None, m
         retired_link_replacements=link_changes,
         website_mirror_quality=mirror_quality(inventory),
     )
+    if carousel_sha:
+        report["homepage_carousel_sha256"] = carousel_sha
     write(
         "metadata/website-captures.json",
         json.dumps(metadata, ensure_ascii=False, indent=2),

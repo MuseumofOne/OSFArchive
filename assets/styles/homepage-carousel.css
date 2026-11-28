@@ -1,0 +1,52 @@
+.homepage-capture-nav {
+  margin: 0 0 2rem;
+  line-height: 1.75;
+}
+
+.homepage-capture-panel {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  align-items: start;
+  gap: clamp(1.25rem, 4vw, 3rem);
+  border-top: 1px solid var(--line);
+  padding-block: 2rem;
+  scroll-margin-top: 1rem;
+}
+
+.homepage-capture-panel h2 {
+  margin-block: .4rem 1rem;
+}
+
+.homepage-capture-panel .text-link {
+  display: inline-block;
+  margin-block-start: .75rem;
+}
+
+.homepage-capture-panel figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.homepage-capture-panel img {
+  display: block;
+  inline-size: auto;
+  block-size: auto;
+  max-inline-size: 100%;
+  max-block-size: 42rem;
+  object-fit: contain;
+}
+
+.homepage-capture-panel figcaption {
+  margin-block-start: .85rem;
+  font-size: .875rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.homepage-capture-panel figcaption p {
+  margin-block: .5rem;
+}
+
+@media (max-width: 760px) {
+  .homepage-capture-panel { grid-template-columns: minmax(0, 1fr); }
+}

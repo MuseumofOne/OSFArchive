@@ -7,6 +7,7 @@ from hashlib import sha256
 STYLES = (
     'style.css', 'archive-identity.css', 'institutional.css', 'archival-design.css',
     'archive-explorer.css', 'website-captures.css', 'book-reader.css', 'evidence.css',
+    'homepage-carousel.css',
 )
 THEME_COLOR = '#20231e'
 VIEWPORT = 'width=device-width,initial-scale=1'

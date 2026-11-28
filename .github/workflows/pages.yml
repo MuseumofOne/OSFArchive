@@ -41,6 +41,9 @@ jobs:
       - name: Save encrypted revisions and stable mappings
         if: always() && github.event_name != 'pull_request'
         run: python scripts/website_state.py push
+      - name: Capture the public homepage carousel
+        if: github.event_name != 'pull_request'
+        run: python scripts/homepage_carousel.py
       - name: Build and verify archive
         env:
           SITE_ORIGIN: ${{ vars.SITE_ORIGIN || 'https://archive.museumofone.art' }}

@@ -15,6 +15,9 @@ import sys
 from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
 from archive_design import STYLES, THEME_COLOR, VIEWPORT, asset_url, source as style_source
+from homepage_carousel import MANIFEST as CAROUSEL_MANIFEST, MEDIA as CAROUSEL_MEDIA
+from homepage_carousel import PAGE as CAROUSEL_PAGE, STYLESHEET as CAROUSEL_STYLE
+from homepage_carousel import load_manifest as load_carousel, local_image as carousel_image
 from publication_arrangement import collection_anchor, collection_link
 
 
@@ -272,6 +275,33 @@ def check_collection_trees(pages, full, cards):
                 f'Persistent sidebar collection links differ from advertised scope: {relative}')
 
 
+def check_carousel(pages):
+    report = load(DIST / 'metadata/website-sync.json') or {}
+    expected = report.get('homepage_carousel_sha256')
+    manifest_path = DIST / 'metadata' / CAROUSEL_MANIFEST
+    page = pages.get((DIST / CAROUSEL_PAGE).resolve())
+    directory = pages.get((DIST / 'website-records.html').resolve())
+    linked = directory.links.count(CAROUSEL_PAGE) if directory else 0
+    if expected is None:
+        require(not manifest_path.exists() and page is None and not (DIST / CAROUSEL_MEDIA).exists() and not linked,
+                'Undeclared homepage carousel output.')
+        return
+    require(manifest_path.is_file() and page is not None and linked == 1,
+            'Declared homepage carousel needs its capture manifest, page and one directory link.')
+    try:
+        _, manifest, claims = load_carousel(manifest_path)
+        require(manifest['content_sha256'] == expected, 'Homepage carousel digest differs from the release report.')
+        for name, asset in claims.items():
+            carousel_image(DIST.resolve(), name, asset)
+        actual = {p.relative_to(DIST).as_posix() for p in (DIST / CAROUSEL_MEDIA).glob('*') if p.is_file()}
+        require(actual == set(claims), 'Homepage carousel media do not match the file inventory.')
+        if page:
+            require(all(slide['id'] in page.ids and slide['image']['path'] in page.links
+                        for slide in manifest['slides']), 'Homepage carousel panels are missing from the capture page.')
+    except (OSError, TypeError, KeyError, ValueError) as error:
+        require(False, f'Invalid homepage carousel release: {error}')
+
+
 def main():
     require((DIST / "index.html").is_file(), "Build output missing: run scripts/build.py first.")
     if ERRORS:
@@ -294,6 +324,7 @@ def main():
     catalogue = load(ROOT / "data" / "catalogue.json")
     records = catalogue.get("records", []) if isinstance(catalogue, dict) else catalogue or []
     check_explorer_counts(pages, origin, records)
+    check_carousel(pages)
     canonical_values = [page.canonical for page in pages.values()]
     require(len(canonical_values) == len(set(canonical_values)), 'Multiple HTML pages have the same canonical URL.')
     internal_links = 0
@@ -306,6 +337,8 @@ def main():
             required_styles.append('archive-explorer.css')
         if relative.parts[0] == 'website':
             required_styles.append('website-captures.css')
+        if relative.as_posix() == CAROUSEL_PAGE:
+            required_styles.append(CAROUSEL_STYLE)
         for name in required_styles:
             require(page.stylesheets.count(style_base + asset_url(ROOT, name)) == 1,
                     f"Missing or duplicated current {name}: {relative}")

@@ -357,7 +357,11 @@ write('metadata/entities.json',json.dumps(ENTITIES,ensure_ascii=False,indent=2))
 write('metadata/contents.json',json.dumps(CONTENTS,ensure_ascii=False,indent=2))
 # One generated discovery model serves archive pages and the native Ghost entrance.
 from website_pages import build_website_pages
-paths+=build_website_pages(SYNC_WORK,OUT,write,layout,ORIGIN,methodology=methodology,methodology_desc=methodology_desc, captures=CAPTURES, inventory=WEB_INVENTORY)
+from homepage_carousel import PAGE as CAROUSEL_PAGE, build_carousel
+carousel_sha=build_carousel(SYNC_WORK,OUT,write,layout)
+if carousel_sha:
+ paths.append(CAROUSEL_PAGE)
+paths+=build_website_pages(SYNC_WORK,OUT,write,layout,ORIGIN,methodology=methodology,methodology_desc=methodology_desc, captures=CAPTURES, inventory=WEB_INVENTORY, carousel_sha=carousel_sha)
 paths+=build_dialogues(CAPTURES,WEB_INVENTORY,RECORDS,write,layout,pagehead,ORIGIN)
 copy_evidence_assets(EVIDENCE,ROOT,OUT)
 paths+=build_evidence_pages(EVIDENCE,write,layout,ORIGIN)
